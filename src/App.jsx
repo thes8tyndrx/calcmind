@@ -1473,6 +1473,7 @@ export default function App(){
   const [profile,setProfile]=useState(()=>LS.get("cm_profile",{name:"",goal:"IBPS PO",avatar:"owl"}));
   const [showBlitz,setShowBlitz]=useState(false);
   const [confirmReset,setConfirmReset]=useState(false);
+  const [confirmExit,setConfirmExit]=useState(false);
 
   const [lvl,setLvl]=useState(1);
   const [q,setQ]=useState(null);
@@ -1503,6 +1504,32 @@ export default function App(){
   useEffect(()=>LS.set("cm_xp",totalXP),[totalXP]);
   useEffect(()=>LS.set("cm_stats",modeStats),[modeStats]);
   useEffect(()=>LS.set("cm_blitz",blitzBests),[blitzBests]);
+
+  // ── Back Button Handling ──────────────────────────────────────────────────
+  useEffect(() => {
+    const handlePopState = (e) => {
+      if (tab !== 'home' || showBlitz) {
+        stopAll();
+        setTab('home');
+        setPhase('idle');
+        setShowBlitz(false);
+        // Stay on home, don't exit
+        window.history.pushState({ tab: 'home' }, '');
+      } else {
+        // We are already on home, show exit prompt
+        setConfirmExit(true);
+        window.history.pushState({ tab: 'home' }, '');
+      }
+    };
+
+    // Initial state
+    if (window.history.state?.tab !== 'home') {
+      window.history.pushState({ tab: 'home' }, '');
+    }
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [tab, showBlitz, phase]);
 
   const timerRef=useRef(null);
   const nextRef=useRef(null);
@@ -1689,6 +1716,30 @@ export default function App(){
                 setConfirmReset(false);
               }} style={{flex:1,background:RED,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:"#fff"}}>RESET</button>
               <button onClick={()=>setConfirmReset(false)} style={{flex:1,background:T.card2,border:`1px solid ${T.border}`,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:T.sub}}>CANCEL</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Exit confirmation modal */}
+      {confirmExit&&(
+        <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,0.6)",zIndex:350,display:"flex",alignItems:"center",justifyContent:"center",padding:"0 24px"}}>
+          <div style={{background:T.hdr,borderRadius:16,padding:"22px 20px",width:"100%",maxWidth:360}}>
+            <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:18,color:T.text,marginBottom:8}}>Exit CalcMind?</div>
+            <div style={{fontSize:13,color:T.sub,marginBottom:18,lineHeight:1.5}}>Are you sure you want to close the app?</div>
+            <div style={{display:"flex",gap:8}}>
+              <button onClick={()=>{
+                setConfirmExit(false);
+                // Standard way to "exit" a PWA or web page
+                window.close();
+                // Fallback for browsers that block window.close()
+                if (window.history.length > 1) {
+                  window.history.back();
+                } else {
+                  window.location.href = "about:blank";
+                }
+              }} style={{flex:1,background:GOLD,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:"#111"}}>EXIT</button>
+              <button onClick={()=>setConfirmExit(false)} style={{flex:1,background:T.card2,border:`1px solid ${T.border}`,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:T.sub}}>STAY</button>
             </div>
           </div>
         </div>

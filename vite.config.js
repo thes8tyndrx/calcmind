@@ -14,7 +14,7 @@ export default defineConfig({
         description: 'Mental Math Mastery',
         theme_color: '#0a0a1a',
         background_color: '#0a0a1a',
-        display: 'fullscreen',
+        display: 'standalone',
         orientation: 'portrait',
         icons: [
           {

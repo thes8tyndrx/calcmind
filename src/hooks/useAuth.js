@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { signInWithPopup, signOut as firebaseSignOut, onAuthStateChanged } from 'firebase/auth';
+import { signInWithRedirect, getRedirectResult, signOut as firebaseSignOut, onAuthStateChanged } from 'firebase/auth';
 import { auth, googleProvider } from '../firebase';
 
 export function useAuth() {
@@ -12,6 +12,11 @@ export function useAuth() {
       return;
     }
     
+    // Check if user just returned from a redirect
+    getRedirectResult(auth).catch((error) => {
+      console.error("Error with redirect result", error);
+    });
+
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
       setUser(firebaseUser);
       setLoading(false);
@@ -26,7 +31,8 @@ export function useAuth() {
       return;
     }
     try {
-      await signInWithPopup(auth, googleProvider);
+      // Use redirect instead of popup for mobile/PWA stability
+      await signInWithRedirect(auth, googleProvider);
     } catch (error) {
       console.error("Error signing in with Google", error);
     }

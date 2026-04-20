@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore';
 
 // Placeholder configuration - you will need to replace these with actual values from Firebase Console
 const firebaseConfig = {
-  apiKey: "AIzaSyC_gip6-pvIQUUitBOL84AK4bU1qwSC7M4",
+  apiKey: "AIzaSyC_gip6-pvIQAUit8OL84AK4bU1qwSC7M4",
   authDomain: "calcmind-4251b.firebaseapp.com",
   projectId: "calcmind-4251b",
   storageBucket: "calcmind-4251b.firebasestorage.app",

@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
@@ -17,11 +17,16 @@ const firebaseConfig = {
 let app, auth, db, googleProvider;
 
 try {
-  app = initializeApp(firebaseConfig);
+  if (getApps().length === 0) {
+    app = initializeApp(firebaseConfig);
+  } else {
+    app = getApp();
+  }
   auth = getAuth(app);
   db = getFirestore(app);
   googleProvider = new GoogleAuthProvider();
 } catch (e) {
+  console.error("Firebase Init Error:", e);
   console.warn("Firebase is not configured yet. Set up firebaseConfig in src/firebase.js to enable login & leaderboard.");
 }
 

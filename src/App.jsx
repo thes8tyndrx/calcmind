@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useAuth } from './hooks/useAuth';
-import { useLeaderboard } from './hooks/useLeaderboard';// ─── Theme ────────────────────────────────────────────────────────────────────
+import { useLeaderboard } from './hooks/useLeaderboard';
+import VOCAB_DATA from './data/quiz/vocab_data.json';
+// ─── Theme ────────────────────────────────────────────────────────────────────
 const GOLD="#C8901C", GREEN="#4DC758", RED="#D95252", BLUE="#4A9EFF", PINK="#FF6B8A";
 const THEMES={
   dark:{bg:"#1A1B22",hdr:"#1F2029",card:"#25262F",card2:"#2C2D38",
@@ -487,6 +489,61 @@ function genChain(lvl){
   return{display:v.d,ans:String(Math.abs(Math.round(v.a))),type:"chain"};
 }
 
+function genVocab(topic){
+  const questions = VOCAB_DATA[topic];
+  if(!questions || questions.length === 0) return {display: "No data", ans: ""};
+  const q = pick(questions);
+
+  const cleanText = (t) => {
+    if(!t) return "";
+    return t
+      .replace(/www\.ssccglpinnacle\.com/gi, "")
+      .replace(/Download Pinnacle Exam Preparation App/gi, "")
+      .replace(/Pinnacle\s+English/gi, "")
+      .replace(/\n/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  };
+
+  let rawDisplay = q.question || "";
+  let display = "";
+
+  // Check if it's a fast-paced vocab topic where we only want the word
+  const isFastVocab = ['Synonyms', 'Antonyms', 'Idioms', 'Homonyms'].some(t => topic.includes(t));
+  if (isFastVocab) {
+    const boldMatch = rawDisplay.match(/\*\*([^*]+)\*\*/);
+    if (boldMatch) {
+      display = cleanText(boldMatch[1]);
+    } else {
+      // Fallback: strip boilerplate like "Select the most appropriate synonym..."
+      display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
+    }
+  } else {
+    // Normal grammar/sentence topic: underline bold words instead of removing formatting
+    display = cleanText(rawDisplay)
+      .replace(/\*\*([^*]+)\*\*/g, "<u>$1</u>")
+      .replace(/\*([^*]+)\*/g, "<u>$1</u>");
+  }
+
+  let exp = cleanText(q.explanation);
+
+  // Break explanation at word meanings: "Word (meaning) - "
+  exp = exp.replace(/([A-Z][A-Za-z]+(?:\s+\([^)]+\))?\s+-\s+)/g, "\n$1").trim();
+
+  const isGrammar = ['Active Passive', 'Narration', 'Sentence Improvement', 'Spot the Error'].includes(topic);
+
+  return {
+    display,
+    ans: q.answer,
+    options: q.options,
+    explanation: exp,
+    exam: q.exam,
+    topic: q.topic,
+    type: "vocab",
+    isGrammar: isGrammar
+  };
+}
+
 // ─── MODES ────────────────────────────────────────────────────────────────────
 const MODES=[
   {id:"arith",   label:"Speed Calc",     sub:"Add · Sub · Mul · Div",           icon:"⚡",timer:[11,10,9,8,6],   gen:genArith},
@@ -500,6 +557,34 @@ const MODES=[
   {id:"seating", label:"Seat Logic",     sub:"Linear & Circular arrangement",   icon:"≡",timer:[13,12,11,10,9], gen:genSeating},
   {id:"blood",   label:"Blood Relations",sub:"Family tree — decode the relation",icon:"♡",timer:[18,16,14,13,12],gen:genBloodRelation},
 ];
+
+const CGL_VOCAB_TOPICS = [
+  { id: 'Synonyms',             label: 'Synonyms',              icon: '🔄', sub: 'CGL — Find similar meanings',     color: GREEN },
+  { id: 'Antonyms',             label: 'Antonyms',              icon: '↔️', sub: 'CGL — Find opposite meanings',    color: RED },
+  { id: 'Idioms',               label: 'Idioms & Phrases',      icon: '🗣️', sub: 'CGL — Common idioms in MCQs',     color: BLUE },
+  { id: 'OneWord Substitution', label: 'One Word Substitution', icon: '📝', sub: 'CGL — Single-word meanings',       color: GOLD },
+  { id: 'Spelling check',       label: 'Spelling Check',        icon: '✏️', sub: 'CGL — Identify correct spellings', color: PINK },
+  { id: 'Homonyms',             label: 'Homonyms',              icon: '👯', sub: 'CGL — Words that sound same',      color: "#C45AFF" },
+  { id: 'Fillinthe blanks',     label: 'Fill in the Blanks',    icon: '🛠️', sub: 'CGL — Grammar & Context',          color: GOLD },
+];
+
+const CHSL_VOCAB_TOPICS = [
+  { id: 'Synonyms CHSL',        label: 'Synonyms',              icon: '🔄', sub: 'CHSL — Find similar meanings',    color: GREEN },
+  { id: 'Antonyms CHSL',        label: 'Antonyms',              icon: '↔️', sub: 'CHSL — Find opposite meanings',   color: RED },
+  { id: 'Idioms CHSL',          label: 'Idioms & Phrases',      icon: '🗣️', sub: 'CHSL — Common idioms in MCQs',    color: BLUE },
+  { id: 'OneWord CHSL',         label: 'One Word Substitution', icon: '📝', sub: 'CHSL — Single-word meanings',      color: GOLD },
+  { id: 'Spelling CHSL',        label: 'Spelling Check',        icon: '✏️', sub: 'CHSL — Identify correct spellings',color: PINK },
+];
+
+const GRAMMAR_TOPICS = [
+  { id: 'Active Passive',        label: 'Active & Passive Voice', icon: '🔁', sub: 'CGL — Voice transformation',     color: BLUE },
+  { id: 'Narration',             label: 'Narration',              icon: '💬', sub: 'CGL — Direct & Indirect speech',  color: GREEN },
+  { id: 'Sentence Improvement',  label: 'Sentence Improvement',   icon: '✍️', sub: 'CGL — Spot & fix errors',         color: GOLD },
+  { id: 'Spot the Error',        label: 'Spot the Error',         icon: '🔍', sub: 'CGL — Find grammatical errors',   color: RED },
+];
+
+// Combined for backwards-compat usage
+const QUIZ_TOPICS = [...CGL_VOCAB_TOPICS, ...CHSL_VOCAB_TOPICS, ...GRAMMAR_TOPICS];
 
 // ─── ANIMAL AVATARS ───────────────────────────────────────────────────────────
 const AVATARS=[
@@ -1376,6 +1461,90 @@ function LearnScreen({T}){
   );
 }
 
+function SectionLabel({label, T}){
+  return(
+    <div style={{fontSize:9,color:T.muted,letterSpacing:2,fontWeight:700,marginBottom:5,marginTop:10,paddingLeft:2}}>
+      {label}
+    </div>
+  );
+}
+
+function QuizScreen({T, onSelectTopic}){
+  const [exam, setExam] = useState("SSC CGL");
+  const exams = ["SSC CGL", "SSC CHSL", "SSC CPO", "SSC Steno", "Selection Post"];
+
+  const getTopics = (examName) => {
+    if (examName === "SSC CGL") {
+      return { vocab: CGL_VOCAB_TOPICS, grammar: GRAMMAR_TOPICS };
+    } else if (examName === "SSC CHSL") {
+      return { vocab: CHSL_VOCAB_TOPICS, grammar: [] }; 
+    }
+    return { vocab: [], grammar: [] };
+  };
+
+  const { vocab, grammar } = getTopics(exam);
+
+  return(
+    <div className="su" style={{padding:"14px 15px 8px"}}>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
+        <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:T.text}}>English <span style={{color:GOLD}}>Quiz</span></div>
+        <select value={exam} onChange={e=>setExam(e.target.value)} style={{background:T.card,color:T.text,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 8px",fontSize:13,fontWeight:700,outline:"none",fontFamily:"'Outfit',sans-serif",cursor:"pointer"}}>
+          {exams.map(ex=><option key={ex} value={ex}>{ex}</option>)}
+        </select>
+      </div>
+      <p style={{fontSize:12,color:T.sub,marginBottom:12,lineHeight:1.5}}>Topic-wise English practice from {exam} PYPs.</p>
+
+      {vocab.length > 0 && (
+        <>
+          <SectionLabel label="VOCABULARY" T={T}/>
+          <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
+            {vocab.map(s=>(
+              <button key={s.id} onClick={()=>onSelectTopic(s.id)}
+                style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%",transition:"border-color 0.15s"}}
+                onMouseEnter={e=>e.currentTarget.style.borderColor=s.color+"44"}
+                onMouseLeave={e=>e.currentTarget.style.borderColor=T.border}>
+                <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
+                <div style={{flex:1}}>
+                  <div style={{fontWeight:700,fontSize:13,color:T.text}}>{s.label}</div>
+                  <div style={{fontSize:10,color:T.sub,marginTop:1}}>{s.sub}</div>
+                </div>
+                <span style={{color:T.muted,fontSize:18}}>›</span>
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+
+      {grammar.length > 0 && (
+        <>
+          <SectionLabel label="GRAMMAR" T={T}/>
+          <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
+            {grammar.map(s=>(
+              <button key={s.id} onClick={()=>onSelectTopic(s.id)}
+                style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%",transition:"border-color 0.15s"}}
+                onMouseEnter={e=>e.currentTarget.style.borderColor=s.color+"44"}
+                onMouseLeave={e=>e.currentTarget.style.borderColor=T.border}>
+                <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
+                <div style={{flex:1}}>
+                  <div style={{fontWeight:700,fontSize:13,color:T.text}}>{s.label}</div>
+                  <div style={{fontSize:10,color:T.sub,marginTop:1}}>{s.sub}</div>
+                </div>
+                <span style={{color:T.muted,fontSize:18}}>›</span>
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+
+      {vocab.length === 0 && grammar.length === 0 && (
+        <div style={{textAlign:"center",padding:"40px 20px",color:T.sub,fontSize:14,background:T.card,borderRadius:12,border:`1px dashed ${T.border}`}}>
+          More topics coming soon for {exam}!
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── PROFILE MODAL ─────────────────────────────────────────────────────────────
 function ProfileModal({profile,onClose,onSave,T,user,signIn,signOut}){
   const [name,setName]=useState(profile.name||"");
@@ -1445,6 +1614,8 @@ export default function App(){
   const { leaderboard, submitScore, refresh } = useLeaderboard();
   const [installPrompt, setInstallPrompt] = useState(null);
   const [showInstallBanner, setShowInstallBanner] = useState(() => LS.get("cm_show_install", true));
+
+
 
   useEffect(() => {
     const handler = (e) => {
@@ -1535,7 +1706,19 @@ export default function App(){
   const nextRef=useRef(null);
   const qStart=useRef(Date.now());
 
-  const modeObj=MODES.find(m=>m.id===modeId);
+  const initGame=(cfg,mid,lvlOverride)=>{
+    setStreak(0);setWrongStreak(0);setBestStreak(0);
+    const sMax=(cfg?.count)||customConfig?.count||100;
+    setScore({c:0,w:0});setHist([]);setQCount(0);setSessionMax(sMax);setShowLvlChange(null);
+    setPhase("idle");setTyped("");setBloodSel(null);setFeedback(null);setQ(null);
+    // Pass mid, lvl, and cfg explicitly to avoid stale React state in the timeout
+    const resolvedMid = mid ?? modeId;
+    const resolvedLvl = lvlOverride ?? lvl;
+    // cfg=null means normal game (use mode gen, not custom)
+    const resolvedCfg = cfg || null;
+    setTimeout(()=>nextQ(resolvedMid, resolvedLvl, resolvedCfg),80);
+  };
+
   function getTimer(mid,l){
     const mo=MODES.find(m=>m.id===(mid??modeId));
     if(!mo)return 10;
@@ -1544,64 +1727,80 @@ export default function App(){
   }
   function stopAll(){clearInterval(timerRef.current);clearTimeout(nextRef.current);}
 
-  function makeQ(mid,l){
-    if(customConfig){
-      if(customConfig.type==="table")return genCustomTable(customConfig);
-      if(customConfig.type==="series"){
-        const patternPool=customConfig.patterns||[];
-        const includeWrong=customConfig.includeWrong;
+  // Sentinel value — when a normal (non-custom) game is started, cfg is set to
+  // the string "NORMAL" so makeQ knows to ignore stale customConfig state.
+  const NO_CUSTOM = "NORMAL";
+
+  function makeQ(mid,l,cfg){
+    // Use cfg if provided (freshly passed); fall back to React state only for
+    // mid-session nextQ calls (cfg === undefined).
+    // cfg === NO_CUSTOM  →  explicitly no custom config (normal mode)
+    // cfg === undefined  →  follow-up question, read state as usual
+    // cfg === object     →  custom config passed freshly
+    const cc = (cfg === NO_CUSTOM || cfg === null) ? null
+             : (cfg !== undefined)                 ? cfg
+             : customConfig;
+    if(cc){
+      if(cc.type==="table")return genCustomTable(cc);
+      if(cc.type==="series"){
+        const patternPool=cc.patterns||[];
+        const includeWrong=cc.includeWrong;
         if(includeWrong&&Math.random()<0.4)return makeWrongSeries();
         if(patternPool.length>0)return genSeries(2,pick(patternPool));
         return genSeries(2);
       }
-      if(customConfig.type==="arith")return customConfig.gen();
+      if(cc.type==="arith")return cc.gen();
+      if(cc.type==="vocab")return genVocab(cc.topic);
     }
     return MODES.find(m=>m.id===(mid??modeId))?.gen(l??lvl)??genArith(0);
   }
 
-  function nextQ(mid,l){
+  function nextQ(mid,l,cfg){
     stopAll();
-    const newQ=makeQ(mid,l);
+    const newQ=makeQ(mid,l,cfg);
     setQ(newQ);setTyped("");setBloodSel(null);setFeedback(null);setPhase("playing");
     qStart.current=Date.now();
-    const tLimit=customConfig?12:getTimer(mid??modeId,l??lvl);
+    // Determine timer: custom games get fixed 12s; normal modes use per-level timers
+    const cc = (cfg === NO_CUSTOM || cfg === null) ? null
+             : (cfg !== undefined)                 ? cfg
+             : customConfig;
+    let tLimit=cc?12:getTimer(mid??modeId,l??lvl);
+    if(cc && cc.type === "vocab" && newQ.isGrammar) {
+      tLimit = 10; // Timer for grammar questions
+    }
     setT(tLimit);
   }
 
   function startNormalGame(mid){
-    stopAll();
-    setModeId(mid);setCustomConfig(null);
-    setLvl(1);setStreak(0);setWrongStreak(0);setBestStreak(0);
-    setScore({c:0,w:0});setHist([]);setQCount(0);setSessionMax(100);setShowLvlChange(null);
-    setTab("game");setPhase("idle");setTyped("");setBloodSel(null);setFeedback(null);
-    setTimeout(()=>nextQ(mid,1),80);
+    setModeId(mid);setCustomConfig(null);setLvl(1);
+    setTab("game");  // Navigate to game screen first
+    // Pass NO_CUSTOM sentinel so makeQ ignores any stale customConfig state
+    initGame(NO_CUSTOM, mid, 1);
   }
 
   function startCustomTableGame(cfg){
-    stopAll();
-    setModeId("customTable");setCustomConfig({...cfg,type:"table"});
-    setLvl(0);setStreak(0);setWrongStreak(0);setBestStreak(0);
-    setScore({c:0,w:0});setHist([]);setQCount(0);setSessionMax(cfg.count);setShowLvlChange(null);
-    setTab("game");setPhase("idle");setTyped("");setBloodSel(null);setFeedback(null);
-    setTimeout(()=>nextQ("customTable",0),80);
+    const fullCfg={...cfg,type:"table"};
+    setModeId("customTable");setCustomConfig(fullCfg);
+    setLvl(0);setTab("game");initGame(fullCfg, "customTable", 0);
   }
 
   function startCustomSeriesGame(cfg){
-    stopAll();
-    setModeId("series");setCustomConfig({...cfg,type:"series"});
-    setLvl(2);setStreak(0);setWrongStreak(0);setBestStreak(0);
-    setScore({c:0,w:0});setHist([]);setQCount(0);setSessionMax(cfg.count);setShowLvlChange(null);
-    setTab("game");setPhase("idle");setTyped("");setBloodSel(null);setFeedback(null);
-    setTimeout(()=>nextQ("series",2),80);
+    const fullCfg={...cfg,type:"series"};
+    setModeId("series");setCustomConfig(fullCfg);
+    setLvl(2);setTab("game");initGame(fullCfg, "series", 2);
   }
 
   function startCustomArithGame(cfg){
-    stopAll();
-    setModeId("arith");setCustomConfig({...cfg,type:"arith"});
-    setLvl(0);setStreak(0);setWrongStreak(0);setBestStreak(0);
-    setScore({c:0,w:0});setHist([]);setQCount(0);setSessionMax(cfg.count);setShowLvlChange(null);
-    setTab("game");setPhase("idle");setTyped("");setBloodSel(null);setFeedback(null);
-    setTimeout(()=>nextQ("arith",0),80);
+    const fullCfg={...cfg,type:"arith"};
+    setModeId("arith");setCustomConfig(fullCfg);
+    setLvl(0);setTab("game");initGame(fullCfg, "arith", 0);
+  }
+
+  function startVocabQuiz(topicId){
+    const totalQs = VOCAB_DATA[topicId]?.length || 20;
+    const cfg = {topic: topicId, type:"vocab", count: totalQs};
+    setModeId("vocab");setCustomConfig(cfg);
+    setTab("game");initGame(cfg,"vocab",0);
   }
 
   useEffect(()=>{
@@ -1624,6 +1823,12 @@ export default function App(){
     const ns=ok?streak+1:0,nw=ok?0:wrongStreak+1;
     setFeedback(ok?"correct":"wrong");
     setStreak(ns);setWrongStreak(nw);setBestStreak(b=>Math.max(b,ns));
+    
+    // Haptic feedback
+    if(typeof navigator!=="undefined"&&navigator.vibrate){
+      if(ok) navigator.vibrate(40);
+      else navigator.vibrate([80, 50, 80]);
+    }
     const nc=score.c+(ok?1:0),nWr=score.w+(ok?0:1);
     setScore({c:nc,w:nWr});
     const nH=[...hist,{ok}];setHist(nH);
@@ -1651,7 +1856,14 @@ export default function App(){
     nextRef.current=setTimeout(()=>{
       if(nQ>=sessionMax){setTab("result");setPhase("idle");}
       else nextQ(modeId,newLvl);
-    },ok?600:1050);
+    },isVocab?10000:(ok?600:1050));
+  }
+
+  function skipFeedback(){
+    if(phase!=="feedback")return;
+    stopAll();
+    if(qCount>=sessionMax){setTab("result");setPhase("idle");}
+    else nextQ(modeId,lvl);
   }
 
   function onKey(k){
@@ -1673,7 +1885,7 @@ export default function App(){
 
   const total=score.c+score.w;
   const acc=total>0?Math.round(score.c/total*100):0;
-  const currentTimerMax=customConfig?12:getTimer(modeId,lvl);
+  const currentTimerMax=customConfig?(q?.isGrammar?10:12):getTimer(modeId,lvl);
   const tPct=Math.max(0,(t/currentTimerMax)*100);
   const tColor=tPct>60?GOLD:tPct>30?"#D4A830":RED;
   const rank=getRank(totalXP);
@@ -1681,6 +1893,7 @@ export default function App(){
   const qLines=(q?.display??"").split("\n");
   const isBlood=q?.type==="blood";
   const isLetter=q?.type==="seating"&&/^[A-H]$/.test(q?.ans??"");
+  const isVocab=q?.type==="vocab";
   const weakModes=Object.entries(modeStats).filter(([,s])=>s.attempts>=5)
     .map(([id,s])=>({id,acc:s.attempts>0?Math.round(s.correct/s.attempts*100):0,label:MODES.find(m=>m.id===id)?.label}))
     .sort((a,b)=>a.acc-b.acc).slice(0,3);
@@ -1730,9 +1943,7 @@ export default function App(){
             <div style={{display:"flex",gap:8}}>
               <button onClick={()=>{
                 setConfirmExit(false);
-                // Standard way to "exit" a PWA or web page
                 window.close();
-                // Fallback for browsers that block window.close()
                 if (window.history.length > 1) {
                   window.history.back();
                 } else {
@@ -1766,10 +1977,23 @@ export default function App(){
           </>)}
           <button onClick={()=>setShowBlitz(true)} style={{background:"rgba(200,144,28,0.1)",border:"1px solid rgba(200,144,28,0.25)",borderRadius:8,padding:"4px 9px",fontSize:11,fontWeight:700,color:GOLD}}>⚡ Blitz</button>
           <button onClick={()=>setDark(d=>!d)} style={{background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"5px 8px",fontSize:13,color:T.sub}}>{dark?"☀":"🌙"}</button>
-          <div onClick={()=>setTab(tab==="rank"?"home":"rank")} style={{display:"flex",alignItems:"center",gap:4,background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 8px",cursor:"pointer"}}>
-            <span style={{fontSize:12}}>{rank.icon}</span>
-            <span style={{fontSize:11,fontWeight:700,color:rank.color}}>{totalXP}</span>
-          </div>
+          {(tab !== "home") ? (
+            <button onClick={() => {
+              if (window.history.length > 1 && window.location.hash !== "#home") {
+                window.history.back();
+              } else {
+                setTab("home");
+                setPhase("idle");
+              }
+            }} style={{background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 10px",fontSize:13,color:T.text,fontWeight:800,cursor:"pointer",display:"flex",alignItems:"center",gap:4}}>
+              ← Back
+            </button>
+          ) : (
+            <div onClick={()=>setTab("rank")} style={{display:"flex",alignItems:"center",gap:4,background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 8px",cursor:"pointer"}}>
+              <span style={{fontSize:12}}>{rank.icon}</span>
+              <span style={{fontSize:11,fontWeight:700,color:rank.color}}>{totalXP}</span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -1782,7 +2006,7 @@ export default function App(){
       {/* BOTTOM NAV */}
       {tab!=="game"&&(
         <div style={{position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:480,background:T.navBg,borderTop:`1px solid ${T.border}`,display:"flex",zIndex:20,boxShadow:dark?"none":"0 -1px 8px rgba(0,0,0,0.05)"}}>
-          {[["home","⊞","Practice"],["custom","✎","Custom"],["learn","◎","Learn"],["stats","▤","Stats"],["rank","★","Rank"]].map(([id,icon,label])=>(
+          {[["home","⊞","Practice"],["custom","✎","Custom"],["learn","◎","Learn"],["quiz","✍","Quiz"],["rank","★","Rank"]].map(([id,icon,label])=>(
             <button key={id} onClick={()=>setTab(id)} style={{flex:1,padding:"10px 0 8px",background:"none",display:"flex",flexDirection:"column",alignItems:"center",gap:2}}>
               <span style={{fontSize:16,color:tab===id?GOLD:T.muted}}>{icon}</span>
               <span style={{fontSize:8,fontWeight:700,letterSpacing:0.5,color:tab===id?GOLD:T.muted}}>{label.toUpperCase()}</span>
@@ -1887,9 +2111,16 @@ export default function App(){
 
         {tab==="learn"&&<LearnScreen T={T}/>}
 
+        {tab==="quiz"&&<QuizScreen T={T} onSelectTopic={(topicId)=>{
+          startVocabQuiz(topicId);
+        }}/>}
+
         {/* ── STATS ── */}
-        {tab==="stats"&&(
+
+        {/* ── RANK & LEADERBOARD ── */}
+        {tab==="rank"&&(
           <div className="su" style={{padding:"14px 15px 8px"}}>
+            {/* Stats moved here */}
             <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,marginBottom:11,color:T.text}}>Your <span style={{color:GOLD}}>Stats</span></div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:7,marginBottom:11}}>
               {[[totalXP,"Total XP",GOLD],[rank.label,"Rank",rank.color],[bestStreak,"Best Streak",GREEN],[Object.values(modeStats).reduce((a,s)=>a+s.attempts,0),"Solved",BLUE]].map(([v,l,c])=>(
@@ -1938,16 +2169,11 @@ export default function App(){
             })}
 
             {/* Reset */}
-            <button onClick={()=>setConfirmReset(true)} style={{marginTop:14,width:"100%",background:"none",border:`1px solid ${T.border}`,borderRadius:10,padding:"10px",fontSize:12,color:T.muted,fontWeight:600,cursor:"pointer"}}>
+            <button onClick={()=>setConfirmReset(true)} style={{marginTop:14,width:"100%",background:"none",border:`1px solid ${T.border}`,borderRadius:10,padding:"10px",fontSize:12,color:T.muted,fontWeight:600,cursor:"pointer",marginBottom:20}}>
               Reset all progress
             </button>
-          </div>
-        )}
 
-        {/* ── RANK & LEADERBOARD ── */}
-        {tab==="rank"&&(
-          <div className="su" style={{padding:"14px 15px 8px"}}>
-            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12}}>
+            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12, borderTop:`1px solid ${T.border}`, paddingTop:16}}>
               <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:T.text}}>Global <span style={{color:GOLD}}>Leaderboard</span></div>
               <button onClick={refresh} style={{background:T.inputBg, border:`1px solid ${T.border}`, borderRadius:8, padding:"4px 8px", fontSize:12, color:T.sub}}>↻ Refresh</button>
             </div>
@@ -1997,28 +2223,91 @@ export default function App(){
         )}
 
         {/* ── GAME ── */}
-        {tab==="game"&&q&&(
-          <div style={{display:"flex",flexDirection:"column",padding:"10px 13px 9px",gap:7,height:"calc(100vh - 48px)"}}>
-            {/* Level bar */}
+        {tab==="game"&&q&&(isVocab
+          /* ══════════ VOCAB LAYOUT ══════════ */
+          ?<div style={{display:"flex",flexDirection:"column",height:"calc(100vh - 48px)",background:T.bg}}>
+            {/* Top stats bar */}
+            <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 14px",borderBottom:`1px solid ${T.border}`,background:T.hdr,flexShrink:0}}>
+              <button onClick={()=>{stopAll();setTab("quiz");setPhase("idle");}} style={{background:"none",border:"none",color:GOLD,fontWeight:800,fontSize:14,padding:0,fontFamily:"'Barlow Condensed',sans-serif",display:"flex",alignItems:"center",gap:4}}>
+                <span style={{fontSize:18}}>‹</span> {customConfig?.topic?.toUpperCase()}
+              </button>
+              <div style={{display:"flex",gap:8,alignItems:"center"}}>
+                <div style={{background:"rgba(77,199,88,0.1)",border:`1px solid ${GREEN}44`,borderRadius:6,padding:"2px 8px",display:"flex",flexDirection:"column",alignItems:"center",minWidth:40}}>
+                  <span style={{fontSize:16,fontWeight:900,color:GREEN,fontFamily:"'Barlow Condensed',sans-serif",lineHeight:1}}>{score.c}</span>
+                  <span style={{fontSize:7,fontWeight:800,color:GREEN,letterSpacing:0.5}}>RIGHT</span>
+                </div>
+                <div style={{background:"rgba(217,82,82,0.1)",border:`1px solid ${RED}44`,borderRadius:6,padding:"2px 8px",display:"flex",flexDirection:"column",alignItems:"center",minWidth:40}}>
+                  <span style={{fontSize:16,fontWeight:900,color:RED,fontFamily:"'Barlow Condensed',sans-serif",lineHeight:1}}>{score.w}</span>
+                  <span style={{fontSize:7,fontWeight:800,color:RED,letterSpacing:0.5}}>WRONG</span>
+                </div>
+                <div style={{background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:6,padding:"2px 8px",display:"flex",flexDirection:"column",alignItems:"center",minWidth:40}}>
+                  <span style={{fontSize:16,fontWeight:900,color:T.sub,fontFamily:"'Barlow Condensed',sans-serif",lineHeight:1}}>{total+1}</span>
+                  <span style={{fontSize:7,fontWeight:800,color:T.sub,letterSpacing:0.5}}>/ {sessionMax}</span>
+                </div>
+              </div>
+            </div>
+            {/* Timer bar with glow */}
+            <div style={{height:4,background:T.inputBg,flexShrink:0,position:"relative",overflow:"hidden"}}>
+              <div style={{height:"100%",background:tColor,width:`${tPct}%`,transition:"width 0.1s linear",borderRadius:"0 2px 2px 0",boxShadow:`0 0 10px ${tColor}`}}/>
+            </div>
+            {/* Scrollable content */}
+            <div style={{flex:1,overflowY:"auto",padding:"14px 14px 80px"}}>
+              {/* Question card */}
+              <div key={q.display+total} style={{background:T.card,border:`1.5px solid ${T.border}`,borderRadius:16,padding:"18px 16px",marginBottom:12,boxShadow:dark?"none":"0 2px 8px rgba(0,0,0,0.06)",position:"relative",overflow:"hidden"}}>
+                <div style={{position:"absolute",top:0,left:0,right:0,height:2,background:`linear-gradient(90deg,${GOLD},transparent)`}}/>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10}}>
+                  <span style={{fontSize:11,fontWeight:900,letterSpacing:1.5,color:GOLD,fontFamily:"'Barlow Condensed',sans-serif"}}>{(customConfig?.topic||"VOCAB").toUpperCase()}</span>
+                  <span style={{fontSize:12,color:T.sub,fontWeight:900,fontFamily:"'Barlow Condensed',sans-serif"}}>Q. {total+1}</span>
+                </div>
+                <div dangerouslySetInnerHTML={{__html: q.display}} style={{fontFamily:"'Outfit',sans-serif",fontWeight:700,fontSize:q.display.length>60?16:q.display.length>35?19:q.display.length>18?23:28,color:T.text,lineHeight:1.45,whiteSpace:"pre-line",textAlign:"center",padding:"4px 0 10px"}} />
+                {q.exam&&<div style={{textAlign:"center",fontSize:9,color:T.muted,fontStyle:"italic",marginTop:2,opacity:0.8}}>{q.exam}</div>}
+              </div>
+              {/* Options */}
+              <div style={{display:"flex",flexDirection:"column",gap:10}}>
+                {Object.entries(q.options).map(([key,val])=>{
+                  let cleanedVal = val.replace(/\s+/g, " ").trim(); // Basic cleanup for options
+                  let bg=T.card,bdr=T.border,clr=T.text,shd=dark?"none":"0 1px 4px rgba(0,0,0,0.04)";
+                  if(feedback){
+                    if(key===q.ans){bg="rgba(77,199,88,0.08)";bdr=GREEN;clr=GREEN;shd="none";}
+                    else if(key===typed){bg="rgba(217,82,82,0.08)";bdr=RED;clr=RED;shd="none";}
+                  }
+                  return<button key={key} onClick={()=>{if(phase!=="playing")return;setTyped(key);submitAnswer(key);}}
+                    style={{width:"100%",background:bg,border:`1.5px solid ${bdr}`,borderRadius:14,padding:"14px 16px",fontFamily:"'Outfit',sans-serif",fontWeight:600,fontSize:15,color:clr,cursor:phase!=="playing"?"default":"pointer",transition:"all 0.2s cubic-bezier(0.4,0,0.2,1)",textAlign:"left",display:"flex",alignItems:"center",gap:13,boxShadow:shd,transform:feedback&&key===typed?"scale(0.98)":"none"}}>
+                    <div style={{width:28,height:28,borderRadius:8,flexShrink:0,display:"flex",alignItems:"center",justifyContent:"center",fontSize:12,fontWeight:900,background:feedback?(key===q.ans?GREEN:key===typed?RED:T.inputBg):T.inputBg,color:feedback?(key===q.ans||key===typed?"#fff":T.sub):T.sub,border:`1px solid ${feedback?(key===q.ans?GREEN:key===typed?RED:T.border):T.border}`,boxShadow:feedback&&(key===q.ans||key===typed)?`0 0 8px ${key===q.ans?GREEN:RED}44`:"none"}}>{key.toUpperCase()}</div>
+                    <div style={{flex:1,lineHeight:1.4}}>{cleanedVal}</div>
+                  </button>;
+                })}
+              </div>
+              {/* Explanation after answer */}
+              {feedback&&q.type==="vocab"&&(
+                <div onClick={skipFeedback} className="su" style={{marginTop:16,background:T.card2,border:`1.5px solid ${feedback==="correct"?GREEN:RED}`,borderRadius:16,padding:"18px 20px",cursor:"pointer",animation:"fadeIn 0.3s ease-out"}}>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10,borderBottom:`1px solid ${feedback==="correct"?GREEN:RED}22`,paddingBottom:8}}>
+                    <span style={{fontWeight:900,fontSize:14,color:feedback==="correct"?GREEN:RED,letterSpacing:1.2}}>{feedback==="correct"?"✓ EXPLANATION":"✗ EXPLANATION"}</span>
+                    <span style={{fontSize:10,color:T.muted,fontWeight:800,fontFamily:"'Barlow Condensed',sans-serif"}}>TAP TO SKIP →</span>
+                  </div>
+                  <div style={{fontSize:15.5,color:T.text,lineHeight:1.7,whiteSpace:"pre-line",fontWeight:500}}>{q.explanation}</div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          /* ══════════ MATH LAYOUT ══════════ */
+          :<div style={{display:"flex",flexDirection:"column",padding:"10px 13px 9px",gap:7,height:"calc(100vh - 48px)"}}>
             {!customConfig&&(
               <div style={{display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
                 <div style={{flex:1}}><Bar value={qCount%QS_PER_LEVEL} max={QS_PER_LEVEL} color={LVL_COLORS[Math.min(lvl,4)]} height={3}/></div>
                 <span style={{fontSize:9,color:T.sub,flexShrink:0,fontWeight:600}}>{qCount%QS_PER_LEVEL}/{QS_PER_LEVEL}</span>
               </div>
             )}
-            {/* Session progress bar (custom) */}
             {customConfig&&(
               <div style={{display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
                 <div style={{flex:1}}><Bar value={total} max={sessionMax} color={GOLD} height={3}/></div>
                 <span style={{fontSize:9,color:T.sub,flexShrink:0,fontWeight:600}}>{total}/{sessionMax}</span>
               </div>
             )}
-            {/* Timer */}
             <div style={{height:3,background:T.inputBg,borderRadius:99,overflow:"hidden",flexShrink:0}}>
               <div style={{height:"100%",background:tColor,borderRadius:99,width:`${tPct}%`,transition:"width 0.1s linear,background 0.4s",boxShadow:`0 0 7px ${tColor}77`}}/>
             </div>
-
-            {/* Q card */}
             <div key={q.display+total} className="su" style={{background:T.card,border:`1.5px solid ${feedback==="correct"?GREEN:feedback==="wrong"?RED:T.border}`,borderRadius:16,padding:"12px 12px",flexShrink:0,position:"relative",overflow:"hidden",transition:"border-color 0.18s",boxShadow:dark?"none":"0 2px 10px rgba(0,0,0,0.06)"}}>
               <div style={{position:"absolute",top:0,left:0,right:0,height:2,background:`linear-gradient(90deg,${customConfig?GOLD:LVL_COLORS[Math.min(lvl,4)]},transparent)`}}/>
               {q.type==="seating"&&<Seats arr={q.arrangement} hl={q.hl} circular={q.circular} T={T}/>}
@@ -2030,18 +2319,10 @@ export default function App(){
                     {q.seqVis.map((v,i)=>{
                       const isMissing=!q.isWrongType&&i===q.missingIdx;
                       const isWrong=q.isWrongType&&i===q.wrongIdx;
-                      return(
-                        <div key={i} onClick={q.isWrongType&&phase==="playing"?()=>submitAnswer(String(v)):undefined}
-                          style={{minWidth:34,height:34,borderRadius:8,padding:"0 4px",
-                            background:isMissing?"rgba(200,144,28,0.13)":isWrong&&feedback?"rgba(217,82,82,0.13)":T.inputBg,
-                            border:`2px solid ${isMissing?GOLD:isWrong&&feedback?RED:T.border}`,
-                            display:"flex",alignItems:"center",justifyContent:"center",
-                            fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:14,
-                            color:isMissing?GOLD:isWrong&&feedback?RED:T.text,
-                            cursor:q.isWrongType&&phase==="playing"?"pointer":"default"}}>
-                          {isMissing?"?":v}
-                        </div>
-                      );
+                      return(<div key={i} onClick={q.isWrongType&&phase==="playing"?()=>submitAnswer(String(v)):undefined}
+                        style={{minWidth:34,height:34,borderRadius:8,padding:"0 4px",background:isMissing?"rgba(200,144,28,0.13)":isWrong&&feedback?"rgba(217,82,82,0.13)":T.inputBg,border:`2px solid ${isMissing?GOLD:isWrong&&feedback?RED:T.border}`,display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:14,color:isMissing?GOLD:isWrong&&feedback?RED:T.text,cursor:q.isWrongType&&phase==="playing"?"pointer":"default"}}>
+                        {isMissing?"?":v}
+                      </div>);
                     })}
                   </div>
                   {q.isWrongType&&phase==="playing"&&<div style={{textAlign:"center",fontSize:9,color:T.muted}}>↑ Tap the wrong number</div>}
@@ -2054,10 +2335,9 @@ export default function App(){
                   </div>
                 ))}
                 {q.hint&&<div style={{marginTop:5,display:"inline-block",background:"rgba(200,144,28,0.08)",border:"1px solid rgba(200,144,28,0.16)",borderRadius:6,padding:"2px 8px",fontSize:10,color:"rgba(200,144,28,0.75)",fontWeight:600}}>{q.hint}</div>}
+                {q.exam&&<div style={{marginTop:4,fontSize:9,color:T.muted,fontStyle:"italic"}}>{q.exam}</div>}
               </div>
             </div>
-
-            {/* Answer box */}
             {!isBlood&&!q.isWrongType&&(
               <div style={{background:feedback==="correct"?"rgba(77,199,88,0.09)":feedback==="wrong"?"rgba(217,82,82,0.09)":T.inputBg,border:`2px solid ${feedback==="correct"?GREEN:feedback==="wrong"?RED:T.border}`,borderRadius:12,padding:"9px 15px",display:"flex",alignItems:"center",justifyContent:"space-between",flexShrink:0,transition:"all 0.18s"}}>
                 <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:30,letterSpacing:2,color:feedback==="correct"?GREEN:feedback==="wrong"?RED:typed?T.text:T.muted}}>
@@ -2076,8 +2356,6 @@ export default function App(){
                 <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:16,color:feedback==="correct"?GREEN:RED}}>{feedback==="correct"?`✓ ${q.ans} was wrong`:`✗ Wrong was ${q.ans}, not ${typed}`}</span>
               </div>
             )}
-
-            {/* Input */}
             <div style={{flex:1,display:"flex",flexDirection:"column",justifyContent:"flex-end"}}>
               {isBlood
                 ?<BloodOptions options={q.options} correctAns={q.ans} selected={bloodSel} feedback={feedback} disabled={phase!=="playing"} T={T} onTap={k=>{if(phase!=="playing")return;setBloodSel(k);submitAnswer(k);}}/>
@@ -2089,21 +2367,19 @@ export default function App(){
                       return<button key={opt} onClick={()=>{if(phase!=="playing")return;setTyped(opt);submitAnswer(opt);}} style={{background:bg,border:`1.5px solid ${border}`,borderRadius:12,padding:"14px 8px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color,cursor:phase!=="playing"?"default":"pointer",transition:"all 0.18s",textAlign:"center"}}>{opt}</button>;
                     })}
                   </div>
-                :isLetter
-                  ?<div style={{display:"grid",gridTemplateColumns:`repeat(${Math.min((q.arrangement||[]).length,4)},1fr)`,gap:7}}>
-                    {(q.arrangement||[]).map(k=>(
-                      <button key={k} onClick={()=>phase==="playing"&&(setTyped(k),submitAnswer(k))} style={{background:T.card2,border:`1.5px solid ${T.border}`,borderRadius:11,padding:"15px 0",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:T.text}}>{k}</button>
-                    ))}
-                  </div>
-                :q.isWrongType
-                  ?<div style={{textAlign:"center",padding:"8px 0"}}>
-                    {!feedback&&<div style={{fontSize:11,color:T.muted}}>↑ Tap the wrong number in the sequence above</div>}
-                  </div>
-                  :<Numpad onKey={onKey} disabled={phase!=="playing"} T={T}/>
+                  :isLetter
+                    ?<div style={{display:"grid",gridTemplateColumns:`repeat(${Math.min((q.arrangement||[]).length,4)},1fr)`,gap:7}}>
+                      {(q.arrangement||[]).map(k=>(
+                        <button key={k} onClick={()=>phase==="playing"&&(setTyped(k),submitAnswer(k))} style={{background:T.card2,border:`1.5px solid ${T.border}`,borderRadius:11,padding:"15px 0",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:T.text}}>{k}</button>
+                      ))}
+                    </div>
+                    :q.isWrongType
+                      ?<div style={{textAlign:"center",padding:"8px 0"}}>
+                        {!feedback&&<div style={{fontSize:11,color:T.muted}}>↑ Tap the wrong number in the sequence above</div>}
+                      </div>
+                      :<Numpad onKey={onKey} disabled={phase!=="playing"} T={T}/>
               }
             </div>
-
-            {/* Dots */}
             <div style={{display:"flex",gap:3,justifyContent:"center",flexWrap:"wrap",flexShrink:0}}>
               {Array.from({length:Math.min(total+1,sessionMax)},(_,i)=>{
                 const h=hist[i];
@@ -2138,6 +2414,7 @@ export default function App(){
                 if(customConfig?.type==="table")startCustomTableGame(customConfig);
                 else if(customConfig?.type==="series")startCustomSeriesGame(customConfig);
                 else if(customConfig?.type==="arith")startCustomArithGame(customConfig);
+                else if(customConfig?.type==="vocab")startVocabQuiz(customConfig.topic);
                 else startNormalGame(modeId);
               }} style={{flex:2,background:GOLD,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:19,fontWeight:900,color:"#111"}}>RETRY</button>
               <button onClick={()=>setTab("home")} style={{flex:1,background:T.card,border:`1px solid ${T.border}`,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:19,fontWeight:900,color:T.sub}}>HOME</button>

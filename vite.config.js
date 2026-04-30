@@ -24,7 +24,7 @@ export default defineConfig({
         description: 'The ultimate Maths & Current Affairs Booster for IBPS, SSC, and Banking exams. Master mental math, daily CA, English vocabulary, and quantitative aptitude.',
         theme_color: '#0a0a1a',
         background_color: '#0a0a1a',
-        display: 'standalone',
+        display: 'fullscreen',
         orientation: 'portrait',
         icons: [
           {
@@ -41,7 +41,7 @@ export default defineConfig({
             src: '/icon-512.png',
             sizes: '512x512',
             type: 'image/png',
-            purpose: 'maskable'
+            purpose: 'any'
           }
         ],
         screenshots: [

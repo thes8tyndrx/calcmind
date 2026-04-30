@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "in.mxprime.calcmind.twa",
+    "sha256_cert_fingerprints": [
+      "D4:08:FE:4B:DC:54:81:BA:27:D3:E4:8C:7A:99:45:39:F9:57:CA:B9:39:DB:97:24:FE:69:70:F6:03:B2:0E:56"
+    ]
+  }
+}]

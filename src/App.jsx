@@ -2110,16 +2110,21 @@ export default function App(){
       if (!res.ok) { alert("Quiz not available for this date yet."); return; }
       const data = await res.json();
       if (!data.questions || data.questions.length === 0) { alert("No questions found in this quiz."); return; }
-      // Convert daily JSON format to app's question format
-      const questions = data.questions.map((item, i) => ({
-        id: item.id || `${cat}_${dateKey}_${i}`,
-        question: item.q,
-        options: item.options,
-        ans: item.options[item.ans],
-        explanation: item.exp || "",
-        type: cat === 'ca' ? 'ca' : 'vocab',
-        topic: `daily_${cat}_${dateKey}`,
-      }));
+      // Convert daily JSON format to app's question format (array to object)
+      const questions = data.questions.map((item, i) => {
+        const letters = ['a', 'b', 'c', 'd', 'e'];
+        const optionsObj = {};
+        item.options.forEach((opt, idx) => { optionsObj[letters[idx]] = opt; });
+        return {
+          id: item.id || `${cat}_${dateKey}_${i}`,
+          question: item.q,
+          options: optionsObj,
+          ans: letters[item.ans],
+          explanation: item.exp || "",
+          type: cat === 'ca' ? 'ca' : 'vocab',
+          topic: `daily_${cat}_${dateKey}`,
+        };
+      });
       const dailyKey = `daily_${cat}_${dateKey}`;
       // Inject into VOCAB_DATA at runtime so genVocab can use it
       VOCAB_DATA[dailyKey] = questions;
@@ -2138,15 +2143,20 @@ export default function App(){
       if (!res.ok) { alert("Topic quiz not available yet."); return; }
       const data = await res.json();
       if (!data.questions || data.questions.length === 0) { alert("No questions found in this quiz."); return; }
-      const questions = data.questions.map((item, i) => ({
-        id: item.id || `topic_${topicId}_${fileId}_${i}`,
-        question: item.q,
-        options: item.options,
-        ans: item.options[item.ans],
-        explanation: item.exp || "",
-        type: 'ca', 
-        topic: `topic_${topicId}_${fileId}`,
-      }));
+      const questions = data.questions.map((item, i) => {
+        const letters = ['a', 'b', 'c', 'd', 'e'];
+        const optionsObj = {};
+        item.options.forEach((opt, idx) => { optionsObj[letters[idx]] = opt; });
+        return {
+          id: item.id || `topic_${topicId}_${fileId}_${i}`,
+          question: item.q,
+          options: optionsObj,
+          ans: letters[item.ans],
+          explanation: item.exp || "",
+          type: 'ca', 
+          topic: `topic_${topicId}_${fileId}`,
+        };
+      });
       const topicKey = `topic_${topicId}_${fileId}`;
       VOCAB_DATA[topicKey] = questions;
       const cfg = { topic: topicKey, type: 'vocab', count: questions.length, dailyTitle: `${topicLabel} — ${data.title || fileId}` };

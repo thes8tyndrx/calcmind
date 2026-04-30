@@ -1,0 +1,49 @@
+{
+  "topics": [
+    {
+      "id": "ranking",
+      "label": "Ranking & Reports",
+      "icon": "📊",
+      "color": "#a385e0",
+      "files": [
+        { "id": "jan-2026", "label": "January 2026" },
+        { "id": "feb-2026", "label": "February 2026" },
+        { "id": "mar-2026", "label": "March 2026" },
+        { "id": "apr-2026", "label": "April 2026" }
+      ]
+    },
+    {
+      "id": "banking",
+      "label": "Banking & Economy",
+      "icon": "🏦",
+      "color": "#00b4d8",
+      "files": [
+        { "id": "jan-2026", "label": "January 2026" },
+        { "id": "feb-2026", "label": "February 2026" },
+        { "id": "mar-2026", "label": "March 2026" },
+        { "id": "apr-2026", "label": "April 2026" }
+      ]
+    },
+    {
+      "id": "defence",
+      "label": "Defence & Space",
+      "icon": "🚀",
+      "color": "#47C27D",
+      "files": [
+        { "id": "jan-2026", "label": "January 2026" },
+        { "id": "feb-2026", "label": "February 2026" },
+        { "id": "mar-2026", "label": "March 2026" },
+        { "id": "apr-2026", "label": "April 2026" }
+      ]
+    },
+    {
+      "id": "budget",
+      "label": "Union Budget 2026",
+      "icon": "📈",
+      "color": "#ff6b8a",
+      "files": [
+        { "id": "budget-2026", "label": "Budget 2026 (100 Qs)" }
+      ]
+    }
+  ]
+}

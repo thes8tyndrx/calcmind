@@ -404,8 +404,13 @@ function genPctRatio(lvl){
   return{display,ans:String(Math.round(ans)),hint,type:"pctRatio"};
 }
 
+let lastMensurType = "";
 function genMensuration(lvl){
-  const PI=3.14;
+  const use22_7 = Math.random() < 0.6;
+  const PI = use22_7 ? 22/7 : 3;
+  const piText = use22_7 ? "22/7" : "3";
+  const rGen = () => use22_7 ? rand(1, 4) * 7 : rand(3, 12);
+  
   const byLvl=[
     ["rect_area","rect_peri","sq_area","sq_peri","tri_area"],
     ["rect_area","sq_area","tri_area","rhombus","circle_area","circle_peri"],
@@ -413,7 +418,11 @@ function genMensuration(lvl){
     ["cylinder_vol","cone_vol","sphere_vol","prism_vol","pyramid_vol"],
     ["cylinder_area","cone_area","sphere_area","prism_vol","pyramid_vol","cylinder_vol","cone_vol"],
   ][Math.min(lvl,4)];
-  const s=pick(byLvl);
+  
+  let s=pick(byLvl);
+  if(s === lastMensurType) s=pick(byLvl); // Avoid immediate repeats
+  lastMensurType = s;
+  
   let display,ans,hint;
   const m=(sh,ca,h)=>{display=sh;ans=ca;hint=h;};
   if(s==="rect_area"){const l=rand(3,20),b=rand(2,15);m(`Rectangle\nl=${l}, b=${b}\nArea=?`,l*b,"A=l×b");}
@@ -422,19 +431,19 @@ function genMensuration(lvl){
   else if(s==="sq_peri"){const a=rand(3,25);m(`Square side=${a}\nPerimeter=?`,4*a,"P=4s");}
   else if(s==="tri_area"){const b=rand(2,15)*2,h=rand(2,15);m(`Triangle\nb=${b}, h=${h}\nArea=?`,b*h/2,"A=½bh");}
   else if(s==="rhombus"){const d1=rand(2,15)*2,d2=rand(2,15);m(`Rhombus\nd₁=${d1}, d₂=${d2}\nArea=?`,d1*d2/2,"A=d₁d₂÷2");}
-  else if(s==="circle_area"){const r=rand(3,14);m(`Circle r=${r}\nArea=? (π=3.14)`,Math.round(PI*r*r),"A=πr²");}
-  else if(s==="circle_peri"){const r=rand(3,14);m(`Circle r=${r}\nCircumference=?`,Math.round(2*PI*r),"C=2πr");}
+  else if(s==="circle_area"){const r=rGen();m(`Circle r=${r}\nArea=? (π=${piText})`,Math.round(PI*r*r),"A=πr²");}
+  else if(s==="circle_peri"){const r=rGen();m(`Circle r=${r}\nCircumference=? (π=${piText})`,Math.round(2*PI*r),"C=2πr");}
   else if(s==="trap_area"){const a=rand(3,15),b=rand(5,20),h=(a+b)%2===0?rand(2,10):rand(2,10)*2;m(`Trapezium\na=${a}, b=${b}, h=${h}\nArea=?`,(a+b)*h/2,"A=½(a+b)h");}
   else if(s==="cube_vol"){const a=rand(2,12);m(`Cube side=${a}\nVolume=?`,a*a*a,"V=s³");}
   else if(s==="cuboid_vol"){const l=rand(3,12),b=rand(2,10),h=rand(2,8);m(`Cuboid\n${l}×${b}×${h}\nVolume=?`,l*b*h,"V=l×b×h");}
-  else if(s==="cylinder_vol"){const r=rand(3,9),h=rand(4,14);m(`Cylinder\nr=${r}, h=${h}\nVol=?`,Math.round(PI*r*r*h),"V=πr²h");}
-  else if(s==="cylinder_area"){const r=rand(3,9),h=rand(4,14);m(`Cylinder\nr=${r}, h=${h}\nTotal SA=?`,Math.round(2*PI*r*(r+h)),"2πr(r+h)");}
-  else if(s==="cone_vol"){const r=rand(3,8),h=rand(6,15);m(`Cone\nr=${r}, h=${h}\nVol=?`,Math.round(PI*r*r*h/3),"V=⅓πr²h");}
-  else if(s==="cone_area"){const r=rand(3,8),l=rand(6,15);m(`Cone\nr=${r}, slant=${l}\nSA=?`,Math.round(PI*r*(r+l)),"πr(r+l)");}
-  else if(s==="sphere_vol"){const r=rand(2,8);m(`Sphere r=${r}\nVol=?`,Math.round(4/3*PI*r*r*r),"V=4/3πr³");}
-  else if(s==="sphere_area"){const r=rand(2,8);m(`Sphere r=${r}\nSurface Area=?`,Math.round(4*PI*r*r),"A=4πr²");}
+  else if(s==="cylinder_vol"){const r=rGen(),h=rand(4,14);m(`Cylinder\nr=${r}, h=${h}\nVol=? (π=${piText})`,Math.round(PI*r*r*h),"V=πr²h");}
+  else if(s==="cylinder_area"){const r=rGen(),h=rand(4,14);m(`Cylinder\nr=${r}, h=${h}\nTotal SA=? (π=${piText})`,Math.round(2*PI*r*(r+h)),"2πr(r+h)");}
+  else if(s==="cone_vol"){const r=rGen(),h=rand(2,8)*3;m(`Cone\nr=${r}, h=${h}\nVol=? (π=${piText})`,Math.round(PI*r*r*h/3),"V=⅓πr²h");}
+  else if(s==="cone_area"){const r=rGen(),l=rand(6,15);m(`Cone\nr=${r}, slant=${l}\nSA=? (π=${piText})`,Math.round(PI*r*(r+l)),"πr(r+l)");}
+  else if(s==="sphere_vol"){const r=rand(2,8)*3;m(`Sphere r=${r}\nVol=? (π=3)`,Math.round(4*r*r*r),"V=4/3πr³");}
+  else if(s==="sphere_area"){const r=rGen();m(`Sphere r=${r}\nSurface Area=? (π=${piText})`,Math.round(4*PI*r*r),"A=4πr²");}
   else if(s==="prism_vol"){const b=rand(2,10)*2,h=rand(2,8),l=rand(4,12);m(`Tri. Prism\nb=${b},h=${h},l=${l}\nVol=?`,b*h/2*l,"V=½bhl");}
-  else{const b=rand(3,10),h=rand(4,12);m(`Sq. Pyramid\nbase=${b}, h=${h}\nVol=?`,Math.round(b*b*h/3),"V=⅓b²h");}
+  else{const b=rand(3,10),h=rand(2,8)*3;m(`Sq. Pyramid\nbase=${b}, h=${h}\nVol=?`,Math.round(b*b*h/3),"V=⅓b²h");}
   return{display,ans:String(ans),hint,type:"mensur"};
 }
 
@@ -574,7 +583,7 @@ function genVocab(topic, history = {}){
   return {
     id: q.id,
     display,
-    ans: q.answer,
+    ans: q.ans || q.answer,
     options: q.options,
     explanation: exp,
     exam: q.exam,
@@ -1132,9 +1141,21 @@ function useDailyAvailability(type) {
   return available;
 }
 
-function DailyScreen({ T, onStartDaily }) {
+function DailyScreen({ T, onStartDaily, onStartTopic }) {
+  const [subTab, setSubTab] = useState('daily');
   const caAvail   = useDailyAvailability('ca');
   const vocAvail  = useDailyAvailability('vocab');
+  const [manifest, setManifest] = useState(null);
+  const [expandedTopic, setExpandedTopic] = useState(null);
+
+  useEffect(() => {
+    if (subTab === 'topics' && !manifest) {
+      fetch('/ca-topics/manifest.json')
+        .then(r => r.json())
+        .then(setManifest)
+        .catch(() => setManifest({topics:[]}));
+    }
+  }, [subTab, manifest]);
 
   const formatLabel = (dateStr) => {
     const d = new Date(dateStr + 'T00:00:00');
@@ -1165,58 +1186,110 @@ function DailyScreen({ T, onStartDaily }) {
   return (
     <div className="su" style={{ padding: "14px 15px 24px", display: "flex", flexDirection: "column", gap: 24 }}>
 
-      {/* Current Affairs */}
-      <div>
-        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
-          <span style={{ color: "#a385e0" }}>📅</span> Current Affairs
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-          {caEntries.length === 0
-            ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
-            : caEntries.slice(0, 3).map(([dateKey]) => (
-              <DayRow key={dateKey} dateKey={dateKey} label="Daily CA" icon="📰" cat="ca"
-                accentColor="#9370db" accentBg="linear-gradient(135deg,rgba(147,112,219,0.08),rgba(147,112,219,0.02))"
-                btnColor="#a385e0" />
-            ))
-          }
-        </div>
+      {/* Tabs */}
+      <div style={{display:"flex", background:T.card2, borderRadius:12, padding:4}}>
+        <button onClick={()=>setSubTab('daily')} style={{flex:1, padding:"10px 0", borderRadius:10, background:subTab==='daily'?T.card:"transparent", color:subTab==='daily'?T.text:T.sub, fontWeight:700, fontSize:14, border:`1px solid ${subTab==='daily'?T.border:'transparent'}`}}>Daily</button>
+        <button onClick={()=>setSubTab('topics')} style={{flex:1, padding:"10px 0", borderRadius:10, background:subTab==='topics'?T.card:"transparent", color:subTab==='topics'?T.text:T.sub, fontWeight:700, fontSize:14, border:`1px solid ${subTab==='topics'?T.border:'transparent'}`}}>Topic-Wise CA</button>
       </div>
 
-      {/* Hindu Vocab */}
-      <div>
-        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
-          <span style={{ color: "#00b4d8" }}>📖</span> The Hindu Vocab
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-          {vocEntries.length === 0
-            ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
-            : vocEntries.slice(0, 3).map(([dateKey]) => (
-              <DayRow key={dateKey} dateKey={dateKey} label="The Hindu Vocab" icon="🖋️" cat="vocab"
-                accentColor="#00b4d8" accentBg="linear-gradient(135deg,rgba(0,180,216,0.08),rgba(0,180,216,0.02))"
-                btnColor="#00b4d8" />
-            ))
-          }
-        </div>
-      </div>
+      {subTab === 'daily' && (
+        <>
+          {/* Current Affairs */}
+          <div>
+            <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
+              <span style={{ color: "#a385e0" }}>📅</span> Current Affairs
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {caEntries.length === 0
+                ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
+                : caEntries.slice(0, 3).map(([dateKey]) => (
+                  <DayRow key={dateKey} dateKey={dateKey} label="Daily CA" icon="📰" cat="ca"
+                    accentColor="#9370db" accentBg="linear-gradient(135deg,rgba(147,112,219,0.08),rgba(147,112,219,0.02))"
+                    btnColor="#a385e0" />
+                ))
+              }
+            </div>
+          </div>
 
-      {/* Mega Quizzes */}
-      <div>
-        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
-          <span style={{ color: GOLD }}>🏆</span> Mega Quizzes
+          {/* Hindu Vocab */}
+          <div>
+            <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
+              <span style={{ color: "#00b4d8" }}>📖</span> The Hindu Vocab
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {vocEntries.length === 0
+                ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
+                : vocEntries.slice(0, 3).map(([dateKey]) => (
+                  <DayRow key={dateKey} dateKey={dateKey} label="The Hindu Vocab" icon="🖋️" cat="vocab"
+                    accentColor="#00b4d8" accentBg="linear-gradient(135deg,rgba(0,180,216,0.08),rgba(0,180,216,0.02))"
+                    btnColor="#00b4d8" />
+                ))
+              }
+            </div>
+          </div>
+
+          {/* Mega Quizzes */}
+          <div>
+            <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
+              <span style={{ color: GOLD }}>🏆</span> Mega Quizzes
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+              <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
+                <div style={{ fontSize: 24 }}>📆</div>
+                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text }}>Weekly Quiz</div>
+                <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif" }}>Top 50 Ques</div>
+              </button>
+              <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
+                <div style={{ fontSize: 24 }}>🔥</div>
+                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text }}>Monthly Quiz</div>
+                <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif" }}>Top 100 Ques</div>
+              </button>
+            </div>
+          </div>
+        </>
+      )}
+
+      {subTab === 'topics' && manifest && (
+        <div>
+          <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 16, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
+            <span style={{ color: GOLD }}>🎯</span> Topic-Wise Current Affairs
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {manifest.topics?.length === 0 && <div style={{color:T.muted, fontSize:13}}>No topics available yet.</div>}
+            {manifest.topics?.map(topic => (
+              <div key={topic.id} style={{background:T.card, border:`1px solid ${T.border}`, borderRadius:16, overflow:"hidden"}}>
+                <button 
+                  onClick={() => setExpandedTopic(expandedTopic === topic.id ? null : topic.id)}
+                  style={{width:"100%", padding:"16px", display:"flex", alignItems:"center", gap:14, cursor:"pointer", background:expandedTopic===topic.id?T.card2:"transparent"}}>
+                  <div style={{background:topic.color+"22", width:44, height:44, borderRadius:12, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22}}>
+                    {topic.icon}
+                  </div>
+                  <div style={{flex:1, textAlign:"left"}}>
+                    <div style={{color:T.text, fontWeight:700, fontSize:16, fontFamily:"'Outfit',sans-serif"}}>{topic.label}</div>
+                    <div style={{color:topic.color, fontWeight:600, fontSize:12, marginTop:2}}>{topic.files?.length || 0} Sets Available</div>
+                  </div>
+                  <div style={{color:T.muted, fontSize:18, transform:expandedTopic===topic.id?"rotate(180deg)":"none", transition:"transform 0.2s"}}>▼</div>
+                </button>
+                
+                {expandedTopic === topic.id && (
+                  <div style={{padding:"0 16px 16px 16px", display:"flex", flexDirection:"column", gap:8, borderTop:`1px solid ${T.border}`}}>
+                    <div style={{height:12}} />
+                    {topic.files?.map(f => (
+                      <button key={f.id} onClick={()=>onStartTopic(topic.id, f.id, topic.label)} style={{
+                        background:`linear-gradient(135deg, ${topic.color}15, ${topic.color}03)`, border:`1px solid ${topic.color}33`, borderRadius:10, padding:"14px",
+                        display:"flex", justifyContent:"space-between", alignItems:"center"
+                      }}>
+                        <div style={{color:T.text, fontWeight:600, fontSize:14}}>{f.label}</div>
+                        <div style={{color:topic.color, fontWeight:700, fontSize:12}}>START →</div>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-          <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
-            <div style={{ fontSize: 24 }}>📆</div>
-            <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text }}>Weekly Quiz</div>
-            <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif" }}>Top 50 Ques</div>
-          </button>
-          <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
-            <div style={{ fontSize: 24 }}>🔥</div>
-            <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text }}>Monthly Quiz</div>
-            <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif" }}>Top 100 Ques</div>
-          </button>
-        </div>
-      </div>
+      )}
 
     </div>
   );
@@ -2059,6 +2132,32 @@ export default function App(){
     }
   }
 
+  async function startTopicQuiz(topicId, fileId, topicLabel) {
+    try {
+      const res = await fetch(`/ca-topics/${topicId}/${fileId}.json`);
+      if (!res.ok) { alert("Topic quiz not available yet."); return; }
+      const data = await res.json();
+      if (!data.questions || data.questions.length === 0) { alert("No questions found in this quiz."); return; }
+      const questions = data.questions.map((item, i) => ({
+        id: item.id || `topic_${topicId}_${fileId}_${i}`,
+        question: item.q,
+        options: item.options,
+        ans: item.options[item.ans],
+        explanation: item.exp || "",
+        type: 'ca', 
+        topic: `topic_${topicId}_${fileId}`,
+      }));
+      const topicKey = `topic_${topicId}_${fileId}`;
+      VOCAB_DATA[topicKey] = questions;
+      const cfg = { topic: topicKey, type: 'vocab', count: questions.length, dailyTitle: `${topicLabel} — ${data.title || fileId}` };
+      setModeId('vocab'); setCustomConfig(cfg);
+      setTab('game'); initGame(cfg, 'vocab', 0);
+    } catch(e) {
+      console.error('Topic quiz fetch error:', e);
+      alert('Failed to load quiz. Please try again.');
+    }
+  }
+
   useEffect(()=>{
     if(phase!=="playing")return;
     timerRef.current=setInterval(()=>{
@@ -2111,9 +2210,9 @@ export default function App(){
       });
     }
     let newLvl=lvl;
-    const floor=Math.min(4,Math.floor(nQ/15));
+    const floor=Math.min(4,Math.floor(nQ/6)); // Forces a level up every 6 questions guaranteed
     if(!customConfig){
-      if(ok&&ns>0&&ns%3===0&&lvl<4){newLvl=Math.min(4,lvl+1);setShowLvlChange("up");setTimeout(()=>setShowLvlChange(null),1400);}
+      if(ok&&ns>0&&ns%2===0&&lvl<4){newLvl=Math.min(4,lvl+1);setShowLvlChange("up");setTimeout(()=>setShowLvlChange(null),1400);}
       else if(!ok&&nw>=2&&lvl>0){newLvl=Math.max(floor,lvl-1);setShowLvlChange("down");setTimeout(()=>setShowLvlChange(null),1400);}
       newLvl=Math.max(newLvl,floor);if(newLvl!==lvl)setLvl(newLvl);
     }
@@ -2444,7 +2543,7 @@ export default function App(){
           </div>
         )}
 
-        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz}/>}
+        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz}/>}
 
         {tab==="quiz"&&<QuizScreen T={T} onSelectTopic={(topicId)=>{
           startVocabQuiz(topicId);

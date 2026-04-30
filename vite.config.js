@@ -42,15 +42,15 @@ export default defineConfig({
         ],
         screenshots: [
           {
-            src: '/icon-512.png',
-            sizes: '512x512',
+            src: '/screenshot-wide.png',
+            sizes: '1280x720',
             type: 'image/png',
             form_factor: 'wide',
             label: 'CalcMind Interface'
           },
           {
-            src: '/icon-512.png',
-            sizes: '512x512',
+            src: '/screenshot-narrow.png',
+            sizes: '720x1280',
             type: 'image/png',
             form_factor: 'narrow',
             label: 'CalcMind Mobile View'

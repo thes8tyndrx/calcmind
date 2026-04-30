@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { signInWithRedirect, getRedirectResult, signOut as firebaseSignOut, onAuthStateChanged } from 'firebase/auth';
+import { signInWithPopup, getRedirectResult, signOut as firebaseSignOut, onAuthStateChanged } from 'firebase/auth';
 import { auth, googleProvider } from '../firebase';
 
 export function useAuth() {
@@ -31,8 +31,8 @@ export function useAuth() {
       return;
     }
     try {
-      // Use redirect instead of popup for mobile/PWA stability
-      await signInWithRedirect(auth, googleProvider);
+      // Use popup for better SPA flow and to prevent redirect loops
+      await signInWithPopup(auth, googleProvider);
     } catch (error) {
       console.error("Error signing in with Google", error);
     }

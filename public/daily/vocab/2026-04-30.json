@@ -1,0 +1,38 @@
+{
+  "date": "2026-04-30",
+  "title": "The Hindu Vocab — 30 April 2026",
+  "questions": [
+    {
+      "id": "hv_20260430_1",
+      "q": "**PERFIDIOUS** means:",
+      "options": ["Loyal", "Treacherous", "Generous", "Brave"],
+      "ans": 1,
+      "exp": "PERFIDIOUS = guilty of betrayal or treachery. Synonyms: treacherous, disloyal, faithless.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260430_2",
+      "q": "**ALACRITY** means:",
+      "options": ["Laziness", "Sadness", "Eagerness", "Silence"],
+      "ans": 2,
+      "exp": "ALACRITY = brisk and cheerful readiness. 'She accepted the offer with alacrity.'",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260430_3",
+      "q": "Antonym of **LUCID**:",
+      "options": ["Clear", "Vague", "Bright", "Logical"],
+      "ans": 1,
+      "exp": "LUCID = clear and easy to understand. Its antonym is VAGUE or OBSCURE.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260430_4",
+      "q": "Idiom: **'Bite the bullet'** means:",
+      "options": ["To attack suddenly", "To endure a painful situation", "To make a mistake", "To escape quickly"],
+      "ans": 1,
+      "exp": "'Bite the bullet' = to endure a painful or difficult situation with courage and stoicism.",
+      "type": "idiom"
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useAuth } from './hooks/useAuth';
 import { useLeaderboard } from './hooks/useLeaderboard';
 import VOCAB_DATA from './data/quiz/vocab_data.json';
+import WebApp from '@twa-dev/sdk';
 // ─── Theme ────────────────────────────────────────────────────────────────────
 const GOLD="#C8901C", GREEN="#4DC758", RED="#D95252", BLUE="#4A9EFF", PINK="#FF6B8A";
 const THEMES={
@@ -489,10 +490,34 @@ function genChain(lvl){
   return{display:v.d,ans:String(Math.abs(Math.round(v.a))),type:"chain"};
 }
 
-function genVocab(topic){
+function genVocab(topic, history = {}){
   const questions = VOCAB_DATA[topic];
   if(!questions || questions.length === 0) return {display: "No data", ans: ""};
-  const q = pick(questions);
+  
+  let q;
+  const topicHistory = history[topic] || { seen: [], wrong: {} };
+  const seenIds = topicHistory.seen || [];
+  const wrongIds = topicHistory.wrong || {};
+  
+  let wrongPool = [];
+  for (const [id, count] of Object.entries(wrongIds)) {
+    const wrongQ = questions.find(x => x.id === id);
+    if (wrongQ && !seenIds.includes(id)) {
+      for (let i = 0; i < count; i++) wrongPool.push(wrongQ);
+    }
+  }
+
+  if (wrongPool.length > 0 && Math.random() < 0.4) {
+    q = pick(wrongPool);
+  } else {
+    const unseenQs = questions.filter(x => !seenIds.includes(x.id));
+    if (unseenQs.length > 0) {
+      q = pick(unseenQs);
+    } else {
+      q = pick(questions);
+    }
+  }
+  if (!q) q = pick(questions);
 
   const cleanText = (t) => {
     if(!t) return "";
@@ -521,8 +546,22 @@ function genVocab(topic){
   } else {
     // Normal grammar/sentence topic: underline bold words instead of removing formatting
     display = cleanText(rawDisplay)
-      .replace(/\*\*([^*]+)\*\*/g, "<u>$1</u>")
-      .replace(/\*([^*]+)\*/g, "<u>$1</u>");
+      .replace(/\*\*([^*]+)\*\*/g, (match, p1) => {
+        const t = p1.trim();
+        const top = topic.toLowerCase();
+        if (top.includes('blank')) return '________';
+        if (top.includes('spot') || top.includes('error')) return p1;
+        if (/^\(?[a-dA-D0-9]+\)?\.?$/.test(t) || t === '/' || t === '\\') return t;
+        return `<u>${t}</u>`;
+      })
+      .replace(/\*([^*]+)\*/g, (match, p1) => {
+        const t = p1.trim();
+        const top = topic.toLowerCase();
+        if (top.includes('blank')) return '________';
+        if (top.includes('spot') || top.includes('error')) return p1;
+        if (/^\(?[a-dA-D0-9]+\)?\.?$/.test(t) || t === '/' || t === '\\') return t;
+        return `<u>${t}</u>`;
+      });
   }
 
   let exp = cleanText(q.explanation);
@@ -533,6 +572,7 @@ function genVocab(topic){
   const isGrammar = ['Active Passive', 'Narration', 'Sentence Improvement', 'Spot the Error'].includes(topic);
 
   return {
+    id: q.id,
     display,
     ans: q.answer,
     options: q.options,
@@ -588,13 +628,17 @@ const QUIZ_TOPICS = [...CGL_VOCAB_TOPICS, ...CHSL_VOCAB_TOPICS, ...GRAMMAR_TOPIC
 
 // ─── ANIMAL AVATARS ───────────────────────────────────────────────────────────
 const AVATARS=[
-  {id:"owl",emoji:"🦉",bg:"#2C3558"},
-  {id:"fox",emoji:"🦊",bg:"#7A3410"},
-  {id:"cat",emoji:"🐱",bg:"#4A3060"},
-  {id:"bear",emoji:"🐻",bg:"#3D2B1F"},
-  {id:"lion",emoji:"🦁",bg:"#6B4C00"},
+  {id:"owl",  emoji:"🦉",bg:"#2C3558"},
+  {id:"fox",  emoji:"🦊",bg:"#7A3410"},
+  {id:"cat",  emoji:"🐱",bg:"#4A3060"},
+  {id:"bear", emoji:"🐻",bg:"#3D2B1F"},
+  {id:"lion", emoji:"🦁",bg:"#6B4C00"},
 ];
 function AnimalAvatar({id,size=32}){
+  // Google profile photo
+  if (id && id.startsWith('http')) {
+    return <img src={id} alt="Avatar" style={{width:size,height:size,borderRadius:99,objectFit:"cover",flexShrink:0,border:"2px solid rgba(255,255,255,0.1)"}} />;
+  }
   const a=AVATARS.find(x=>x.id===id)||AVATARS[0];
   return(
     <div style={{width:size,height:size,borderRadius:99,background:a.bg,
@@ -605,6 +649,7 @@ function AnimalAvatar({id,size=32}){
     </div>
   );
 }
+
 
 // ─── Learn sections ───────────────────────────────────────────────────────────
 const LEARN_SECTIONS=[
@@ -747,14 +792,22 @@ function Numpad({onKey,disabled,T}){
   const bg=T?.card2||"#2C2D38";
   const border=T?.border||"rgba(255,255,255,0.09)";
   const tc=disabled?(T?.muted||"rgba(255,255,255,0.2)"):(T?.text||"#F0F0F0");
+  
+  const handleKey = (k) => {
+    if(!disabled) {
+      try { WebApp.HapticFeedback.impactOccurred('light'); } catch(e){}
+      onKey(k);
+    }
+  };
+
   return(
     <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:8}}>
       {["1","2","3","4","5","6","7","8","9"].map(k=>(
-        <button key={k} onClick={()=>!disabled&&onKey(k)} style={{background:bg,border:`1.5px solid ${border}`,borderRadius:13,padding:"14px 0",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:800,fontSize:26,color:tc,cursor:disabled?"default":"pointer"}}>{k}</button>
+        <button key={k} onClick={()=>handleKey(k)} style={{background:bg,border:`1.5px solid ${border}`,borderRadius:13,padding:"14px 0",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:800,fontSize:26,color:tc,cursor:disabled?"default":"pointer"}}>{k}</button>
       ))}
       <div/>
-      <button onClick={()=>!disabled&&onKey("0")} style={{background:bg,border:`1.5px solid ${border}`,borderRadius:13,padding:"14px 0",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:800,fontSize:26,color:tc,cursor:disabled?"default":"pointer"}}>0</button>
-      <button onClick={()=>!disabled&&onKey("⌫")} style={{background:"rgba(200,144,28,0.1)",border:"1.5px solid rgba(200,144,28,0.25)",borderRadius:13,padding:"14px 0",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:800,fontSize:20,color:disabled?"rgba(200,144,28,0.3)":GOLD,cursor:disabled?"default":"pointer"}}>⌫</button>
+      <button onClick={()=>handleKey("0")} style={{background:bg,border:`1.5px solid ${border}`,borderRadius:13,padding:"14px 0",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:800,fontSize:26,color:tc,cursor:disabled?"default":"pointer"}}>0</button>
+      <button onClick={()=>handleKey("⌫")} style={{background:"rgba(200,144,28,0.1)",border:"1.5px solid rgba(200,144,28,0.25)",borderRadius:13,padding:"14px 0",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:800,fontSize:20,color:disabled?"rgba(200,144,28,0.3)":GOLD,cursor:disabled?"default":"pointer"}}>⌫</button>
     </div>
   );
 }
@@ -1058,6 +1111,118 @@ function CustomArithBuilder({T,onStart}){
   );
 }
 
+// ── DAILY SCREEN ──────────────────────────────────────────────────────────────
+function useDailyAvailability(type) {
+  const [available, setAvailable] = useState({});
+  useEffect(() => {
+    const checks = {};
+    const promises = [];
+    for (let i = 0; i < 7; i++) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      const key = d.toISOString().slice(0, 10); // YYYY-MM-DD
+      promises.push(
+        fetch(`/daily/${type}/${key}.json`, { method: 'HEAD' })
+          .then(r => { checks[key] = r.ok; })
+          .catch(() => { checks[key] = false; })
+      );
+    }
+    Promise.all(promises).then(() => setAvailable({ ...checks }));
+  }, [type]);
+  return available;
+}
+
+function DailyScreen({ T, onStartDaily }) {
+  const caAvail   = useDailyAvailability('ca');
+  const vocAvail  = useDailyAvailability('vocab');
+
+  const formatLabel = (dateStr) => {
+    const d = new Date(dateStr + 'T00:00:00');
+    return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'long' });
+  };
+
+  const caEntries  = Object.entries(caAvail).filter(([,ok]) => ok).sort((a,b) => b[0].localeCompare(a[0]));
+  const vocEntries = Object.entries(vocAvail).filter(([,ok]) => ok).sort((a,b) => b[0].localeCompare(a[0]));
+
+  const DayRow = ({ dateKey, label, icon, cat, accentColor, accentBg, btnColor }) => (
+    <button
+      onClick={() => onStartDaily(cat, dateKey)}
+      style={{
+        background: accentBg,
+        border: `1px solid ${accentColor}33`,
+        borderRadius: 12, padding: "14px 16px",
+        display: "flex", justifyContent: "space-between", alignItems: "center",
+        cursor: "pointer", textAlign: "left", width: "100%"
+      }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div style={{ background: `${accentColor}22`, width: 32, height: 32, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16 }}>{icon}</div>
+        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 600, fontSize: 15, color: T.text }}>{label} — {formatLabel(dateKey)}</div>
+      </div>
+      <div style={{ color: btnColor, fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 13, flexShrink: 0 }}>ATTEMPT →</div>
+    </button>
+  );
+
+  return (
+    <div className="su" style={{ padding: "14px 15px 24px", display: "flex", flexDirection: "column", gap: 24 }}>
+
+      {/* Current Affairs */}
+      <div>
+        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
+          <span style={{ color: "#a385e0" }}>📅</span> Current Affairs
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+          {caEntries.length === 0
+            ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
+            : caEntries.slice(0, 3).map(([dateKey]) => (
+              <DayRow key={dateKey} dateKey={dateKey} label="Daily CA" icon="📰" cat="ca"
+                accentColor="#9370db" accentBg="linear-gradient(135deg,rgba(147,112,219,0.08),rgba(147,112,219,0.02))"
+                btnColor="#a385e0" />
+            ))
+          }
+        </div>
+      </div>
+
+      {/* Hindu Vocab */}
+      <div>
+        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
+          <span style={{ color: "#00b4d8" }}>📖</span> The Hindu Vocab
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+          {vocEntries.length === 0
+            ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
+            : vocEntries.slice(0, 3).map(([dateKey]) => (
+              <DayRow key={dateKey} dateKey={dateKey} label="The Hindu Vocab" icon="🖋️" cat="vocab"
+                accentColor="#00b4d8" accentBg="linear-gradient(135deg,rgba(0,180,216,0.08),rgba(0,180,216,0.02))"
+                btnColor="#00b4d8" />
+            ))
+          }
+        </div>
+      </div>
+
+      {/* Mega Quizzes */}
+      <div>
+        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
+          <span style={{ color: GOLD }}>🏆</span> Mega Quizzes
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+          <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
+            <div style={{ fontSize: 24 }}>📆</div>
+            <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text }}>Weekly Quiz</div>
+            <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif" }}>Top 50 Ques</div>
+          </button>
+          <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
+            <div style={{ fontSize: 24 }}>🔥</div>
+            <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text }}>Monthly Quiz</div>
+            <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif" }}>Top 100 Ques</div>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
+
 // ── CUSTOM SCREEN ─────────────────────────────────────────────────────────────
 function CustomScreen({T,onStartTableDrill,onStartSeries,onStartArith}){
   const [section,setSection]=useState(null);
@@ -1068,7 +1233,7 @@ function CustomScreen({T,onStartTableDrill,onStartSeries,onStartArith}){
   ];
   if(!section) return(
     <div className="su" style={{padding:"14px 15px 8px"}}>
-      <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,marginBottom:4,color:T.text}}>
+      <div style={{fontFamily:"'Outfit',sans-serif",fontWeight:700,fontSize:20,marginBottom:4,color:T.text}}>
         Custom <span style={{color:GOLD}}>Practice</span>
       </div>
       <p style={{fontSize:12,color:T.sub,marginBottom:14,lineHeight:1.5}}>
@@ -1374,11 +1539,11 @@ function LearnScreen({T}){
 
   if(!sec) return(
     <div className="su" style={{padding:"14px 15px 8px"}}>
-      <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,marginBottom:4,color:T.text}}>Learn <span style={{color:GOLD}}>Reference</span></div>
+      <div style={{fontFamily:"'Outfit',sans-serif",fontWeight:700,fontSize:18,marginBottom:4,color:T.text}}>Learn & Reference</div>
       <p style={{fontSize:12,color:T.sub,marginBottom:12,lineHeight:1.5}}>Quick study cards. Tap to open.</p>
       <div style={{display:"flex",flexDirection:"column",gap:7}}>
         {LEARN_SECTIONS.map(s=>(
-          <button key={s.id} onClick={()=>setSec(s.id)} style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"13px 15px",textAlign:"left",width:"100%",transition:"border-color 0.15s"}}
+          <button key={s.id} onClick={()=>setSec(s.id)} style={{display:"flex",alignItems:"center",gap:12,background:"linear-gradient(135deg,rgba(200,144,28,0.06),rgba(200,144,28,0.01))",border:`1px solid rgba(200,144,28,0.15)`,borderRadius:13,padding:"13px 15px",textAlign:"left",width:"100%",transition:"border-color 0.15s"}}
           onMouseEnter={e=>e.currentTarget.style.borderColor=GOLD+"44"}
           onMouseLeave={e=>e.currentTarget.style.borderColor=T.border}>
             <div style={{width:40,height:40,borderRadius:10,flexShrink:0,background:"rgba(200,144,28,0.1)",border:"1px solid rgba(200,144,28,0.2)",display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:17,color:GOLD}}>{s.icon}</div>
@@ -1547,10 +1712,17 @@ function QuizScreen({T, onSelectTopic}){
 
 // ── PROFILE MODAL ─────────────────────────────────────────────────────────────
 function ProfileModal({profile,onClose,onSave,T,user,signIn,signOut}){
-  const [name,setName]=useState(profile.name||"");
+  const [name,setName]=useState(profile.name||user?.displayName||"");
   const [goal,setGoal]=useState(profile.goal||"IBPS PO");
-  const [av,setAv]=useState(profile.avatar||"owl");
+  const [av,setAv]=useState(profile.avatar||user?.photoURL||"owl");
   const goals=["IBPS PO","SBI PO","SSC CGL","RBI Grade B","CAT","Other"];
+  
+  useEffect(() => {
+    if (user) {
+      if (!name) setName(user.displayName || "");
+      if (av === "owl" && user.photoURL) setAv(user.photoURL);
+    }
+  }, [user]);
   return(
     <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,0.55)",zIndex:200,display:"flex",alignItems:"flex-end",justifyContent:"center"}} onClick={onClose}>
       <div onClick={e=>e.stopPropagation()} style={{background:T.hdr,borderRadius:"18px 18px 0 0",padding:"16px 18px 32px",width:"100%",maxWidth:480}}>
@@ -1575,6 +1747,11 @@ function ProfileModal({profile,onClose,onSave,T,user,signIn,signOut}){
         </div>
 
         <div style={{display:"flex",gap:10,justifyContent:"center",marginBottom:14}}>
+          {user && user.photoURL && (
+            <button onClick={()=>setAv(user.photoURL)} style={{padding:3,borderRadius:99,cursor:"pointer",border:`2.5px solid ${av===user.photoURL?GOLD:"transparent"}`,background:"none"}}>
+              <AnimalAvatar id={user.photoURL} size={46}/>
+            </button>
+          )}
           {AVATARS.map(a=>(
             <button key={a.id} onClick={()=>setAv(a.id)} style={{padding:3,borderRadius:99,cursor:"pointer",border:`2.5px solid ${av===a.id?GOLD:"transparent"}`,background:"none"}}>
               <AnimalAvatar id={a.id} size={46}/>
@@ -1641,7 +1818,12 @@ export default function App(){
   const [modeId,setModeId]=useState(null);
   const [customConfig,setCustomConfig]=useState(null);
   const [showProfile,setShowProfile]=useState(false);
-  const [profile,setProfile]=useState(()=>LS.get("cm_profile",{name:"",goal:"IBPS PO",avatar:"owl"}));
+  const [profile,setProfile]=useState(()=>{
+    const saved = LS.get("cm_profile", null);
+    if (saved && saved.name) return saved;
+    const twaName = WebApp.initDataUnsafe?.user?.first_name || "";
+    return saved ? { ...saved, name: saved.name || twaName } : {name: twaName, goal:"IBPS PO", avatar:"owl"};
+  });
   const [showBlitz,setShowBlitz]=useState(false);
   const [confirmReset,setConfirmReset]=useState(false);
   const [confirmExit,setConfirmExit]=useState(false);
@@ -1662,21 +1844,47 @@ export default function App(){
   const [sessionMax,setSessionMax]=useState(100);
   const [showLvlChange,setShowLvlChange]=useState(null);
   const [totalXP,setTotalXP]=useState(()=>LS.get("cm_xp",0));
+  const [xpMaths,setXpMaths]=useState(()=>LS.get("cm_xp_maths",0));
+  const [xpVocab,setXpVocab]=useState(()=>LS.get("cm_xp_vocab",0));
+  const [xpCA,setXpCA]=useState(()=>LS.get("cm_xp_ca",0));
+  const [rankCategory,setRankCategory]=useState("global");
   const [blitzBests,setBlitzBests]=useState(()=>LS.get("cm_blitz",{}));
   const [modeStats,setModeStats]=useState(()=>{
     const saved=LS.get("cm_stats",null);
     if(saved)return saved;
     const s={};MODES.forEach(m=>{s[m.id]={attempts:0,correct:0,totalTime:0,avgTime:0};});return s;
   });
+  const [vocabState,setVocabState]=useState(()=>LS.get("cm_vocab_state",{}));
+  const [skipTimer,setSkipTimer]=useState(0);
 
   // ── Persist on change ──────────────────────────────────────────────────────
-  useEffect(()=>LS.set("cm_dark",dark),[dark]);
+  useEffect(()=>{
+    LS.set("cm_dark",dark);
+    try {
+      const t = THEMES[dark ? "dark" : "light"];
+      WebApp.setHeaderColor(t.hdr);
+      WebApp.setBackgroundColor(t.bg);
+    } catch(e) {}
+  },[dark]);
   useEffect(()=>LS.set("cm_profile",profile),[profile]);
   useEffect(()=>LS.set("cm_xp",totalXP),[totalXP]);
+  useEffect(()=>LS.set("cm_xp_maths",xpMaths),[xpMaths]);
+  useEffect(()=>LS.set("cm_xp_vocab",xpVocab),[xpVocab]);
+  useEffect(()=>LS.set("cm_xp_ca",xpCA),[xpCA]);
   useEffect(()=>LS.set("cm_stats",modeStats),[modeStats]);
   useEffect(()=>LS.set("cm_blitz",blitzBests),[blitzBests]);
+  useEffect(()=>LS.set("cm_vocab_state",vocabState),[vocabState]);
 
-  // ── Back Button Handling ──────────────────────────────────────────────────
+  // ── Telegram & Back Button Handling ─────────────────────────────────────────
+  useEffect(() => {
+    try {
+      WebApp.ready();
+      WebApp.expand();
+    } catch (e) {
+      // Ignored for non-telegram environments
+    }
+  }, []);
+
   useEffect(() => {
     const handlePopState = (e) => {
       if (tab !== 'home' || showBlitz) {
@@ -1684,22 +1892,42 @@ export default function App(){
         setTab('home');
         setPhase('idle');
         setShowBlitz(false);
-        // Stay on home, don't exit
         window.history.pushState({ tab: 'home' }, '');
       } else {
-        // We are already on home, show exit prompt
         setConfirmExit(true);
         window.history.pushState({ tab: 'home' }, '');
       }
     };
 
-    // Initial state
+    const handleTelegramBack = () => {
+      stopAll();
+      setTab('home');
+      setPhase('idle');
+      setShowBlitz(false);
+    };
+
+    try {
+      if (tab !== 'home' || showBlitz) {
+        WebApp.BackButton.show();
+      } else {
+        WebApp.BackButton.hide();
+      }
+      WebApp.BackButton.onClick(handleTelegramBack);
+    } catch (e) {
+      // Ignored
+    }
+
     if (window.history.state?.tab !== 'home') {
       window.history.pushState({ tab: 'home' }, '');
     }
 
     window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      try {
+        WebApp.BackButton.offClick(handleTelegramBack);
+      } catch (e) {}
+    };
   }, [tab, showBlitz, phase]);
 
   const timerRef=useRef(null);
@@ -1750,7 +1978,7 @@ export default function App(){
         return genSeries(2);
       }
       if(cc.type==="arith")return cc.gen();
-      if(cc.type==="vocab")return genVocab(cc.topic);
+      if(cc.type==="vocab")return genVocab(cc.topic, vocabState);
     }
     return MODES.find(m=>m.id===(mid??modeId))?.gen(l??lvl)??genArith(0);
   }
@@ -1803,6 +2031,34 @@ export default function App(){
     setTab("game");initGame(cfg,"vocab",0);
   }
 
+  async function startDailyQuiz(cat, dateKey) {
+    try {
+      const res = await fetch(`/daily/${cat}/${dateKey}.json`);
+      if (!res.ok) { alert("Quiz not available for this date yet."); return; }
+      const data = await res.json();
+      if (!data.questions || data.questions.length === 0) { alert("No questions found in this quiz."); return; }
+      // Convert daily JSON format to app's question format
+      const questions = data.questions.map((item, i) => ({
+        id: item.id || `${cat}_${dateKey}_${i}`,
+        question: item.q,
+        options: item.options,
+        ans: item.options[item.ans],
+        explanation: item.exp || "",
+        type: cat === 'ca' ? 'ca' : 'vocab',
+        topic: `daily_${cat}_${dateKey}`,
+      }));
+      const dailyKey = `daily_${cat}_${dateKey}`;
+      // Inject into VOCAB_DATA at runtime so genVocab can use it
+      VOCAB_DATA[dailyKey] = questions;
+      const cfg = { topic: dailyKey, type: 'vocab', count: questions.length, dailyTitle: data.title };
+      setModeId('vocab'); setCustomConfig(cfg);
+      setTab('game'); initGame(cfg, 'vocab', 0);
+    } catch(e) {
+      console.error('Daily quiz fetch error:', e);
+      alert('Failed to load quiz. Please try again.');
+    }
+  }
+
   useEffect(()=>{
     if(phase!=="playing")return;
     timerRef.current=setInterval(()=>{
@@ -1825,6 +2081,10 @@ export default function App(){
     setStreak(ns);setWrongStreak(nw);setBestStreak(b=>Math.max(b,ns));
     
     // Haptic feedback
+    try {
+      if(ok) WebApp.HapticFeedback.notificationOccurred('success');
+      else WebApp.HapticFeedback.notificationOccurred('error');
+    } catch(e) {}
     if(typeof navigator!=="undefined"&&navigator.vibrate){
       if(ok) navigator.vibrate(40);
       else navigator.vibrate([80, 50, 80]);
@@ -1833,11 +2093,15 @@ export default function App(){
     setScore({c:nc,w:nWr});
     const nH=[...hist,{ok}];setHist(nH);
     const nQ=qCount+1;setQCount(nQ);
-    if(ok) {
-      const xpGained = Math.round(LVL_XP[Math.min(lvl,4)]*(ns>=5?2:ns>=3?1.5:1));
-      setTotalXP(x=>x+xpGained);
-      submitScore(user, xpGained);
-    }
+    const xpChange = ok ? 1 : -0.25;
+    const cat = q?.type === "vocab" ? 'vocab' : q?.type === "ca" ? 'ca' : 'maths';
+    
+    setTotalXP(x => Math.max(0, x + xpChange));
+    if (cat === 'vocab') setXpVocab(x => Math.max(0, x + xpChange));
+    else if (cat === 'ca') setXpCA(x => Math.max(0, x + xpChange));
+    else setXpMaths(x => Math.max(0, x + xpChange));
+    
+    submitScore(user, xpChange, cat);
     if(!customConfig&&modeId){
       setModeStats(prev=>{
         const ms={...prev[modeId]};if(!ms)return prev;
@@ -1853,15 +2117,52 @@ export default function App(){
       else if(!ok&&nw>=2&&lvl>0){newLvl=Math.max(floor,lvl-1);setShowLvlChange("down");setTimeout(()=>setShowLvlChange(null),1400);}
       newLvl=Math.max(newLvl,floor);if(newLvl!==lvl)setLvl(newLvl);
     }
-    nextRef.current=setTimeout(()=>{
-      if(nQ>=sessionMax){setTab("result");setPhase("idle");}
-      else nextQ(modeId,newLvl);
-    },isVocab?10000:(ok?600:1050));
+
+    if (q?.type === "vocab") {
+      setVocabState(prev => {
+        const tState = prev[q.topic] || { seen: [], wrong: {} };
+        let newSeen = [...tState.seen, q.id];
+        if (newSeen.length > 20) newSeen.shift();
+        let newWrong = { ...tState.wrong };
+        if (!ok) {
+          newWrong[q.id] = (newWrong[q.id] || 0) + 2;
+        } else if (newWrong[q.id]) {
+          newWrong[q.id]--;
+          if (newWrong[q.id] <= 0) delete newWrong[q.id];
+        }
+        return { ...prev, [q.topic]: { seen: newSeen, wrong: newWrong } };
+      });
+      setSkipTimer(5);
+    } else {
+      nextRef.current=setTimeout(()=>{
+        if(nQ>=sessionMax){setTab("result");setPhase("idle");}
+        else nextQ(modeId,newLvl);
+      },ok?600:1050);
+    }
   }
+
+  useEffect(() => {
+    let int;
+    if (phase === "feedback" && q?.type === "vocab" && skipTimer > 0) {
+      int = setInterval(() => {
+        setSkipTimer(s => {
+          if (s <= 1) {
+            clearInterval(int);
+            if (qCount >= sessionMax) { setTab("result"); setPhase("idle"); }
+            else nextQ(modeId, lvl);
+            return 0;
+          }
+          return s - 1;
+        });
+      }, 1000);
+    }
+    return () => clearInterval(int);
+  }, [phase, q, skipTimer, qCount, sessionMax, modeId, lvl]);
 
   function skipFeedback(){
     if(phase!=="feedback")return;
     stopAll();
+    setSkipTimer(0);
     if(qCount>=sessionMax){setTab("result");setPhase("idle");}
     else nextQ(modeId,lvl);
   }
@@ -1960,13 +2261,13 @@ export default function App(){
       <div style={{padding:"10px 15px",background:T.hdr,borderBottom:`1px solid ${T.border}`,display:"flex",alignItems:"center",justifyContent:"space-between",flexShrink:0,boxShadow:dark?"none":"0 1px 8px rgba(0,0,0,0.06)"}}>
         <div style={{display:"flex",alignItems:"center",gap:8}}>
           <button onClick={()=>setShowProfile(true)} style={{background:"none",padding:0,cursor:"pointer",flexShrink:0}}>
-            <AnimalAvatar id={profile.avatar||"owl"} size={34}/>
+            <AnimalAvatar id={profile.avatar||user?.photoURL||"owl"} size={34}/>
           </button>
           <div>
             <button onClick={()=>{if(tab==="game"){stopAll();setTab("home");setPhase("idle");}}} style={{background:"none",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,letterSpacing:-0.5,color:T.text,padding:0}}>
               <span>Calc</span><span style={{color:GOLD}}>Mind</span>
             </button>
-            {profile.name&&<div style={{fontSize:9,color:T.muted,fontWeight:600,marginTop:-1}}>{profile.name} · {profile.goal}</div>}
+            <div style={{fontSize:9,color:T.muted,fontWeight:600,marginTop:-1}}>{profile.name||user?.displayName||"Guest"} · {profile.goal||"IBPS PO"}</div>
           </div>
         </div>
         <div style={{display:"flex",alignItems:"center",gap:7}}>
@@ -2006,7 +2307,7 @@ export default function App(){
       {/* BOTTOM NAV */}
       {tab!=="game"&&(
         <div style={{position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:480,background:T.navBg,borderTop:`1px solid ${T.border}`,display:"flex",zIndex:20,boxShadow:dark?"none":"0 -1px 8px rgba(0,0,0,0.05)"}}>
-          {[["home","⊞","Practice"],["custom","✎","Custom"],["learn","◎","Learn"],["quiz","✍","Quiz"],["rank","★","Rank"]].map(([id,icon,label])=>(
+          {[["home","⊞","Practice"],["custom","✎","Custom"],["daily","📅","Daily"],["quiz","✍","Quiz"],["rank","★","Rank"]].map(([id,icon,label])=>(
             <button key={id} onClick={()=>setTab(id)} style={{flex:1,padding:"10px 0 8px",background:"none",display:"flex",flexDirection:"column",alignItems:"center",gap:2}}>
               <span style={{fontSize:16,color:tab===id?GOLD:T.muted}}>{icon}</span>
               <span style={{fontSize:8,fontWeight:700,letterSpacing:0.5,color:tab===id?GOLD:T.muted}}>{label.toUpperCase()}</span>
@@ -2062,6 +2363,36 @@ export default function App(){
               <span style={{color:GOLD,fontSize:18}}>›</span>
             </button>
 
+            {/* Daily CA banner */}
+            <button onClick={()=>setTab("daily")} style={{
+              width:"100%",display:"flex",alignItems:"center",gap:12,marginBottom:11,
+              background:"linear-gradient(135deg,rgba(147,112,219,0.15),rgba(147,112,219,0.05))",
+              border:`1px solid rgba(147,112,219,0.3)`,borderRadius:14,padding:"12px 14px",
+              textAlign:"left",transition:"opacity 0.15s",
+            }}>
+              <div style={{fontSize:24}}>📰</div>
+              <div style={{flex:1}}>
+                <div style={{fontWeight:700,fontSize:13,color:"#a385e0"}}>Current Affairs</div>
+                <div style={{fontSize:10,color:T.sub,marginTop:1}}>Latest exam-oriented affairs — 29 April</div>
+              </div>
+              <span style={{color:"#a385e0",fontSize:18}}>›</span>
+            </button>
+
+            {/* Daily Vocab banner */}
+            <button onClick={()=>setTab("daily")} style={{
+              width:"100%",display:"flex",alignItems:"center",gap:12,marginBottom:11,
+              background:"linear-gradient(135deg,rgba(0,180,216,0.15),rgba(0,180,216,0.05))",
+              border:`1px solid rgba(0,180,216,0.3)`,borderRadius:14,padding:"12px 14px",
+              textAlign:"left",transition:"opacity 0.15s",
+            }}>
+              <div style={{fontSize:24}}>📖</div>
+              <div style={{flex:1}}>
+                <div style={{fontWeight:700,fontSize:13,color:"#00b4d8"}}>The Hindu Vocab</div>
+                <div style={{fontSize:10,color:T.sub,marginTop:1}}>Daily editorial vocabulary — 29 April</div>
+              </div>
+              <span style={{color:"#00b4d8",fontSize:18}}>›</span>
+            </button>
+
             {weakModes.length>0&&(
               <div style={{background:T.weakBg,border:`1px solid ${T.weakBorder}`,borderRadius:12,padding:"10px 12px",marginBottom:11}}>
                 <div style={{fontSize:9,fontWeight:800,letterSpacing:1.5,color:RED,marginBottom:6}}>NEEDS PRACTICE</div>
@@ -2103,13 +2434,17 @@ export default function App(){
 
         {/* ── CUSTOM ── */}
         {tab==="custom"&&(
-          <CustomScreen T={T}
-            onStartTableDrill={startCustomTableGame}
-            onStartSeries={startCustomSeriesGame}
-            onStartArith={startCustomArithGame}/>
+          <div style={{display:"flex",flexDirection:"column",gap:24,paddingBottom:20}}>
+            <CustomScreen T={T}
+              onStartTableDrill={startCustomTableGame}
+              onStartSeries={startCustomSeriesGame}
+              onStartArith={startCustomArithGame}/>
+            <div style={{height:1,background:T.border,margin:"0 15px"}}/>
+            <LearnScreen T={T}/>
+          </div>
         )}
 
-        {tab==="learn"&&<LearnScreen T={T}/>}
+        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz}/>}
 
         {tab==="quiz"&&<QuizScreen T={T} onSelectTopic={(topicId)=>{
           startVocabQuiz(topicId);
@@ -2120,13 +2455,31 @@ export default function App(){
         {/* ── RANK & LEADERBOARD ── */}
         {tab==="rank"&&(
           <div className="su" style={{padding:"14px 15px 8px"}}>
+            {!user && (
+              <div style={{background:T.card2, border:`1px solid ${T.border}`, borderRadius:12, padding:"12px", marginBottom:14, textAlign:'center'}}>
+                <div style={{fontSize:13, fontWeight:700, color:T.text, marginBottom:4}}>Log in to join the leaderboard</div>
+                <div style={{fontSize:11, color:T.sub, marginBottom:10}}>Compare your XP with other players around the world.</div>
+                <button onClick={signIn} style={{padding:"8px 16px", background:GOLD, borderRadius:8, color:"#111", fontSize:12, fontWeight:800}}>SIGN IN</button>
+              </div>
+            )}
+            
             {/* Stats moved here */}
             <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,marginBottom:11,color:T.text}}>Your <span style={{color:GOLD}}>Stats</span></div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:7,marginBottom:11}}>
-              {[[totalXP,"Total XP",GOLD],[rank.label,"Rank",rank.color],[bestStreak,"Best Streak",GREEN],[Object.values(modeStats).reduce((a,s)=>a+s.attempts,0),"Solved",BLUE]].map(([v,l,c])=>(
+              {[[totalXP.toFixed(2),"Total XP",GOLD],[rank.label,"Rank",rank.color],[bestStreak,"Best Streak",GREEN],[Object.values(modeStats).reduce((a,s)=>a+s.attempts,0),"Solved",BLUE]].map(([v,l,c])=>(
                 <div key={l} style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:12,padding:"12px 10px",boxShadow:dark?"none":"0 1px 5px rgba(0,0,0,0.05)"}}>
                   <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:26,color:c}}>{v}</div>
                   <div style={{fontSize:9,color:T.sub,fontWeight:700,letterSpacing:0.5,marginTop:2}}>{l.toUpperCase()}</div>
+                </div>
+              ))}
+            </div>
+
+            <div style={{fontSize:9,color:T.muted,letterSpacing:2,fontWeight:700,marginBottom:6}}>CATEGORY XP</div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:7,marginBottom:14}}>
+              {[[xpMaths.toFixed(2),"Maths XP",GOLD],[xpVocab.toFixed(2),"Vocab XP","#00b4d8"],[xpCA.toFixed(2),"CA XP","#a385e0"]].map(([v,l,c])=>(
+                <div key={l} style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:10,padding:"9px 8px",textAlign:"center"}}>
+                  <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:18,color:c}}>{v}</div>
+                  <div style={{fontSize:8,color:T.sub,fontWeight:700,letterSpacing:0.5,marginTop:2}}>{l.toUpperCase()}</div>
                 </div>
               ))}
             </div>
@@ -2175,16 +2528,21 @@ export default function App(){
 
             <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12, borderTop:`1px solid ${T.border}`, paddingTop:16}}>
               <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:T.text}}>Global <span style={{color:GOLD}}>Leaderboard</span></div>
-              <button onClick={refresh} style={{background:T.inputBg, border:`1px solid ${T.border}`, borderRadius:8, padding:"4px 8px", fontSize:12, color:T.sub}}>↻ Refresh</button>
+              <button onClick={()=>refresh(rankCategory)} style={{background:T.inputBg, border:`1px solid ${T.border}`, borderRadius:8, padding:"4px 8px", fontSize:12, color:T.sub}}>↻ Refresh</button>
             </div>
             
-            {!user && (
-              <div style={{background:T.card2, border:`1px solid ${T.border}`, borderRadius:12, padding:"12px", marginBottom:14, textAlign:'center'}}>
-                <div style={{fontSize:13, fontWeight:700, color:T.text, marginBottom:4}}>Log in to join the leaderboard</div>
-                <div style={{fontSize:11, color:T.sub, marginBottom:10}}>Compare your XP with other players around the world.</div>
-                <button onClick={signIn} style={{padding:"8px 16px", background:GOLD, borderRadius:8, color:"#111", fontSize:12, fontWeight:800}}>SIGN IN</button>
-              </div>
-            )}
+            <div style={{display:'flex', gap:6, marginBottom:16, overflowX:'auto', paddingBottom:4, scrollbarWidth:'none'}}>
+              {[
+                {id:'global', label:'Global', icon:'🏆'},
+                {id:'maths', label:'Maths', icon:'⊞'},
+                {id:'vocab', label:'Vocab', icon:'📖'},
+                {id:'ca', label:'CA', icon:'📰'}
+              ].map(cat => (
+                <button key={cat.id} onClick={()=>{setRankCategory(cat.id);refresh(cat.id);}} style={{background:rankCategory===cat.id?GOLD:T.card, border:`1px solid ${rankCategory===cat.id?GOLD:T.border}`, borderRadius:8, padding:"6px 12px", fontSize:12, fontWeight:700, color:rankCategory===cat.id?"#111":T.text, flexShrink:0, display:'flex', alignItems:'center', gap:4}}>
+                  <span>{cat.icon}</span> {cat.label}
+                </button>
+              ))}
+            </div>
 
             <div style={{display:'flex', flexDirection:'column', gap:6, marginBottom:16}}>
               {leaderboard.length === 0 ? (
@@ -2202,7 +2560,7 @@ export default function App(){
                         <div style={{fontWeight:700, fontSize:13, color:isMe?GOLD:T.text, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{player.name}</div>
                         <div style={{fontSize:10, color:rObj.color, marginTop:1}}>{rObj.label}</div>
                       </div>
-                      <div style={{fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900, fontSize:18, color:T.text}}>{player.xp} <span style={{fontSize:9, color:T.sub, fontWeight:500}}>XP</span></div>
+                      <div style={{fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900, fontSize:18, color:T.text}}>{rankCategory==='global' ? (player.xp||0).toFixed(2) : (player[`xp_${rankCategory}`]||0).toFixed(2)} <span style={{fontSize:9, color:T.sub, fontWeight:500}}>XP</span></div>
                     </div>
                   );
                 })
@@ -2283,7 +2641,7 @@ export default function App(){
                 <div onClick={skipFeedback} className="su" style={{marginTop:16,background:T.card2,border:`1.5px solid ${feedback==="correct"?GREEN:RED}`,borderRadius:16,padding:"18px 20px",cursor:"pointer",animation:"fadeIn 0.3s ease-out"}}>
                   <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10,borderBottom:`1px solid ${feedback==="correct"?GREEN:RED}22`,paddingBottom:8}}>
                     <span style={{fontWeight:900,fontSize:14,color:feedback==="correct"?GREEN:RED,letterSpacing:1.2}}>{feedback==="correct"?"✓ EXPLANATION":"✗ EXPLANATION"}</span>
-                    <span style={{fontSize:10,color:T.muted,fontWeight:800,fontFamily:"'Barlow Condensed',sans-serif"}}>TAP TO SKIP →</span>
+                    <span style={{fontSize:10,color:T.muted,fontWeight:800,fontFamily:"'Barlow Condensed',sans-serif"}}>TAP TO SKIP ({skipTimer}s) →</span>
                   </div>
                   <div style={{fontSize:15.5,color:T.text,lineHeight:1.7,whiteSpace:"pre-line",fontWeight:500}}>{q.explanation}</div>
                 </div>

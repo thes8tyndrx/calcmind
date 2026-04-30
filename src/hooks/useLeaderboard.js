@@ -7,7 +7,7 @@ export function useLeaderboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const fetchLeaderboard = useCallback(async () => {
+  const fetchLeaderboard = useCallback(async (category = 'global') => {
     if (!db) {
       setLoading(false);
       return;
@@ -16,8 +16,9 @@ export function useLeaderboard() {
     try {
       setLoading(true);
       const playersRef = collection(db, 'players');
-      // Fetch top 20 players by XP
-      const q = query(playersRef, orderBy('xp', 'desc'), limit(20));
+      // Fetch top 20 players by specific category XP or global XP
+      const field = category === 'global' ? 'xp' : `xp_${category}`;
+      const q = query(playersRef, orderBy(field, 'desc'), limit(20));
       const querySnapshot = await getDocs(q);
       
       const players = querySnapshot.docs.map(doc => ({
@@ -35,32 +36,34 @@ export function useLeaderboard() {
     }
   }, []);
 
-  useEffect(() => {
-    fetchLeaderboard();
-  }, [fetchLeaderboard]);
-
-  const submitScore = async (user, xpGained) => {
+  const submitScore = async (user, xpChange, category = 'maths') => {
     if (!db || !user) return;
     
     try {
       const userRef = doc(db, 'players', user.uid);
       const userSnap = await getDoc(userRef);
       
-      let newXp = xpGained;
+      let newXp = xpChange;
+      let catXp = xpChange;
       let name = user.displayName || 'Anonymous Player';
       let avatar = user.photoURL || '';
       
       if (userSnap.exists()) {
         const data = userSnap.data();
-        newXp += data.xp || 0;
+        newXp = Math.max(0, (data.xp || 0) + xpChange);
+        catXp = Math.max(0, (data[`xp_${category}`] || 0) + xpChange);
         name = data.name || name;
         avatar = data.avatar || avatar;
+      } else {
+        newXp = Math.max(0, newXp);
+        catXp = Math.max(0, catXp);
       }
       
       await setDoc(userRef, {
         name,
         avatar,
         xp: newXp,
+        [`xp_${category}`]: catXp,
         lastActive: new Date().toISOString()
       }, { merge: true });
       

@@ -1,0 +1,28 @@
+{
+  "exams": [
+    {
+      "id": "cgl-2024",
+      "label": "SSC CGL 2024",
+      "icon": "📘",
+      "topics": [
+        { "id": "synonyms",  "label": "Synonyms",             "icon": "🔤" },
+        { "id": "antonyms",  "label": "Antonyms",             "icon": "🔁" },
+        { "id": "idioms",    "label": "Idioms & Phrases",     "icon": "💬" },
+        { "id": "oneword",   "label": "One Word Substitution","icon": "📝" },
+        { "id": "spelling",  "label": "Spelling Check",       "icon": "✅" },
+        { "id": "spoterror", "label": "Spot the Error",       "icon": "🔍" }
+      ]
+    },
+    {
+      "id": "chsl-2024",
+      "label": "SSC CHSL 2024",
+      "icon": "📗",
+      "topics": [
+        { "id": "synonyms",  "label": "Synonyms",             "icon": "🔤" },
+        { "id": "antonyms",  "label": "Antonyms",             "icon": "🔁" },
+        { "id": "idioms",    "label": "Idioms & Phrases",     "icon": "💬" },
+        { "id": "oneword",   "label": "One Word Substitution","icon": "📝" }
+      ]
+    }
+  ]
+}

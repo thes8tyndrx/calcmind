@@ -1,0 +1,246 @@
+{
+  "date": "2026-04-28",
+  "title": "Daily Current Affairs — 28 April 2026",
+  "questions": [
+    {
+      "id": "ca_20260428_1",
+      "q": "The 5-year biodiversity project launched by MoEFCC and NBA is titled?",
+      "options": [
+        "Strengthening Institutional Capacities for Securing Biodiversity Conservation Commitments",
+        "National Biodiversity Governance and Community Conservation Project",
+        "Grassroots Biodiversity Integration and Livelihood Programme",
+        "Biodiversity Management and Panchayat Empowerment Scheme"
+      ],
+      "ans": 0,
+      "exp": "MoEFCC and NBA launched the project titled 'Strengthening Institutional Capacities for Securing Biodiversity Conservation Commitments' in April 2026 for Sathyamangalam (TN) and Garo Hills (Meghalaya)."
+    },
+    {
+      "id": "ca_20260428_2",
+      "q": "The MoEFCC-NBA biodiversity project carries a grant of USD 4.88 million and is supported by GEF and which other organisation?",
+      "options": [
+        "World Bank",
+        "UNDP",
+        "Asian Development Bank",
+        "IMF"
+      ],
+      "ans": 1,
+      "exp": "The project (2025–2030) is supported by the Global Environment Facility (GEF) and the United Nations Development Programme (UNDP) with a grant of USD 4.88 million."
+    },
+    {
+      "id": "ca_20260428_3",
+      "q": "Six border villages were included under Vibrant Villages Programme Phase II in which district of Jammu & Kashmir?",
+      "options": [
+        "Rajouri",
+        "Poonch",
+        "Udhampur",
+        "Kathua"
+      ],
+      "ans": 3,
+      "exp": "Six villages — Bobiya, Kadyala, Gajnal, Karol Krishna, Rathua, and Gujjar Chak — in Kathua district, J&K, were included under VVP-II in April 2026."
+    },
+    {
+      "id": "ca_20260428_4",
+      "q": "Vibrant Villages Programme Phase II (VVP-II) was approved with a total budget outlay of:",
+      "options": [
+        "Rs 4,800 crore",
+        "Rs 5,200 crore",
+        "Rs 6,839 crore",
+        "Rs 8,100 crore"
+      ],
+      "ans": 2,
+      "exp": "VVP-II was approved in April 2025 with Rs 6,839 crore outlay, covering all International Land Borders (except the northern border already under VVP-I)."
+    },
+    {
+      "id": "ca_20260428_5",
+      "q": "DRDO unveiled Advanced Armoured Platforms under which programme to replace the BMP-2K Sarath IFVs?",
+      "options": [
+        "FORCE programme",
+        "FICV programme",
+        "APEX programme",
+        "MAIT programme"
+      ],
+      "ans": 1,
+      "exp": "The platforms were developed under the Future Infantry Combat Vehicle (FICV) programme at VRDE lab, Ahilyanagar, Maharashtra, unveiled by DRDO Chairman Dr. Samir V Kamat."
+    },
+    {
+      "id": "ca_20260428_6",
+      "q": "The Advanced Armoured Platforms unveiled by DRDO are manufactured by which two companies?",
+      "options": [
+        "HAL and BEL",
+        "TASL and BFL",
+        "L&T and BEML",
+        "Mahindra Defence and Tata Motors"
+      ],
+      "ans": 1,
+      "exp": "The platforms are produced by Tata Advanced Systems Limited (TASL) and Bharat Forge Limited (BFL), with support from MSMEs."
+    },
+    {
+      "id": "ca_20260428_7",
+      "q": "IITM Pune commissioned an X-Band Dual-Polarization Doppler Weather Radar at Mahabaleshwar under which initiative?",
+      "options": [
+        "Mission Vristi",
+        "Mission Bhoomi",
+        "Mission Mausam",
+        "Mission Vayu"
+      ],
+      "ans": 2,
+      "exp": "The radar at HACPL, Mahabaleshwar (~1,400 m altitude) is part of Mission Mausam, the government's initiative to make India a Weather-Ready Nation."
+    },
+    {
+      "id": "ca_20260428_8",
+      "q": "The SMILE–Beggary Survey Mobile App was launched by MSJE during Chintan Shivir 2026 held in which city?",
+      "options": [
+        "Jaipur",
+        "Lucknow",
+        "Bhopal",
+        "Chandigarh"
+      ],
+      "ans": 3,
+      "exp": "The MSJE launched the SMILE–Beggary Survey Mobile App during the Chintan Shivir held in Chandigarh (Punjab) from 24–26 April 2026."
+    },
+    {
+      "id": "ca_20260428_9",
+      "q": "As per Knight Frank's Wealth Report 2026, India ranked 6th in UHNWIs with how many ultra-high net-worth individuals?",
+      "options": [
+        "15,432",
+        "17,891",
+        "19,877",
+        "22,340"
+      ],
+      "ans": 2,
+      "exp": "India had 19,877 UHNWIs in 2026, accounting for 2.8% of the world's ultra-wealthy population, as per Knight Frank's 20th edition of The Wealth Report 2026."
+    },
+    {
+      "id": "ca_20260428_10",
+      "q": "In Knight Frank's Wealth Report 2026, India ranked 3rd globally in the number of billionaires with how many?",
+      "options": [
+        "185",
+        "207",
+        "231",
+        "260"
+      ],
+      "ans": 1,
+      "exp": "India had 207 billionaires in 2026, making it 3rd globally after USA (914) and China (485), with a 58% increase over the last 5 years."
+    },
+    {
+      "id": "ca_20260428_11",
+      "q": "Mission Jagrook, a nationwide investor awareness campaign, was launched at the foundation day of which regulatory body?",
+      "options": [
+        "RBI",
+        "IRDAI",
+        "SEBI",
+        "PFRDA"
+      ],
+      "ans": 2,
+      "exp": "Union Minister Nirmala Sitharaman launched Mission Jagrook at SEBI's 38th Foundation Day in Mumbai, aimed at protecting retail investors from misinformation and fraud."
+    },
+    {
+      "id": "ca_20260428_12",
+      "q": "RBI approved the re-appointment of B. Ramesh Babu as MD & CEO of Karur Vysya Bank for which term?",
+      "options": [
+        "First term",
+        "Second term",
+        "Third term",
+        "Fourth term"
+      ],
+      "ans": 2,
+      "exp": "RBI approved B. Ramesh Babu's re-appointment for a third two-year term from July 29, 2026 to July 28, 2028 as MD & CEO of Karur Vysya Bank."
+    },
+    {
+      "id": "ca_20260428_13",
+      "q": "India topped the medal tally at ISSF Junior World Cup 2026 held in Cairo, Egypt with how many total medals?",
+      "options": [
+        "12 medals",
+        "14 medals",
+        "16 medals",
+        "18 medals"
+      ],
+      "ans": 2,
+      "exp": "India topped the ISSF Junior World Cup 2026 (April 19–27) in Cairo, Egypt with 16 medals — 5 Gold, 6 Silver, and 5 Bronze."
+    },
+    {
+      "id": "ca_20260428_14",
+      "q": "Who won the Gold medal in Men's 10m Air Pistol at ISSF Junior World Cup 2026?",
+      "options": [
+        "Divyanshu Dewangan",
+        "Chirag Sharma",
+        "Shiva Narwal",
+        "Hemant Burman"
+      ],
+      "ans": 2,
+      "exp": "Shiva Narwal won the individual Gold in Men's 10m Air Pistol at the ISSF Junior World Cup 2026 in Cairo, Egypt."
+    },
+    {
+      "id": "ca_20260428_15",
+      "q": "India will host SAFF Women's Championship 2026 at which venue in Goa?",
+      "options": [
+        "Fatorda Stadium (Pandit Jawaharlal Nehru Stadium)",
+        "Tilak Maidan",
+        "Bambolim Athletic Stadium",
+        "Duler Stadium"
+      ],
+      "ans": 0,
+      "exp": "The SAFF Women's Championship 2026 (May 24–June 7, 2026) will be held at Pandit Jawaharlal Nehru (Fatorda) Stadium, Margao, Goa."
+    },
+    {
+      "id": "ca_20260428_16",
+      "q": "Sabastian Sawe became the first athlete to run a sub-two-hour marathon in a competitive race at London Marathon 2026 with a time of:",
+      "options": [
+        "1:58:45",
+        "1:59:30",
+        "2:00:01",
+        "1:57:58"
+      ],
+      "ans": 1,
+      "exp": "Kenyan athlete Sabastian Kimaru Sawe completed the 42.2 km London Marathon 2026 in 1:59:30, the first sub-two-hour marathon in a competitive race."
+    },
+    {
+      "id": "ca_20260428_17",
+      "q": "FIDE joined the International World Games Association (IWGA) as its how many member?",
+      "options": [
+        "35th member",
+        "38th member",
+        "40th member",
+        "42nd member"
+      ],
+      "ans": 2,
+      "exp": "FIDE officially joined the IWGA as its 40th member during AGM 2026 in Lausanne, Switzerland, marking a key step in recognising 'mind sports'."
+    },
+    {
+      "id": "ca_20260428_18",
+      "q": "Raghu Rai, who passed away in April 2026, was known as the 'Father of Indian Photojournalism'. He was awarded the Padma Shri in which year?",
+      "options": [
+        "1968",
+        "1972",
+        "1977",
+        "1980"
+      ],
+      "ans": 1,
+      "exp": "Raghu Rai was awarded the Padma Shri in 1972 in the field of Art. He was also the first Indian photographer nominated to Magnum Photos (1977) by Henri Cartier-Bresson."
+    },
+    {
+      "id": "ca_20260428_19",
+      "q": "The theme for World Malaria Day 2026 (April 25) was:",
+      "options": [
+        "End Malaria for Good",
+        "Zero Malaria Starts with Me",
+        "Driven to End Malaria: Now We Can. Now We Must.",
+        "Accelerate the Fight Against Malaria"
+      ],
+      "ans": 2,
+      "exp": "The theme for World Malaria Day 2026 was 'Driven to End Malaria: Now We Can. Now We Must.' First observed on April 25, 2008."
+    },
+    {
+      "id": "ca_20260428_20",
+      "q": "April 25, 2026 marked which edition of International Delegate's Day?",
+      "options": [
+        "5th",
+        "6th",
+        "7th",
+        "8th"
+      ],
+      "ans": 2,
+      "exp": "April 25, 2026 was the 7th International Delegate's Day. It was first observed on April 25, 2020, declared by UNGA Resolution A/RES/73/286 in 2019."
+    }
+  ]
+}

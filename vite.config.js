@@ -7,6 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      injectRegister: 'script',
       workbox: {
         cleanupOutdatedCaches: true,
         skipWaiting: true,
@@ -17,6 +18,9 @@ export default defineConfig({
         id: '/',
         name: 'CalcMind',
         short_name: 'CalcMind',
+        categories: ['education', 'productivity', 'finance'],
+        lang: 'en-US',
+        dir: 'ltr',
         description: 'The ultimate Maths & Current Affairs Booster for IBPS, SSC, and Banking exams. Master mental math, daily CA, English vocabulary, and quantitative aptitude.',
         theme_color: '#0a0a1a',
         background_color: '#0a0a1a',

@@ -1844,6 +1844,16 @@ function ProfileModal({profile,onClose,onSave,T,user,signIn,signOut}){
             ))}
           </div>
         </div>
+
+        <div style={{background:T.card2, border:`1px solid ${T.border}`, borderRadius:12, padding:12, marginBottom:16, display:'flex', alignItems:'center', justifyContent:'space-between'}}>
+          <div>
+            <div style={{fontSize:12, fontWeight:700, color:T.text}}>Join MXPrime CA</div>
+            <div style={{fontSize:10, color:T.sub}}>Get daily quiz updates!</div>
+          </div>
+          <a href="https://t.me/MXPrime_CA" target="_blank" rel="noopener noreferrer" style={{background:"#2AABEE", color:"#fff", padding:"6px 12px", borderRadius:8, fontSize:11, fontWeight:700, textDecoration:"none"}}>
+            Telegram
+          </a>
+        </div>
         <div style={{display:"flex",gap:8}}>
           <button onClick={()=>{onSave({name,goal,avatar:av});onClose();}} style={{flex:2,background:GOLD,borderRadius:11,padding:"12px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:"#111"}}>SAVE</button>
           <button onClick={onClose} style={{flex:1,background:T.card2,border:`1px solid ${T.border}`,borderRadius:11,padding:"12px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:T.sub}}>CANCEL</button>
@@ -1857,7 +1867,7 @@ function ProfileModal({profile,onClose,onSave,T,user,signIn,signOut}){
 // ── MAIN APP ──────────────────────────────────────────────────────────────────
 // ══════════════════════════════════════════════════════════════════════════════
 export default function App(){
-  const [dark,setDark]=useState(()=>LS.get("cm_dark",true));
+  const [dark,setDark]=useState(()=>LS.get("cm_dark",false));
   const T=THEMES[dark?"dark":"light"];
 
   const { user, signIn, signOut } = useAuth();
@@ -1960,6 +1970,7 @@ export default function App(){
 
   useEffect(() => {
     const handlePopState = (e) => {
+      if (window.__isExiting) return;
       if (tab !== 'home' || showBlitz) {
         stopAll();
         setTab('home');
@@ -2350,17 +2361,31 @@ export default function App(){
           <div style={{background:T.hdr,borderRadius:16,padding:"22px 20px",width:"100%",maxWidth:360}}>
             <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:18,color:T.text,marginBottom:8}}>Exit CalcMind?</div>
             <div style={{fontSize:13,color:T.sub,marginBottom:18,lineHeight:1.5}}>Are you sure you want to close the app?</div>
+            
+            <div style={{background:T.card2, borderRadius:12, padding:"12px", marginBottom:18, border:`1px solid ${T.border}`, display:"flex", alignItems:"center", justifyContent:"space-between"}}>
+              <div>
+                <div style={{fontSize:14, fontWeight:700, color:T.text}}>Join MXPrime CA</div>
+                <div style={{fontSize:11, color:T.sub}}>Get daily quiz updates!</div>
+              </div>
+              <a href="https://t.me/MXPrime_CA" target="_blank" rel="noopener noreferrer" style={{background:"#2AABEE", color:"#fff", padding:"6px 12px", borderRadius:8, fontSize:12, fontWeight:700, textDecoration:"none"}}>
+                Telegram
+              </a>
+            </div>
+
             <div style={{display:"flex",gap:8}}>
               <button onClick={()=>{
                 setConfirmExit(false);
-                window.close();
-                if (window.history.length > 1) {
-                  window.history.back();
-                } else {
-                  window.location.href = "about:blank";
-                }
+                window.__isExiting = true;
+                try { WebApp.close(); } catch(e){}
+                setTimeout(() => {
+                  try { window.close(); } catch(e) {}
+                  window.history.go(-(window.history.length - 1));
+                  setTimeout(() => {
+                    window.location.href = "about:blank";
+                  }, 200);
+                }, 50);
               }} style={{flex:1,background:GOLD,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:"#111"}}>EXIT</button>
-              <button onClick={()=>setConfirmExit(false)} style={{flex:1,background:T.card2,border:`1px solid ${T.border}`,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:T.sub}}>STAY</button>
+              <button onClick={()=>{ window.__isExiting = false; setConfirmExit(false); }} style={{flex:1,background:T.card2,border:`1px solid ${T.border}`,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:T.sub}}>STAY</button>
             </div>
           </div>
         </div>

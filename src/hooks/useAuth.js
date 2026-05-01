@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { signInWithPopup, getRedirectResult, signOut as firebaseSignOut, onAuthStateChanged, signInWithCredential } from 'firebase/auth';
+import { signInWithPopup, getRedirectResult, signOut as firebaseSignOut, onAuthStateChanged, signInWithCredential, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth, googleProvider } from '../firebase';
 import { Capacitor } from '@capacitor/core';
 import { FirebaseAuthentication } from '@capacitor-firebase/authentication';
@@ -62,5 +62,31 @@ export function useAuth() {
     }
   };
 
-  return { user, signIn, signOut, loading };
+  const signInWithEmail = async (email, password) => {
+    if (!auth) throw new Error("Firebase not configured");
+    return await signInWithEmailAndPassword(auth, email, password);
+  };
+
+  const signUpWithEmail = async (email, password) => {
+    if (!auth) throw new Error("Firebase not configured");
+    return await createUserWithEmailAndPassword(auth, email, password);
+  };
+
+  const sendPhoneOtp = async (phoneNumber) => {
+    if (!Capacitor.isNativePlatform()) {
+      throw new Error("Phone login is currently only supported on the Android App.");
+    }
+    const result = await FirebaseAuthentication.signInWithPhoneNumber({ phoneNumber });
+    return result.verificationId;
+  };
+
+  const verifyPhoneOtp = async (verificationId, smsCode) => {
+    const result = await FirebaseAuthentication.signInWithPhoneNumber({ verificationId, smsCode });
+    if (result.credential?.idToken) {
+      const credential = GoogleAuthProvider.credential(result.credential.idToken);
+      await signInWithCredential(auth, credential);
+    }
+  };
+
+  return { user, signIn, signOut, loading, signInWithEmail, signUpWithEmail, sendPhoneOtp, verifyPhoneOtp };
 }

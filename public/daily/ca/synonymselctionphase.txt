@@ -1,0 +1,479 @@
+{
+"quiz": {
+"title": "SSC Selection Post XIII 2025 - Synonyms",
+"category": "Vocabulary",
+"totalQuestions": 39,
+"sourceCitation": "",
+"questions": [
+{
+"id": 1,
+"question": "Select the most appropriate synonym of the given word: **INCESSANT**",
+"options": [
+"Frequent",
+"Recurring",
+"Continuous",
+"Repetitive"
+],
+"answer": "Continuous",
+"explanation": "Option A: Frequent means happening often. Option B: Recurring means happening again and again. Option C: Continuous means going on without stopping. Option D: Repetitive means repeated many times. **Option C** correctly applies: 'incessant' means continuing without pause."
+},
+{
+"id": 2,
+"question": "Select the most appropriate synonym of the given word: **INCESSANT**",
+"options": [
+"Frequent",
+"Recurring",
+"Continuous",
+"Repetitive"
+],
+"answer": "Continuous",
+"explanation": "Option A: Frequent means happening often. Option B: Recurring means happening again and again. Option C: Continuous means going on without stopping. Option D: Repetitive means repeated many times. **Option C** correctly applies: 'incessant' means continuing without pause."
+},
+{
+"id": 3,
+"question": "Select the most appropriate synonym of the given word: **CAPRICIOUS**",
+"options": [
+"Whimsical",
+"Spontaneous",
+"Erratic",
+"Persistent"
+],
+"answer": "Whimsical",
+"explanation": "Option A: Whimsical means changeable or guided by sudden fancy. Option B: Spontaneous means done naturally without planning. Option C: Erratic means irregular or unpredictable. Option D: Persistent means continuing firmly. **Option A** correctly applies: 'capricious' means changing suddenly according to mood or fancy."
+},
+{
+"id": 4,
+"question": "Select the most appropriate synonym of the given word: **ABROGATE**",
+"options": [
+"Ratify",
+"Repeal",
+"Reject",
+"Withdraw"
+],
+"answer": "Repeal",
+"explanation": "Option A: Ratify means to formally approve. Option B: Repeal means to cancel or abolish officially. Option C: Reject means to refuse to accept. Option D: Withdraw means to take back or remove. **Option B** correctly applies: 'abrogate' means to repeal or abolish a law, agreement, or rule."
+},
+{
+"id": 5,
+"question": "Choose the synonym of **Deride**.",
+"options": [
+"Taunt",
+"Inspire",
+"Encourage",
+"Praise"
+],
+"answer": "Taunt",
+"explanation": "Option A: Taunt means to mock or provoke with insulting words. Option B: Inspire means to motivate. Option C: Encourage means to give support or confidence. Option D: Praise means to express approval. **Option A** correctly applies: 'deride' means to mock, ridicule, or laugh at someone."
+},
+{
+"id": 6,
+"question": "Select the correct synonym of **Fortify**.",
+"options": [
+"Weaken",
+"Broke",
+"Strengthen",
+"Remove"
+],
+"answer": "Strengthen",
+"explanation": "Option A: Weaken means to make less strong. Option B: Broke means damaged or without money. Option C: Strengthen means to make stronger. Option D: Remove means to take away. **Option C** correctly applies: 'fortify' means to strengthen or reinforce."
+},
+{
+"id": 7,
+"question": "Identify the synonym of **Feeble**.",
+"options": [
+"Strong",
+"Loud",
+"Weak",
+"Heavy"
+],
+"answer": "Weak",
+"explanation": "Option A: Strong means having power or strength. Option B: Loud means making much noise. Option C: Weak means lacking strength. Option D: Heavy means having great weight. **Option C** correctly applies: 'feeble' means weak or lacking physical strength."
+},
+{
+"id": 8,
+"question": "Find the synonym of **Hamstrung**.",
+"options": [
+"Cripple",
+"Talkative",
+"Jolly",
+"Restless"
+],
+"answer": "Cripple",
+"explanation": "Option A: Cripple means to disable or make ineffective. Option B: Talkative means fond of talking. Option C: Jolly means cheerful. Option D: Restless means unable to relax. **Option A** correctly applies: 'hamstrung' means severely restricted, disabled, or made ineffective."
+},
+{
+"id": 9,
+"question": "Pick the synonym of **Eloquent**.",
+"options": [
+"Silent",
+"Shy",
+"Fluent",
+"Scattered"
+],
+"answer": "Fluent",
+"explanation": "Option A: Silent means not speaking. Option B: Shy means nervous or reserved. Option C: Fluent means able to express ideas smoothly. Option D: Scattered means spread out or disorganized. **Option C** correctly applies: 'eloquent' means fluent, persuasive, and expressive in speech or writing."
+},
+{
+"id": 10,
+"question": "Choose the synonym of **Docile**.",
+"options": [
+"Reveal",
+"Pliable",
+"Exhibit",
+"Clarify"
+],
+"answer": "Pliable",
+"explanation": "Option A: Reveal means to make known. Option B: Pliable means easily bent, influenced, or controlled. Option C: Exhibit means to show. Option D: Clarify means to make clear. **Option B** correctly applies: 'docile' means easily taught, managed, or controlled."
+},
+{
+"id": 11,
+"question": "Identify the synonym of **Clarity**.",
+"options": [
+"Confusion",
+"Lucidity",
+"Obscurity",
+"Vagueness"
+],
+"answer": "Lucidity",
+"explanation": "Option A: Confusion means lack of clear understanding. Option B: Lucidity means clearness of expression or thought. Option C: Obscurity means lack of clarity. Option D: Vagueness means being unclear or indefinite. **Option B** correctly applies: 'clarity' means clearness or lucidity."
+},
+{
+"id": 12,
+"question": "Identify the synonym of **Pristine**.",
+"options": [
+"Polluted",
+"Immaculate",
+"Dirty",
+"Untouched"
+],
+"answer": "Immaculate",
+"explanation": "Option A: Polluted means made dirty or harmful. Option B: Immaculate means perfectly clean or spotless. Option C: Dirty means unclean. Option D: Untouched means not affected or changed. **Option B** correctly applies: 'pristine' means perfectly clean, fresh, or unspoiled."
+},
+{
+"id": 13,
+"question": "Identify the synonym of **Innocuous**.",
+"options": [
+"Harmful",
+"Harmless",
+"Dangerous",
+"Toxic"
+],
+"answer": "Harmless",
+"explanation": "Option A: Harmful means causing damage. Option B: Harmless means not causing injury or damage. Option C: Dangerous means likely to cause harm. Option D: Toxic means poisonous or harmful. **Option B** correctly applies: 'innocuous' means harmless or not offensive."
+},
+{
+"id": 14,
+"question": "Identify the synonym of **Plausible**.",
+"options": [
+"Unlikely",
+"Unbelievable",
+"Believable",
+"Incredible"
+],
+"answer": "Believable",
+"explanation": "Option A: Unlikely means not expected to happen. Option B: Unbelievable means difficult to accept as true. Option C: Believable means seeming reasonable or likely to be true. Option D: Incredible means hard to believe. **Option C** correctly applies: 'plausible' means believable or reasonable."
+},
+{
+"id": 15,
+"question": "Identify the synonym of **Imminent**.",
+"options": [
+"Distant",
+"Approaching",
+"Delayed",
+"Postponed"
+],
+"answer": "Approaching",
+"explanation": "Option A: Distant means far away. Option B: Approaching means coming near. Option C: Delayed means made late. Option D: Postponed means put off to a later time. **Option B** correctly applies: 'imminent' means about to happen or approaching soon."
+},
+{
+"id": 16,
+"question": "Identify the synonym of **Tranquil**.",
+"options": [
+"Restless",
+"Peaceful",
+"Turbulent",
+"Chaotic"
+],
+"answer": "Peaceful",
+"explanation": "Option A: Restless means unable to stay calm. Option B: Peaceful means calm and quiet. Option C: Turbulent means disturbed or violent. Option D: Chaotic means completely disordered. **Option B** correctly applies: 'tranquil' means calm, quiet, and peaceful."
+},
+{
+"id": 17,
+"question": "Identify the synonym of **Acumen**.",
+"options": [
+"Stupidity",
+"Ignorance",
+"Brilliance",
+"Dullness"
+],
+"answer": "Brilliance",
+"explanation": "Option A: Stupidity means lack of intelligence. Option B: Ignorance means lack of knowledge. Option C: Brilliance means great intelligence or sharp ability. Option D: Dullness means lack of sharpness or interest. **Option C** correctly applies: 'acumen' means sharp insight, intelligence, or practical judgment."
+},
+{
+"id": 18,
+"question": "Identify the synonym of **Hapless**.",
+"options": [
+"Lucky",
+"Unfortunate",
+"Fortunate",
+"Content"
+],
+"answer": "Unfortunate",
+"explanation": "Option A: Lucky means having good fortune. Option B: Unfortunate means unlucky or unlucky in circumstances. Option C: Fortunate means having good luck. Option D: Content means satisfied. **Option B** correctly applies: 'hapless' means unlucky or unfortunate."
+},
+{
+"id": 19,
+"question": "Identify the synonym of **Boisterous**.",
+"options": [
+"Ignorant",
+"Quiet",
+"Noisy",
+"Clueless"
+],
+"answer": "Noisy",
+"explanation": "Option A: Ignorant means lacking knowledge. Option B: Quiet means making little noise. Option C: Noisy means loud and full of sound. Option D: Clueless means having no understanding. **Option C** correctly applies: 'boisterous' means noisy, energetic, and lively."
+},
+{
+"id": 20,
+"question": "Identify the synonym of **Fickle**.",
+"options": [
+"Constant",
+"Unpredictable",
+"Reliable",
+"Stable"
+],
+"answer": "Unpredictable",
+"explanation": "Option A: Constant means unchanging. Option B: Unpredictable means not able to be predicted. Option C: Reliable means dependable. Option D: Stable means steady or not changing. **Option B** correctly applies: 'fickle' means changeable or likely to change suddenly."
+},
+{
+"id": 21,
+"question": "Identify the synonym of **Lackluster**.",
+"options": [
+"Brilliant",
+"Humdrum",
+"Vivid",
+"Bright"
+],
+"answer": "Humdrum",
+"explanation": "Option A: Brilliant means very bright or excellent. Option B: Humdrum means dull or lacking excitement. Option C: Vivid means bright or clear. Option D: Bright means full of light or intelligent. **Option B** correctly applies: 'lackluster' means dull, uninspiring, or lacking energy."
+},
+{
+"id": 22,
+"question": "Identify the synonym of **Adhere**.",
+"options": [
+"Condemn",
+"Disjoin",
+"Comply",
+"Setup"
+],
+"answer": "Comply",
+"explanation": "Option A: Condemn means to strongly criticize. Option B: Disjoin means to separate. Option C: Comply means to obey or act according to a rule. Option D: Setup means an arrangement or preparation. **Option C** correctly applies: 'adhere' means to follow, stick to, or comply with something."
+},
+{
+"id": 23,
+"question": "Identify the synonym of **Elusive**.",
+"options": [
+"Clear",
+"Easy",
+"Slippery",
+"Obvious"
+],
+"answer": "Slippery",
+"explanation": "Option A: Clear means easy to understand or see. Option B: Easy means not difficult. Option C: Slippery means difficult to hold or catch. Option D: Obvious means easily seen or understood. **Option C** correctly applies: 'elusive' means difficult to find, catch, or understand."
+},
+{
+"id": 24,
+"question": "Identify the synonym of **Frugal**.",
+"options": [
+"Wasteful",
+"Economical",
+"Extravagant",
+"Generous"
+],
+"answer": "Economical",
+"explanation": "Option A: Wasteful means using resources carelessly. Option B: Economical means using money or resources carefully. Option C: Extravagant means spending too much. Option D: Generous means willing to give freely. **Option B** correctly applies: 'frugal' means economical or careful in spending."
+},
+{
+"id": 25,
+"question": "Identify the synonym of **Gracious**.",
+"options": [
+"Rude",
+"Polite",
+"Selfish",
+"Indifferent"
+],
+"answer": "Polite",
+"explanation": "Option A: Rude means impolite. Option B: Polite means showing good manners. Option C: Selfish means caring only about oneself. Option D: Indifferent means having no interest or concern. **Option B** correctly applies: 'gracious' means courteous, kind, and polite."
+},
+{
+"id": 26,
+"question": "Identify the synonym of **Brisk**.",
+"options": [
+"Lazy",
+"Energetic",
+"Dull",
+"Slow"
+],
+"answer": "Energetic",
+"explanation": "Option A: Lazy means unwilling to work. Option B: Energetic means active and lively. Option C: Dull means boring or not sharp. Option D: Slow means not fast. **Option B** correctly applies: 'brisk' means quick, active, and energetic."
+},
+{
+"id": 27,
+"question": "Identify the synonym of **Notorious**.",
+"options": [
+"Famous",
+"Unknown",
+"Renowned",
+"Infamous"
+],
+"answer": "Infamous",
+"explanation": "Option A: Famous means widely known. Option B: Unknown means not known. Option C: Renowned means famous and respected. Option D: Infamous means well known for a bad quality or deed. **Option D** correctly applies: 'notorious' means infamous or widely known for something bad."
+},
+{
+"id": 28,
+"question": "Identify the synonym of **Jovial**.",
+"options": [
+"Gloomy",
+"Happy",
+"Sad",
+"Melancholy"
+],
+"answer": "Happy",
+"explanation": "Option A: Gloomy means dark or sad. Option B: Happy means feeling or showing joy. Option C: Sad means unhappy. Option D: Melancholy means deeply sad. **Option B** correctly applies: 'jovial' means cheerful, friendly, and happy."
+},
+{
+"id": 29,
+"question": "Identify the synonym of **Mendacious**.",
+"options": [
+"Truthful",
+"Dishonest",
+"Sincere",
+"Honest"
+],
+"answer": "Dishonest",
+"explanation": "Option A: Truthful means honest and accurate. Option B: Dishonest means not truthful. Option C: Sincere means genuine and honest. Option D: Honest means truthful. **Option B** correctly applies: 'mendacious' means lying or dishonest."
+},
+{
+"id": 30,
+"question": "Identify the synonym of **Blatant**.",
+"options": [
+"Subtle",
+"Obvious",
+"Discreet",
+"Hidden"
+],
+"answer": "Obvious",
+"explanation": "Option A: Subtle means not obvious. Option B: Obvious means easily noticed or understood. Option C: Discreet means careful and tactful. Option D: Hidden means concealed. **Option B** correctly applies: 'blatant' means very obvious and often offensive."
+},
+{
+"id": 31,
+"question": "Identify the synonym of **Recalcitrant**.",
+"options": [
+"Compliant",
+"Rebellious",
+"Submissive",
+"Docile"
+],
+"answer": "Rebellious",
+"explanation": "Option A: Compliant means willing to obey. Option B: Rebellious means resisting authority or control. Option C: Submissive means ready to obey. Option D: Docile means easily managed. **Option B** correctly applies: 'recalcitrant' means stubbornly disobedient or rebellious."
+},
+{
+"id": 32,
+"question": "Identify the synonym of **Xenial**.",
+"options": [
+"Friendly",
+"Hostile",
+"Warm",
+"Cold"
+],
+"answer": "Friendly",
+"explanation": "Option A: Friendly means kind and pleasant. Option B: Hostile means unfriendly or opposed. Option C: Warm means friendly or affectionate. Option D: Cold means unfriendly or lacking warmth. **Option A** correctly applies: 'xenial' means hospitable or friendly, especially to guests."
+},
+{
+"id": 33,
+"question": "Identify the synonym of **Wistful**.",
+"options": [
+"Content",
+"Nostalgic",
+"Joyful",
+"Happy"
+],
+"answer": "Nostalgic",
+"explanation": "Option A: Content means satisfied. Option B: Nostalgic means longing for the past. Option C: Joyful means very happy. Option D: Happy means pleased or glad. **Option B** correctly applies: 'wistful' means full of longing, often with nostalgia."
+},
+{
+"id": 34,
+"question": "Identify the synonym of **Knavery**.",
+"options": [
+"Honesty",
+"Deceit",
+"Truth",
+"Integrity"
+],
+"answer": "Deceit",
+"explanation": "Option A: Honesty means truthfulness. Option B: Deceit means dishonest behavior or trickery. Option C: Truth means what is factual. Option D: Integrity means moral honesty. **Option B** correctly applies: 'knavery' means dishonest or deceitful behavior."
+},
+{
+"id": 35,
+"question": "Identify the synonym of **Jeopardy**.",
+"options": [
+"Risk",
+"Safety",
+"Certainty",
+"Security"
+],
+"answer": "Risk",
+"explanation": "Option A: Risk means danger or possibility of loss. Option B: Safety means protection from danger. Option C: Certainty means something sure. Option D: Security means protection or safety. **Option A** correctly applies: 'jeopardy' means danger or risk of harm."
+},
+{
+"id": 36,
+"question": "Identify the synonym of **Quixotic**.",
+"options": [
+"Practical",
+"Idealistic",
+"Realistic",
+"Logical"
+],
+"answer": "Idealistic",
+"explanation": "Option A: Practical means sensible and useful. Option B: Idealistic means guided by high ideals, often unrealistically. Option C: Realistic means based on reality. Option D: Logical means reasonable and orderly. **Option B** correctly applies: 'quixotic' means extremely idealistic and impractical."
+},
+{
+"id": 37,
+"question": "Select the correct synonym of **PERNICIOUS**.",
+"options": [
+"Harmless",
+"Deadly",
+"Temporary",
+"Noisy"
+],
+"answer": "Deadly",
+"explanation": "Option A: Harmless means not causing damage. Option B: Deadly means causing or likely to cause death or serious harm. Option C: Temporary means lasting for a short time. Option D: Noisy means loud. **Option B** correctly applies: 'pernicious' means very harmful or deadly."
+},
+{
+"id": 38,
+"question": "Select the correct synonym of **IMPECUNIOUS**.",
+"options": [
+"Wealthy",
+"Generous",
+"Poor",
+"Frugal"
+],
+"answer": "Poor",
+"explanation": "Option A: Wealthy means rich. Option B: Generous means willing to give. Option C: Poor means having little or no money. Option D: Frugal means careful in spending. **Option C** correctly applies: 'impecunious' means having little or no money."
+},
+{
+"id": 39,
+"question": "Choose the synonym of the word **Substantial**.",
+"options": [
+"Fragile",
+"Minor",
+"Considerable",
+"Weak"
+],
+"answer": "Considerable",
+"explanation": "Option A: Fragile means easily broken. Option B: Minor means small or less important. Option C: Considerable means large in amount or importance. Option D: Weak means lacking strength. **Option C** correctly applies: 'substantial' means large, important, or considerable."
+}
+]
+}
+}
+

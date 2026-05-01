@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-dontwarn com.facebook.**
+-dontwarn com.google.android.gms.games.**
+-dontwarn io.capawesome.capacitorjs.plugins.firebase.authentication.handlers.**

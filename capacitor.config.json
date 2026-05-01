@@ -1,5 +1,17 @@
 {
   "appId": "in.mxprime.calcmind.app",
   "appName": "CalcMind",
-  "webDir": "dist"
+  "webDir": "dist",
+  "plugins": {
+    "FirebaseAuthentication": {
+      "skipNativeAuth": false,
+      "providers": ["google.com", "phone", "password"]
+    },
+    "SplashScreen": {
+      "launchShowDuration": 2500,
+      "launchAutoHide": true,
+      "backgroundColor": "#1A1B22",
+      "showSpinner": false
+    }
+  }
 }

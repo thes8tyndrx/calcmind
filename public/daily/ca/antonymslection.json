@@ -1,0 +1,431 @@
+{
+"quiz": {
+"title": "SSC Selection Post XIII 2025 - Antonyms",
+"category": "Vocabulary",
+"totalQuestions": 35,
+"sourceCitation": "",
+"questions": [
+{
+"id": 1,
+"question": "Select the most appropriate antonym of the given word: **Magnanimous**",
+"options": [
+"Altruistic",
+"Self-absorbed",
+"Noble",
+"Gracious"
+],
+"answer": "Self-absorbed",
+"explanation": "Option A: Altruistic means selfless and concerned for others. Option B: Self-absorbed means mainly concerned with oneself. Option C: Noble means having high moral qualities. Option D: Gracious means kind and courteous. **Option B** correctly applies: 'magnanimous' means generous and noble, so its antonym is self-absorbed."
+},
+{
+"id": 2,
+"question": "Select the most appropriate antonym of the given word: **Tenacious**",
+"options": [
+"Persistent",
+"Fragile",
+"Yielding",
+"Firm"
+],
+"answer": "Yielding",
+"explanation": "Option A: Persistent means continuing firmly. Option B: Fragile means easily broken. Option C: Yielding means giving way or surrendering. Option D: Firm means strong and steady. **Option C** correctly applies: 'tenacious' means firm and persistent, so its antonym is yielding."
+},
+{
+"id": 3,
+"question": "Select the most appropriate antonym of the given word: **Blistering**",
+"options": [
+"Scorching",
+"Chilly",
+"Burning",
+"Incendiary"
+],
+"answer": "Chilly",
+"explanation": "Option A: Scorching means extremely hot. Option B: Chilly means cold or cool. Option C: Burning means very hot or on fire. Option D: Incendiary means causing fire or conflict. **Option B** correctly applies: 'blistering' means extremely hot, so its antonym is chilly."
+},
+{
+"id": 4,
+"question": "Select the most appropriate antonym of the given word: **Blistering**",
+"options": [
+"Scorching",
+"Chilly",
+"Burning",
+"Incendiary"
+],
+"answer": "Chilly",
+"explanation": "Option A: Scorching means extremely hot. Option B: Chilly means cold or cool. Option C: Burning means very hot or on fire. Option D: Incendiary means causing fire or conflict. **Option B** correctly applies: 'blistering' means extremely hot, so its antonym is chilly."
+},
+{
+"id": 5,
+"question": "Select the most appropriate antonym of the given word: **Recount**",
+"options": [
+"Narrate",
+"Suppress",
+"Retell",
+"Detail"
+],
+"answer": "Suppress",
+"explanation": "Option A: Narrate means to tell a story or event. Option B: Suppress means to hold back or prevent expression. Option C: Retell means to tell again. Option D: Detail means to describe fully. **Option B** correctly applies: 'recount' means to narrate or tell, so its antonym is suppress."
+},
+{
+"id": 6,
+"question": "Select the most appropriate antonym of the given word: **Lucid**",
+"options": [
+"Clear",
+"Confusing",
+"Bright",
+"Fluent"
+],
+"answer": "Confusing",
+"explanation": "Option A: Clear means easy to understand. Option B: Confusing means difficult to understand. Option C: Bright means shining or intelligent. Option D: Fluent means smooth and expressive. **Option B** correctly applies: 'lucid' means clear and easy to understand, so its antonym is confusing."
+},
+{
+"id": 7,
+"question": "Select the most appropriate antonym of the given word: **Impervious**",
+"options": [
+"Impregnable",
+"Permeable",
+"Durable",
+"Impassive"
+],
+"answer": "Permeable",
+"explanation": "Option A: Impregnable means impossible to enter or capture. Option B: Permeable means allowing liquid or gas to pass through. Option C: Durable means long-lasting. Option D: Impassive means not showing emotion. **Option B** correctly applies: 'impervious' means not allowing passage, so its antonym is permeable."
+},
+{
+"id": 8,
+"question": "Select the most appropriate antonym of the given word: **Mythical**",
+"options": [
+"Imaginary",
+"Verifiable",
+"Supernatural",
+"Symbolic"
+],
+"answer": "Verifiable",
+"explanation": "Option A: Imaginary means existing only in the mind. Option B: Verifiable means able to be proved true. Option C: Supernatural means beyond natural explanation. Option D: Symbolic means representing something else. **Option B** correctly applies: 'mythical' means imaginary or legendary, so its antonym is verifiable."
+},
+{
+"id": 9,
+"question": "Find the antonym of **Falter**.",
+"options": [
+"Waver",
+"Stumble",
+"Persist",
+"Demur"
+],
+"answer": "Persist",
+"explanation": "Option A: Waver means to hesitate or become unsteady. Option B: Stumble means to trip or hesitate. Option C: Persist means to continue firmly. Option D: Demur means to object or hesitate. **Option C** correctly applies: 'falter' means to hesitate or lose strength, so its antonym is persist."
+},
+{
+"id": 10,
+"question": "Select the sentence containing the homonym of the highlighted word: **bases**",
+"options": [
+"She applied two coats of makeup bases before the foundation.",
+"Allied forces established new bases along the coastline.",
+"The soldiers returned to their airforce bases for regrouping.",
+"The navy had to defend its remaining overseas bases."
+],
+"answer": "She applied two coats of makeup bases before the foundation.",
+"explanation": "Option A: Bases refers to cosmetic foundation layers. Option B: Bases refers to military locations. Option C: Bases refers to air force locations. Option D: Bases refers to overseas military locations. **Option A** correctly applies: it uses 'bases' with a different meaning from strategic military bases."
+},
+{
+"id": 11,
+"question": "Identify the antonym of **Docile**.",
+"options": [
+"Soft",
+"Headstrong",
+"Gentle",
+"Compliant"
+],
+"answer": "Headstrong",
+"explanation": "Option A: Soft means gentle or not hard. Option B: Headstrong means stubborn and self-willed. Option C: Gentle means mild and kind. Option D: Compliant means willing to obey. **Option B** correctly applies: 'docile' means easily managed or obedient, so its antonym is headstrong."
+},
+{
+"id": 12,
+"question": "Identify the antonym of **Ruthless**.",
+"options": [
+"Harsh",
+"Cruel",
+"Brutal",
+"Compassionate"
+],
+"answer": "Compassionate",
+"explanation": "Option A: Harsh means severe or cruel. Option B: Cruel means causing pain without sympathy. Option C: Brutal means extremely violent or harsh. Option D: Compassionate means showing kindness and sympathy. **Option D** correctly applies: 'ruthless' means cruel and without pity, so its antonym is compassionate."
+},
+{
+"id": 13,
+"question": "Identify the antonym of **Barbarous**.",
+"options": [
+"Civilized",
+"Cruel",
+"Savage",
+"Brutal"
+],
+"answer": "Civilized",
+"explanation": "Option A: Civilized means cultured and socially developed. Option B: Cruel means unkind and harmful. Option C: Savage means fierce or uncivilized. Option D: Brutal means violent and harsh. **Option A** correctly applies: 'barbarous' means savage or uncivilized, so its antonym is civilized."
+},
+{
+"id": 14,
+"question": "Identify the antonym of **Infernal**.",
+"options": [
+"Wicked",
+"Damned",
+"Heavenly",
+"Accursed"
+],
+"answer": "Heavenly",
+"explanation": "Option A: Wicked means evil or morally wrong. Option B: Damned means condemned. Option C: Heavenly means divine or related to heaven. Option D: Accursed means cursed or doomed. **Option C** correctly applies: 'infernal' means hellish or evil, so its antonym is heavenly."
+},
+{
+"id": 15,
+"question": "Identify the antonym of **Bold**.",
+"options": [
+"Adventurous",
+"Brave",
+"Timid",
+"Fearless"
+],
+"answer": "Timid",
+"explanation": "Option A: Adventurous means willing to take risks. Option B: Brave means courageous. Option C: Timid means shy or lacking courage. Option D: Fearless means without fear. **Option C** correctly applies: 'bold' means brave and confident, so its antonym is timid."
+},
+{
+"id": 16,
+"question": "Identify the antonym of **Obscure**.",
+"options": [
+"Prominent",
+"Vague",
+"Faint",
+"Hidden"
+],
+"answer": "Prominent",
+"explanation": "Option A: Prominent means clearly noticeable or important. Option B: Vague means unclear. Option C: Faint means weak or unclear. Option D: Hidden means concealed. **Option A** correctly applies: 'obscure' means unclear or not well known, so its antonym is prominent."
+},
+{
+"id": 17,
+"question": "Identify the antonym of **Axiom**.",
+"options": [
+"Truism",
+"Adage",
+"Absurdity",
+"Principle"
+],
+"answer": "Absurdity",
+"explanation": "Option A: Truism means an obvious truth. Option B: Adage means a traditional saying. Option C: Absurdity means something unreasonable or illogical. Option D: Principle means a basic rule or belief. **Option C** correctly applies: 'axiom' means a self-evident truth, so its antonym is absurdity."
+},
+{
+"id": 18,
+"question": "Identify the antonym of **Morbid**.",
+"options": [
+"Cheerful",
+"Grim",
+"Gloomy",
+"Sickly"
+],
+"answer": "Cheerful",
+"explanation": "Option A: Cheerful means happy and positive. Option B: Grim means serious or gloomy. Option C: Gloomy means sad or dark. Option D: Sickly means unhealthy. **Option A** correctly applies: 'morbid' means gloomy or related to disease/death, so its antonym is cheerful."
+},
+{
+"id": 19,
+"question": "Identify the antonym of **Reverence**.",
+"options": [
+"Respect",
+"Esteem",
+"Honor",
+"Disrespect"
+],
+"answer": "Disrespect",
+"explanation": "Option A: Respect means admiration or regard. Option B: Esteem means high respect. Option C: Honor means great respect. Option D: Disrespect means lack of respect. **Option D** correctly applies: 'reverence' means deep respect, so its antonym is disrespect."
+},
+{
+"id": 20,
+"question": "Identify the antonym of **Eager**.",
+"options": [
+"Indifferent",
+"Keen",
+"Interested",
+"Enthusiastic"
+],
+"answer": "Indifferent",
+"explanation": "Option A: Indifferent means having no particular interest or concern. Option B: Keen means eager or enthusiastic. Option C: Interested means wanting to know or be involved. Option D: Enthusiastic means strongly interested. **Option A** correctly applies: 'eager' means keen or enthusiastic, so its antonym is indifferent."
+},
+{
+"id": 21,
+"question": "Identify the antonym of **Perturbed**.",
+"options": [
+"Unsettled",
+"Worried",
+"Anxious",
+"Calm"
+],
+"answer": "Calm",
+"explanation": "Option A: Unsettled means disturbed or uneasy. Option B: Worried means anxious or troubled. Option C: Anxious means nervous or concerned. Option D: Calm means peaceful and not disturbed. **Option D** correctly applies: 'perturbed' means worried or disturbed, so its antonym is calm."
+},
+{
+"id": 22,
+"question": "Identify the antonym of **Glut**.",
+"options": [
+"Overload",
+"Satiate",
+"Stuff",
+"Starve"
+],
+"answer": "Starve",
+"explanation": "Option A: Overload means to fill with too much. Option B: Satiate means to satisfy fully. Option C: Stuff means to fill tightly. Option D: Starve means to suffer from lack of food. **Option D** correctly applies: 'glut' means excess or overfill, so its antonym is starve."
+},
+{
+"id": 23,
+"question": "Identify the antonym of **Grisly**.",
+"options": [
+"Horrid",
+"Disgusting",
+"Frightening",
+"Attractive"
+],
+"answer": "Attractive",
+"explanation": "Option A: Horrid means very unpleasant. Option B: Disgusting means causing strong dislike. Option C: Frightening means causing fear. Option D: Attractive means pleasing or appealing. **Option D** correctly applies: 'grisly' means horrible or terrifying, so its antonym is attractive."
+},
+{
+"id": 24,
+"question": "Identify the antonym of **Harass**.",
+"options": [
+"Annoy",
+"Comfort",
+"Disturb",
+"Irritate"
+],
+"answer": "Comfort",
+"explanation": "Option A: Annoy means to irritate. Option B: Comfort means to soothe or make someone feel better. Option C: Disturb means to interrupt or trouble. Option D: Irritate means to annoy. **Option B** correctly applies: 'harass' means to trouble repeatedly, so its antonym is comfort."
+},
+{
+"id": 25,
+"question": "Identify the antonym of **Jovial**.",
+"options": [
+"Morose",
+"Cheerful",
+"Happy",
+"Joyful"
+],
+"answer": "Morose",
+"explanation": "Option A: Morose means gloomy and bad-tempered. Option B: Cheerful means happy and positive. Option C: Happy means feeling pleasure. Option D: Joyful means full of joy. **Option A** correctly applies: 'jovial' means cheerful and friendly, so its antonym is morose."
+},
+{
+"id": 26,
+"question": "Identify the antonym of **Barren**.",
+"options": [
+"Sterile",
+"Fertile",
+"Dry",
+"Deserted"
+],
+"answer": "Fertile",
+"explanation": "Option A: Sterile means unable to produce life or growth. Option B: Fertile means able to produce crops or offspring. Option C: Dry means without moisture. Option D: Deserted means abandoned. **Option B** correctly applies: 'barren' means unable to produce growth, so its antonym is fertile."
+},
+{
+"id": 27,
+"question": "Identify the antonym of **Insipid**.",
+"options": [
+"Tasteless",
+"Dull",
+"Vapid",
+"Appetizing"
+],
+"answer": "Appetizing",
+"explanation": "Option A: Tasteless means lacking flavor. Option B: Dull means boring. Option C: Vapid means dull or lifeless. Option D: Appetizing means appealing or pleasant to eat. **Option D** correctly applies: 'insipid' means tasteless or dull, so its antonym is appetizing."
+},
+{
+"id": 28,
+"question": "Identify the antonym of **Epitome**.",
+"options": [
+"Example",
+"Summary",
+"Essence",
+"Increment"
+],
+"answer": "Increment",
+"explanation": "Option A: Example means a representative instance. Option B: Summary means a brief statement of main points. Option C: Essence means the most important quality. Option D: Increment means an increase or addition. **Option D** correctly applies: as per the provided answer key, 'increment' is marked as the antonym of 'epitome'."
+},
+{
+"id": 29,
+"question": "Identify the antonym of **Malice**.",
+"options": [
+"Cruelty",
+"Hatred",
+"Kindness",
+"Spite"
+],
+"answer": "Kindness",
+"explanation": "Option A: Cruelty means behavior that causes suffering. Option B: Hatred means intense dislike. Option C: Kindness means being caring and helpful. Option D: Spite means desire to hurt or annoy. **Option C** correctly applies: 'malice' means ill will or desire to harm, so its antonym is kindness."
+},
+{
+"id": 30,
+"question": "Identify the antonym of **Denounce**.",
+"options": [
+"Condemn",
+"Accuse",
+"Defend",
+"Blame"
+],
+"answer": "Defend",
+"explanation": "Option A: Condemn means to strongly criticize. Option B: Accuse means to charge someone with wrongdoing. Option C: Defend means to support or protect. Option D: Blame means to hold responsible. **Option C** correctly applies: 'denounce' means to condemn publicly, so its antonym is defend."
+},
+{
+"id": 31,
+"question": "Identify the antonym of **Taciturn**.",
+"options": [
+"Talkative",
+"Silent",
+"Reserved",
+"Quiet"
+],
+"answer": "Talkative",
+"explanation": "Option A: Talkative means fond of speaking. Option B: Silent means not speaking. Option C: Reserved means restrained or quiet. Option D: Quiet means making little noise. **Option A** correctly applies: 'taciturn' means habitually silent or reserved, so its antonym is talkative."
+},
+{
+"id": 32,
+"question": "Identify the antonym of **Celebrated**.",
+"options": [
+"Famous",
+"Inglorious",
+"Acclaimed",
+"Honored"
+],
+"answer": "Inglorious",
+"explanation": "Option A: Famous means widely known. Option B: Inglorious means shameful or not famous. Option C: Acclaimed means praised publicly. Option D: Honored means respected. **Option B** correctly applies: 'celebrated' means famous or honored, so its antonym is inglorious."
+},
+{
+"id": 33,
+"question": "Identify the antonym of **Vivacious**.",
+"options": [
+"Cheerful",
+"Lively",
+"Bubbly",
+"Unattractive"
+],
+"answer": "Unattractive",
+"explanation": "Option A: Cheerful means happy and positive. Option B: Lively means full of energy. Option C: Bubbly means cheerful and energetic. Option D: Unattractive means not pleasing or appealing. **Option D** correctly applies: as per the provided answer key, 'unattractive' is marked as the antonym of 'vivacious'."
+},
+{
+"id": 34,
+"question": "Identify the antonym of **Fallacy**.",
+"options": [
+"Delusion",
+"Mistake",
+"Fiction",
+"Truth"
+],
+"answer": "Truth",
+"explanation": "Option A: Delusion means a false belief. Option B: Mistake means an error. Option C: Fiction means something invented or untrue. Option D: Truth means fact or reality. **Option D** correctly applies: 'fallacy' means a false idea or mistaken belief, so its antonym is truth."
+},
+{
+"id": 35,
+"question": "Identify the antonym of **Venerable**.",
+"options": [
+"Respected",
+"Honored",
+"Immature",
+"Elderly"
+],
+"answer": "Immature",
+"explanation": "Option A: Respected means admired or valued. Option B: Honored means highly respected. Option C: Immature means not fully developed or lacking maturity. Option D: Elderly means old or aged. **Option C** correctly applies: 'venerable' means respected, often because of age or wisdom, so its antonym is immature."
+}
+]
+}
+}
+

@@ -5,8 +5,12 @@ import VOCAB_DATA from './data/quiz/vocab_data.json';
 import WebApp from '@twa-dev/sdk';
 import { App as CapApp } from '@capacitor/app';
 import { Haptics, ImpactStyle, NotificationType } from '@capacitor/haptics';
+import { Capacitor } from '@capacitor/core';
+import { PushNotifications } from '@capacitor/push-notifications';
+
+const BASE_URL = Capacitor.isNativePlatform() ? 'https://calcmind.mxprime.in' : '';
 // ─── Theme ────────────────────────────────────────────────────────────────────
-const GOLD="#C8901C", GREEN="#4DC758", RED="#D95252", BLUE="#4A9EFF", PINK="#FF6B8A";
+const GOLD="#D4A830", GREEN="#4DC758", RED="#D95252", BLUE="#4A9EFF", PINK="#FF6B8A";
 const THEMES={
   dark:{bg:"#1A1B22",hdr:"#1F2029",card:"#25262F",card2:"#2C2D38",
     border:"rgba(255,255,255,0.09)",text:"#EEEEF2",sub:"rgba(238,238,242,0.45)",
@@ -639,12 +643,12 @@ const QUIZ_TOPICS = [...CGL_VOCAB_TOPICS, ...CHSL_VOCAB_TOPICS, ...GRAMMAR_TOPIC
 
 // ─── ANIMAL AVATARS ───────────────────────────────────────────────────────────
 const AVATARS=[
-  {id:"tiger",emoji:"🐅",bg:"#E67E22"},
-  {id:"owl",  emoji:"🦉",bg:"#2C3558"},
-  {id:"fox",  emoji:"🦊",bg:"#7A3410"},
-  {id:"cat",  emoji:"🐱",bg:"#4A3060"},
-  {id:"bear", emoji:"🐻",bg:"#3D2B1F"},
-  {id:"lion", emoji:"🦁",bg:"#6B4C00"},
+  {id:"boy_glasses", label:"Boy",  bgPos:"0% 0%"},
+  {id:"girl",        label:"Girl", bgPos:"50% 0%"},
+  {id:"tiger",       label:"Tiger",bgPos:"100% 0%"},
+  {id:"owl",         label:"Owl",  bgPos:"0% 100%"},
+  {id:"robot",       label:"Robot",bgPos:"50% 100%"},
+  {id:"boy_band",    label:"Ninja",bgPos:"100% 100%"},
 ];
 function AnimalAvatar({id,size=32}){
   // Google profile photo
@@ -653,12 +657,13 @@ function AnimalAvatar({id,size=32}){
   }
   const a=AVATARS.find(x=>x.id===id)||AVATARS[0];
   return(
-    <div style={{width:size,height:size,borderRadius:99,background:a.bg,
-      display:"flex",alignItems:"center",justifyContent:"center",
-      fontSize:Math.round(size*0.52),flexShrink:0,
-      border:"2px solid rgba(255,255,255,0.1)"}}>
-      {a.emoji}
-    </div>
+    <div style={{
+      width:size,height:size,borderRadius:99,flexShrink:0,
+      border:"2px solid rgba(255,255,255,0.1)",
+      backgroundImage:"url(/avatars.jpg)",
+      backgroundSize:"300% 200%",
+      backgroundPosition:a.bgPos
+    }} />
   );
 }
 
@@ -1126,7 +1131,9 @@ function CustomArithBuilder({T,onStart}){
 // ── DAILY SCREEN ──────────────────────────────────────────────────────────────
 function useDailyAvailability(type) {
   const [available, setAvailable] = useState({});
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
+    setLoading(true);
     const checks = {};
     const promises = [];
     for (let i = 0; i < 7; i++) {
@@ -1134,26 +1141,26 @@ function useDailyAvailability(type) {
       d.setDate(d.getDate() - i);
       const key = d.toISOString().slice(0, 10); // YYYY-MM-DD
       promises.push(
-        fetch(`/daily/${type}/${key}.json`, { method: 'HEAD' })
+        fetch(`${BASE_URL}/daily/${type}/${key}.json`, { method: 'HEAD' })
           .then(r => { checks[key] = r.ok; })
           .catch(() => { checks[key] = false; })
       );
     }
-    Promise.all(promises).then(() => setAvailable({ ...checks }));
+    Promise.all(promises).then(() => { setAvailable({ ...checks }); setLoading(false); });
   }, [type]);
-  return available;
+  return { available, loading };
 }
 
 function DailyScreen({ T, onStartDaily, onStartTopic }) {
   const [subTab, setSubTab] = useState('daily');
-  const caAvail   = useDailyAvailability('ca');
-  const vocAvail  = useDailyAvailability('vocab');
+  const { available: caAvail, loading: caLoading } = useDailyAvailability('ca');
+  const { available: vocAvail, loading: vocLoading } = useDailyAvailability('vocab');
   const [manifest, setManifest] = useState(null);
   const [expandedTopic, setExpandedTopic] = useState(null);
 
   useEffect(() => {
     if (subTab === 'topics' && !manifest) {
-      fetch('/ca-topics/manifest.json')
+      fetch(`${BASE_URL}/ca-topics/manifest.json`)
         .then(r => r.json())
         .then(setManifest)
         .catch(() => setManifest({topics:[]}));
@@ -1203,7 +1210,8 @@ function DailyScreen({ T, onStartDaily, onStartTopic }) {
               <span style={{ color: "#a385e0" }}>📅</span> Current Affairs
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {caEntries.length === 0
+              {caLoading ? <div style={{width: 24, height: 24, border: `3px solid ${T.border}`, borderTop: `3px solid ${GOLD}`, borderRadius: '50%', animation: 'spin 1s linear infinite', margin: '16px auto'}}></div> :
+                caEntries.length === 0
                 ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
                 : caEntries.slice(0, 3).map(([dateKey]) => (
                   <DayRow key={dateKey} dateKey={dateKey} label="Daily CA" icon="📰" cat="ca"
@@ -1220,7 +1228,8 @@ function DailyScreen({ T, onStartDaily, onStartTopic }) {
               <span style={{ color: "#00b4d8" }}>📖</span> The Hindu Vocab
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {vocEntries.length === 0
+              {vocLoading ? <div style={{width: 24, height: 24, border: `3px solid ${T.border}`, borderTop: `3px solid #00b4d8`, borderRadius: '50%', animation: 'spin 1s linear infinite', margin: '16px auto'}}></div> :
+                vocEntries.length === 0
                 ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
                 : vocEntries.slice(0, 3).map(([dateKey]) => (
                   <DayRow key={dateKey} dateKey={dateKey} label="The Hindu Vocab" icon="🖋️" cat="vocab"
@@ -1454,9 +1463,8 @@ function BlitzScreen({T,dark,onExit,blitzBests,onNewBest}){
     if(q?.ans&&nt.length===q.ans.length)doSubmit(nt);
   }
 
-  // ── Single return with conditional rendering ──
   return(
-    <div style={{minHeight:"calc(100vh - 50px)",display:"flex",flexDirection:"column"}}>
+    <div style={{height:"100%",display:"flex",flexDirection:"column"}}>
       {phase==="select"&&(
         <div style={{padding:"16px 15px",flex:1}}>
           <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:16}}>
@@ -1712,7 +1720,9 @@ function SectionLabel({label, T}){
 
 function QuizScreen({T, onSelectTopic}){
   const [exam, setExam] = useState("SSC CGL");
+  const [subject, setSubject] = useState("English");
   const exams = ["SSC CGL", "SSC CHSL", "SSC CPO", "SSC Steno", "Selection Post"];
+  const subjects = ["English", "GS", "Maths", "Reasoning"];
 
   const getTopics = (examName) => {
     if (examName === "SSC CGL") {
@@ -1728,58 +1738,71 @@ function QuizScreen({T, onSelectTopic}){
   return(
     <div className="su" style={{padding:"14px 15px 8px"}}>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
-        <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:T.text}}>English <span style={{color:GOLD}}>Quiz</span></div>
-        <select value={exam} onChange={e=>setExam(e.target.value)} style={{background:T.card,color:T.text,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 8px",fontSize:13,fontWeight:700,outline:"none",fontFamily:"'Outfit',sans-serif",cursor:"pointer"}}>
-          {exams.map(ex=><option key={ex} value={ex}>{ex}</option>)}
-        </select>
+        <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:T.text}}>{subject} <span style={{color:GOLD}}>Quiz</span></div>
+        <div style={{display:"flex",gap:6}}>
+          <select value={subject} onChange={e=>setSubject(e.target.value)} style={{background:T.card,color:T.text,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 6px",fontSize:12,fontWeight:700,outline:"none",fontFamily:"'Outfit',sans-serif",cursor:"pointer"}}>
+            {subjects.map(s=><option key={s} value={s}>{s}</option>)}
+          </select>
+          <select value={exam} onChange={e=>setExam(e.target.value)} style={{background:T.card,color:T.text,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 6px",fontSize:12,fontWeight:700,outline:"none",fontFamily:"'Outfit',sans-serif",cursor:"pointer"}}>
+            {exams.map(ex=><option key={ex} value={ex}>{ex}</option>)}
+          </select>
+        </div>
       </div>
-      <p style={{fontSize:12,color:T.sub,marginBottom:12,lineHeight:1.5}}>Topic-wise English practice from {exam} PYPs.</p>
+      <p style={{fontSize:12,color:T.sub,marginBottom:12,lineHeight:1.5}}>Topic-wise {subject} practice from {exam} PYPs.</p>
 
-      {vocab.length > 0 && (
+      {subject === "English" ? (
         <>
-          <SectionLabel label="VOCABULARY" T={T}/>
-          <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
-            {vocab.map(s=>(
-              <button key={s.id} onClick={()=>onSelectTopic(s.id)}
-                style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%",transition:"border-color 0.15s"}}
-                onMouseEnter={e=>e.currentTarget.style.borderColor=s.color+"44"}
-                onMouseLeave={e=>e.currentTarget.style.borderColor=T.border}>
-                <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
-                <div style={{flex:1}}>
-                  <div style={{fontWeight:700,fontSize:13,color:T.text}}>{s.label}</div>
-                  <div style={{fontSize:10,color:T.sub,marginTop:1}}>{s.sub}</div>
-                </div>
-                <span style={{color:T.muted,fontSize:18}}>›</span>
-              </button>
-            ))}
-          </div>
-        </>
-      )}
+          {vocab.length > 0 && (
+            <>
+              <SectionLabel label="VOCABULARY" T={T}/>
+              <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
+                {vocab.map(s=>(
+                  <button key={s.id} onClick={()=>onSelectTopic(s.id)}
+                    style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%",transition:"border-color 0.15s"}}
+                    onMouseEnter={e=>e.currentTarget.style.borderColor=s.color+"44"}
+                    onMouseLeave={e=>e.currentTarget.style.borderColor=T.border}>
+                    <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
+                    <div style={{flex:1}}>
+                      <div style={{fontWeight:700,fontSize:13,color:T.text}}>{s.label}</div>
+                      <div style={{fontSize:10,color:T.sub,marginTop:1}}>{s.sub}</div>
+                    </div>
+                    <span style={{color:T.muted,fontSize:18}}>›</span>
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
 
-      {grammar.length > 0 && (
-        <>
-          <SectionLabel label="GRAMMAR" T={T}/>
-          <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
-            {grammar.map(s=>(
-              <button key={s.id} onClick={()=>onSelectTopic(s.id)}
-                style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%",transition:"border-color 0.15s"}}
-                onMouseEnter={e=>e.currentTarget.style.borderColor=s.color+"44"}
-                onMouseLeave={e=>e.currentTarget.style.borderColor=T.border}>
-                <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
-                <div style={{flex:1}}>
-                  <div style={{fontWeight:700,fontSize:13,color:T.text}}>{s.label}</div>
-                  <div style={{fontSize:10,color:T.sub,marginTop:1}}>{s.sub}</div>
-                </div>
-                <span style={{color:T.muted,fontSize:18}}>›</span>
-              </button>
-            ))}
-          </div>
-        </>
-      )}
+          {grammar.length > 0 && (
+            <>
+              <SectionLabel label="GRAMMAR" T={T}/>
+              <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
+                {grammar.map(s=>(
+                  <button key={s.id} onClick={()=>onSelectTopic(s.id)}
+                    style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%",transition:"border-color 0.15s"}}
+                    onMouseEnter={e=>e.currentTarget.style.borderColor=s.color+"44"}
+                    onMouseLeave={e=>e.currentTarget.style.borderColor=T.border}>
+                    <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
+                    <div style={{flex:1}}>
+                      <div style={{fontWeight:700,fontSize:13,color:T.text}}>{s.label}</div>
+                      <div style={{fontSize:10,color:T.sub,marginTop:1}}>{s.sub}</div>
+                    </div>
+                    <span style={{color:T.muted,fontSize:18}}>›</span>
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
 
-      {vocab.length === 0 && grammar.length === 0 && (
+          {vocab.length === 0 && grammar.length === 0 && (
+            <div style={{textAlign:"center",padding:"40px 20px",color:T.sub,fontSize:14,background:T.card,borderRadius:12,border:`1px dashed ${T.border}`}}>
+              More topics coming soon for {exam}!
+            </div>
+          )}
+        </>
+      ) : (
         <div style={{textAlign:"center",padding:"40px 20px",color:T.sub,fontSize:14,background:T.card,borderRadius:12,border:`1px dashed ${T.border}`}}>
-          More topics coming soon for {exam}!
+          {subject} questions for {exam} are coming soon!
         </div>
       )}
     </div>
@@ -1874,7 +1897,9 @@ export default function App(){
   const T=THEMES[dark?"dark":"light"];
 
 
-  const { leaderboard, submitScore, refresh } = useLeaderboard();
+  const { leaderboard, submitScore, refresh, markDailyCompleted } = useLeaderboard();
+  const { leaderboard: dailyCaBoard, refresh: refreshDailyCa } = useLeaderboard();
+  const { leaderboard: dailyVocabBoard, refresh: refreshDailyVocab } = useLeaderboard();
   const [installPrompt, setInstallPrompt] = useState(null);
   const [showInstallBanner, setShowInstallBanner] = useState(() => LS.get("cm_show_install", true));
 
@@ -1900,16 +1925,41 @@ export default function App(){
     setInstallPrompt(null);
   };
 
-  const { user, signIn, signOut, loading } = useAuth();
-  const [showAuth, setShowAuth] = useState(false);
+  const { user, signIn, signOut, loading, signInWithEmail, signUpWithEmail, sendPhoneOtp, verifyPhoneOtp } = useAuth();
+  const [showAuth, setShowAuth] = useState(true);
+  const [authMode, setAuthMode] = useState('email');
+  const [authEmail, setAuthEmail] = useState('');
+  const [authPass, setAuthPass] = useState('');
+  const [authPhone, setAuthPhone] = useState('');
+  const [authOtp, setAuthOtp] = useState('');
+  const [verificationId, setVerificationId] = useState(null);
+  const [isSignUp, setIsSignUp] = useState(false);
+  const [authError, setAuthError] = useState('');
+  const [authInProgress, setAuthInProgress] = useState(false);
 
   useEffect(() => {
-    if (user && showAuth) setShowAuth(false);
-  }, [user, showAuth]);
+    if (!loading) {
+      setShowAuth(!user);
+    }
+  }, [user, loading]);
+
+
+
+  useEffect(() => {
+    if (user && Capacitor.isNativePlatform()) {
+      PushNotifications.requestPermissions().then(result => {
+        if (result.receive === 'granted') {
+          PushNotifications.register();
+        }
+      });
+    }
+  }, [user]);
 
   const [tab,setTab]=useState("home");
   const [modeId,setModeId]=useState(null);
   const [customConfig,setCustomConfig]=useState(null);
+
+
   const [showProfile,setShowProfile]=useState(false);
   const [profile,setProfile]=useState(()=>{
     const saved = LS.get("cm_profile", null);
@@ -1926,6 +1976,19 @@ export default function App(){
   const [typed,setTyped]=useState("");
   const [bloodSel,setBloodSel]=useState(null);
   const [phase,setPhase]=useState("idle");
+
+  useEffect(() => {
+    if (tab === "rank") {
+      refreshDailyCa('daily_ca');
+      refreshDailyVocab('daily_vocab');
+    }
+  }, [tab, refreshDailyCa, refreshDailyVocab]);
+
+  useEffect(() => {
+    if (tab === "result" && customConfig?.date && user) {
+      markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);
+    }
+  }, [tab, customConfig, user]);
   const [feedback,setFeedback]=useState(null);
   const [t,setT]=useState(0);
   const [streak,setStreak]=useState(0);
@@ -2103,8 +2166,10 @@ export default function App(){
              : (cfg !== undefined)                 ? cfg
              : customConfig;
     let tLimit=cc?12:getTimer(mid??modeId,l??lvl);
-    if(cc && cc.type === "vocab" && newQ.isGrammar) {
-      tLimit = 10; // Timer for grammar questions
+    if(cc && cc.type === "vocab") {
+      if(newQ.isGrammar) tLimit = 20;
+      else if(cc.quizCat === 'ca') tLimit = 15;
+      else if(cc.quizCat === 'gs' || newQ.isGS) tLimit = 20;
     }
     setT(tLimit);
   }
@@ -2143,7 +2208,7 @@ export default function App(){
 
   async function startDailyQuiz(cat, dateKey) {
     try {
-      const res = await fetch(`/daily/${cat}/${dateKey}.json`);
+      const res = await fetch(`${BASE_URL}/daily/${cat}/${dateKey}.json`);
       if (!res.ok) { alert("Quiz not available for this date yet."); return; }
       const data = await res.json();
       if (!data.questions || data.questions.length === 0) { alert("No questions found in this quiz."); return; }
@@ -2165,7 +2230,7 @@ export default function App(){
       const dailyKey = `daily_${cat}_${dateKey}`;
       // Inject into VOCAB_DATA at runtime so genVocab can use it
       VOCAB_DATA[dailyKey] = questions;
-      const cfg = { topic: dailyKey, type: 'vocab', count: questions.length, dailyTitle: data.title };
+      const cfg = { topic: dailyKey, type: 'vocab', quizCat: cat, date: dateKey, count: questions.length, dailyTitle: data.title };
       setModeId('vocab'); setCustomConfig(cfg);
       setTab('game'); initGame(cfg, 'vocab', 0);
     } catch(e) {
@@ -2176,7 +2241,7 @@ export default function App(){
 
   async function startTopicQuiz(topicId, fileId, topicLabel) {
     try {
-      const res = await fetch(`/ca-topics/${topicId}/${fileId}.json`);
+      const res = await fetch(`${BASE_URL}/ca-topics/${topicId}/${fileId}.json`);
       if (!res.ok) { alert("Topic quiz not available yet."); return; }
       const data = await res.json();
       if (!data.questions || data.questions.length === 0) { alert("No questions found in this quiz."); return; }
@@ -2246,14 +2311,14 @@ export default function App(){
     const nH=[...hist,{ok}];setHist(nH);
     const nQ=qCount+1;setQCount(nQ);
     const xpChange = ok ? 1 : -0.25;
-    const cat = q?.type === "vocab" ? 'vocab' : q?.type === "ca" ? 'ca' : 'maths';
+    const cat = customConfig ? (customConfig.quizCat || 'vocab') : (q?.type === "vocab" ? 'vocab' : q?.type === "ca" ? 'ca' : 'maths');
     
     setTotalXP(x => Math.max(0, x + xpChange));
     if (cat === 'vocab') setXpVocab(x => Math.max(0, x + xpChange));
     else if (cat === 'ca') setXpCA(x => Math.max(0, x + xpChange));
     else setXpMaths(x => Math.max(0, x + xpChange));
     
-    submitScore(user, xpChange, cat);
+    submitScore(user, xpChange, cat, customConfig?.date);
     if(!customConfig&&modeId){
       setModeStats(prev=>{
         const ms={...prev[modeId]};if(!ms)return prev;
@@ -2284,7 +2349,7 @@ export default function App(){
         }
         return { ...prev, [q.topic]: { seen: newSeen, wrong: newWrong } };
       });
-      setSkipTimer(5);
+      setSkipTimer(10);
     } else {
       nextRef.current=setTimeout(()=>{
         if(nQ>=sessionMax){setTab("result");setPhase("idle");}
@@ -2338,7 +2403,7 @@ export default function App(){
 
   const total=score.c+score.w;
   const acc=total>0?Math.round(score.c/total*100):0;
-  const currentTimerMax=customConfig?(q?.isGrammar?10:12):getTimer(modeId,lvl);
+  const currentTimerMax=customConfig?(customConfig.quizCat==='ca'?15:(customConfig.quizCat==='gs'||q?.isGS||q?.isGrammar)?20:12):getTimer(modeId,lvl);
   const tPct=Math.max(0,(t/currentTimerMax)*100);
   const tColor=tPct>60?GOLD:tPct>30?"#D4A830":RED;
   const rank=getRank(totalXP);
@@ -2351,27 +2416,119 @@ export default function App(){
     .map(([id,s])=>({id,acc:s.attempts>0?Math.round(s.correct/s.attempts*100):0,label:MODES.find(m=>m.id===id)?.label}))
     .sort((a,b)=>a.acc-b.acc).slice(0,3);
 
-  if (!loading && showAuth) {
+  const handleEmailAuth = async () => {
+    setAuthError('');
+    setAuthInProgress(true);
+    try {
+      if (isSignUp) {
+        await signUpWithEmail(authEmail, authPass);
+      } else {
+        await signInWithEmail(authEmail, authPass);
+      }
+    } catch (e) {
+      setAuthError(e.message.replace('Firebase: ', ''));
+    }
+    setAuthInProgress(false);
+  };
+
+  const handlePhoneSubmit = async () => {
+    setAuthError('');
+    setAuthInProgress(true);
+    try {
+      if (!verificationId) {
+        const formattedPhone = authPhone.startsWith('+') ? authPhone : `+91${authPhone}`;
+        const vid = await sendPhoneOtp(formattedPhone);
+        setVerificationId(vid);
+      } else {
+        await verifyPhoneOtp(verificationId, authOtp);
+      }
+    } catch(e) {
+      setAuthError(e.message.replace('Firebase: ', ''));
+    }
+    setAuthInProgress(false);
+  };
+
+  if (loading) {
+    return <div style={{height:"100vh",background:T.bg,display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{width: 32, height: 32, border: `4px solid ${T.border}`, borderTop: `4px solid ${GOLD}`, borderRadius: '50%', animation: 'spin 1s linear infinite'}}></div></div>;
+  }
+
+  if (showAuth) {
     return (
       <div style={{minHeight:"100vh",background:T.bg,color:T.text,fontFamily:"'Outfit','Segoe UI',sans-serif",maxWidth:480,margin:"0 auto",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",padding:20}}>
-        <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:48,letterSpacing:-1,color:T.text,marginBottom:8}}>
-          <span>Calc</span><span style={{color:GOLD}}>Mind</span>
+        <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:8}}>
+          <img src="/icon-192.png" alt="Logo" style={{width:48,height:48,borderRadius:12}} />
+          <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:48,letterSpacing:-1,color:T.text}}>
+            <span>Calc</span><span style={{color:GOLD}}>Mind</span>
+          </div>
         </div>
-        <div style={{color:T.sub,fontSize:15,marginBottom:48,fontWeight:600,textAlign:"center"}}>
+        <div style={{color:T.sub,fontSize:15,marginBottom:32,fontWeight:600,textAlign:"center"}}>
           The ultimate Maths & Current Affairs Booster
         </div>
+
+        <div style={{display:"flex",background:T.card2,borderRadius:12,padding:4,width:"100%",maxWidth:320,marginBottom:20}}>
+          <button onClick={()=>{setAuthMode('email');setAuthError('');}} style={{flex:1,padding:"10px 0",borderRadius:10,background:authMode==='email'?T.card:"transparent",color:authMode==='email'?T.text:T.sub,fontWeight:700,fontSize:14,border:`1px solid ${authMode==='email'?T.border:'transparent'}`}}>Email</button>
+          <button onClick={()=>{setAuthMode('phone');setAuthError('');}} style={{flex:1,padding:"10px 0",borderRadius:10,background:authMode==='phone'?T.card:"transparent",color:authMode==='phone'?T.text:T.sub,fontWeight:700,fontSize:14,border:`1px solid ${authMode==='phone'?T.border:'transparent'}`}}>Phone</button>
+        </div>
         
-        <button onClick={() => signIn()} style={{width:"100%",maxWidth:320,padding:"15px",background:T.card,border:`1px solid ${T.border}`,borderRadius:14,color:T.text,fontWeight:700,fontSize:16,marginBottom:20,display:"flex",alignItems:"center",justifyContent:"center",gap:12,boxShadow:dark?"none":"0 4px 12px rgba(0,0,0,0.05)",cursor:"pointer"}}>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G" style={{width:20,height:20}}/>
-          Sign in with Google
+        {authMode === 'email' ? (
+          <div style={{width:"100%",maxWidth:320,display:"flex",flexDirection:"column",gap:12,marginBottom:24}}>
+            {authError && <div style={{color:RED,fontSize:12,textAlign:'center',padding:"8px",background:`${RED}11`,borderRadius:8}}>{authError}</div>}
+            <input type="email" placeholder="Email Address" value={authEmail} onChange={e=>setAuthEmail(e.target.value)} style={{width:"100%",padding:"14px 16px",borderRadius:12,border:`1px solid ${T.border}`,background:T.inputBg,color:T.text,fontSize:15,fontFamily:"'Outfit',sans-serif"}} />
+            <input type="password" placeholder="Password" value={authPass} onChange={e=>setAuthPass(e.target.value)} style={{width:"100%",padding:"14px 16px",borderRadius:12,border:`1px solid ${T.border}`,background:T.inputBg,color:T.text,fontSize:15,fontFamily:"'Outfit',sans-serif"}} />
+            
+            <button onClick={handleEmailAuth} disabled={authInProgress || !authEmail || !authPass} style={{width:"100%",padding:"14px",background:GOLD,border:"none",borderRadius:12,color:"#111",fontWeight:800,fontSize:16,cursor:(authInProgress || !authEmail || !authPass)?"default":"pointer",marginTop:4,opacity:(authInProgress || !authEmail || !authPass)?0.5:1}}>
+              {authInProgress ? "LOADING..." : (isSignUp ? "CREATE ACCOUNT" : "SIGN IN")}
+            </button>
+            
+            <div style={{textAlign:'center',marginTop:4}}>
+              <button onClick={()=>setIsSignUp(!isSignUp)} style={{background:"none",border:"none",color:T.sub,fontSize:13,fontWeight:600,cursor:"pointer",textDecoration:"underline"}}>
+                {isSignUp ? "Already have an account? Sign In" : "Need an account? Sign Up"}
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div style={{width:"100%",maxWidth:320,display:"flex",flexDirection:"column",gap:12,marginBottom:24}}>
+            {authError && <div style={{color:RED,fontSize:12,textAlign:'center',padding:"8px",background:`${RED}11`,borderRadius:8}}>{authError}</div>}
+            
+            {!verificationId ? (
+              <>
+                <div style={{display:"flex",gap:8}}>
+                  <div style={{padding:"14px 12px",borderRadius:12,border:`1px solid ${T.border}`,background:T.inputBg,color:T.text,fontSize:15,fontFamily:"'Outfit',sans-serif",fontWeight:700}}>+91</div>
+                  <input type="tel" placeholder="Phone Number" value={authPhone} onChange={e=>setAuthPhone(e.target.value)} style={{flex:1,padding:"14px 16px",borderRadius:12,border:`1px solid ${T.border}`,background:T.inputBg,color:T.text,fontSize:15,fontFamily:"'Outfit',sans-serif"}} />
+                </div>
+                <button onClick={handlePhoneSubmit} disabled={authInProgress || authPhone.length < 10} style={{width:"100%",padding:"14px",background:GOLD,border:"none",borderRadius:12,color:"#111",fontWeight:800,fontSize:16,cursor:(authInProgress || authPhone.length < 10)?"default":"pointer",marginTop:4,opacity:(authInProgress || authPhone.length < 10)?0.5:1}}>
+                  {authInProgress ? "SENDING OTP..." : "SEND OTP"}
+                </button>
+              </>
+            ) : (
+              <>
+                <input type="number" placeholder="Enter 6-digit OTP" value={authOtp} onChange={e=>setAuthOtp(e.target.value)} style={{width:"100%",padding:"14px 16px",borderRadius:12,border:`1px solid ${T.border}`,background:T.inputBg,color:T.text,fontSize:15,fontFamily:"'Outfit',sans-serif",textAlign:'center',letterSpacing:4,fontWeight:700}} />
+                <button onClick={handlePhoneSubmit} disabled={authInProgress || authOtp.length !== 6} style={{width:"100%",padding:"14px",background:GOLD,border:"none",borderRadius:12,color:"#111",fontWeight:800,fontSize:16,cursor:(authInProgress || authOtp.length !== 6)?"default":"pointer",marginTop:4,opacity:(authInProgress || authOtp.length !== 6)?0.5:1}}>
+                  {authInProgress ? "VERIFYING..." : "VERIFY OTP"}
+                </button>
+              </>
+            )}
+          </div>
+        )}
+
+        <div style={{display:"flex",alignItems:"center",gap:12,width:"100%",maxWidth:320,marginBottom:24}}>
+          <div style={{flex:1,height:1,background:T.border}}></div>
+          <div style={{fontSize:12,color:T.sub,fontWeight:600}}>OR</div>
+          <div style={{flex:1,height:1,background:T.border}}></div>
+        </div>
+        
+        <button onClick={() => signIn()} style={{width:"100%",maxWidth:320,padding:"14px",background:T.card,border:`1px solid ${T.border}`,borderRadius:12,color:T.text,fontWeight:700,fontSize:16,marginBottom:16,display:"flex",alignItems:"center",justifyContent:"center",gap:12,boxShadow:dark?"none":"0 4px 12px rgba(0,0,0,0.05)",cursor:"pointer"}}>
+          <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.7 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+          Continue with Google
         </button>
-        
-        <button onClick={() => { LS.set("guest", true); setShowAuth(false); }} style={{width:"100%",maxWidth:320,padding:"15px",background:"transparent",border:"none",color:T.sub,fontWeight:700,fontSize:15,cursor:"pointer"}}>
+
+        <button onClick={() => { LS.set("guest", true); setShowAuth(false); }} style={{width:"100%",maxWidth:320,padding:"12px",background:"transparent",border:"none",color:T.sub,fontWeight:700,fontSize:15,cursor:"pointer",marginBottom:24}}>
           Continue as Guest
         </button>
-        
-        <div style={{marginTop:60}}>
-          <a href="https://t.me/MXPrime_CA" target="_blank" rel="noopener noreferrer" style={{color:T.muted, fontSize:13, fontWeight:700, textDecoration:"none", borderBottom:`1px solid ${T.muted}`, paddingBottom:2}}>
+
+        <div style={{marginTop:8}}>
+          <a href="https://t.me/MXPrime_CA" target="_blank" rel="noopener noreferrer" style={{color:BLUE, fontSize:14, fontWeight:700, textDecoration:"none", display:"flex", alignItems:"center", gap:6}}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.98 1.25-5.58 3.68-.52.36-.99.53-1.41.52-.46-.01-1.35-.26-2.01-.48-.81-.27-1.46-.42-1.4-.88.03-.24.36-.49 1-.76 3.91-1.7 6.53-2.83 7.84-3.38 3.73-1.56 4.51-1.83 5.02-1.84.11 0 .36.03.49.15.11.1.15.24.13.41z"/></svg>
             Join our Telegram Community
           </a>
         </div>
@@ -2380,8 +2537,8 @@ export default function App(){
   }
 
   if(showBlitz) return(
-    <div style={{minHeight:"100vh",background:T.bg,color:T.text,fontFamily:"'Outfit','Segoe UI',sans-serif",maxWidth:480,margin:"0 auto",transition:"background 0.25s"}}>
-      <div style={{padding:"11px 15px",background:T.hdr,borderBottom:`1px solid ${T.border}`,display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+    <div style={{height:"100dvh",display:"flex",flexDirection:"column",background:T.bg,color:T.text,fontFamily:"'Outfit','Segoe UI',sans-serif",maxWidth:480,margin:"0 auto",transition:"background 0.25s"}}>
+      <div style={{padding:"11px 15px",background:T.hdr,borderBottom:`1px solid ${T.border}`,display:"flex",alignItems:"center",justifyContent:"space-between",flexShrink:0}}>
         <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,color:T.text}}>Calc<span style={{color:GOLD}}>Mind</span> <span style={{color:GOLD,fontSize:16}}>⚡ Blitz</span></div>
         <button onClick={()=>setDark(d=>!d)} style={{background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"5px 8px",fontSize:13,color:T.sub}}>{dark?"☀":"🌙"}</button>
       </div>
@@ -2392,7 +2549,7 @@ export default function App(){
   );
 
   return(
-    <div style={{minHeight:"100vh",background:T.bg,color:T.text,fontFamily:"'Outfit','Segoe UI',sans-serif",display:"flex",flexDirection:"column",maxWidth:480,margin:"0 auto",transition:"background 0.25s,color 0.25s"}}>
+    <div style={{height:"100dvh",background:T.bg,color:T.text,fontFamily:"'Outfit','Segoe UI',sans-serif",display:"flex",flexDirection:"column",maxWidth:480,margin:"0 auto",transition:"background 0.25s,color 0.25s"}}>
 
       {showProfile&&<ProfileModal profile={profile} T={T} onClose={()=>setShowProfile(false)} onSave={p=>setProfile(p)} user={user} signIn={signIn} signOut={signOut}/>}
 
@@ -2435,16 +2592,19 @@ export default function App(){
             <div style={{display:"flex",gap:8}}>
               <button onClick={()=>{
                 setConfirmExit(false);
-                window.__isExiting = true;
-                try { WebApp.close(); } catch(e){}
-                try { CapApp.exitApp(); } catch(e){}
-                setTimeout(() => {
-                  try { window.close(); } catch(e) {}
-                  window.history.go(-(window.history.length - 1));
+                if (Capacitor.isNativePlatform()) {
+                  try { CapApp.exitApp(); } catch(e){}
+                } else {
+                  window.__isExiting = true;
+                  try { WebApp.close(); } catch(e){}
                   setTimeout(() => {
-                    window.location.href = "about:blank";
-                  }, 200);
-                }, 50);
+                    try { window.close(); } catch(e) {}
+                    window.history.go(-(window.history.length - 1));
+                    setTimeout(() => {
+                      window.location.href = "about:blank";
+                    }, 200);
+                  }, 50);
+                }
               }} style={{flex:1,background:GOLD,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:"#111"}}>EXIT</button>
               <button onClick={()=>{ window.__isExiting = false; setConfirmExit(false); }} style={{flex:1,background:T.card2,border:`1px solid ${T.border}`,borderRadius:10,padding:"11px",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:15,color:T.sub}}>STAY</button>
             </div>
@@ -2665,7 +2825,8 @@ export default function App(){
             )}
             
             <div style={{opacity: !user ? 0.15 : 1, filter: !user ? 'grayscale(100%)' : 'none', pointerEvents: !user ? 'none' : 'auto', transition: 'all 0.3s'}}>
-            {/* Stats moved here */}
+
+            {/* ── YOUR STATS ── */}
             <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,marginBottom:11,color:T.text}}>Your <span style={{color:GOLD}}>Stats</span></div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:7,marginBottom:11}}>
               {[[totalXP.toFixed(2),"Total XP",GOLD],[rank.label,"Rank",rank.color],[bestStreak,"Best Streak",GREEN],[Object.values(modeStats).reduce((a,s)=>a+s.attempts,0),"Solved",BLUE]].map(([v,l,c])=>(
@@ -2678,10 +2839,10 @@ export default function App(){
 
             <div style={{fontSize:9,color:T.muted,letterSpacing:2,fontWeight:700,marginBottom:6}}>CATEGORY XP</div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:7,marginBottom:14}}>
-              {[[xpMaths.toFixed(2),"Maths XP",GOLD],[xpVocab.toFixed(2),"Vocab XP","#00b4d8"],[xpCA.toFixed(2),"CA XP","#a385e0"]].map(([v,l,c])=>(
+              {[[xpMaths.toFixed(2),"Maths",GOLD],[xpVocab.toFixed(2),"Vocab","#00b4d8"],[xpCA.toFixed(2),"CA","#a385e0"]].map(([v,l,c])=>(
                 <div key={l} style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:10,padding:"9px 8px",textAlign:"center"}}>
                   <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:18,color:c}}>{v}</div>
-                  <div style={{fontSize:8,color:T.sub,fontWeight:700,letterSpacing:0.5,marginTop:2}}>{l.toUpperCase()}</div>
+                  <div style={{fontSize:8,color:T.sub,fontWeight:700,letterSpacing:0.5,marginTop:2}}>{l.toUpperCase()} XP</div>
                 </div>
               ))}
             </div>
@@ -2704,31 +2865,55 @@ export default function App(){
               </div>
             )}
 
-            <div style={{fontSize:9,color:T.muted,letterSpacing:2,fontWeight:700,marginBottom:6}}>PER MODE</div>
-            {MODES.map(m=>{
-              const ms=modeStats[m.id];
-              const mAcc=ms.attempts>0?Math.round(ms.correct/ms.attempts*100):0;
-              return(
-                <div key={m.id} style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:11,padding:"9px 12px",marginBottom:4}}>
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:ms.attempts>0?4:0}}>
-                    <span style={{fontWeight:600,fontSize:12,color:T.text}}>{m.label}</span>
-                    <div style={{display:"flex",gap:9,alignItems:"center"}}>
-                      <span style={{fontSize:10,color:T.sub}}>{ms.attempts}</span>
-                      <span style={{fontSize:11,fontWeight:800,color:mAcc>=80?GREEN:mAcc>=55?GOLD:ms.attempts>0?RED:T.muted}}>{ms.attempts>0?`${mAcc}%`:"—"}</span>
-                      {ms.avgTime>0&&<span style={{fontSize:9,color:T.muted}}>{ms.avgTime}s avg</span>}
-                    </div>
-                  </div>
-                  {ms.attempts>0&&<Bar value={mAcc} max={100} color={mAcc>=80?GREEN:mAcc>=55?GOLD:RED} height={3}/>}
-                </div>
-              );
-            })}
-
             {/* Reset */}
-            <button onClick={()=>setConfirmReset(true)} style={{marginTop:14,width:"100%",background:"none",border:`1px solid ${T.border}`,borderRadius:10,padding:"10px",fontSize:12,color:T.muted,fontWeight:600,cursor:"pointer",marginBottom:20}}>
+            <button onClick={()=>setConfirmReset(true)} style={{marginTop:4,width:"100%",background:"none",border:`1px solid ${T.border}`,borderRadius:10,padding:"10px",fontSize:12,color:T.muted,fontWeight:600,cursor:"pointer",marginBottom:20}}>
               Reset all progress
             </button>
 
-            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12, borderTop:`1px solid ${T.border}`, paddingTop:16}}>
+            {/* ── DAILY LEADERBOARDS SIDE BY SIDE ── */}
+            <div style={{borderTop:`1px solid ${T.border}`,paddingTop:16,marginBottom:10}}>
+              <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,color:T.text,marginBottom:10}}>
+                🏅 Today's <span style={{color:GOLD}}>Daily Leaders</span>
+              </div>
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
+                {/* Daily CA Board */}
+                <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
+                  <div style={{fontSize:10,fontWeight:800,color:"#a385e0",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📰 CA DAILY</div>
+                  {dailyCaBoard.length === 0 ? (
+                    <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet</div>
+                  ) : dailyCaBoard.slice(0,10).map((p,i)=>(
+                    <div key={p.id} style={{display:"flex",alignItems:"center",gap:6,marginBottom:5,background:user&&p.id===user.uid?`#a385e015`:"transparent",borderRadius:8,padding:"3px 4px"}}>
+                      <div style={{fontSize:14,width:20,textAlign:"center",flexShrink:0}}>
+                        {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
+                      </div>
+                      <AnimalAvatar id={p.avatar||"owl"} size={20}/>
+                      <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#a385e0":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
+                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p.xp_daily_ca||0).toFixed(0)}</div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Daily Vocab Board */}
+                <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
+                  <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📖 VOCAB DAILY</div>
+                  {dailyVocabBoard.length === 0 ? (
+                    <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet</div>
+                  ) : dailyVocabBoard.slice(0,10).map((p,i)=>(
+                    <div key={p.id} style={{display:"flex",alignItems:"center",gap:6,marginBottom:5,background:user&&p.id===user.uid?`#00b4d815`:"transparent",borderRadius:8,padding:"3px 4px"}}>
+                      <div style={{fontSize:14,width:20,textAlign:"center",flexShrink:0}}>
+                        {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
+                      </div>
+                      <AnimalAvatar id={p.avatar||"owl"} size={20}/>
+                      <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#00b4d8":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
+                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p.xp_daily_vocab||0).toFixed(0)}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* ── MAIN LEADERBOARD ── */}
+            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12, borderTop:`1px solid ${T.border}`, paddingTop:16, marginTop:8}}>
               <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:T.text}}>Global <span style={{color:GOLD}}>Leaderboard</span></div>
               <button onClick={()=>refresh(rankCategory)} style={{background:T.inputBg, border:`1px solid ${T.border}`, borderRadius:8, padding:"4px 8px", fontSize:12, color:T.sub}}>↻ Refresh</button>
             </div>
@@ -2738,7 +2923,8 @@ export default function App(){
                 {id:'global', label:'Global', icon:'🏆'},
                 {id:'maths', label:'Maths', icon:'⊞'},
                 {id:'vocab', label:'Vocab', icon:'📖'},
-                {id:'ca', label:'CA', icon:'📰'}
+                {id:'ca', label:'CA', icon:'📰'},
+                {id:'gs', label:'GS', icon:'🧠'}
               ].map(cat => (
                 <button key={cat.id} onClick={()=>{setRankCategory(cat.id);refresh(cat.id);}} style={{background:rankCategory===cat.id?GOLD:T.card, border:`1px solid ${rankCategory===cat.id?GOLD:T.border}`, borderRadius:8, padding:"6px 12px", fontSize:12, fontWeight:700, color:rankCategory===cat.id?"#111":T.text, flexShrink:0, display:'flex', alignItems:'center', gap:4}}>
                   <span>{cat.icon}</span> {cat.label}
@@ -2754,9 +2940,10 @@ export default function App(){
                   const isMe = user && player.id === user.uid;
                   const plRank = idx + 1;
                   const rObj = getRank(player.xp || 0);
+                  const medal = plRank===1?"🥇":plRank===2?"🥈":plRank===3?"🥉":null;
                   return (
                     <div key={player.id} style={{background:isMe?`${GOLD}18`:T.card, border:`1px solid ${isMe?GOLD:T.border}`, borderRadius:12, padding:"10px 14px", display:"flex", alignItems:"center", gap:11}}>
-                      <div style={{width:22, fontSize:12, fontWeight:800, color:plRank<=3?GOLD:T.muted, textAlign:'center'}}>#{plRank}</div>
+                      <div style={{width:24, fontSize:medal?16:12, fontWeight:800, color:plRank<=3?GOLD:T.muted, textAlign:'center'}}>{medal||`#${plRank}`}</div>
                       <AnimalAvatar id={player.avatar || "owl"} size={32}/>
                       <div style={{flex:1, minWidth:0}}>
                         <div style={{fontWeight:700, fontSize:13, color:isMe?GOLD:T.text, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{player.name}</div>
@@ -2787,7 +2974,7 @@ export default function App(){
         {/* ── GAME ── */}
         {tab==="game"&&q&&(isVocab
           /* ══════════ VOCAB LAYOUT ══════════ */
-          ?<div style={{display:"flex",flexDirection:"column",height:"calc(100vh - 48px)",background:T.bg}}>
+          ?<div style={{display:"flex",flexDirection:"column",height:"100%",background:T.bg}}>
             {/* Top stats bar */}
             <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 14px",borderBottom:`1px solid ${T.border}`,background:T.hdr,flexShrink:0}}>
               <button onClick={()=>{stopAll();setTab("quiz");setPhase("idle");}} style={{background:"none",border:"none",color:GOLD,fontWeight:800,fontSize:14,padding:0,fontFamily:"'Barlow Condensed',sans-serif",display:"flex",alignItems:"center",gap:4}}>
@@ -2854,7 +3041,7 @@ export default function App(){
           </div>
 
           /* ══════════ MATH LAYOUT ══════════ */
-          :<div style={{display:"flex",flexDirection:"column",padding:"10px 13px 9px",gap:7,height:"calc(100vh - 48px)"}}>
+          :<div style={{display:"flex",flexDirection:"column",padding:"10px 13px 9px",gap:7,height:"100%"}}>
             {!customConfig&&(
               <div style={{display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
                 <div style={{flex:1}}><Bar value={qCount%QS_PER_LEVEL} max={QS_PER_LEVEL} color={LVL_COLORS[Math.min(lvl,4)]} height={3}/></div>

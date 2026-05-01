@@ -1,0 +1,166 @@
+{
+  "date": "2026-05-01",
+  "title": "The Hindu Vocab — 01 May 2026",
+  "questions": [
+    {
+      "id": "hv_20260501_1",
+      "q": "**autonomy** means:",
+      "options": ["independence", "confusion", "delay", "restriction"],
+      "ans": "a",
+      "exp": "Autonomy = freedom to govern or act independently. Example usage from the editorial: the UAE wanted the autonomy to ramp up exports.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_2",
+      "q": "**bellwether** means:",
+      "options": ["leading indicator", "hidden rival", "weak supporter", "minor producer"],
+      "ans": "a",
+      "exp": "Bellwether = a leader or indicator of future trends. Example usage from the editorial: Saudi Arabia was described as OPEC’s bellwether.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_3",
+      "q": "**chary** means:",
+      "options": ["cautious", "reckless", "generous", "cheerful"],
+      "ans": "a",
+      "exp": "Chary = cautious or wary. Example usage from the editorial: Saudi Arabia remained chary of over-supply.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_4",
+      "q": "**détente** means:",
+      "options": ["easing of tension", "sudden attack", "strict blockade", "legal dispute"],
+      "ans": "a",
+      "exp": "Détente = relaxation of strained relations. Example usage from the editorial: volatility may persist unless a geopolitical détente emerges.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_5",
+      "q": "**anomalous** means:",
+      "options": ["abnormal", "ordinary", "planned", "minor"],
+      "ans": "a",
+      "exp": "Anomalous = unusual or abnormal. Example usage from the editorial: the intense fires were not anomalous but a seasonal event.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_6",
+      "q": "**manifestation** means:",
+      "options": ["clear expression", "complete denial", "hidden cause", "casual mistake"],
+      "ans": "a",
+      "exp": "Manifestation = a visible sign or expression of something. Example usage from the editorial: the fires were an acute manifestation of a seasonal event.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_7",
+      "q": "**conducive** means:",
+      "options": ["favourable", "harmful", "irrelevant", "temporary"],
+      "ans": "a",
+      "exp": "Conducive = making something likely or possible. Example usage from the editorial: high heat and strong winds created a conducive environment for fires.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_8",
+      "q": "**paraphernalia** means:",
+      "options": ["equipment or accessories", "formal permission", "public anger", "legal punishment"],
+      "ans": "a",
+      "exp": "Paraphernalia = items or equipment used for a particular activity. Example usage from the editorial: discarded smoking paraphernalia was cited as an accidental cause.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_9",
+      "q": "**retrenchment** means:",
+      "options": ["reduction of staff", "increase in wages", "official celebration", "public investment"],
+      "ans": "a",
+      "exp": "Retrenchment = cutting down expenditure or reducing employees. Example usage from the editorial: the labour code raises the threshold for layoffs, retrenchment, and closure.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_10",
+      "q": "**precedent** means:",
+      "options": ["earlier example", "false rumour", "future danger", "minor exception"],
+      "ans": "a",
+      "exp": "Precedent = an earlier example used as a guide. Example usage from the editorial: the FTA sets a precedent for further negotiations.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260501_11",
+      "q": "Antonym of **volatile**:",
+      "options": ["stable", "fragile", "uncertain", "explosive"],
+      "ans": "a",
+      "exp": "Volatile = unstable or likely to change suddenly. Example usage from the editorial: instability around West Asia could create heightened volatility.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260501_12",
+      "q": "Antonym of **dilution**:",
+      "options": ["strengthening", "weakening", "simplification", "exemption"],
+      "ans": "a",
+      "exp": "Dilution = weakening or reducing force. Example usage from the editorial: consolidation is not dilution.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260501_13",
+      "q": "Antonym of **stagnation**:",
+      "options": ["growth", "inactivity", "deadlock", "delay"],
+      "ans": "a",
+      "exp": "Stagnation = lack of progress or growth. Example usage from the editorial: wage stagnation drove workers into protest.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260501_14",
+      "q": "Antonym of **stringent**:",
+      "options": ["lenient", "strict", "rigid", "severe"],
+      "ans": "a",
+      "exp": "Stringent = strict or severe. Example usage from the editorial: Germany’s export control regime remains stringent.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260501_15",
+      "q": "Idiom: **'on the face of it'** means:",
+      "options": ["apparently", "secretly", "finally", "wrongly"],
+      "ans": "a",
+      "exp": "On the face of it = apparently or at first glance. Example usage from the editorial: on the face of it, high turnout suggested deepening democratic engagement.",
+      "type": "idiom"
+    },
+    {
+      "id": "hv_20260501_16",
+      "q": "Idiom: **'in a single stroke'** means:",
+      "options": ["all at once", "after a long delay", "with great confusion", "without any result"],
+      "ans": "a",
+      "exp": "In a single stroke = in one action. Example usage from the editorial: in a single stroke, four labour codes replaced 29 central labour laws.",
+      "type": "idiom"
+    },
+    {
+      "id": "hv_20260501_17",
+      "q": "Idiom: **'first-mover advantage'** means:",
+      "options": ["benefit gained by acting before others", "loss caused by acting late", "risk of avoiding competition", "right to reject an offer"],
+      "ans": "a",
+      "exp": "First-mover advantage = benefit gained by being the first to enter or act. Example usage from the editorial: India gained a first-mover advantage in Oceania.",
+      "type": "idiom"
+    },
+    {
+      "id": "hv_20260501_18",
+      "q": "Phrasal verb: **'ramp up'** means:",
+      "options": ["increase quickly", "reduce slowly", "hide carefully", "delay officially"],
+      "ans": "a",
+      "exp": "Ramp up = increase or expand. Example usage from the editorial: the UAE wanted to ramp up exports.",
+      "type": "phrasal_verb"
+    },
+    {
+      "id": "hv_20260501_19",
+      "q": "Phrasal verb: **'doused'** means:",
+      "options": ["extinguished", "expanded", "ignored", "created"],
+      "ans": "a",
+      "exp": "Doused = put out, especially fire. Example usage from the editorial: some fires took longer to be doused.",
+      "type": "phrasal_verb"
+    },
+    {
+      "id": "hv_20260501_20",
+      "q": "Phrasal verb: **'factored in'** means:",
+      "options": ["considered as part of a plan", "removed completely", "announced publicly", "rejected immediately"],
+      "ans": "a",
+      "exp": "Factored in = included or considered while making a decision. Example usage from the editorial: fire management must consider what can be factored in over the long term.",
+      "type": "phrasal_verb"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "date": "2026-04-30",
+  "title": "Daily Current Affairs — 30 April 2026",
+  "questions": [
+    {
+      "id": "ca_20260430_1",
+      "q": "Which company received an Air Operator Certificate from DGCA to become India’s first dedicated commercial seaplane operator?",
+      "options": ["Fly Big Aviation", "SkyHop Aviation", "SpiceJet Seaplane Services", "Alliance Air"],
+      "ans": "b",
+      "exp": "DGCA granted an AOC to SkyHop Aviation, which plans to become India’s first dedicated commercial seaplane operator."
+    },
+    {
+      "id": "ca_20260430_2",
+      "q": "In the first phase, SkyHop Aviation plans to connect five islands of which region with each other and the mainland?",
+      "options": ["Andaman and Nicobar Islands", "Lakshadweep", "Diu and Daman", "Sundarbans"],
+      "ans": "b",
+      "exp": "SkyHop will begin by connecting five islands in Lakshadweep with each other and the mainland."
+    },
+    {
+      "id": "ca_20260430_3",
+      "q": "NITI Aayog launched which strategic roadmap for India’s next phase of Digital Public Infrastructure?",
+      "options": ["Digital India 2035", "DPI@2047 for Viksit Bharat", "BharatNet 2.0", "India Stack Mission"],
+      "ans": "b",
+      "exp": "NITI Aayog launched DPI@2047 for Viksit Bharat to guide India’s next phase of DPI-led growth."
+    },
+    {
+      "id": "ca_20260430_4",
+      "q": "The DPI@2047 roadmap aims to align India’s digital growth with the goal of becoming a how much economy by 2047?",
+      "options": ["$10 trillion", "$20 trillion", "$30 trillion", "$50 trillion"],
+      "ans": "c",
+      "exp": "The roadmap is aligned with India’s vision of becoming a $30 trillion economy by 2047."
+    },
+    {
+      "id": "ca_20260430_5",
+      "q": "Which two organisations partnered with NITI Aayog in developing the DPI@2047 roadmap?",
+      "options": ["NASSCOM and Infosys", "EkStep Foundation and Deloitte", "Google and Microsoft", "NPCI and UIDAI"],
+      "ans": "b",
+      "exp": "The DPI@2047 roadmap was developed in partnership with EkStep Foundation and Deloitte."
+    },
+    {
+      "id": "ca_20260430_6",
+      "q": "Which of the following is NOT one of the five new districts approved in Ladakh?",
+      "options": ["Nubra", "Sham", "Changthang", "Poonch"],
+      "ans": "d",
+      "exp": "The five new districts are Nubra, Sham, Changthang, Zanskar and Drass."
+    },
+    {
+      "id": "ca_20260430_7",
+      "q": "After the creation of five new districts, Ladakh will now have how many districts in total?",
+      "options": ["5", "6", "7", "9"],
+      "ans": "c",
+      "exp": "Earlier Ladakh had Leh and Kargil; with five new districts, the total becomes seven."
+    },
+    {
+      "id": "ca_20260430_8",
+      "q": "The UAE announced its withdrawal from OPEC and OPEC+ effective from which date?",
+      "options": ["April 1, 2026", "May 1, 2026", "June 1, 2026", "December 31, 2026"],
+      "ans": "b",
+      "exp": "The UAE’s withdrawal from OPEC and OPEC+ became effective from May 1, 2026."
+    },
+    {
+      "id": "ca_20260430_9",
+      "q": "What was the primary reason behind the UAE’s withdrawal from OPEC?",
+      "options": ["Decline in oil reserves", "Disagreement over production quotas", "Merger with IEA", "Shift to coal exports"],
+      "ans": "b",
+      "exp": "The UAE was frustrated with production quotas that restricted its output despite higher production capacity."
+    },
+    {
+      "id": "ca_20260430_10",
+      "q": "Flipkart, Axis Bank and PayU launched biometric authentication for card payments using which methods instead of OTP?",
+      "options": ["QR code and PIN", "Fingerprint or Face ID", "Voice command only", "PAN and Aadhaar OTP"],
+      "ans": "b",
+      "exp": "Axis Bank cardholders can approve transactions on Flipkart using fingerprint or Face ID instead of OTP."
+    },
+    {
+      "id": "ca_20260430_11",
+      "q": "RBI launched Mission SAKSHAM for capacity building of which sector?",
+      "options": ["Urban Co-operative Banks", "Small Finance Banks", "Payment Banks", "Regional Rural Banks"],
+      "ans": "a",
+      "exp": "Mission SAKSHAM, or Sahkari Bank Kshamta Nirman, is for capacity building of Urban Co-operative Banks."
+    },
+    {
+      "id": "ca_20260430_12",
+      "q": "Under Mission SAKSHAM, RBI aims to cover approximately how many participants through training programmes?",
+      "options": ["40 lakh", "75 lakh", "1 crore", "1 crore 40 lakh"],
+      "ans": "d",
+      "exp": "The RBI plans training programmes covering about 1 crore 40 lakh participants."
+    },
+    {
+      "id": "ca_20260430_13",
+      "q": "Pakistan launched its indigenous EO-3 satellite aboard which rocket?",
+      "options": ["Falcon 9", "Long March-6", "Soyuz-2", "GSLV Mk III"],
+      "ans": "b",
+      "exp": "Pakistan’s EO-3 satellite was launched from China’s Taiyuan Satellite Launch Centre aboard a Long March-6 rocket."
+    },
+    {
+      "id": "ca_20260430_14",
+      "q": "The foundation stone for the Google Cloud India AI Hub was laid at which location?",
+      "options": ["Tarluvada, Visakhapatnam", "HITEC City, Hyderabad", "Whitefield, Bengaluru", "Noida Electronic City"],
+      "ans": "a",
+      "exp": "The Google Cloud India AI Hub is being established at Tarluvada, Visakhapatnam in Andhra Pradesh."
+    },
+    {
+      "id": "ca_20260430_15",
+      "q": "Google’s investment for the Google Cloud India AI Hub is valued at how much over five years?",
+      "options": ["$5 billion", "$10 billion", "$15 billion", "$20 billion"],
+      "ans": "c",
+      "exp": "Google will invest $15 billion over 2026-2030, recognised as India’s single largest FDI since independence."
+    },
+    {
+      "id": "ca_20260430_16",
+      "q": "Bihar’s first structured pulse procurement initiative was launched under which mission?",
+      "options": ["PM-KISAN", "Atmanirbhar Pulses Mission", "National Food Security Mission", "PM Formalisation of Micro Food Processing Scheme"],
+      "ans": "b",
+      "exp": "Bihar’s first structured pulse procurement initiative was launched under the Atmanirbhar Pulses Mission."
+    },
+    {
+      "id": "ca_20260430_17",
+      "q": "According to SIPRI’s report ‘Trends in World Military Expenditure, 2025’, India became the world’s ______ largest military spender.",
+      "options": ["third", "fourth", "fifth", "sixth"],
+      "ans": "c",
+      "exp": "India became the world’s fifth-largest military spender with expenditure of $92.1 billion in 2025."
+    },
+    {
+      "id": "ca_20260430_18",
+      "q": "MoSPI proposed creating the Index of Services Production using GST data with which base year?",
+      "options": ["2021-22", "2022-23", "2023-24", "2024-25"],
+      "ans": "d",
+      "exp": "MoSPI proposed the Index of Services Production for the formal sector using GST data with 2024-25 as the base year."
+    },
+    {
+      "id": "ca_20260430_19",
+      "q": "BHEL signed a Licensing Agreement for Transfer of Technology with NSTL-DRDO for which naval system?",
+      "options": ["LM2500 Gas Turbine Infrared Suppression System", "Akash-NG Missile Guidance System", "Varunastra Torpedo Launch System", "BrahMos Fire Control System"],
+      "ans": "a",
+      "exp": "The agreement is for fabrication, installation and commissioning of the LM2500 Gas Turbine Infrared Suppression System for naval vessels."
+    },
+    {
+      "id": "ca_20260430_20",
+      "q": "The Department of Posts signed an MoU with which company to strengthen logistics and e-commerce operations across India?",
+      "options": ["Blue Dart", "Delhivery", "DTDC Express Limited", "Ecom Express"],
+      "ans": "c",
+      "exp": "The Department of Posts and DTDC Express Limited signed an MoU to use India Post’s network for logistics and parcel delivery."
+    }
+  ]
+}

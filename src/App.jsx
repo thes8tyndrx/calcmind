@@ -3,6 +3,8 @@ import { useAuth } from './hooks/useAuth';
 import { useLeaderboard } from './hooks/useLeaderboard';
 import VOCAB_DATA from './data/quiz/vocab_data.json';
 import WebApp from '@twa-dev/sdk';
+import { App as CapApp } from '@capacitor/app';
+import { Haptics, ImpactStyle, NotificationType } from '@capacitor/haptics';
 // ─── Theme ────────────────────────────────────────────────────────────────────
 const GOLD="#C8901C", GREEN="#4DC758", RED="#D95252", BLUE="#4A9EFF", PINK="#FF6B8A";
 const THEMES={
@@ -595,16 +597,16 @@ function genVocab(topic, history = {}){
 
 // ─── MODES ────────────────────────────────────────────────────────────────────
 const MODES=[
-  {id:"arith",   label:"Speed Calc",     sub:"Add · Sub · Mul · Div",           icon:"⚡",timer:[11,10,9,8,6],   gen:genArith},
-  {id:"table",   label:"Tables Drill",   sub:"2×2 up to 70×70",                icon:"⊞",timer:[9,8,7,6,5],     gen:genTable},
-  {id:"div",     label:"Division",       sub:"Fast division drills",             icon:"÷",timer:[9,8,7,6,5],    gen:genDivision},
-  {id:"sqcb",    label:"Sq · Cb · Root", sub:"Squares, cubes, √ and ∛",        icon:"√",timer:[10,9,8,7,6],   gen:genSqCb},
-  {id:"chain",   label:"Chain Maths",    sub:"Multi-step · SI/CI · P&L",        icon:"∞",timer:[14,13,12,11,10],gen:genChain},
-  {id:"pctRatio",label:"% & Ratio",      sub:"Fractions · % · Ratio",           icon:"%",timer:[12,11,10,9,8],  gen:genPctRatio},
-  {id:"mensur",  label:"Mensuration",    sub:"Area · Volume · SA — all shapes", icon:"⬡",timer:[16,15,14,13,12],gen:genMensuration},
-  {id:"series",  label:"Number Series",  sub:"Find missing · Spot wrong number",icon:"∿",timer:[14,13,12,11,10],gen:genSeries},
-  {id:"seating", label:"Seat Logic",     sub:"Linear & Circular arrangement",   icon:"≡",timer:[13,12,11,10,9], gen:genSeating},
-  {id:"blood",   label:"Blood Relations",sub:"Family tree — decode the relation",icon:"♡",timer:[18,16,14,13,12],gen:genBloodRelation},
+  {id:"arith",   label:"Speed Calc",     sub:"Add · Sub · Mul · Div",           icon:"⚡",timer:[12,11,10,9,7],   gen:genArith},
+  {id:"table",   label:"Tables Drill",   sub:"2×2 up to 70×70",                icon:"⊞",timer:[10,9,8,7,6],     gen:genTable},
+  {id:"div",     label:"Division",       sub:"Fast division drills",             icon:"÷",timer:[10,9,8,7,6],    gen:genDivision},
+  {id:"sqcb",    label:"Sq · Cb · Root", sub:"Squares, cubes, √ and ∛",        icon:"√",timer:[11,10,9,8,7],   gen:genSqCb},
+  {id:"chain",   label:"Chain Maths",    sub:"Multi-step · SI/CI · P&L",        icon:"∞",timer:[15,14,13,12,11],gen:genChain},
+  {id:"pctRatio",label:"% & Ratio",      sub:"Fractions · % · Ratio",           icon:"%",timer:[13,12,11,10,9],  gen:genPctRatio},
+  {id:"mensur",  label:"Mensuration",    sub:"Area · Volume · SA — all shapes", icon:"⬡",timer:[17,16,15,14,13],gen:genMensuration},
+  {id:"series",  label:"Number Series",  sub:"Find missing · Spot wrong number",icon:"∿",timer:[15,14,13,12,11],gen:genSeries},
+  {id:"seating", label:"Seat Logic",     sub:"Linear & Circular arrangement",   icon:"≡",timer:[14,13,12,11,10], gen:genSeating},
+  {id:"blood",   label:"Blood Relations",sub:"Family tree — decode the relation",icon:"♡",timer:[19,17,15,14,13],gen:genBloodRelation},
 ];
 
 const CGL_VOCAB_TOPICS = [
@@ -637,6 +639,7 @@ const QUIZ_TOPICS = [...CGL_VOCAB_TOPICS, ...CHSL_VOCAB_TOPICS, ...GRAMMAR_TOPIC
 
 // ─── ANIMAL AVATARS ───────────────────────────────────────────────────────────
 const AVATARS=[
+  {id:"tiger",emoji:"🐅",bg:"#E67E22"},
   {id:"owl",  emoji:"🦉",bg:"#2C3558"},
   {id:"fox",  emoji:"🦊",bg:"#7A3410"},
   {id:"cat",  emoji:"🐱",bg:"#4A3060"},
@@ -1363,7 +1366,7 @@ function BlitzScreen({T,dark,onExit,blitzBests,onNewBest}){
   const [selectedMode,setSelectedMode]=useState(null);
   const [phase,setPhase]=useState("select");
   const [countdown,setCountdown]=useState(3);
-  const [timeLeft,setTimeLeft]=useState(60);
+  const [timeLeft,setTimeLeft]=useState(120);
   const [q,setQ]=useState(null);
   const [typed,setTyped]=useState("");
   const [score,setScore]=useState(0);
@@ -1425,7 +1428,7 @@ function BlitzScreen({T,dark,onExit,blitzBests,onNewBest}){
 
   function startGame(mid){
     clearInterval(timerRef.current);
-    setPhase("playing");setTimeLeft(60);setScore(0);setWrong(0);setTyped("");
+    setPhase("playing");setTimeLeft(120);setScore(0);setWrong(0);setTyped("");
     makeNextQ(mid);
     timerRef.current=setInterval(()=>{
       setTimeLeft(p=>{
@@ -1787,13 +1790,13 @@ function QuizScreen({T, onSelectTopic}){
 function ProfileModal({profile,onClose,onSave,T,user,signIn,signOut}){
   const [name,setName]=useState(profile.name||user?.displayName||"");
   const [goal,setGoal]=useState(profile.goal||"IBPS PO");
-  const [av,setAv]=useState(profile.avatar||user?.photoURL||"owl");
+  const [av,setAv]=useState(user?.photoURL||profile.avatar||"tiger");
   const goals=["IBPS PO","SBI PO","SSC CGL","RBI Grade B","CAT","Other"];
   
   useEffect(() => {
     if (user) {
       if (!name) setName(user.displayName || "");
-      if (av === "owl" && user.photoURL) setAv(user.photoURL);
+      if (av === "tiger" && user.photoURL) setAv(user.photoURL);
     }
   }, [user]);
   return(
@@ -1870,7 +1873,7 @@ export default function App(){
   const [dark,setDark]=useState(()=>LS.get("cm_dark",false));
   const T=THEMES[dark?"dark":"light"];
 
-  const { user, signIn, signOut } = useAuth();
+
   const { leaderboard, submitScore, refresh } = useLeaderboard();
   const [installPrompt, setInstallPrompt] = useState(null);
   const [showInstallBanner, setShowInstallBanner] = useState(() => LS.get("cm_show_install", true));
@@ -1897,6 +1900,13 @@ export default function App(){
     setInstallPrompt(null);
   };
 
+  const { user, signIn, signOut, loading } = useAuth();
+  const [showAuth, setShowAuth] = useState(false);
+
+  useEffect(() => {
+    if (user && showAuth) setShowAuth(false);
+  }, [user, showAuth]);
+
   const [tab,setTab]=useState("home");
   const [modeId,setModeId]=useState(null);
   const [customConfig,setCustomConfig]=useState(null);
@@ -1905,7 +1915,7 @@ export default function App(){
     const saved = LS.get("cm_profile", null);
     if (saved && saved.name) return saved;
     const twaName = WebApp.initDataUnsafe?.user?.first_name || "";
-    return saved ? { ...saved, name: saved.name || twaName } : {name: twaName, goal:"IBPS PO", avatar:"owl"};
+    return saved ? { ...saved, name: saved.name || twaName } : {name: twaName, goal:"IBPS PO", avatar:"tiger"};
   });
   const [showBlitz,setShowBlitz]=useState(false);
   const [confirmReset,setConfirmReset]=useState(false);
@@ -1991,6 +2001,19 @@ export default function App(){
     };
 
     try {
+      CapApp.addListener('backButton', ({ canGoBack }) => {
+        if (tab !== 'home' || showBlitz) {
+          stopAll();
+          setTab('home');
+          setPhase('idle');
+          setShowBlitz(false);
+        } else {
+          setConfirmExit(true);
+        }
+      });
+    } catch(e) {}
+
+    try {
       if (tab !== 'home' || showBlitz) {
         WebApp.BackButton.show();
       } else {
@@ -2010,6 +2033,9 @@ export default function App(){
       window.removeEventListener('popstate', handlePopState);
       try {
         WebApp.BackButton.offClick(handleTelegramBack);
+      } catch (e) {}
+      try {
+        CapApp.removeAllListeners();
       } catch (e) {}
     };
   }, [tab, showBlitz, phase]);
@@ -2130,7 +2156,7 @@ export default function App(){
           id: item.id || `${cat}_${dateKey}_${i}`,
           question: item.q,
           options: optionsObj,
-          ans: letters[item.ans],
+          ans: typeof item.ans === 'number' ? letters[item.ans] : String(item.ans).toLowerCase(),
           explanation: item.exp || "",
           type: cat === 'ca' ? 'ca' : 'vocab',
           topic: `daily_${cat}_${dateKey}`,
@@ -2162,7 +2188,7 @@ export default function App(){
           id: item.id || `topic_${topicId}_${fileId}_${i}`,
           question: item.q,
           options: optionsObj,
-          ans: letters[item.ans],
+          ans: typeof item.ans === 'number' ? letters[item.ans] : String(item.ans).toLowerCase(),
           explanation: item.exp || "",
           type: 'ca', 
           topic: `topic_${topicId}_${fileId}`,
@@ -2202,12 +2228,18 @@ export default function App(){
     
     // Haptic feedback
     try {
-      if(ok) WebApp.HapticFeedback.notificationOccurred('success');
-      else WebApp.HapticFeedback.notificationOccurred('error');
-    } catch(e) {}
-    if(typeof navigator!=="undefined"&&navigator.vibrate){
-      if(ok) navigator.vibrate(40);
-      else navigator.vibrate([80, 50, 80]);
+      if(ok) Haptics.notification({ type: NotificationType.Success });
+      else Haptics.notification({ type: NotificationType.Error });
+    } catch(e) {
+      // fallback for web
+      try {
+        if(ok) WebApp.HapticFeedback.notificationOccurred('success');
+        else WebApp.HapticFeedback.notificationOccurred('error');
+      } catch(e2) {}
+      if(typeof navigator!=="undefined"&&navigator.vibrate){
+        if(ok) navigator.vibrate(40);
+        else navigator.vibrate([100, 50, 100]);
+      }
     }
     const nc=score.c+(ok?1:0),nWr=score.w+(ok?0:1);
     setScore({c:nc,w:nWr});
@@ -2319,6 +2351,34 @@ export default function App(){
     .map(([id,s])=>({id,acc:s.attempts>0?Math.round(s.correct/s.attempts*100):0,label:MODES.find(m=>m.id===id)?.label}))
     .sort((a,b)=>a.acc-b.acc).slice(0,3);
 
+  if (!loading && showAuth) {
+    return (
+      <div style={{minHeight:"100vh",background:T.bg,color:T.text,fontFamily:"'Outfit','Segoe UI',sans-serif",maxWidth:480,margin:"0 auto",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",padding:20}}>
+        <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:48,letterSpacing:-1,color:T.text,marginBottom:8}}>
+          <span>Calc</span><span style={{color:GOLD}}>Mind</span>
+        </div>
+        <div style={{color:T.sub,fontSize:15,marginBottom:48,fontWeight:600,textAlign:"center"}}>
+          The ultimate Maths & Current Affairs Booster
+        </div>
+        
+        <button onClick={() => signIn()} style={{width:"100%",maxWidth:320,padding:"15px",background:T.card,border:`1px solid ${T.border}`,borderRadius:14,color:T.text,fontWeight:700,fontSize:16,marginBottom:20,display:"flex",alignItems:"center",justifyContent:"center",gap:12,boxShadow:dark?"none":"0 4px 12px rgba(0,0,0,0.05)",cursor:"pointer"}}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G" style={{width:20,height:20}}/>
+          Sign in with Google
+        </button>
+        
+        <button onClick={() => { LS.set("guest", true); setShowAuth(false); }} style={{width:"100%",maxWidth:320,padding:"15px",background:"transparent",border:"none",color:T.sub,fontWeight:700,fontSize:15,cursor:"pointer"}}>
+          Continue as Guest
+        </button>
+        
+        <div style={{marginTop:60}}>
+          <a href="https://t.me/MXPrime_CA" target="_blank" rel="noopener noreferrer" style={{color:T.muted, fontSize:13, fontWeight:700, textDecoration:"none", borderBottom:`1px solid ${T.muted}`, paddingBottom:2}}>
+            Join our Telegram Community
+          </a>
+        </div>
+      </div>
+    );
+  }
+
   if(showBlitz) return(
     <div style={{minHeight:"100vh",background:T.bg,color:T.text,fontFamily:"'Outfit','Segoe UI',sans-serif",maxWidth:480,margin:"0 auto",transition:"background 0.25s"}}>
       <div style={{padding:"11px 15px",background:T.hdr,borderBottom:`1px solid ${T.border}`,display:"flex",alignItems:"center",justifyContent:"space-between"}}>
@@ -2377,6 +2437,7 @@ export default function App(){
                 setConfirmExit(false);
                 window.__isExiting = true;
                 try { WebApp.close(); } catch(e){}
+                try { CapApp.exitApp(); } catch(e){}
                 setTimeout(() => {
                   try { window.close(); } catch(e) {}
                   window.history.go(-(window.history.length - 1));
@@ -2392,10 +2453,10 @@ export default function App(){
       )}
 
       {/* HEADER */}
-      <div style={{padding:"10px 15px",background:T.hdr,borderBottom:`1px solid ${T.border}`,display:"flex",alignItems:"center",justifyContent:"space-between",flexShrink:0,boxShadow:dark?"none":"0 1px 8px rgba(0,0,0,0.06)"}}>
+      <div style={{padding:"max(12px, env(safe-area-inset-top, 35px)) 15px 10px 15px",background:T.hdr,borderBottom:`1px solid ${T.border}`,display:"flex",alignItems:"center",justifyContent:"space-between",flexShrink:0,boxShadow:dark?"none":"0 1px 8px rgba(0,0,0,0.06)"}}>
         <div style={{display:"flex",alignItems:"center",gap:8}}>
           <button onClick={()=>setShowProfile(true)} style={{background:"none",padding:0,cursor:"pointer",flexShrink:0}}>
-            <AnimalAvatar id={profile.avatar||user?.photoURL||"owl"} size={34}/>
+            <AnimalAvatar id={user?.photoURL||profile.avatar||"tiger"} size={34}/>
           </button>
           <div>
             <button onClick={()=>{if(tab==="game"){stopAll();setTab("home");setPhase("idle");}}} style={{background:"none",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,letterSpacing:-0.5,color:T.text,padding:0}}>
@@ -2491,7 +2552,7 @@ export default function App(){
             }}>
               <div style={{fontSize:24}}>⚡</div>
               <div style={{flex:1}}>
-                <div style={{fontWeight:700,fontSize:13,color:GOLD}}>60-second Blitz Mode</div>
+                <div style={{fontWeight:700,fontSize:13,color:GOLD}}>2-Minute Blitz Mode</div>
                 <div style={{fontSize:10,color:T.sub,marginTop:1}}>Answer as many as possible. Beat your high score.</div>
               </div>
               <span style={{color:GOLD,fontSize:18}}>›</span>
@@ -2563,6 +2624,10 @@ export default function App(){
                 );
               })}
             </div>
+
+            <a href="https://t.me/MXPrime_CA" target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"center",gap:10,width:"100%",padding:"13px",marginTop:4,background:"linear-gradient(135deg,rgba(42,171,238,0.15),rgba(42,171,238,0.05))",border:"1px solid rgba(42,171,238,0.3)",borderRadius:14,color:"#2AABEE",fontWeight:800,fontSize:14,textDecoration:"none"}}>
+              <span style={{fontSize:20}}>📢</span> Join our Telegram Channel
+            </a>
           </div>
         )}
 
@@ -2588,15 +2653,18 @@ export default function App(){
 
         {/* ── RANK & LEADERBOARD ── */}
         {tab==="rank"&&(
-          <div className="su" style={{padding:"14px 15px 8px"}}>
+          <div className="su" style={{padding:"14px 15px 8px", position: "relative", minHeight: "100vh"}}>
             {!user && (
-              <div style={{background:T.card2, border:`1px solid ${T.border}`, borderRadius:12, padding:"12px", marginBottom:14, textAlign:'center'}}>
-                <div style={{fontSize:13, fontWeight:700, color:T.text, marginBottom:4}}>Log in to join the leaderboard</div>
-                <div style={{fontSize:11, color:T.sub, marginBottom:10}}>Compare your XP with other players around the world.</div>
-                <button onClick={signIn} style={{padding:"8px 16px", background:GOLD, borderRadius:8, color:"#111", fontSize:12, fontWeight:800}}>SIGN IN</button>
+              <div style={{position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 10, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", paddingTop: 80}}>
+                <div style={{background:T.card2, border:`2px solid ${GOLD}`, borderRadius:16, padding:"20px", width:"85%", textAlign:'center', boxShadow:dark?"0 4px 20px rgba(0,0,0,0.6)":"0 4px 20px rgba(0,0,0,0.15)"}}>
+                  <div style={{fontSize:18, fontWeight:900, color:T.text, marginBottom:6, fontFamily:"'Barlow Condensed',sans-serif"}}>JOIN THE LEADERBOARD</div>
+                  <div style={{fontSize:13, color:T.sub, marginBottom:16}}>Sign in to save your XP, track your stats, and compete globally.</div>
+                  <button onClick={signIn} style={{padding:"12px 20px", background:GOLD, borderRadius:10, color:"#111", fontSize:14, fontWeight:900, width:"100%"}}>SIGN IN WITH GOOGLE</button>
+                </div>
               </div>
             )}
             
+            <div style={{opacity: !user ? 0.15 : 1, filter: !user ? 'grayscale(100%)' : 'none', pointerEvents: !user ? 'none' : 'auto', transition: 'all 0.3s'}}>
             {/* Stats moved here */}
             <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,marginBottom:11,color:T.text}}>Your <span style={{color:GOLD}}>Stats</span></div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:7,marginBottom:11}}>
@@ -2711,6 +2779,8 @@ export default function App(){
                 </div>
               ))}
             </div>
+            
+            </div> {/* End of faded wrapper */}
           </div>
         )}
 

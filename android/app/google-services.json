@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1036255835213",
+    "project_id": "calcmind-4251b",
+    "storage_bucket": "calcmind-4251b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036255835213:android:77929846855da9ccc61804",
+        "android_client_info": {
+          "package_name": "in.mxprime.calcmind.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036255835213-dvfdmkpgin47t7qjcur06esq5domvlvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTha78I4jU5OwRWjXnXPFw-xfx4pdlaUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036255835213-dvfdmkpgin47t7qjcur06esq5domvlvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

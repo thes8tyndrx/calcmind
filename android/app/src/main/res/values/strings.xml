@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CalcMind</string>
+    <string name="title_activity_main">CalcMind</string>
+    <string name="package_name">in.mxprime.calcmind.app</string>
+    <string name="custom_url_scheme">in.mxprime.calcmind.app</string>
+</resources>

@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
-import { signInWithPopup, getRedirectResult, signOut as firebaseSignOut, onAuthStateChanged } from 'firebase/auth';
+import { signInWithPopup, getRedirectResult, signOut as firebaseSignOut, onAuthStateChanged, signInWithCredential } from 'firebase/auth';
 import { auth, googleProvider } from '../firebase';
+import { Capacitor } from '@capacitor/core';
+import { FirebaseAuthentication } from '@capacitor-firebase/authentication';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 export function useAuth() {
   const [user, setUser] = useState(null);
@@ -31,16 +34,28 @@ export function useAuth() {
       return;
     }
     try {
-      // Use popup for better SPA flow and to prevent redirect loops
-      await signInWithPopup(auth, googleProvider);
+      if (Capacitor.isNativePlatform()) {
+        const result = await FirebaseAuthentication.signInWithGoogle();
+        if (result.credential?.idToken) {
+          const credential = GoogleAuthProvider.credential(result.credential.idToken);
+          await signInWithCredential(auth, credential);
+        }
+      } else {
+        // Use popup for better SPA flow and to prevent redirect loops
+        await signInWithPopup(auth, googleProvider);
+      }
     } catch (error) {
       console.error("Error signing in with Google", error);
+      alert("Sign in failed. " + (error.message || "Please ensure Google Play Services are available."));
     }
   };
 
   const signOut = async () => {
     if (!auth) return;
     try {
+      if (Capacitor.isNativePlatform()) {
+        await FirebaseAuthentication.signOut();
+      }
       await firebaseSignOut(auth);
     } catch (error) {
       console.error("Error signing out", error);

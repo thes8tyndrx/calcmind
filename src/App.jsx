@@ -2296,6 +2296,11 @@ export default function App(){
   }
 
   function startVocabQuiz(topicId){
+    // Ensure static data is also normalized if not already
+    if (VOCAB_DATA[topicId] && !VOCAB_DATA[topicId].normalized) {
+      VOCAB_DATA[topicId] = normalizeQuizData(VOCAB_DATA[topicId], 'vocab', topicId);
+      VOCAB_DATA[topicId].normalized = true;
+    }
     const totalQs = VOCAB_DATA[topicId]?.length || 20;
     const cfg = {topic: topicId, type:"vocab", count: totalQs};
     setModeId("vocab");setCustomConfig(cfg);

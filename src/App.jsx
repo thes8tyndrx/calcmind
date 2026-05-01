@@ -1718,20 +1718,66 @@ function SectionLabel({label, T}){
   );
 }
 
-function QuizScreen({T, onSelectTopic}){
+function QuizScreen({T, onSelectTopic, startDynamicQuiz}){
   const [exam, setExam] = useState("SSC CGL");
   const [subject, setSubject] = useState("English");
+  const [caTopic, setCaTopic] = useState(null);
+  
   const exams = ["SSC CGL", "SSC CHSL", "SSC CPO", "SSC Steno", "Selection Post"];
-  const subjects = ["English", "GS", "Maths", "Reasoning"];
+  const subjects = ["Current Affairs", "English", "GS", "Maths", "Reasoning"];
 
   const getTopics = (examName) => {
-    if (examName === "SSC CGL") {
-      return { vocab: CGL_VOCAB_TOPICS, grammar: GRAMMAR_TOPICS };
-    } else if (examName === "SSC CHSL") {
-      return { vocab: CHSL_VOCAB_TOPICS, grammar: [] }; 
-    }
+    if (examName === "SSC CGL") return { vocab: CGL_VOCAB_TOPICS, grammar: GRAMMAR_TOPICS };
+    if (examName === "SSC CHSL") return { vocab: CHSL_VOCAB_TOPICS, grammar: [] }; 
     return { vocab: [], grammar: [] };
   };
+
+  const GS_TOPICS = [
+    { id: 'history', label: 'History', sub: 'Ancient, Medieval, Modern', color: GOLD, icon: '🏛️' },
+    { id: 'polity', label: 'Polity', sub: 'Constitution & Laws', color: BLUE, icon: '⚖️' },
+    { id: 'geography', label: 'Geography', sub: 'Indian & World Geography', color: GREEN, icon: '🌍' },
+    { id: 'economy', label: 'Economy', sub: 'Macro & Micro Economics', color: PINK, icon: '📈' },
+    { id: 'science', label: 'Science', sub: 'Physics, Chem, Bio', color: "#C45AFF", icon: '🔬' },
+  ];
+
+  const MATHS_TOPICS = [
+    { id: 'arithmetic', label: 'Arithmetic', sub: 'Percentages, Profit/Loss, Time', color: GREEN, icon: '➕' },
+    { id: 'algebra', label: 'Algebra', sub: 'Equations & Polynomials', color: BLUE, icon: '✖️' },
+    { id: 'geometry', label: 'Geometry', sub: 'Triangles & Circles', color: GOLD, icon: '📐' },
+    { id: 'mensuration', label: 'Mensuration', sub: '2D & 3D Shapes', color: RED, icon: '⬛' },
+    { id: 'trigonometry', label: 'Trigonometry', sub: 'Angles & Heights', color: "#C45AFF", icon: '📐' },
+  ];
+
+  const REASONING_TOPICS = [
+    { id: 'series', label: 'Number/Letter Series', sub: 'Find the missing term', color: BLUE, icon: '1️⃣' },
+    { id: 'coding', label: 'Coding & Decoding', sub: 'Patterns & Logic', color: GREEN, icon: '🔢' },
+    { id: 'puzzles', label: 'Puzzles & Seating', sub: 'Arrangements', color: GOLD, icon: '🧩' },
+    { id: 'syllogism', label: 'Syllogism', sub: 'Logical Deductions', color: RED, icon: 'V' },
+    { id: 'blood', label: 'Blood Relations', sub: 'Family Trees', color: PINK, icon: '👥' },
+  ];
+
+  const CA_TOPICS = [
+    { id: 'rankings', label: 'Rankings & Reports', sub: 'Global & National Indexes', color: GOLD, icon: '📊' },
+    { id: 'awards', label: 'Awards & Honours', sub: 'Nobel, Padma, Sports', color: GREEN, icon: '🏆' },
+    { id: 'sports', label: 'Sports News', sub: 'Tournaments & Winners', color: BLUE, icon: '🏅' },
+    { id: 'defense', label: 'Defense & Space', sub: 'Exercises & Satellites', color: RED, icon: '🚀' },
+    { id: 'appointments', label: 'Appointments', sub: 'National & Global', color: "#C45AFF", icon: '🤝' },
+  ];
+
+  // Helper to generate recent months for CA
+  const generateRecentMonths = () => {
+    const months = [];
+    const d = new Date();
+    for (let i=0; i<6; i++) {
+      const year = d.getFullYear();
+      const mLabel = d.toLocaleString('default', { month: 'short' });
+      const mVal = String(d.getMonth()+1).padStart(2, '0');
+      months.push({ id: `${year}-${mVal}`, label: `${mLabel} ${year}` });
+      d.setMonth(d.getMonth() - 1);
+    }
+    return months;
+  };
+  const recentMonths = generateRecentMonths();
 
   const { vocab, grammar } = getTopics(exam);
 
@@ -1750,7 +1796,40 @@ function QuizScreen({T, onSelectTopic}){
       </div>
       <p style={{fontSize:12,color:T.sub,marginBottom:12,lineHeight:1.5}}>Topic-wise {subject} practice from {exam} PYPs.</p>
 
-      {subject === "English" ? (
+      {subject === "Current Affairs" ? (
+        caTopic ? (
+          <div>
+            <div style={{display:"flex", alignItems:"center", gap:10, marginBottom:16}}>
+              <button onClick={()=>setCaTopic(null)} style={{background:"transparent", border:"none", color:T.text, fontSize:24, cursor:"pointer"}}>←</button>
+              <div style={{fontWeight:700, fontSize:16, color:T.text}}>{caTopic.label}</div>
+            </div>
+            <SectionLabel label="SELECT MONTH" T={T}/>
+            <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
+              {recentMonths.map(m=>(
+                <button key={m.id} onClick={()=>startDynamicQuiz(exam, subject, caTopic.id, m.id)}
+                  style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"14px",textAlign:"left",width:"100%"}}>
+                  <div style={{fontWeight:700,fontSize:14,color:T.text,flex:1}}>{m.label}</div>
+                  <span style={{color:T.muted,fontSize:18}}>›</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
+            {CA_TOPICS.map(s=>(
+              <button key={s.id} onClick={()=>setCaTopic(s)}
+                style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%"}}>
+                <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
+                <div style={{flex:1}}>
+                  <div style={{fontWeight:700,fontSize:13,color:T.text}}>{s.label}</div>
+                  <div style={{fontSize:10,color:T.sub,marginTop:1}}>{s.sub}</div>
+                </div>
+                <span style={{color:T.muted,fontSize:18}}>›</span>
+              </button>
+            ))}
+          </div>
+        )
+      ) : subject === "English" ? (
         <>
           {vocab.length > 0 && (
             <>
@@ -1801,8 +1880,18 @@ function QuizScreen({T, onSelectTopic}){
           )}
         </>
       ) : (
-        <div style={{textAlign:"center",padding:"40px 20px",color:T.sub,fontSize:14,background:T.card,borderRadius:12,border:`1px dashed ${T.border}`}}>
-          {subject} questions for {exam} are coming soon!
+        <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
+          {(subject === "GS" ? GS_TOPICS : subject === "Maths" ? MATHS_TOPICS : REASONING_TOPICS).map(s=>(
+            <button key={s.id} onClick={()=>startDynamicQuiz(exam, subject, s.id)}
+              style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%"}}>
+              <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
+              <div style={{flex:1}}>
+                <div style={{fontWeight:700,fontSize:13,color:T.text}}>{s.label}</div>
+                <div style={{fontSize:10,color:T.sub,marginTop:1}}>{s.sub}</div>
+              </div>
+              <span style={{color:T.muted,fontSize:18}}>›</span>
+            </button>
+          ))}
         </div>
       )}
     </div>
@@ -2206,28 +2295,50 @@ export default function App(){
     setTab("game");initGame(cfg,"vocab",0);
   }
 
+  function normalizeQuizData(dataArray, defaultType, defaultTopicPrefix) {
+    return dataArray.map((item, i) => {
+      const letters = ['a', 'b', 'c', 'd', 'e'];
+      const optionsObj = {};
+      item.options.forEach((opt, idx) => { optionsObj[letters[idx]] = opt; });
+      
+      let finalAns = "a";
+      const rawAns = item.ans !== undefined ? item.ans : item.answer;
+      
+      if (typeof rawAns === 'number') {
+        finalAns = letters[rawAns];
+      } else if (typeof rawAns === 'string') {
+        if (rawAns.length === 1 && letters.includes(rawAns.toLowerCase())) {
+          finalAns = rawAns.toLowerCase();
+        } else {
+          // If the answer is the literal text string, find its index in the options array
+          const idx = item.options.findIndex(opt => opt.trim().toLowerCase() === rawAns.trim().toLowerCase());
+          if (idx !== -1) finalAns = letters[idx];
+        }
+      }
+
+      return {
+        id: item.id || `${defaultTopicPrefix}_${i}`,
+        question: item.q || item.question,
+        options: optionsObj,
+        ans: finalAns,
+        explanation: item.exp || item.explanation || "",
+        type: defaultType,
+        topic: defaultTopicPrefix,
+      };
+    });
+  }
+
   async function startDailyQuiz(cat, dateKey) {
     try {
       const res = await fetch(`${BASE_URL}/daily/${cat}/${dateKey}.json`);
       if (!res.ok) { alert("Quiz not available for this date yet."); return; }
       const data = await res.json();
-      if (!data.questions || data.questions.length === 0) { alert("No questions found in this quiz."); return; }
-      // Convert daily JSON format to app's question format (array to object)
-      const questions = data.questions.map((item, i) => {
-        const letters = ['a', 'b', 'c', 'd', 'e'];
-        const optionsObj = {};
-        item.options.forEach((opt, idx) => { optionsObj[letters[idx]] = opt; });
-        return {
-          id: item.id || `${cat}_${dateKey}_${i}`,
-          question: item.q,
-          options: optionsObj,
-          ans: typeof item.ans === 'number' ? letters[item.ans] : String(item.ans).toLowerCase(),
-          explanation: item.exp || "",
-          type: cat === 'ca' ? 'ca' : 'vocab',
-          topic: `daily_${cat}_${dateKey}`,
-        };
-      });
+      const rawQs = data.questions || data; // handle both {questions: []} and [...]
+      if (!rawQs || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
+      
       const dailyKey = `daily_${cat}_${dateKey}`;
+      const questions = normalizeQuizData(rawQs, cat === 'ca' ? 'ca' : 'vocab', dailyKey);
+
       // Inject into VOCAB_DATA at runtime so genVocab can use it
       VOCAB_DATA[dailyKey] = questions;
       const cfg = { topic: dailyKey, type: 'vocab', quizCat: cat, date: dateKey, count: questions.length, dailyTitle: data.title };
@@ -2239,27 +2350,50 @@ export default function App(){
     }
   }
 
+  async function startDynamicQuiz(exam, subject, topicId, subTopicId = null) {
+    try {
+      // Path format:
+      // CA: /quiz/ca/{topicId}/{subTopicId}.json (e.g. /quiz/ca/rankings/2026-05.json)
+      // Others: /quiz/{exam}/{subject}/{topicId}.json (e.g. /quiz/cgl/gs/history.json)
+      const isCA = subject.toLowerCase() === 'ca' || subject.toLowerCase() === 'current affairs';
+      const path = isCA 
+        ? `${BASE_URL}/quiz/ca/${topicId}/${subTopicId}.json`
+        : `${BASE_URL}/quiz/${exam.toLowerCase()}/${subject.toLowerCase()}/${topicId}.json`;
+        
+      const res = await fetch(path);
+      if (!res.ok) { alert("Questions for this topic are coming soon!"); return; }
+      
+      const data = await res.json();
+      const rawQs = data.questions || data;
+      if (!rawQs || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
+      
+      const topicKey = `dyn_${exam}_${subject}_${topicId}_${subTopicId||''}`;
+      const questions = normalizeQuizData(rawQs, isCA ? 'ca' : 'vocab', topicKey);
+      
+      VOCAB_DATA[topicKey] = questions;
+      const title = data.title || (isCA ? `${topicId} - ${subTopicId}` : `${topicId} (${exam})`);
+      const cfg = { topic: topicKey, type: 'vocab', count: questions.length, dailyTitle: title };
+      
+      setModeId('vocab'); setCustomConfig(cfg);
+      setTab('game'); initGame(cfg, 'vocab', 0);
+    } catch(e) {
+      console.error('Dynamic quiz fetch error:', e);
+      alert('Failed to load quiz. Please try again later.');
+    }
+  }
+
+  // Legacy fallback for old ca-topics folder (if still needed)
   async function startTopicQuiz(topicId, fileId, topicLabel) {
     try {
       const res = await fetch(`${BASE_URL}/ca-topics/${topicId}/${fileId}.json`);
       if (!res.ok) { alert("Topic quiz not available yet."); return; }
       const data = await res.json();
-      if (!data.questions || data.questions.length === 0) { alert("No questions found in this quiz."); return; }
-      const questions = data.questions.map((item, i) => {
-        const letters = ['a', 'b', 'c', 'd', 'e'];
-        const optionsObj = {};
-        item.options.forEach((opt, idx) => { optionsObj[letters[idx]] = opt; });
-        return {
-          id: item.id || `topic_${topicId}_${fileId}_${i}`,
-          question: item.q,
-          options: optionsObj,
-          ans: typeof item.ans === 'number' ? letters[item.ans] : String(item.ans).toLowerCase(),
-          explanation: item.exp || "",
-          type: 'ca', 
-          topic: `topic_${topicId}_${fileId}`,
-        };
-      });
+      const rawQs = data.questions || data;
+      if (!rawQs || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
+      
       const topicKey = `topic_${topicId}_${fileId}`;
+      const questions = normalizeQuizData(rawQs, 'ca', topicKey);
+      
       VOCAB_DATA[topicKey] = questions;
       const cfg = { topic: topicKey, type: 'vocab', count: questions.length, dailyTitle: `${topicLabel} — ${data.title || fileId}` };
       setModeId('vocab'); setCustomConfig(cfg);

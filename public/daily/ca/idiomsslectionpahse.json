@@ -1,0 +1,361 @@
+{
+"quiz": {
+"title": "SSC Selection Post XIII 2025 - Idioms & Phrases",
+"category": "Vocabulary",
+"totalQuestions": 50,
+"sourceCitation": "",
+"questions": [
+{
+"id": 1,
+"question": "Which term refers to **the psychological phenomenon in which people are more likely to commit unethical acts when they feel their actions are not being observed**?",
+"options": ["Deindividuation", "Cognitive Dissonance", "Self-Justification", "Moral Disengagement"],
+"answer": "Deindividuation",
+"explanation": "Option A: Deindividuation means loss of self-awareness in a group or anonymous situation. Option B: Cognitive Dissonance means mental discomfort from conflicting beliefs. Option C: Self-Justification means defending one's own actions or choices. Option D: Moral Disengagement means mentally separating oneself from ethical standards. **Option A** correctly applies: deindividuation explains unethical behaviour when people feel unobserved or anonymous."
+},
+{
+"id": 2,
+"question": "Choose the correct meaning of the idiom: **Know which way the wind blows**",
+"options": ["Be uncertain about choices", "Be aware of public opinion or trend", "Seek external validation", "Escape danger"],
+"answer": "Be aware of public opinion or trend",
+"explanation": "Option A: Be uncertain about choices means being confused. Option B: Be aware of public opinion or trend means understanding the current situation. Option C: Seek external validation means looking for approval from others. Option D: Escape danger means avoiding harm. **Option B** correctly applies: 'know which way the wind blows' means to understand the current trend or public mood."
+},
+{
+"id": 3,
+"question": "Choose the correct meaning of the idiom: **Throw down the gauntlet**",
+"options": ["Admit defeat", "Issue a challenge", "Surrender peacefully", "Apologize publicly"],
+"answer": "Issue a challenge",
+"explanation": "Option A: Admit defeat means accepting failure. Option B: Issue a challenge means openly inviting someone to compete or fight. Option C: Surrender peacefully means giving up without conflict. Option D: Apologize publicly means saying sorry in public. **Option B** correctly applies: 'throw down the gauntlet' means to challenge someone boldly."
+},
+{
+"id": 4,
+"question": "Choose the correct meaning of the idiom: **Steal a march on someone**",
+"options": ["Imitate someone's tactics", "Win by cheating", "Gain an advantage secretly", "Announce plans publicly"],
+"answer": "Gain an advantage secretly",
+"explanation": "Option A: Imitate someone's tactics means copying another person's method. Option B: Win by cheating means gaining victory unfairly. Option C: Gain an advantage secretly means getting ahead without others noticing. Option D: Announce plans publicly means making intentions known. **Option C** correctly applies: 'steal a march on someone' means to gain an advantage secretly or unexpectedly."
+},
+{
+"id": 5,
+"question": "Choose the correct meaning of the idiom: **Steal a march on someone**",
+"options": ["Imitate someone's tactics", "Win by cheating", "Gain an advantage secretly", "Announce plans publicly"],
+"answer": "Gain an advantage secretly",
+"explanation": "Option A: Imitate someone's tactics means copying another person's method. Option B: Win by cheating means gaining victory unfairly. Option C: Gain an advantage secretly means getting ahead without others noticing. Option D: Announce plans publicly means making intentions known. **Option C** correctly applies: 'steal a march on someone' means to gain an advantage secretly or unexpectedly."
+},
+{
+"id": 6,
+"question": "Choose the correct meaning of the idiom: **Hoist with one's own petard**",
+"options": ["Be hurt by one's own scheme", "Celebrate an early victory", "Escape by clever trick", "Boost another's success"],
+"answer": "Be hurt by one's own scheme",
+"explanation": "Option A: Be hurt by one's own scheme means suffering because of one's own plan. Option B: Celebrate an early victory means rejoicing too soon. Option C: Escape by clever trick means avoiding trouble using intelligence. Option D: Boost another's success means helping someone else succeed. **Option A** correctly applies: 'hoist with one's own petard' means to be harmed by one's own plan or trap."
+},
+{
+"id": 7,
+"question": "What does the idiom **to keep the wolf away from the door** mean?",
+"options": ["To avoid financial hardship", "To escape from a dangerous situation", "To protect oneself from enemies", "To stay away from risky opportunities"],
+"answer": "To avoid financial hardship",
+"explanation": "Option A: To avoid financial hardship means managing to survive economically. Option B: To escape from a dangerous situation means getting away from physical danger. Option C: To protect oneself from enemies means defending oneself. Option D: To stay away from risky opportunities means avoiding uncertain chances. **Option A** correctly applies: 'keep the wolf away from the door' means to have enough money to avoid poverty or hunger."
+},
+{
+"id": 8,
+"question": "What does the idiom **catch forty winks** mean in context?",
+"options": ["Eat a quick snack", "Take a short nap", "Go for a walk", "Daydream while lying down"],
+"answer": "Take a short nap",
+"explanation": "Option A: Eat a quick snack means having a small amount of food. Option B: Take a short nap means sleep briefly. Option C: Go for a walk means walk for exercise or relaxation. Option D: Daydream while lying down means imagine things while resting. **Option B** correctly applies: 'catch forty winks' means to take a brief sleep."
+},
+{
+"id": 9,
+"question": "Choose the correct meaning of the idiom: **Pound of flesh**",
+"options": ["A fair and generous demand", "A symbolic compromise", "A harsh demand for rightful payment", "A gift given in return"],
+"answer": "A harsh demand for rightful payment",
+"explanation": "Option A: A fair and generous demand means a reasonable request. Option B: A symbolic compromise means a settlement made as a gesture. Option C: A harsh demand for rightful payment means insisting strictly on what is owed. Option D: A gift given in return means something offered back. **Option C** correctly applies: 'pound of flesh' means a harsh or excessive demand for what one believes is due."
+},
+{
+"id": 10,
+"question": "Choose the correct meaning of the idiom: **Throw your hat in the ring**",
+"options": ["Challenge authority", "Announce one's candidacy", "Leave the competition", "Support a rival"],
+"answer": "Announce one's candidacy",
+"explanation": "Option A: Challenge authority means oppose those in power. Option B: Announce one's candidacy means declare that one will compete for a position. Option C: Leave the competition means withdraw from a contest. Option D: Support a rival means help an opponent. **Option B** correctly applies: 'throw your hat in the ring' means to enter a contest or announce candidature."
+},
+{
+"id": 11,
+"question": "Choose the correct meaning of the idiom: **A brown study**",
+"options": ["A room with brown furniture", "Lost in thought or daydreaming", "A plan for redecorating", "A study related to earth sciences"],
+"answer": "Lost in thought or daydreaming",
+"explanation": "Option A: A room with brown furniture is a literal and incorrect meaning. Option B: Lost in thought or daydreaming means being deeply absorbed mentally. Option C: A plan for redecorating means a design idea. Option D: A study related to earth sciences means an academic field. **Option B** correctly applies: 'a brown study' means a mood of deep thought or absent-mindedness."
+},
+{
+"id": 12,
+"question": "Choose the correct idiom meaning for the highlighted phrase: **knows the ropes**",
+"options": ["To be skilled and experienced in a particular activity", "To be unaware of how something works", "To be physically strong", "To take unnecessary risks"],
+"answer": "To be skilled and experienced in a particular activity",
+"explanation": "Option A: To be skilled and experienced in a particular activity means knowing how something is done. Option B: To be unaware of how something works means lacking knowledge. Option C: To be physically strong means having bodily strength. Option D: To take unnecessary risks means acting dangerously without need. **Option A** correctly applies: 'knows the ropes' means being experienced and familiar with the details of a task."
+},
+{
+"id": 13,
+"question": "Choose the correct meaning of the idiom: **To go through fire and water**",
+"options": ["Travel a lot", "Take a bath", "Face any difficulty", "Rescue others"],
+"answer": "Face any difficulty",
+"explanation": "Option A: Travel a lot means moving from place to place often. Option B: Take a bath means wash oneself. Option C: Face any difficulty means endure all hardships. Option D: Rescue others means save people from danger. **Option C** correctly applies: 'to go through fire and water' means to face any hardship or danger."
+},
+{
+"id": 14,
+"question": "Choose the correct meaning of the idiom: **Fell foul of**",
+"options": ["To make unexpected profit", "To avoid a conflict successfully", "To get into conflict or trouble with someone", "To behave in a funny way"],
+"answer": "To get into conflict or trouble with someone",
+"explanation": "Option A: To make unexpected profit means gaining money suddenly. Option B: To avoid a conflict successfully means escaping disagreement. Option C: To get into conflict or trouble with someone means becoming involved in a problem or dispute. Option D: To behave in a funny way means act humorously. **Option C** correctly applies: 'fell foul of' means got into trouble or conflict with someone or something."
+},
+{
+"id": 15,
+"question": "Choose the correct idiom meaning for the highlighted phrase: **in deep water**",
+"options": ["Ravi was enjoying a swim in a river", "Ravi was in serious trouble", "Ravi was learning how to drive", "Ravi was helping the pedestrian"],
+"answer": "Ravi was in serious trouble",
+"explanation": "Option A: Ravi was enjoying a swim in a river is a literal and incorrect meaning. Option B: Ravi was in serious trouble means he was in a difficult situation. Option C: Ravi was learning how to drive is unrelated to the idiom. Option D: Ravi was helping the pedestrian is unrelated to the idiom. **Option B** correctly applies: 'in deep water' means in serious difficulty or trouble."
+},
+{
+"id": 16,
+"question": "Choose the correct meaning of the idiom: **Beard the lion in his den**",
+"options": ["Tease a dangerous person", "Attack from behind", "Confront someone boldly in their own territory", "Pet a lion"],
+"answer": "Confront someone boldly in their own territory",
+"explanation": "Option A: Tease a dangerous person means provoke someone risky. Option B: Attack from behind means attack secretly or unfairly. Option C: Confront someone boldly in their own territory means face a powerful person directly. Option D: Pet a lion is a literal and incorrect meaning. **Option C** correctly applies: 'beard the lion in his den' means to confront a powerful person boldly in their own place."
+},
+{
+"id": 17,
+"question": "Choose the correct meaning of the idiom: **by fits and starts**",
+"options": ["With breaks", "Quickly", "Smoothly", "Forever"],
+"answer": "With breaks",
+"explanation": "Option A: With breaks means irregularly or with interruptions. Option B: Quickly means fast. Option C: Smoothly means without problems or interruptions. Option D: Forever means for all time. **Option A** correctly applies: 'by fits and starts' means irregularly, with repeated stops and starts."
+},
+{
+"id": 18,
+"question": "Choose the correct meaning of the idiom: **Leave one in the lurch**",
+"options": ["To support someone in need", "To abandon someone at a difficult time", "To give someone a surprise gift", "To take credit for someone's work"],
+"answer": "To abandon someone at a difficult time",
+"explanation": "Option A: To support someone in need means helping someone. Option B: To abandon someone at a difficult time means leaving them without help. Option C: To give someone a surprise gift means present something unexpectedly. Option D: To take credit for someone's work means claim another person's effort as one's own. **Option B** correctly applies: 'leave one in the lurch' means to abandon someone in trouble."
+},
+{
+"id": 19,
+"question": "The correct meaning of the phrase **Run riot** implies:",
+"options": ["Be free", "Act wildly", "Cry aloud", "Dance around"],
+"answer": "Act wildly",
+"explanation": "Option A: Be free means not being controlled or restricted. Option B: Act wildly means behave in an uncontrolled way. Option C: Cry aloud means shout or weep loudly. Option D: Dance around means move while dancing. **Option B** correctly applies: 'run riot' means to behave wildly or without control."
+},
+{
+"id": 20,
+"question": "Choose the correct meaning of the idiom: **Rest on one's laurels**",
+"options": ["To relax after failure and ignore work", "To stop putting in effort after past success", "To dream about future victories", "To be jealous of others' achievements"],
+"answer": "To stop putting in effort after past success",
+"explanation": "Option A: To relax after failure and ignore work means becoming inactive after defeat. Option B: To stop putting in effort after past success means relying too much on earlier achievements. Option C: To dream about future victories means imagine success. Option D: To be jealous of others' achievements means envy others. **Option B** correctly applies: 'rest on one's laurels' means to stop trying because of past success."
+},
+{
+"id": 21,
+"question": "Choose the correct idiom meaning for the highlighted phrase: **jump on the bandwagon**",
+"options": ["To make a dangerous leap without thinking", "To follow others in being part of a popular trend", "To let an opportunity pass because of being hesitant", "To plan a big parade"],
+"answer": "To follow others in being part of a popular trend",
+"explanation": "Option A: To make a dangerous leap without thinking means act rashly. Option B: To follow others in being part of a popular trend means join something because it is fashionable. Option C: To let an opportunity pass because of being hesitant means miss a chance. Option D: To plan a big parade means organize a public procession. **Option B** correctly applies: 'jump on the bandwagon' means to join a popular trend."
+},
+{
+"id": 22,
+"question": "Choose the correct phrase for the highlighted expression: **could hardly hear myself think**",
+"options": ["The restaurant was very loud", "The food in the restaurant was not tasty", "The restaurant had bright lighting", "The restaurant had poor service"],
+"answer": "The restaurant was very loud",
+"explanation": "Option A: The restaurant was very loud means there was too much noise. Option B: The food in the restaurant was not tasty refers to food quality. Option C: The restaurant had bright lighting refers to lighting. Option D: The restaurant had poor service refers to service quality. **Option A** correctly applies: 'could hardly hear myself think' means the place was extremely noisy."
+},
+{
+"id": 23,
+"question": "Choose the correct meaning of the given idiom/phrase: **Let sleeping dogs lie**",
+"options": ["Avoid bringing up past conflicts", "Wake someone up", "Be very careful", "Hide from danger"],
+"answer": "Avoid bringing up past conflicts",
+"explanation": "Option A: Avoid bringing up past conflicts means not disturbing an old problem. Option B: Wake someone up means make a sleeping person awake. Option C: Be very careful means act cautiously. Option D: Hide from danger means avoid harm by hiding. **Option A** correctly applies: 'let sleeping dogs lie' means avoid reopening old troubles or disputes."
+},
+{
+"id": 24,
+"question": "Choose the correct meaning of the idiom: **Leave someone in the lurch**",
+"options": ["To support someone in a crisis", "To abandon someone in trouble or difficulty", "To give someone a surprise gift", "To mislead someone intentionally"],
+"answer": "To abandon someone in trouble or difficulty",
+"explanation": "Option A: To support someone in a crisis means helping them. Option B: To abandon someone in trouble or difficulty means leaving them without help. Option C: To give someone a surprise gift means present something unexpectedly. Option D: To mislead someone intentionally means deceive them. **Option B** correctly applies: 'leave someone in the lurch' means to desert someone when they need help."
+},
+{
+"id": 25,
+"question": "Choose the correct meaning of the idiom: **On tenterhooks**",
+"options": ["Extremely bored", "In a state of suspense or anxiety", "Completely relaxed", "Unaware of what's happening"],
+"answer": "In a state of suspense or anxiety",
+"explanation": "Option A: Extremely bored means very uninterested. Option B: In a state of suspense or anxiety means waiting nervously for something. Option C: Completely relaxed means free from stress. Option D: Unaware of what's happening means not knowing the situation. **Option B** correctly applies: 'on tenterhooks' means anxiously waiting or being in suspense."
+},
+{
+"id": 26,
+"question": "Choose the correct meaning of the idiom/phrase: **Give someone the cold shoulder**",
+"options": ["To treat someone warmly", "To ignore someone", "To scold someone", "To make someone comfortable"],
+"answer": "To ignore someone",
+"explanation": "Option A: To treat someone warmly means behave kindly. Option B: To ignore someone means deliberately avoid or show no attention. Option C: To scold someone means criticize angrily. Option D: To make someone comfortable means help them feel at ease. **Option B** correctly applies: 'give someone the cold shoulder' means to deliberately ignore or reject someone."
+},
+{
+"id": 27,
+"question": "Choose the correct meaning of the idiom/phrase: **Smell a rat**",
+"options": ["To be very clean", "To suspect something", "To follow orders", "To be afraid"],
+"answer": "To suspect something",
+"explanation": "Option A: To be very clean means maintain cleanliness. Option B: To suspect something means feel that something is wrong. Option C: To follow orders means obey instructions. Option D: To be afraid means feel fear. **Option B** correctly applies: 'smell a rat' means to suspect deception or wrongdoing."
+},
+{
+"id": 28,
+"question": "Choose the correct meaning of the idiom: **Cut your coat according to your cloth**",
+"options": ["Dress according to the occasion", "Spend money freely without worry", "Live within your income or means", "Wear what suits your personality"],
+"answer": "Live within your income or means",
+"explanation": "Option A: Dress according to the occasion means choose suitable clothing. Option B: Spend money freely without worry means spend without restraint. Option C: Live within your income or means means adjust spending to available resources. Option D: Wear what suits your personality means dress according to personal style. **Option C** correctly applies: 'cut your coat according to your cloth' means to live within one's means."
+},
+{
+"id": 29,
+"question": "Choose the correct meaning of the idiom/phrase: **Throw cold water on something**",
+"options": ["To discourage", "To cool down", "To wash something", "To celebrate"],
+"answer": "To discourage",
+"explanation": "Option A: To discourage means reduce enthusiasm or confidence. Option B: To cool down means lower temperature. Option C: To wash something means clean it with water. Option D: To celebrate means show happiness about an event. **Option A** correctly applies: 'throw cold water on something' means to discourage or dampen enthusiasm."
+},
+{
+"id": 30,
+"question": "Choose the correct meaning of the idiom/phrase: **Pull the wool over someone's eyes**",
+"options": ["To keep someone warm", "To deceive someone", "To make a mistake", "To give advice"],
+"answer": "To deceive someone",
+"explanation": "Option A: To keep someone warm means protect from cold. Option B: To deceive someone means trick or mislead them. Option C: To make a mistake means commit an error. Option D: To give advice means offer guidance. **Option B** correctly applies: 'pull the wool over someone's eyes' means to deceive someone."
+},
+{
+"id": 31,
+"question": "Choose the correct meaning of the idiom/phrase: **A bitter pill to swallow**",
+"options": ["A spicy food", "A difficult truth to accept", "A cure for disease", "A happy surprise"],
+"answer": "A difficult truth to accept",
+"explanation": "Option A: A spicy food means food with strong heat or spice. Option B: A difficult truth to accept means an unpleasant reality. Option C: A cure for disease means medicine or treatment. Option D: A happy surprise means unexpected good news. **Option B** correctly applies: 'a bitter pill to swallow' means an unpleasant fact that must be accepted."
+},
+{
+"id": 32,
+"question": "Choose the correct meaning of the idiom/phrase: **Break the bank**",
+"options": ["To save money", "To rob a bank", "To spend too much money", "To invest wisely"],
+"answer": "To spend too much money",
+"explanation": "Option A: To save money means keep money aside. Option B: To rob a bank means steal from a bank. Option C: To spend too much money means cost or spend excessively. Option D: To invest wisely means put money into something carefully. **Option C** correctly applies: 'break the bank' means to cost or spend more money than one can afford."
+},
+{
+"id": 33,
+"question": "Choose the correct meaning of the given idiom/phrase: **Jump through hoops**",
+"options": ["To go through many difficulties", "To be very happy", "To perform tricks", "To escape quickly"],
+"answer": "To go through many difficulties",
+"explanation": "Option A: To go through many difficulties means face many obstacles or requirements. Option B: To be very happy means feel great joy. Option C: To perform tricks means do acts for entertainment. Option D: To escape quickly means run away fast. **Option A** correctly applies: 'jump through hoops' means to go through many difficulties or complicated procedures."
+},
+{
+"id": 34,
+"question": "Choose the correct meaning of the given idiom/phrase: **Toe the line**",
+"options": ["To win a race", "To cross boundaries", "To take a shortcut", "To follow rules"],
+"answer": "To follow rules",
+"explanation": "Option A: To win a race means finish first in a competition. Option B: To cross boundaries means go beyond limits. Option C: To take a shortcut means use a quicker route. Option D: To follow rules means obey expected standards. **Option D** correctly applies: 'toe the line' means to obey rules or conform to authority."
+},
+{
+"id": 35,
+"question": "Choose the correct meaning of the idiom/phrase: **A slap on the wrist**",
+"options": ["A painful injury", "A mild warning or light punishment", "A friendly gesture", "A public compliment"],
+"answer": "A mild warning or light punishment",
+"explanation": "Option A: A painful injury means physical harm. Option B: A mild warning or light punishment means a small penalty. Option C: A friendly gesture means a kind action. Option D: A public compliment means praise given openly. **Option B** correctly applies: 'a slap on the wrist' means a mild punishment or warning."
+},
+{
+"id": 36,
+"question": "Choose the correct meaning of the idiom/phrase: **Eat humble pie**",
+"options": ["To be very happy", "To eat something bitter", "To celebrate a victory", "To admit a mistake"],
+"answer": "To admit a mistake",
+"explanation": "Option A: To be very happy means feel delighted. Option B: To eat something bitter is a literal and incorrect meaning. Option C: To celebrate a victory means rejoice after winning. Option D: To admit a mistake means accept being wrong. **Option D** correctly applies: 'eat humble pie' means to admit one's mistake or accept humiliation."
+},
+{
+"id": 37,
+"question": "Choose the correct meaning of the idiom/phrase: **Wear your heart on your sleeve**",
+"options": ["Keep your feelings private", "Pretend to have emotions", "Express emotions openly", "Be dishonest about your intentions"],
+"answer": "Express emotions openly",
+"explanation": "Option A: Keep your feelings private means hide emotions. Option B: Pretend to have emotions means fake feelings. Option C: Express emotions openly means show feelings clearly. Option D: Be dishonest about your intentions means conceal true motives. **Option C** correctly applies: 'wear your heart on your sleeve' means to show feelings openly."
+},
+{
+"id": 38,
+"question": "Choose the correct meaning of the idiom: **To make bricks without straw**",
+"options": ["To waste time doing easy work", "To build something using traditional methods", "To attempt something without the necessary resources", "To work in a construction-related job"],
+"answer": "To attempt something without the necessary resources",
+"explanation": "Option A: To waste time doing easy work means spend time uselessly on simple tasks. Option B: To build something using traditional methods means construct in an old-fashioned way. Option C: To attempt something without the necessary resources means try to do a task without proper materials or support. Option D: To work in a construction-related job means have a building profession. **Option C** correctly applies: 'make bricks without straw' means to try to do something without essential resources."
+},
+{
+"id": 39,
+"question": "Choose the correct meaning of the given idiom/phrase: **In the same boat**",
+"options": ["Facing the same situation", "Being very wealthy", "Traveling together", "Owning a boat"],
+"answer": "Facing the same situation",
+"explanation": "Option A: Facing the same situation means sharing the same difficulty or condition. Option B: Being very wealthy means having much money. Option C: Traveling together means going somewhere with others. Option D: Owning a boat means possessing a water vehicle. **Option A** correctly applies: 'in the same boat' means being in the same situation, especially a difficult one."
+},
+{
+"id": 40,
+"question": "Choose the correct meaning of the idiom/phrase: **to be off base**",
+"options": ["To be on the right track", "To be confused", "To be wrong or mistaken", "To change your mind"],
+"answer": "To be wrong or mistaken",
+"explanation": "Option A: To be on the right track means proceeding correctly. Option B: To be confused means unable to understand clearly. Option C: To be wrong or mistaken means incorrect in judgment. Option D: To change your mind means alter an opinion. **Option C** correctly applies: 'off base' means wrong, mistaken, or inaccurate."
+},
+{
+"id": 41,
+"question": "Choose the correct meaning of the given idiom/phrase: **Get your walking papers**",
+"options": ["Go on vacation", "Receive a promotion", "Be given permission to retire", "Be fired or dismissed from a job"],
+"answer": "Be fired or dismissed from a job",
+"explanation": "Option A: Go on vacation means take a holiday. Option B: Receive a promotion means move to a higher position. Option C: Be given permission to retire means be allowed to stop working due to age or service. Option D: Be fired or dismissed from a job means lose one's employment. **Option D** correctly applies: 'get your walking papers' means to be dismissed from a job."
+},
+{
+"id": 42,
+"question": "Choose the correct meaning of the given idiom/phrase: **Cast the first stone**",
+"options": ["To accuse someone first", "To start a fight", "To throw a rock", "To give up"],
+"answer": "To accuse someone first",
+"explanation": "Option A: To accuse someone first means be the first to criticize or blame. Option B: To start a fight means begin a conflict. Option C: To throw a rock is a literal meaning. Option D: To give up means stop trying. **Option A** correctly applies: 'cast the first stone' means to be the first to accuse or criticize someone."
+},
+{
+"id": 43,
+"question": "Choose the correct meaning of the given idiom/phrase: **A dime a dozen**",
+"options": ["Very rare", "Extremely expensive", "Hard to find", "Very common"],
+"answer": "Very common",
+"explanation": "Option A: Very rare means not often found. Option B: Extremely expensive means very costly. Option C: Hard to find means difficult to locate. Option D: Very common means easily available or ordinary. **Option D** correctly applies: 'a dime a dozen' means very common or not special."
+},
+{
+"id": 44,
+"question": "Choose the correct meaning of the idiom/phrase: **The lion's share**",
+"options": ["Fair portion", "A small contribution", "The largest part", "An equal distribution"],
+"answer": "The largest part",
+"explanation": "Option A: Fair portion means a reasonable share. Option B: A small contribution means a minor part. Option C: The largest part means the biggest share. Option D: An equal distribution means each part is the same. **Option C** correctly applies: 'the lion's share' means the largest portion."
+},
+{
+"id": 45,
+"question": "Choose the correct meaning of the idiom/phrase: **Go against the grain**",
+"options": ["To move in the wrong direction", "To oppose the norm", "To feel uncomfortable", "To cut something"],
+"answer": "To oppose the norm",
+"explanation": "Option A: To move in the wrong direction means go the incorrect way. Option B: To oppose the norm means act against what is usual or expected. Option C: To feel uncomfortable means feel uneasy. Option D: To cut something means divide with a sharp tool. **Option B** correctly applies: 'go against the grain' means to go against accepted practice or natural inclination."
+},
+{
+"id": 46,
+"question": "Choose the correct meaning of idiom: **Throw down the gauntlet**",
+"options": ["Show fear in public", "Make peace", "Challenge someone boldly", "Avoid confrontation"],
+"answer": "Challenge someone boldly",
+"explanation": "Option A: Show fear in public means display fear openly. Option B: Make peace means end conflict. Option C: Challenge someone boldly means openly invite a contest or confrontation. Option D: Avoid confrontation means stay away from conflict. **Option C** correctly applies: 'throw down the gauntlet' means to challenge someone boldly."
+},
+{
+"id": 47,
+"question": "Choose the correct meaning of idiom: **Hoist with one's own petard**",
+"options": ["Succeed through betrayal", "Fall victim to one's own plan", "Win by surprise", "Escape punishment cleverly"],
+"answer": "Fall victim to one's own plan",
+"explanation": "Option A: Succeed through betrayal means win by disloyal action. Option B: Fall victim to one's own plan means be harmed by one's own scheme. Option C: Win by surprise means gain victory unexpectedly. Option D: Escape punishment cleverly means avoid consequences through cleverness. **Option B** correctly applies: 'hoist with one's own petard' means to suffer because of one's own trap or plan."
+},
+{
+"id": 48,
+"question": "Choose the correct meaning of the idiom: **A thorn in the flesh**",
+"options": ["A close friend who offers advice", "A constant source of irritation or trouble", "A long-forgotten mistake", "A painful injury"],
+"answer": "A constant source of irritation or trouble",
+"explanation": "Option A: A close friend who offers advice means a helpful companion. Option B: A constant source of irritation or trouble means someone or something that repeatedly causes annoyance. Option C: A long-forgotten mistake means an old error. Option D: A painful injury means physical hurt. **Option B** correctly applies: 'a thorn in the flesh' means a persistent annoyance or trouble."
+},
+{
+"id": 49,
+"question": "Choose the correct meaning of the idiom: **To flog a dead horse**",
+"options": ["Beat an animal to carry goods", "Waste time on lost cause", "Complain loudly and cry", "Work hard and win a prize"],
+"answer": "Waste time on lost cause",
+"explanation": "Option A: Beat an animal to carry goods is a literal and incorrect meaning. Option B: Waste time on lost cause means keep trying when success is impossible. Option C: Complain loudly and cry means express grief or anger noisily. Option D: Work hard and win a prize means succeed through effort. **Option B** correctly applies: 'to flog a dead horse' means to waste effort on something that is already finished or hopeless."
+},
+{
+"id": 50,
+"question": "What does the idiom **Barking up the wrong tree** mean?",
+"options": ["Blaming the wrong person", "Finding the right solution", "Avoiding confrontation", "Taking unnecessary risks"],
+"answer": "Blaming the wrong person",
+"explanation": "Option A: Blaming the wrong person means accusing someone incorrectly. Option B: Finding the right solution means solving the problem correctly. Option C: Avoiding confrontation means staying away from conflict. Option D: Taking unnecessary risks means acting dangerously without need. **Option A** correctly applies: 'barking up the wrong tree' means following the wrong idea or accusing the wrong person."
+}
+]
+}
+}
+

@@ -1,0 +1,459 @@
+{
+"quiz": {
+"title": "SSC Selection Post XIII 2025 - Misspelled Words",
+"category": "Vocabulary",
+"totalQuestions": 64,
+"sourceCitation": "",
+"questions": [
+{
+"id": 1,
+"question": "Select the correctly spelt word that means **excessively talkative, especially on trivial matters**.",
+"options": ["Garrulous", "Garullous", "Garrlous", "Garrullus"],
+"answer": "Garrulous",
+"explanation": "Option A: Garrulous means excessively talkative. Option B: Garullous is an incorrect spelling. Option C: Garrlous is an incorrect spelling. Option D: Garrullus is an incorrect spelling. **Option A** correctly applies: 'Garrulous' is the correct spelling."
+},
+{
+"id": 2,
+"question": "Select the correctly spelled word meaning **stubbornly resistant to authority**.",
+"options": ["Recalcitrant", "Recalcerant", "Reccalcitrant", "Ricalcitrant"],
+"answer": "Recalcitrant",
+"explanation": "Option A: Recalcitrant means stubbornly resistant to authority. Option B: Recalcerant is an incorrect spelling. Option C: Reccalcitrant is an incorrect spelling. Option D: Ricalcitrant is an incorrect spelling. **Option A** correctly applies: 'Recalcitrant' is the correct spelling."
+},
+{
+"id": 3,
+"question": "Which word has a **spelling mistake**?",
+"options": ["Convalescence", "Obsequious", "Conflagrater", "Reticent"],
+"answer": "Conflagrater",
+"explanation": "Option A: Convalescence is correctly spelled and means recovery after illness. Option B: Obsequious is correctly spelled and means overly obedient. Option C: Conflagrater is incorrectly spelled. Option D: Reticent is correctly spelled and means reserved. **Option C** correctly applies: it is the misspelled word."
+},
+{
+"id": 4,
+"question": "Which of the following is **incorrectly spelled**?",
+"options": ["Disambiguate", "Inadvertently", "Unequavocal", "Equilibrium"],
+"answer": "Unequavocal",
+"explanation": "Option A: Disambiguate is correctly spelled and means to remove ambiguity. Option B: Inadvertently is correctly spelled and means unintentionally. Option C: Unequavocal is incorrectly spelled. Option D: Equilibrium is correctly spelled and means balance. **Option C** correctly applies: the correct spelling is 'Unequivocal'."
+},
+{
+"id": 5,
+"question": "Select the correctly spelt word meaning **a person who flatters to gain advantage**.",
+"options": ["Sycophantt", "Psychophant", "Sycophant", "Sycophent"],
+"answer": "Sycophant",
+"explanation": "Option A: Sycophantt is an incorrect spelling. Option B: Psychophant is an incorrect spelling. Option C: Sycophant means a flatterer who seeks advantage. Option D: Sycophent is an incorrect spelling. **Option C** correctly applies: 'Sycophant' is the correct spelling."
+},
+{
+"id": 6,
+"question": "Identify the **misspelt word**.",
+"options": ["Pedagogy", "Psephology", "Hagiography", "Psephellogy"],
+"answer": "Psephellogy",
+"explanation": "Option A: Pedagogy is correctly spelled and means the art of teaching. Option B: Psephology is correctly spelled and means the study of elections. Option C: Hagiography is correctly spelled and means writing about saints. Option D: Psephellogy is incorrectly spelled. **Option D** correctly applies: the correct spelling is 'Psephology'."
+},
+{
+"id": 7,
+"question": "Which of the following is **incorrectly spelled**?",
+"options": ["Chauvinism", "Quiesence", "Melancholy", "Ubiquitous"],
+"answer": "Quiesence",
+"explanation": "Option A: Chauvinism is correctly spelled and means excessive loyalty or bias. Option B: Quiesence is incorrectly spelled. Option C: Melancholy is correctly spelled and means deep sadness. Option D: Ubiquitous is correctly spelled and means present everywhere. **Option B** correctly applies: the correct spelling is 'Quiescence'."
+},
+{
+"id": 8,
+"question": "Identify the **misspelt word**.",
+"options": ["Hermeneutics", "Phallocentrism", "Structuralism", "Metafiction"],
+"answer": "Phallocentrism",
+"explanation": "Option A: Hermeneutics is correctly spelled and means the study of interpretation. Option B: Phallocentrism is marked as the misspelt word in the answer key. Option C: Structuralism is correctly spelled and refers to a theory of structures. Option D: Metafiction is correctly spelled and refers to self-conscious fiction. **Option B** correctly applies: it matches the provided answer key."
+},
+{
+"id": 9,
+"question": "Which of the following is **incorrectly spelled**?",
+"options": ["Chauvinism", "Quiesence", "Melancholy", "Ubiquitous"],
+"answer": "Quiesence",
+"explanation": "Option A: Chauvinism is correctly spelled and means excessive loyalty or bias. Option B: Quiesence is incorrectly spelled. Option C: Melancholy is correctly spelled and means deep sadness. Option D: Ubiquitous is correctly spelled and means present everywhere. **Option B** correctly applies: the correct spelling is 'Quiescence'."
+},
+{
+"id": 10,
+"question": "Select the correctly spelled word meaning **a person who lives a self-denying life for spiritual discipline**.",
+"options": ["Ascettic", "Asetic", "Ascetic", "Asectic"],
+"answer": "Ascetic",
+"explanation": "Option A: Ascettic is an incorrect spelling. Option B: Asetic is an incorrect spelling. Option C: Ascetic means a self-denying spiritual person. Option D: Asectic is an incorrect spelling. **Option C** correctly applies: 'Ascetic' is the correct spelling."
+},
+{
+"id": 11,
+"question": "Identify the **misspelt word**.",
+"options": ["Hermeneutics", "Phallocentrism", "Structuralism", "Metafiction"],
+"answer": "Phallocentrism",
+"explanation": "Option A: Hermeneutics is correctly spelled and means the study of interpretation. Option B: Phallocentrism is marked as the misspelt word in the answer key. Option C: Structuralism is correctly spelled and refers to a theory of structures. Option D: Metafiction is correctly spelled and refers to self-conscious fiction. **Option B** correctly applies: it matches the provided answer key."
+},
+{
+"id": 12,
+"question": "Which of the following is the correct spelling of the word?",
+"options": ["Prophylaxis", "Prophylacsis", "Prophilaxis", "Prophallaxis"],
+"answer": "Prophylaxis",
+"explanation": "Option A: Prophylaxis means prevention of disease. Option B: Prophylacsis is an incorrect spelling. Option C: Prophilaxis is an incorrect spelling. Option D: Prophallaxis is an incorrect spelling. **Option A** correctly applies: 'Prophylaxis' is the correct spelling."
+},
+{
+"id": 13,
+"question": "Identify the **misspelt word**.",
+"options": ["Polysemy", "Intertextuality", "Similitude", "Postmodernism"],
+"answer": "Similitude",
+"explanation": "Option A: Polysemy is correctly spelled and means multiple meanings of a word. Option B: Intertextuality is correctly spelled and means relation between texts. Option C: Similitude is marked as the misspelt word in the answer key. Option D: Postmodernism is correctly spelled and names a literary-cultural movement. **Option C** correctly applies: it matches the provided answer key."
+},
+{
+"id": 14,
+"question": "Which of the following is **incorrectly spelled**?",
+"options": ["Obsolesence", "Scrumptious", "Vanquish", "Capitulation"],
+"answer": "Obsolesence",
+"explanation": "Option A: Obsolesence is incorrectly spelled. Option B: Scrumptious is correctly spelled and means very tasty. Option C: Vanquish is correctly spelled and means defeat. Option D: Capitulation is correctly spelled and means surrender. **Option A** correctly applies: the correct spelling is 'Obsolescence'."
+},
+{
+"id": 15,
+"question": "Which of the following is the correct spelling of the word?",
+"options": ["Aesthetik", "Aesthetic", "Aesthatic", "Aesthettic"],
+"answer": "Aesthetic",
+"explanation": "Option A: Aesthetik is an incorrect spelling. Option B: Aesthetic means related to beauty or artistic taste. Option C: Aesthatic is an incorrect spelling. Option D: Aesthettic is an incorrect spelling. **Option B** correctly applies: 'Aesthetic' is the correct spelling."
+},
+{
+"id": 16,
+"question": "Identify the **misspelt word**.",
+"options": ["Dialectic", "Solipsism", "Existentialism", "Determinism"],
+"answer": "Existentialism",
+"explanation": "Option A: Dialectic is correctly spelled and means logical discussion or reasoning. Option B: Solipsism is correctly spelled and names a philosophical view. Option C: Existentialism is marked as the misspelt word in the answer key. Option D: Determinism is correctly spelled and means belief in causal necessity. **Option C** correctly applies: it matches the provided answer key."
+},
+{
+"id": 17,
+"question": "Identify the **misspelt word**.",
+"options": ["Asceticism", "Iconoclast", "Antideluvian", "Neoliberalism"],
+"answer": "Antideluvian",
+"explanation": "Option A: Asceticism is correctly spelled and means strict self-discipline. Option B: Iconoclast is correctly spelled and means a challenger of established beliefs. Option C: Antideluvian is incorrectly spelled. Option D: Neoliberalism is correctly spelled and names an economic-political ideology. **Option C** correctly applies: the correct spelling is 'Antediluvian'."
+},
+{
+"id": 18,
+"question": "Choose the correctly spelled **scientific word**.",
+"options": ["Vacine", "Vaccene", "Vaccine", "Vaxine"],
+"answer": "Vaccine",
+"explanation": "Option A: Vacine is an incorrect spelling. Option B: Vaccene is an incorrect spelling. Option C: Vaccine means a substance used to stimulate immunity. Option D: Vaxine is an incorrect spelling. **Option C** correctly applies: 'Vaccine' is the correct spelling."
+},
+{
+"id": 19,
+"question": "Which is the correct spelling for a word meaning **capable of being done**?",
+"options": ["Feazible", "Feasible", "Feisble", "Feaceable"],
+"answer": "Feasible",
+"explanation": "Option A: Feazible is an incorrect spelling. Option B: Feasible means possible or capable of being done. Option C: Feisble is an incorrect spelling. Option D: Feaceable is an incorrect spelling. **Option B** correctly applies: 'Feasible' is the correct spelling."
+},
+{
+"id": 20,
+"question": "Choose the correctly spelled **technical term used in linguistics**.",
+"options": ["Phonology", "Phonnology", "Phonollogy", "Phonealogy"],
+"answer": "Phonology",
+"explanation": "Option A: Phonology means the study of sound systems in language. Option B: Phonnology is an incorrect spelling. Option C: Phonollogy is an incorrect spelling. Option D: Phonealogy is an incorrect spelling. **Option A** correctly applies: 'Phonology' is the correct spelling."
+},
+{
+"id": 21,
+"question": "Spot the correct spelling of a **philosophical term**.",
+"options": ["Consciousness", "Consciencess", "Conshousness", "Consciencens"],
+"answer": "Consciousness",
+"explanation": "Option A: Consciousness means awareness of oneself and surroundings. Option B: Consciencess is an incorrect spelling. Option C: Conshousness is an incorrect spelling. Option D: Consciencens is an incorrect spelling. **Option A** correctly applies: 'Consciousness' is the correct spelling."
+},
+{
+"id": 22,
+"question": "Which of these is the correct spelling of a **complex philosophical term**?",
+"options": ["Epistemology", "Epestamology", "Epistamology", "Epistamlogy"],
+"answer": "Epistemology",
+"explanation": "Option A: Epistemology means the study of knowledge. Option B: Epestamology is an incorrect spelling. Option C: Epistamology is an incorrect spelling. Option D: Epistamlogy is an incorrect spelling. **Option A** correctly applies: 'Epistemology' is the correct spelling."
+},
+{
+"id": 23,
+"question": "Choose the option that completes the sentence using the correct spelling: **______ some great change in her attitude.**",
+"options": ["percieverd", "preceived", "perceived", "precieved"],
+"answer": "perceived",
+"explanation": "Option A: Percieverd is an incorrect spelling. Option B: Preceived is an incorrect spelling. Option C: Perceived means noticed or became aware of. Option D: Precieved is an incorrect spelling. **Option C** correctly applies: 'perceived' correctly completes the sentence."
+},
+{
+"id": 24,
+"question": "Select the correct spelling of a word meaning **extremely poor or impoverished**.",
+"options": ["Impecuneous", "Impeccunious", "Impecunus", "Impecunious"],
+"answer": "Impecunious",
+"explanation": "Option A: Impecuneous is an incorrect spelling. Option B: Impeccunious is an incorrect spelling. Option C: Impecunus is an incorrect spelling. Option D: Impecunious means having little or no money. **Option D** correctly applies: 'Impecunious' is the correct spelling."
+},
+{
+"id": 25,
+"question": "Which is the correct spelling of a **scientific process**?",
+"options": ["Photosynthesis", "Metabolism", "Respiratory", "Circlation"],
+"answer": "Photosynthesis",
+"explanation": "Option A: Photosynthesis means the process by which plants make food using light. Option B: Metabolism is correctly spelled but is not the keyed answer. Option C: Respiratory is correctly spelled but is an adjective. Option D: Circlation is an incorrect spelling. **Option A** correctly applies: 'Photosynthesis' is the correct answer as per the key."
+},
+{
+"id": 26,
+"question": "Select the correct spelling of a word meaning **an exact copy**.",
+"options": ["Facsimile", "Faxsimile", "Facksimile", "Facsemile"],
+"answer": "Facsimile",
+"explanation": "Option A: Facsimile means an exact copy. Option B: Faxsimile is an incorrect spelling. Option C: Facksimile is an incorrect spelling. Option D: Facsemile is an incorrect spelling. **Option A** correctly applies: 'Facsimile' is the correct spelling."
+},
+{
+"id": 27,
+"question": "Select the correct spelling of a word meaning **based on reason**.",
+"options": ["Rational", "Rashonal", "Rationel", "Rashnal"],
+"answer": "Rational",
+"explanation": "Option A: Rational means based on reason or logic. Option B: Rashonal is an incorrect spelling. Option C: Rationel is an incorrect spelling. Option D: Rashnal is an incorrect spelling. **Option A** correctly applies: 'Rational' is the correct spelling."
+},
+{
+"id": 28,
+"question": "Which is the correct spelling of a **scientific process**?",
+"options": ["Photosynthesis", "Phottosynthesis", "Fotosynthesis", "Photosyntesis"],
+"answer": "Photosynthesis",
+"explanation": "Option A: Photosynthesis is the correct spelling. Option B: Phottosynthesis is an incorrect spelling. Option C: Fotosynthesis is an incorrect spelling. Option D: Photosyntesis is an incorrect spelling. **Option A** correctly applies: 'Photosynthesis' is the correct spelling."
+},
+{
+"id": 29,
+"question": "Choose the option that completes the sentence using the correct spelling: **The lights of the Aurora Borealis are a natural ________.**",
+"options": ["phenominon", "phenomeninon", "phenomenon", "phinominon"],
+"answer": "phenomenon",
+"explanation": "Option A: Phenominon is an incorrect spelling. Option B: Phenomeninon is an incorrect spelling. Option C: Phenomenon means a remarkable event or occurrence. Option D: Phinominon is an incorrect spelling. **Option C** correctly applies: 'phenomenon' correctly completes the sentence."
+},
+{
+"id": 30,
+"question": "Choose the option that completes the sentence using the correct spelling: **The scientists had to do an ________ amount of research on the project.**",
+"options": ["extraordinary", "extraordinery", "extrordinary", "extraordnary"],
+"answer": "extraordinary",
+"explanation": "Option A: Extraordinary means very unusual or remarkable. Option B: Extraordinery is an incorrect spelling. Option C: Extrordinary is an incorrect spelling. Option D: Extraordnary is an incorrect spelling. **Option A** correctly applies: 'extraordinary' correctly completes the sentence."
+},
+{
+"id": 31,
+"question": "Choose the option that completes the sentence using the correct spelling: **All of a sudden, they found themselves in a terrible ________.**",
+"options": ["delemma", "dilemma", "dilema", "dillemna"],
+"answer": "dilemma",
+"explanation": "Option A: Delemma is an incorrect spelling. Option B: Dilemma means a difficult situation or choice. Option C: Dilema is an incorrect spelling. Option D: Dillemna is an incorrect spelling. **Option B** correctly applies: 'dilemma' correctly completes the sentence."
+},
+{
+"id": 32,
+"question": "Pick the correctly spelled word.",
+"options": ["Discipline", "Discipln", "Disipline", "Discepline"],
+"answer": "Discipline",
+"explanation": "Option A: Discipline means training, control, or orderly behaviour. Option B: Discipln is an incorrect spelling. Option C: Disipline is an incorrect spelling. Option D: Discepline is an incorrect spelling. **Option A** correctly applies: 'Discipline' is the correct spelling."
+},
+{
+"id": 33,
+"question": "Which word is spelled correctly?",
+"options": ["Mischievous", "Mischevious", "Mischievious", "Mischivous"],
+"answer": "Mischievous",
+"explanation": "Option A: Mischievous means playfully troublesome. Option B: Mischevious is an incorrect spelling. Option C: Mischievious is an incorrect spelling. Option D: Mischivous is an incorrect spelling. **Option A** correctly applies: 'Mischievous' is the correct spelling."
+},
+{
+"id": 34,
+"question": "Pick the correctly spelled word.",
+"options": ["Foreign", "Foriegn", "Forein", "Fiorign"],
+"answer": "Foreign",
+"explanation": "Option A: Foreign means from another country. Option B: Foriegn is an incorrect spelling. Option C: Forein is an incorrect spelling. Option D: Fiorign is an incorrect spelling. **Option A** correctly applies: 'Foreign' is the correct spelling."
+},
+{
+"id": 35,
+"question": "Which word is spelled correctly?",
+"options": ["Personnel", "Personel", "Personell", "Personnell"],
+"answer": "Personnel",
+"explanation": "Option A: Personnel means the people employed in an organization. Option B: Personel is an incorrect spelling. Option C: Personell is an incorrect spelling. Option D: Personnell is an incorrect spelling. **Option A** correctly applies: 'Personnel' is the correct spelling."
+},
+{
+"id": 36,
+"question": "Pick the correctly spelled word.",
+"options": ["Consensus", "Concensus", "Conscencus", "Consenus"],
+"answer": "Consensus",
+"explanation": "Option A: Consensus means general agreement. Option B: Concensus is an incorrect spelling. Option C: Conscencus is an incorrect spelling. Option D: Consenus is an incorrect spelling. **Option A** correctly applies: 'Consensus' is the correct spelling."
+},
+{
+"id": 37,
+"question": "Which word is spelled correctly?",
+"options": ["Quizzical", "Quizical", "Quisical", "Quizzacal"],
+"answer": "Quizzical",
+"explanation": "Option A: Quizzical means showing mild amusement or questioning. Option B: Quizical is an incorrect spelling. Option C: Quisical is an incorrect spelling. Option D: Quizzacal is an incorrect spelling. **Option A** correctly applies: 'Quizzical' is the correct spelling."
+},
+{
+"id": 38,
+"question": "Pick the correctly spelled word.",
+"options": ["Cemetery", "Cemetary", "Cemetry", "Semetary"],
+"answer": "Cemetery",
+"explanation": "Option A: Cemetery means a burial ground. Option B: Cemetary is an incorrect spelling. Option C: Cemetry is an incorrect spelling. Option D: Semetary is an incorrect spelling. **Option A** correctly applies: 'Cemetery' is the correct spelling."
+},
+{
+"id": 39,
+"question": "Pick the correctly spelled word.",
+"options": ["Collectible", "Collecteble", "Colletible", "Collectibel"],
+"answer": "Collectible",
+"explanation": "Option A: Collectible means worth collecting. Option B: Collecteble is an incorrect spelling. Option C: Colletible is an incorrect spelling. Option D: Collectibel is an incorrect spelling. **Option A** correctly applies: 'Collectible' is the correct spelling."
+},
+{
+"id": 40,
+"question": "Which word is spelled correctly?",
+"options": ["Entrepreneur", "Entrepraneur", "Entreprenuer", "Entrepranur"],
+"answer": "Entrepreneur",
+"explanation": "Option A: Entrepreneur means a person who starts and runs a business. Option B: Entrepraneur is an incorrect spelling. Option C: Entreprenuer is an incorrect spelling. Option D: Entrepranur is an incorrect spelling. **Option A** correctly applies: 'Entrepreneur' is the correct spelling."
+},
+{
+"id": 41,
+"question": "Which word is spelled correctly?",
+"options": ["Maneuver", "Manuever", "Manouver", "Mannuver"],
+"answer": "Maneuver",
+"explanation": "Option A: Maneuver means a planned movement or action. Option B: Manuever is an incorrect spelling. Option C: Manouver is an incorrect spelling. Option D: Mannuver is an incorrect spelling. **Option A** correctly applies: 'Maneuver' is the correct spelling."
+},
+{
+"id": 42,
+"question": "Pick the correctly spelled word.",
+"options": ["Twelfth", "Twelth", "Twelvth", "Twelft"],
+"answer": "Twelfth",
+"explanation": "Option A: Twelfth means number twelve in order. Option B: Twelth is an incorrect spelling. Option C: Twelvth is an incorrect spelling. Option D: Twelft is an incorrect spelling. **Option A** correctly applies: 'Twelfth' is the correct spelling."
+},
+{
+"id": 43,
+"question": "Which word is spelled correctly?",
+"options": ["Belligerent", "Beligerent", "Belligerant", "Beligerant"],
+"answer": "Belligerent",
+"explanation": "Option A: Belligerent means hostile or aggressive. Option B: Beligerent is an incorrect spelling. Option C: Belligerant is an incorrect spelling. Option D: Beligerant is an incorrect spelling. **Option A** correctly applies: 'Belligerent' is the correct spelling."
+},
+{
+"id": 44,
+"question": "Pick the correctly spelled word.",
+"options": ["Aesthetic", "Aesthetik", "Esthetic", "Aesthetick"],
+"answer": "Aesthetic",
+"explanation": "Option A: Aesthetic means related to beauty or artistic taste. Option B: Aesthetik is an incorrect spelling. Option C: Esthetic is a variant spelling but is not the keyed answer. Option D: Aesthetick is an incorrect spelling. **Option A** correctly applies: 'Aesthetic' is the correct answer as per the key."
+},
+{
+"id": 45,
+"question": "Which word is spelled correctly?",
+"options": ["Acquiesce", "Acquiesse", "Aqueisce", "Acquesce"],
+"answer": "Acquiesce",
+"explanation": "Option A: Acquiesce means to accept something reluctantly without protest. Option B: Acquiesse is an incorrect spelling. Option C: Aqueisce is an incorrect spelling. Option D: Acquesce is an incorrect spelling. **Option A** correctly applies: 'Acquiesce' is the correct spelling."
+},
+{
+"id": 46,
+"question": "Which word is spelled correctly?",
+"options": ["Memento", "Movemanto", "Mementto", "Memanto"],
+"answer": "Memento",
+"explanation": "Option A: Memento means an object kept as a reminder. Option B: Movemanto is an incorrect spelling. Option C: Mementto is an incorrect spelling. Option D: Memanto is an incorrect spelling. **Option A** correctly applies: 'Memento' is the correct spelling."
+},
+{
+"id": 47,
+"question": "Pick the correctly spelled word.",
+"options": ["Grateful", "Greatful", "Gratefull", "Greitful"],
+"answer": "Grateful",
+"explanation": "Option A: Grateful means thankful. Option B: Greatful is an incorrect spelling. Option C: Gratefull is an incorrect spelling. Option D: Greitful is an incorrect spelling. **Option A** correctly applies: 'Grateful' is the correct spelling."
+},
+{
+"id": 48,
+"question": "Which word is spelled correctly?",
+"options": ["Exaggerate", "Exagerate", "Exagggerate", "Exajerate"],
+"answer": "Exaggerate",
+"explanation": "Option A: Exaggerate means to overstate or make something seem larger. Option B: Exagerate is an incorrect spelling. Option C: Exagggerate is an incorrect spelling. Option D: Exajerate is an incorrect spelling. **Option A** correctly applies: 'Exaggerate' is the correct spelling."
+},
+{
+"id": 49,
+"question": "Pick the correctly spelled word.",
+"options": ["Exhilarate", "Exilerate", "Exhilerate", "Exhillarate"],
+"answer": "Exhilarate",
+"explanation": "Option A: Exhilarate means to make very happy or excited. Option B: Exilerate is an incorrect spelling. Option C: Exhilerate is an incorrect spelling. Option D: Exhillarate is an incorrect spelling. **Option A** correctly applies: 'Exhilarate' is the correct spelling."
+},
+{
+"id": 50,
+"question": "Which word is spelled correctly?",
+"options": ["Assassinate", "Asasinate", "Assasinate", "Assasinatte"],
+"answer": "Assassinate",
+"explanation": "Option A: Assassinate means to murder an important person suddenly or secretly. Option B: Asasinate is an incorrect spelling. Option C: Assasinate is an incorrect spelling. Option D: Assasinatte is an incorrect spelling. **Option A** correctly applies: 'Assassinate' is the correct spelling."
+},
+{
+"id": 51,
+"question": "Pick the correctly spelled word.",
+"options": ["Dumbbell", "Dumbell", "Dummbel", "Dumbdell"],
+"answer": "Dumbbell",
+"explanation": "Option A: Dumbbell means a hand-held weight for exercise. Option B: Dumbell is an incorrect spelling. Option C: Dummbel is an incorrect spelling. Option D: Dumbdell is an incorrect spelling. **Option A** correctly applies: 'Dumbbell' is the correct spelling."
+},
+{
+"id": 52,
+"question": "Which word is spelled correctly?",
+"options": ["Noticeable", "Noticable", "Noticeble", "Noticible"],
+"answer": "Noticeable",
+"explanation": "Option A: Noticeable means easy to see or observe. Option B: Noticable is an incorrect spelling. Option C: Noticeble is an incorrect spelling. Option D: Noticible is an incorrect spelling. **Option A** correctly applies: 'Noticeable' is the correct spelling."
+},
+{
+"id": 53,
+"question": "Pick the correctly spelled word.",
+"options": ["Humorous", "Humourous", "Humorus", "Humuruos"],
+"answer": "Humorous",
+"explanation": "Option A: Humorous means funny or amusing. Option B: Humourous is an incorrect spelling. Option C: Humorus is an incorrect spelling. Option D: Humuruos is an incorrect spelling. **Option A** correctly applies: 'Humorous' is the correct spelling."
+},
+{
+"id": 54,
+"question": "Which word is spelled correctly?",
+"options": ["Minuscule", "Miniscule", "Miniscool", "Minuscull"],
+"answer": "Minuscule",
+"explanation": "Option A: Minuscule means extremely small. Option B: Miniscule is a common misspelling. Option C: Miniscool is an incorrect spelling. Option D: Minuscull is an incorrect spelling. **Option A** correctly applies: 'Minuscule' is the correct spelling."
+},
+{
+"id": 55,
+"question": "Pick the correctly spelled word.",
+"options": ["Height", "Heigth", "Hieght", "Haight"],
+"answer": "Height",
+"explanation": "Option A: Height means the measurement from bottom to top. Option B: Heigth is an incorrect spelling. Option C: Hieght is an incorrect spelling. Option D: Haight is an incorrect spelling. **Option A** correctly applies: 'Height' is the correct spelling."
+},
+{
+"id": 56,
+"question": "Which word is spelled correctly?",
+"options": ["Exhilarate", "Exilarate", "Exhillerate", "Exhillarate"],
+"answer": "Exhilarate",
+"explanation": "Option A: Exhilarate means to make someone feel very happy or excited. Option B: Exilarate is an incorrect spelling. Option C: Exhillerate is an incorrect spelling. Option D: Exhillarate is an incorrect spelling. **Option A** correctly applies: 'Exhilarate' is the correct spelling."
+},
+{
+"id": 57,
+"question": "Pick the correctly spelled word.",
+"options": ["Harass", "Harrass", "Harrase", "Haras"],
+"answer": "Harass",
+"explanation": "Option A: Harass means to trouble repeatedly. Option B: Harrass is an incorrect spelling. Option C: Harrase is an incorrect spelling. Option D: Haras is an incorrect spelling. **Option A** correctly applies: 'Harass' is the correct spelling."
+},
+{
+"id": 58,
+"question": "Which word is spelled correctly?",
+"options": ["Lieutenant", "Leutenant", "Lutenant", "Lieutenent"],
+"answer": "Lieutenant",
+"explanation": "Option A: Lieutenant means a military or police officer rank. Option B: Leutenant is an incorrect spelling. Option C: Lutenant is an incorrect spelling. Option D: Lieutenent is an incorrect spelling. **Option A** correctly applies: 'Lieutenant' is the correct spelling."
+},
+{
+"id": 59,
+"question": "Pick the correctly spelled word referring to **detailed scrutiny**.",
+"options": ["Examination", "Examinetion", "Exemanation", "Exemineition"],
+"answer": "Examination",
+"explanation": "Option A: Examination means detailed inspection or scrutiny. Option B: Examinetion is an incorrect spelling. Option C: Exemanation is an incorrect spelling. Option D: Exemineition is an incorrect spelling. **Option A** correctly applies: 'Examination' is the correct spelling."
+},
+{
+"id": 60,
+"question": "Find the word that is spelled correctly and refers to **cultural refinement**.",
+"options": ["Sophistication", "Sophestication", "Sofistication", "Sophesticaton"],
+"answer": "Sophistication",
+"explanation": "Option A: Sophistication means refinement, elegance, or worldly knowledge. Option B: Sophestication is an incorrect spelling. Option C: Sofistication is an incorrect spelling. Option D: Sophesticaton is an incorrect spelling. **Option A** correctly applies: 'Sophistication' is the correct spelling."
+},
+{
+"id": 61,
+"question": "Select the correctly spelled **legal term**.",
+"options": ["Affidavit", "Aphidavit", "Affedevit", "Aphidevit"],
+"answer": "Affidavit",
+"explanation": "Option A: Affidavit means a written statement confirmed by oath. Option B: Aphidavit is an incorrect spelling. Option C: Affedevit is an incorrect spelling. Option D: Aphidevit is an incorrect spelling. **Option A** correctly applies: 'Affidavit' is the correct spelling."
+},
+{
+"id": 62,
+"question": "Choose the correct spelling for a term used in **communication**.",
+"options": ["Articulate", "Artikulat", "Articoolate", "Artikulatte"],
+"answer": "Articulate",
+"explanation": "Option A: Articulate means to express ideas clearly. Option B: Artikulat is an incorrect spelling. Option C: Articoolate is an incorrect spelling. Option D: Artikulatte is an incorrect spelling. **Option A** correctly applies: 'Articulate' is the correct spelling."
+},
+{
+"id": 63,
+"question": "Choose the option that completes the sentence using the correct spelling: **There are two types of ________; viral and bacterial.**",
+"options": ["neumonia", "pneumonia", "pnumonia", "newmonia"],
+"answer": "pneumonia",
+"explanation": "Option A: Neumonia is an incorrect spelling. Option B: Pneumonia means a serious lung infection. Option C: Pnumonia is an incorrect spelling. Option D: Newmonia is an incorrect spelling. **Option B** correctly applies: 'pneumonia' correctly completes the sentence."
+},
+{
+"id": 64,
+"question": "Choose the option that completes the sentence using the correct spelling: **The ________ disappearance of my diary bothered me all day.**",
+"options": ["mystereous", "mistereous", "misterious", "mysterious"],
+"answer": "mysterious",
+"explanation": "Option A: Mystereous is an incorrect spelling. Option B: Mistereous is an incorrect spelling. Option C: Misterious is an incorrect spelling. Option D: Mysterious means difficult to explain or understand. **Option D** correctly applies: 'mysterious' correctly completes the sentence."
+}
+]
+}
+}
+

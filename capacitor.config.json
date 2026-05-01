@@ -8,7 +8,8 @@
       "providers": ["google.com", "phone", "password"]
     },
     "SplashScreen": {
-      "launchShowDuration": 2500,
+      "launchShowDuration": 1200,
+      "launchFadeOutDuration": 300,
       "launchAutoHide": true,
       "backgroundColor": "#1A1B22",
       "showSpinner": false

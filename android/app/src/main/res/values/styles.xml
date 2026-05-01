@@ -20,9 +20,10 @@
 
     <!-- Launch/Splash screen theme (pre-Android 12) -->
     <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
-        <item name="android:windowBackground">@color/splash_background</item>
-        <item name="android:background">@color/splash_background</item>
+        <item name="android:windowBackground">@drawable/splash_layer</item>
+        <item name="android:background">@drawable/splash_layer</item>
         <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
         <item name="postSplashScreenTheme">@style/AppTheme.NoActionBar</item>
     </style>
 

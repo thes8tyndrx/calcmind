@@ -1762,6 +1762,7 @@ function QuizScreen({T, onSelectTopic, startDynamicQuiz}){
     { id: 'sports', label: 'Sports News', sub: 'Tournaments & Winners', color: BLUE, icon: '🏅' },
     { id: 'defense', label: 'Defense & Space', sub: 'Exercises & Satellites', color: RED, icon: '🚀' },
     { id: 'appointments', label: 'Appointments', sub: 'National & Global', color: "#C45AFF", icon: '🤝' },
+    { id: 'budget', label: 'Union Budget', sub: 'Budget Highlights & MCQs', color: GOLD, icon: '💰', singleFile: true },
   ];
 
   // Helper to generate recent months for CA
@@ -1817,7 +1818,13 @@ function QuizScreen({T, onSelectTopic, startDynamicQuiz}){
         ) : (
           <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:16}}>
             {CA_TOPICS.map(s=>(
-              <button key={s.id} onClick={()=>setCaTopic(s)}
+              <button key={s.id} onClick={()=>{
+                if(s.singleFile) {
+                  startDynamicQuiz(exam, subject, s.id);
+                } else {
+                  setCaTopic(s);
+                }
+              }}
                 style={{display:"flex",alignItems:"center",gap:12,background:T.card,border:`1px solid ${T.border}`,borderRadius:13,padding:"11px 14px",textAlign:"left",width:"100%"}}>
                 <div style={{width:36,height:36,borderRadius:9,flexShrink:0,background:`${s.color}15`,border:`1px solid ${s.color}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:15,color:s.color}}>{s.icon}</div>
                 <div style={{flex:1}}>
@@ -2357,7 +2364,7 @@ export default function App(){
       // Others: /quiz/{exam}/{subject}/{topicId}.json (e.g. /quiz/cgl/gs/history.json)
       const isCA = subject.toLowerCase() === 'ca' || subject.toLowerCase() === 'current affairs';
       const path = isCA 
-        ? `${BASE_URL}/quiz/ca/${topicId}/${subTopicId}.json`
+        ? (subTopicId ? `${BASE_URL}/quiz/ca/${topicId}/${subTopicId}.json` : `${BASE_URL}/quiz/ca/${topicId}.json`)
         : `${BASE_URL}/quiz/${exam.toLowerCase()}/${subject.toLowerCase()}/${topicId}.json`;
         
       const res = await fetch(path);

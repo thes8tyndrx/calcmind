@@ -653,7 +653,7 @@ const AVATARS=[
 function AnimalAvatar({id,size=32}){
   // Google profile photo
   if (id && id.startsWith('http')) {
-    return <img src={id} alt="Avatar" style={{width:size,height:size,borderRadius:99,objectFit:"cover",flexShrink:0,border:"2px solid rgba(255,255,255,0.1)"}} />;
+    return <img src={id} alt="Avatar" referrerPolicy="no-referrer" onError={(e) => { e.target.onerror = null; e.target.src = '/avatars.jpg'; e.target.style.objectFit = 'none'; e.target.style.objectPosition = '0% 0%'; e.target.style.width = size+'px'; e.target.style.height = size+'px'; }} style={{width:size,height:size,borderRadius:99,objectFit:"cover",flexShrink:0,border:"2px solid rgba(255,255,255,0.1)"}} />;
   }
   const a=AVATARS.find(x=>x.id===id)||AVATARS[0];
   return(

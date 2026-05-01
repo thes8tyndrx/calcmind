@@ -2368,9 +2368,10 @@ export default function App(){
       // CA: /quiz/ca/{topicId}/{subTopicId}.json (e.g. /quiz/ca/rankings/2026-05.json)
       // Others: /quiz/{exam}/{subject}/{topicId}.json (e.g. /quiz/cgl/gs/history.json)
       const isCA = subject.toLowerCase() === 'ca' || subject.toLowerCase() === 'current affairs';
+      const examPath = exam.toLowerCase().replace(/\s+/g, '-');
       const path = isCA 
         ? (subTopicId ? `${BASE_URL}/quiz/ca/${topicId}/${subTopicId}.json` : `${BASE_URL}/quiz/ca/${topicId}.json`)
-        : `${BASE_URL}/quiz/${exam.toLowerCase()}/${subject.toLowerCase()}/${topicId}.json`;
+        : `${BASE_URL}/quiz/${examPath}/${subject.toLowerCase()}/${topicId}.json`;
         
       const res = await fetch(path);
       if (!res.ok) { alert("Questions for this topic are coming soon!"); return; }

@@ -1186,7 +1186,7 @@ function useDailyAvailability(type) {
   return { available, loading };
 }
 
-function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, onStartMistakes }) {
+function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, onStartMistakes, user }) {
   const [subTab, setSubTab] = useState('daily');
   const { available: caAvail, loading: caLoading } = useDailyAvailability('ca');
   const { available: vocAvail, loading: vocLoading } = useDailyAvailability('vocab');
@@ -1345,7 +1345,7 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
       )}
 
       {subTab === 'mistakes' && (
-        <MistakesTab T={T} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={onStartMistakes} />
+        <MistakesTab T={T} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={onStartMistakes} user={user} />
       )}
 
     </div>
@@ -1353,7 +1353,15 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
 }
 
 // ── MY MISTAKES TAB ────────────────────────────────────────────────────────────
-function MistakesTab({ T, wrongCounts, wrongTotal, onStartMistakes }) {
+function MistakesTab({ T, wrongCounts, wrongTotal, onStartMistakes, user }) {
+  if (!user || user.isAnonymous) return (
+    <div style={{textAlign:'center', padding:'32px 20px', background:T.card, borderRadius:16, border:`1px dashed ${T.border}`}}>
+      <div style={{fontSize:32, marginBottom:8}}>🔒</div>
+      <div style={{fontWeight:700, fontSize:15, color:T.text, marginBottom:4}}>Sign In Required</div>
+      <div style={{fontSize:12, color:T.sub}}>Please sign in with Google or Email to track and practice your mistakes.</div>
+    </div>
+  );
+
   if (wrongTotal === 0) return (
     <div style={{textAlign:'center', padding:'32px 20px', background:T.card, borderRadius:16, border:`1px dashed ${T.border}`}}>
       <div style={{fontSize:32, marginBottom:8}}>🎯</div>
@@ -3115,7 +3123,7 @@ export default function App(){
           </div>
         )}
 
-        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={startMistakesQuiz}/>}
+        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={startMistakesQuiz} user={user} />}
 
         {tab==="quiz"&&<QuizScreen T={T} onSelectTopic={(topicId)=>{
           startVocabQuiz(topicId);

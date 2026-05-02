@@ -44,13 +44,13 @@ const LS={
 
 // ─── Ranks ────────────────────────────────────────────────────────────────────
 const RANKS=[
-  {min:0,   label:"Novice",    color:"#8A8FA8",icon:"○"},
-  {min:150, label:"Apprentice",color:BLUE,     icon:"◈"},
-  {min:400, label:"Calculator",color:GREEN,    icon:"⊞"},
-  {min:900, label:"Analyst",   color:GOLD,     icon:"◆"},
-  {min:2000,label:"Expert",    color:"#C45AFF",icon:"✦"},
-  {min:4000,label:"Master",    color:RED,      icon:"★"},
-  {min:8000,label:"Legend",    color:"#FFD700",icon:"⬡"},
+  {min:0,    label:"Novice",    color:"#8A8FA8", icon:"○",  ring:null},
+  {min:300,  label:"Apprentice",color:BLUE,      icon:"◈",  ring:"#4A90E2"},
+  {min:1500, label:"Calculator",color:GREEN,     icon:"⊞",  ring:"#4DC758"},
+  {min:5000, label:"Analyst",   color:GOLD,      icon:"◆",  ring:GOLD},
+  {min:15000,label:"Expert",    color:"#C45AFF", icon:"✦",  ring:"#C45AFF"},
+  {min:35000,label:"Master",    color:RED,       icon:"★",  ring:RED},
+  {min:80000,label:"Legend",    color:"#FFD700", icon:"⬡",  ring:"#FFD700", animated:true},
 ];
 const getRank=xp=>{let r=RANKS[0];for(const R of RANKS)if(xp>=R.min)r=R;return r;};
 const nextRank=xp=>{const i=RANKS.findIndex(r=>xp<r.min);return i>0?RANKS[i]:null;};
@@ -505,6 +505,27 @@ function genChain(lvl){
   return{display:v.d,ans:String(Math.abs(Math.round(v.a))),type:"chain"};
 }
 
+function genVocabSequential(topic, history = {}){
+  const questions = VOCAB_DATA[topic];
+  if(!questions || questions.length === 0) return null;
+  
+  const topicHistory = history[topic] || { lastIndex: 0, wrongIds: {} };
+  const lastIndex = topicHistory.lastIndex || 0;
+  const wrongIds = topicHistory.wrongIds || {};
+
+  // On reattempt: serve wrong/skipped first (those with wrongCount > 0)
+  const wrongPool = questions.filter(q => wrongIds[q.id] > 0);
+  if (wrongPool.length > 0) {
+    return wrongPool[0]; // serve in order
+  }
+
+  // Serve next unseen in order
+  if (lastIndex < questions.length) {
+    return questions[lastIndex];
+  }
+  return null; // all done
+}
+
 function genVocab(topic, history = {}){
   const questions = VOCAB_DATA[topic];
   if(!questions || questions.length === 0) return {display: "No data", ans: ""};
@@ -650,21 +671,32 @@ const AVATARS=[
   {id:"robot",       label:"Robot",bgPos:"50% 100%"},
   {id:"boy_band",    label:"Ninja",bgPos:"100% 100%"},
 ];
-function AnimalAvatar({id,size=32}){
-  // Google profile photo
-  if (id && id.startsWith('http')) {
-    return <img src={id} alt="Avatar" referrerPolicy="no-referrer" onError={(e) => { e.target.onerror = null; e.target.src = '/avatars.jpg'; e.target.style.objectFit = 'none'; e.target.style.objectPosition = '0% 0%'; e.target.style.width = size+'px'; e.target.style.height = size+'px'; }} style={{width:size,height:size,borderRadius:99,objectFit:"cover",flexShrink:0,border:"2px solid rgba(255,255,255,0.1)"}} />;
+function AnimalAvatar({id, size=32, xp=null}){
+  const ringColor = xp !== null ? getRank(xp).ring : null;
+  const isAnimated = xp !== null ? getRank(xp).animated : false;
+  const ringStyle = ringColor ? {
+    padding: 2,
+    borderRadius: 99,
+    background: isAnimated
+      ? `conic-gradient(${GOLD}, #C45AFF, ${GOLD}, #C45AFF, ${GOLD})`
+      : ringColor,
+    animation: isAnimated ? 'spin 3s linear infinite' : 'none',
+    flexShrink: 0,
+    display: 'inline-flex',
+  } : {};
+
+  const inner = id && id.startsWith('http')
+    ? <img src={id} alt="Avatar" referrerPolicy="no-referrer"
+        onError={(e) => { e.target.onerror=null; e.target.src='/avatars.jpg'; }}
+        style={{width:size,height:size,borderRadius:99,objectFit:"cover",display:'block'}} />
+    : (() => { const a=AVATARS.find(x=>x.id===id)||AVATARS[0]; return (
+        <div style={{width:size,height:size,borderRadius:99,backgroundImage:"url(/avatars.jpg)",backgroundSize:"300% 200%",backgroundPosition:a.bgPos,display:'block'}} />
+      ); })();
+
+  if (ringColor) {
+    return <div style={ringStyle}><div style={{padding:2,borderRadius:99,background:'#111'}}>{inner}</div></div>;
   }
-  const a=AVATARS.find(x=>x.id===id)||AVATARS[0];
-  return(
-    <div style={{
-      width:size,height:size,borderRadius:99,flexShrink:0,
-      border:"2px solid rgba(255,255,255,0.1)",
-      backgroundImage:"url(/avatars.jpg)",
-      backgroundSize:"300% 200%",
-      backgroundPosition:a.bgPos
-    }} />
-  );
+  return <div style={{flexShrink:0,borderRadius:99,border:"2px solid rgba(255,255,255,0.1)",overflow:'hidden',width:size,height:size}}>{inner}</div>;
 }
 
 
@@ -2247,7 +2279,17 @@ export default function App(){
         return genSeries(2);
       }
       if(cc.type==="arith")return cc.gen();
-      if(cc.type==="vocab")return genVocab(cc.topic, vocabState);
+      if(cc.type==="vocab"){
+        // Sequential ordering for JSON quizzes (topic starts with 'dyn_' or 'topic_')
+        const isJsonQuiz = cc.topic && (cc.topic.startsWith('dyn_') || cc.topic.startsWith('topic_') || cc.topic.startsWith('mistakes_'));
+        if (isJsonQuiz) {
+          const seqQ = genVocabSequential(cc.topic, vocabState);
+          if (seqQ) return seqQ;
+          // All questions done — signal completion
+          return { __done: true, type: 'vocab' };
+        }
+        return genVocab(cc.topic, vocabState);
+      }
     }
     return MODES.find(m=>m.id===(mid??modeId))?.gen(l??lvl)??genArith(0);
   }
@@ -2268,6 +2310,10 @@ export default function App(){
       else if(cc.quizCat === 'gs' || newQ.isGS) tLimit = 20;
     }
     setT(tLimit);
+    // Check if quiz is done (sequential completion)
+    if (newQ?.__done) {
+      setTimeout(() => { setTab('result'); setPhase('idle'); }, 100);
+    }
   }
 
   function startNormalGame(mid){
@@ -2487,9 +2533,12 @@ export default function App(){
     }
 
     if (q?.type === "vocab") {
+      const isJsonQuiz = q.topic && (q.topic.startsWith('dyn_') || q.topic.startsWith('topic_') || q.topic.startsWith('mistakes_'));
       setVocabState(prev => {
-        const tState = prev[q.topic] || { seen: [], wrong: {} };
-        let newSeen = [...tState.seen, q.id];
+        const tState = prev[q.topic] || { seen: [], wrong: {}, lastIndex: 0, wrongIds: {} };
+
+        // ── Legacy random-vocab tracking ──
+        let newSeen = [...(tState.seen||[]), q.id];
         if (newSeen.length > 20) newSeen.shift();
         let newWrong = { ...tState.wrong };
         if (!ok) {
@@ -2498,7 +2547,25 @@ export default function App(){
           newWrong[q.id]--;
           if (newWrong[q.id] <= 0) delete newWrong[q.id];
         }
-        return { ...prev, [q.topic]: { seen: newSeen, wrong: newWrong } };
+
+        // ── Sequential JSON-quiz tracking ──
+        let newLastIndex = tState.lastIndex || 0;
+        let newWrongIds = { ...(tState.wrongIds || {}) };
+        if (isJsonQuiz) {
+          // Advance lastIndex if this was served from the normal pool (not wrong pool)
+          const wrongPoolEmpty = Object.values(newWrongIds).every(c => c === 0);
+          if (wrongPoolEmpty) {
+            newLastIndex = (tState.lastIndex || 0) + 1;
+          }
+          // Track wrong IDs
+          if (!ok) {
+            newWrongIds[q.id] = (newWrongIds[q.id] || 0) + 1;
+          } else if (newWrongIds[q.id]) {
+            delete newWrongIds[q.id];
+          }
+        }
+
+        return { ...prev, [q.topic]: { seen: newSeen, wrong: newWrong, lastIndex: newLastIndex, wrongIds: newWrongIds } };
       });
       setSkipTimer(10);
     } else {
@@ -3037,9 +3104,9 @@ export default function App(){
                       <div style={{fontSize:14,width:20,textAlign:"center",flexShrink:0}}>
                         {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
                       </div>
-                      <AnimalAvatar id={p.avatar||"owl"} size={20}/>
+                    <AnimalAvatar id={p.avatar||"owl"} size={20}/>
                       <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#a385e0":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
-                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p.xp_daily_ca||0).toFixed(0)}</div>
+                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p[`xp_daily_ca_s1`]||0).toFixed(0)}</div>
                     </div>
                   ))}
                 </div>
@@ -3054,9 +3121,9 @@ export default function App(){
                       <div style={{fontSize:14,width:20,textAlign:"center",flexShrink:0}}>
                         {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
                       </div>
-                      <AnimalAvatar id={p.avatar||"owl"} size={20}/>
+                    <AnimalAvatar id={p.avatar||"owl"} size={20}/>
                       <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#00b4d8":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
-                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p.xp_daily_vocab||0).toFixed(0)}</div>
+                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p[`xp_daily_vocab_s1`]||0).toFixed(0)}</div>
                     </div>
                   ))}
                 </div>
@@ -3095,12 +3162,12 @@ export default function App(){
                   return (
                     <div key={player.id} style={{background:isMe?`${GOLD}18`:T.card, border:`1px solid ${isMe?GOLD:T.border}`, borderRadius:12, padding:"10px 14px", display:"flex", alignItems:"center", gap:11}}>
                       <div style={{width:24, fontSize:medal?16:12, fontWeight:800, color:plRank<=3?GOLD:T.muted, textAlign:'center'}}>{medal||`#${plRank}`}</div>
-                      <AnimalAvatar id={player.avatar || "owl"} size={32}/>
+                      <AnimalAvatar id={player.avatar || "owl"} size={32} xp={player[`xp_s1`]||0}/>
                       <div style={{flex:1, minWidth:0}}>
                         <div style={{fontWeight:700, fontSize:13, color:isMe?GOLD:T.text, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{player.name}</div>
-                        <div style={{fontSize:10, color:rObj.color, marginTop:1}}>{rObj.label}</div>
+                        <div style={{fontSize:10, color:rObj.color, marginTop:1}}>{rObj.icon} {rObj.label}</div>
                       </div>
-                      <div style={{fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900, fontSize:18, color:T.text}}>{rankCategory==='global' ? (player.xp||0).toFixed(2) : (player[`xp_${rankCategory}`]||0).toFixed(2)} <span style={{fontSize:9, color:T.sub, fontWeight:500}}>XP</span></div>
+                      <div style={{fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900, fontSize:18, color:T.text}}>{rankCategory==='global' ? (player[`xp_s1`]||0).toFixed(2) : (player[`xp_${rankCategory}_s1`]||0).toFixed(2)} <span style={{fontSize:9, color:T.sub, fontWeight:500}}>XP</span></div>
                     </div>
                   );
                 })

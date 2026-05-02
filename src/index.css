@@ -62,6 +62,11 @@ input {
   100% { opacity: 0; transform: translateY(-14px); }
 }
 
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
 .su   { animation: slideUp 0.27s ease both; }
 .pop  { animation: popIn 0.24s ease; }
 .shake { animation: shake 0.34s ease; }

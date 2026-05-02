@@ -2328,7 +2328,7 @@ export default function App(){
   const nextRef=useRef(null);
   const qStart=useRef(Date.now());
 
-  const initGame=(cfg,mid,lvlOverride)=>{
+  const initGame=(cfg,mid,lvlOverride,freshVocabState)=>{
     setStreak(0);setWrongStreak(0);setBestStreak(0);
     const sMax=(cfg?.count)||customConfig?.count||100;
     setScore({c:0,w:0});setHist([]);setQCount(0);setSessionMax(sMax);setShowLvlChange(null);
@@ -2338,7 +2338,7 @@ export default function App(){
     const resolvedLvl = lvlOverride ?? lvl;
     // cfg=null means normal game (use mode gen, not custom)
     const resolvedCfg = cfg || null;
-    setTimeout(()=>nextQ(resolvedMid, resolvedLvl, resolvedCfg),80);
+    setTimeout(()=>nextQ(resolvedMid, resolvedLvl, resolvedCfg, freshVocabState),80);
   };
 
   function getTimer(mid,l){
@@ -2353,7 +2353,7 @@ export default function App(){
   // the string "NORMAL" so makeQ knows to ignore stale customConfig state.
   const NO_CUSTOM = "NORMAL";
 
-  function makeQ(mid,l,cfg){
+  function makeQ(mid,l,cfg,forcedVocabState){
     // Use cfg if provided (freshly passed); fall back to React state only for
     // mid-session nextQ calls (cfg === undefined).
     // cfg === NO_CUSTOM  →  explicitly no custom config (normal mode)
@@ -2376,7 +2376,9 @@ export default function App(){
         // Sequential ordering for JSON quizzes (topic starts with 'dyn_' or 'topic_')
         const isJsonQuiz = cc.topic && (cc.topic.startsWith('dyn_') || cc.topic.startsWith('topic_') || cc.topic.startsWith('mistakes_'));
         if (isJsonQuiz) {
-          const seqQ = genVocabSequential(cc.topic, vocabState);
+          // Use forcedVocabState if provided (avoids stale React state on first question)
+          const stateToUse = forcedVocabState || vocabState;
+          const seqQ = genVocabSequential(cc.topic, stateToUse);
           if (seqQ) return seqQ;
           // All questions done — signal completion
           return { __done: true, type: 'vocab' };
@@ -2387,9 +2389,9 @@ export default function App(){
     return MODES.find(m=>m.id===(mid??modeId))?.gen(l??lvl)??genArith(0);
   }
 
-  function nextQ(mid,l,cfg){
+  function nextQ(mid,l,cfg,forcedVocabState){
     stopAll();
-    const newQ=makeQ(mid,l,cfg);
+    const newQ=makeQ(mid,l,cfg,forcedVocabState);
     setQ(newQ);setTyped("");setBloodSel(null);setFeedback(null);setPhase("playing");
     qStart.current=Date.now();
     // Determine timer: custom games get fixed 12s; normal modes use per-level timers
@@ -2586,10 +2588,12 @@ export default function App(){
     }
     const topicKey = `mistakes_${cat}`;
     VOCAB_DATA[topicKey] = allQuestions;
-    setVocabState(prev => ({ ...prev, [topicKey]: { seen: [], wrong: {}, lastIndex: 0, wrongIds: {} } }));
+    // Build fresh state object and pass it directly to initGame to avoid stale-state race
+    const freshState = { seen: [], wrong: {}, lastIndex: 0, wrongIds: {} };
+    setVocabState(prev => ({ ...prev, [topicKey]: freshState }));
     const cfg = { topic: topicKey, type: 'vocab', count: allQuestions.length, dailyTitle: `My Mistakes — ${cat.toUpperCase()}`, quizCat: cat, isReattempt: true };
     setModeId('vocab'); setCustomConfig(cfg);
-    setTab('game'); initGame(cfg, 'vocab', 0);
+    setTab('game'); initGame(cfg, 'vocab', 0, { ...vocabState, [topicKey]: freshState });
   }
 
   // Flush wrong questions to Firestore on result screen

@@ -118,7 +118,7 @@ export function useWrongQuestions(user) {
         updated[cat] = { ...updated[cat] };
         const meta = { ...updated[cat][qId] };
         meta.correctCount = (meta.correctCount || 0) + 1;
-        if (meta.correctCount >= 3) {
+        if (meta.correctCount >= 2) {
           delete updated[cat][qId];
           if (Object.keys(updated[cat]).length === 0) delete updated[cat];
           removed = true;

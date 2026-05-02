@@ -67,6 +67,11 @@ input {
   to   { transform: rotate(360deg); }
 }
 
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
 .su   { animation: slideUp 0.27s ease both; }
 .pop  { animation: popIn 0.24s ease; }
 .shake { animation: shake 0.34s ease; }

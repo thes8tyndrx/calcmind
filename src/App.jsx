@@ -2036,7 +2036,7 @@ function ProfileModal({profile,onClose,onSave,T,user,signIn,signOut}){
           </button>
         </div>
 
-        <div style={{display:"flex",gap:10,justifyContent:"center",marginBottom:14}}>
+        <div style={{display:"flex",gap:10,marginBottom:14,overflowX:"auto",paddingBottom:8,WebkitOverflowScrolling:"touch",scrollbarWidth:"none"}}>
           {user && user.photoURL && (
             <button onClick={()=>setAv(user.photoURL)} style={{padding:3,borderRadius:99,cursor:"pointer",border:`2.5px solid ${av===user.photoURL?GOLD:"transparent"}`,background:"none"}}>
               <AnimalAvatar id={user.photoURL} size={46}/>
@@ -2069,6 +2069,15 @@ function ProfileModal({profile,onClose,onSave,T,user,signIn,signOut}){
           </div>
           <a href="https://t.me/MXPrime_CA" target="_blank" rel="noopener noreferrer" style={{background:"#2AABEE", color:"#fff", padding:"6px 12px", borderRadius:8, fontSize:11, fontWeight:700, textDecoration:"none"}}>
             Telegram
+          </a>
+        </div>
+        <div style={{background:T.card2, border:`1px solid ${T.border}`, borderRadius:12, padding:12, marginBottom:16, display:'flex', alignItems:'center', justifyContent:'space-between'}}>
+          <div>
+            <div style={{fontSize:12, fontWeight:700, color:T.text}}>Support & Privacy</div>
+            <div style={{fontSize:10, color:T.sub}}>View policies or get help</div>
+          </div>
+          <a href="/privacy.html" target="_blank" rel="noopener noreferrer" style={{background:GOLD, color:"#111", padding:"6px 12px", borderRadius:8, fontSize:11, fontWeight:700, textDecoration:"none"}}>
+            Support
           </a>
         </div>
         <div style={{display:"flex",gap:8}}>
@@ -2117,7 +2126,7 @@ export default function App(){
   };
 
   const { user, signIn, signOut, loading, signInWithEmail, signUpWithEmail, sendPhoneOtp, verifyPhoneOtp } = useAuth();
-  const { wrongMap, counts: wrongCounts, total: wrongTotal, addWrong, removeWrong, flushToFirestore } = useWrongQuestions(user);
+  const { wrongMap, counts: wrongCounts, total: wrongTotal, addWrong, removeWrong, recordCorrect, flushToFirestore } = useWrongQuestions(user);
   const [showAuth, setShowAuth] = useState(true);
   const [authMode, setAuthMode] = useState('email');
   const [authEmail, setAuthEmail] = useState('');
@@ -2547,6 +2556,11 @@ export default function App(){
       alert('Please play a quiz in this category first so questions are loaded, then try again!');
       return;
     }
+    // Shuffle mistakes
+    for (let i = allQuestions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+    }
     const topicKey = `mistakes_${cat}`;
     VOCAB_DATA[topicKey] = allQuestions;
     setVocabState(prev => ({ ...prev, [topicKey]: { seen: [], wrong: {}, lastIndex: 0, wrongIds: {} } }));
@@ -2649,8 +2663,8 @@ export default function App(){
           if (wrongPoolEmpty) {
             newLastIndex = (tState.lastIndex || 0) + 1;
           }
-          // Track wrong IDs
-          if (!ok) {
+          // Track wrong IDs (Do not force immediate retries in Mistakes Quiz)
+          if (!ok && !q.topic?.startsWith('mistakes_')) {
             newWrongIds[q.id] = (newWrongIds[q.id] || 0) + 1;
           } else if (newWrongIds[q.id]) {
             delete newWrongIds[q.id];
@@ -2662,6 +2676,8 @@ export default function App(){
         const normCat = qCat === 'current affairs' ? 'ca' : qCat === 'english' ? 'vocab' : qCat;
         if (!ok) {
           addWrong(normCat, String(q.id), q._src || customConfig?.srcPath || q.topic || 'unknown');
+        } else if (q.topic?.startsWith('mistakes_')) {
+          recordCorrect(normCat, String(q.id));
         }
 
         return { ...prev, [q.topic]: { seen: newSeen, wrong: newWrong, lastIndex: newLastIndex, wrongIds: newWrongIds } };

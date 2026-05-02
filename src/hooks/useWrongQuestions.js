@@ -78,6 +78,31 @@ export function useWrongQuestions(user) {
     });
   }, []);
 
+  // Record a correct answer. If 3 times correct, remove it.
+  const recordCorrect = useCallback((cat, qId) => {
+    let removed = false;
+    setWrongMap(prev => {
+      const updated = { ...prev };
+      if (updated[cat] && updated[cat][qId]) {
+        updated[cat] = { ...updated[cat] };
+        const meta = { ...updated[cat][qId] };
+        meta.correctCount = (meta.correctCount || 0) + 1;
+        if (meta.correctCount >= 3) {
+          delete updated[cat][qId];
+          if (Object.keys(updated[cat]).length === 0) delete updated[cat];
+          removed = true;
+          // Trigger Firestore removal
+          flushRemoval(cat, qId);
+        } else {
+          updated[cat][qId] = meta;
+        }
+      }
+      saveLocal(updated);
+      return updated;
+    });
+    return removed;
+  }, [flushRemoval]);
+
   // Flush pending wrong questions to Firestore (call at session end)
   const flushToFirestore = useCallback(async () => {
     if (!user || !db) return;
@@ -116,5 +141,5 @@ export function useWrongQuestions(user) {
   }
   const total = Object.values(counts).reduce((s, c) => s + c, 0);
 
-  return { wrongMap, counts, total, addWrong, removeWrong, flushToFirestore, flushRemoval };
+  return { wrongMap, counts, total, addWrong, removeWrong, recordCorrect, flushToFirestore, flushRemoval };
 }

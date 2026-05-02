@@ -78,6 +78,37 @@ export function useWrongQuestions(user) {
     });
   }, []);
 
+  // Flush removals to Firestore
+  const flushRemoval = useCallback(async (cat, qId) => {
+    if (!user || !db) return;
+    try {
+      const userRef = doc(db, 'players', user.uid);
+      await setDoc(userRef, {
+        [`wrongQuestions.${cat}.${qId}`]: deleteField()
+      }, { merge: true });
+    } catch {}
+  }, [user]);
+
+  // Flush pending wrong questions to Firestore (call at session end)
+  const flushToFirestore = useCallback(async () => {
+    if (!user || !db) return;
+    const batch = pendingFlush.current;
+    if (Object.keys(batch).length === 0) return;
+    pendingFlush.current = {};
+    try {
+      const userRef = doc(db, 'players', user.uid);
+      const updatePayload = {};
+      for (const [cat, qs] of Object.entries(batch)) {
+        for (const [qId, meta] of Object.entries(qs)) {
+          updatePayload[`wrongQuestions.${cat}.${qId}`] = meta;
+        }
+      }
+      await setDoc(userRef, updatePayload, { merge: true });
+    } catch (e) {
+      console.error('Failed to flush wrong questions:', e);
+    }
+  }, [user]);
+
   // Record a correct answer. If 3 times correct, remove it.
   const recordCorrect = useCallback((cat, qId) => {
     let removed = false;
@@ -102,37 +133,6 @@ export function useWrongQuestions(user) {
     });
     return removed;
   }, [flushRemoval]);
-
-  // Flush pending wrong questions to Firestore (call at session end)
-  const flushToFirestore = useCallback(async () => {
-    if (!user || !db) return;
-    const batch = pendingFlush.current;
-    if (Object.keys(batch).length === 0) return;
-    pendingFlush.current = {};
-    try {
-      const userRef = doc(db, 'players', user.uid);
-      const updatePayload = {};
-      for (const [cat, qs] of Object.entries(batch)) {
-        for (const [qId, meta] of Object.entries(qs)) {
-          updatePayload[`wrongQuestions.${cat}.${qId}`] = meta;
-        }
-      }
-      await setDoc(userRef, updatePayload, { merge: true });
-    } catch (e) {
-      console.error('Failed to flush wrong questions:', e);
-    }
-  }, [user]);
-
-  // Flush removals to Firestore
-  const flushRemoval = useCallback(async (cat, qId) => {
-    if (!user || !db) return;
-    try {
-      const userRef = doc(db, 'players', user.uid);
-      await setDoc(userRef, {
-        [`wrongQuestions.${cat}.${qId}`]: deleteField()
-      }, { merge: true });
-    } catch {}
-  }, [user]);
 
   // Counts per category
   const counts = {};

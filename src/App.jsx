@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useAuth } from './hooks/useAuth';
 import { useLeaderboard } from './hooks/useLeaderboard';
+import { useWrongQuestions } from './hooks/useWrongQuestions';
 import VOCAB_DATA from './data/quiz/vocab_data.json';
 import WebApp from '@twa-dev/sdk';
 import { App as CapApp } from '@capacitor/app';
@@ -1183,7 +1184,7 @@ function useDailyAvailability(type) {
   return { available, loading };
 }
 
-function DailyScreen({ T, onStartDaily, onStartTopic }) {
+function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, onStartMistakes }) {
   const [subTab, setSubTab] = useState('daily');
   const { available: caAvail, loading: caLoading } = useDailyAvailability('ca');
   const { available: vocAvail, loading: vocLoading } = useDailyAvailability('vocab');
@@ -1230,8 +1231,14 @@ function DailyScreen({ T, onStartDaily, onStartTopic }) {
 
       {/* Tabs */}
       <div style={{display:"flex", background:T.card2, borderRadius:12, padding:4}}>
-        <button onClick={()=>setSubTab('daily')} style={{flex:1, padding:"10px 0", borderRadius:10, background:subTab==='daily'?T.card:"transparent", color:subTab==='daily'?T.text:T.sub, fontWeight:700, fontSize:14, border:`1px solid ${subTab==='daily'?T.border:'transparent'}`}}>Daily</button>
-        <button onClick={()=>setSubTab('topics')} style={{flex:1, padding:"10px 0", borderRadius:10, background:subTab==='topics'?T.card:"transparent", color:subTab==='topics'?T.text:T.sub, fontWeight:700, fontSize:14, border:`1px solid ${subTab==='topics'?T.border:'transparent'}`}}>Topic-Wise CA</button>
+        <button onClick={()=>setSubTab('daily')} style={{flex:1, padding:"10px 0", borderRadius:10, background:subTab==='daily'?T.card:"transparent", color:subTab==='daily'?T.text:T.sub, fontWeight:700, fontSize:13, border:`1px solid ${subTab==='daily'?T.border:'transparent'}`}}>Daily</button>
+        <button onClick={()=>setSubTab('topics')} style={{flex:1, padding:"10px 0", borderRadius:10, background:subTab==='topics'?T.card:"transparent", color:subTab==='topics'?T.text:T.sub, fontWeight:700, fontSize:13, border:`1px solid ${subTab==='topics'?T.border:'transparent'}`}}>Topic CA</button>
+        <button onClick={()=>setSubTab('mistakes')} style={{flex:1, padding:"10px 0", borderRadius:10, background:subTab==='mistakes'?T.card:"transparent", fontWeight:700, fontSize:13, border:`1px solid ${subTab==='mistakes'?T.border:'transparent'}`, position:'relative',
+          color: subTab==='mistakes' ? RED : T.sub,
+        }}>
+          🔴 Mistakes
+          {wrongTotal > 0 && <span style={{position:'absolute', top:4, right:6, background:RED, color:'#fff', borderRadius:99, fontSize:8, fontWeight:900, padding:'1px 5px', minWidth:14, textAlign:'center'}}>{wrongTotal > 99 ? '99+' : wrongTotal}</span>}
+        </button>
       </div>
 
       {subTab === 'daily' && (
@@ -1335,6 +1342,53 @@ function DailyScreen({ T, onStartDaily, onStartTopic }) {
         </div>
       )}
 
+      {subTab === 'mistakes' && (
+        <MistakesTab T={T} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={onStartMistakes} />
+      )}
+
+    </div>
+  );
+}
+
+// ── MY MISTAKES TAB ────────────────────────────────────────────────────────────
+function MistakesTab({ T, wrongCounts, wrongTotal, onStartMistakes }) {
+  if (wrongTotal === 0) return (
+    <div style={{textAlign:'center', padding:'32px 20px', background:T.card, borderRadius:16, border:`1px dashed ${T.border}`}}>
+      <div style={{fontSize:32, marginBottom:8}}>🎯</div>
+      <div style={{fontWeight:700, fontSize:15, color:T.text, marginBottom:4}}>No mistakes yet!</div>
+      <div style={{fontSize:12, color:T.sub}}>Keep playing — wrong answers will appear here for you to revisit.</div>
+    </div>
+  );
+  const CAT_META = {
+    ca:    { icon:'📰', label:'Current Affairs' },
+    vocab: { icon:'📖', label:'Vocabulary' },
+    maths: { icon:'⚡', label:'Maths' },
+    gs:    { icon:'🧠', label:'General Studies' },
+  };
+  return (
+    <div style={{display:'flex', flexDirection:'column', gap:10}}>
+      <div style={{fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:16, color:T.text, marginBottom:4, display:'flex', alignItems:'center', gap:6}}>
+        <span style={{color:'#D95252'}}>🔴</span> My Mistakes
+        <span style={{fontSize:11, color:T.sub, fontWeight:500}}>— {wrongTotal} total</span>
+      </div>
+      <div style={{fontSize:12, color:T.sub, marginBottom:4}}>Questions you got wrong. Practice them until you ace them!</div>
+      {Object.entries(wrongCounts).map(([cat, count]) => {
+        const meta = CAT_META[cat] || { icon:'❓', label: cat };
+        return (
+          <button key={cat} onClick={() => onStartMistakes(cat)}
+            style={{background:T.card, border:'1px solid rgba(217,82,82,0.3)', borderRadius:14, padding:'16px', display:'flex', alignItems:'center', gap:14, cursor:'pointer', width:'100%', textAlign:'left'}}>
+            <div style={{width:44, height:44, borderRadius:12, background:'rgba(217,82,82,0.1)', border:'1px solid rgba(217,82,82,0.25)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:22, flexShrink:0}}>
+              {meta.icon}
+            </div>
+            <div style={{flex:1}}>
+              <div style={{fontWeight:700, fontSize:15, color:T.text}}>{meta.label}</div>
+              <div style={{fontSize:12, color:'#D95252', marginTop:2, fontWeight:600}}>{count} question{count !== 1 ? 's' : ''} to fix</div>
+            </div>
+            <div style={{fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900, fontSize:32, color:'#D95252', minWidth:36, textAlign:'center'}}>{count}</div>
+            <span style={{color:T.muted, fontSize:18}}>›</span>
+          </button>
+        );
+      })}
     </div>
   );
 }
@@ -2028,6 +2082,7 @@ export default function App(){
   const { leaderboard, submitScore, refresh, markDailyCompleted } = useLeaderboard();
   const { leaderboard: dailyCaBoard, refresh: refreshDailyCa } = useLeaderboard();
   const { leaderboard: dailyVocabBoard, refresh: refreshDailyVocab } = useLeaderboard();
+  const { wrongMap, counts: wrongCounts, total: wrongTotal, addWrong, removeWrong, flushToFirestore } = useWrongQuestions(user);
   const [installPrompt, setInstallPrompt] = useState(null);
   const [showInstallBanner, setShowInstallBanner] = useState(() => LS.get("cm_show_install", true));
 
@@ -2467,6 +2522,34 @@ export default function App(){
     }
   }
 
+  // ── My Mistakes Quiz ──────────────────────────────────────────────────────────
+  function startMistakesQuiz(cat) {
+    const wrongQsForCat = wrongMap[cat] || {};
+    const qIds = Object.keys(wrongQsForCat);
+    if (qIds.length === 0) { alert('No mistakes recorded yet for this category!'); return; }
+    const allQuestions = [];
+    for (const [topicKey, qs] of Object.entries(VOCAB_DATA)) {
+      if (!Array.isArray(qs)) continue;
+      for (const q of qs) {
+        if (qIds.includes(String(q.id))) allQuestions.push({ ...q, topic: topicKey });
+      }
+    }
+    if (allQuestions.length === 0) {
+      alert('Please play a quiz in this category first so questions are loaded, then try again!');
+      return;
+    }
+    const topicKey = `mistakes_${cat}`;
+    VOCAB_DATA[topicKey] = allQuestions;
+    setVocabState(prev => ({ ...prev, [topicKey]: { seen: [], wrong: {}, lastIndex: 0, wrongIds: {} } }));
+    const cfg = { topic: topicKey, type: 'vocab', count: allQuestions.length, dailyTitle: `My Mistakes — ${cat.toUpperCase()}`, quizCat: cat, isReattempt: true };
+    setModeId('vocab'); setCustomConfig(cfg);
+    setTab('game'); initGame(cfg, 'vocab', 0);
+  }
+
+  // Flush wrong questions to Firestore on result screen
+  useEffect(() => { if (tab === 'result') flushToFirestore(); }, [tab]);
+
+
   useEffect(()=>{
     if(phase!=="playing")return;
     timerRef.current=setInterval(()=>{
@@ -2563,6 +2646,13 @@ export default function App(){
           } else if (newWrongIds[q.id]) {
             delete newWrongIds[q.id];
           }
+        }
+        // ── Global My Mistakes tracking ──
+        // Determine category from topic key or customConfig
+        const qCat = customConfig?.quizCat || (q.topic?.startsWith('dyn_') ? q.topic.split('_')[3]?.toLowerCase() : null) || q.type || 'vocab';
+        const normCat = qCat === 'current affairs' ? 'ca' : qCat === 'english' ? 'vocab' : qCat;
+        if (!ok) {
+          addWrong(normCat, String(q.id), q._src || customConfig?.srcPath || q.topic || 'unknown');
         }
 
         return { ...prev, [q.topic]: { seen: newSeen, wrong: newWrong, lastIndex: newLastIndex, wrongIds: newWrongIds } };
@@ -3021,7 +3111,7 @@ export default function App(){
           </div>
         )}
 
-        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz}/>}
+        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={startMistakesQuiz}/>}
 
         {tab==="quiz"&&<QuizScreen T={T} onSelectTopic={(topicId)=>{
           startVocabQuiz(topicId);

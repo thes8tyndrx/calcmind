@@ -521,13 +521,19 @@ function formatVocabQuestion(q, topic) {
   let rawDisplay = q.display || q.question || q.q || "";
   let display = "";
 
-  const isFastVocab = ['Synonyms', 'Antonyms', 'Idioms', 'Homonyms'].some(t => topic.includes(t));
+  const topicToCheck = q._originalTopic || q.topic || topic;
+  const isFastVocab = ['Synonyms', 'Antonyms', 'Idioms', 'Homonyms'].some(t => topicToCheck.includes(t));
+  
   if (isFastVocab) {
     const boldMatch = rawDisplay.match(/\*\*([^*]+)\*\*/);
     if (boldMatch) {
       display = cleanText(boldMatch[1]);
     } else {
       display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
+    }
+    // Inject the subtopic clearly so they know what type of question it is during a mistakes quiz!
+    if ((q.topic || topic).startsWith('mistakes_') && q._originalTopic) {
+      display = `<span style="font-size:0.7em;opacity:0.8;color:#00b4d8;display:block;margin-bottom:6px;letter-spacing:1px;text-transform:uppercase;">${q._originalTopic.replace(/_/g, ' ')}</span>` + display;
     }
   } else {
     display = cleanText(rawDisplay)
@@ -553,7 +559,7 @@ function formatVocabQuestion(q, topic) {
   let exp = cleanText(rawExp);
   exp = exp.replace(/([A-Z][A-Za-z]+(?:\s+\([^)]+\))?\s+-\s+)/g, "\n$1").trim();
 
-  const isGrammar = ['Active Passive', 'Narration', 'Sentence Improvement', 'Spot the Error'].includes(topic);
+  const isGrammar = ['Active Passive', 'Narration', 'Sentence Improvement', 'Spot the Error'].includes(topicToCheck);
 
   return {
     ...q,
@@ -2549,7 +2555,10 @@ export default function App(){
     for (const [topicKey, qs] of Object.entries(VOCAB_DATA)) {
       if (!Array.isArray(qs)) continue;
       for (const q of qs) {
-        if (qIds.includes(String(q.id))) allQuestions.push({ ...q, topic: topicKey });
+        if (qIds.includes(String(q.id))) {
+          // Preserve the original topic so formatVocabQuestion knows its origin
+          allQuestions.push({ ...q, _originalTopic: topicKey, topic: `mistakes_${cat}` });
+        }
       }
     }
     if (allQuestions.length === 0) {
@@ -3312,7 +3321,7 @@ export default function App(){
             {/* Top stats bar */}
             <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 14px",borderBottom:`1px solid ${T.border}`,background:T.hdr,flexShrink:0}}>
               <button onClick={()=>{stopAll();setTab(customConfig?.quizCat||customConfig?.topic?.startsWith('mistakes_')||customConfig?.topic?.startsWith('dyn_')||customConfig?.topic?.startsWith('daily_')?'daily':'quiz');setPhase("idle");}} style={{background:"none",border:"none",color:GOLD,fontWeight:800,fontSize:14,padding:0,fontFamily:"'Barlow Condensed',sans-serif",display:"flex",alignItems:"center",gap:4}}>
-                <span style={{fontSize:18}}>‹</span> {customConfig?.topic?.toUpperCase()}
+                <span style={{fontSize:18}}>‹</span> {(customConfig?.dailyTitle || customConfig?.topic)?.toUpperCase()}
               </button>
               <div style={{display:"flex",gap:8,alignItems:"center"}}>
                 <div style={{background:"rgba(77,199,88,0.1)",border:`1px solid ${GREEN}44`,borderRadius:6,padding:"2px 8px",display:"flex",flexDirection:"column",alignItems:"center",minWidth:40}}>
@@ -3339,7 +3348,9 @@ export default function App(){
               <div key={q.display+total} style={{background:T.card,border:`1.5px solid ${T.border}`,borderRadius:16,padding:"18px 16px",marginBottom:12,boxShadow:dark?"none":"0 2px 8px rgba(0,0,0,0.06)",position:"relative",overflow:"hidden"}}>
                 <div style={{position:"absolute",top:0,left:0,right:0,height:2,background:`linear-gradient(90deg,${GOLD},transparent)`}}/>
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10}}>
-                  <span style={{fontSize:11,fontWeight:900,letterSpacing:1.5,color:GOLD,fontFamily:"'Barlow Condensed',sans-serif"}}>{(customConfig?.topic||"VOCAB").toUpperCase()}</span>
+                  <span style={{fontSize:11,fontWeight:900,letterSpacing:1.5,color:GOLD,fontFamily:"'Barlow Condensed',sans-serif"}}>
+                    {(q?._originalTopic ? q._originalTopic.replace('daily_ca_', 'Daily CA ').replace(/_/g, ' ') : (customConfig?.dailyTitle || customConfig?.topic || "VOCAB")).toUpperCase()}
+                  </span>
                   <span style={{fontSize:12,color:T.sub,fontWeight:900,fontFamily:"'Barlow Condensed',sans-serif"}}>Q. {total+1}</span>
                 </div>
                 <div dangerouslySetInnerHTML={{__html: q.display||''}} style={{fontFamily:"'Outfit',sans-serif",fontWeight:700,fontSize:(q.display||'').length>60?16:(q.display||'').length>35?19:(q.display||'').length>18?23:28,color:T.text,lineHeight:1.45,whiteSpace:"pre-line",textAlign:"center",padding:"4px 0 10px"}} />

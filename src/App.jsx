@@ -506,6 +506,69 @@ function genChain(lvl){
   return{display:v.d,ans:String(Math.abs(Math.round(v.a))),type:"chain"};
 }
 
+function formatVocabQuestion(q, topic) {
+  const cleanText = (t) => {
+    if(!t) return "";
+    return t
+      .replace(/www\.ssccglpinnacle\.com/gi, "")
+      .replace(/Download Pinnacle Exam Preparation App/gi, "")
+      .replace(/Pinnacle\s+English/gi, "")
+      .replace(/\n/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  };
+
+  let rawDisplay = q.display || q.question || q.q || "";
+  let display = "";
+
+  const isFastVocab = ['Synonyms', 'Antonyms', 'Idioms', 'Homonyms'].some(t => topic.includes(t));
+  if (isFastVocab) {
+    const boldMatch = rawDisplay.match(/\*\*([^*]+)\*\*/);
+    if (boldMatch) {
+      display = cleanText(boldMatch[1]);
+    } else {
+      display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
+    }
+  } else {
+    display = cleanText(rawDisplay)
+      .replace(/\*\*([^*]+)\*\*/g, (match, p1) => {
+        const t = p1.trim();
+        const top = topic.toLowerCase();
+        if (top.includes('blank')) return '________';
+        if (top.includes('spot') || top.includes('error')) return p1;
+        if (/^\(?[a-dA-D0-9]+\)?\.?$/.test(t) || t === '/' || t === '\\') return t;
+        return `<u>${t}</u>`;
+      })
+      .replace(/\*([^*]+)\*/g, (match, p1) => {
+        const t = p1.trim();
+        const top = topic.toLowerCase();
+        if (top.includes('blank')) return '________';
+        if (top.includes('spot') || top.includes('error')) return p1;
+        if (/^\(?[a-dA-D0-9]+\)?\.?$/.test(t) || t === '/' || t === '\\') return t;
+        return `<u>${t}</u>`;
+      });
+  }
+
+  let rawExp = q.explanation || q.exp || "";
+  let exp = cleanText(rawExp);
+  exp = exp.replace(/([A-Z][A-Za-z]+(?:\s+\([^)]+\))?\s+-\s+)/g, "\n$1").trim();
+
+  const isGrammar = ['Active Passive', 'Narration', 'Sentence Improvement', 'Spot the Error'].includes(topic);
+
+  return {
+    ...q,
+    id: q.id,
+    display,
+    ans: q.ans || q.answer,
+    options: q.options,
+    explanation: exp,
+    exam: q.exam,
+    topic: q.topic || topic,
+    type: "vocab",
+    isGrammar: isGrammar
+  };
+}
+
 function genVocabSequential(topic, history = {}){
   const questions = VOCAB_DATA[topic];
   if(!questions || questions.length === 0) return null;
@@ -517,14 +580,12 @@ function genVocabSequential(topic, history = {}){
   // On reattempt: serve wrong/skipped first (those with wrongCount > 0)
   const wrongPool = questions.filter(q => wrongIds[q.id] > 0);
   if (wrongPool.length > 0) {
-    const q = wrongPool[0];
-    return { ...q, type: 'vocab', topic }; // stamp type so vocab layout renders
+    return formatVocabQuestion(wrongPool[0], topic);
   }
 
   // Serve next unseen in order
   if (lastIndex < questions.length) {
-    const q = questions[lastIndex];
-    return { ...q, type: 'vocab', topic }; // stamp type so vocab layout renders
+    return formatVocabQuestion(questions[lastIndex], topic);
   }
   return null; // all done
 }
@@ -558,69 +619,7 @@ function genVocab(topic, history = {}){
   }
   if (!q) q = pick(questions);
 
-  const cleanText = (t) => {
-    if(!t) return "";
-    return t
-      .replace(/www\.ssccglpinnacle\.com/gi, "")
-      .replace(/Download Pinnacle Exam Preparation App/gi, "")
-      .replace(/Pinnacle\s+English/gi, "")
-      .replace(/\n/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
-  };
-
-  let rawDisplay = q.question || "";
-  let display = "";
-
-  // Check if it's a fast-paced vocab topic where we only want the word
-  const isFastVocab = ['Synonyms', 'Antonyms', 'Idioms', 'Homonyms'].some(t => topic.includes(t));
-  if (isFastVocab) {
-    const boldMatch = rawDisplay.match(/\*\*([^*]+)\*\*/);
-    if (boldMatch) {
-      display = cleanText(boldMatch[1]);
-    } else {
-      // Fallback: strip boilerplate like "Select the most appropriate synonym..."
-      display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
-    }
-  } else {
-    // Normal grammar/sentence topic: underline bold words instead of removing formatting
-    display = cleanText(rawDisplay)
-      .replace(/\*\*([^*]+)\*\*/g, (match, p1) => {
-        const t = p1.trim();
-        const top = topic.toLowerCase();
-        if (top.includes('blank')) return '________';
-        if (top.includes('spot') || top.includes('error')) return p1;
-        if (/^\(?[a-dA-D0-9]+\)?\.?$/.test(t) || t === '/' || t === '\\') return t;
-        return `<u>${t}</u>`;
-      })
-      .replace(/\*([^*]+)\*/g, (match, p1) => {
-        const t = p1.trim();
-        const top = topic.toLowerCase();
-        if (top.includes('blank')) return '________';
-        if (top.includes('spot') || top.includes('error')) return p1;
-        if (/^\(?[a-dA-D0-9]+\)?\.?$/.test(t) || t === '/' || t === '\\') return t;
-        return `<u>${t}</u>`;
-      });
-  }
-
-  let exp = cleanText(q.explanation);
-
-  // Break explanation at word meanings: "Word (meaning) - "
-  exp = exp.replace(/([A-Z][A-Za-z]+(?:\s+\([^)]+\))?\s+-\s+)/g, "\n$1").trim();
-
-  const isGrammar = ['Active Passive', 'Narration', 'Sentence Improvement', 'Spot the Error'].includes(topic);
-
-  return {
-    id: q.id,
-    display,
-    ans: q.ans || q.answer,
-    options: q.options,
-    explanation: exp,
-    exam: q.exam,
-    topic: q.topic,
-    type: "vocab",
-    isGrammar: isGrammar
-  };
+  return formatVocabQuestion(q, topic);
 }
 
 // ─── MODES ────────────────────────────────────────────────────────────────────
@@ -2371,8 +2370,7 @@ export default function App(){
     let tLimit=cc?12:getTimer(mid??modeId,l??lvl);
     if(cc && cc.type === "vocab") {
       if(newQ.isGrammar) tLimit = 20;
-      else if(cc.quizCat === 'ca') tLimit = 15;
-      else if(cc.quizCat === 'gs' || newQ.isGS) tLimit = 20;
+      else if(cc.quizCat === 'ca' || cc.quizCat === 'gs' || newQ.isGS) tLimit = 20;
     }
     setT(tLimit);
     // Check if quiz is done (sequential completion)

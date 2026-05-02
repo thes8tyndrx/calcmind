@@ -3288,7 +3288,7 @@ export default function App(){
           ?<div style={{display:"flex",flexDirection:"column",height:"100%",background:T.bg}}>
             {/* Top stats bar */}
             <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 14px",borderBottom:`1px solid ${T.border}`,background:T.hdr,flexShrink:0}}>
-              <button onClick={()=>{stopAll();setTab("quiz");setPhase("idle");}} style={{background:"none",border:"none",color:GOLD,fontWeight:800,fontSize:14,padding:0,fontFamily:"'Barlow Condensed',sans-serif",display:"flex",alignItems:"center",gap:4}}>
+              <button onClick={()=>{stopAll();setTab(customConfig?.quizCat||customConfig?.topic?.startsWith('mistakes_')||customConfig?.topic?.startsWith('dyn_')||customConfig?.topic?.startsWith('daily_')?'daily':'quiz');setPhase("idle");}} style={{background:"none",border:"none",color:GOLD,fontWeight:800,fontSize:14,padding:0,fontFamily:"'Barlow Condensed',sans-serif",display:"flex",alignItems:"center",gap:4}}>
                 <span style={{fontSize:18}}>‹</span> {customConfig?.topic?.toUpperCase()}
               </button>
               <div style={{display:"flex",gap:8,alignItems:"center"}}>
@@ -3319,12 +3319,12 @@ export default function App(){
                   <span style={{fontSize:11,fontWeight:900,letterSpacing:1.5,color:GOLD,fontFamily:"'Barlow Condensed',sans-serif"}}>{(customConfig?.topic||"VOCAB").toUpperCase()}</span>
                   <span style={{fontSize:12,color:T.sub,fontWeight:900,fontFamily:"'Barlow Condensed',sans-serif"}}>Q. {total+1}</span>
                 </div>
-                <div dangerouslySetInnerHTML={{__html: q.display}} style={{fontFamily:"'Outfit',sans-serif",fontWeight:700,fontSize:q.display.length>60?16:q.display.length>35?19:q.display.length>18?23:28,color:T.text,lineHeight:1.45,whiteSpace:"pre-line",textAlign:"center",padding:"4px 0 10px"}} />
+                <div dangerouslySetInnerHTML={{__html: q.display||''}} style={{fontFamily:"'Outfit',sans-serif",fontWeight:700,fontSize:(q.display||'').length>60?16:(q.display||'').length>35?19:(q.display||'').length>18?23:28,color:T.text,lineHeight:1.45,whiteSpace:"pre-line",textAlign:"center",padding:"4px 0 10px"}} />
                 {q.exam&&<div style={{textAlign:"center",fontSize:9,color:T.muted,fontStyle:"italic",marginTop:2,opacity:0.8}}>{q.exam}</div>}
               </div>
               {/* Options */}
               <div style={{display:"flex",flexDirection:"column",gap:10}}>
-                {Object.entries(q.options).map(([key,val])=>{
+                {Object.entries(q.options||{}).map(([key,val])=>{
                   let cleanedVal = val.replace(/\s+/g, " ").trim(); // Basic cleanup for options
                   let bg=T.card,bdr=T.border,clr=T.text,shd=dark?"none":"0 1px 4px rgba(0,0,0,0.04)";
                   if(feedback){

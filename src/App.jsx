@@ -2438,6 +2438,7 @@ export default function App(){
       return {
         id: item.id || `${defaultTopicPrefix}_${i}`,
         question: item.q || item.question,
+        display: item.q || item.question,
         options: optionsObj,
         ans: finalAns,
         explanation: item.exp || item.explanation || "",
@@ -3325,7 +3326,7 @@ export default function App(){
               {/* Options */}
               <div style={{display:"flex",flexDirection:"column",gap:10}}>
                 {Object.entries(q.options||{}).map(([key,val])=>{
-                  let cleanedVal = val.replace(/\s+/g, " ").trim(); // Basic cleanup for options
+                  let cleanedVal = String(val||"").replace(/\s+/g, " ").trim(); // Basic cleanup for options
                   let bg=T.card,bdr=T.border,clr=T.text,shd=dark?"none":"0 1px 4px rgba(0,0,0,0.04)";
                   if(feedback){
                     if(key===q.ans){bg="rgba(77,199,88,0.08)";bdr=GREEN;clr=GREEN;shd="none";}

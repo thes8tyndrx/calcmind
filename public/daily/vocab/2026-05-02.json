@@ -1,0 +1,166 @@
+{
+  "date": "2026-05-02",
+  "title": "The Hindu Vocab — 02 May 2026",
+  "questions": [
+    {
+      "id": "hv_20260502_1",
+      "q": "**COMPREHENSIVE** means:",
+      "options": ["Brief", "Complete", "Confusing", "Selective"],
+      "ans": "B",
+      "exp": "COMPREHENSIVE = covering all or nearly all aspects. Example usage from the editorial: the health survey is described as a comprehensive survey.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_2",
+      "q": "**REIMBURSEMENT** means:",
+      "options": ["Repayment", "Punishment", "Restriction", "Donation"],
+      "ans": "A",
+      "exp": "REIMBURSEMENT = money paid back for expenses. Example usage from the editorial: PMJAY reimbursement rates are discussed.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_3",
+      "q": "**ANCILLARY** means:",
+      "options": ["Main", "Additional", "Hostile", "Illegal"],
+      "ans": "B",
+      "exp": "ANCILLARY = supplementary or supporting. Example usage from the editorial: private hospitals bill separately for ancillary services.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_4",
+      "q": "**CATASTROPHIC** means:",
+      "options": ["Minor", "Disastrous", "Temporary", "Ordinary"],
+      "ans": "B",
+      "exp": "CATASTROPHIC = causing great damage or suffering. Example usage from the editorial: rising catastrophic health costs are mentioned.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_5",
+      "q": "**DECORUM** means:",
+      "options": ["Proper behaviour", "Public anger", "Political defeat", "Sudden delay"],
+      "ans": "A",
+      "exp": "DECORUM = dignified and proper conduct. Example usage from the editorial: coalition politics requires respecting decorum.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_6",
+      "q": "**VIABLE** means:",
+      "options": ["Practical", "Hidden", "Weak", "Delayed"],
+      "ans": "A",
+      "exp": "VIABLE = capable of working successfully. Example usage from the editorial: the UDF must remain viable amid social change.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_7",
+      "q": "**UPHEAVALS** means:",
+      "options": ["Stability", "Disturbances", "Approvals", "Arrangements"],
+      "ans": "B",
+      "exp": "UPHEAVALS = major disruptions or disturbances. Example usage from the editorial: global upheavals are linked to political shifts.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_8",
+      "q": "**IMPEDIMENTS** means:",
+      "options": ["Obstacles", "Rewards", "Agreements", "Supporters"],
+      "ans": "A",
+      "exp": "IMPEDIMENTS = things that block or hinder progress. Example usage from the editorial: liberal norms are vilified as impediments.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_9",
+      "q": "**COLLUDED** means:",
+      "options": ["Competed secretly", "Cooperated secretly", "Refused openly", "Explained clearly"],
+      "ans": "B",
+      "exp": "COLLUDED = worked together secretly, usually for a wrong purpose. Example usage from the editorial: the Right is said to have colluded internationally.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_10",
+      "q": "**OBFUSCATE** means:",
+      "options": ["Clarify", "Confuse", "Celebrate", "Measure"],
+      "ans": "B",
+      "exp": "OBFUSCATE = to make something unclear or difficult to understand. Example usage from the editorial: efforts to obfuscate targeting are mentioned.",
+      "type": "synonym"
+    },
+    {
+      "id": "hv_20260502_11",
+      "q": "Antonym of **DUBIOUS**:",
+      "options": ["Doubtful", "Suspicious", "Certain", "Questionable"],
+      "ans": "C",
+      "exp": "DUBIOUS = doubtful or not reliable. Example usage from the editorial: exit polls of dubious authority are mentioned.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260502_12",
+      "q": "Antonym of **RETICENCE**:",
+      "options": ["Silence", "Reserve", "Openness", "Hesitation"],
+      "ans": "C",
+      "exp": "RETICENCE = unwillingness to speak or act openly. Example usage from the editorial: India’s reticence is discussed in foreign policy context.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260502_13",
+      "q": "Antonym of **UNFETTERED**:",
+      "options": ["Free", "Released", "Restricted", "Independent"],
+      "ans": "C",
+      "exp": "UNFETTERED = free from restrictions. Example usage from the editorial: Abu Dhabi is described as having unfettered itself from quota restrictions.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260502_14",
+      "q": "Antonym of **ANODYNE**:",
+      "options": ["Harmless", "Mild", "Provocative", "Soothing"],
+      "ans": "C",
+      "exp": "ANODYNE = unlikely to offend; bland or harmless. Example usage from the editorial: the UAE statement contains anodyne references.",
+      "type": "antonym"
+    },
+    {
+      "id": "hv_20260502_15",
+      "q": "Idiom: **'counting its chickens before they hatch'** means:",
+      "options": ["Planning carefully after success", "Celebrating before success is certain", "Avoiding political risk", "Accepting defeat early"],
+      "ans": "B",
+      "exp": "The idiom means assuming success before it actually happens. Example usage from the editorial: Congress leaders are described as counting their chickens before they hatch.",
+      "type": "idiom"
+    },
+    {
+      "id": "hv_20260502_16",
+      "q": "Idiom: **'muddy the waters'** means:",
+      "options": ["Make a situation clearer", "Make a situation more confusing", "Solve a dispute quickly", "Avoid public criticism"],
+      "ans": "B",
+      "exp": "The idiom means to make something more confused or complicated. Example usage from the editorial: an ally’s statement muddied the waters in Kerala politics.",
+      "type": "idiom"
+    },
+    {
+      "id": "hv_20260502_17",
+      "q": "Idiom: **'steal a march'** means:",
+      "options": ["Gain an advantage secretly or early", "Lose an opportunity", "Follow an old rule", "Delay a decision"],
+      "ans": "A",
+      "exp": "The idiom means to gain an advantage over others. Example usage from the editorial: the UAE aims to steal a march over Iran and Saudi Arabia.",
+      "type": "idiom"
+    },
+    {
+      "id": "hv_20260502_18",
+      "q": "**TAKE DOWN** means:",
+      "options": ["Remove or delete", "Increase quickly", "Support publicly", "Explain in detail"],
+      "ans": "A",
+      "exp": "TAKE DOWN = remove, delete or block content. Example usage from the editorial: platforms are asked to take down online content.",
+      "type": "phrasal_verb"
+    },
+    {
+      "id": "hv_20260502_19",
+      "q": "**PUT A LID ON** means:",
+      "options": ["Encourage openly", "Control or suppress", "Publish officially", "Reject permanently"],
+      "ans": "B",
+      "exp": "PUT A LID ON = control, limit or suppress something. Example usage from the editorial: Congress tried to put a lid on public ambition.",
+      "type": "phrasal_verb"
+    },
+    {
+      "id": "hv_20260502_20",
+      "q": "**LOOK DEEPER** means:",
+      "options": ["Ignore details", "Examine more carefully", "Move faster", "Accept blindly"],
+      "ans": "B",
+      "exp": "LOOK DEEPER = examine something more carefully. Example usage from the editorial: analysts are prompted to look deeper into the UAE’s OPEC exit.",
+      "type": "phrasal_verb"
+    }
+  ]
+}

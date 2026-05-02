@@ -1384,9 +1384,18 @@ function MistakesTab({ T, wrongCounts, wrongTotal, onStartMistakes, user }) {
     <div style={{display:'flex', flexDirection:'column', gap:10}}>
       <div style={{fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:16, color:T.text, marginBottom:4, display:'flex', alignItems:'center', gap:6}}>
         <span style={{color:'#D95252'}}>🔴</span> My Mistakes
-        <span style={{fontSize:11, color:T.sub, fontWeight:500}}>— {wrongTotal} total</span>
+        <span style={{fontSize:11, color:T.sub, fontWeight:500}}>— {wrongTotal} / 100</span>
       </div>
       <div style={{fontSize:12, color:T.sub, marginBottom:4}}>Questions you got wrong. Practice them until you ace them!</div>
+      {wrongTotal >= 100 && (
+        <div style={{background:'rgba(239,68,68,0.12)', border:'1.5px solid #ef4444', borderRadius:12, padding:'12px 14px', display:'flex', gap:10, alignItems:'flex-start', marginBottom:4}}>
+          <span style={{fontSize:22, flexShrink:0}}>🚨</span>
+          <div>
+            <div style={{fontWeight:800, fontSize:13, color:'#ef4444', marginBottom:2}}>Mistakes List Full!</div>
+            <div style={{fontSize:12, color:T.sub, lineHeight:1.4}}>You've hit the 100 mistake limit. New mistakes won't be tracked until you clear existing ones. Practice below to remove them (3 correct = cleared)!</div>
+          </div>
+        </div>
+      )}
       {Object.entries(wrongCounts).map(([cat, count]) => {
         const meta = CAT_META[cat] || { icon:'❓', label: cat };
         return (
@@ -2134,6 +2143,11 @@ export default function App(){
   const { user, signIn, signOut, loading, signInWithEmail, signUpWithEmail, sendPhoneOtp, verifyPhoneOtp } = useAuth();
   const { wrongMap, counts: wrongCounts, total: wrongTotal, addWrong, removeWrong, recordCorrect, flushToFirestore } = useWrongQuestions(user);
   const [showAuth, setShowAuth] = useState(true);
+  const [toast, setToast] = useState(null); // { msg, type: 'info'|'warn'|'error' }
+  const showToast = (msg, type = 'info', duration = 4000) => {
+    setToast({ msg, type });
+    setTimeout(() => setToast(null), duration);
+  };
   const [authMode, setAuthMode] = useState('email');
   const [authEmail, setAuthEmail] = useState('');
   const [authPass, setAuthPass] = useState('');
@@ -2472,7 +2486,7 @@ export default function App(){
   async function startDailyQuiz(cat, dateKey) {
     try {
       const res = await fetch(`${BASE_URL}/daily/${cat}/${dateKey}.json`);
-      if (!res.ok) { alert("Quiz not available for this date yet."); return; }
+      if (!res.ok) { showToast('🚧 This quiz is coming soon! Check back later.', 'warn'); return; }
       const data = await res.json();
       const rawQs = data.questions || data; // handle both {questions: []} and [...]
       if (!rawQs || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
@@ -2503,11 +2517,11 @@ export default function App(){
         : `${BASE_URL}/quiz/${examPath}/${subject.toLowerCase()}/${topicId}.json`;
         
       const res = await fetch(path);
-      if (!res.ok) { alert("Questions for this topic are coming soon!"); return; }
+      if (!res.ok) { showToast('🚧 This topic is coming soon! Stay tuned.', 'warn'); return; }
       
       const data = await res.json();
       const rawQs = data.questions || (data.quiz && data.quiz.questions) || data;
-      if (!rawQs || !Array.isArray(rawQs) || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
+      if (!rawQs || !Array.isArray(rawQs) || rawQs.length === 0) { showToast('⚠️ No questions found for this topic yet.', 'warn'); return; }
       
       const topicKey = `dyn_${exam}_${subject}_${topicId}_${subTopicId||''}`;
       const questions = normalizeQuizData(rawQs, isCA ? 'ca' : 'vocab', topicKey);
@@ -2528,7 +2542,7 @@ export default function App(){
   async function startTopicQuiz(topicId, fileId, topicLabel) {
     try {
       const res = await fetch(`${BASE_URL}/ca-topics/${topicId}/${fileId}.json`);
-      if (!res.ok) { alert("Topic quiz not available yet."); return; }
+      if (!res.ok) { showToast('🚧 Coming soon! This topic is being prepared.', 'warn'); return; }
       const data = await res.json();
       const rawQs = data.questions || (data.quiz && data.quiz.questions) || data;
       if (!rawQs || !Array.isArray(rawQs) || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
@@ -2550,7 +2564,7 @@ export default function App(){
   function startMistakesQuiz(cat) {
     const wrongQsForCat = wrongMap[cat] || {};
     const qIds = Object.keys(wrongQsForCat);
-    if (qIds.length === 0) { alert('No mistakes recorded yet for this category!'); return; }
+    if (qIds.length === 0) { showToast('🎯 No mistakes recorded yet for this category!', 'info'); return; }
     const allQuestions = [];
     for (const [topicKey, qs] of Object.entries(VOCAB_DATA)) {
       if (!Array.isArray(qs)) continue;
@@ -2562,7 +2576,7 @@ export default function App(){
       }
     }
     if (allQuestions.length === 0) {
-      alert('Please play a quiz in this category first so questions are loaded, then try again!');
+      showToast('⚠️ Play a quiz in this category first, then come back!', 'warn');
       return;
     }
     // Shuffle mistakes
@@ -2684,7 +2698,11 @@ export default function App(){
         const qCat = customConfig?.quizCat || (q.topic?.startsWith('dyn_') ? q.topic.split('_')[3]?.toLowerCase() : null) || q.type || 'vocab';
         const normCat = qCat === 'current affairs' ? 'ca' : qCat === 'english' ? 'vocab' : qCat;
         if (!ok) {
-          addWrong(normCat, String(q.id), q._src || customConfig?.srcPath || q.topic || 'unknown');
+          if (wrongTotal < 100) {
+            addWrong(normCat, String(q.id), q._src || customConfig?.srcPath || q.topic || 'unknown');
+          } else if (wrongTotal === 100) {
+            showToast('🚨 Mistakes list is FULL (100 max)! Clear your mistakes first to keep tracking.', 'error', 6000);
+          }
         } else if (q.topic?.startsWith('mistakes_')) {
           recordCorrect(normCat, String(q.id));
         }
@@ -3516,6 +3534,24 @@ export default function App(){
           </div>
         )}
       </div>
+      {/* ── Global Toast Notification ── */}
+      {toast && (
+        <div style={{
+          position: 'fixed', bottom: 80, left: '50%', transform: 'translateX(-50%)',
+          zIndex: 9999, maxWidth: 340, width: '90%',
+          background: toast.type === 'error' ? '#7f1d1d' : toast.type === 'warn' ? '#78350f' : '#1e3a5f',
+          border: `1px solid ${toast.type === 'error' ? '#ef4444' : toast.type === 'warn' ? '#f59e0b' : '#3b82f6'}`,
+          borderRadius: 14, padding: '12px 16px',
+          display: 'flex', alignItems: 'center', gap: 10,
+          boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+          animation: 'fadeInUp 0.3s ease'
+        }}>
+          <div style={{ fontSize: 20, flexShrink: 0 }}>
+            {toast.type === 'error' ? '🚨' : toast.type === 'warn' ? '🚧' : 'ℹ️'}
+          </div>
+          <div style={{ fontSize: 13, fontWeight: 600, color: '#fff', lineHeight: 1.4 }}>{toast.msg}</div>
+        </div>
+      )}
     </div>
   );
 }

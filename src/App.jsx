@@ -2401,8 +2401,8 @@ export default function App(){
       const res = await fetch(`${BASE_URL}/ca-topics/${topicId}/${fileId}.json`);
       if (!res.ok) { alert("Topic quiz not available yet."); return; }
       const data = await res.json();
-      const rawQs = data.questions || data;
-      if (!rawQs || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
+      const rawQs = data.questions || (data.quiz && data.quiz.questions) || data;
+      if (!rawQs || !Array.isArray(rawQs) || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
       
       const topicKey = `topic_${topicId}_${fileId}`;
       const questions = normalizeQuizData(rawQs, 'ca', topicKey);

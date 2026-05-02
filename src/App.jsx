@@ -2310,8 +2310,12 @@ export default function App(){
   function normalizeQuizData(dataArray, defaultType, defaultTopicPrefix) {
     return dataArray.map((item, i) => {
       const letters = ['a', 'b', 'c', 'd', 'e'];
-      const optionsObj = {};
-      item.options.forEach((opt, idx) => { optionsObj[letters[idx]] = opt; });
+      let optionsObj = {};
+      if (Array.isArray(item.options)) {
+        item.options.forEach((opt, idx) => { optionsObj[letters[idx]] = opt; });
+      } else if (typeof item.options === 'object' && item.options !== null) {
+        optionsObj = { ...item.options };
+      }
       
       let finalAns = "a";
       const rawAns = item.ans !== undefined ? item.ans : item.answer;
@@ -2322,9 +2326,9 @@ export default function App(){
         if (rawAns.length === 1 && letters.includes(rawAns.toLowerCase())) {
           finalAns = rawAns.toLowerCase();
         } else {
-          // If the answer is the literal text string, find its index in the options array
-          const idx = item.options.findIndex(opt => opt.trim().toLowerCase() === rawAns.trim().toLowerCase());
-          if (idx !== -1) finalAns = letters[idx];
+          // If the answer is the literal text string, find its key in the options object
+          const foundKey = Object.keys(optionsObj).find(k => optionsObj[k].trim().toLowerCase() === rawAns.trim().toLowerCase());
+          if (foundKey) finalAns = foundKey;
         }
       }
 

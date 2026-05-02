@@ -517,12 +517,14 @@ function genVocabSequential(topic, history = {}){
   // On reattempt: serve wrong/skipped first (those with wrongCount > 0)
   const wrongPool = questions.filter(q => wrongIds[q.id] > 0);
   if (wrongPool.length > 0) {
-    return wrongPool[0]; // serve in order
+    const q = wrongPool[0];
+    return { ...q, type: 'vocab', topic }; // stamp type so vocab layout renders
   }
 
   // Serve next unseen in order
   if (lastIndex < questions.length) {
-    return questions[lastIndex];
+    const q = questions[lastIndex];
+    return { ...q, type: 'vocab', topic }; // stamp type so vocab layout renders
   }
   return null; // all done
 }

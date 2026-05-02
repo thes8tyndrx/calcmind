@@ -2082,7 +2082,6 @@ export default function App(){
   const { leaderboard, submitScore, refresh, markDailyCompleted } = useLeaderboard();
   const { leaderboard: dailyCaBoard, refresh: refreshDailyCa } = useLeaderboard();
   const { leaderboard: dailyVocabBoard, refresh: refreshDailyVocab } = useLeaderboard();
-  const { wrongMap, counts: wrongCounts, total: wrongTotal, addWrong, removeWrong, flushToFirestore } = useWrongQuestions(user);
   const [installPrompt, setInstallPrompt] = useState(null);
   const [showInstallBanner, setShowInstallBanner] = useState(() => LS.get("cm_show_install", true));
 
@@ -2109,6 +2108,7 @@ export default function App(){
   };
 
   const { user, signIn, signOut, loading, signInWithEmail, signUpWithEmail, sendPhoneOtp, verifyPhoneOtp } = useAuth();
+  const { wrongMap, counts: wrongCounts, total: wrongTotal, addWrong, removeWrong, flushToFirestore } = useWrongQuestions(user);
   const [showAuth, setShowAuth] = useState(true);
   const [authMode, setAuthMode] = useState('email');
   const [authEmail, setAuthEmail] = useState('');

@@ -3056,21 +3056,22 @@ export default function App(){
               <span style={{color:"#00b4d8",fontSize:18}}>›</span>
             </button>
 
-            {weakModes.length>0&&(
-              <div style={{background:T.weakBg,border:`1px solid ${T.weakBorder}`,borderRadius:12,padding:"10px 12px",marginBottom:11}}>
-                <div style={{fontSize:9,fontWeight:800,letterSpacing:1.5,color:RED,marginBottom:6}}>NEEDS PRACTICE</div>
-                {weakModes.map(w=>(
-                  <div key={w.id} style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:4}}>
-                    <span style={{fontSize:12,color:T.sub}}>{w.label}</span>
-                    <div style={{display:"flex",alignItems:"center",gap:6}}>
-                      <div style={{width:50}}><Bar value={w.acc} max={100} color={w.acc<50?RED:GOLD} height={3}/></div>
-                      <span style={{fontSize:11,fontWeight:700,color:w.acc<50?RED:GOLD,width:30,textAlign:"right"}}>{w.acc}%</span>
-                      <button onClick={()=>startNormalGame(w.id)} style={{background:RED+"22",border:`1px solid ${RED}44`,borderRadius:6,padding:"2px 7px",fontSize:9,color:RED,fontWeight:700}}>DRILL</button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
+            {wrongTotal > 0 ? (
+              <button onClick={()=>setTab("daily")} style={{
+                width:"100%",display:"flex",alignItems:"center",gap:12,marginBottom:11,
+                background:"linear-gradient(135deg,rgba(217,82,82,0.12),rgba(217,82,82,0.04))",
+                border:"1px solid rgba(217,82,82,0.3)",borderRadius:14,padding:"12px 14px",
+                textAlign:"left",
+              }}>
+                <div style={{width:40,height:40,borderRadius:11,background:"rgba(217,82,82,0.15)",border:"1px solid rgba(217,82,82,0.3)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:20,flexShrink:0}}>🔴</div>
+                <div style={{flex:1}}>
+                  <div style={{fontWeight:700,fontSize:13,color:RED}}>My Mistakes</div>
+                  <div style={{fontSize:10,color:T.sub,marginTop:1}}>{wrongTotal} question{wrongTotal!==1?"s":""} to fix — tap to practice</div>
+                </div>
+                <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:22,color:RED,minWidth:28,textAlign:"center"}}>{wrongTotal}</div>
+                <span style={{color:RED,fontSize:18}}>›</span>
+              </button>
+            ) : null}
 
             <div style={{fontSize:9,color:T.muted,letterSpacing:2,fontWeight:700,marginBottom:6}}>ALL MODES</div>
             <div style={{display:"flex",flexDirection:"column",gap:5}}>

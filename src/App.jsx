@@ -2377,14 +2377,14 @@ export default function App(){
       if (!res.ok) { alert("Questions for this topic are coming soon!"); return; }
       
       const data = await res.json();
-      const rawQs = data.questions || data;
-      if (!rawQs || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
+      const rawQs = data.questions || (data.quiz && data.quiz.questions) || data;
+      if (!rawQs || !Array.isArray(rawQs) || rawQs.length === 0) { alert("No questions found in this quiz."); return; }
       
       const topicKey = `dyn_${exam}_${subject}_${topicId}_${subTopicId||''}`;
       const questions = normalizeQuizData(rawQs, isCA ? 'ca' : 'vocab', topicKey);
       
       VOCAB_DATA[topicKey] = questions;
-      const title = data.title || (isCA ? `${topicId} - ${subTopicId}` : `${topicId} (${exam})`);
+      const title = data.title || (data.quiz && data.quiz.title) || (isCA ? `${topicId} ${subTopicId ? '- ' + subTopicId : ''}` : `${topicId} (${exam})`);
       const cfg = { topic: topicKey, type: 'vocab', count: questions.length, dailyTitle: title };
       
       setModeId('vocab'); setCustomConfig(cfg);

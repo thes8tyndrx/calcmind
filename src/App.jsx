@@ -553,36 +553,40 @@ function formatVocabQuestion(q, topic) {
     const origText = q.display || q.question || q.q || "";
     const origBoldMatches = [...origText.matchAll(/\*\*([^*]+)\*\*/g)];
     
-    // If there are multiple bolds in the original text (e.g. the word AND the sentence are bolded),
-    // pick the shortest one, which is almost certainly the target word/idiom.
-    if (origBoldMatches.length > 1) {
-       const shortest = origBoldMatches.reduce((a, b) => a[1].length < b[1].length ? a : b);
-       display = cleanText(shortest[1]);
-    } else {
-       // Only one or zero bolds. Check if the target word is explicitly called out in quotes.
-       const explicitWordMatch = origText.match(/(?:word|synonym|antonym|idiom)(?:\s+(?:of|for|is))?\s*[:\-]?\s*['"]?\*\*([^*]+)\*\*['"]?/i) 
-                              || origText.match(/(?:word|synonym|antonym|idiom)(?:\s+(?:of|for|is))?\s*[:\-]?\s*['"]([a-zA-Z0-9_ -]+)['"]/i);
+    // Step 1: Check if the question explicitly names the target word/idiom before a colon or quote
+    // e.g. 'synonym for the word "**endorse**"' or 'meaning of "**kick the bucket**"'
+    const explicitWordMatch = origText.match(/(?:word|synonym|antonym|idiom|meaning|phrase)(?:\s+(?:of|for|is))?\s*[:\-]?\s*['"]?\*\*([^*]+)\*\*['"]?/i)
+                           || origText.match(/(?:word|synonym|antonym|idiom|meaning|phrase)(?:\s+(?:of|for|is))?\s*[:\-]?\s*['"]([A-Za-z][a-zA-Z0-9_ -]+)['"]\s*(?:in|as|means|is|\?)/i);
 
-       if (explicitWordMatch) {
-          display = cleanText(explicitWordMatch[1]);
-       } else {
-          // Fallback to previous logic
-          const boldMatch = rawDisplay.match(/\*\*([^*]+)\*\*/);
-          if (boldMatch) {
-            display = cleanText(boldMatch[1]);
-          } else if (isSynAnt) {
-            let d = rawDisplay.replace(/^.*:\s*/, "");
-            const vocabWordRegex = /(?:of|word\.?|to|for|is)\s+['"]?([a-zA-Z0-9_ -]+)['"]?\??\.?$/i;
-            const vocabMatch = d.match(vocabWordRegex);
-            if (vocabMatch) {
-              display = cleanText(vocabMatch[1]);
-            } else {
-              display = cleanText(d);
-            }
-          } else {
-            display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
-          }
-       }
+    if (explicitWordMatch) {
+      // Explicitly named — always use this, most reliable
+      display = cleanText(explicitWordMatch[1]);
+    } else if (origBoldMatches.length > 1) {
+      // Multiple bolds: pick the shortest — it's the target word, not the context sentence
+      const shortest = origBoldMatches.reduce((a, b) => a[1].length < b[1].length ? a : b);
+      display = cleanText(shortest[1]);
+    } else if (origBoldMatches.length === 1) {
+      const boldContent = origBoldMatches[0][1].trim();
+      // If the single bold is a short word/phrase (<=40 chars, not a full sentence), use it directly
+      // Otherwise it's a context sentence — extract the target word from the instruction text before it
+      if (boldContent.length <= 40 && !boldContent.match(/,.*,/)) {
+        display = cleanText(boldContent);
+      } else {
+        // Bold is a long context sentence. Extract from the instruction text before the quote/bold
+        const beforeContext = origText.split(/["']\*\*|in the sentence/i)[0];
+        const wordFromInstruction = beforeContext.match(/(?:of|for|word)\s+['"]?([a-zA-Z][a-zA-Z0-9 _-]+?)['"]?\s*$/i);
+        display = wordFromInstruction ? cleanText(wordFromInstruction[1]) : cleanText(boldContent.split(/[,.]/)[0]);
+      }
+    } else {
+      // No bolds — extract from instruction text
+      if (isSynAnt) {
+        const d = rawDisplay.replace(/^.*:\s*/, "");
+        const vocabWordRegex = /(?:of|word\.?|to|for|is)\s+['"]?([a-zA-Z0-9_ -]+)['"]?\??\.?$/i;
+        const vocabMatch = d.match(vocabWordRegex);
+        display = vocabMatch ? cleanText(vocabMatch[1]) : cleanText(d);
+      } else {
+        display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
+      }
     }
     // Inject the subtopic clearly so they know what type of question it is during a mistakes quiz!
     if ((q.topic || topic).startsWith('mistakes_') && q._originalTopic) {
@@ -2265,6 +2269,7 @@ export default function App(){
   }, [user]);
 
   const [tab,setTab]=useState("home");
+  const [prevTab,setPrevTab]=useState("home");
   const [modeId,setModeId]=useState(null);
   const [customConfig,setCustomConfig]=useState(null);
 
@@ -2351,13 +2356,23 @@ export default function App(){
   }, []);
 
   useEffect(() => {
+    // Smart back: if currently in 'game', go back to the prevTab (e.g. 'quiz').
+    // Otherwise go home.
+    const goBack = () => {
+      stopAll();
+      if (tab === 'game' && prevTab && prevTab !== 'home') {
+        setTab(prevTab);
+      } else {
+        setTab('home');
+      }
+      setPhase('idle');
+      setShowBlitz(false);
+    };
+
     const handlePopState = (e) => {
       if (window.__isExiting) return;
       if (tab !== 'home' || showBlitz) {
-        stopAll();
-        setTab('home');
-        setPhase('idle');
-        setShowBlitz(false);
+        goBack();
         window.history.pushState({ tab: 'home' }, '');
       } else {
         setConfirmExit(true);
@@ -2365,20 +2380,10 @@ export default function App(){
       }
     };
 
-    const handleTelegramBack = () => {
-      stopAll();
-      setTab('home');
-      setPhase('idle');
-      setShowBlitz(false);
-    };
-
     try {
       CapApp.addListener('backButton', ({ canGoBack }) => {
         if (tab !== 'home' || showBlitz) {
-          stopAll();
-          setTab('home');
-          setPhase('idle');
-          setShowBlitz(false);
+          goBack();
         } else {
           setConfirmExit(true);
         }
@@ -2391,7 +2396,7 @@ export default function App(){
       } else {
         WebApp.BackButton.hide();
       }
-      WebApp.BackButton.onClick(handleTelegramBack);
+      WebApp.BackButton.onClick(goBack);
     } catch (e) {
       // Ignored
     }
@@ -2404,13 +2409,13 @@ export default function App(){
     return () => {
       window.removeEventListener('popstate', handlePopState);
       try {
-        WebApp.BackButton.offClick(handleTelegramBack);
+        WebApp.BackButton.offClick(goBack);
       } catch (e) {}
       try {
         CapApp.removeAllListeners();
       } catch (e) {}
     };
-  }, [tab, showBlitz, phase]);
+  }, [tab, showBlitz, phase, prevTab]);
 
   const timerRef=useRef(null);
   const nextRef=useRef(null);
@@ -2553,6 +2558,7 @@ export default function App(){
     const totalQs = VOCAB_DATA[topicId]?.length || 20;
     const cfg = {topic: topicId, type:"vocab", count: totalQs};
     setModeId("vocab");setCustomConfig(cfg);
+    setPrevTab('quiz'); // remember where we came from so Back returns here
     setTab("game");initGame(cfg,"vocab",0);
   }
 
@@ -2609,6 +2615,7 @@ export default function App(){
       VOCAB_DATA[dailyKey] = questions;
       const cfg = { topic: dailyKey, type: 'vocab', quizCat: cat, date: dateKey, count: questions.length, dailyTitle: data.title };
       setModeId('vocab'); setCustomConfig(cfg);
+      setPrevTab('daily'); // back button returns to daily screen
       setTab('game'); initGame(cfg, 'vocab', 0);
     } catch(e) {
       console.error('Daily quiz fetch error:', e);
@@ -2642,6 +2649,7 @@ export default function App(){
       const cfg = { topic: topicKey, type: 'vocab', count: questions.length, dailyTitle: title };
       
       setModeId('vocab'); setCustomConfig(cfg);
+      setPrevTab('quiz'); // back button returns to quiz screen
       setTab('game'); initGame(cfg, 'vocab', 0);
     } catch(e) {
       console.error('Dynamic quiz fetch error:', e);
@@ -3108,12 +3116,13 @@ export default function App(){
           <button onClick={()=>setDark(d=>!d)} style={{background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"5px 8px",fontSize:13,color:T.sub}}>{dark?"☀":"🌙"}</button>
           {(tab !== "home") ? (
             <button onClick={() => {
-              if (window.history.length > 1 && window.location.hash !== "#home") {
-                window.history.back();
+              stopAll();
+              if (tab === 'game' && prevTab && prevTab !== 'home') {
+                setTab(prevTab);
               } else {
                 setTab("home");
-                setPhase("idle");
               }
+              setPhase("idle");
             }} style={{background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 10px",fontSize:13,color:T.text,fontWeight:800,cursor:"pointer",display:"flex",alignItems:"center",gap:4}}>
               ← Back
             </button>

@@ -3658,154 +3658,191 @@ export default function App(){
 
         {/* ── RESULT / SCORECARD ── */}
         {tab==="result"&&(()=>{
-          const scorecardRef = React.createRef();
-          const quizTitle = customConfig?.dailyTitle || customConfig?.topic?.replace(/_/g,' ') || (MODES.find(m=>m.id===modeId)?.label) || 'Quiz';
+          const quizTitle = customConfig?.dailyTitle || customConfig?.topic?.replace(/_/g,' ')?.replace(/\b\w/g,c=>c.toUpperCase()) || (MODES.find(m=>m.id===modeId)?.label) || 'Quiz';
           const isReattempt = customConfig?.topic && topicXpDone[customConfig.topic] && !customConfig.topic.startsWith('daily_') && !customConfig.topic.startsWith('mistakes_');
           const xpDisplay = sessionXpEarned > 0 ? `+${sessionXpEarned.toFixed(2)}` : sessionXpEarned.toFixed(2);
           const accColor = acc>=80?GREEN:acc>=55?GOLD:RED;
-          const medal = acc>=90?'🏆':acc>=75?'🥇':acc>=55?'🥈':'💪';
-          const grade = acc>=90?'Outstanding!':acc>=75?'Great Job! 🎉':acc>=55?'Good Effort!':'Keep Practicing!';
-          
+          const grade = acc>=90?'Outstanding! 🏆':acc>=75?'Great Job! 🎉':acc>=55?'Good Effort! 👍':'Keep Practicing! 💪';
+          const gradeColor = acc>=80?GREEN:acc>=55?'#f59e0b':RED;
+          const total = score.c + score.w;
+          const isVocabType = customConfig?.type === 'vocab' || customConfig?.quizCat === 'vocab';
+          const isCaType = customConfig?.quizCat === 'ca' || customConfig?.topic?.startsWith('daily_ca');
+          const isBlitzType = !customConfig && modeId;
+          // Badge label
+          const badgeLabel = isCaType ? '📰 Current Affairs' : isVocabType ? '📖 Vocab Quiz' : isBlitzType ? `⚡ ${MODES.find(m=>m.id===modeId)?.label||'Blitz'}` : '📝 Quiz';
+          // Card colors
+          const cardBg    = dark ? 'linear-gradient(160deg,#12122a 0%,#1a1a3e 50%,#0e1c38 100%)' : 'linear-gradient(160deg,#fefefe 0%,#f5f3ff 50%,#fdf8ee 100%)';
+          const cardBorder= dark ? '#c8901822' : '#e2d9c8';
+          const textMain  = dark ? '#ffffff' : '#1a1a2e';
+          const textSub2  = dark ? 'rgba(255,255,255,0.4)' : '#888';
+          const tileBg    = dark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.04)';
+          const tileBdr   = dark ? 'rgba(255,255,255,0.1)' : '#e8e3d8';
+          const divLine   = dark ? 'rgba(255,255,255,0.07)' : '#ece8df';
+
           const handleShare = async () => {
             try {
               const node = document.getElementById('cm-scorecard');
               if (!node) return;
-              const canvas = await html2canvas(node, { scale: 2, useCORS: true, backgroundColor: null });
+              const canvas = await html2canvas(node, { scale: 2.5, useCORS: true, backgroundColor: dark?'#12122a':'#fefefe', logging: false });
               canvas.toBlob(async (blob) => {
                 if (!blob) return;
                 const file = new File([blob], 'calcmind-score.png', { type: 'image/png' });
-                if (navigator.share && navigator.canShare({ files: [file] })) {
-                  await navigator.share({
-                    files: [file],
-                    title: `I scored ${score.c}/${score.c+score.w} on CalcMind!`,
-                    text: `${grade} I got ${acc}% accuracy on ${quizTitle}. Beat me on calcmind.mxprime.in 🏆`
-                  });
+                if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+                  await navigator.share({ files: [file], title: `I scored ${score.c}/${total} on CalcMind!`, text: `${grade} I got ${acc}% on ${quizTitle}. Beat me! calcmind.mxprime.in` });
                 } else {
-                  // Fallback: download
-                  const a = document.createElement('a');
-                  a.href = URL.createObjectURL(blob);
-                  a.download = 'calcmind-score.png';
-                  a.click();
+                  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'calcmind-score.png'; a.click();
                 }
               }, 'image/png');
             } catch(e) { console.error('Share failed:', e); }
           };
 
           return (
-          <div className="su" style={{padding:"16px 15px 30px",display:"flex",flexDirection:"column",gap:12,alignItems:"center",overflowY:"auto"}}>
-            
-            {/* Reattempt XP notice */}
+          <div className="su" style={{padding:"14px 13px 28px",display:"flex",flexDirection:"column",gap:11,alignItems:"center",overflowY:"auto",background:T.bg}}>
+
+            {/* Reattempt notice */}
             {isReattempt && (
-              <div style={{background:"rgba(200,144,28,0.1)",border:"1px solid rgba(200,144,28,0.3)",borderRadius:10,padding:"8px 14px",width:"100%",display:"flex",alignItems:"center",gap:8}}>
-                <span style={{fontSize:16}}>⚡</span>
+              <div style={{background:"rgba(200,144,28,0.1)",border:"1px solid rgba(200,144,28,0.35)",borderRadius:10,padding:"9px 14px",width:"100%",display:"flex",alignItems:"center",gap:8}}>
+                <span style={{fontSize:18}}>⚡</span>
                 <div>
-                  <div style={{fontSize:11,fontWeight:800,color:GOLD}}>Reattempt — No Extra XP</div>
-                  <div style={{fontSize:10,color:T.sub}}>You already earned XP for this topic. Still learning? Keep going! 💪</div>
+                  <div style={{fontSize:11,fontWeight:800,color:GOLD,fontFamily:"'Barlow Condensed',sans-serif",letterSpacing:0.5}}>REATTEMPT — NO EXTRA XP</div>
+                  <div style={{fontSize:10,color:T.sub}}>You already earned XP for this. Keep practicing! 💪</div>
                 </div>
               </div>
             )}
 
-            {/* ─── SCORECARD CARD (captured for sharing) ─── */}
-            <div id="cm-scorecard" ref={scorecardRef} style={{
-              width:"100%", borderRadius:20, overflow:"hidden",
-              background: dark ? "linear-gradient(145deg,#1a1a2e,#16213e,#0f3460)" : "linear-gradient(145deg,#ffffff,#f8f9ff)",
-              border:`1.5px solid ${dark?"rgba(200,144,28,0.3)":T.border}`,
-              boxShadow: dark?"0 8px 40px rgba(0,0,0,0.6)":"0 8px 40px rgba(0,0,0,0.12)",
-              fontFamily:"'Outfit',sans-serif",
+            {/* ═══ SCORECARD CARD ═══ */}
+            <div id="cm-scorecard" style={{
+              width:"100%", borderRadius:22, overflow:"hidden",
+              background: cardBg,
+              border:`1.5px solid ${cardBorder}`,
+              boxShadow: dark?"0 12px 50px rgba(0,0,0,0.7)":"0 8px 40px rgba(0,0,0,0.13)",
+              position:"relative",
             }}>
-              {/* Header */}
-              <div style={{padding:"14px 18px 10px",borderBottom:`1px solid ${dark?"rgba(255,255,255,0.07)":T.border}`,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-                <div style={{display:"flex",alignItems:"center",gap:7}}>
-                  <img src="/logo.png" alt="CalcMind" style={{width:26,height:26,borderRadius:6}} onError={e=>{e.target.style.display='none'}}/>
+
+              {/* Decorative background circles */}
+              <div style={{position:"absolute",top:-40,right:-40,width:160,height:160,borderRadius:"50%",background:dark?"rgba(200,144,28,0.07)":"rgba(200,144,28,0.08)",pointerEvents:"none"}}/>
+              <div style={{position:"absolute",bottom:-30,left:-30,width:120,height:120,borderRadius:"50%",background:dark?"rgba(77,199,88,0.05)":"rgba(139,92,246,0.06)",pointerEvents:"none"}}/>
+
+              {/* ── HEADER: Logo + Brand ── */}
+              <div style={{padding:"16px 20px 12px",display:"flex",alignItems:"center",justifyContent:"space-between",position:"relative",zIndex:1}}>
+                <div style={{display:"flex",alignItems:"center",gap:9}}>
+                  <div style={{width:38,height:38,borderRadius:10,background:dark?"rgba(200,144,28,0.15)":"rgba(200,144,28,0.1)",border:`1.5px solid ${GOLD}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:22}}>🍀</div>
                   <div>
-                    <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:16,color:dark?"#fff":T.text}}>Calc<span style={{color:GOLD}}>Mind</span></div>
-                    <div style={{fontSize:8,color:dark?"rgba(255,255,255,0.4)":T.sub,letterSpacing:0.5}}>Practice. Improve. Achieve.</div>
+                    <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:18,lineHeight:1,color:textMain}}>Calc<span style={{color:GOLD}}>Mind</span></div>
+                    <div style={{fontSize:9,color:textSub2,letterSpacing:0.8,fontWeight:600}}>Practice. Improve. Achieve.</div>
                   </div>
                 </div>
-                <div style={{background:dark?"rgba(200,144,28,0.15)":"rgba(200,144,28,0.1)",border:`1px solid ${GOLD}44`,borderRadius:8,padding:"3px 10px",fontSize:11,fontWeight:800,color:GOLD,letterSpacing:0.5}}>
-                  {quizTitle.length > 18 ? quizTitle.slice(0,18)+'…' : quizTitle}
+                {/* Quiz type badge */}
+                <div style={{background:dark?"rgba(255,255,255,0.08)":"rgba(139,92,246,0.1)",border:`1px solid ${dark?"rgba(255,255,255,0.15)":"rgba(139,92,246,0.25)"}`,borderRadius:20,padding:"5px 12px",fontSize:11,fontWeight:800,color:dark?"rgba(255,255,255,0.8)":"#7c3aed",letterSpacing:0.3}}>
+                  {badgeLabel}
                 </div>
               </div>
 
-              {/* Main score */}
-              <div style={{padding:"22px 18px 14px",textAlign:"center"}}>
-                <div style={{fontSize:11,color:dark?"rgba(255,255,255,0.5)":T.sub,letterSpacing:2,fontWeight:700,marginBottom:6}}>I SCORED</div>
-                <div style={{display:"flex",alignItems:"baseline",justifyContent:"center",gap:4,marginBottom:4}}>
-                  <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:76,fontWeight:900,lineHeight:1,color:accColor,textShadow:`0 0 40px ${accColor}44`}}>{score.c}</span>
-                  <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:32,fontWeight:700,color:dark?"rgba(255,255,255,0.3)":T.muted}}>/{score.c+score.w}</span>
+              {/* Thin divider with sparkles */}
+              <div style={{display:"flex",alignItems:"center",gap:8,padding:"0 20px 4px",position:"relative",zIndex:1}}>
+                <div style={{flex:1,height:1,background:divLine}}/>
+                <span style={{fontSize:10,color:textSub2}}>✦</span>
+                <div style={{flex:1,height:1,background:divLine}}/>
+              </div>
+
+              {/* ── Quiz Title ── */}
+              <div style={{padding:"10px 20px 4px",textAlign:"center",position:"relative",zIndex:1}}>
+                <div style={{fontSize:14,fontWeight:800,color:textMain,lineHeight:1.3,fontFamily:"'Outfit',sans-serif"}}>{quizTitle}</div>
+                <div style={{fontSize:10,color:textSub2,marginTop:3,fontWeight:600}}>{profile.name||"You"} · {profile.goal||"CalcMind Learner"}</div>
+              </div>
+
+              {/* ── Main Score with Laurel Leaves ── */}
+              <div style={{padding:"16px 20px 10px",textAlign:"center",position:"relative",zIndex:1}}>
+                <div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:12}}>
+                  {/* Left laurel */}
+                  <div style={{display:"flex",flexDirection:"column",gap:1,opacity:0.7}}>
+                    {['🌿','🍃','🌿'].map((l,i)=><span key={i} style={{fontSize:12,transform:`rotate(${-30+i*15}deg) scaleX(-1)`,display:"block",lineHeight:1}}>{l}</span>)}
+                  </div>
+                  {/* Score number */}
+                  <div>
+                    <div style={{display:"flex",alignItems:"baseline",gap:3}}>
+                      <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:82,fontWeight:900,lineHeight:0.9,color:accColor,textShadow:dark?`0 0 50px ${accColor}55`:"none"}}>{score.c}</span>
+                      <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:36,fontWeight:700,color:dark?"rgba(255,255,255,0.25)":"rgba(0,0,0,0.2)",lineHeight:1}}>/{total}</span>
+                    </div>
+                  </div>
+                  {/* Right laurel */}
+                  <div style={{display:"flex",flexDirection:"column",gap:1,opacity:0.7}}>
+                    {['🌿','🍃','🌿'].map((l,i)=><span key={i} style={{fontSize:12,transform:`rotate(${30-i*15}deg)`,display:"block",lineHeight:1}}>{l}</span>)}
+                  </div>
                 </div>
-                <div style={{display:"inline-block",background:acc>=80?"rgba(77,199,88,0.15)":acc>=55?"rgba(200,144,28,0.15)":"rgba(217,82,82,0.15)",border:`1px solid ${accColor}44`,borderRadius:20,padding:"4px 16px",fontSize:13,fontWeight:800,color:accColor,marginBottom:8}}>
-                  {medal} {grade}
+                {/* Grade badge */}
+                <div style={{marginTop:10,display:"inline-block",background:acc>=80?"rgba(77,199,88,0.15)":acc>=55?"rgba(245,158,11,0.15)":"rgba(239,68,68,0.15)",border:`1.5px solid ${gradeColor}44`,borderRadius:20,padding:"5px 18px",fontSize:12,fontWeight:800,color:gradeColor,fontFamily:"'Outfit',sans-serif"}}>
+                  {grade}
                 </div>
               </div>
 
-              {/* Accuracy bar */}
-              <div style={{padding:"0 18px 16px"}}>
-                <div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
-                  <span style={{fontSize:11,fontWeight:700,color:dark?"rgba(255,255,255,0.5)":T.sub}}>Accuracy</span>
+              {/* ── Accuracy bar ── */}
+              <div style={{padding:"4px 20px 14px",position:"relative",zIndex:1}}>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
+                  <span style={{fontSize:11,fontWeight:700,color:textSub2,letterSpacing:0.3}}>{acc}% Accuracy</span>
                   <span style={{fontSize:11,fontWeight:800,color:accColor}}>{acc}%</span>
                 </div>
-                <div style={{height:6,background:dark?"rgba(255,255,255,0.08)":"rgba(0,0,0,0.07)",borderRadius:99,overflow:"hidden"}}>
-                  <div style={{height:"100%",width:`${acc}%`,background:`linear-gradient(90deg,${accColor},${accColor}99)`,borderRadius:99,transition:"width 1s ease"}}/>
+                <div style={{height:8,background:dark?"rgba(255,255,255,0.07)":"rgba(0,0,0,0.07)",borderRadius:99,overflow:"hidden"}}>
+                  <div style={{height:"100%",width:`${acc}%`,background:`linear-gradient(90deg,${accColor}cc,${accColor})`,borderRadius:99,boxShadow:`0 0 10px ${accColor}44`}}/>
                 </div>
               </div>
 
-              {/* Stat tiles */}
-              <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:8,padding:"0 18px 18px"}}>
+              {/* Divider */}
+              <div style={{height:1,background:divLine,margin:"0 20px"}}/>
+
+              {/* ── Stat tiles (3 across) ── */}
+              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:10,padding:"14px 20px"}}>
                 {[
-                  {icon:"✅",label:"Correct",value:score.c,color:GREEN},
-                  {icon:"❌",label:"Wrong",value:score.w,color:RED},
-                  {icon:"🔥",label:"Best Streak",value:bestStreak,color:GOLD},
+                  {icon:"🎯",label:"Accuracy",value:`${acc}%`,color:accColor},
+                  {icon:"⚡",label:"XP Earned",value:xpDisplay,color:GOLD},
+                  {icon:"🔥",label:"Best Streak",value:bestStreak,color:"#f97316"},
                 ].map(({icon,label,value,color})=>(
-                  <div key={label} style={{background:dark?"rgba(255,255,255,0.05)":"rgba(0,0,0,0.04)",border:`1px solid ${dark?"rgba(255,255,255,0.08)":T.border}`,borderRadius:12,padding:"10px 6px",textAlign:"center"}}>
-                    <div style={{fontSize:18,marginBottom:2}}>{icon}</div>
-                    <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:26,fontWeight:900,color,lineHeight:1}}>{value}</div>
-                    <div style={{fontSize:8,color:dark?"rgba(255,255,255,0.35)":T.sub,fontWeight:700,letterSpacing:0.5,marginTop:2}}>{label.toUpperCase()}</div>
+                  <div key={label} style={{background:tileBg,border:`1px solid ${tileBdr}`,borderRadius:14,padding:"12px 8px",textAlign:"center",display:"flex",flexDirection:"column",alignItems:"center",gap:3}}>
+                    <div style={{width:32,height:32,borderRadius:8,background:dark?`${color}18`:`${color}14`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,marginBottom:2}}>{icon}</div>
+                    <div style={{fontSize:9,fontWeight:700,letterSpacing:0.7,color:textSub2,fontFamily:"'Outfit',sans-serif"}}>{label.toUpperCase()}</div>
+                    <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:22,fontWeight:900,color,lineHeight:1}}>{value}</div>
                   </div>
                 ))}
               </div>
 
-              {/* XP earned row */}
-              {!isReattempt && (
-                <div style={{margin:"0 18px 18px",background:dark?"rgba(200,144,28,0.1)":"rgba(200,144,28,0.08)",border:`1px solid ${GOLD}33`,borderRadius:12,padding:"10px 14px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:6}}>
-                    <span style={{fontSize:18}}>⚡</span>
-                    <div>
-                      <div style={{fontSize:9,fontWeight:700,letterSpacing:1,color:dark?"rgba(255,255,255,0.4)":T.sub}}>XP EARNED</div>
-                      <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:22,fontWeight:900,color:GOLD,lineHeight:1}}>{xpDisplay} XP</div>
-                    </div>
-                  </div>
-                  <div style={{textAlign:"right"}}>
-                    <div style={{fontSize:9,fontWeight:700,letterSpacing:1,color:dark?"rgba(255,255,255,0.4)":T.sub}}>YOUR RANK</div>
-                    <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:18,fontWeight:900,color:dark?"#fff":T.text}}>{getRank(totalXP).icon} {getRank(totalXP).label}</div>
-                  </div>
+              {/* ── Profile row ── */}
+              <div style={{margin:"0 20px 14px",background:tileBg,border:`1px solid ${tileBdr}`,borderRadius:14,padding:"11px 14px",display:"flex",alignItems:"center",gap:11,position:"relative",zIndex:1}}>
+                <AnimalAvatar id={profile.avatar||"tiger"} size={38} xp={totalXP}/>
+                <div style={{flex:1}}>
+                  <div style={{fontWeight:800,fontSize:14,color:textMain,fontFamily:"'Outfit',sans-serif"}}>{profile.name||"You"}</div>
+                  <div style={{fontSize:10,color:textSub2,fontWeight:600}}>{profile.goal||"CalcMind Learner"}</div>
+                </div>
+                <div style={{background:dark?"rgba(200,144,28,0.15)":"rgba(200,144,28,0.1)",border:`1px solid ${GOLD}44`,borderRadius:8,padding:"4px 10px",display:"flex",alignItems:"center",gap:4}}>
+                  <span style={{fontSize:12}}>{getRank(totalXP).icon}</span>
+                  <span style={{fontSize:11,fontWeight:800,color:GOLD,fontFamily:"'Barlow Condensed',sans-serif"}}>{getRank(totalXP).label}</span>
+                </div>
+              </div>
+
+              {/* Answer dot trail */}
+              {hist.length > 0 && (
+                <div style={{padding:"0 20px 14px",display:"flex",gap:3,flexWrap:"wrap",justifyContent:"center",position:"relative",zIndex:1}}>
+                  {hist.map((h,i)=><div key={i} style={{width:8,height:8,borderRadius:99,background:h.ok?GREEN:RED,opacity:0.8,boxShadow:h.ok?`0 0 4px ${GREEN}66`:`0 0 4px ${RED}66`}}/>)}
                 </div>
               )}
 
-              {/* Profile row */}
-              <div style={{margin:"0 18px 16px",display:"flex",alignItems:"center",gap:10,padding:"10px 14px",background:dark?"rgba(255,255,255,0.04)":"rgba(0,0,0,0.03)",borderRadius:12,border:`1px solid ${dark?"rgba(255,255,255,0.06)":T.border}`}}>
-                <AnimalAvatar id={profile.avatar||"tiger"} size={34} xp={totalXP}/>
-                <div style={{flex:1}}>
-                  <div style={{fontWeight:800,fontSize:13,color:dark?"#fff":T.text}}>{profile.name||"You"}</div>
-                  <div style={{fontSize:10,color:dark?"rgba(255,255,255,0.4)":T.sub}}>{profile.goal||"CalcMind Learner"}</div>
+              {/* ── Footer ── */}
+              <div style={{borderTop:`1px solid ${divLine}`,padding:"12px 20px",display:"flex",alignItems:"center",justifyContent:"space-between",position:"relative",zIndex:1}}>
+                <div style={{display:"flex",alignItems:"center",gap:6}}>
+                  <span style={{fontSize:14}}>🏆</span>
+                  <div>
+                    <div style={{fontSize:10,fontWeight:700,color:textSub2}}>Beat my score on</div>
+                    <div style={{fontSize:11,fontWeight:900,color:GOLD,fontFamily:"'Barlow Condensed',sans-serif",letterSpacing:0.3}}>calcmind.mxprime.in</div>
+                  </div>
                 </div>
-              </div>
-
-              {/* Answer dots */}
-              <div style={{padding:"0 18px 14px",display:"flex",gap:3,flexWrap:"wrap",justifyContent:"center"}}>
-                {hist.map((h,i)=><div key={i} style={{width:9,height:9,borderRadius:99,background:h.ok?GREEN:RED,opacity:0.85}}/>)}
-              </div>
-
-              {/* Footer */}
-              <div style={{padding:"10px 18px 14px",borderTop:`1px solid ${dark?"rgba(255,255,255,0.06)":T.border}`,display:"flex",alignItems:"center",justifyContent:"space-between"}}>
-                <div style={{fontSize:10,color:dark?"rgba(255,255,255,0.3)":T.muted}}>Can you beat me?</div>
-                <div style={{fontSize:11,fontWeight:800,color:GOLD}}>calcmind.mxprime.in</div>
+                <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:2}}>
+                  <div style={{width:24,height:24,borderRadius:6,background:dark?"rgba(200,144,28,0.15)":"rgba(200,144,28,0.1)",border:`1px solid ${GOLD}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:14}}>🍀</div>
+                </div>
               </div>
             </div>
 
-            {/* Action buttons */}
+            {/* ── Action buttons ── */}
             <div style={{display:"flex",gap:8,width:"100%"}}>
-              <button onClick={handleShare} style={{flex:1,background:`linear-gradient(135deg,${GOLD},#e67e00)`,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:"#111",display:"flex",alignItems:"center",justifyContent:"center",gap:6,boxShadow:`0 4px 20px ${GOLD}44`}}>
+              <button onClick={handleShare} style={{flex:1.2,background:`linear-gradient(135deg,#c8901a,#f0a500)`,borderRadius:12,padding:"13px 0",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:"#111",display:"flex",alignItems:"center",justifyContent:"center",gap:7,boxShadow:`0 4px 24px rgba(200,144,28,0.4)`}}>
                 📤 Share
               </button>
               <button onClick={()=>{
@@ -3814,16 +3851,18 @@ export default function App(){
                 else if(customConfig?.type==="arith")startCustomArithGame(customConfig);
                 else if(customConfig?.type==="vocab")startVocabQuiz(customConfig.topic);
                 else startNormalGame(modeId);
-              }} style={{flex:1,background:T.card,border:`1.5px solid ${T.border}`,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:T.text}}>
+              }} style={{flex:1,background:T.card,border:`1.5px solid ${T.border}`,borderRadius:12,padding:"13px 0",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:T.text,display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
                 🔁 Retry
               </button>
-              <button onClick={()=>{stopAll();setTab(prevTab&&prevTab!=='game'?prevTab:'home');}} style={{flex:1,background:T.card,border:`1px solid ${T.border}`,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:T.sub}}>
+              <button onClick={()=>{stopAll();setTab(prevTab&&prevTab!=='game'?prevTab:'home');}} style={{flex:1,background:T.card,border:`1px solid ${T.border}`,borderRadius:12,padding:"13px 0",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:T.sub,display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
                 🏠 Home
               </button>
             </div>
           </div>
           );
         })()}
+
+
 
       </div>
       {/* ── Global Toast Notification ── */}

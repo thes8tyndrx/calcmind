@@ -3455,12 +3455,13 @@ export default function App(){
                 leaderboard.map((player, idx) => {
                   const isMe = user && player.id === user.uid;
                   const plRank = idx + 1;
-                  const rObj = getRank(player.xp || 0);
+                  const playerXP = player[`xp_s1`] || 0; // Season 1 XP field
+                  const rObj = getRank(playerXP);         // correct rank from actual XP
                   const medal = plRank===1?"🥇":plRank===2?"🥈":plRank===3?"🥉":null;
                   return (
                     <div key={player.id} style={{background:isMe?`${GOLD}18`:T.card, border:`1px solid ${isMe?GOLD:T.border}`, borderRadius:12, padding:"10px 14px", display:"flex", alignItems:"center", gap:11}}>
                       <div style={{width:24, fontSize:medal?16:12, fontWeight:800, color:plRank<=3?GOLD:T.muted, textAlign:'center'}}>{medal||`#${plRank}`}</div>
-                      <AnimalAvatar id={player.avatar || "owl"} size={32} xp={player[`xp_s1`]||0}/>
+                      <AnimalAvatar id={player.avatar || "owl"} size={32} xp={playerXP}/>
                       <div style={{flex:1, minWidth:0}}>
                         <div style={{fontWeight:700, fontSize:13, color:isMe?GOLD:T.text, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{player.name}</div>
                         <div style={{fontSize:10, color:rObj.color, marginTop:1}}>{rObj.icon} {rObj.label}</div>

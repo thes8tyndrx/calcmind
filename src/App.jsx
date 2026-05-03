@@ -550,20 +550,39 @@ function formatVocabQuestion(q, topic) {
   const isSynAnt = ['Synonyms', 'Antonyms'].some(t => topicToCheck.includes(t));
   
   if (isFastVocab) {
-    const boldMatch = rawDisplay.match(/\*\*([^*]+)\*\*/);
-    if (boldMatch) {
-      display = cleanText(boldMatch[1]);
-    } else if (isSynAnt) {
-      let d = rawDisplay.replace(/^.*:\s*/, "");
-      const vocabWordRegex = /(?:of|word\.?|to|for|is)\s+['"]?([a-zA-Z0-9_ -]+)['"]?\??\.?$/i;
-      const vocabMatch = d.match(vocabWordRegex);
-      if (vocabMatch) {
-        display = cleanText(vocabMatch[1]);
-      } else {
-        display = cleanText(d);
-      }
+    const origText = q.display || q.question || q.q || "";
+    const origBoldMatches = [...origText.matchAll(/\*\*([^*]+)\*\*/g)];
+    
+    // If there are multiple bolds in the original text (e.g. the word AND the sentence are bolded),
+    // pick the shortest one, which is almost certainly the target word/idiom.
+    if (origBoldMatches.length > 1) {
+       const shortest = origBoldMatches.reduce((a, b) => a[1].length < b[1].length ? a : b);
+       display = cleanText(shortest[1]);
     } else {
-      display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
+       // Only one or zero bolds. Check if the target word is explicitly called out in quotes.
+       const explicitWordMatch = origText.match(/(?:word|synonym|antonym|idiom)(?:\s+(?:of|for|is))?\s*[:\-]?\s*['"]?\*\*([^*]+)\*\*['"]?/i) 
+                              || origText.match(/(?:word|synonym|antonym|idiom)(?:\s+(?:of|for|is))?\s*[:\-]?\s*['"]([a-zA-Z0-9_ -]+)['"]/i);
+
+       if (explicitWordMatch) {
+          display = cleanText(explicitWordMatch[1]);
+       } else {
+          // Fallback to previous logic
+          const boldMatch = rawDisplay.match(/\*\*([^*]+)\*\*/);
+          if (boldMatch) {
+            display = cleanText(boldMatch[1]);
+          } else if (isSynAnt) {
+            let d = rawDisplay.replace(/^.*:\s*/, "");
+            const vocabWordRegex = /(?:of|word\.?|to|for|is)\s+['"]?([a-zA-Z0-9_ -]+)['"]?\??\.?$/i;
+            const vocabMatch = d.match(vocabWordRegex);
+            if (vocabMatch) {
+              display = cleanText(vocabMatch[1]);
+            } else {
+              display = cleanText(d);
+            }
+          } else {
+            display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
+          }
+       }
     }
     // Inject the subtopic clearly so they know what type of question it is during a mistakes quiz!
     if ((q.topic || topic).startsWith('mistakes_') && q._originalTopic) {

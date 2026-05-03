@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import html2canvas from 'html2canvas';
 import { useAuth } from './hooks/useAuth';
 import { useLeaderboard } from './hooks/useLeaderboard';
 import { useWrongQuestions } from './hooks/useWrongQuestions';
@@ -2326,6 +2327,9 @@ export default function App(){
   });
   const [vocabState,setVocabState]=useState(()=>LS.get("cm_vocab_state",{}));
   const [skipTimer,setSkipTimer]=useState(0);
+  // tracks which topic quizzes have already awarded XP (key = topicId)
+  const [topicXpDone,setTopicXpDone]=useState(()=>LS.get("cm_topic_xp_done",{}));
+  const [sessionXpEarned,setSessionXpEarned]=useState(0); // XP earned in current quiz session
 
   // ── Persist on change ──────────────────────────────────────────────────────
   useEffect(()=>{
@@ -2344,6 +2348,10 @@ export default function App(){
   useEffect(()=>LS.set("cm_stats",modeStats),[modeStats]);
   useEffect(()=>LS.set("cm_blitz",blitzBests),[blitzBests]);
   useEffect(()=>LS.set("cm_vocab_state",vocabState),[vocabState]);
+  useEffect(()=>LS.set("cm_topic_xp_done",topicXpDone),[topicXpDone]);
+
+  // ── Auto-load leaderboard when Rank tab is opened ──────────────────────────
+  useEffect(()=>{ if(tab==='rank') refresh(rankCategory); },[tab]);
 
   // ── Telegram & Back Button Handling ─────────────────────────────────────────
   useEffect(() => {
@@ -2425,6 +2433,7 @@ export default function App(){
     setStreak(0);setWrongStreak(0);setBestStreak(0);
     const sMax=(cfg?.count)||customConfig?.count||100;
     setScore({c:0,w:0});setHist([]);setQCount(0);setSessionMax(sMax);setShowLvlChange(null);
+    setSessionXpEarned(0); // reset per-session XP counter
     setPhase("idle");setTyped("");setBloodSel(null);setFeedback(null);setQ(null);
     // Pass mid, lvl, and cfg explicitly to avoid stale React state in the timeout
     const resolvedMid = mid ?? modeId;
@@ -2760,12 +2769,20 @@ export default function App(){
     const xpChange = ok ? 1 : -0.25;
     const cat = customConfig ? (customConfig.quizCat || 'vocab') : (q?.type === "vocab" ? 'vocab' : q?.type === "ca" ? 'ca' : 'maths');
     
-    setTotalXP(x => Math.max(0, x + xpChange));
-    if (cat === 'vocab') setXpVocab(x => Math.max(0, x + xpChange));
-    else if (cat === 'ca') setXpCA(x => Math.max(0, x + xpChange));
-    else setXpMaths(x => Math.max(0, x + xpChange));
+    // One-time XP protection for topic quizzes (not daily, not blitz, not maths modes)
+    const topicId = customConfig?.topic;
+    const isDailyQuiz = topicId?.startsWith('daily_');
+    const isTopicQuiz = topicId && !isDailyQuiz && !topicId.startsWith('mistakes_');
+    const topicAlreadyDone = isTopicQuiz && topicXpDone[topicId];
     
-    submitScore(user, xpChange, cat, customConfig?.date);
+    if (!topicAlreadyDone) {
+      setTotalXP(x => Math.max(0, x + xpChange));
+      if (cat === 'vocab') setXpVocab(x => Math.max(0, x + xpChange));
+      else if (cat === 'ca') setXpCA(x => Math.max(0, x + xpChange));
+      else setXpMaths(x => Math.max(0, x + xpChange));
+      setSessionXpEarned(x => x + xpChange);
+      submitScore(user, xpChange, cat, customConfig?.date);
+    }
     if(!customConfig&&modeId){
       setModeStats(prev=>{
         const ms={...prev[modeId]};if(!ms)return prev;
@@ -2833,7 +2850,13 @@ export default function App(){
       setSkipTimer(10);
     } else {
       nextRef.current=setTimeout(()=>{
-        if(nQ>=sessionMax){setTab("result");setPhase("idle");}
+        if(nQ>=sessionMax){
+      // Mark topic as XP-done on first completion
+      if(customConfig?.topic && !customConfig.topic.startsWith('daily_') && !customConfig.topic.startsWith('mistakes_')){
+        setTopicXpDone(prev => ({...prev, [customConfig.topic]: true}));
+      }
+      setTab("result");setPhase("idle");
+    }
         else nextQ(modeId,newLvl);
       },ok?600:1050);
     }
@@ -2846,7 +2869,12 @@ export default function App(){
         setSkipTimer(s => {
           if (s <= 1) {
             clearInterval(int);
-            if (qCount >= sessionMax) { setTab("result"); setPhase("idle"); }
+            if (qCount >= sessionMax) {
+              if(customConfig?.topic && !customConfig.topic.startsWith('daily_') && !customConfig.topic.startsWith('mistakes_')){
+                setTopicXpDone(prev => ({...prev, [customConfig.topic]: true}));
+              }
+              setTab("result"); setPhase("idle"); 
+            }
             else nextQ(modeId, lvl);
             return 0;
           }
@@ -2861,7 +2889,12 @@ export default function App(){
     if(phase!=="feedback")return;
     stopAll();
     setSkipTimer(0);
-    if(qCount>=sessionMax){setTab("result");setPhase("idle");}
+    if(qCount>=sessionMax){
+      if(customConfig?.topic && !customConfig.topic.startsWith('daily_') && !customConfig.topic.startsWith('mistakes_')){
+        setTopicXpDone(prev => ({...prev, [customConfig.topic]: true}));
+      }
+      setTab("result");setPhase("idle");
+    }
     else nextQ(modeId,lvl);
   }
 
@@ -3623,38 +3656,175 @@ export default function App(){
           </div>
         )}
 
-        {/* ── RESULT ── */}
-        {tab==="result"&&(
-          <div className="su" style={{padding:"26px 17px",display:"flex",flexDirection:"column",gap:13,alignItems:"center"}}>
-            <div style={{textAlign:"center"}}>
-              <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:72,lineHeight:1,color:acc>=80?GREEN:acc>=55?GOLD:RED,textShadow:`0 0 50px ${acc>=80?GREEN:acc>=55?GOLD:RED}33`}}>{acc}%</div>
-              <div style={{fontSize:10,color:T.sub,letterSpacing:2.5,fontWeight:700,marginTop:4}}>
-                ACCURACY · {customConfig?"CUSTOM":MODES.find(m=>m.id===modeId)?.label?.toUpperCase()}
+        {/* ── RESULT / SCORECARD ── */}
+        {tab==="result"&&(()=>{
+          const scorecardRef = React.createRef();
+          const quizTitle = customConfig?.dailyTitle || customConfig?.topic?.replace(/_/g,' ') || (MODES.find(m=>m.id===modeId)?.label) || 'Quiz';
+          const isReattempt = customConfig?.topic && topicXpDone[customConfig.topic] && !customConfig.topic.startsWith('daily_') && !customConfig.topic.startsWith('mistakes_');
+          const xpDisplay = sessionXpEarned > 0 ? `+${sessionXpEarned.toFixed(2)}` : sessionXpEarned.toFixed(2);
+          const accColor = acc>=80?GREEN:acc>=55?GOLD:RED;
+          const medal = acc>=90?'🏆':acc>=75?'🥇':acc>=55?'🥈':'💪';
+          const grade = acc>=90?'Outstanding!':acc>=75?'Great Job! 🎉':acc>=55?'Good Effort!':'Keep Practicing!';
+          
+          const handleShare = async () => {
+            try {
+              const node = document.getElementById('cm-scorecard');
+              if (!node) return;
+              const canvas = await html2canvas(node, { scale: 2, useCORS: true, backgroundColor: null });
+              canvas.toBlob(async (blob) => {
+                if (!blob) return;
+                const file = new File([blob], 'calcmind-score.png', { type: 'image/png' });
+                if (navigator.share && navigator.canShare({ files: [file] })) {
+                  await navigator.share({
+                    files: [file],
+                    title: `I scored ${score.c}/${score.c+score.w} on CalcMind!`,
+                    text: `${grade} I got ${acc}% accuracy on ${quizTitle}. Beat me on calcmind.mxprime.in 🏆`
+                  });
+                } else {
+                  // Fallback: download
+                  const a = document.createElement('a');
+                  a.href = URL.createObjectURL(blob);
+                  a.download = 'calcmind-score.png';
+                  a.click();
+                }
+              }, 'image/png');
+            } catch(e) { console.error('Share failed:', e); }
+          };
+
+          return (
+          <div className="su" style={{padding:"16px 15px 30px",display:"flex",flexDirection:"column",gap:12,alignItems:"center",overflowY:"auto"}}>
+            
+            {/* Reattempt XP notice */}
+            {isReattempt && (
+              <div style={{background:"rgba(200,144,28,0.1)",border:"1px solid rgba(200,144,28,0.3)",borderRadius:10,padding:"8px 14px",width:"100%",display:"flex",alignItems:"center",gap:8}}>
+                <span style={{fontSize:16}}>⚡</span>
+                <div>
+                  <div style={{fontSize:11,fontWeight:800,color:GOLD}}>Reattempt — No Extra XP</div>
+                  <div style={{fontSize:10,color:T.sub}}>You already earned XP for this topic. Still learning? Keep going! 💪</div>
+                </div>
+              </div>
+            )}
+
+            {/* ─── SCORECARD CARD (captured for sharing) ─── */}
+            <div id="cm-scorecard" ref={scorecardRef} style={{
+              width:"100%", borderRadius:20, overflow:"hidden",
+              background: dark ? "linear-gradient(145deg,#1a1a2e,#16213e,#0f3460)" : "linear-gradient(145deg,#ffffff,#f8f9ff)",
+              border:`1.5px solid ${dark?"rgba(200,144,28,0.3)":T.border}`,
+              boxShadow: dark?"0 8px 40px rgba(0,0,0,0.6)":"0 8px 40px rgba(0,0,0,0.12)",
+              fontFamily:"'Outfit',sans-serif",
+            }}>
+              {/* Header */}
+              <div style={{padding:"14px 18px 10px",borderBottom:`1px solid ${dark?"rgba(255,255,255,0.07)":T.border}`,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                <div style={{display:"flex",alignItems:"center",gap:7}}>
+                  <img src="/logo.png" alt="CalcMind" style={{width:26,height:26,borderRadius:6}} onError={e=>{e.target.style.display='none'}}/>
+                  <div>
+                    <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:16,color:dark?"#fff":T.text}}>Calc<span style={{color:GOLD}}>Mind</span></div>
+                    <div style={{fontSize:8,color:dark?"rgba(255,255,255,0.4)":T.sub,letterSpacing:0.5}}>Practice. Improve. Achieve.</div>
+                  </div>
+                </div>
+                <div style={{background:dark?"rgba(200,144,28,0.15)":"rgba(200,144,28,0.1)",border:`1px solid ${GOLD}44`,borderRadius:8,padding:"3px 10px",fontSize:11,fontWeight:800,color:GOLD,letterSpacing:0.5}}>
+                  {quizTitle.length > 18 ? quizTitle.slice(0,18)+'…' : quizTitle}
+                </div>
+              </div>
+
+              {/* Main score */}
+              <div style={{padding:"22px 18px 14px",textAlign:"center"}}>
+                <div style={{fontSize:11,color:dark?"rgba(255,255,255,0.5)":T.sub,letterSpacing:2,fontWeight:700,marginBottom:6}}>I SCORED</div>
+                <div style={{display:"flex",alignItems:"baseline",justifyContent:"center",gap:4,marginBottom:4}}>
+                  <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:76,fontWeight:900,lineHeight:1,color:accColor,textShadow:`0 0 40px ${accColor}44`}}>{score.c}</span>
+                  <span style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:32,fontWeight:700,color:dark?"rgba(255,255,255,0.3)":T.muted}}>/{score.c+score.w}</span>
+                </div>
+                <div style={{display:"inline-block",background:acc>=80?"rgba(77,199,88,0.15)":acc>=55?"rgba(200,144,28,0.15)":"rgba(217,82,82,0.15)",border:`1px solid ${accColor}44`,borderRadius:20,padding:"4px 16px",fontSize:13,fontWeight:800,color:accColor,marginBottom:8}}>
+                  {medal} {grade}
+                </div>
+              </div>
+
+              {/* Accuracy bar */}
+              <div style={{padding:"0 18px 16px"}}>
+                <div style={{display:"flex",justifyContent:"space-between",marginBottom:5}}>
+                  <span style={{fontSize:11,fontWeight:700,color:dark?"rgba(255,255,255,0.5)":T.sub}}>Accuracy</span>
+                  <span style={{fontSize:11,fontWeight:800,color:accColor}}>{acc}%</span>
+                </div>
+                <div style={{height:6,background:dark?"rgba(255,255,255,0.08)":"rgba(0,0,0,0.07)",borderRadius:99,overflow:"hidden"}}>
+                  <div style={{height:"100%",width:`${acc}%`,background:`linear-gradient(90deg,${accColor},${accColor}99)`,borderRadius:99,transition:"width 1s ease"}}/>
+                </div>
+              </div>
+
+              {/* Stat tiles */}
+              <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:8,padding:"0 18px 18px"}}>
+                {[
+                  {icon:"✅",label:"Correct",value:score.c,color:GREEN},
+                  {icon:"❌",label:"Wrong",value:score.w,color:RED},
+                  {icon:"🔥",label:"Best Streak",value:bestStreak,color:GOLD},
+                ].map(({icon,label,value,color})=>(
+                  <div key={label} style={{background:dark?"rgba(255,255,255,0.05)":"rgba(0,0,0,0.04)",border:`1px solid ${dark?"rgba(255,255,255,0.08)":T.border}`,borderRadius:12,padding:"10px 6px",textAlign:"center"}}>
+                    <div style={{fontSize:18,marginBottom:2}}>{icon}</div>
+                    <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:26,fontWeight:900,color,lineHeight:1}}>{value}</div>
+                    <div style={{fontSize:8,color:dark?"rgba(255,255,255,0.35)":T.sub,fontWeight:700,letterSpacing:0.5,marginTop:2}}>{label.toUpperCase()}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* XP earned row */}
+              {!isReattempt && (
+                <div style={{margin:"0 18px 18px",background:dark?"rgba(200,144,28,0.1)":"rgba(200,144,28,0.08)",border:`1px solid ${GOLD}33`,borderRadius:12,padding:"10px 14px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                  <div style={{display:"flex",alignItems:"center",gap:6}}>
+                    <span style={{fontSize:18}}>⚡</span>
+                    <div>
+                      <div style={{fontSize:9,fontWeight:700,letterSpacing:1,color:dark?"rgba(255,255,255,0.4)":T.sub}}>XP EARNED</div>
+                      <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:22,fontWeight:900,color:GOLD,lineHeight:1}}>{xpDisplay} XP</div>
+                    </div>
+                  </div>
+                  <div style={{textAlign:"right"}}>
+                    <div style={{fontSize:9,fontWeight:700,letterSpacing:1,color:dark?"rgba(255,255,255,0.4)":T.sub}}>YOUR RANK</div>
+                    <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:18,fontWeight:900,color:dark?"#fff":T.text}}>{getRank(totalXP).icon} {getRank(totalXP).label}</div>
+                  </div>
+                </div>
+              )}
+
+              {/* Profile row */}
+              <div style={{margin:"0 18px 16px",display:"flex",alignItems:"center",gap:10,padding:"10px 14px",background:dark?"rgba(255,255,255,0.04)":"rgba(0,0,0,0.03)",borderRadius:12,border:`1px solid ${dark?"rgba(255,255,255,0.06)":T.border}`}}>
+                <AnimalAvatar id={profile.avatar||"tiger"} size={34} xp={totalXP}/>
+                <div style={{flex:1}}>
+                  <div style={{fontWeight:800,fontSize:13,color:dark?"#fff":T.text}}>{profile.name||"You"}</div>
+                  <div style={{fontSize:10,color:dark?"rgba(255,255,255,0.4)":T.sub}}>{profile.goal||"CalcMind Learner"}</div>
+                </div>
+              </div>
+
+              {/* Answer dots */}
+              <div style={{padding:"0 18px 14px",display:"flex",gap:3,flexWrap:"wrap",justifyContent:"center"}}>
+                {hist.map((h,i)=><div key={i} style={{width:9,height:9,borderRadius:99,background:h.ok?GREEN:RED,opacity:0.85}}/>)}
+              </div>
+
+              {/* Footer */}
+              <div style={{padding:"10px 18px 14px",borderTop:`1px solid ${dark?"rgba(255,255,255,0.06)":T.border}`,display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+                <div style={{fontSize:10,color:dark?"rgba(255,255,255,0.3)":T.muted}}>Can you beat me?</div>
+                <div style={{fontSize:11,fontWeight:800,color:GOLD}}>calcmind.mxprime.in</div>
               </div>
             </div>
-            <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:7,width:"100%"}}>
-              {[[score.c,"Correct",GREEN],[score.w,"Wrong",RED],[bestStreak,"Best 🔥",GOLD]].map(([v,l,c])=>(
-                <div key={l} style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:12,padding:"12px 8px",textAlign:"center",boxShadow:dark?"none":"0 1px 6px rgba(0,0,0,0.05)"}}>
-                  <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontSize:32,fontWeight:900,color:c}}>{v}</div>
-                  <div style={{fontSize:9,color:T.sub,fontWeight:700,letterSpacing:0.5,marginTop:2}}>{l.toUpperCase()}</div>
-                </div>
-              ))}
-            </div>
-            <div style={{display:"flex",gap:3,justifyContent:"center",flexWrap:"wrap",width:"100%"}}>
-              {hist.map((h,i)=><div key={i} style={{width:11,height:11,borderRadius:99,background:h.ok?GREEN:RED,boxShadow:`0 0 4px ${h.ok?GREEN:RED}55`}}/>)}
-            </div>
-            <div style={{display:"flex",gap:7,width:"100%"}}>
+
+            {/* Action buttons */}
+            <div style={{display:"flex",gap:8,width:"100%"}}>
+              <button onClick={handleShare} style={{flex:1,background:`linear-gradient(135deg,${GOLD},#e67e00)`,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:"#111",display:"flex",alignItems:"center",justifyContent:"center",gap:6,boxShadow:`0 4px 20px ${GOLD}44`}}>
+                📤 Share
+              </button>
               <button onClick={()=>{
                 if(customConfig?.type==="table")startCustomTableGame(customConfig);
                 else if(customConfig?.type==="series")startCustomSeriesGame(customConfig);
                 else if(customConfig?.type==="arith")startCustomArithGame(customConfig);
                 else if(customConfig?.type==="vocab")startVocabQuiz(customConfig.topic);
                 else startNormalGame(modeId);
-              }} style={{flex:2,background:GOLD,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:19,fontWeight:900,color:"#111"}}>RETRY</button>
-              <button onClick={()=>setTab("home")} style={{flex:1,background:T.card,border:`1px solid ${T.border}`,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:19,fontWeight:900,color:T.sub}}>HOME</button>
+              }} style={{flex:1,background:T.card,border:`1.5px solid ${T.border}`,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:T.text}}>
+                🔁 Retry
+              </button>
+              <button onClick={()=>{stopAll();setTab(prevTab&&prevTab!=='game'?prevTab:'home');}} style={{flex:1,background:T.card,border:`1px solid ${T.border}`,borderRadius:12,padding:"13px",fontFamily:"'Barlow Condensed',sans-serif",fontSize:17,fontWeight:900,color:T.sub}}>
+                🏠 Home
+              </button>
             </div>
           </div>
-        )}
+          );
+        })()}
+
       </div>
       {/* ── Global Toast Notification ── */}
       {toast && (

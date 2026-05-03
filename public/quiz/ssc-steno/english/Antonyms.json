@@ -1,0 +1,695 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Antonyms",
+    "category": "Vocabulary",
+    "totalQuestions": 49,
+    "questions": [
+      {
+        "id": 49,
+        "question": "Choose the antonym of **deliberate**:",
+        "options": [
+          "Calculated",
+          "Rash",
+          "Intentional",
+          "Cautious"
+        ],
+        "answer": "Rash",
+        "explanation": "Option A: Calculated means carefully planned. Option B: Rash means acting without proper thought. Option C: Intentional means done deliberately. Option D: Cautious means careful to avoid risk. **Option B** correctly applies: 'Rash' gives the opposite meaning of 'deliberate' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 48,
+        "question": "Choose the antonym of **prominent**:",
+        "options": [
+          "Obscure",
+          "Renowned",
+          "Eminent",
+          "Conspicuous"
+        ],
+        "answer": "Obscure",
+        "explanation": "Option A: Obscure means not well-known or unclear. Option B: Renowned means famous. Option C: Eminent means famous and respected. Option D: Conspicuous means easily noticeable. **Option A** correctly applies: 'Obscure' gives the opposite meaning of 'prominent' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 47,
+        "question": "Choose the antonym of **eloquent**:",
+        "options": [
+          "Inexpressive",
+          "Articulate",
+          "Fluent",
+          "Persuasive"
+        ],
+        "answer": "Inexpressive",
+        "explanation": "Option A: Inexpressive means not showing feeling. Option B: Articulate means able to express clearly. Option C: Fluent means smooth and easy in speech. Option D: Persuasive means able to convince. **Option A** correctly applies: 'Inexpressive' gives the opposite meaning of 'eloquent' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 46,
+        "question": "Pick the antonym of **Yoke**.",
+        "options": [
+          "Immoral",
+          "Vicious",
+          "Harness",
+          "Liberate"
+        ],
+        "answer": "Liberate",
+        "explanation": "Option A: Immoral means not morally right. Option B: Vicious means cruel or violent. Option C: Harness means to control or use. Option D: Liberate means to set free. **Option D** correctly applies: 'Liberate' gives the opposite meaning of 'Yoke' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 45,
+        "question": "Choose the antonym of **durable**:",
+        "options": [
+          "Strong",
+          "Sturdy",
+          "Firm",
+          "Fragile"
+        ],
+        "answer": "Fragile",
+        "explanation": "Option A: Strong means having strength. Option B: Sturdy means strong and solid. Option C: Firm means solid or steady. Option D: Fragile means easily broken. **Option D** correctly applies: 'Fragile' gives the opposite meaning of 'durable' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 44,
+        "question": "Choose the antonym of **audacity**:",
+        "options": [
+          "Boldness",
+          "Cowardice",
+          "Bravery",
+          "Modesty"
+        ],
+        "answer": "Modesty",
+        "explanation": "Option A: Boldness means courage or confidence. Option B: Cowardice means lack of courage. Option C: Bravery means courage. Option D: Modesty means humility or lack of vanity. **Option D** correctly applies: 'Modesty' gives the opposite meaning of 'audacity' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 43,
+        "question": "Pick the antonym of **Knave**.",
+        "options": [
+          "Shady",
+          "Fuzzy",
+          "Dark",
+          "Paragon"
+        ],
+        "answer": "Paragon",
+        "explanation": "Option A: Shady means dishonest or suspicious. Option B: Fuzzy means unclear or covered with soft fibres. Option C: Dark means without light. Option D: Paragon means a model of excellence. **Option D** correctly applies: 'Paragon' gives the opposite meaning of 'Knave' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 42,
+        "question": "Choose the antonym of **withdraw**:",
+        "options": [
+          "Remove",
+          "Advance",
+          "Recede",
+          "Deduct"
+        ],
+        "answer": "Advance",
+        "explanation": "Option A: Remove means to take away. Option B: Advance means to move forward. Option C: Recede means to move back. Option D: Deduct means to subtract. **Option B** correctly applies: 'Advance' gives the opposite meaning of 'withdraw' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 41,
+        "question": "Choose the antonym of **diligent**:",
+        "options": [
+          "Meticulous",
+          "Efficient",
+          "Lazy",
+          "Hardworking"
+        ],
+        "answer": "Lazy",
+        "explanation": "Option A: Meticulous is a vocabulary option to be matched with the required meaning. Option B: Efficient is a vocabulary option to be matched with the required meaning. Option C: Lazy is a vocabulary option to be matched with the required meaning. Option D: Hardworking means working with effort and dedication. **Option C** correctly applies: 'Lazy' gives the opposite meaning of 'diligent' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 40,
+        "question": "Choose the antonym of **candid**:",
+        "options": [
+          "Deceitful",
+          "Blunt",
+          "Honest",
+          "Frank"
+        ],
+        "answer": "Deceitful",
+        "explanation": "Option A: Deceitful means dishonest or misleading. Option B: Blunt means direct or not sharp. Option C: Honest means truthful and fair. Option D: Frank means open and honest. **Option A** correctly applies: 'Deceitful' gives the opposite meaning of 'candid' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 39,
+        "question": "Choose the antonym of **ascend**:",
+        "options": [
+          "Rise",
+          "Soar",
+          "Climb",
+          "Descend"
+        ],
+        "answer": "Descend",
+        "explanation": "Option A: Rise means to move upward. Option B: Soar means to rise or fly high. Option C: Climb means to go upward. Option D: Descend means to move downward. **Option D** correctly applies: 'Descend' gives the opposite meaning of 'ascend' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 38,
+        "question": "Choose the antonym of **liberation**:",
+        "options": [
+          "Captivity",
+          "Independence",
+          "Emancipation",
+          "Freedom"
+        ],
+        "answer": "Captivity",
+        "explanation": "Option A: Captivity means state of being imprisoned. Option B: Independence means freedom from control. Option C: Emancipation means freedom from restraint or slavery. Option D: Freedom means state of being free. **Option A** correctly applies: 'Captivity' gives the opposite meaning of 'liberation' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 37,
+        "question": "Select the antonym of **Arraign**.",
+        "options": [
+          "Justify",
+          "Gluttonous",
+          "Hungry",
+          "Selfish"
+        ],
+        "answer": "Justify",
+        "explanation": "Option A: Justify means to show as right or reasonable. Option B: Gluttonous means greedy for food. Option C: Hungry means needing food. Option D: Selfish means concerned only with oneself. **Option A** correctly applies: 'Justify' gives the opposite meaning of 'Arraign' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 36,
+        "question": "Choose the antonym of **approve**:",
+        "options": [
+          "Reject",
+          "Sanction",
+          "Endorse",
+          "Certify"
+        ],
+        "answer": "Reject",
+        "explanation": "Option A: Reject means to refuse to accept. Option B: Sanction means to approve officially or impose a penalty. Option C: Endorse means to approve or support. Option D: Certify means to confirm officially. **Option A** correctly applies: 'Reject' gives the opposite meaning of 'approve' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 35,
+        "question": "Choose the antonym of **superficial**:",
+        "options": [
+          "Shallow",
+          "Surface",
+          "External",
+          "Deep"
+        ],
+        "answer": "Deep",
+        "explanation": "Option A: Shallow means not deep. Option B: Surface means outer part. Option C: External means outer or outside. Option D: Deep means far below the surface or serious. **Option D** correctly applies: 'Deep' gives the opposite meaning of 'superficial' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 34,
+        "question": "Choose the antonym of **scrupulous**:",
+        "options": [
+          "Principled",
+          "Ethical",
+          "Careless",
+          "Dishonest"
+        ],
+        "answer": "Dishonest",
+        "explanation": "Option A: Principled means guided by moral rules. Option B: Ethical means morally right. Option C: Careless means not taking enough care. Option D: Dishonest means not truthful. **Option D** correctly applies: 'Dishonest' gives the opposite meaning of 'scrupulous' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 33,
+        "question": "Choose the antonym of **eminent**.",
+        "options": [
+          "Prominent",
+          "Celebrated",
+          "Distinguished",
+          "Obscure"
+        ],
+        "answer": "Obscure",
+        "explanation": "Option A: Prominent means well-known or noticeable. Option B: Celebrated means famous and admired. Option C: Distinguished means successful and respected. Option D: Obscure means not well-known or unclear. **Option D** correctly applies: 'Obscure' gives the opposite meaning of 'eminent' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 32,
+        "question": "Choose the antonym of **assert**.",
+        "options": [
+          "Deny",
+          "Maintain",
+          "Proclaim",
+          "Declare"
+        ],
+        "answer": "Deny",
+        "explanation": "Option A: Deny means to say something is not true. Option B: Maintain means to keep or continue. Option C: Proclaim means to announce publicly. Option D: Declare means to state formally. **Option A** correctly applies: 'Deny' gives the opposite meaning of 'assert' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 31,
+        "question": "Choose the antonym of **commendable**.",
+        "options": [
+          "Notable",
+          "Blameworthy",
+          "Laudable",
+          "Admirable"
+        ],
+        "answer": "Blameworthy",
+        "explanation": "Option A: Notable means worthy of attention. Option B: Blameworthy means deserving blame. Option C: Laudable means worthy of praise. Option D: Admirable means deserving respect. **Option B** correctly applies: 'Blameworthy' gives the opposite meaning of 'commendable' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 30,
+        "question": "Choose the antonym of **Lax**.",
+        "options": [
+          "Reliable",
+          "Stack",
+          "Careless",
+          "Loose"
+        ],
+        "answer": "Reliable",
+        "explanation": "Option A: Reliable means dependable. Option B: Stack means a pile of things. Option C: Careless means not taking enough care. Option D: Loose means not tight or strict. **Option A** correctly applies: 'Reliable' gives the opposite meaning of 'Lax' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 29,
+        "question": "Choose the antonym of **affirm**:",
+        "options": [
+          "Refuse",
+          "Accept",
+          "Acknowledge",
+          "Support"
+        ],
+        "answer": "Refuse",
+        "explanation": "Option A: Refuse means to decline or reject. Option B: Accept means to receive or agree to. Option C: Acknowledge means to admit or recognize. Option D: Support is a vocabulary option to be matched with the required meaning. **Option A** correctly applies: 'Refuse' gives the opposite meaning of 'affirm' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 28,
+        "question": "Choose the antonym of **resilient**:",
+        "options": [
+          "Tough",
+          "Buoyant",
+          "Fragile",
+          "Flexible"
+        ],
+        "answer": "Fragile",
+        "explanation": "Option A: Tough means strong and able to endure. Option B: Buoyant means able to float or cheerful. Option C: Fragile means easily broken. Option D: Flexible means able to bend or adapt. **Option C** correctly applies: 'Fragile' gives the opposite meaning of 'resilient' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 27,
+        "question": "Choose the antonym of **authorize**:",
+        "options": [
+          "Forbid",
+          "Allow",
+          "Empower",
+          "Permit"
+        ],
+        "answer": "Forbid",
+        "explanation": "Option A: Forbid means to order someone not to do something. Option B: Allow means to permit. Option C: Empower means to give power or authority. Option D: Permit means to allow. **Option A** correctly applies: 'Forbid' gives the opposite meaning of 'authorize' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 26,
+        "question": "Select the antonym of **Vilify**.",
+        "options": [
+          "Commend",
+          "Malign",
+          "Slur",
+          "Defame"
+        ],
+        "answer": "Commend",
+        "explanation": "Option A: Commend means to praise. Option B: Malign means to speak harmful lies about. Option C: Slur means an insulting remark. Option D: Defame means to damage reputation by false statements. **Option A** correctly applies: 'Commend' gives the opposite meaning of 'Vilify' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 25,
+        "question": "Choose the antonym of **prudent**:",
+        "options": [
+          "Judicious",
+          "Thoughtless",
+          "Cautious",
+          "Sensible"
+        ],
+        "answer": "Thoughtless",
+        "explanation": "Option A: Judicious means wise and sensible. Option B: Thoughtless means careless or lacking consideration. Option C: Cautious means careful to avoid risk. Option D: Sensible means showing good judgment. **Option B** correctly applies: 'Thoughtless' gives the opposite meaning of 'prudent' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 24,
+        "question": "Choose the antonym of **mature**:",
+        "options": [
+          "Developed",
+          "Immature",
+          "Experienced",
+          "Grown"
+        ],
+        "answer": "Immature",
+        "explanation": "Option A: Developed means mature or advanced. Option B: Immature means not fully developed or childish. Option C: Experienced means having knowledge from practice. Option D: Grown means fully developed. **Option B** correctly applies: 'Immature' gives the opposite meaning of 'mature' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 23,
+        "question": "Choose the best antonym for the word \"**discipline**\" in the sentence: \"**A slight slip in discipline today may not seem like a big deal, but if repeated, it can steer you in a completely different direction.**\"",
+        "options": [
+          "Commitment",
+          "Carelessness",
+          "Determination",
+          "Focus"
+        ],
+        "answer": "Carelessness",
+        "explanation": "Option A: Commitment means dedication to something. Option B: Carelessness means lack of attention or caution. Option C: Determination means firmness of purpose. Option D: Focus means concentrated attention. **Option B** correctly applies: 'Carelessness' gives the opposite meaning of 'discipline' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 22,
+        "question": "Choose the antonym of **dominate**:",
+        "options": [
+          "Rule",
+          "Submit",
+          "Govern",
+          "Control"
+        ],
+        "answer": "Submit",
+        "explanation": "Option A: Rule means to govern or control. Option B: Submit means to yield or accept authority. Option C: Govern means to rule or manage. Option D: Control means to direct or restrain. **Option B** correctly applies: 'Submit' gives the opposite meaning of 'dominate' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 21,
+        "question": "Choose the antonym of **hostile**:",
+        "options": [
+          "Friendly",
+          "Aggressive",
+          "Rude",
+          "Bitter"
+        ],
+        "answer": "Friendly",
+        "explanation": "Option A: Friendly means kind and pleasant. Option B: Aggressive means forceful or hostile. Option C: Rude means impolite. Option D: Bitter means resentful or harsh. **Option A** correctly applies: 'Friendly' gives the opposite meaning of 'hostile' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 20,
+        "question": "Choose the antonym of **Wan**.",
+        "options": [
+          "Tiring",
+          "Healthy",
+          "Long",
+          "Wearisome"
+        ],
+        "answer": "Healthy",
+        "explanation": "Option A: Tiring means causing fatigue. Option B: Healthy means in good health. Option C: Long means extended in length or time. Option D: Wearisome means tiring or boring. **Option B** correctly applies: 'Healthy' gives the opposite meaning of 'Wan' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 19,
+        "question": "Choose the antonym of **inflate**:",
+        "options": [
+          "Increase",
+          "Reduce",
+          "Expand",
+          "Swell"
+        ],
+        "answer": "Reduce",
+        "explanation": "Option A: Increase means to become larger or greater. Option B: Reduce means to make smaller. Option C: Expand means to make larger. Option D: Swell means to increase in size. **Option B** correctly applies: 'Reduce' gives the opposite meaning of 'inflate' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 18,
+        "question": "Choose the antonym of **benevolent**:",
+        "options": [
+          "Humane",
+          "Generous",
+          "Kind",
+          "Malevolent"
+        ],
+        "answer": "Malevolent",
+        "explanation": "Option A: Humane means kind and compassionate. Option B: Generous means willing to give or share. Option C: Kind means caring and helpful. Option D: Malevolent means wishing harm to others. **Option D** correctly applies: 'Malevolent' gives the opposite meaning of 'benevolent' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 17,
+        "question": "Choose the antonym of **lucid**:",
+        "options": [
+          "Transparent",
+          "Clear",
+          "Vague",
+          "Coherent"
+        ],
+        "answer": "Vague",
+        "explanation": "Option A: Transparent means clear or see-through. Option B: Clear means easy to understand. Option C: Vague means unclear or not definite. Option D: Coherent means logical and consistent. **Option C** correctly applies: 'Vague' gives the opposite meaning of 'lucid' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 16,
+        "question": "Choose the antonym of **enhance**:",
+        "options": [
+          "Increase",
+          "Enlarge",
+          "Diminish",
+          "Augment"
+        ],
+        "answer": "Diminish",
+        "explanation": "Option A: Increase means to become larger or greater. Option B: Enlarge means to make bigger. Option C: Diminish means to make or become smaller. Option D: Augment means to increase. **Option C** correctly applies: 'Diminish' gives the opposite meaning of 'enhance' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 15,
+        "question": "Choose the antonym of **imitate**:",
+        "options": [
+          "Replicate",
+          "Copy",
+          "Innovate",
+          "Echo"
+        ],
+        "answer": "Innovate",
+        "explanation": "Option A: Replicate means to copy exactly. Option B: Copy means to imitate or reproduce. Option C: Innovate means to introduce something new. Option D: Echo means a repeated sound or imitation. **Option C** correctly applies: 'Innovate' gives the opposite meaning of 'imitate' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 14,
+        "question": "Choose the antonym of **meticulous**:",
+        "options": [
+          "Negligent",
+          "Thorough",
+          "Precise",
+          "Careful"
+        ],
+        "answer": "Negligent",
+        "explanation": "Option A: Negligent means careless in duty. Option B: Thorough means complete and careful. Option C: Precise means exact and accurate. Option D: Careful means taking proper attention. **Option A** correctly applies: 'Negligent' gives the opposite meaning of 'meticulous' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 13,
+        "question": "Find the antonym of **Impute**.",
+        "options": [
+          "Support",
+          "Energetic",
+          "Cheerful",
+          "Lively"
+        ],
+        "answer": "Support",
+        "explanation": "Option A: Support is a vocabulary option to be matched with the required meaning. Option B: Energetic means full of energy. Option C: Cheerful means happy and positive. Option D: Lively means full of life and energy. **Option A** correctly applies: 'Support' gives the opposite meaning of 'Impute' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 12,
+        "question": "Choose the antonym of **magnanimous**:",
+        "options": [
+          "Noble",
+          "Petty",
+          "Forgiving",
+          "Generous"
+        ],
+        "answer": "Petty",
+        "explanation": "Option A: Noble means honourable or belonging to high rank. Option B: Petty means small-minded or of little importance. Option C: Forgiving means ready to forgive. Option D: Generous means willing to give or share. **Option B** correctly applies: 'Petty' gives the opposite meaning of 'magnanimous' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 11,
+        "question": "Choose the antonym of **tangible**:",
+        "options": [
+          "Invisible",
+          "Real",
+          "Intangible",
+          "Definite"
+        ],
+        "answer": "Intangible",
+        "explanation": "Option A: Invisible means unable to be seen. Option B: Real means actually existing. Option C: Intangible means not physical or touchable. Option D: Definite means clear and certain. **Option C** correctly applies: 'Intangible' gives the opposite meaning of 'tangible' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 10,
+        "question": "Identify the antonym of **Quell**.",
+        "options": [
+          "Suppress",
+          "Calm",
+          "Silence",
+          "Agitate"
+        ],
+        "answer": "Agitate",
+        "explanation": "Option A: Suppress means to hold back or stop by force. Option B: Calm means peaceful or not excited. Option C: Silence means absence of sound. Option D: Agitate means to disturb or excite. **Option D** correctly applies: 'Agitate' gives the opposite meaning of 'Quell' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 9,
+        "question": "Find the antonym of **Wilt**.",
+        "options": [
+          "Cruel",
+          "Merciless",
+          "Revive",
+          "Strict"
+        ],
+        "answer": "Revive",
+        "explanation": "Option A: Cruel means causing pain without pity. Option B: Merciless means showing no mercy. Option C: Revive means to restore life, energy, or activity. Option D: Strict means demanding obedience. **Option C** correctly applies: 'Revive' gives the opposite meaning of 'Wilt' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 8,
+        "question": "Choose the antonym of **commend**:",
+        "options": [
+          "Praise",
+          "Approve",
+          "Criticize",
+          "Applaud"
+        ],
+        "answer": "Criticize",
+        "explanation": "Option A: Praise means to express approval. Option B: Approve means to accept or agree with. Option C: Criticize means to point out faults. Option D: Applaud means to clap or praise. **Option C** correctly applies: 'Criticize' gives the opposite meaning of 'commend' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 7,
+        "question": "Choose the antonym of **affluent**:",
+        "options": [
+          "Wealthy",
+          "Rich",
+          "Destitute",
+          "Prosperous"
+        ],
+        "answer": "Destitute",
+        "explanation": "Option A: Wealthy means rich. Option B: Rich means having much money or resources. Option C: Destitute means extremely poor. Option D: Prosperous means successful and wealthy. **Option C** correctly applies: 'Destitute' gives the opposite meaning of 'affluent' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 6,
+        "question": "Choose the antonym of **vindicate**:",
+        "options": [
+          "Exonerate",
+          "Accuse",
+          "Defend",
+          "Justify"
+        ],
+        "answer": "Accuse",
+        "explanation": "Option A: Exonerate means to clear from blame. Option B: Accuse means to charge with wrongdoing. Option C: Defend means to protect or support. Option D: Justify means to show as right or reasonable. **Option B** correctly applies: 'Accuse' gives the opposite meaning of 'vindicate' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 5,
+        "question": "Choose the antonym of **pompous**.",
+        "options": [
+          "Submissive",
+          "Energy",
+          "Urgency",
+          "Delight"
+        ],
+        "answer": "Submissive",
+        "explanation": "Option A: Submissive means ready to obey or yield. Option B: Energy means strength or power to act. Option C: Urgency means need for immediate action. Option D: Delight means great pleasure. **Option A** correctly applies: 'Submissive' gives the opposite meaning of 'pompous' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 4,
+        "question": "Choose the antonym of **Slander**.",
+        "options": [
+          "Mock",
+          "Praise",
+          "Blame",
+          "Abuse"
+        ],
+        "answer": "Praise",
+        "explanation": "Option A: Mock means to ridicule or imitate scornfully. Option B: Praise means to express approval. Option C: Blame means to hold responsible for a fault. Option D: Abuse means insult or misuse. **Option B** correctly applies: 'Praise' gives the opposite meaning of 'Slander' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 3,
+        "question": "Choose the antonym of **Peevish**.",
+        "options": [
+          "Suave",
+          "Flat",
+          "Tedious",
+          "Dull"
+        ],
+        "answer": "Suave",
+        "explanation": "Option A: Suave means smooth, polite, and confident. Option B: Flat means level or lacking excitement. Option C: Tedious means boring and too long. Option D: Dull means boring or not sharp. **Option A** correctly applies: 'Suave' gives the opposite meaning of 'Peevish' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 2,
+        "question": "Select the antonym of **Oracular**.",
+        "options": [
+          "Lucid",
+          "Impress",
+          "Anxious",
+          "Idealistic"
+        ],
+        "answer": "Lucid",
+        "explanation": "Option A: Lucid means clear and easy to understand. Option B: Impress means to affect strongly or make a mark. Option C: Anxious means worried or uneasy. Option D: Idealistic means guided by high ideals. **Option A** correctly applies: 'Lucid' gives the opposite meaning of 'Oracular' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 1,
+        "question": "Choose the antonym of **veracity**:",
+        "options": [
+          "Falsehood",
+          "Accuracy",
+          "Truthfulness",
+          "Honesty"
+        ],
+        "answer": "Falsehood",
+        "explanation": "Option A: Falsehood means a lie or untrue statement. Option B: Accuracy means correctness or exactness. Option C: Truthfulness means state of being truthful. Option D: Honesty is a vocabulary option to be matched with the required meaning. **Option A** correctly applies: 'Falsehood' gives the opposite meaning of 'veracity' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      }
+    ]
+  }
+}

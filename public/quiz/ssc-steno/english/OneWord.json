@@ -1,0 +1,681 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - One Word Substitution",
+    "category": "Vocabulary",
+    "totalQuestions": 48,
+    "questions": [
+      {
+        "id": 48,
+        "question": "What is the one-word substitution for the misappropriation of money?",
+        "options": [
+          "Fraud",
+          "Extortion",
+          "Embezzlement",
+          "Bribery"
+        ],
+        "answer": "Embezzlement",
+        "explanation": "Option A: Fraud means deception for unlawful gain. Option B: Extortion means getting money by force or threats. Option C: Embezzlement means misappropriation of money entrusted to one’s care. Option D: Bribery means giving or taking money to influence action illegally. **Option C** correctly applies: 'Embezzlement' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 47,
+        "question": "Choose the one which can be substituted for the given sentence. A place where dead bodies are kept temporarily",
+        "options": [
+          "Dispensary",
+          "Crematorium",
+          "Graveyard",
+          "Morgue"
+        ],
+        "answer": "Morgue",
+        "explanation": "Option A: Dispensary means a place where medicines are given. Option B: Crematorium means a place where bodies are cremated. Option C: Graveyard means a place where dead bodies are buried. Option D: Morgue means a place where dead bodies are kept temporarily. **Option D** correctly applies: 'Morgue' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 46,
+        "question": "Choose the one which can be substituted for the given sentence. Killing of one's mother",
+        "options": [
+          "Fratricide",
+          "Patricide",
+          "Matricide",
+          "Homicide"
+        ],
+        "answer": "Matricide",
+        "explanation": "Option A: Fratricide means the killing of one’s brother. Option B: Patricide means the killing of one’s father. Option C: Matricide means the killing of one’s mother. Option D: Homicide means the killing of a human being. **Option C** correctly applies: 'Matricide' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 45,
+        "question": "Choose the one which can be substituted for the given sentence. One who abandons one's religious faith or principles",
+        "options": [
+          "Apostate",
+          "Heretic",
+          "Infidel",
+          "Pagan"
+        ],
+        "answer": "Apostate",
+        "explanation": "Option A: Apostate means one who abandons a religion or principle. Option B: Heretic means one who holds beliefs against accepted doctrine. Option C: Infidel means a person regarded as lacking religious faith. Option D: Pagan means a person following a non-mainstream or polytheistic religion. **Option A** correctly applies: 'Apostate' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 44,
+        "question": "Choose the one which can be substituted for the given sentence. A short stay at a place",
+        "options": [
+          "Odyssey",
+          "Peregrination",
+          "Sojourn",
+          "Exodus"
+        ],
+        "answer": "Sojourn",
+        "explanation": "Option A: Odyssey means a long adventurous journey. Option B: Peregrination means a long journey or wandering. Option C: Sojourn means a short temporary stay. Option D: Exodus means a mass departure of people. **Option C** correctly applies: 'Sojourn' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 43,
+        "question": "Choose the one which can be substituted for the given sentence. A person who has long experience in a field",
+        "options": [
+          "Veteran",
+          "Novice",
+          "Trainee",
+          "Amateur"
+        ],
+        "answer": "Veteran",
+        "explanation": "Option A: Veteran means a person with long experience in a field. Option B: Novice means a beginner. Option C: Trainee means a person being trained. Option D: Amateur means a non-professional or beginner. **Option A** correctly applies: 'Veteran' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 42,
+        "question": "Choose the one which can be substituted for the given sentence. A person who is extremely selective or difficult to please",
+        "options": [
+          "Docile",
+          "Hostile",
+          "Fastidious",
+          "Gullible"
+        ],
+        "answer": "Fastidious",
+        "explanation": "Option A: Docile means obedient and easy to manage. Option B: Hostile means unfriendly or aggressive. Option C: Fastidious means extremely selective or hard to please. Option D: Gullible means easily deceived. **Option C** correctly applies: 'Fastidious' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 41,
+        "question": "Choose the one which can be substituted for the given sentence. An imaginary ideal place of perfection",
+        "options": [
+          "Monarchy",
+          "Utopia",
+          "Fable",
+          "Dystopia"
+        ],
+        "answer": "Utopia",
+        "explanation": "Option A: Monarchy means government by a king or queen. Option B: Utopia means an imagined ideal and perfect society. Option C: Fable means a short moral story, often with animals. Option D: Dystopia means an imagined bad or oppressive society. **Option B** correctly applies: 'Utopia' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 40,
+        "question": "Choose the one which can be substituted for the given sentence. A person without a settled home",
+        "options": [
+          "Noble",
+          "Native",
+          "Vagabond",
+          "Tenant"
+        ],
+        "answer": "Vagabond",
+        "explanation": "Option A: Noble means honourable or belonging to high rank. Option B: Native means a person born in a particular place. Option C: Vagabond means a person without a settled home who wanders. Option D: Tenant means a person who rents land or property. **Option C** correctly applies: 'Vagabond' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 39,
+        "question": "Choose the best one-word substitute for: \"**An inscription written on stone in the memory of a deceased person.**\"",
+        "options": [
+          "Epigraph",
+          "Epitaph",
+          "Memoir",
+          "Autograph"
+        ],
+        "answer": "Epitaph",
+        "explanation": "Option A: Epigraph means an inscription or quotation at the beginning of a work. Option B: Epitaph means an inscription on a tomb in memory of the dead. Option C: Memoir means a personal written account of memories. Option D: Autograph means a person’s signature. **Option B** correctly applies: 'Epitaph' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 38,
+        "question": "Choose the one which can be substituted for the given sentence. A partner in crime",
+        "options": [
+          "Rival",
+          "Accomplice",
+          "Patriot",
+          "Ally"
+        ],
+        "answer": "Accomplice",
+        "explanation": "Option A: Rival means a competitor or opponent. Option B: Accomplice means a partner in crime. Option C: Patriot means a person who loves and supports their country. Option D: Ally means a supporter or partner. **Option B** correctly applies: 'Accomplice' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 37,
+        "question": "Choose the one which can be substituted for the given sentence. A man whose wife is dead",
+        "options": [
+          "Widower",
+          "Bachelor",
+          "Heir",
+          "Divorcee"
+        ],
+        "answer": "Widower",
+        "explanation": "Option A: Widower means a man whose wife has died. Option B: Bachelor means an unmarried man. Option C: Heir means a person legally entitled to inherit property. Option D: Divorcee means a divorced person. **Option A** correctly applies: 'Widower' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 36,
+        "question": "Choose the one which can be substituted for the given sentence. An official pardon for offenders",
+        "options": [
+          "Reprieve",
+          "Absolution",
+          "Amnesty",
+          "Clemency"
+        ],
+        "answer": "Amnesty",
+        "explanation": "Option A: Reprieve means a temporary delay of punishment. Option B: Absolution means formal forgiveness from guilt or sin. Option C: Amnesty means an official pardon for offenders. Option D: Clemency means mercy or leniency in punishment. **Option C** correctly applies: 'Amnesty' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 35,
+        "question": "Choose the one which can be substituted for the given sentence. The act of killing one's brother",
+        "options": [
+          "Fratricide",
+          "Suicide",
+          "Patricide",
+          "Homicide"
+        ],
+        "answer": "Fratricide",
+        "explanation": "Option A: Fratricide means the killing of one’s brother. Option B: Suicide is a vocabulary option to be matched with the required meaning. Option C: Patricide means the killing of one’s father. Option D: Homicide means the killing of a human being. **Option A** correctly applies: 'Fratricide' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 34,
+        "question": "Choose the one which can be substituted for the given sentence. A short amusing story",
+        "options": [
+          "Anecdote",
+          "Chronicle",
+          "Epistle",
+          "Essay"
+        ],
+        "answer": "Anecdote",
+        "explanation": "Option A: Anecdote means a short amusing or interesting story. Option B: Chronicle means a factual written account of events in order. Option C: Epistle means a formal letter. Option D: Essay means a short piece of writing on a subject. **Option A** correctly applies: 'Anecdote' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 33,
+        "question": "Choose the correct one-word substitution for: A symbol that serves as an emblem of a group of people",
+        "options": [
+          "Token",
+          "Totem",
+          "Banner",
+          "Trophy"
+        ],
+        "answer": "Totem",
+        "explanation": "Option A: Token means a sign, symbol, or small representative item. Option B: Totem means a symbol or emblem of a group or clan. Option C: Banner means a flag or sign representing a group or cause. Option D: Trophy means a prize for victory or achievement. **Option B** correctly applies: 'Totem' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 32,
+        "question": "What is the one-word substitute for \"**A poem of mourning**\"?",
+        "options": [
+          "Ballad",
+          "Ode",
+          "Elegy",
+          "Sonnet"
+        ],
+        "answer": "Elegy",
+        "explanation": "Option A: Ballad is a vocabulary option to be matched with the required meaning. Option B: Ode is a vocabulary option to be matched with the required meaning. Option C: Elegy means a poem of mourning, usually for the dead. Option D: Sonnet means a fourteen-line poem, often about love or reflection. **Option C** correctly applies: 'Elegy' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 31,
+        "question": "Choose the one which can be substituted for the given sentence. A political disorder and absence of government",
+        "options": [
+          "Plutocracy",
+          "Monarchy",
+          "Anarchy",
+          "Oligarchy"
+        ],
+        "answer": "Anarchy",
+        "explanation": "Option A: Plutocracy means government by the wealthy. Option B: Monarchy means government by a king or queen. Option C: Anarchy means absence of government or law and order. Option D: Oligarchy means government by a small powerful group. **Option C** correctly applies: 'Anarchy' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 30,
+        "question": "Choose the one which can be substituted for the given sentence. The murder of a king",
+        "options": [
+          "Regicide",
+          "Patricide",
+          "Fratricide",
+          "Homicide"
+        ],
+        "answer": "Regicide",
+        "explanation": "Option A: Regicide means the killing of a king. Option B: Patricide means the killing of one’s father. Option C: Fratricide means the killing of one’s brother. Option D: Homicide means the killing of a human being. **Option A** correctly applies: 'Regicide' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 29,
+        "question": "Choose the one which can be substituted for the given sentence. A person who writes books",
+        "options": [
+          "Publisher",
+          "Editor",
+          "Orator",
+          "Author"
+        ],
+        "answer": "Author",
+        "explanation": "Option A: Publisher means a person or company that publishes books. Option B: Editor means a person who prepares text for publication. Option C: Orator means a skilled public speaker. Option D: Author means a person who writes books. **Option D** correctly applies: 'Author' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 28,
+        "question": "Which of the following terms refers to a person who loves or collects books?",
+        "options": [
+          "Bibliophile",
+          "Philatelist",
+          "Botanist",
+          "Anthropologist"
+        ],
+        "answer": "Bibliophile",
+        "explanation": "Option A: Bibliophile means a person who loves or collects books. Option B: Philatelist means a person who collects or studies stamps. Option C: Botanist means a person who studies plants. Option D: Anthropologist means a person who studies humans, cultures, and human development. **Option A** correctly applies: 'Bibliophile' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 27,
+        "question": "Choose the correct one-word substitution for: \"**A person who studies the origin and development of human societies and cultures.**\"",
+        "options": [
+          "Sociologist",
+          "Historian",
+          "Archaeologist",
+          "Anthropologist"
+        ],
+        "answer": "Anthropologist",
+        "explanation": "Option A: Sociologist means a person who studies society and social behaviour. Option B: Historian is a vocabulary option to be matched with the required meaning. Option C: Archaeologist means a person who studies ancient remains and past cultures. Option D: Anthropologist means a person who studies humans, cultures, and human development. **Option D** correctly applies: 'Anthropologist' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 26,
+        "question": "Choose the correct one-word substitution for the following description. \"**A person who talks excessively**\"",
+        "options": [
+          "Silent",
+          "Introvert",
+          "Reticent",
+          "Garrulous"
+        ],
+        "answer": "Garrulous",
+        "explanation": "Option A: Silent is a vocabulary option to be matched with the required meaning. Option B: Introvert means a quiet person who is more inward-focused. Option C: Reticent means reserved and unwilling to speak much. Option D: Garrulous means excessively talkative. **Option D** correctly applies: 'Garrulous' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 25,
+        "question": "Which of the following words refers to a group of people who have graduated from a particular school, college, or university?",
+        "options": [
+          "Student",
+          "Visitor",
+          "Teacher",
+          "Alumni"
+        ],
+        "answer": "Alumni",
+        "explanation": "Option A: Student is a vocabulary option to be matched with the required meaning. Option B: Visitor is a vocabulary option to be matched with the required meaning. Option C: Teacher is a vocabulary option to be matched with the required meaning. Option D: Alumni means former students or graduates of an institution. **Option D** correctly applies: 'Alumni' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 24,
+        "question": "What is the meaning of the word \"**Superannuation**\"?",
+        "options": [
+          "A system of retirement benefits for employees",
+          "The act of receiving a bonus",
+          "A type of insurance for future health care",
+          "The process of becoming too old to work"
+        ],
+        "answer": "A system of retirement benefits for employees",
+        "explanation": "Option A: This option expresses: A system of retirement benefits for employees. Option B: This option expresses: The act of receiving a bonus. Option C: This option states: A type of insurance for future health care. Option D: This option states: The process of becoming too old to work. **Option A** correctly applies: 'A system of retirement benefits for employees' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 23,
+        "question": "Choose the one which can be substituted for the given sentence. A word formed from the initial letters of a name",
+        "options": [
+          "Pseudonym",
+          "Homonym",
+          "Acronym",
+          "Antonym"
+        ],
+        "answer": "Acronym",
+        "explanation": "Option A: Pseudonym means a false or pen name. Option B: Homonym means a word with the same spelling or sound but different meaning. Option C: Acronym means a word formed from initial letters. Option D: Antonym means a word opposite in meaning to another. **Option C** correctly applies: 'Acronym' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 22,
+        "question": "What is the meaning of the word \"**spendthrift**\"?",
+        "options": [
+          "A person who spends money recklessly",
+          "A person who invests money wisely",
+          "A person who saves money",
+          "A person who borrows money"
+        ],
+        "answer": "A person who spends money recklessly",
+        "explanation": "Option A: This option expresses: A person who spends money recklessly. Option B: This option expresses: A person who invests money wisely. Option C: This option expresses: A person who saves money. Option D: This option expresses: A person who borrows money. **Option A** correctly applies: 'A person who spends money recklessly' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 21,
+        "question": "Choose the one-word substitution for the following sentence. Someone who has been forced to flee his or her country because of persecution, war or violence.",
+        "options": [
+          "Shelter",
+          "Asylum",
+          "Refugee",
+          "Sanctuary"
+        ],
+        "answer": "Refugee",
+        "explanation": "Option A: Shelter means a place giving protection. Option B: Asylum means protection or refuge granted to someone. Option C: Refugee means a person forced to flee due to war, violence, or persecution. Option D: Sanctuary means a protected place for wildlife or safety. **Option C** correctly applies: 'Refugee' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 20,
+        "question": "Choose the correct one-word substitution for: \"**the act of placing a dead person in a grave.**\"",
+        "options": [
+          "Interment",
+          "Funeral",
+          "Rebellion",
+          "Coronation"
+        ],
+        "answer": "Interment",
+        "explanation": "Option A: Interment means the burial of a dead body. Option B: Funeral means a ceremony for a dead person. Option C: Rebellion means violent resistance against authority. Option D: Coronation means the ceremony of crowning a ruler. **Option A** correctly applies: 'Interment' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 19,
+        "question": "Choose the correct one-word substitution for: \"**A speech delivered without preparation**\"",
+        "options": [
+          "Soliloquy",
+          "Rebuttal",
+          "Monologue",
+          "Impromptu"
+        ],
+        "answer": "Impromptu",
+        "explanation": "Option A: Soliloquy means a speech by a character speaking thoughts aloud. Option B: Rebuttal means a reply that argues against a claim. Option C: Monologue means a long speech by one person. Option D: Impromptu means done or spoken without preparation. **Option D** correctly applies: 'Impromptu' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 18,
+        "question": "Which of the following refers to the branch of science concerned with the study of sound, its production, transmission, and effects?",
+        "options": [
+          "Acoustics",
+          "Geology",
+          "Thermodynamics",
+          "Optics"
+        ],
+        "answer": "Acoustics",
+        "explanation": "Option A: Acoustics means the science of sound. Option B: Geology means the study of the earth’s structure and rocks. Option C: Thermodynamics means the study of heat, energy, and work. Option D: Optics means the study of light and vision. **Option A** correctly applies: 'Acoustics' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 17,
+        "question": "Select the option that can be substituted for the given sentence. A person's peculiar habit or mannerism",
+        "options": [
+          "Idiosyncrasy",
+          "Illusion",
+          "Hypocrisy",
+          "Eccentricity"
+        ],
+        "answer": "Idiosyncrasy",
+        "explanation": "Option A: Idiosyncrasy means a person’s peculiar habit or mannerism. Option B: Illusion means a false perception or misleading appearance. Option C: Hypocrisy means pretending to have virtues one does not possess. Option D: Eccentricity means unusual or odd behaviour. **Option A** correctly applies: 'Idiosyncrasy' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 16,
+        "question": "Choose the one which can be substituted for the given sentence. A place where wild animals are kept",
+        "options": [
+          "Abattoir",
+          "Aquarium",
+          "Zoo",
+          "Sanctuary"
+        ],
+        "answer": "Zoo",
+        "explanation": "Option A: Abattoir means a slaughterhouse. Option B: Aquarium means a place or tank for keeping aquatic animals. Option C: Zoo means a place where wild animals are kept for public display. Option D: Sanctuary means a protected place for wildlife or safety. **Option C** correctly applies: 'Zoo' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 15,
+        "question": "Choose the one which can be substituted for the given sentence. One who studies the evolution of mankind",
+        "options": [
+          "Archaeologist",
+          "Sociologist",
+          "Anthropologist",
+          "Philologist"
+        ],
+        "answer": "Anthropologist",
+        "explanation": "Option A: Archaeologist means a person who studies ancient remains and past cultures. Option B: Sociologist means a person who studies society and social behaviour. Option C: Anthropologist means a person who studies humans, cultures, and human development. Option D: Philologist means a person who studies language in historical texts. **Option C** correctly applies: 'Anthropologist' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 14,
+        "question": "Choose the one which can be substituted for the given sentence. A medicine that induces sleep",
+        "options": [
+          "Sedative",
+          "Narcotic",
+          "Analgesic",
+          "Hypnotic"
+        ],
+        "answer": "Narcotic",
+        "explanation": "Option A: Sedative means a medicine that calms or reduces excitement. Option B: Narcotic means a drug that dulls pain and may induce sleep. Option C: Analgesic means a medicine that relieves pain. Option D: Hypnotic means a drug that induces sleep. **Option B** correctly applies: 'Narcotic' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 13,
+        "question": "What is the one word for \"**A person who is talkative**\"?",
+        "options": [
+          "Introvert",
+          "Garrulous",
+          "Reticent",
+          "Taciturn"
+        ],
+        "answer": "Garrulous",
+        "explanation": "Option A: Introvert means a quiet person who is more inward-focused. Option B: Garrulous means excessively talkative. Option C: Reticent means reserved and unwilling to speak much. Option D: Taciturn means habitually silent or not talkative. **Option B** correctly applies: 'Garrulous' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 12,
+        "question": "What is the place for ammunition and weapons called?",
+        "options": [
+          "Gallery",
+          "Library",
+          "Arsenal",
+          "Laboratory"
+        ],
+        "answer": "Arsenal",
+        "explanation": "Option A: Gallery means a room or building for displaying art. Option B: Library means a place where books and information resources are kept. Option C: Arsenal means a place where weapons and ammunition are stored. Option D: Laboratory means a place for scientific experiments. **Option C** correctly applies: 'Arsenal' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 11,
+        "question": "Choose the correct one-word substitution for: \"**A facility equipped with instruments for studying stars, planets, and other celestial bodies**\"",
+        "options": [
+          "Workshop",
+          "Observatory",
+          "Greenhouse",
+          "Archive"
+        ],
+        "answer": "Observatory",
+        "explanation": "Option A: Workshop means a place where practical work or training is done. Option B: Observatory means a place equipped for observing stars and planets. Option C: Greenhouse means a glass building for growing plants. Option D: Archive means a place where records or documents are stored. **Option B** correctly applies: 'Observatory' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 10,
+        "question": "Choose the correct one-word substitution for: \"**Property inherited from one's father**\"",
+        "options": [
+          "Matrimony",
+          "Patrimony",
+          "Autocracy",
+          "Testimony"
+        ],
+        "answer": "Patrimony",
+        "explanation": "Option A: Matrimony means marriage or married life. Option B: Patrimony means property inherited from one’s father or ancestors. Option C: Autocracy means government by one person with absolute power. Option D: Testimony means formal evidence or statement. **Option B** correctly applies: 'Patrimony' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 9,
+        "question": "Select the one-word term for: \"**Someone who is consistently excluded or ignored by a community due to lack of trust or popularity.**\"",
+        "options": [
+          "Dissenter",
+          "Noble",
+          "Pariah",
+          "Loyalist"
+        ],
+        "answer": "Pariah",
+        "explanation": "Option A: Dissenter means a person who disagrees with an official view. Option B: Noble means honourable or belonging to high rank. Option C: Pariah means an outcast or a person rejected by society. Option D: Loyalist means a person who remains loyal to a ruler, party, or cause. **Option C** correctly applies: 'Pariah' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 8,
+        "question": "Choose the correct one-word substitution for: \"**A place where aircraft are kept**\"",
+        "options": [
+          "Dockyard",
+          "Depot",
+          "Hangar",
+          "Barracks"
+        ],
+        "answer": "Hangar",
+        "explanation": "Option A: Dockyard means a place where ships are built or repaired. Option B: Depot means a storage or transport centre. Option C: Hangar means a large building where aircraft are kept. Option D: Barracks means buildings where soldiers live. **Option C** correctly applies: 'Hangar' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 7,
+        "question": "Select the one-word term for: \"**A brief note or explanation added alongside a diagram or passage to provide clarity or context.**\"",
+        "options": [
+          "Annotation",
+          "Footnote",
+          "Glossary",
+          "Caption"
+        ],
+        "answer": "Annotation",
+        "explanation": "Option A: Annotation means a note added to explain or clarify something. Option B: Footnote means a note printed at the bottom of a page. Option C: Glossary means a list of difficult words with meanings. Option D: Caption means a short title or explanation for a picture/diagram. **Option A** correctly applies: 'Annotation' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 6,
+        "question": "Choose the correct one word substitution for: \"**The practice of deliberately expressing less than what is meant.**\"",
+        "options": [
+          "Euphemism",
+          "Irony",
+          "Hyperbole",
+          "Litotes"
+        ],
+        "answer": "Litotes",
+        "explanation": "Option A: Euphemism means a mild expression used instead of a harsh or unpleasant one. Option B: Irony means a contrast between expectation and reality, often for effect. Option C: Hyperbole means deliberate exaggeration for effect. Option D: Litotes means understatement made by denying the opposite. **Option D** correctly applies: 'Litotes' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 5,
+        "question": "Choose the correct one-word substitution for: \"**A person who hates other people or mankind**\"",
+        "options": [
+          "Misanthrope",
+          "Optimist",
+          "Egoist",
+          "Misogynist"
+        ],
+        "answer": "Misanthrope",
+        "explanation": "Option A: Misanthrope means a person who dislikes or distrusts mankind. Option B: Optimist means a person who expects good outcomes. Option C: Egoist means a self-centred person. Option D: Misogynist means a person who hates or strongly prejudices against women. **Option A** correctly applies: 'Misanthrope' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 4,
+        "question": "Choose the correct one-word substitution for: \"**A humorous poem of five lines**\"",
+        "options": [
+          "Elegy",
+          "Limerick",
+          "Haiku",
+          "Sonnet"
+        ],
+        "answer": "Limerick",
+        "explanation": "Option A: Elegy means a poem of mourning, usually for the dead. Option B: Limerick means a humorous five-line poem. Option C: Haiku means a short Japanese poetic form. Option D: Sonnet means a fourteen-line poem, often about love or reflection. **Option B** correctly applies: 'Limerick' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 3,
+        "question": "Which of the following words means \"**prohibited by law or treaty from being imported or exported**\"?",
+        "options": [
+          "Restricted",
+          "Illegal",
+          "Banned",
+          "Contraband"
+        ],
+        "answer": "Contraband",
+        "explanation": "Option A: Restricted means limited or controlled by rules. Option B: Illegal means against the law. Option C: Banned means officially prohibited. Option D: Contraband means goods forbidden by law to be imported, exported, or possessed. **Option D** correctly applies: 'Contraband' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 2,
+        "question": "Choose the correct one word substitution for: \"**An ideal society marked by justice, equality, and happiness.**\"",
+        "options": [
+          "Oligarchy",
+          "Technocracy",
+          "Dystopia",
+          "Utopia"
+        ],
+        "answer": "Utopia",
+        "explanation": "Option A: Oligarchy means government by a small powerful group. Option B: Technocracy means government or management by technical experts. Option C: Dystopia means an imagined bad or oppressive society. Option D: Utopia means an imagined ideal and perfect society. **Option D** correctly applies: 'Utopia' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 1,
+        "question": "Choose the correct one word substitution for: \"**A person who is indifferent to pleasure or pain**\".",
+        "options": [
+          "Epicure",
+          "Stoic",
+          "Pessimist",
+          "Masochist"
+        ],
+        "answer": "Stoic",
+        "explanation": "Option A: Epicure means a person devoted to refined pleasure, especially good food and drink. Option B: Stoic means a person who remains calm and unaffected by pleasure, pain, or hardship. Option C: Pessimist means a person who expects bad outcomes. Option D: Masochist means a person who derives pleasure from pain or humiliation. **Option B** correctly applies: 'Stoic' is the precise one-word substitute for the description given in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      }
+    ]
+  }
+}

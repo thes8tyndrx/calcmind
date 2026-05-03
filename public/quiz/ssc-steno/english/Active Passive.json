@@ -1,0 +1,1185 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Active Passive",
+    "category": "Grammar",
+    "totalQuestions": 84,
+    "questions": [
+      {
+        "id": 84,
+        "question": "Select the correct passive form of the given sentence. \"**She may have told them the truth.**\"",
+        "options": [
+          "The truth may have told to them.",
+          "The truth may have been told to them.",
+          "The truth may told them.",
+          "The truth has been told."
+        ],
+        "answer": "The truth may have been told to them.",
+        "explanation": "Option A: This version changes the voice as: The truth may have told to them. Option B: This version changes the voice as: The truth may have been told to them. Option C: This version changes the voice as: The truth may told them. Option D: This version changes the voice as: The truth has been told. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 83,
+        "question": "Select the correct active form. \"**The temple has been visited by thousands of pilgrims.**\"",
+        "options": [
+          "Thousands of pilgrims were visiting the temple.",
+          "Thousands of pilgrims have visited the temple.",
+          "Thousands of pilgrims are visiting the temple.",
+          "Thousands of pilgrims had visited the temple."
+        ],
+        "answer": "Thousands of pilgrims have visited the temple.",
+        "explanation": "Option A: This version changes the voice as: Thousands of pilgrims were visiting the temple. Option B: This version changes the voice as: Thousands of pilgrims have visited the temple. Option C: This version changes the voice as: Thousands of pilgrims are visiting the temple. Option D: This version changes the voice as: Thousands of pilgrims had visited the temple. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 82,
+        "question": "Select the correct active form. \"**Was the novel written by her?**\"",
+        "options": [
+          "Was she writing the novel?",
+          "Is she writing the novel?",
+          "Did she write the novel?",
+          "Has she written the novel?"
+        ],
+        "answer": "Did she write the novel?",
+        "explanation": "Option A: This version changes the voice as: Was she writing the novel?. Option B: This version changes the voice as: Is she writing the novel?. Option C: This version changes the voice as: Did she write the novel?. Option D: This version changes the voice as: Has she written the novel?. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 81,
+        "question": "Transform the following sentence into active voice: How beautifully has the picture been drawn by the artist!",
+        "options": [
+          "How beautifully has the artist been drawn by the picture!",
+          "How beautifully has the artist been drew the picture!",
+          "How beautifully has the artist drew the picture!",
+          "How beautifully has the artist drawn the picture!"
+        ],
+        "answer": "How beautifully has the artist drawn the picture!",
+        "explanation": "Option A: This version changes the voice as: How beautifully has the artist been drawn by the picture!. Option B: This version changes the voice as: How beautifully has the artist been drew the picture!. Option C: This version changes the voice as: How beautifully has the artist drew the picture!. Option D: This version changes the voice as: How beautifully has the artist drawn the picture!. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 80,
+        "question": "Select the correct passive form of the given sentence. \"**Someone could have been using this password.**\"",
+        "options": [
+          "This password could have been being used.",
+          "This password could be used.",
+          "This password could have been used.",
+          "This password can be being used."
+        ],
+        "answer": "This password could have been being used.",
+        "explanation": "Option A: This version changes the voice as: This password could have been being used. Option B: This version changes the voice as: This password could be used. Option C: This version changes the voice as: This password could have been used. Option D: This version changes the voice as: This password can be being used. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 79,
+        "question": "Select the correct active form of the given sentence. \"**The damaged road will be repaired by the municipality.**\"",
+        "options": [
+          "The municipality will have begin repairing the damaged road.",
+          "The municipality will begining repairing the damaged road.",
+          "The municipality is begin repairing the damaged road.",
+          "The municipality will begin repairing the damaged road."
+        ],
+        "answer": "The municipality will begin repairing the damaged road.",
+        "explanation": "Option A: This version changes the voice as: The municipality will have begin repairing the damaged road. Option B: This version changes the voice as: The municipality will begining repairing the damaged road. Option C: This version changes the voice as: The municipality is begin repairing the damaged road. Option D: This version changes the voice as: The municipality will begin repairing the damaged road. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 78,
+        "question": "Select the correct passive form of the given sentence. \"**He helps the poor.**\"",
+        "options": [
+          "The poor are helped by him.",
+          "The poor were helped by him.",
+          "The poor had been helped.",
+          "The poor have helped."
+        ],
+        "answer": "The poor are helped by him.",
+        "explanation": "Option A: This version changes the voice as: The poor are helped by him. Option B: This version changes the voice as: The poor were helped by him. Option C: This version changes the voice as: The poor had been helped. Option D: This version changes the voice as: The poor have helped. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 77,
+        "question": "Select the correct passive form of the given sentence. \"**He had lost the keys before the meeting.**\"",
+        "options": [
+          "The keys had lost before the meeting.",
+          "The keys has been lost.",
+          "The keys had been lost by him before the meeting.",
+          "The keys were lost by him."
+        ],
+        "answer": "The keys had been lost by him before the meeting.",
+        "explanation": "Option A: This version changes the voice as: The keys had lost before the meeting. Option B: This version changes the voice as: The keys has been lost. Option C: This version changes the voice as: The keys had been lost by him before the meeting. Option D: This version changes the voice as: The keys were lost by him. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 76,
+        "question": "Transform the following sentence into active voice: The glass was broken.",
+        "options": [
+          "No one broke the glass.",
+          "Someone broke the glass.",
+          "He broken the glass.",
+          "He broke the glass."
+        ],
+        "answer": "Someone broke the glass.",
+        "explanation": "Option A: This version changes the voice as: No one broke the glass. Option B: This version changes the voice as: Someone broke the glass. Option C: This version changes the voice as: He broken the glass. Option D: This version changes the voice as: He broke the glass. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 75,
+        "question": "Select the correct active form of the given sentence: \"**The preliminary results have been officially announced by the matriculation board.**\"",
+        "options": [
+          "The matriculation board has officially announcing the preliminary results.",
+          "The matriculation board has officially announced the final results.",
+          "The matriculation board will has officially announced the preliminary results.",
+          "The matriculation board has officially announced the preliminary results."
+        ],
+        "answer": "The matriculation board has officially announced the preliminary results.",
+        "explanation": "Option A: This version changes the voice as: The matriculation board has officially announcing the preliminary results. Option B: This version changes the voice as: The matriculation board has officially announced the final results. Option C: This version changes the voice as: The matriculation board will has officially announced the preliminary results. Option D: This version changes the voice as: The matriculation board has officially announced the preliminary results. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 74,
+        "question": "Change the following sentence into active voice: The bill was passed in the parliament.",
+        "options": [
+          "The members of the parliament passed the bill in the parliament.",
+          "The parliament passed the bill.",
+          "The bill has passed in the parliament.",
+          "They have passed the bill in the parliament."
+        ],
+        "answer": "The parliament passed the bill.",
+        "explanation": "Option A: This version changes the voice as: The members of the parliament passed the bill in the parliament. Option B: This version changes the voice as: The parliament passed the bill. Option C: This version changes the voice as: The bill has passed in the parliament. Option D: This version changes the voice as: They have passed the bill in the parliament. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 73,
+        "question": "Choose the correct active voice form of the sentence: \"**All the books had been neatly arranged on the shelves by my grandfather.**\"",
+        "options": [
+          "My grandfather has neatly arranged all the books on the shelves.",
+          "My grandfather had arranged all the books on the shelves.",
+          "My grandfather have neatly arranged all the books on the shelves.",
+          "My grandfather had neatly arranged all the books on the shelves."
+        ],
+        "answer": "My grandfather had neatly arranged all the books on the shelves.",
+        "explanation": "Option A: This version changes the voice as: My grandfather has neatly arranged all the books on the shelves. Option B: This version changes the voice as: My grandfather had arranged all the books on the shelves. Option C: This version changes the voice as: My grandfather have neatly arranged all the books on the shelves. Option D: This version changes the voice as: My grandfather had neatly arranged all the books on the shelves. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 72,
+        "question": "Change the voice of the following sentence. The satellite has been launched successfully by ISRO.",
+        "options": [
+          "ISRO have launched the satellite successfully.",
+          "ISRO has launched the satellite successfully.",
+          "ISRO has launch the satellite successfully.",
+          "ISRO has launched the satellite successful."
+        ],
+        "answer": "ISRO has launched the satellite successfully.",
+        "explanation": "Option A: This version changes the voice as: ISRO have launched the satellite successfully. Option B: This version changes the voice as: ISRO has launched the satellite successfully. Option C: This version changes the voice as: ISRO has launch the satellite successfully. Option D: This version changes the voice as: ISRO has launched the satellite successful. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 71,
+        "question": "Select the correct active form. \"**This error could have been avoided by careful planning.**\"",
+        "options": [
+          "This error could be avoided by careful planning.",
+          "Someone could have avoided this error.",
+          "This error could not have been made.",
+          "Careful planning could have avoided this error."
+        ],
+        "answer": "Careful planning could have avoided this error.",
+        "explanation": "Option A: This version changes the voice as: This error could be avoided by careful planning. Option B: This version changes the voice as: Someone could have avoided this error. Option C: This version changes the voice as: This error could not have been made. Option D: This version changes the voice as: Careful planning could have avoided this error. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 70,
+        "question": "Select the correct active form. \"**Was the culprit being chased by the police?**\"",
+        "options": [
+          "Had the police chased the culprit?",
+          "Did the police chase the culprit?",
+          "Was the police chasing the culprit?",
+          "Is the police chasing the culprit?"
+        ],
+        "answer": "Was the police chasing the culprit?",
+        "explanation": "Option A: This version changes the voice as: Had the police chased the culprit?. Option B: This version changes the voice as: Did the police chase the culprit?. Option C: This version changes the voice as: Was the police chasing the culprit?. Option D: This version changes the voice as: Is the police chasing the culprit?. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 69,
+        "question": "Select the correct passive form of the given sentence. \"**The committee had rejected the proposal.**\"",
+        "options": [
+          "The proposal had been rejected by the committee.",
+          "The proposal was rejecting.",
+          "The proposal was rejected by the committee.",
+          "The proposal is rejected."
+        ],
+        "answer": "The proposal had been rejected by the committee.",
+        "explanation": "Option A: This version changes the voice as: The proposal had been rejected by the committee. Option B: This version changes the voice as: The proposal was rejecting. Option C: This version changes the voice as: The proposal was rejected by the committee. Option D: This version changes the voice as: The proposal is rejected. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 68,
+        "question": "Select the correct active form of the given sentence. \"**The homework is being checked by the teacher.**\"",
+        "options": [
+          "The teacher is checking the homework.",
+          "The teacher was checking the homework.",
+          "The teacher checks the homework.",
+          "The teacher has checked the homework."
+        ],
+        "answer": "The teacher is checking the homework.",
+        "explanation": "Option A: This version changes the voice as: The teacher is checking the homework. Option B: This version changes the voice as: The teacher was checking the homework. Option C: This version changes the voice as: The teacher checks the homework. Option D: This version changes the voice as: The teacher has checked the homework. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 67,
+        "question": "Select the correct passive form of the given sentence. \"**The principal might be watching the surveillance footage.**\"",
+        "options": [
+          "The surveillance footage is being watched.",
+          "The surveillance footage might watched.",
+          "The surveillance footage might be watched.",
+          "The surveillance footage might be being watched by the principal."
+        ],
+        "answer": "The surveillance footage might be being watched by the principal.",
+        "explanation": "Option A: This version changes the voice as: The surveillance footage is being watched. Option B: This version changes the voice as: The surveillance footage might watched. Option C: This version changes the voice as: The surveillance footage might be watched. Option D: This version changes the voice as: The surveillance footage might be being watched by the principal. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 66,
+        "question": "Select the correct passive form of the given sentence. \"**She is cooking dinner.**\"",
+        "options": [
+          "Dinner has been cooked by her.",
+          "Dinner is being cooked by her.",
+          "Dinner was cooked by her.",
+          "Dinner is cooked by her."
+        ],
+        "answer": "Dinner is being cooked by her.",
+        "explanation": "Option A: This version changes the voice as: Dinner has been cooked by her. Option B: This version changes the voice as: Dinner is being cooked by her. Option C: This version changes the voice as: Dinner was cooked by her. Option D: This version changes the voice as: Dinner is cooked by her. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 65,
+        "question": "Select the correct passive form of the given sentence. \"**They have discussed the issue already.**\"",
+        "options": [
+          "The issue was discussed by them.",
+          "The issue has been discussed already by them.",
+          "The issue discusses by them.",
+          "The issue had been discussed."
+        ],
+        "answer": "The issue has been discussed already by them.",
+        "explanation": "Option A: This version changes the voice as: The issue was discussed by them. Option B: This version changes the voice as: The issue has been discussed already by them. Option C: This version changes the voice as: The issue discusses by them. Option D: This version changes the voice as: The issue had been discussed. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 64,
+        "question": "Transform the following sentence into active voice: Let the mobile be charged.",
+        "options": [
+          "Charge the mobile.",
+          "One must charge the mobile.",
+          "Someone should charge the mobile.",
+          "Will you charge the mobile?"
+        ],
+        "answer": "Charge the mobile.",
+        "explanation": "Option A: This version changes the voice as: Charge the mobile. Option B: This version changes the voice as: One must charge the mobile. Option C: This version changes the voice as: Someone should charge the mobile. Option D: This version changes the voice as: Will you charge the mobile?. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 63,
+        "question": "Select the correct active form of the given sentence. \"**The house was painted by them last month.**\"",
+        "options": [
+          "They paint the house last month.",
+          "They have painted the house last month.",
+          "They were painting the house last month.",
+          "They painted the house last month."
+        ],
+        "answer": "They painted the house last month.",
+        "explanation": "Option A: This version changes the voice as: They paint the house last month. Option B: This version changes the voice as: They have painted the house last month. Option C: This version changes the voice as: They were painting the house last month. Option D: This version changes the voice as: They painted the house last month. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 62,
+        "question": "Select the correct passive form of the given sentence. \"**They ought to have completed the task.**\"",
+        "options": [
+          "The task ought have completed.",
+          "The task ought be completed.",
+          "The task ought to have been completed.",
+          "The task ought to completed."
+        ],
+        "answer": "The task ought to have been completed.",
+        "explanation": "Option A: This version changes the voice as: The task ought have completed. Option B: This version changes the voice as: The task ought be completed. Option C: This version changes the voice as: The task ought to have been completed. Option D: This version changes the voice as: The task ought to completed. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 61,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The documents are signed by the director before submission.",
+        "options": [
+          "The documents are being signed by the director before submission.",
+          "The director signs the documents before submission.",
+          "The director has signed the documents before submission.",
+          "The director signed the documents before submission."
+        ],
+        "answer": "The director signs the documents before submission.",
+        "explanation": "Option A: This version changes the voice as: The documents are being signed by the director before submission. Option B: This version changes the voice as: The director signs the documents before submission. Option C: This version changes the voice as: The director has signed the documents before submission. Option D: This version changes the voice as: The director signed the documents before submission. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 60,
+        "question": "Select the correct active form. \"**By whom is this rule obeyed?**\"",
+        "options": [
+          "Who is obeying this rule?",
+          "Who does obey this rule?",
+          "Who obeys this rule?",
+          "Who has obeyed this rule?"
+        ],
+        "answer": "Who obeys this rule?",
+        "explanation": "Option A: This version changes the voice as: Who is obeying this rule?. Option B: This version changes the voice as: Who does obey this rule?. Option C: This version changes the voice as: Who obeys this rule?. Option D: This version changes the voice as: Who has obeyed this rule?. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 59,
+        "question": "Select the correct passive form of the given sentence. \"**She cleaned the house yesterday.**\"",
+        "options": [
+          "The house was being cleaned.",
+          "The house has cleaned.",
+          "The house is cleaned by her yesterday.",
+          "The house was cleaned by her yesterday."
+        ],
+        "answer": "The house was cleaned by her yesterday.",
+        "explanation": "Option A: This version changes the voice as: The house was being cleaned. Option B: This version changes the voice as: The house has cleaned. Option C: This version changes the voice as: The house is cleaned by her yesterday. Option D: This version changes the voice as: The house was cleaned by her yesterday. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 58,
+        "question": "Select the correct active form. \"**Has the file been uploaded by you?**\"",
+        "options": [
+          "Did you upload the file?",
+          "Had you uploaded the file?",
+          "Are you uploading the file?",
+          "Have you uploaded the file?"
+        ],
+        "answer": "Have you uploaded the file?",
+        "explanation": "Option A: This version changes the voice as: Did you upload the file?. Option B: This version changes the voice as: Had you uploaded the file?. Option C: This version changes the voice as: Are you uploading the file?. Option D: This version changes the voice as: Have you uploaded the file?. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 57,
+        "question": "Select the correct active form of the given sentence. \"**The cake had been decorated by the baker.**\"",
+        "options": [
+          "The baker decorates the cake.",
+          "The baker is decorating the cake.",
+          "The baker had decorated the cake.",
+          "The baker will decorate the cake."
+        ],
+        "answer": "The baker had decorated the cake.",
+        "explanation": "Option A: This version changes the voice as: The baker decorates the cake. Option B: This version changes the voice as: The baker is decorating the cake. Option C: This version changes the voice as: The baker had decorated the cake. Option D: This version changes the voice as: The baker will decorate the cake. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 56,
+        "question": "Select the correct active form. \"**Why was the match postponed by the organizers?**\"",
+        "options": [
+          "Why have the organizers postponed the match?",
+          "Why do the organizers postpone the match?",
+          "Why did the organizers postpone the match?",
+          "Why are the organizers postponing the match?"
+        ],
+        "answer": "Why did the organizers postpone the match?",
+        "explanation": "Option A: This version changes the voice as: Why have the organizers postponed the match?. Option B: This version changes the voice as: Why do the organizers postpone the match?. Option C: This version changes the voice as: Why did the organizers postpone the match?. Option D: This version changes the voice as: Why are the organizers postponing the match?. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 55,
+        "question": "Transform the following sentence into active voice: Were you instructed by them how to fill in the form?",
+        "options": [
+          "Did you instruct them how to fill in the form?",
+          "Was he informed how to fill in the form by them?",
+          "Were they informing you how to fill in the form?",
+          "Did they instruct you how to fill in the form?"
+        ],
+        "answer": "Did they instruct you how to fill in the form?",
+        "explanation": "Option A: This version changes the voice as: Did you instruct them how to fill in the form?. Option B: This version changes the voice as: Was he informed how to fill in the form by them?. Option C: This version changes the voice as: Were they informing you how to fill in the form?. Option D: This version changes the voice as: Did they instruct you how to fill in the form?. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 54,
+        "question": "Select the correct passive form of the given sentence. \"**I will complete the work tomorrow.**\"",
+        "options": [
+          "The work will have completed by me.",
+          "The work will be completed by me tomorrow.",
+          "The work shall completed by me.",
+          "The work is completed tomorrow by me."
+        ],
+        "answer": "The work will be completed by me tomorrow.",
+        "explanation": "Option A: This version changes the voice as: The work will have completed by me. Option B: This version changes the voice as: The work will be completed by me tomorrow. Option C: This version changes the voice as: The work shall completed by me. Option D: This version changes the voice as: The work is completed tomorrow by me. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 53,
+        "question": "Select the correct passive form of the given sentence. \"**The judge is hearing the final arguments.**\"",
+        "options": [
+          "The final arguments were heard.",
+          "The final arguments has heard.",
+          "The final arguments was being heard.",
+          "The final arguments are being heard by the judge."
+        ],
+        "answer": "The final arguments are being heard by the judge.",
+        "explanation": "Option A: This version changes the voice as: The final arguments were heard. Option B: This version changes the voice as: The final arguments has heard. Option C: This version changes the voice as: The final arguments was being heard. Option D: This version changes the voice as: The final arguments are being heard by the judge. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 52,
+        "question": "Select the correct active form of the given sentence. \"**The dining hall was being thoroughly cleaned by the workers.**\"",
+        "options": [
+          "The workers were thoroughly cleaned the dining hall.",
+          "The workers were thoroughly cleaning the dining hall.",
+          "The workers had thoroughly cleaning the dining hall.",
+          "The workers was thoroughly cleaning the dining hall."
+        ],
+        "answer": "The workers were thoroughly cleaning the dining hall.",
+        "explanation": "Option A: This version changes the voice as: The workers were thoroughly cleaned the dining hall. Option B: This version changes the voice as: The workers were thoroughly cleaning the dining hall. Option C: This version changes the voice as: The workers had thoroughly cleaning the dining hall. Option D: This version changes the voice as: The workers was thoroughly cleaning the dining hall. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 51,
+        "question": "Select the correct active form. \"**Was your phone being charged by someone?**\"",
+        "options": [
+          "Has someone charged your phone?",
+          "Did someone charge your phone?",
+          "Was someone charging your phone?",
+          "Is someone charging your phone?"
+        ],
+        "answer": "Was someone charging your phone?",
+        "explanation": "Option A: This version changes the voice as: Has someone charged your phone?. Option B: This version changes the voice as: Did someone charge your phone?. Option C: This version changes the voice as: Was someone charging your phone?. Option D: This version changes the voice as: Is someone charging your phone?. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 50,
+        "question": "Select the correct passive form of the given sentence. \"**The director should announce the results today.**\"",
+        "options": [
+          "The results should being announced.",
+          "The results should be announced today.",
+          "The results should be announce today.",
+          "The results should have been announced."
+        ],
+        "answer": "The results should be announced today.",
+        "explanation": "Option A: This version changes the voice as: The results should being announced. Option B: This version changes the voice as: The results should be announced today. Option C: This version changes the voice as: The results should be announce today. Option D: This version changes the voice as: The results should have been announced. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 49,
+        "question": "Select the correct active form of the given sentence: \"**The assignment work has been successfully finished ahead of time by Pragna.**\"",
+        "options": [
+          "Pragna has finished her assignment work ahead of time.",
+          "Pragna has successfully finished her assignment ahead of time.",
+          "Pragna have successfully finished her assignment work ahead of time.",
+          "Pragna has successfully finished her assignment work ahead of time."
+        ],
+        "answer": "Pragna has successfully finished her assignment work ahead of time.",
+        "explanation": "Option A: This version changes the voice as: Pragna has finished her assignment work ahead of time. Option B: This version changes the voice as: Pragna has successfully finished her assignment ahead of time. Option C: This version changes the voice as: Pragna have successfully finished her assignment work ahead of time. Option D: This version changes the voice as: Pragna has successfully finished her assignment work ahead of time. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 48,
+        "question": "Select the correct passive form of the given sentence. \"**They might be repairing the engine now.**\"",
+        "options": [
+          "The engine might be repaired now.",
+          "The engine may be repairing now.",
+          "The engine might be being repaired now.",
+          "The engine might repaired now."
+        ],
+        "answer": "The engine might be being repaired now.",
+        "explanation": "Option A: This version changes the voice as: The engine might be repaired now. Option B: This version changes the voice as: The engine may be repairing now. Option C: This version changes the voice as: The engine might be being repaired now. Option D: This version changes the voice as: The engine might repaired now. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 47,
+        "question": "Transform the following sentence into active voice. All the structures built in that area had been demolished due to encroachment.",
+        "options": [
+          "They had demolished all the structures build in that area due to encroachment.",
+          "They had demolished all the structures that were built in that area due to encroachment.",
+          "They had demolished all the structures built in that area due to encroachment.",
+          "They had demolished all the structures built in that area due to encroachment by the people."
+        ],
+        "answer": "They had demolished all the structures built in that area due to encroachment.",
+        "explanation": "Option A: This version changes the voice as: They had demolished all the structures build in that area due to encroachment. Option B: This version changes the voice as: They had demolished all the structures that were built in that area due to encroachment. Option C: This version changes the voice as: They had demolished all the structures built in that area due to encroachment. Option D: This version changes the voice as: They had demolished all the structures built in that area due to encroachment by the people. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 46,
+        "question": "Select the correct passive form of the given sentence. \"**We are cleaning the room.**\"",
+        "options": [
+          "The room is cleaned.",
+          "The room has been cleaning.",
+          "The room was cleaned.",
+          "The room is being cleaned by us."
+        ],
+        "answer": "The room is being cleaned by us.",
+        "explanation": "Option A: This version changes the voice as: The room is cleaned. Option B: This version changes the voice as: The room has been cleaning. Option C: This version changes the voice as: The room was cleaned. Option D: This version changes the voice as: The room is being cleaned by us. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 45,
+        "question": "Select the correct active form of the given sentence. \"**The bills are paid by him every month.**\"",
+        "options": [
+          "He paid the bills every month.",
+          "He pays the bills every month.",
+          "He was paying the bills every month.",
+          "He is paying the bills every month."
+        ],
+        "answer": "He pays the bills every month.",
+        "explanation": "Option A: This version changes the voice as: He paid the bills every month. Option B: This version changes the voice as: He pays the bills every month. Option C: This version changes the voice as: He was paying the bills every month. Option D: This version changes the voice as: He is paying the bills every month. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 44,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The cake was baked by Mary for her brother's birthday party.",
+        "options": [
+          "Her brother had the cake baked by Mary.",
+          "Mary is baking the cake for her brother's birthday party.",
+          "Mary baked the cake for her brother's birthday party.",
+          "The birthday cake was made by Mary for her brother."
+        ],
+        "answer": "Mary baked the cake for her brother's birthday party.",
+        "explanation": "Option A: This version changes the voice as: Her brother had the cake baked by Mary. Option B: This version changes the voice as: Mary is baking the cake for her brother's birthday party. Option C: This version changes the voice as: Mary baked the cake for her brother's birthday party. Option D: This version changes the voice as: The birthday cake was made by Mary for her brother. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 43,
+        "question": "Select the correct active form of the given sentence. \"**The documents are being submitted by the secretary.**\"",
+        "options": [
+          "The secretary submits the documents.",
+          "The secretary has submitted the documents.",
+          "The secretary is submitting the documents.",
+          "The secretary was submitting the documents."
+        ],
+        "answer": "The secretary is submitting the documents.",
+        "explanation": "Option A: This version changes the voice as: The secretary submits the documents. Option B: This version changes the voice as: The secretary has submitted the documents. Option C: This version changes the voice as: The secretary is submitting the documents. Option D: This version changes the voice as: The secretary was submitting the documents. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 42,
+        "question": "Select the correct passive form of the given sentence. \"**They should have been following the instructions carefully.**\"",
+        "options": [
+          "The instructions should be followed carefully.",
+          "The instructions should have been being followed carefully.",
+          "The instructions should have been followed carefully.",
+          "The instructions should followed carefully."
+        ],
+        "answer": "The instructions should have been followed carefully.",
+        "explanation": "Option A: This version changes the voice as: The instructions should be followed carefully. Option B: This version changes the voice as: The instructions should have been being followed carefully. Option C: This version changes the voice as: The instructions should have been followed carefully. Option D: This version changes the voice as: The instructions should followed carefully. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 41,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The final draft of the report has been reviewed by the supervisor thoroughly.",
+        "options": [
+          "The supervisor has reviewed the final draft of the report thoroughly.",
+          "The final draft was reviewed by the supervisor thoroughly.",
+          "The supervisor was reviewing the final draft thoroughly.",
+          "The supervisor had reviewed the final draft thoroughly."
+        ],
+        "answer": "The supervisor has reviewed the final draft of the report thoroughly.",
+        "explanation": "Option A: This version changes the voice as: The supervisor has reviewed the final draft of the report thoroughly. Option B: This version changes the voice as: The final draft was reviewed by the supervisor thoroughly. Option C: This version changes the voice as: The supervisor was reviewing the final draft thoroughly. Option D: This version changes the voice as: The supervisor had reviewed the final draft thoroughly. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 40,
+        "question": "Select the correct active form. \"**He is known to me.**\"",
+        "options": [
+          "I knew him.",
+          "I know him.",
+          "I had known him.",
+          "I know about him."
+        ],
+        "answer": "I know him.",
+        "explanation": "Option A: This version changes the voice as: I knew him. Option B: This version changes the voice as: I know him. Option C: This version changes the voice as: I had known him. Option D: This version changes the voice as: I know about him. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 39,
+        "question": "Select the correct active form. \"**The town was destroyed by the earthquake.**\"",
+        "options": [
+          "The earthquake destroyed the town.",
+          "The earthquake destroys the town.",
+          "The earthquake had destroyed the town.",
+          "The earthquake was destroying the town."
+        ],
+        "answer": "The earthquake destroyed the town.",
+        "explanation": "Option A: This version changes the voice as: The earthquake destroyed the town. Option B: This version changes the voice as: The earthquake destroys the town. Option C: This version changes the voice as: The earthquake had destroyed the town. Option D: This version changes the voice as: The earthquake was destroying the town. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 38,
+        "question": "Select the correct passive form of the given sentence. \"**He is solving a complex problem.**\"",
+        "options": [
+          "A complex problem is solved.",
+          "A complex problem is being solved by him.",
+          "A complex problem has solved.",
+          "A complex problem had solved."
+        ],
+        "answer": "A complex problem is being solved by him.",
+        "explanation": "Option A: This version changes the voice as: A complex problem is solved. Option B: This version changes the voice as: A complex problem is being solved by him. Option C: This version changes the voice as: A complex problem has solved. Option D: This version changes the voice as: A complex problem had solved. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 37,
+        "question": "Select the correct passive form of the given sentence. \"**The mechanic may be checking the brakes now.**\"",
+        "options": [
+          "The brakes may checked now.",
+          "The brakes may be being checked now.",
+          "The brakes may be checking now.",
+          "The brakes may be check now."
+        ],
+        "answer": "The brakes may be being checked now.",
+        "explanation": "Option A: This version changes the voice as: The brakes may checked now. Option B: This version changes the voice as: The brakes may be being checked now. Option C: This version changes the voice as: The brakes may be checking now. Option D: This version changes the voice as: The brakes may be check now. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 36,
+        "question": "Select the correct active form. \"**The article ought to have been revised by the editor.**\"",
+        "options": [
+          "The editor ought to have revised the article.",
+          "The editor ought to be revising the article.",
+          "The editor ought to revise the article.",
+          "The editor must have revised the article."
+        ],
+        "answer": "The editor ought to have revised the article.",
+        "explanation": "Option A: This version changes the voice as: The editor ought to have revised the article. Option B: This version changes the voice as: The editor ought to be revising the article. Option C: This version changes the voice as: The editor ought to revise the article. Option D: This version changes the voice as: The editor must have revised the article. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 35,
+        "question": "Select the correct passive form of the given sentence. \"**The editor has approved the final version.**\"",
+        "options": [
+          "The final version has been approved by the editor.",
+          "The final version was approved by the editor.",
+          "The final version was being approved.",
+          "The final version is approved."
+        ],
+        "answer": "The final version has been approved by the editor.",
+        "explanation": "Option A: This version changes the voice as: The final version has been approved by the editor. Option B: This version changes the voice as: The final version was approved by the editor. Option C: This version changes the voice as: The final version was being approved. Option D: This version changes the voice as: The final version is approved. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 34,
+        "question": "Select the correct passive form of the given sentence. \"**He wrote the letter.**\"",
+        "options": [
+          "The letter was written by him.",
+          "The letter is written by him.",
+          "The letter wrote by him.",
+          "The letter had been wrote."
+        ],
+        "answer": "The letter was written by him.",
+        "explanation": "Option A: This version changes the voice as: The letter was written by him. Option B: This version changes the voice as: The letter is written by him. Option C: This version changes the voice as: The letter wrote by him. Option D: This version changes the voice as: The letter had been wrote. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 33,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The letter has been written by the manager carefully.",
+        "options": [
+          "The manager was writing the letter carefully.",
+          "The manager will write the letter carefully.",
+          "The manager is writing the letter carefully.",
+          "The manager has written the letter carefully."
+        ],
+        "answer": "The manager has written the letter carefully.",
+        "explanation": "Option A: This version changes the voice as: The manager was writing the letter carefully. Option B: This version changes the voice as: The manager will write the letter carefully. Option C: This version changes the voice as: The manager is writing the letter carefully. Option D: This version changes the voice as: The manager has written the letter carefully. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 32,
+        "question": "Select the correct active form of the given sentence. \"**The walls are being painted by the workers.**\"",
+        "options": [
+          "The workers painted the walls.",
+          "The workers were painting the walls.",
+          "The workers are painting the walls.",
+          "The workers paint the walls."
+        ],
+        "answer": "The workers are painting the walls.",
+        "explanation": "Option A: This version changes the voice as: The workers painted the walls. Option B: This version changes the voice as: The workers were painting the walls. Option C: This version changes the voice as: The workers are painting the walls. Option D: This version changes the voice as: The workers paint the walls. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 31,
+        "question": "Select the correct active form of the given sentence. \"**The plants were watered by the gardener every morning.**\"",
+        "options": [
+          "The gardener has watered the plants every morning.",
+          "The gardener waters the plants every morning.",
+          "The gardener watered the plants every morning.",
+          "The gardener is watering the plants every morning."
+        ],
+        "answer": "The gardener waters the plants every morning.",
+        "explanation": "Option A: This version changes the voice as: The gardener has watered the plants every morning. Option B: This version changes the voice as: The gardener waters the plants every morning. Option C: This version changes the voice as: The gardener watered the plants every morning. Option D: This version changes the voice as: The gardener is watering the plants every morning. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 30,
+        "question": "Transform the following sentence into active voice. This law which was passed in the parliament last year should have been reviewed properly by the members of the committee.",
+        "options": [
+          "The parliament should have reviewed the law properly, which the members of the committee passed last year.",
+          "The members of the committee should have reviewed the law properly, which the parliament passed last year.",
+          "The law should have reviewed the members of the committee properly which the parliament passed last year.",
+          "The members of the committee should have reviewed the law properly, which was passed in the parliament last year."
+        ],
+        "answer": "The members of the committee should have reviewed the law properly, which the parliament passed last year.",
+        "explanation": "Option A: This version changes the voice as: The parliament should have reviewed the law properly, which the members of the committee passed last year. Option B: This version changes the voice as: The members of the committee should have reviewed the law properly, which the parliament passed last year. Option C: This version changes the voice as: The law should have reviewed the members of the committee properly which the parliament passed last year. Option D: This version changes the voice as: The members of the committee should have reviewed the law properly, which was passed in the parliament last year. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 29,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The keys were found by him under the old wooden table.",
+        "options": [
+          "He finds the keys under the old wooden table.",
+          "He was finding the keys under the old wooden table.",
+          "He is finding the keys under the old wooden table.",
+          "He found the keys under the old wooden table."
+        ],
+        "answer": "He found the keys under the old wooden table.",
+        "explanation": "Option A: This version changes the voice as: He finds the keys under the old wooden table. Option B: This version changes the voice as: He was finding the keys under the old wooden table. Option C: This version changes the voice as: He is finding the keys under the old wooden table. Option D: This version changes the voice as: He found the keys under the old wooden table. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 28,
+        "question": "Select the correct passive form of the given sentence. \"**We may have misunderstood the instructions.**\"",
+        "options": [
+          "The instructions may be misunderstood.",
+          "The instructions are being misunderstood.",
+          "The instructions may have misunderstood.",
+          "The instructions may have been misunderstood."
+        ],
+        "answer": "The instructions may have been misunderstood.",
+        "explanation": "Option A: This version changes the voice as: The instructions may be misunderstood. Option B: This version changes the voice as: The instructions are being misunderstood. Option C: This version changes the voice as: The instructions may have misunderstood. Option D: This version changes the voice as: The instructions may have been misunderstood. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 27,
+        "question": "Transform the following sentence into active voice. The tree was felled by the farmer.",
+        "options": [
+          "The farmer has felled the tree.",
+          "The farmer fell from the tree.",
+          "The farmer fell the tree.",
+          "The farmer felled the tree."
+        ],
+        "answer": "The farmer felled the tree.",
+        "explanation": "Option A: This version changes the voice as: The farmer has felled the tree. Option B: This version changes the voice as: The farmer fell from the tree. Option C: This version changes the voice as: The farmer fell the tree. Option D: This version changes the voice as: The farmer felled the tree. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 26,
+        "question": "Select the correct active form. \"**The truth must be told by you.**\"",
+        "options": [
+          "You must have told the truth.",
+          "You ought to tell the truth.",
+          "You must be telling the truth.",
+          "You must tell the truth."
+        ],
+        "answer": "You must tell the truth.",
+        "explanation": "Option A: This version changes the voice as: You must have told the truth. Option B: This version changes the voice as: You ought to tell the truth. Option C: This version changes the voice as: You must be telling the truth. Option D: This version changes the voice as: You must tell the truth. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 25,
+        "question": "Choose the correct active voice form of the sentence: \"**The editorial is written by Mamatha.**\"",
+        "options": [
+          "Mamatha has writing the editorial.",
+          "Mamatha writes the editorial.",
+          "Mamatha is writes the editorial.",
+          "Mamatha writing the editorial."
+        ],
+        "answer": "Mamatha writes the editorial.",
+        "explanation": "Option A: This version changes the voice as: Mamatha has writing the editorial. Option B: This version changes the voice as: Mamatha writes the editorial. Option C: This version changes the voice as: Mamatha is writes the editorial. Option D: This version changes the voice as: Mamatha writing the editorial. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 24,
+        "question": "Select the correct active form of the given sentence. \"**The hungry dog was gently fed by the owner.**\"",
+        "options": [
+          "The owner gently fed up the hungry dog.",
+          "The owner fed the hungry dog.",
+          "The owner gently fed the hungry dog.",
+          "The owner gently feeding the hungry dog."
+        ],
+        "answer": "The owner gently fed the hungry dog.",
+        "explanation": "Option A: This version changes the voice as: The owner gently fed up the hungry dog. Option B: This version changes the voice as: The owner fed the hungry dog. Option C: This version changes the voice as: The owner gently fed the hungry dog. Option D: This version changes the voice as: The owner gently feeding the hungry dog. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 23,
+        "question": "Change the voice of the following sentence. It is going to be constructed by them within a few weeks.",
+        "options": [
+          "They are going to construct it with a few weeks.",
+          "They are going to construct it within a few weeks.",
+          "They are going to construct something within a few weeks.",
+          "They will construct it within a few weeks."
+        ],
+        "answer": "They are going to construct it within a few weeks.",
+        "explanation": "Option A: This version changes the voice as: They are going to construct it with a few weeks.. Option B: This version changes the voice as: They are going to construct it within a few weeks.. Option C: This version changes the voice as: They are going to construct something within a few weeks.. Option D: This version changes the voice as: They will construct it within a few weeks.. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 22,
+        "question": "Select the correct passive form of the given sentence. \"**The doctor prescribed the medicine.**\"",
+        "options": [
+          "The medicine is prescribed.",
+          "The medicine has been prescribed.",
+          "The medicine had been prescribing.",
+          "The medicine was prescribed by the doctor."
+        ],
+        "answer": "The medicine was prescribed by the doctor.",
+        "explanation": "Option A: This version changes the voice as: The medicine is prescribed. Option B: This version changes the voice as: The medicine has been prescribed. Option C: This version changes the voice as: The medicine had been prescribing. Option D: This version changes the voice as: The medicine was prescribed by the doctor. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 21,
+        "question": "Select the correct active form. \"**A decision will have been taken by the committee.**\"",
+        "options": [
+          "The committee will take a decision.",
+          "The committee will have taken a decision.",
+          "The committee took a decision.",
+          "The committee has taken a decision."
+        ],
+        "answer": "The committee will have taken a decision.",
+        "explanation": "Option A: This version changes the voice as: The committee will take a decision. Option B: This version changes the voice as: The committee will have taken a decision. Option C: This version changes the voice as: The committee took a decision. Option D: This version changes the voice as: The committee has taken a decision. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 20,
+        "question": "Select the correct passive form of the given sentence. \"**They can be delivering the goods tomorrow.**\"",
+        "options": [
+          "The goods can be being delivered tomorrow.",
+          "The goods shall be delivering tomorrow.",
+          "The goods can deliver tomorrow.",
+          "The goods can be delivered tomorrow."
+        ],
+        "answer": "The goods can be being delivered tomorrow.",
+        "explanation": "Option A: This version changes the voice as: The goods can be being delivered tomorrow. Option B: This version changes the voice as: The goods shall be delivering tomorrow. Option C: This version changes the voice as: The goods can deliver tomorrow. Option D: This version changes the voice as: The goods can be delivered tomorrow. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 19,
+        "question": "Select the correct passive form of the given sentence. \"**They serve food to the guests.**\"",
+        "options": [
+          "Food is served to the guests by them.",
+          "Food was served to the guests.",
+          "Food is being served by them.",
+          "Food has served by them."
+        ],
+        "answer": "Food is served to the guests by them.",
+        "explanation": "Option A: This version changes the voice as: Food is served to the guests by them. Option B: This version changes the voice as: Food was served to the guests. Option C: This version changes the voice as: Food is being served by them. Option D: This version changes the voice as: Food has served by them. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 18,
+        "question": "Select the correct active form of the given sentence. \"**The hall is being decorated by the staff.**\"",
+        "options": [
+          "The staff has decorated the hall.",
+          "The staff decorates the hall.",
+          "The staff was decorating the hall.",
+          "The staff is decorating the hall."
+        ],
+        "answer": "The staff is decorating the hall.",
+        "explanation": "Option A: This version changes the voice as: The staff has decorated the hall. Option B: This version changes the voice as: The staff decorates the hall. Option C: This version changes the voice as: The staff was decorating the hall. Option D: This version changes the voice as: The staff is decorating the hall. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 17,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The house is cleaned by her every morning before breakfast.",
+        "options": [
+          "She is cleaning the house every morning before breakfast.",
+          "She cleaned the house every morning before breakfast.",
+          "She cleans the house every morning before breakfast.",
+          "She has cleaned the house every morning before breakfast."
+        ],
+        "answer": "She cleans the house every morning before breakfast.",
+        "explanation": "Option A: This version changes the voice as: She is cleaning the house every morning before breakfast. Option B: This version changes the voice as: She cleaned the house every morning before breakfast. Option C: This version changes the voice as: She cleans the house every morning before breakfast. Option D: This version changes the voice as: She has cleaned the house every morning before breakfast. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 16,
+        "question": "Select the correct active form of the given sentence. \"**The letters were delivered by the postman.**\"",
+        "options": [
+          "The postman had delivered the letters.",
+          "The postman delivers the letters.",
+          "The postman has delivered the letters.",
+          "The postman delivered the letters."
+        ],
+        "answer": "The postman delivered the letters.",
+        "explanation": "Option A: This version changes the voice as: The postman had delivered the letters. Option B: This version changes the voice as: The postman delivers the letters. Option C: This version changes the voice as: The postman has delivered the letters. Option D: This version changes the voice as: The postman delivered the letters. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 15,
+        "question": "Select the correct passive form of the given sentence. \"**The manager will approve the application.**\"",
+        "options": [
+          "The application has been approved.",
+          "The application will be approved by the manager.",
+          "The application was being approved.",
+          "The application is approved by the manager."
+        ],
+        "answer": "The application will be approved by the manager.",
+        "explanation": "Option A: This version changes the voice as: The application has been approved. Option B: This version changes the voice as: The application will be approved by the manager. Option C: This version changes the voice as: The application was being approved. Option D: This version changes the voice as: The application is approved by the manager. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 14,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The groceries are delivered to the house by the shopkeeper every evening.",
+        "options": [
+          "The shopkeeper delivers the groceries to the house every evening.",
+          "The groceries were delivered to the house by the shopkeeper.",
+          "The shopkeeper had delivered the groceries to the house.",
+          "The groceries are being delivered to the house every evening."
+        ],
+        "answer": "The shopkeeper delivers the groceries to the house every evening.",
+        "explanation": "Option A: This version changes the voice as: The shopkeeper delivers the groceries to the house every evening. Option B: This version changes the voice as: The groceries were delivered to the house by the shopkeeper. Option C: This version changes the voice as: The shopkeeper had delivered the groceries to the house. Option D: This version changes the voice as: The groceries are being delivered to the house every evening. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 13,
+        "question": "Select the correct passive form of the given sentence. \"**The chef will prepare the meal by noon.**\"",
+        "options": [
+          "The meal will be prepared by the chef by noon.",
+          "The chef will be prepared the meal.",
+          "The meal would be prepared by noon.",
+          "The meal will prepared by the chef by noon."
+        ],
+        "answer": "The meal will be prepared by the chef by noon.",
+        "explanation": "Option A: This version changes the voice as: The meal will be prepared by the chef by noon. Option B: This version changes the voice as: The chef will be prepared the meal. Option C: This version changes the voice as: The meal would be prepared by noon. Option D: This version changes the voice as: The meal will prepared by the chef by noon. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 12,
+        "question": "Change the following from active to passive: People believe that the company will launch the new product before the end of this fiscal year.",
+        "options": [
+          "The company believes to launch the product before the end of the fiscal year.",
+          "The new product is believed to be launched before the fiscal year ends.",
+          "It has been believed that the new product will launch this year.",
+          "It is believed that the company will launch the new product before the end of this fiscal year."
+        ],
+        "answer": "It is believed that the company will launch the new product before the end of this fiscal year.",
+        "explanation": "Option A: This version changes the voice as: The company believes to launch the product before the end of the fiscal year. Option B: This version changes the voice as: The new product is believed to be launched before the fiscal year ends. Option C: This version changes the voice as: It has been believed that the new product will launch this year. Option D: This version changes the voice as: It is believed that the company will launch the new product before the end of this fiscal year. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 11,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: It is believed that the minister will announce the new reforms next week.",
+        "options": [
+          "People think the reforms have already been announced.",
+          "People believe that the minister will announce the new reforms next week.",
+          "The new reforms are announced by the minister.",
+          "It was believed that the reforms would be announced."
+        ],
+        "answer": "People believe that the minister will announce the new reforms next week.",
+        "explanation": "Option A: This version changes the voice as: People think the reforms have already been announced. Option B: This version changes the voice as: People believe that the minister will announce the new reforms next week. Option C: This version changes the voice as: The new reforms are announced by the minister. Option D: This version changes the voice as: It was believed that the reforms would be announced. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 10,
+        "question": "Transform the following sentence into active voice. The royal sword is said to have been transferred to a new museum where it would have been preserved properly.",
+        "options": [
+          "Someone is said to transfer the royal sword to a new museum where they would have preserved it properly.",
+          "Someone is said to have transferred the royal sword to a new museum which they would have preserved it properly.",
+          "Someone is said to have transferred the royal sword to a new museum where they would preserve it properly.",
+          "Someone is said to have transferred the royal sword to a new museum where they would have preserved it properly."
+        ],
+        "answer": "Someone is said to have transferred the royal sword to a new museum where they would have preserved it properly.",
+        "explanation": "Option A: This version changes the voice as: Someone is said to transfer the royal sword to a new museum where they would have preserved it properly. Option B: This version changes the voice as: Someone is said to have transferred the royal sword to a new museum which they would have preserved it properly. Option C: This version changes the voice as: Someone is said to have transferred the royal sword to a new museum where they would preserve it properly. Option D: This version changes the voice as: Someone is said to have transferred the royal sword to a new museum where they would have preserved it properly. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 9,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: All the entries must have been verified by the auditor before submission.",
+        "options": [
+          "All the entries are to be verified before submission.",
+          "The auditor was verifying all entries before submission.",
+          "The auditor must have verified all the entries before submission.",
+          "All entries were verified by the auditor."
+        ],
+        "answer": "The auditor must have verified all the entries before submission.",
+        "explanation": "Option A: This version changes the voice as: All the entries are to be verified before submission. Option B: This version changes the voice as: The auditor was verifying all entries before submission. Option C: This version changes the voice as: The auditor must have verified all the entries before submission. Option D: This version changes the voice as: All entries were verified by the auditor. **Option C** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 8,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The emergency steps had been taken by the authorities before the storm hit.",
+        "options": [
+          "The authorities had taken the emergency steps before the storm hit.",
+          "The storm was faced with emergency steps.",
+          "The authorities took emergency steps.",
+          "The emergency steps were taken before the storm hit."
+        ],
+        "answer": "The authorities had taken the emergency steps before the storm hit.",
+        "explanation": "Option A: This version changes the voice as: The authorities had taken the emergency steps before the storm hit. Option B: This version changes the voice as: The storm was faced with emergency steps. Option C: This version changes the voice as: The authorities took emergency steps. Option D: This version changes the voice as: The emergency steps were taken before the storm hit. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 7,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure. The poem was composed by the student during the literature class.",
+        "options": [
+          "The student composed the poem during the literature class.",
+          "The student had composed the poem during the class.",
+          "The poem is being composed by the student during the class.",
+          "The student is composing the poem during the literature class."
+        ],
+        "answer": "The student composed the poem during the literature class.",
+        "explanation": "Option A: This version changes the voice as: The student composed the poem during the literature class. Option B: This version changes the voice as: The student had composed the poem during the class. Option C: This version changes the voice as: The poem is being composed by the student during the class. Option D: This version changes the voice as: The student is composing the poem during the literature class. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 6,
+        "question": "Select the correct passive form of the given sentence. \"**She is painting the wall.**\"",
+        "options": [
+          "The wall has painted.",
+          "The wall is being painted by her.",
+          "The wall was being painted.",
+          "The wall is painted by her."
+        ],
+        "answer": "The wall is being painted by her.",
+        "explanation": "Option A: This version changes the voice as: The wall has painted. Option B: This version changes the voice as: The wall is being painted by her. Option C: This version changes the voice as: The wall was being painted. Option D: This version changes the voice as: The wall is painted by her. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 5,
+        "question": "Select the correct active form of the given sentence. \"**The window had been broken by the boy.**\"",
+        "options": [
+          "The boy has broken the window.",
+          "The boy is breaking the window.",
+          "The boy broke the window.",
+          "The boy had broken the window."
+        ],
+        "answer": "The boy had broken the window.",
+        "explanation": "Option A: This version changes the voice as: The boy has broken the window. Option B: This version changes the voice as: The boy is breaking the window. Option C: This version changes the voice as: The boy broke the window. Option D: This version changes the voice as: The boy had broken the window. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 4,
+        "question": "Change the following from active to passive: By the time the team arrived, the technicians had already repaired the control panel and tested all functions twice.",
+        "options": [
+          "By the time the team arrived, the control panel had already been repaired, and all functions had been tested twice by the technicians.",
+          "All functions were being tested by the time the team arrived.",
+          "Everything was fixed before the team reached the site.",
+          "The technicians repaired and tested everything twice before the team arrived."
+        ],
+        "answer": "By the time the team arrived, the control panel had already been repaired, and all functions had been tested twice by the technicians.",
+        "explanation": "Option A: This version changes the voice as: By the time the team arrived, the control panel had already been repaired, and all functions had been tested twice by the technicians. Option B: This version changes the voice as: All functions were being tested by the time the team arrived. Option C: This version changes the voice as: Everything was fixed before the team reached the site. Option D: This version changes the voice as: The technicians repaired and tested everything twice before the team arrived. **Option A** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 3,
+        "question": "Select the correct passive form of the given sentence. \"**He will submit the report by Friday.**\"",
+        "options": [
+          "The report is submitted by him by Friday.",
+          "The report will have been submitted by him.",
+          "The report submitted by him by Friday.",
+          "The report will be submitted by him by Friday."
+        ],
+        "answer": "The report will be submitted by him by Friday.",
+        "explanation": "Option A: This version changes the voice as: The report is submitted by him by Friday. Option B: This version changes the voice as: The report will have been submitted by him. Option C: This version changes the voice as: The report submitted by him by Friday. Option D: This version changes the voice as: The report will be submitted by him by Friday. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 2,
+        "question": "Select the correct active form of the given sentence. \"**The book is being read by him.**\"",
+        "options": [
+          "He was reading the book.",
+          "He is reading the book.",
+          "He has read the book.",
+          "He reads the book."
+        ],
+        "answer": "He is reading the book.",
+        "explanation": "Option A: This version changes the voice as: He was reading the book. Option B: This version changes the voice as: He is reading the book. Option C: This version changes the voice as: He has read the book. Option D: This version changes the voice as: He reads the book. **Option B** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 1,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The book was read by the student in just two days.",
+        "options": [
+          "The student was reading the book in just two days.",
+          "The book is read by the student in just two days.",
+          "The student has read the book in just two days.",
+          "The student read the book in just two days."
+        ],
+        "answer": "The student read the book in just two days.",
+        "explanation": "Option A: This version changes the voice as: The student was reading the book in just two days. Option B: This version changes the voice as: The book is read by the student in just two days. Option C: This version changes the voice as: The student has read the book in just two days. Option D: This version changes the voice as: The student read the book in just two days. **Option D** correctly applies: it changes the voice correctly while keeping the tense and meaning unchanged.",
+        "answerKey": "D",
+        "answerIndex": 3
+      }
+    ]
+  }
+}

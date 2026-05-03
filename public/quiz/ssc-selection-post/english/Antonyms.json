@@ -1,0 +1,569 @@
+{
+  "quiz": {
+    "title": "Antonyms - SSC Selection Post XIII 2025",
+    "category": "Vocabulary",
+    "totalQuestions": 35,
+    "questions": [
+      {
+        "id": 35,
+        "sourceQuestionNo": 74,
+        "question": "Identify the antonym of \"**Venerable**\":",
+        "options": [
+          "Respected",
+          "Honored",
+          "Immature",
+          "Elderly"
+        ],
+        "answer": "Immature",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Respected does not best fit the requirement of the question. Option B: Honored does not best fit the requirement of the question. Option C: Immature fits the requirement of the question. Option D: Elderly does not best fit the requirement of the question. **Option C** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 34,
+        "sourceQuestionNo": 73,
+        "question": "Identify the antonym of \"**Fallacy**\":",
+        "options": [
+          "Delusion",
+          "Mistake",
+          "Fiction",
+          "Truth"
+        ],
+        "answer": "Truth",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Delusion does not best fit the requirement of the question. Option B: Mistake does not best fit the requirement of the question. Option C: Fiction does not best fit the requirement of the question. Option D: Truth fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 33,
+        "sourceQuestionNo": 72,
+        "question": "Identify the antonym of \"**Vivacious**\":",
+        "options": [
+          "Cheerful",
+          "Lively",
+          "Bubbly",
+          "Unattractive"
+        ],
+        "answer": "Unattractive",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Cheerful does not best fit the requirement of the question. Option B: Lively does not best fit the requirement of the question. Option C: Bubbly does not best fit the requirement of the question. Option D: Unattractive fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 32,
+        "sourceQuestionNo": 71,
+        "question": "Identify the antonym of \"**Celebrated**\":",
+        "options": [
+          "Famous",
+          "Inglorious",
+          "Acclaimed",
+          "Honored"
+        ],
+        "answer": "Inglorious",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Famous does not best fit the requirement of the question. Option B: Inglorious fits the requirement of the question. Option C: Acclaimed does not best fit the requirement of the question. Option D: Honored does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 31,
+        "sourceQuestionNo": 70,
+        "question": "Identify the antonym of \"**Taciturn**\":",
+        "options": [
+          "Talkative",
+          "Silent",
+          "Reserved",
+          "Quiet"
+        ],
+        "answer": "Talkative",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Talkative fits the requirement of the question. Option B: Silent does not best fit the requirement of the question. Option C: Reserved does not best fit the requirement of the question. Option D: Quiet does not best fit the requirement of the question. **Option A** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 30,
+        "sourceQuestionNo": 69,
+        "question": "Identify the antonym of \"**Denounce**\":",
+        "options": [
+          "Condemn",
+          "Accuse",
+          "Defend",
+          "Blame"
+        ],
+        "answer": "Defend",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Condemn does not best fit the requirement of the question. Option B: Accuse does not best fit the requirement of the question. Option C: Defend fits the requirement of the question. Option D: Blame does not best fit the requirement of the question. **Option C** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 29,
+        "sourceQuestionNo": 68,
+        "question": "Identify the antonym of \"**Malice**\":",
+        "options": [
+          "Cruelty",
+          "Hatred",
+          "Kindness",
+          "Spite"
+        ],
+        "answer": "Kindness",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Cruelty does not best fit the requirement of the question. Option B: Hatred does not best fit the requirement of the question. Option C: Kindness fits the requirement of the question. Option D: Spite does not best fit the requirement of the question. **Option C** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 28,
+        "sourceQuestionNo": 67,
+        "question": "Identify the antonym of \"**Epitome**\":",
+        "options": [
+          "Example",
+          "Summary",
+          "Essence",
+          "Increment"
+        ],
+        "answer": "Increment",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Example does not best fit the requirement of the question. Option B: Summary does not best fit the requirement of the question. Option C: Essence does not best fit the requirement of the question. Option D: Increment fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 27,
+        "sourceQuestionNo": 66,
+        "question": "Identify the antonym of \"**Insipid**\":",
+        "options": [
+          "Tasteless",
+          "Dull",
+          "Vapid",
+          "Appetizing"
+        ],
+        "answer": "Appetizing",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Tasteless does not best fit the requirement of the question. Option B: Dull does not best fit the requirement of the question. Option C: Vapid does not best fit the requirement of the question. Option D: Appetizing fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 26,
+        "sourceQuestionNo": 65,
+        "question": "Identify the antonym of \"**Barren**\":",
+        "options": [
+          "Sterile",
+          "Fertile",
+          "Dry",
+          "Deserted"
+        ],
+        "answer": "Fertile",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Sterile does not best fit the requirement of the question. Option B: Fertile fits the requirement of the question. Option C: Dry does not best fit the requirement of the question. Option D: Deserted does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 25,
+        "sourceQuestionNo": 64,
+        "question": "Identify the antonym of \"**Jovial**\":",
+        "options": [
+          "Morose",
+          "Cheerful",
+          "Happy",
+          "Joyful"
+        ],
+        "answer": "Morose",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Morose fits the requirement of the question. Option B: Cheerful does not best fit the requirement of the question. Option C: Happy does not best fit the requirement of the question. Option D: Joyful does not best fit the requirement of the question. **Option A** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 24,
+        "sourceQuestionNo": 63,
+        "question": "Identify the antonym of \"**Harass**\":",
+        "options": [
+          "Annoy",
+          "Comfort",
+          "Disturb",
+          "irritate"
+        ],
+        "answer": "Comfort",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Annoy does not best fit the requirement of the question. Option B: Comfort fits the requirement of the question. Option C: Disturb does not best fit the requirement of the question. Option D: irritate does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 23,
+        "sourceQuestionNo": 62,
+        "question": "Identify the antonym of \"**Grisly**\":",
+        "options": [
+          "Horrid",
+          "Disgusting",
+          "Frightening",
+          "Attractive"
+        ],
+        "answer": "Attractive",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Horrid does not best fit the requirement of the question. Option B: Disgusting does not best fit the requirement of the question. Option C: Frightening does not best fit the requirement of the question. Option D: Attractive fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 22,
+        "sourceQuestionNo": 61,
+        "question": "Identify the antonym of \"**Glut**\":",
+        "options": [
+          "Overload",
+          "Satiate",
+          "Stuff",
+          "Starve"
+        ],
+        "answer": "Starve",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Overload does not best fit the requirement of the question. Option B: Satiate does not best fit the requirement of the question. Option C: Stuff does not best fit the requirement of the question. Option D: Starve fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 21,
+        "sourceQuestionNo": 60,
+        "question": "Identify the antonym of \"**Perturbed**\":",
+        "options": [
+          "Unsettled",
+          "Worried",
+          "Anxious",
+          "Calm"
+        ],
+        "answer": "Calm",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Unsettled does not best fit the requirement of the question. Option B: Worried does not best fit the requirement of the question. Option C: Anxious does not best fit the requirement of the question. Option D: Calm fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 20,
+        "sourceQuestionNo": 59,
+        "question": "Identify the antonym of \"**Eager**\":",
+        "options": [
+          "Indifferent",
+          "Keen",
+          "Interested",
+          "Enthusiastic"
+        ],
+        "answer": "Indifferent",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Indifferent fits the requirement of the question. Option B: Keen does not best fit the requirement of the question. Option C: Interested does not best fit the requirement of the question. Option D: Enthusiastic does not best fit the requirement of the question. **Option A** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 19,
+        "sourceQuestionNo": 58,
+        "question": "Identify the antonym of \"**Reverence**\":",
+        "options": [
+          "Respect",
+          "Esteem",
+          "Honor",
+          "Disrespect"
+        ],
+        "answer": "Disrespect",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Respect does not best fit the requirement of the question. Option B: Esteem does not best fit the requirement of the question. Option C: Honor does not best fit the requirement of the question. Option D: Disrespect fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 18,
+        "sourceQuestionNo": 57,
+        "question": "Identify the antonym of \"**Morbid**\":",
+        "options": [
+          "Cheerful",
+          "Grim",
+          "Gloomy",
+          "Sickly"
+        ],
+        "answer": "Cheerful",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Cheerful fits the requirement of the question. Option B: Grim does not best fit the requirement of the question. Option C: Gloomy does not best fit the requirement of the question. Option D: Sickly does not best fit the requirement of the question. **Option A** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 17,
+        "sourceQuestionNo": 56,
+        "question": "identify the antonym of '**Axiom**':",
+        "options": [
+          "Truism",
+          "Adage",
+          "Absurdity",
+          "Principle"
+        ],
+        "answer": "Absurdity",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Truism does not best fit the requirement of the question. Option B: Adage does not best fit the requirement of the question. Option C: Absurdity fits the requirement of the question. Option D: Principle does not best fit the requirement of the question. **Option C** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 16,
+        "sourceQuestionNo": 55,
+        "question": "Identify the antonym of \"**Obscure**\":",
+        "options": [
+          "Prominent",
+          "Vague",
+          "Faint",
+          "Hidden"
+        ],
+        "answer": "Prominent",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Prominent fits the requirement of the question. Option B: Vague does not best fit the requirement of the question. Option C: Faint does not best fit the requirement of the question. Option D: Hidden does not best fit the requirement of the question. **Option A** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 15,
+        "sourceQuestionNo": 54,
+        "question": "Identify the antonym of \"**Bold**\":",
+        "options": [
+          "Adventurous",
+          "Brave",
+          "Timid",
+          "Fearless"
+        ],
+        "answer": "Timid",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Adventurous does not best fit the requirement of the question. Option B: Brave does not best fit the requirement of the question. Option C: Timid fits the requirement of the question. Option D: Fearless does not best fit the requirement of the question. **Option C** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 14,
+        "sourceQuestionNo": 53,
+        "question": "Identify the antonym of \"**Infernal**\":",
+        "options": [
+          "Wicked",
+          "Damned",
+          "Heavenly",
+          "accursed"
+        ],
+        "answer": "Heavenly",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Wicked does not best fit the requirement of the question. Option B: Damned does not best fit the requirement of the question. Option C: Heavenly fits the requirement of the question. Option D: accursed does not best fit the requirement of the question. **Option C** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 13,
+        "sourceQuestionNo": 52,
+        "question": "Identify the antonym of \"**Barbarous**\":",
+        "options": [
+          "Civilized",
+          "Cruel",
+          "Savage",
+          "Brutal"
+        ],
+        "answer": "Civilized",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Civilized fits the requirement of the question. Option B: Cruel does not best fit the requirement of the question. Option C: Savage does not best fit the requirement of the question. Option D: Brutal does not best fit the requirement of the question. **Option A** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 12,
+        "sourceQuestionNo": 51,
+        "question": "Identify the antonym of \"**Ruthless**\":",
+        "options": [
+          "Harsh",
+          "Cruel",
+          "Brutal",
+          "Compassionate"
+        ],
+        "answer": "Compassionate",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Harsh does not best fit the requirement of the question. Option B: Cruel does not best fit the requirement of the question. Option C: Brutal does not best fit the requirement of the question. Option D: Compassionate fits the requirement of the question. **Option D** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 11,
+        "sourceQuestionNo": 50,
+        "question": "Identify the antonym of \"**Docile**\":",
+        "options": [
+          "Soft",
+          "Headstrong",
+          "Gentle",
+          "Compliant"
+        ],
+        "answer": "Headstrong",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Soft does not best fit the requirement of the question. Option B: Headstrong fits the requirement of the question. Option C: Gentle does not best fit the requirement of the question. Option D: Compliant does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 10,
+        "sourceQuestionNo": 49,
+        "question": "Select the sentence containing the homonym of the highlighted word: The army retreated to their strategic bases before launching a counterattack.",
+        "options": [
+          "She applied two coats of makeup bases before the foundation.",
+          "Allied forces established new bases along the coastline.",
+          "The soldiers returned to their airforce bases for regrouping.",
+          "The navy had to defend its remaining overseas bases."
+        ],
+        "answer": "She applied two coats of makeup bases before the foundation.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She applied two coats of makeup bases before the foundation. fits the requirement of the question. Option B: Allied forces established new bases along the coastline. does not best fit the requirement of the question. Option C: The soldiers returned to their airforce bases for regrouping. does not best fit the requirement of the question. Option D: The navy had to defend its remaining overseas bases. does not best fit the requirement of the question. **Option A** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 9,
+        "sourceQuestionNo": 48,
+        "question": "Find the antonym of '**Falter**'.",
+        "options": [
+          "Waver",
+          "Stumble",
+          "Persist",
+          "Demur"
+        ],
+        "answer": "Persist",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Waver does not best fit the requirement of the question. Option B: Stumble does not best fit the requirement of the question. Option C: Persist fits the requirement of the question. Option D: Demur does not best fit the requirement of the question. **Option C** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 8,
+        "sourceQuestionNo": 47,
+        "question": "Select the most appropriate antonym of the given word. Mythical",
+        "options": [
+          "Imaginary",
+          "Verifiable",
+          "Supernatural",
+          "Symbolic"
+        ],
+        "answer": "Verifiable",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Imaginary does not best fit the requirement of the question. Option B: Verifiable fits the requirement of the question. Option C: Supernatural does not best fit the requirement of the question. Option D: Symbolic does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 7,
+        "sourceQuestionNo": 46,
+        "question": "Select the most appropriate antonym of the given word. Impervious",
+        "options": [
+          "Impregnable",
+          "Permeable",
+          "Durable",
+          "Impassive"
+        ],
+        "answer": "Permeable",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Impregnable does not best fit the requirement of the question. Option B: Permeable fits the requirement of the question. Option C: Durable does not best fit the requirement of the question. Option D: Impassive does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 6,
+        "sourceQuestionNo": 45,
+        "question": "Select the most appropriate antonym of the given word. Lucid",
+        "options": [
+          "Clear",
+          "Confusing",
+          "Bright",
+          "Fluent"
+        ],
+        "answer": "Confusing",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Clear does not best fit the requirement of the question. Option B: Confusing fits the requirement of the question. Option C: Bright does not best fit the requirement of the question. Option D: Fluent does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 5,
+        "sourceQuestionNo": 44,
+        "question": "Select the most appropriate antonym of the given word. Recount",
+        "options": [
+          "Narrate",
+          "Suppress",
+          "Retell",
+          "Detail"
+        ],
+        "answer": "Suppress",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Narrate does not best fit the requirement of the question. Option B: Suppress fits the requirement of the question. Option C: Retell does not best fit the requirement of the question. Option D: Detail does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 4,
+        "sourceQuestionNo": 43,
+        "question": "Select the most appropriate antonym of the given word. Blistering",
+        "options": [
+          "Scorching",
+          "Chilly",
+          "Burning",
+          "Incendiary"
+        ],
+        "answer": "Chilly",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Scorching does not best fit the requirement of the question. Option B: Chilly fits the requirement of the question. Option C: Burning does not best fit the requirement of the question. Option D: Incendiary does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 3,
+        "sourceQuestionNo": 42,
+        "question": "Select the most appropriate antonym of the given word. Blistering",
+        "options": [
+          "Scorching",
+          "Chilly",
+          "Burning",
+          "Incendiary"
+        ],
+        "answer": "Chilly",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Scorching does not best fit the requirement of the question. Option B: Chilly fits the requirement of the question. Option C: Burning does not best fit the requirement of the question. Option D: Incendiary does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 2,
+        "sourceQuestionNo": 41,
+        "question": "Select the most appropriate antonym of the given word. Tenacious",
+        "options": [
+          "Persistent",
+          "Fragile",
+          "Yielding",
+          "Firm"
+        ],
+        "answer": "Yielding",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Persistent does not best fit the requirement of the question. Option B: Fragile does not best fit the requirement of the question. Option C: Yielding fits the requirement of the question. Option D: Firm does not best fit the requirement of the question. **Option C** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      },
+      {
+        "id": 1,
+        "sourceQuestionNo": 40,
+        "question": "Select the most appropriate antonym of the given word. Magnanimous",
+        "options": [
+          "Altruistic",
+          "Self-absorbed",
+          "Noble",
+          "Gracious"
+        ],
+        "answer": "Self-absorbed",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Altruistic does not best fit the requirement of the question. Option B: Self-absorbed fits the requirement of the question. Option C: Noble does not best fit the requirement of the question. Option D: Gracious does not best fit the requirement of the question. **Option B** correctly applies: it is the opposite in meaning to the target word.",
+        "type": "Antonyms"
+      }
+    ]
+  }
+}

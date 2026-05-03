@@ -1,0 +1,625 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Synonyms",
+    "category": "Vocabulary",
+    "totalQuestions": 44,
+    "questions": [
+      {
+        "id": 44,
+        "question": "Select the synonym of Chronic.",
+        "options": [
+          "Temporary",
+          "Persistent",
+          "Fresh",
+          "Occasional"
+        ],
+        "answer": "Persistent",
+        "explanation": "Option A: Temporary means lasting for a short time. Option B: Persistent means continuing for a long time. Option C: Fresh means new or recently made. Option D: Occasional means happening sometimes. **Option B** correctly applies: 'Persistent' is closest in meaning to 'Chronic' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 43,
+        "question": "Select the synonym of Feeble.",
+        "options": [
+          "Robust",
+          "Strong",
+          "Sturdy",
+          "Weak"
+        ],
+        "answer": "Weak",
+        "explanation": "Option A: Robust means strong and healthy. Option B: Strong means having strength. Option C: Sturdy means strong and solid. Option D: Weak means lacking strength. **Option D** correctly applies: 'Weak' is closest in meaning to 'Feeble' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 42,
+        "question": "Which word is closest in meaning to **Allay**?",
+        "options": [
+          "Pacify",
+          "Clash",
+          "Noise",
+          "Dispute"
+        ],
+        "answer": "Pacify",
+        "explanation": "Option A: Pacify means to calm or make peaceful. Option B: Clash means to conflict. Option C: Noise means unwanted sound. Option D: Dispute means argument or disagreement. **Option A** correctly applies: 'Pacify' is closest in meaning to 'Allay' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 41,
+        "question": "Select the synonym of Ubiquitous.",
+        "options": [
+          "Isolated",
+          "Omnipresent",
+          "Rare",
+          "Occasional"
+        ],
+        "answer": "Omnipresent",
+        "explanation": "Option A: Isolated means separate or alone. Option B: Omnipresent means present everywhere. Option C: Rare means not common. Option D: Occasional means happening sometimes. **Option B** correctly applies: 'Omnipresent' is closest in meaning to 'Ubiquitous' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 40,
+        "question": "Select the synonym of Esoteric.",
+        "options": [
+          "Common",
+          "Mysterious",
+          "Popular",
+          "Clear"
+        ],
+        "answer": "Mysterious",
+        "explanation": "Option A: Common means ordinary or widespread. Option B: Mysterious means difficult to understand or explain. Option C: Popular means liked by many people. Option D: Clear means easy to understand. **Option B** correctly applies: 'Mysterious' is closest in meaning to 'Esoteric' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 39,
+        "question": "Select the synonym of Amiable.",
+        "options": [
+          "Friendly",
+          "Rude",
+          "Hostile",
+          "Cold"
+        ],
+        "answer": "Friendly",
+        "explanation": "Option A: Friendly means kind and pleasant. Option B: Rude means impolite. Option C: Hostile means unfriendly or aggressive. Option D: Cold means unfriendly or lacking warmth. **Option A** correctly applies: 'Friendly' is closest in meaning to 'Amiable' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 38,
+        "question": "Which word is closest in meaning to **Castigate**?",
+        "options": [
+          "Vague",
+          "Dull",
+          "Dark",
+          "Condemn"
+        ],
+        "answer": "Condemn",
+        "explanation": "Option A: Vague means unclear or not definite. Option B: Dull means boring or not sharp. Option C: Dark means without light. Option D: Condemn means to strongly disapprove or blame. **Option D** correctly applies: 'Condemn' is closest in meaning to 'Castigate' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 37,
+        "question": "Select the synonym of Insolent.",
+        "options": [
+          "Disrespectful",
+          "Gentle",
+          "Polite",
+          "Courteous"
+        ],
+        "answer": "Disrespectful",
+        "explanation": "Option A: Disrespectful is a vocabulary option to be matched with the required meaning. Option B: Gentle means kind or mild. Option C: Polite means showing good manners. Option D: Courteous means respectful and polite. **Option A** correctly applies: 'Disrespectful' is closest in meaning to 'Insolent' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 36,
+        "question": "Select the synonym of Recalcitrant.",
+        "options": [
+          "Loyal",
+          "Disobedient",
+          "Submissive",
+          "Supportive"
+        ],
+        "answer": "Disobedient",
+        "explanation": "Option A: Loyal means faithful and supportive. Option B: Disobedient means not obeying rules. Option C: Submissive means ready to obey or yield. Option D: Supportive is a vocabulary option to be matched with the required meaning. **Option B** correctly applies: 'Disobedient' is closest in meaning to 'Recalcitrant' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 35,
+        "question": "Select the synonym of Vicinity.",
+        "options": [
+          "Absence",
+          "Proximity",
+          "Distance",
+          "Departure"
+        ],
+        "answer": "Proximity",
+        "explanation": "Option A: Absence means state of being away or missing. Option B: Proximity means nearness. Option C: Distance means space between things. Option D: Departure means leaving. **Option B** correctly applies: 'Proximity' is closest in meaning to 'Vicinity' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 34,
+        "question": "Select the synonym of Taciturn.",
+        "options": [
+          "Bold",
+          "Reserved",
+          "Talkative",
+          "Noisy"
+        ],
+        "answer": "Reserved",
+        "explanation": "Option A: Bold means brave and confident. Option B: Reserved means quiet and not openly expressive. Option C: Talkative means fond of talking. Option D: Noisy means making much noise. **Option B** correctly applies: 'Reserved' is closest in meaning to 'Taciturn' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 33,
+        "question": "Pick the synonym of **Frivolous**.",
+        "options": [
+          "Powerful",
+          "Essential",
+          "Significant",
+          "Trivial"
+        ],
+        "answer": "Trivial",
+        "explanation": "Option A: Powerful means having great strength or influence. Option B: Essential means absolutely necessary. Option C: Significant means important. Option D: Trivial means of little importance. **Option D** correctly applies: 'Trivial' is closest in meaning to 'Frivolous' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 32,
+        "question": "Select the synonym of Exquisite.",
+        "options": [
+          "Crude",
+          "Harsh",
+          "Delicate",
+          "Ordinary"
+        ],
+        "answer": "Delicate",
+        "explanation": "Option A: Crude means rough or unrefined. Option B: Harsh means severe or unpleasant. Option C: Delicate means fine, beautiful, or easily damaged. Option D: Ordinary means common or not special. **Option C** correctly applies: 'Delicate' is closest in meaning to 'Exquisite' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 31,
+        "question": "Select the synonym of Candid.",
+        "options": [
+          "Frank",
+          "Dubious",
+          "Insincere",
+          "Secretive"
+        ],
+        "answer": "Frank",
+        "explanation": "Option A: Frank means open and honest. Option B: Dubious means doubtful or uncertain. Option C: Insincere means not genuine. Option D: Secretive means tending to hide information. **Option A** correctly applies: 'Frank' is closest in meaning to 'Candid' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 30,
+        "question": "Select the synonym of **Carnal**.",
+        "options": [
+          "Demand",
+          "Greed",
+          "Jealousy",
+          "Earthly"
+        ],
+        "answer": "Earthly",
+        "explanation": "Option A: Demand means to ask forcefully. Option B: Greed means excessive desire for more. Option C: Jealousy means envy or fear of losing affection. Option D: Earthly means worldly or related to physical life. **Option D** correctly applies: 'Earthly' is closest in meaning to 'Carnal' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 29,
+        "question": "Select the synonym of Gratify.",
+        "options": [
+          "Satisfy",
+          "Insult",
+          "Displease",
+          "Annoy"
+        ],
+        "answer": "Satisfy",
+        "explanation": "Option A: Satisfy means to please or fulfil a need. Option B: Insult means to offend with disrespectful words. Option C: Displease means to make unhappy. Option D: Annoy means to irritate or make angry. **Option A** correctly applies: 'Satisfy' is closest in meaning to 'Gratify' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 28,
+        "question": "Select the synonym of Exaggerate.",
+        "options": [
+          "Amplify",
+          "Minimize",
+          "Suppress",
+          "Understate"
+        ],
+        "answer": "Amplify",
+        "explanation": "Option A: Amplify means to increase or enlarge. Option B: Minimize means to reduce or make smaller. Option C: Suppress means to hold back or stop by force. Option D: Understate means to express as less important than it is. **Option A** correctly applies: 'Amplify' is closest in meaning to 'Exaggerate' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 27,
+        "question": "Select the synonym of Perfunctory.",
+        "options": [
+          "Diligent",
+          "Careless",
+          "Painstaking",
+          "Detailed"
+        ],
+        "answer": "Careless",
+        "explanation": "Option A: Diligent means careful and hardworking. Option B: Careless means not taking enough care. Option C: Painstaking means done with great care. Option D: Detailed means having many particulars. **Option B** correctly applies: 'Careless' is closest in meaning to 'Perfunctory' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 26,
+        "question": "Choose the best synonym for the word \"**endorse**\" in the sentence: \"**System 2 is more methodical and rational, but it is also lazier-it prefers to endorse the intuitions of System 1 rather than question them.**\"",
+        "options": [
+          "Approve",
+          "Reject",
+          "Criticize",
+          "Delay"
+        ],
+        "answer": "Approve",
+        "explanation": "Option A: Approve means to accept or agree with. Option B: Reject means to refuse to accept. Option C: Criticize means to point out faults. Option D: Delay means to postpone or make late. **Option A** correctly applies: 'Approve' is closest in meaning to 'endorse' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 25,
+        "question": "What is the meaning of the word \"**deliberate**\" in the sentence: \"**System 2 is the slower, more deliberate mode of thinking.**\"",
+        "options": [
+          "Accidental",
+          "Careful and intentional",
+          "Quick and effortless",
+          "Biased"
+        ],
+        "answer": "Careful and intentional",
+        "explanation": "Option A: Accidental means happening by chance. Option B: Careful and intentional is a vocabulary option to be matched with the required meaning. Option C: Quick and effortless is a vocabulary option to be matched with the required meaning. Option D: Biased means showing unfair preference. **Option B** correctly applies: 'Careful and intentional' is closest in meaning to 'deliberate' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 24,
+        "question": "Select the synonym of Foster.",
+        "options": [
+          "Neglect",
+          "Reject",
+          "Promote",
+          "Oppose"
+        ],
+        "answer": "Promote",
+        "explanation": "Option A: Neglect means to fail to care for. Option B: Reject means to refuse to accept. Option C: Promote means to support or encourage. Option D: Oppose means to resist or be against. **Option C** correctly applies: 'Promote' is closest in meaning to 'Foster' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 23,
+        "question": "Select the synonym of Relinquish.",
+        "options": [
+          "Abandon",
+          "Maintain",
+          "Continue",
+          "Retain"
+        ],
+        "answer": "Abandon",
+        "explanation": "Option A: Abandon means to give up or leave. Option B: Maintain means to keep or continue. Option C: Continue means to keep going. Option D: Retain means to keep possession of. **Option A** correctly applies: 'Abandon' is closest in meaning to 'Relinquish' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 22,
+        "question": "Select the synonym of Deft.",
+        "options": [
+          "Inept",
+          "Skillful",
+          "Awkward",
+          "Clumsy"
+        ],
+        "answer": "Skillful",
+        "explanation": "Option A: Inept means unskilled or clumsy. Option B: Skillful means showing ability and expertise. Option C: Awkward means clumsy or lacking ease. Option D: Clumsy means awkward in movement or handling. **Option B** correctly applies: 'Skillful' is closest in meaning to 'Deft' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 21,
+        "question": "Select the synonym of Reticent.",
+        "options": [
+          "Arrogant",
+          "Reserved",
+          "Talkative",
+          "Outspoken"
+        ],
+        "answer": "Reserved",
+        "explanation": "Option A: Arrogant means overly proud or self-important. Option B: Reserved means quiet and not openly expressive. Option C: Talkative means fond of talking. Option D: Outspoken means frank and direct in speech. **Option B** correctly applies: 'Reserved' is closest in meaning to 'Reticent' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 20,
+        "question": "Choose the synonym of the word **Bawdy**.",
+        "options": [
+          "Coarse",
+          "Support",
+          "Delay",
+          "Establish"
+        ],
+        "answer": "Coarse",
+        "explanation": "Option A: Coarse means rough, crude, or indecent. Option B: Support is a vocabulary option to be matched with the required meaning. Option C: Delay means to postpone or make late. Option D: Establish means to set up or prove. **Option A** correctly applies: 'Coarse' is closest in meaning to 'Bawdy' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 19,
+        "question": "Select the synonym of Summon.",
+        "options": [
+          "Send",
+          "Disperse",
+          "Drive",
+          "Call"
+        ],
+        "answer": "Call",
+        "explanation": "Option A: Send means to cause to go somewhere. Option B: Disperse means to scatter or spread out. Option C: Drive means to push or guide forward. Option D: Call means to summon or name. **Option D** correctly applies: 'Call' is closest in meaning to 'Summon' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 18,
+        "question": "Select the synonym of Alacrity.",
+        "options": [
+          "Sluggishness",
+          "Hesitation",
+          "Eagerness",
+          "Delay"
+        ],
+        "answer": "Eagerness",
+        "explanation": "Option A: Sluggishness means lack of speed or energy. Option B: Hesitation means pause due to doubt. Option C: Eagerness means keen readiness or enthusiasm. Option D: Delay means to postpone or make late. **Option C** correctly applies: 'Eagerness' is closest in meaning to 'Alacrity' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 17,
+        "question": "Choose the correct synonym of **Juvenile**:",
+        "options": [
+          "Childish",
+          "Ancient",
+          "Grown-up",
+          "Elder"
+        ],
+        "answer": "Childish",
+        "explanation": "Option A: Childish means immature or like a child. Option B: Ancient means very old. Option C: Grown-up means adult or mature. Option D: Elder means older person. **Option A** correctly applies: 'Childish' is closest in meaning to 'Juvenile' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 16,
+        "question": "Select the synonym of Defer.",
+        "options": [
+          "Decline",
+          "Delay",
+          "Reject",
+          "Proceed"
+        ],
+        "answer": "Delay",
+        "explanation": "Option A: Decline means to become weaker or decrease. Option B: Delay means to postpone or make late. Option C: Reject means to refuse to accept. Option D: Proceed means to continue or move forward. **Option B** correctly applies: 'Delay' is closest in meaning to 'Defer' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 15,
+        "question": "Select the synonym of Conundrum.",
+        "options": [
+          "Triumph",
+          "Celebration",
+          "Harmony",
+          "Problem"
+        ],
+        "answer": "Problem",
+        "explanation": "Option A: Triumph means victory or great success. Option B: Celebration means an event of joy or praise. Option C: Harmony means agreement or pleasant combination. Option D: Problem means a difficulty needing solution. **Option D** correctly applies: 'Problem' is closest in meaning to 'Conundrum' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 14,
+        "question": "Select the synonym of **Loathe**.",
+        "options": [
+          "Accept",
+          "Like",
+          "Hate",
+          "Love"
+        ],
+        "answer": "Hate",
+        "explanation": "Option A: Accept means to receive or agree to. Option B: Like means to enjoy or feel fondness for. Option C: Hate means to dislike intensely. Option D: Love means strong affection. **Option C** correctly applies: 'Hate' is closest in meaning to 'Loathe' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 13,
+        "question": "Select the correct synonym for **Abate**.",
+        "options": [
+          "Moderate",
+          "Increase",
+          "Evil",
+          "Honest"
+        ],
+        "answer": "Moderate",
+        "explanation": "Option A: Moderate means to reduce or make less extreme. Option B: Increase means to become larger or greater. Option C: Evil means morally bad. Option D: Honest means truthful and fair. **Option A** correctly applies: 'Moderate' is closest in meaning to 'Abate' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 12,
+        "question": "Select the synonym of **Abstruse**:",
+        "options": [
+          "Difficult",
+          "Obvious",
+          "Simple",
+          "Clear"
+        ],
+        "answer": "Difficult",
+        "explanation": "Option A: Difficult means not easy. Option B: Obvious means easy to see or understand. Option C: Simple means easy or uncomplicated. Option D: Clear means easy to understand. **Option A** correctly applies: 'Difficult' is closest in meaning to 'Abstruse' in the given context.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 11,
+        "question": "Select the synonym of **Deteriorate**:",
+        "options": [
+          "Grow",
+          "Worsen",
+          "Revive",
+          "Improve"
+        ],
+        "answer": "Worsen",
+        "explanation": "Option A: Grow means to increase or develop. Option B: Worsen means to become worse. Option C: Revive means to restore life, energy, or activity. Option D: Improve means to become better. **Option B** correctly applies: 'Worsen' is closest in meaning to 'Deteriorate' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 10,
+        "question": "Select the correct Synonym of **OBLITERATE**:",
+        "options": [
+          "Create",
+          "Alter",
+          "Hide",
+          "Destroy"
+        ],
+        "answer": "Destroy",
+        "explanation": "Option A: Create means to make or produce. Option B: Alter means to change. Option C: Hide means to keep out of sight. Option D: Destroy means to ruin completely. **Option D** correctly applies: 'Destroy' is closest in meaning to 'OBLITERATE' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 9,
+        "question": "Select the synonym of **Cacophony**.",
+        "options": [
+          "Harmony",
+          "Discord",
+          "Order",
+          "Silence"
+        ],
+        "answer": "Discord",
+        "explanation": "Option A: Harmony means agreement or pleasant combination. Option B: Discord means disagreement or harsh noise. Option C: Order means arrangement or command. Option D: Silence means absence of sound. **Option B** correctly applies: 'Discord' is closest in meaning to 'Cacophony' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 8,
+        "question": "Select the synonym of **Pinnacle**.",
+        "options": [
+          "Base",
+          "Decline",
+          "Bottom",
+          "Peak"
+        ],
+        "answer": "Peak",
+        "explanation": "Option A: Base means the lowest part or foundation. Option B: Decline means to become weaker or decrease. Option C: Bottom means the lowest point. Option D: Peak means the highest point. **Option D** correctly applies: 'Peak' is closest in meaning to 'Pinnacle' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 7,
+        "question": "Select the synonym of **Obsequious**.",
+        "options": [
+          "Defiant",
+          "Aggressive",
+          "Proud",
+          "Submissive"
+        ],
+        "answer": "Submissive",
+        "explanation": "Option A: Defiant means boldly resistant or disobedient. Option B: Aggressive means forceful or hostile. Option C: Proud means feeling self-respect or superiority. Option D: Submissive means ready to obey or yield. **Option D** correctly applies: 'Submissive' is closest in meaning to 'Obsequious' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 6,
+        "question": "Select the synonym of **Vigilant**.",
+        "options": [
+          "Inattentive",
+          "Sleepy",
+          "Alert",
+          "Careless"
+        ],
+        "answer": "Alert",
+        "explanation": "Option A: Inattentive means not paying attention. Option B: Sleepy means feeling ready to sleep. Option C: Alert means watchful and attentive. Option D: Careless means not taking enough care. **Option C** correctly applies: 'Alert' is closest in meaning to 'Vigilant' in the given context.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 5,
+        "question": "Select the correct Synonym of **EXASPERATE**.",
+        "options": [
+          "Distract",
+          "Inspire",
+          "Calm",
+          "Annoy"
+        ],
+        "answer": "Annoy",
+        "explanation": "Option A: Distract means to take attention away. Option B: Inspire means to encourage or fill with ideas. Option C: Calm means peaceful or not excited. Option D: Annoy means to irritate or make angry. **Option D** correctly applies: 'Annoy' is closest in meaning to 'EXASPERATE' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 4,
+        "question": "Select the synonym of **Diligent**.",
+        "options": [
+          "Idle",
+          "Careless",
+          "Indolent",
+          "Hardworking"
+        ],
+        "answer": "Hardworking",
+        "explanation": "Option A: Idle means not active or not working. Option B: Careless means not taking enough care. Option C: Indolent means lazy or avoiding effort. Option D: Hardworking means working with effort and dedication. **Option D** correctly applies: 'Hardworking' is closest in meaning to 'Diligent' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 3,
+        "question": "Select the synonym of **Reckless**.",
+        "options": [
+          "Prudent",
+          "Cautious",
+          "Careful",
+          "Rash"
+        ],
+        "answer": "Rash",
+        "explanation": "Option A: Prudent means wise and careful. Option B: Cautious means careful to avoid risk. Option C: Careful means taking proper attention. Option D: Rash means acting without proper thought. **Option D** correctly applies: 'Rash' is closest in meaning to 'Reckless' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 2,
+        "question": "Find the synonym of **Encumbrance**.",
+        "options": [
+          "Offend",
+          "Obstacle",
+          "Ignore",
+          "Disinterest"
+        ],
+        "answer": "Obstacle",
+        "explanation": "Option A: Offend means to upset or insult. Option B: Obstacle means something that blocks progress. Option C: Ignore means to pay no attention to. Option D: Disinterest means lack of interest. **Option B** correctly applies: 'Obstacle' is closest in meaning to 'Encumbrance' in the given context.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 1,
+        "question": "Select the correct Synonym of **ENERVATE**.",
+        "options": [
+          "Strengthen",
+          "Revive",
+          "Motivate",
+          "Exhaust"
+        ],
+        "answer": "Exhaust",
+        "explanation": "Option A: Strengthen means to make stronger. Option B: Revive means to restore life, energy, or activity. Option C: Motivate means to encourage someone to act. Option D: Exhaust means to drain strength or energy. **Option D** correctly applies: 'Exhaust' is closest in meaning to 'ENERVATE' in the given context.",
+        "answerKey": "D",
+        "answerIndex": 3
+      }
+    ]
+  }
+}

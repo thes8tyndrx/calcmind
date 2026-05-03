@@ -1,0 +1,415 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Homonym",
+    "category": "Vocabulary",
+    "totalQuestions": 29,
+    "questions": [
+      {
+        "id": 29,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The **<u>current</u>** situation is tense.",
+        "options": [
+          "Running",
+          "Electric flow",
+          "Present",
+          "Modern"
+        ],
+        "answer": "Present",
+        "explanation": "Option A: Running means moving quickly on foot or flowing. Option B: Electric flow means flow of electricity. Option C: Present means current or existing now. Option D: Modern means new or current in style. **Option C** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 28,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: He was given a **<u>light</u>** punishment.",
+        "options": [
+          "Heavy",
+          "Dark",
+          "Serious",
+          "Mild"
+        ],
+        "answer": "Mild",
+        "explanation": "Option A: Heavy means having much weight. Option B: Dark means without light. Option C: Serious means important or severe. Option D: Mild means not severe or strong. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 27,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: She went to the **<u>court</u>** to file a case.",
+        "options": [
+          "Ground",
+          "Law place",
+          "Yard",
+          "Field"
+        ],
+        "answer": "Law place",
+        "explanation": "Option A: Ground means land or basis. Option B: Law place means a place where legal cases are heard. Option C: Yard means an outdoor area. Option D: Field means an open area of land. **Option B** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 26,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The police seized the counterfeit **<u>notes</u>**.",
+        "options": [
+          "Letters",
+          "Music",
+          "Currency",
+          "Messages"
+        ],
+        "answer": "Currency",
+        "explanation": "Option A: Letters means written symbols or messages. Option B: Music means organized sound. Option C: Currency means money used in a country. Option D: Messages means communications. **Option C** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 25,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The guards will **<u>watch</u>** over the premises.",
+        "options": [
+          "Timepiece",
+          "Protect",
+          "Warn",
+          "Observe"
+        ],
+        "answer": "Protect",
+        "explanation": "Option A: Timepiece means a watch or clock. Option B: Protect means to keep safe. Option C: Warn means to alert about danger. Option D: Observe means to watch or notice. **Option B** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 24,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: They had a heated **<u>row</u>** last night.",
+        "options": [
+          "Argument",
+          "Line",
+          "Boat",
+          "Series"
+        ],
+        "answer": "Argument",
+        "explanation": "Option A: Argument means a disagreement or reasoning. Option B: Line means a row, mark, or sentence of words. Option C: Boat means a vessel for water travel. Option D: Series means a sequence of related things. **Option A** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 23,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: He gave her a **<u>cold shoulder</u>** at the party.",
+        "options": [
+          "Apology",
+          "Embrace",
+          "Complaint",
+          "Ignore"
+        ],
+        "answer": "Ignore",
+        "explanation": "Option A: Apology means an expression of regret. Option B: Embrace means a hug or acceptance. Option C: Complaint means a statement of dissatisfaction. Option D: Ignore means to pay no attention to. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 22,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: This **<u>case</u>** calls for immediate action.",
+        "options": [
+          "Legal matter",
+          "Suitcase",
+          "Example",
+          "Scenario"
+        ],
+        "answer": "Legal matter",
+        "explanation": "Option A: Legal matter means a case or issue involving law. Option B: Suitcase means a case for carrying clothes. Option C: Example means a representative instance. Option D: Scenario means a possible situation. **Option A** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 21,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The old man could barely **<u>hear</u>**.",
+        "options": [
+          "Hair",
+          "Listen",
+          "Smell",
+          "See"
+        ],
+        "answer": "Listen",
+        "explanation": "Option A: Hair means strands growing from skin. Option B: Listen means to hear attentively. Option C: Smell means to perceive odour. Option D: See means to perceive by sight. **Option B** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 20,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The king sat on a **<u>throne</u>**.",
+        "options": [
+          "Crown",
+          "Chair",
+          "Rule",
+          "Sword"
+        ],
+        "answer": "Chair",
+        "explanation": "Option A: Crown means a royal headpiece. Option B: Chair means a seat or to preside over a meeting. Option C: Rule means to govern or control. Option D: Sword means a bladed weapon. **Option B** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 19,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The judge will **<u>pass</u>** the verdict.",
+        "options": [
+          "Cross",
+          "Fail",
+          "Shift",
+          "Announce"
+        ],
+        "answer": "Announce",
+        "explanation": "Option A: Cross means to go across or become annoyed. Option B: Fail means not succeed. Option C: Shift means to move or change. Option D: Announce means to declare publicly. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 18,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: He will **<u>bat</u>** for his friend's innocence.",
+        "options": [
+          "Criticize",
+          "Play cricket",
+          "Hit",
+          "Support"
+        ],
+        "answer": "Support",
+        "explanation": "Option A: Criticize means to point out faults. Option B: Play cricket is a vocabulary option to be matched with the required meaning. Option C: Hit means to strike. Option D: Support is a vocabulary option to be matched with the required meaning. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 17,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The opposition's **<u>motion</u>** was rejected.",
+        "options": [
+          "Commotion",
+          "Emotion",
+          "Movement",
+          "Proposal"
+        ],
+        "answer": "Proposal",
+        "explanation": "Option A: Commotion means noise and confusion. Option B: Emotion means feeling. Option C: Movement means motion or campaign. Option D: Proposal means a suggestion or formal plan. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 16,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: He could not **<u>bank</u>** on unreliable friends.",
+        "options": [
+          "Deposit",
+          "Borrow",
+          "Rely",
+          "Dismiss"
+        ],
+        "answer": "Rely",
+        "explanation": "Option A: Deposit means to put money in a bank. Option B: Borrow means to take temporarily. Option C: Rely means to depend on. Option D: Dismiss means to reject or send away. **Option C** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 15,
+        "question": "What type of pronoun is the word **<u>This</u>** in the sentence, \"**<u>This</u>** is why habits are the compound interest of self-improvement.\"",
+        "options": [
+          "Demonstrative pronoun",
+          "Reflexive pronoun",
+          "Abstract pronoun",
+          "Subjective pronoun"
+        ],
+        "answer": "Demonstrative pronoun",
+        "explanation": "Option A: Demonstrative pronoun is a vocabulary option to be matched with the required meaning. Option B: Reflexive pronoun is a vocabulary option to be matched with the required meaning. Option C: Abstract pronoun is a vocabulary option to be matched with the required meaning. Option D: Subjective pronoun is a vocabulary option to be matched with the required meaning. **Option A** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 14,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: His name has been **<u>cleared</u>** of all charges.",
+        "options": [
+          "Shifted",
+          "Removed",
+          "Made clean",
+          "Exonerated"
+        ],
+        "answer": "Exonerated",
+        "explanation": "Option A: Shifted means moved or changed position. Option B: Removed means taken away. Option C: Made clean means cleaned or purified. Option D: Exonerated means cleared from blame. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 13,
+        "question": "Choose the sentence that uses a homonym of the underlined word: He bought a ticket for the evening **<u>show</u>**.",
+        "options": [
+          "That was the best stage show I've seen.",
+          "The magic show was amazing",
+          "We're attending the school show tomorrow.",
+          "The farmers decided to show their livestock."
+        ],
+        "answer": "The farmers decided to show their livestock.",
+        "explanation": "Option A: This option states: That was the best stage show I've seen. Option B: This option expresses: The magic show was amazing. Option C: This option expresses: We're attending the school show tomorrow. Option D: This option expresses: The farmers decided to show their livestock. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 12,
+        "question": "Choose the sentence that uses the homonym of the underlined word: The **<u>wind</u>** howled through the trees.",
+        "options": [
+          "The wind was cold and sharp at night.",
+          "The wind knocked over the garbage can.",
+          "A sudden gust of wind blew her hat away.",
+          "He had to wind the old clock manually."
+        ],
+        "answer": "He had to wind the old clock manually.",
+        "explanation": "Option A: This option states: The wind was cold and sharp at night. Option B: This option expresses: The wind knocked over the garbage can. Option C: This option states: A sudden gust of wind blew her hat away. Option D: This option states: He had to wind the old clock manually. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 11,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The new CEO will **<u>chair</u>** the meeting.",
+        "options": [
+          "Observe",
+          "Preside over",
+          "Cancel",
+          "Furniture"
+        ],
+        "answer": "Preside over",
+        "explanation": "Option A: Observe means to watch or notice. Option B: Preside over means to lead or conduct a meeting. Option C: Cancel means to call off. Option D: Furniture means movable items like chairs and tables. **Option B** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 10,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The diver reached the sea **<u>bed</u>**.",
+        "options": [
+          "Mattress",
+          "Bottom",
+          "Rest",
+          "Base"
+        ],
+        "answer": "Bottom",
+        "explanation": "Option A: Mattress means a bed cushion. Option B: Bottom means the lowest point. Option C: Rest means relaxation or remaining part. Option D: Base means the lowest part or foundation. **Option B** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 9,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The company refused to **<u>back</u>** the project.",
+        "options": [
+          "Finish",
+          "Support",
+          "Leave",
+          "Pack"
+        ],
+        "answer": "Support",
+        "explanation": "Option A: Finish means to complete. Option B: Support is a vocabulary option to be matched with the required meaning. Option C: Leave means to go away from. Option D: Pack means to put things together for carrying. **Option B** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 8,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: He was **<u>charged</u>** with theft.",
+        "options": [
+          "Energized",
+          "Filled",
+          "Ordered",
+          "Accused"
+        ],
+        "answer": "Accused",
+        "explanation": "Option A: Energized means given energy. Option B: Filled means made full. Option C: Ordered means commanded or arranged. Option D: Accused means charged with wrongdoing. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 7,
+        "question": "Choose the sentence that uses a homonym of the underlined word: The **<u>lead</u>** pipes were replaced due to safety concerns.",
+        "options": [
+          "The general will lead the troops into battle.",
+          "Exposure to lead can cause health issues in children.",
+          "The old house still had lead in its plumbing system.",
+          "They tested the soil for traces of lead."
+        ],
+        "answer": "The general will lead the troops into battle.",
+        "explanation": "Option A: This option states: The general will lead the troops into battle. Option B: This option states: Exposure to lead can cause health issues in children. Option C: This option states: The old house still had lead in its plumbing system. Option D: This option states: They tested the soil for traces of lead. **Option A** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 6,
+        "question": "Choose the sentence that uses a homonym of the underlined word: He had to **<u>tear</u>** the envelope to open it.",
+        "options": [
+          "The comedian caused the audience to tear up with laughter.",
+          "He found a small tear in the corner.",
+          "Please don't tear the paper again.",
+          "She used tape to fix the tear on the bag."
+        ],
+        "answer": "The comedian caused the audience to tear up with laughter.",
+        "explanation": "Option A: This option states: The comedian caused the audience to tear up with laughter. Option B: This option states: He found a small tear in the corner. Option C: This option expresses: Please don't tear the paper again. Option D: This option states: She used tape to fix the tear on the bag. **Option A** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 5,
+        "question": "Select the most appropriate homonym of the highlighted word/phrase in the sentence: The old fort was taken by **<u>storm</u>**.",
+        "options": [
+          "Assault",
+          "Tornado",
+          "Rain",
+          "Breeze"
+        ],
+        "answer": "Assault",
+        "explanation": "Option A: Assault means a violent attack. Option B: Tornado means a violently rotating storm. Option C: Rain means water falling from clouds. Option D: Breeze means a light wind. **Option A** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 4,
+        "question": "Choose the sentence that uses a homonym of the underlined word: The judge will **<u>sentence</u>** the accused tomorrow.",
+        "options": [
+          "He received a ten-year sentence for the crime.",
+          "The lawyer defended the sentence fiercely.",
+          "The courtroom fell silent during the sentence.",
+          "She wrote a beautiful sentence in her diary."
+        ],
+        "answer": "She wrote a beautiful sentence in her diary.",
+        "explanation": "Option A: This option states: He received a ten-year sentence for the crime. Option B: This option expresses: The lawyer defended the sentence fiercely. Option C: This option expresses: The courtroom fell silent during the sentence. Option D: This option states: She wrote a beautiful sentence in her diary. **Option D** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 3,
+        "question": "Choose the sentence that uses a homonym of the underlined word: Please **<u>close</u>** the window before leaving.",
+        "options": [
+          "He forgot to close the file before shutting the laptop.",
+          "I always close the curtains at night.",
+          "Their bond grew close over the years.",
+          "Make sure to close the back door too."
+        ],
+        "answer": "Their bond grew close over the years.",
+        "explanation": "Option A: This option states: He forgot to close the file before shutting the laptop. Option B: This option expresses: I always close the curtains at night. Option C: This option expresses: Their bond grew close over the years. Option D: This option states: Make sure to close the back door too. **Option C** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 2,
+        "question": "Choose the sentence that uses a homonym of the underlined word: He left the **<u>watch</u>** on the nightstand before sleeping.",
+        "options": [
+          "The guard was assigned to night watch duty.",
+          "The watch was ticking softly beside the lamp.",
+          "He set his digital watch to the right time.",
+          "She bought a new gold watch for her husband."
+        ],
+        "answer": "The guard was assigned to night watch duty.",
+        "explanation": "Option A: This option states: The guard was assigned to night watch duty. Option B: This option states: The watch was ticking softly beside the lamp. Option C: This option states: He set his digital watch to the right time. Option D: This option states: She bought a new gold watch for her husband. **Option A** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 1,
+        "question": "Which of the following is an example of onomatopoeia?",
+        "options": [
+          "Murmur",
+          "Silence",
+          "Baloon",
+          "Horrible"
+        ],
+        "answer": "Murmur",
+        "explanation": "Option A: Murmur means a soft low sound. Option B: Silence means absence of sound. Option C: Baloon means a misspelling of balloon. Option D: Horrible means very unpleasant. **Option A** correctly applies: it gives the intended alternate meaning or correct homonym usage in the sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      }
+    ]
+  }
+}

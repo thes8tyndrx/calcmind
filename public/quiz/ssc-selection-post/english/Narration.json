@@ -1,0 +1,863 @@
+{
+  "quiz": {
+    "title": "Narration - SSC Selection Post XIII 2025",
+    "category": "Grammar",
+    "totalQuestions": 53,
+    "questions": [
+      {
+        "id": 53,
+        "sourceQuestionNo": 360,
+        "question": "Choose the correct indirect speech form of the following sentence. Nandini said to Minal, \"What shall I give you on your birthday next year?\"",
+        "options": [
+          "Nandini asked Minal what she would give her on her birthday the following year.",
+          "Nandini asked Minal what she would give her on her birthday the previous year.",
+          "Nandini asked Minal what she should give her on her birthday next year.",
+          "Nandini requested Minal what she should give her on her birthday the coming year."
+        ],
+        "answer": "Nandini asked Minal what she would give her on her birthday the following year.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Nandini asked Minal what she would give her on her birthday the following year. fits the requirement of the question. Option B: Nandini asked Minal what she would give her on her birthday the previous year. does not best fit the requirement of the question. Option C: Nandini asked Minal what she should give her on her birthday next year. does not best fit the requirement of the question. Option D: Nandini requested Minal what she should give her on her birthday the coming year. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 52,
+        "sourceQuestionNo": 359,
+        "question": "Convert the following indirect sentence into direct speech. Choose the most accurate option. The child exclaimed with joy that he had won the race.",
+        "options": [
+          "The child said, \"I have won the race!\"",
+          "The child exclaimed, \"I have won the race!\"",
+          "The child said, \"Hurrah! I have won the race!\"",
+          "The child shouted, \"Winning the race!\""
+        ],
+        "answer": "The child exclaimed, \"I have won the race!\"",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The child said, \"I have won the race!\" does not best fit the requirement of the question. Option B: The child exclaimed, \"I have won the race!\" fits the requirement of the question. Option C: The child said, \"Hurrah! I have won the race!\" does not best fit the requirement of the question. Option D: The child shouted, \"Winning the race!\" does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 51,
+        "sourceQuestionNo": 358,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. They said that they were watching a movie.",
+        "options": [
+          "They said, \"We are watching a movie.\"",
+          "They said, \"They are watching a movie.\"",
+          "They said, \"We had watched a movie.\"",
+          "They said, \"We were watching a movie.\""
+        ],
+        "answer": "They said, \"We are watching a movie.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: They said, \"We are watching a movie.\" fits the requirement of the question. Option B: They said, \"They are watching a movie.\" does not best fit the requirement of the question. Option C: They said, \"We had watched a movie.\" does not best fit the requirement of the question. Option D: They said, \"We were watching a movie.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 50,
+        "sourceQuestionNo": 357,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, \"I have completed the project.\"",
+        "options": [
+          "He said that he had completed the project.",
+          "He said that he has completed the project.",
+          "He said that he completed the project.",
+          "He said he completes the project."
+        ],
+        "answer": "He said that he had completed the project.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: He said that he had completed the project. fits the requirement of the question. Option B: He said that he has completed the project. does not best fit the requirement of the question. Option C: He said that he completed the project. does not best fit the requirement of the question. Option D: He said he completes the project. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 49,
+        "sourceQuestionNo": 356,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The officer ordered the soldiers to march forward.",
+        "options": [
+          "The officer said to the soldiers, \"March forward.\"",
+          "The officer asked the soldiers, \"You must march now.\"",
+          "The officer asked, \"Would you march forward?\"",
+          "The officer order, \"Marching forward now!\""
+        ],
+        "answer": "The officer said to the soldiers, \"March forward.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The officer said to the soldiers, \"March forward.\" fits the requirement of the question. Option B: The officer asked the soldiers, \"You must march now.\" does not best fit the requirement of the question. Option C: The officer asked, \"Would you march forward?\" does not best fit the requirement of the question. Option D: The officer order, \"Marching forward now!\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 48,
+        "sourceQuestionNo": 355,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that she was feeling better after rest.",
+        "options": [
+          "She said, \"I am feeling better after rest.\"",
+          "She said, \"I felt better after rest.\"",
+          "She said, \"she had been feeling better after rest.\"",
+          "She said, \"I will feel better after rest.\""
+        ],
+        "answer": "She said, \"I am feeling better after rest.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She said, \"I am feeling better after rest.\" fits the requirement of the question. Option B: She said, \"I felt better after rest.\" does not best fit the requirement of the question. Option C: She said, \"she had been feeling better after rest.\" does not best fit the requirement of the question. Option D: She said, \"I will feel better after rest.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 47,
+        "sourceQuestionNo": 354,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. Ravi said, \"I may join the conference next week.\"",
+        "options": [
+          "Ravi said that he might join the conference the following week.",
+          "Ravi said he may join the conference next week.",
+          "Ravi said he would join the conference next week.",
+          "Ravi told that he might attend the conference."
+        ],
+        "answer": "Ravi said that he might join the conference the following week.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Ravi said that he might join the conference the following week. fits the requirement of the question. Option B: Ravi said he may join the conference next week. does not best fit the requirement of the question. Option C: Ravi said he would join the conference next week. does not best fit the requirement of the question. Option D: Ravi told that he might attend the conference. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 46,
+        "sourceQuestionNo": 353,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said, \"I am reading a book now.\"",
+        "options": [
+          "He said that he is reading a book then.",
+          "He said that he was reading a book now.",
+          "He said that he was reading a book then.",
+          "He said that he had read a book then."
+        ],
+        "answer": "He said that he was reading a book then.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: He said that he is reading a book then. does not best fit the requirement of the question. Option B: He said that he was reading a book now. does not best fit the requirement of the question. Option C: He said that he was reading a book then. fits the requirement of the question. Option D: He said that he had read a book then. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 45,
+        "sourceQuestionNo": 352,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He asked me if I had completed the assignment.",
+        "options": [
+          "He said, \"Have you completed the assignment?\"",
+          "He ordered, \"Did you completed the assignment?\"",
+          "He said, \"Have I completed the assignment?\"",
+          "He asked, \"Had I completed the assignment?\""
+        ],
+        "answer": "He said, \"Have you completed the assignment?\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: He said, \"Have you completed the assignment?\" fits the requirement of the question. Option B: He ordered, \"Did you completed the assignment?\" does not best fit the requirement of the question. Option C: He said, \"Have I completed the assignment?\" does not best fit the requirement of the question. Option D: He asked, \"Had I completed the assignment?\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 44,
+        "sourceQuestionNo": 351,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He said that he was feeling unwell.",
+        "options": [
+          "He said, \"I am feeling unwell.\"",
+          "He said, \"I will feel unwell.\"",
+          "He said, \"I have felt unwell.\"",
+          "He said, \"I felt unwell.\""
+        ],
+        "answer": "He said, \"I am feeling unwell.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: He said, \"I am feeling unwell.\" fits the requirement of the question. Option B: He said, \"I will feel unwell.\" does not best fit the requirement of the question. Option C: He said, \"I have felt unwell.\" does not best fit the requirement of the question. Option D: He said, \"I felt unwell.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 43,
+        "sourceQuestionNo": 350,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. The doctor said, \"Take the medicine after meals.\"",
+        "options": [
+          "The doctor advised to take the medicine after meals.",
+          "The doctor said to take medicine after dinner.",
+          "The doctor asked me to take the tablet.",
+          "The doctor requested take pills after meals."
+        ],
+        "answer": "The doctor advised to take the medicine after meals.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The doctor advised to take the medicine after meals. fits the requirement of the question. Option B: The doctor said to take medicine after dinner. does not best fit the requirement of the question. Option C: The doctor asked me to take the tablet. does not best fit the requirement of the question. Option D: The doctor requested take pills after meals. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 42,
+        "sourceQuestionNo": 349,
+        "question": "Na corresponding indirect speech. She said, \"I will help you with your homework.\"",
+        "options": [
+          "She said that she will help me.",
+          "She said that she would help me with my homework.",
+          "She said she will be helping with homework.",
+          "She said she would helping my homework."
+        ],
+        "answer": "She said that she would help me with my homework.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: She said that she will help me. does not best fit the requirement of the question. Option B: She said that she would help me with my homework. fits the requirement of the question. Option C: She said she will be helping with homework. does not best fit the requirement of the question. Option D: She said she would helping my homework. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 41,
+        "sourceQuestionNo": 348,
+        "question": "The policeman said, \"Don't worry. We'll find your stolen car. We'll leave no stone unturned.\" What does the phrase \"We'll leave no stone unturned\" mean in the policeman's statement?",
+        "options": [
+          "They will search everywhere thoroughly.",
+          "They will return the car immediately.",
+          "They will not investigate the case.",
+          "They will only search in a few places."
+        ],
+        "answer": "They will search everywhere thoroughly.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: They will search everywhere thoroughly. fits the requirement of the question. Option B: They will return the car immediately. does not best fit the requirement of the question. Option C: They will not investigate the case. does not best fit the requirement of the question. Option D: They will only search in a few places. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 40,
+        "sourceQuestionNo": 347,
+        "question": "Choose the option that will replace the error highlighted in bold. Catherine said she loved Heathcliff, however, she could not marry him because of his social standing.",
+        "options": [
+          "Because",
+          "But",
+          "Since",
+          "And"
+        ],
+        "answer": "But",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Because does not best fit the requirement of the question. Option B: But fits the requirement of the question. Option C: Since does not best fit the requirement of the question. Option D: And does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 39,
+        "sourceQuestionNo": 346,
+        "question": "Choose the correct indirect speech form of the following sentence. He said, \"Have you brought your original marksheets here with you?\"",
+        "options": [
+          "He asked me if I have taken my original marksheets here with me.",
+          "He asked me if I took my original marksheets there with me.",
+          "He asked me if I had taken my original marksheets there with me.",
+          "He asked me if I had taken my original marksheets there with them."
+        ],
+        "answer": "He asked me if I had taken my original marksheets there with me.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: He asked me if I have taken my original marksheets here with me. does not best fit the requirement of the question. Option B: He asked me if I took my original marksheets there with me. does not best fit the requirement of the question. Option C: He asked me if I had taken my original marksheets there with me. fits the requirement of the question. Option D: He asked me if I had taken my original marksheets there with them. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 38,
+        "sourceQuestionNo": 345,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She asked whether I was going to attend the seminar.",
+        "options": [
+          "She asked, \"Are you going to attend the seminar?\"",
+          "She said, \"You going to the seminar?\"",
+          "She asked, \"Will you be attending the seminar?\"",
+          "She said, \"Have you gone to the seminar?\""
+        ],
+        "answer": "She asked, \"Are you going to attend the seminar?\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She asked, \"Are you going to attend the seminar?\" fits the requirement of the question. Option B: She said, \"You going to the seminar?\" does not best fit the requirement of the question. Option C: She asked, \"Will you be attending the seminar?\" does not best fit the requirement of the question. Option D: She said, \"Have you gone to the seminar?\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 37,
+        "sourceQuestionNo": 344,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. Rita said that she could not attend the meeting because she was unwell.",
+        "options": [
+          "Rita said, \"I cannot attend the meeting because I am unwell.\"",
+          "Rita said, \"1 will not attend the meeting because I was unwell.\"",
+          "Rita said, \"I could not attend the meeting because I was unwell.\"",
+          "Rita said, \"She could not attend the meeting because she was unwell.\""
+        ],
+        "answer": "Rita said, \"I cannot attend the meeting because I am unwell.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Rita said, \"I cannot attend the meeting because I am unwell.\" fits the requirement of the question. Option B: Rita said, \"1 will not attend the meeting because I was unwell.\" does not best fit the requirement of the question. Option C: Rita said, \"I could not attend the meeting because I was unwell.\" does not best fit the requirement of the question. Option D: Rita said, \"She could not attend the meeting because she was unwell.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 36,
+        "sourceQuestionNo": 343,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. Mohan said, \"I saw him yesterday.\"",
+        "options": [
+          "Mohan said that he saw him yesterday.",
+          "Mohan said that he had seen him the previous day.",
+          "Mohan said that he see him yesterday.",
+          "Mohan said that he had saw him yesterday."
+        ],
+        "answer": "Mohan said that he had seen him the previous day.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Mohan said that he saw him yesterday. does not best fit the requirement of the question. Option B: Mohan said that he had seen him the previous day. fits the requirement of the question. Option C: Mohan said that he see him yesterday. does not best fit the requirement of the question. Option D: Mohan said that he had saw him yesterday. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 35,
+        "sourceQuestionNo": 342,
+        "question": "Convert the following indirect sentence into direct speech. Choose the most accurate option. The coach said that the players must arrive early.",
+        "options": [
+          "The coach said, \"The players must arrive early.\"",
+          "The coach said, \"They should arrive early.\"",
+          "The coach said, \"They are arriving early.\"",
+          "The coach said, \"The players will arrive early.\""
+        ],
+        "answer": "The coach said, \"The players must arrive early.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The coach said, \"The players must arrive early.\" fits the requirement of the question. Option B: The coach said, \"They should arrive early.\" does not best fit the requirement of the question. Option C: The coach said, \"They are arriving early.\" does not best fit the requirement of the question. Option D: The coach said, \"The players will arrive early.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 34,
+        "sourceQuestionNo": 341,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. Rohan said that he would visit his grandmother the next day.",
+        "options": [
+          "Rohan said, \"I will visit my grandmother tomorrow.\"",
+          "Rohan said, \"He would visit his grandmother the next day.\"",
+          "Rohan said, \"I would visit my grandmother the next day.\"",
+          "Rohan said, \"I will visit his grandmother tomorrow.\""
+        ],
+        "answer": "Rohan said, \"I will visit my grandmother tomorrow.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Rohan said, \"I will visit my grandmother tomorrow.\" fits the requirement of the question. Option B: Rohan said, \"He would visit his grandmother the next day.\" does not best fit the requirement of the question. Option C: Rohan said, \"I would visit my grandmother the next day.\" does not best fit the requirement of the question. Option D: Rohan said, \"I will visit his grandmother tomorrow.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 33,
+        "sourceQuestionNo": 340,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect. She said, \"I must leave now to catch the bus.\"",
+        "options": [
+          "She said that she had to leave then to catch the bus.",
+          "She said that she must leave now.",
+          "She said that she would have left then.",
+          "She said she must had left to catch bus."
+        ],
+        "answer": "She said that she had to leave then to catch the bus.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She said that she had to leave then to catch the bus. fits the requirement of the question. Option B: She said that she must leave now. does not best fit the requirement of the question. Option C: She said that she would have left then. does not best fit the requirement of the question. Option D: She said she must had left to catch bus. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 32,
+        "sourceQuestionNo": 339,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. She said, \"Are you coming to the party?\"",
+        "options": [
+          "She asked whether I was coming to the party.",
+          "She asked if I have been coming to the party.",
+          "She asked was I coming to the party.",
+          "She asked that I come to the party."
+        ],
+        "answer": "She asked whether I was coming to the party.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She asked whether I was coming to the party. fits the requirement of the question. Option B: She asked if I have been coming to the party. does not best fit the requirement of the question. Option C: She asked was I coming to the party. does not best fit the requirement of the question. Option D: She asked that I come to the party. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 31,
+        "sourceQuestionNo": 338,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She requested me to help her with the form.",
+        "options": [
+          "She said, \"Please help me with the form.\"",
+          "She asked, \"Can she help me fill this form?\"",
+          "She told me, \"Help with the form.\"",
+          "She asked, \"Could you fill in the form?\""
+        ],
+        "answer": "She said, \"Please help me with the form.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She said, \"Please help me with the form.\" fits the requirement of the question. Option B: She asked, \"Can she help me fill this form?\" does not best fit the requirement of the question. Option C: She told me, \"Help with the form.\" does not best fit the requirement of the question. Option D: She asked, \"Could you fill in the form?\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 30,
+        "sourceQuestionNo": 337,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. My sister said that she was going to the market.",
+        "options": [
+          "My sister said, \"I am going to the market.\"",
+          "My sister said, \"She is going to the market.\"",
+          "My sister said, \"She was going to the market.\"",
+          "My sister said, \"I go to the market.\""
+        ],
+        "answer": "My sister said, \"I am going to the market.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: My sister said, \"I am going to the market.\" fits the requirement of the question. Option B: My sister said, \"She is going to the market.\" does not best fit the requirement of the question. Option C: My sister said, \"She was going to the market.\" does not best fit the requirement of the question. Option D: My sister said, \"I go to the market.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 29,
+        "sourceQuestionNo": 336,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. My friend said, \"I can help you with your project.\"",
+        "options": [
+          "My friend said that he could help me with my project.",
+          "My friend said that he can help me.",
+          "My friend said he would help in project.",
+          "My friend said that he may help with project."
+        ],
+        "answer": "My friend said that he could help me with my project.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: My friend said that he could help me with my project. fits the requirement of the question. Option B: My friend said that he can help me. does not best fit the requirement of the question. Option C: My friend said he would help in project. does not best fit the requirement of the question. Option D: My friend said that he may help with project. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 28,
+        "sourceQuestionNo": 335,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. He said to me, \"Please wait here till I come back.\"",
+        "options": [
+          "He requested me to wait there till he came back.",
+          "He told me to please wait there.",
+          "He asked that I waited till he comes back.",
+          "He asked I should wait until he comes."
+        ],
+        "answer": "He requested me to wait there till he came back.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: He requested me to wait there till he came back. fits the requirement of the question. Option B: He told me to please wait there. does not best fit the requirement of the question. Option C: He asked that I waited till he comes back. does not best fit the requirement of the question. Option D: He asked I should wait until he comes. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 27,
+        "sourceQuestionNo": 334,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech: The analyst commented that had the model incorporated volatility, projections would have been accurate.",
+        "options": [
+          "Had the model incorporated volatility, projections would have been accurate,\" commented the analyst.",
+          "Projections can never be accurate,\" said the analyst.",
+          "Why use volatility in models at all?\" asked the analyst.",
+          "We removed volatility to simplify projections,\" said the analyst."
+        ],
+        "answer": "Had the model incorporated volatility, projections would have been accurate,\" commented the analyst.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: \"Had the model incorporated volatility, projections would have been accurate,\" commented the analyst. fits the requirement of the question. Option B: \"Projections can never be accurate,\" said the analyst. does not best fit the requirement of the question. Option C: \"Why use volatility in models at all?\" asked the analyst. does not best fit the requirement of the question. Option D: \"We removed volatility to simplify projections,\" said the analyst. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 26,
+        "sourceQuestionNo": 333,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech: The officer asserted that the operation could not have succeeded without local support.",
+        "options": [
+          "The operation could not have succeeded without local support,\" asserted the officer.",
+          "The operation succeeded without local support,\" said the officer.",
+          "Local support must have failed the operation,\" claimed the officer.",
+          "Without support, the operation will not succeed,\" said the officer."
+        ],
+        "answer": "The operation could not have succeeded without local support,\" asserted the officer.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: \"The operation could not have succeeded without local support,\" asserted the officer. fits the requirement of the question. Option B: \"The operation succeeded without local support,\" said the officer. does not best fit the requirement of the question. Option C: \"Local support must have failed the operation,\" claimed the officer. does not best fit the requirement of the question. Option D: \"Without support, the operation will not succeed,\" said the officer. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 25,
+        "sourceQuestionNo": 332,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech: He told us that he might join us later that evening.",
+        "options": [
+          "He said, \"I may join you later this evening.\"",
+          "He said, \"I might join you later this evening.\"",
+          "He said, \"I should join you later that evening.\"",
+          "He said, \"I could have joined you that evening.\""
+        ],
+        "answer": "He said, \"I might join you later this evening.\"",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: He said, \"I may join you later this evening.\" does not best fit the requirement of the question. Option B: He said, \"I might join you later this evening.\" fits the requirement of the question. Option C: He said, \"I should join you later that evening.\" does not best fit the requirement of the question. Option D: He said, \"I could have joined you that evening.\" does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 24,
+        "sourceQuestionNo": 331,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. \"Could it be that we overlooked a critical variable during our preliminary analysis?\" she speculated.",
+        "options": [
+          "She speculated if it is could be that they had overlooked critical variable during their preliminary analysis.",
+          "She speculated whether they had overlooked a critical variable during their preliminary analysis.",
+          "She asked could it be they forgot a critical variable in analysis.",
+          "She speculated about the possibility of forgetting a variable critically."
+        ],
+        "answer": "She speculated whether they had overlooked a critical variable during their preliminary analysis.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: She speculated if it is could be that they had overlooked critical variable during their preliminary analysis. does not best fit the requirement of the question. Option B: She speculated whether they had overlooked a critical variable during their preliminary analysis. fits the requirement of the question. Option C: She asked could it be they forgot a critical variable in analysis. does not best fit the requirement of the question. Option D: She speculated about the possibility of forgetting a variable critically. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 23,
+        "sourceQuestionNo": 330,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The teacher advised the student not to waste time.",
+        "options": [
+          "The teacher said, \"Do not waste time.\"",
+          "The teacher told the student, \"You must study.\"",
+          "The teacher order, \"Waste no time.\"",
+          "The teacher said, \"You should not waste time.\""
+        ],
+        "answer": "The teacher said, \"Do not waste time.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The teacher said, \"Do not waste time.\" fits the requirement of the question. Option B: The teacher told the student, \"You must study.\" does not best fit the requirement of the question. Option C: The teacher order, \"Waste no time.\" does not best fit the requirement of the question. Option D: The teacher said, \"You should not waste time.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 22,
+        "sourceQuestionNo": 329,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that she would call me later.",
+        "options": [
+          "She said, \"I will call you later.\"",
+          "She said, \"I shall call you late.\"",
+          "She said, \"I would call you later.\"",
+          "She said, \"She would call me later.\""
+        ],
+        "answer": "She said, \"I will call you later.\"",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She said, \"I will call you later.\" fits the requirement of the question. Option B: She said, \"I shall call you late.\" does not best fit the requirement of the question. Option C: She said, \"I shall call you late.\" does not best fit the requirement of the question. Option D: She said, \"She would call me later.\" does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration",
+        "needsReview": true,
+        "issue": "Original OCR/source options B and C became duplicate after correcting OCR `|/!` to `I`; option C was replaced with a relevant distractor for app safety. Spot-check recommended."
+      },
+      {
+        "id": 21,
+        "sourceQuestionNo": 328,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. The manager said, \"When will the report be ready?\"",
+        "options": [
+          "The manager asked when the report would be ready.",
+          "The manager told when report will be ready.",
+          "The manager asked if report was ready.",
+          "The manager questioned that when the report will be ready."
+        ],
+        "answer": "The manager asked when the report would be ready.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The manager asked when the report would be ready. fits the requirement of the question. Option B: The manager told when report will be ready. does not best fit the requirement of the question. Option C: The manager asked if report was ready. does not best fit the requirement of the question. Option D: The manager questioned that when the report will be ready. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 20,
+        "sourceQuestionNo": 327,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. Ram said to his sister, \"Have you completed your assignment?\"",
+        "options": [
+          "Ram asked his sister whether she had completed her assignment.",
+          "Ram asked his sister has she completed her assignment.",
+          "Ram asked his sister if she has completed her work.",
+          "Ram said to his sister if she completed the work."
+        ],
+        "answer": "Ram asked his sister whether she had completed her assignment.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Ram asked his sister whether she had completed her assignment. fits the requirement of the question. Option B: Ram asked his sister has she completed her assignment. does not best fit the requirement of the question. Option C: Ram asked his sister if she has completed her work. does not best fit the requirement of the question. Option D: Ram said to his sister if she completed the work. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 19,
+        "sourceQuestionNo": 326,
+        "question": "Choose the correct indirect speech form of the following sentence. Rabi said to Mohini, \"Let's go to the market and purchase some vegetables.\"",
+        "options": [
+          "Rabi suggested Mohini to go to the market and purchase some vegetables.",
+          "Rabi requested Mohini to go to the market and purchase some vegetables.",
+          "Rabi urged Mohini to went to the market and purchased some vegetables.",
+          "Rabi told Mohini to have gone to the market and have purchased some vegetables."
+        ],
+        "answer": "Rabi suggested Mohini to go to the market and purchase some vegetables.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Rabi suggested Mohini to go to the market and purchase some vegetables. fits the requirement of the question. Option B: Rabi requested Mohini to go to the market and purchase some vegetables. does not best fit the requirement of the question. Option C: Rabi urged Mohini to went to the market and purchased some vegetables. does not best fit the requirement of the question. Option D: Rabi told Mohini to have gone to the market and have purchased some vegetables. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 18,
+        "sourceQuestionNo": 325,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She said that she had finished her work.",
+        "options": [
+          "She said, \"She have finished my work.\"",
+          "She said, \"I have finished my work.\"",
+          "She said, \"I am finished my work.\"",
+          "She said, \"I was finishing my work.\""
+        ],
+        "answer": "She said, \"I have finished my work.\"",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: She said, \"She have finished my work.\" does not best fit the requirement of the question. Option B: She said, \"I have finished my work.\" fits the requirement of the question. Option C: She said, \"I am finished my work.\" does not best fit the requirement of the question. Option D: She said, \"I was finishing my work.\" does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 17,
+        "sourceQuestionNo": 324,
+        "question": "its corresponding direct speech. He told the volunteers that once the list was finalized, no further changes could be made under any condition.",
+        "options": [
+          "There will be no changes allowed after finalizing the list,\" he told the volunteers.",
+          "Once we finalize the list, you must not make any changes,\" he said.",
+          "No changes can be made once the list is finalized-under any condition,\" he said.",
+          "Even after finalizing the list, changes might be accepted in rare cases,\" he said."
+        ],
+        "answer": "No changes can be made once the list is finalized-under any condition,\" he said.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: \"There will be no changes allowed after finalizing the list,\" he told the volunteers. does not best fit the requirement of the question. Option B: \"Once we finalize the list, you must not make any changes,\" he said. does not best fit the requirement of the question. Option C: \"No changes can be made once the list is finalized-under any condition,\" he said. fits the requirement of the question. Option D: \"Even after finalizing the list, changes might be accepted in rare cases,\" he said. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 16,
+        "sourceQuestionNo": 323,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. \"\\f you had followed my advice, you would not be in this mess now,\" she said angrily.",
+        "options": [
+          "She said angrily that if I had followed her advice, I wouldn't be in this mess now.",
+          "She angrily said if I followed her advice, I would not be in this mess.",
+          "She angrily said that if I had followed her advice, I would not be in that mess then.",
+          "She angrily said that if I had followed her advice, I would not have been in this mess."
+        ],
+        "answer": "She angrily said that if I had followed her advice, I would not be in that mess then.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: She said angrily that if I had followed her advice, I wouldn't be in this mess now. does not best fit the requirement of the question. Option B: She angrily said if I followed her advice, I would not be in this mess. does not best fit the requirement of the question. Option C: She angrily said that if I had followed her advice, I would not be in that mess then. fits the requirement of the question. Option D: She angrily said that if I had followed her advice, I would not have been in this mess. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 15,
+        "sourceQuestionNo": 322,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The coordinator reminded the team that the deadline extension applied only to those who had submitted a formal request.",
+        "options": [
+          "Only those who submitted a formal request can use the deadline extension,\" the coordinator said.",
+          "If you didn't formally request, the deadline extension doesn't apply,\" the coordinator reminded them.",
+          "The extension is granted only to those who made formal requests,\" the coordinator said.",
+          "Those who haven't requested cannot use the deadline extension,\" said the coordinator."
+        ],
+        "answer": "The extension is granted only to those who made formal requests,\" the coordinator said.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: \"Only those who submitted a formal request can use the deadline extension,\" the coordinator said. does not best fit the requirement of the question. Option B: \"If you didn't formally request, the deadline extension doesn't apply,\" the coordinator reminded them. does not best fit the requirement of the question. Option C: \"The extension is granted only to those who made formal requests,\" the coordinator said. fits the requirement of the question. Option D: \"Those who haven't requested cannot use the deadline extension,\" said the coordinator. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 14,
+        "sourceQuestionNo": 321,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. \"So great was his shock that he could barely utter a word,\" said the nurse.",
+        "options": [
+          "The nurse said he was shocked greatly and barely spoke.",
+          "The nurse said his shock was so great that he had barely spoken.",
+          "The nurse said that so great had his shock been that he could barely utter a word.",
+          "The nurse said that his shock was so great that he could barely utter a word."
+        ],
+        "answer": "The nurse said that his shock was so great that he could barely utter a word.",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: The nurse said he was shocked greatly and barely spoke. does not best fit the requirement of the question. Option B: The nurse said his shock was so great that he had barely spoken. does not best fit the requirement of the question. Option C: The nurse said that so great had his shock been that he could barely utter a word. does not best fit the requirement of the question. Option D: The nurse said that his shock was so great that he could barely utter a word. fits the requirement of the question. **Option D** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 13,
+        "sourceQuestionNo": 320,
+        "question": "Choose the option that best expresses the same sentence in indirect speech. I said to him, \"Does your sister know French?\"",
+        "options": [
+          "I asked him whether his sister knows French.",
+          "I asked him whether his sister knew French.",
+          "I told him whether his sister knew French.",
+          "I said to him whether his sister knows French."
+        ],
+        "answer": "I asked him whether his sister knew French.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: I asked him whether his sister knows French. does not best fit the requirement of the question. Option B: I asked him whether his sister knew French. fits the requirement of the question. Option C: I told him whether his sister knew French. does not best fit the requirement of the question. Option D: I said to him whether his sister knows French. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 12,
+        "sourceQuestionNo": 319,
+        "question": "Which of the following is the correct indirect speech conversion of the given sentence? Purna said, \"Bravo! I have passed the entrance test.\"",
+        "options": [
+          "Purna happily announced that she have had passed the entrance test.",
+          "Purna joyfully exclaimed that she had passed the entrance test.",
+          "Purna expressed with excitement that she had passed the entrance test.",
+          "Purna said with joy that she had passed the entrance test."
+        ],
+        "answer": "Purna joyfully exclaimed that she had passed the entrance test.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Purna happily announced that she have had passed the entrance test. does not best fit the requirement of the question. Option B: Purna joyfully exclaimed that she had passed the entrance test. fits the requirement of the question. Option C: Purna expressed with excitement that she had passed the entrance test. does not best fit the requirement of the question. Option D: Purna said with joy that she had passed the entrance test. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 11,
+        "sourceQuestionNo": 318,
+        "question": "Choose the one that correctly represents the sentence in direct speech. Adit explained that he hadn't had the time to prepare his speech the day before.",
+        "options": [
+          "Adit said, \"I haven't had the time to prepare my speech the day before.\"",
+          "Adit said, \"I didn't have the time to prepare my speech yesterday.\"",
+          "Adit said, \"I didn't have the time to prepare my speech the day before.\"",
+          "Adit said, \"I hadn't had the time to prepare my speech yesterday.\""
+        ],
+        "answer": "Adit said, \"I didn't have the time to prepare my speech yesterday.\"",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Adit said, \"I haven't had the time to prepare my speech the day before.\" does not best fit the requirement of the question. Option B: Adit said, \"I didn't have the time to prepare my speech yesterday.\" fits the requirement of the question. Option C: Adit said, \"I didn't have the time to prepare my speech the day before.\" does not best fit the requirement of the question. Option D: Adit said, \"I hadn't had the time to prepare my speech yesterday.\" does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 10,
+        "sourceQuestionNo": 317,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The supervisor asked whether the reports that were supposed to be finalized last week had been submitted to the review committee.",
+        "options": [
+          "Did you submit the reports meant to be finalized last week to the review committee?\" the supervisor asked.",
+          "Had the final reports from last week been submitted to the committee?\" the supervisor asked.",
+          "Have last week's reports been sent to the committee yet?\" the supervisor asked.",
+          "Were the reports due last week submitted to the review team?\" the supervisor asked."
+        ],
+        "answer": "Had the final reports from last week been submitted to the committee?\" the supervisor asked.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: \"Did you submit the reports meant to be finalized last week to the review committee?\" the supervisor asked. does not best fit the requirement of the question. Option B: \"Had the final reports from last week been submitted to the committee?\" the supervisor asked. fits the requirement of the question. Option C: \"Have last week's reports been sent to the committee yet?\" the supervisor asked. does not best fit the requirement of the question. Option D: \"Were the reports due last week submitted to the review team?\" the supervisor asked. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 9,
+        "sourceQuestionNo": 316,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. \"Let it be known that we shall defend every inch of our territory,\" proclaimed the commander.",
+        "options": [
+          "The commander proclaimed they would defend every inch of their territory.",
+          "The commander proclaimed that let it be known they shall defend territory.",
+          "The commander declared that every inch of land would be defended.",
+          "The commander proclaimed that they would defend every inch of their territory."
+        ],
+        "answer": "The commander proclaimed that they would defend every inch of their territory.",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: The commander proclaimed they would defend every inch of their territory. does not best fit the requirement of the question. Option B: The commander proclaimed that let it be known they shall defend territory. does not best fit the requirement of the question. Option C: The commander declared that every inch of land would be defended. does not best fit the requirement of the question. Option D: The commander proclaimed that they would defend every inch of their territory. fits the requirement of the question. **Option D** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 8,
+        "sourceQuestionNo": 315,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She asked whether, in view of the delays caused by external vendors, the timeline for delivery could be reconsidered.",
+        "options": [
+          "Could the delivery timeline be reconsidered because of the delays by external vendors?\" she asked.",
+          "Given the vendor delays, can you review the delivery schedule?\" she asked.",
+          "Would it be possible to reconsider the timeline due to the external delays?\" she asked.",
+          "Is there any chance the delivery deadline can be extended due to the vendor delays?\" she asked."
+        ],
+        "answer": "Could the delivery timeline be reconsidered because of the delays by external vendors?\" she asked.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: \"Could the delivery timeline be reconsidered because of the delays by external vendors?\" she asked. fits the requirement of the question. Option B: \"Given the vendor delays, can you review the delivery schedule?\" she asked. does not best fit the requirement of the question. Option C: \"Would it be possible to reconsider the timeline due to the external delays?\" she asked. does not best fit the requirement of the question. Option D: \"Is there any chance the delivery deadline can be extended due to the vendor delays?\" she asked. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 7,
+        "sourceQuestionNo": 314,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. \"How strange that nobody noticed the missing file until today!\" exclaimed the clerk.",
+        "options": [
+          "The clerk exclaimed it was strange that nobody noticed the missing file until today.",
+          "The clerk exclaimed that it was strange that no one had noticed the missing file until that day.",
+          "The clerk said that it was strange no one had noticed file till now.",
+          "The clerk exclaimed how strange nobody had noticed the file."
+        ],
+        "answer": "The clerk exclaimed that it was strange that no one had noticed the missing file until that day.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The clerk exclaimed it was strange that nobody noticed the missing file until today. does not best fit the requirement of the question. Option B: The clerk exclaimed that it was strange that no one had noticed the missing file until that day. fits the requirement of the question. Option C: The clerk said that it was strange no one had noticed file till now. does not best fit the requirement of the question. Option D: The clerk exclaimed how strange nobody had noticed the file. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 6,
+        "sourceQuestionNo": 313,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. She asked whether, in view of the delays caused by external vendors, the timeline for delivery could be reconsidered.",
+        "options": [
+          "Could the delivery timeline be reconsidered because of the delays by external vendors?\" she asked.",
+          "Given the vendor delays, can you review the delivery schedule?\" she asked.",
+          "Would it be possible to reconsider the timeline due to the external delays?\" she asked.",
+          "Is there any chance the delivery deadline can be extended due to the vendor delays?\" she asked."
+        ],
+        "answer": "Could the delivery timeline be reconsidered because of the delays by external vendors?\" she asked.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: \"Could the delivery timeline be reconsidered because of the delays by external vendors?\" she asked. fits the requirement of the question. Option B: \"Given the vendor delays, can you review the delivery schedule?\" she asked. does not best fit the requirement of the question. Option C: \"Would it be possible to reconsider the timeline due to the external delays?\" she asked. does not best fit the requirement of the question. Option D: \"Is there any chance the delivery deadline can be extended due to the vendor delays?\" she asked. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 5,
+        "sourceQuestionNo": 312,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. \"How strange that nobody noticed the missing file until today!\" exclaimed the clerk.",
+        "options": [
+          "The clerk exclaimed it was strange that nobody noticed the missing file until today.",
+          "The clerk exclaimed that it was strange that no one had noticed the missing file until that day.",
+          "The clerk said that it was strange no one had noticed file till now.",
+          "The clerk exclaimed how strange nobody had noticed the file."
+        ],
+        "answer": "The clerk exclaimed that it was strange that no one had noticed the missing file until that day.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The clerk exclaimed it was strange that nobody noticed the missing file until today. does not best fit the requirement of the question. Option B: The clerk exclaimed that it was strange that no one had noticed the missing file until that day. fits the requirement of the question. Option C: The clerk said that it was strange no one had noticed file till now. does not best fit the requirement of the question. Option D: The clerk exclaimed how strange nobody had noticed the file. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 4,
+        "sourceQuestionNo": 311,
+        "question": "A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. The professor reminded the students that if they had not registered on the portal by midnight, their submissions would not be accepted.",
+        "options": [
+          "Your submissions will not be accepted if you don't register by midnight,\" the professor reminded them.",
+          "If you haven't registered by midnight, your work won't be accepted,\" the professor warned.",
+          "Register on the portal by midnight or your submissions will be rejected,\" the professor said.",
+          "If you fail to register by midnight, your submissions won't be accepted,\" said the professor."
+        ],
+        "answer": "If you fail to register by midnight, your submissions won't be accepted,\" said the professor.",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: \"Your submissions will not be accepted if you don't register by midnight,\" the professor reminded them. does not best fit the requirement of the question. Option B: \"If you haven't registered by midnight, your work won't be accepted,\" the professor warned. does not best fit the requirement of the question. Option C: \"Register on the portal by midnight or your submissions will be rejected,\" the professor said. does not best fit the requirement of the question. Option D: \"If you fail to register by midnight, your submissions won't be accepted,\" said the professor. fits the requirement of the question. **Option D** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 3,
+        "sourceQuestionNo": 310,
+        "question": "Read the passage carefully and answer the question: Habits, scientists say, emerge because the brain is constantly looking for ways to save effort. Left to its own devices, the brain will try to make almost any routine into a habit, because habits allow our minds to ramp down more often. This effort-saving instinct is a huge advantage. An efficient brain requires less room, which makes for a smaller head, which makes childbirth easier, and therefore makes survival more likely. But conserving mental effort is only part of the story. Habits also have a powerful impact on our behaviors because once they are formed, they operate automatically. Even more importantly, habits can be changed, replaced, or ignored-but only if we understand how they work. At the core of every habit is a neurological loop that consists of three parts: a cue, a routine, and a reward. This loop is the foundation of all habitual behaviors. The cue is the trigger that tells your brain to go into automatic mode, the routine is the behavior itself, and the reward is what helps your brain remember the loop in the future. Understanding this loop is the first step in taking control of habits, whether you want to break a bad habit or create a new one. Choose the correct indirect speech conversion of the sentence. \"Scientists say, 'Habits emerge because the brain is constantly looking for ways to save effort\".",
+        "options": [
+          "Scientists say that habits emerge because the brain is constantly looking for ways to save effort.",
+          "Scientists said that habits emerged because the brain was constantly looking for ways to save effort.",
+          "Scientists say habits had emerged because the brain constantly looked for ways to save effort.",
+          "Scientists have said that habits emerge as the brain constantly looks for ways to save effort."
+        ],
+        "answer": "Scientists say that habits emerge because the brain is constantly looking for ways to save effort.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Scientists say that habits emerge because the brain is constantly looking for ways to save effort. fits the requirement of the question. Option B: Scientists said that habits emerged because the brain was constantly looking for ways to save effort. does not best fit the requirement of the question. Option C: Scientists say habits had emerged because the brain constantly looked for ways to save effort. does not best fit the requirement of the question. Option D: Scientists have said that habits emerge as the brain constantly looks for ways to save effort. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 2,
+        "sourceQuestionNo": 309,
+        "question": "its corresponding direct speech. The analyst observed that the report, while detailed, lacked consistency in its data interpretation.",
+        "options": [
+          "The report is detailed, but your data interpretation lacks consistency,\" the analyst observed.",
+          "Though the report is detailed, the interpretation of data isn't consistent,\" said the analyst.",
+          "It's a detailed report, but the way the data is interpreted is inconsistent,\" the analyst said.",
+          "Your data interpretation lacks consistency despite the report being detailed,\" said the analyst."
+        ],
+        "answer": "Though the report is detailed, the interpretation of data isn't consistent,\" said the analyst.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: \"The report is detailed, but your data interpretation lacks consistency,\" the analyst observed. does not best fit the requirement of the question. Option B: \"Though the report is detailed, the interpretation of data isn't consistent,\" said the analyst. fits the requirement of the question. Option C: \"It's a detailed report, but the way the data is interpreted is inconsistent,\" the analyst said. does not best fit the requirement of the question. Option D: \"Your data interpretation lacks consistency despite the report being detailed,\" said the analyst. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      },
+      {
+        "id": 1,
+        "sourceQuestionNo": 308,
+        "question": "A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. \"Might I suggest a revision to clause three?\" the lawyer inquired politely.",
+        "options": [
+          "The lawyer suggested to revise clause three.",
+          "The lawyer politely asked might he suggest a revision.",
+          "The lawyer politely inquired if he might suggest a revision to clause three.",
+          "The lawyer advised revising clause three."
+        ],
+        "answer": "The lawyer politely inquired if he might suggest a revision to clause three.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The lawyer suggested to revise clause three. does not best fit the requirement of the question. Option B: The lawyer politely asked might he suggest a revision. does not best fit the requirement of the question. Option C: The lawyer politely inquired if he might suggest a revision to clause three. fits the requirement of the question. Option D: The lawyer advised revising clause three. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct direct/indirect speech transformation while preserving tense, pronouns and meaning.",
+        "type": "Narration"
+      }
+    ]
+  }
+}

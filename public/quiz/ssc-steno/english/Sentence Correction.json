@@ -1,0 +1,261 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Sentence Correction",
+    "category": "Grammar",
+    "totalQuestions": 18,
+    "questions": [
+      {
+        "id": 18,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He did not knew the answer.",
+        "options": [
+          "knows",
+          "know",
+          "knowing",
+          "knews"
+        ],
+        "answer": "know",
+        "explanation": "Option A: This option suggests the replacement/correction: knows. Option B: This option suggests the replacement/correction: know. Option C: This option suggests the replacement/correction: knowing. Option D: This option suggests the replacement/correction: knews. **Option B** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 17,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She has did her homework already.",
+        "options": [
+          "made homework",
+          "done her homework",
+          "made her homework",
+          "doing her homework"
+        ],
+        "answer": "done her homework",
+        "explanation": "Option A: This option suggests the replacement/correction: made homework. Option B: This option suggests the replacement/correction: done her homework. Option C: This option suggests the replacement/correction: made her homework. Option D: This option suggests the replacement/correction: doing her homework. **Option B** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 16,
+        "question": "Which of the following sentences is grammatically correct?",
+        "options": [
+          "He went to college in a train.",
+          "He went to college with a train.",
+          "He went to college by a train.",
+          "He went to college on a train."
+        ],
+        "answer": "He went to college on a train.",
+        "explanation": "Option A: This option suggests the replacement/correction: He went to college in a train. Option B: This option suggests the replacement/correction: He went to college with a train. Option C: This option suggests the replacement/correction: He went to college by a train. Option D: This option suggests the replacement/correction: He went to college on a train. **Option D** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 15,
+        "question": "Which of the following sentences is grammatically correct?",
+        "options": [
+          "When we reached the station, the train have already left.",
+          "When we reached the station, the train has already left.",
+          "When we reached the station, the train had already left.",
+          "When we reached the station, the train already left."
+        ],
+        "answer": "When we reached the station, the train had already left.",
+        "explanation": "Option A: This option suggests the replacement/correction: When we reached the station, the train have already left. Option B: This option suggests the replacement/correction: When we reached the station, the train has already left. Option C: This option suggests the replacement/correction: When we reached the station, the train had already left. Option D: This option suggests the replacement/correction: When we reached the station, the train already left. **Option C** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 14,
+        "question": "Choose the correct option to replace the underlined word/phrase in the following sentence: The car is moving very fastly on the road.",
+        "options": [
+          "fastliness",
+          "quickliness",
+          "fast",
+          "quicker"
+        ],
+        "answer": "fast",
+        "explanation": "Option A: This option suggests the replacement/correction: fastliness. Option B: This option suggests the replacement/correction: quickliness. Option C: This option suggests the replacement/correction: fast. Option D: This option suggests the replacement/correction: quicker. **Option C** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 13,
+        "question": "Which among the following sentences uses adjective with correct degree of comparison.",
+        "options": [
+          "New Delhi is more hotter to Chandigarh.",
+          "New Delhi is more hotter than Chandigarh.",
+          "New Delhi is hotter to Chandigarh.",
+          "New Delhi is hotter than Chandigarh."
+        ],
+        "answer": "New Delhi is hotter than Chandigarh.",
+        "explanation": "Option A: This option suggests the replacement/correction: New Delhi is more hotter to Chandigarh. Option B: This option suggests the replacement/correction: New Delhi is more hotter than Chandigarh. Option C: This option suggests the replacement/correction: New Delhi is hotter to Chandigarh. Option D: This option suggests the replacement/correction: New Delhi is hotter than Chandigarh. **Option D** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 12,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select **No substitution required**. The students was asked to submit their assignments by Friday.",
+        "options": [
+          "are asked to submitted their assignments",
+          "No substitution required",
+          "were asked to submit their assignments",
+          "will asked to submit their assignments"
+        ],
+        "answer": "were asked to submit their assignments",
+        "explanation": "Option A: This option suggests the replacement/correction: are asked to submitted their assignments. Option B: This option suggests the replacement/correction: No substitution required. Option C: This option suggests the replacement/correction: were asked to submit their assignments. Option D: This option suggests the replacement/correction: will asked to submit their assignments. **Option C** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 11,
+        "question": "Which among the following sentences uses the article (if required) before the word **honour** correctly?",
+        "options": [
+          "It is the honour to be here.",
+          "It is an honour to be here.",
+          "It is honour to be here.",
+          "It is a honour to be here."
+        ],
+        "answer": "It is an honour to be here.",
+        "explanation": "Option A: This option suggests the replacement/correction: It is the honour to be here. Option B: This option suggests the replacement/correction: It is an honour to be here. Option C: This option suggests the replacement/correction: It is honour to be here. Option D: This option suggests the replacement/correction: It is a honour to be here. **Option B** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 10,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select **No substitution required**. She aren't believe in wasting time during working hours.",
+        "options": [
+          "isn't believe",
+          "No substitution required",
+          "wasn't believes",
+          "doesn't believe"
+        ],
+        "answer": "doesn't believe",
+        "explanation": "Option A: This option suggests the replacement/correction: isn't believe. Option B: This option suggests the replacement/correction: No substitution required. Option C: This option suggests the replacement/correction: wasn't believes. Option D: This option suggests the replacement/correction: doesn't believe. **Option D** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 9,
+        "question": "Identify the correct type of sentence used in the line: \"**At the heart of the debate lies a fundamental tension between technological progress and moral responsibility.**\"",
+        "options": [
+          "Compound",
+          "Complex",
+          "Simple",
+          "Compound-Complex"
+        ],
+        "answer": "Simple",
+        "explanation": "Option A: This option suggests the replacement/correction: Compound. Option B: This option suggests the replacement/correction: Complex. Option C: Simple means easy or uncomplicated. Option D: This option suggests the replacement/correction: Compound-Complex. **Option C** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 8,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select **No substitution required**. If I was you, I would consult a specialist.",
+        "options": [
+          "No substitution required",
+          "Am you",
+          "Would be you",
+          "Were you"
+        ],
+        "answer": "Were you",
+        "explanation": "Option A: This option suggests the replacement/correction: No substitution required. Option B: This option suggests the replacement/correction: Am you. Option C: This option suggests the replacement/correction: Would be you. Option D: This option suggests the replacement/correction: Were you. **Option D** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 7,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select **No substitution required**. The research paper was full of errors because the data is not verified by any expert.",
+        "options": [
+          "Has not been verified",
+          "Is not being verified yet",
+          "No substitution required",
+          "Was not verified"
+        ],
+        "answer": "Was not verified",
+        "explanation": "Option A: This option suggests the replacement/correction: Has not been verified. Option B: This option suggests the replacement/correction: Is not being verified yet. Option C: This option suggests the replacement/correction: No substitution required. Option D: This option suggests the replacement/correction: Was not verified. **Option D** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 6,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select **No substitution required**. Each of the candidates have submitted their documents for verification.",
+        "options": [
+          "Had submitted their document",
+          "No substitution required",
+          "Has submitted their documents",
+          "Is submitted their documents"
+        ],
+        "answer": "Has submitted their documents",
+        "explanation": "Option A: This option suggests the replacement/correction: Had submitted their document. Option B: This option suggests the replacement/correction: No substitution required. Option C: This option suggests the replacement/correction: Has submitted their documents. Option D: This option suggests the replacement/correction: Is submitted their documents. **Option C** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 5,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select **No substitution required**. The team has been preparing for the match since two months without a break.",
+        "options": [
+          "for two months",
+          "during two months",
+          "No substitution required",
+          "from two months"
+        ],
+        "answer": "for two months",
+        "explanation": "Option A: This option suggests the replacement/correction: for two months. Option B: This option suggests the replacement/correction: during two months. Option C: This option suggests the replacement/correction: No substitution required. Option D: This option suggests the replacement/correction: from two months. **Option A** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 4,
+        "question": "Choose the sentence which uses the adjective/adverb in its superlative degree correctly.",
+        "options": [
+          "My uncle goes to that shop mostly frequently.",
+          "My uncle goes to that shop the more frequently.",
+          "My uncle goes to that shop very most frequently.",
+          "My uncle goes to that shop most frequently."
+        ],
+        "answer": "My uncle goes to that shop most frequently.",
+        "explanation": "Option A: This option suggests the replacement/correction: My uncle goes to that shop mostly frequently. Option B: This option suggests the replacement/correction: My uncle goes to that shop the more frequently. Option C: This option suggests the replacement/correction: My uncle goes to that shop very most frequently. Option D: This option suggests the replacement/correction: My uncle goes to that shop most frequently. **Option D** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 3,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select **No substitution required**. The old lady was unable to climb stairs because her legs is aching constantly since morning.",
+        "options": [
+          "is been aching constantly",
+          "have been aching constantly",
+          "Had been aches constantly",
+          "No substitution required"
+        ],
+        "answer": "have been aching constantly",
+        "explanation": "Option A: This option suggests the replacement/correction: is been aching constantly. Option B: This option suggests the replacement/correction: have been aching constantly. Option C: This option suggests the replacement/correction: Had been aches constantly. Option D: This option suggests the replacement/correction: No substitution required. **Option B** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 2,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select **No substitution required**. By the time we will reach, the concert will have started.",
+        "options": [
+          "we reached",
+          "No improvement",
+          "we reach",
+          "we have reached"
+        ],
+        "answer": "we reach",
+        "explanation": "Option A: This option suggests the replacement/correction: we reached. Option B: This option suggests the replacement/correction: No improvement. Option C: This option suggests the replacement/correction: we reach. Option D: This option suggests the replacement/correction: we have reached. **Option C** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 1,
+        "question": "Select the sentence with correct use of article **the**.",
+        "options": [
+          "Dr. Johnson met the Shakespeare in England.",
+          "Kalidas is the Shakespeare of India.",
+          "Dr. Johnson saw the Shakespeare acting in King Lear.",
+          "Dr. Johnson had instructed the Shakespeare to write The Tempest."
+        ],
+        "answer": "Kalidas is the Shakespeare of India.",
+        "explanation": "Option A: This option suggests the replacement/correction: Dr. Johnson met the Shakespeare in England. Option B: This option suggests the replacement/correction: Kalidas is the Shakespeare of India. Option C: This option suggests the replacement/correction: Dr. Johnson saw the Shakespeare acting in King Lear. Option D: This option suggests the replacement/correction: Dr. Johnson had instructed the Shakespeare to write The Tempest. **Option B** correctly applies: it gives the correct form according to standard grammar and usage.",
+        "answerKey": "B",
+        "answerIndex": 1
+      }
+    ]
+  }
+}

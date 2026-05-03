@@ -1,0 +1,633 @@
+{
+  "quiz": {
+    "title": "Synonyms - SSC Selection Post XIII 2025",
+    "category": "Vocabulary",
+    "totalQuestions": 39,
+    "questions": [
+      {
+        "id": 39,
+        "sourceQuestionNo": 39,
+        "question": "Choose the synonym of the word '**Substantial**'.",
+        "options": [
+          "Fragile",
+          "Minor",
+          "Considerable",
+          "Weak"
+        ],
+        "answer": "Considerable",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Fragile does not best fit the requirement of the question. Option B: Minor does not best fit the requirement of the question. Option C: Considerable fits the requirement of the question. Option D: Weak does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 38,
+        "sourceQuestionNo": 38,
+        "question": "Select the correct Synonym of '**IMPECUNIOUS**'.",
+        "options": [
+          "Wealthy",
+          "Generous",
+          "Poor",
+          "Frugal"
+        ],
+        "answer": "Poor",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Wealthy does not best fit the requirement of the question. Option B: Generous does not best fit the requirement of the question. Option C: Poor fits the requirement of the question. Option D: Frugal does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 37,
+        "sourceQuestionNo": 37,
+        "question": "Select the correct Synonym of '**PERNICIOUS**'.",
+        "options": [
+          "Harmless",
+          "Deadly",
+          "Temporary",
+          "Noisy"
+        ],
+        "answer": "Deadly",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Harmless does not best fit the requirement of the question. Option B: Deadly fits the requirement of the question. Option C: Temporary does not best fit the requirement of the question. Option D: Noisy does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 36,
+        "sourceQuestionNo": 36,
+        "question": "Identify the synonym of '**Quixotic**':",
+        "options": [
+          "Practical",
+          "idealistic",
+          "Realistic",
+          "Logical"
+        ],
+        "answer": "idealistic",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Practical does not best fit the requirement of the question. Option B: idealistic fits the requirement of the question. Option C: Realistic does not best fit the requirement of the question. Option D: Logical does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 35,
+        "sourceQuestionNo": 35,
+        "question": "Identify the synonym of '**Jeopardy**':",
+        "options": [
+          "Risk",
+          "Safety",
+          "Certainty",
+          "Security"
+        ],
+        "answer": "Risk",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Risk fits the requirement of the question. Option B: Safety does not best fit the requirement of the question. Option C: Certainty does not best fit the requirement of the question. Option D: Security does not best fit the requirement of the question. **Option A** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 34,
+        "sourceQuestionNo": 34,
+        "question": "Identify the synonym of '**Knavery**':",
+        "options": [
+          "Honesty",
+          "Deceit",
+          "Truth",
+          "Integrity"
+        ],
+        "answer": "Deceit",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Honesty does not best fit the requirement of the question. Option B: Deceit fits the requirement of the question. Option C: Truth does not best fit the requirement of the question. Option D: Integrity does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 33,
+        "sourceQuestionNo": 33,
+        "question": "Identify the synonym of '**Wistful**':",
+        "options": [
+          "Content",
+          "Nostalgic",
+          "Joyful",
+          "Happy"
+        ],
+        "answer": "Nostalgic",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Content does not best fit the requirement of the question. Option B: Nostalgic fits the requirement of the question. Option C: Joyful does not best fit the requirement of the question. Option D: Happy does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 32,
+        "sourceQuestionNo": 32,
+        "question": "Identify the synonym of '**Xenial**'",
+        "options": [
+          "Friendly",
+          "Hostile",
+          "Warm",
+          "Cold"
+        ],
+        "answer": "Friendly",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Friendly fits the requirement of the question. Option B: Hostile does not best fit the requirement of the question. Option C: Warm does not best fit the requirement of the question. Option D: Cold does not best fit the requirement of the question. **Option A** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 31,
+        "sourceQuestionNo": 31,
+        "question": "Identify the synonym of '**Recalcitrant**':",
+        "options": [
+          "Compliant",
+          "Rebellious",
+          "Submissive",
+          "Docile"
+        ],
+        "answer": "Rebellious",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Compliant does not best fit the requirement of the question. Option B: Rebellious fits the requirement of the question. Option C: Submissive does not best fit the requirement of the question. Option D: Docile does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 30,
+        "sourceQuestionNo": 30,
+        "question": "Identify the synonym of '**Blatant**':",
+        "options": [
+          "Subtle",
+          "Obvious",
+          "Discreet",
+          "Hidden"
+        ],
+        "answer": "Obvious",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Subtle does not best fit the requirement of the question. Option B: Obvious fits the requirement of the question. Option C: Discreet does not best fit the requirement of the question. Option D: Hidden does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 29,
+        "sourceQuestionNo": 29,
+        "question": "Identify the synonym of '**Mendacious**':",
+        "options": [
+          "Truthful",
+          "Dishonest",
+          "Sincere",
+          "Honest"
+        ],
+        "answer": "Dishonest",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Truthful does not best fit the requirement of the question. Option B: Dishonest fits the requirement of the question. Option C: Sincere does not best fit the requirement of the question. Option D: Honest does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 28,
+        "sourceQuestionNo": 28,
+        "question": "Identify the synonym of '**Jovial**':",
+        "options": [
+          "Gloomy",
+          "Happy",
+          "sad",
+          "Melancholy"
+        ],
+        "answer": "Happy",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Gloomy does not best fit the requirement of the question. Option B: Happy fits the requirement of the question. Option C: sad does not best fit the requirement of the question. Option D: Melancholy does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 27,
+        "sourceQuestionNo": 27,
+        "question": "Identify the synonym of \"**Notorious**\":",
+        "options": [
+          "Famous",
+          "Unknown",
+          "Renowned",
+          "Infamous"
+        ],
+        "answer": "Infamous",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Famous does not best fit the requirement of the question. Option B: Unknown does not best fit the requirement of the question. Option C: Renowned does not best fit the requirement of the question. Option D: Infamous fits the requirement of the question. **Option D** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 26,
+        "sourceQuestionNo": 26,
+        "question": "Identify the synonym of '**Brisk**':",
+        "options": [
+          "Lazy",
+          "Energetic",
+          "Dull",
+          "Slow"
+        ],
+        "answer": "Energetic",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Lazy does not best fit the requirement of the question. Option B: Energetic fits the requirement of the question. Option C: Dull does not best fit the requirement of the question. Option D: Slow does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 25,
+        "sourceQuestionNo": 25,
+        "question": "Identify the synonym of '**Gracious**':",
+        "options": [
+          "Rude",
+          "Polite",
+          "Selfish",
+          "Indifferent"
+        ],
+        "answer": "Polite",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Rude does not best fit the requirement of the question. Option B: Polite fits the requirement of the question. Option C: Selfish does not best fit the requirement of the question. Option D: Indifferent does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 24,
+        "sourceQuestionNo": 24,
+        "question": "Identify the synonym of '**Frugal**':",
+        "options": [
+          "Wasteful",
+          "Economical",
+          "Extravagant",
+          "Generous"
+        ],
+        "answer": "Economical",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Wasteful does not best fit the requirement of the question. Option B: Economical fits the requirement of the question. Option C: Extravagant does not best fit the requirement of the question. Option D: Generous does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 23,
+        "sourceQuestionNo": 23,
+        "question": "Identify the synonym of '**Elusive**':",
+        "options": [
+          "Clear",
+          "Easy",
+          "Slippery",
+          "Obvious"
+        ],
+        "answer": "Slippery",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Clear does not best fit the requirement of the question. Option B: Easy does not best fit the requirement of the question. Option C: Slippery fits the requirement of the question. Option D: Obvious does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 22,
+        "sourceQuestionNo": 22,
+        "question": "Identify the synonym of '**Adhere**':",
+        "options": [
+          "Condemn",
+          "Disjain",
+          "Comply",
+          "Setup"
+        ],
+        "answer": "Comply",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Condemn does not best fit the requirement of the question. Option B: Disjain does not best fit the requirement of the question. Option C: Comply fits the requirement of the question. Option D: Setup does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 21,
+        "sourceQuestionNo": 21,
+        "question": "Identify the synonym of '**Lackluster**':",
+        "options": [
+          "Brilliant",
+          "Humdrum",
+          "Vivid",
+          "Bright"
+        ],
+        "answer": "Humdrum",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Brilliant does not best fit the requirement of the question. Option B: Humdrum fits the requirement of the question. Option C: Vivid does not best fit the requirement of the question. Option D: Bright does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 20,
+        "sourceQuestionNo": 20,
+        "question": "Identify the synonym of '**Fickle**':",
+        "options": [
+          "Constant",
+          "Unpredictable",
+          "Reliable",
+          "Stable"
+        ],
+        "answer": "Unpredictable",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Constant does not best fit the requirement of the question. Option B: Unpredictable fits the requirement of the question. Option C: Reliable does not best fit the requirement of the question. Option D: Stable does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 19,
+        "sourceQuestionNo": 19,
+        "question": "Identify the synonym of '**Boisterous**':",
+        "options": [
+          "Ignorant",
+          "Quiet",
+          "Noisy",
+          "Clueless"
+        ],
+        "answer": "Noisy",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Ignorant does not best fit the requirement of the question. Option B: Quiet does not best fit the requirement of the question. Option C: Noisy fits the requirement of the question. Option D: Clueless does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 18,
+        "sourceQuestionNo": 18,
+        "question": "Identify the synonym of '**Hapless**':",
+        "options": [
+          "Lucky",
+          "Unfortunate",
+          "Fortunate",
+          "Content"
+        ],
+        "answer": "Unfortunate",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Lucky does not best fit the requirement of the question. Option B: Unfortunate fits the requirement of the question. Option C: Fortunate does not best fit the requirement of the question. Option D: Content does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 17,
+        "sourceQuestionNo": 17,
+        "question": "Identify the synonym of '**Acumen**':",
+        "options": [
+          "Stupidity",
+          "ignorance",
+          "Brilliance",
+          "Dullness"
+        ],
+        "answer": "Brilliance",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Stupidity does not best fit the requirement of the question. Option B: ignorance does not best fit the requirement of the question. Option C: Brilliance fits the requirement of the question. Option D: Dullness does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 16,
+        "sourceQuestionNo": 16,
+        "question": "Identify the synonym of '**Tranquil**':",
+        "options": [
+          "Restless",
+          "Peaceful",
+          "Turbulent",
+          "Chaotic"
+        ],
+        "answer": "Peaceful",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Restless does not best fit the requirement of the question. Option B: Peaceful fits the requirement of the question. Option C: Turbulent does not best fit the requirement of the question. Option D: Chaotic does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 15,
+        "sourceQuestionNo": 15,
+        "question": "Identify the synonym of '**Imminent**':",
+        "options": [
+          "Distant",
+          "Approaching",
+          "Delayed",
+          "Postponed"
+        ],
+        "answer": "Approaching",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Distant does not best fit the requirement of the question. Option B: Approaching fits the requirement of the question. Option C: Delayed does not best fit the requirement of the question. Option D: Postponed does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 14,
+        "sourceQuestionNo": 14,
+        "question": "Identify the synonym of '**Plausible**':",
+        "options": [
+          "Unlikely",
+          "Unbelievable",
+          "Believable",
+          "Incredible"
+        ],
+        "answer": "Believable",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Unlikely does not best fit the requirement of the question. Option B: Unbelievable does not best fit the requirement of the question. Option C: Believable fits the requirement of the question. Option D: Incredible does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 13,
+        "sourceQuestionNo": 13,
+        "question": "Identify the synonym of '**innocuous**':",
+        "options": [
+          "Harmful",
+          "Harmless",
+          "Dangerous",
+          "Toxic"
+        ],
+        "answer": "Harmless",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Harmful does not best fit the requirement of the question. Option B: Harmless fits the requirement of the question. Option C: Dangerous does not best fit the requirement of the question. Option D: Toxic does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 12,
+        "sourceQuestionNo": 12,
+        "question": "Identify the synonym of '**Pristine**':",
+        "options": [
+          "Polluted",
+          "immaculate",
+          "Dirty",
+          "Untouched"
+        ],
+        "answer": "immaculate",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Polluted does not best fit the requirement of the question. Option B: immaculate fits the requirement of the question. Option C: Dirty does not best fit the requirement of the question. Option D: Untouched does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 11,
+        "sourceQuestionNo": 11,
+        "question": "Identify the synonym of \"**Clarity**\":",
+        "options": [
+          "Confusion",
+          "Lucidity",
+          "Obscurity",
+          "Vagueness"
+        ],
+        "answer": "Lucidity",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Confusion does not best fit the requirement of the question. Option B: Lucidity fits the requirement of the question. Option C: Obscurity does not best fit the requirement of the question. Option D: Vagueness does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 10,
+        "sourceQuestionNo": 10,
+        "question": "Choose the synonym of '**Docile**'.",
+        "options": [
+          "Reveal",
+          "Pliable",
+          "Exhibit",
+          "Clarify"
+        ],
+        "answer": "Pliable",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Reveal does not best fit the requirement of the question. Option B: Pliable fits the requirement of the question. Option C: Exhibit does not best fit the requirement of the question. Option D: Clarify does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 9,
+        "sourceQuestionNo": 9,
+        "question": "Pick the synonym of '**Eloquent**'.",
+        "options": [
+          "silent",
+          "Shy",
+          "Fluent",
+          "Scattered"
+        ],
+        "answer": "Fluent",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: silent does not best fit the requirement of the question. Option B: Shy does not best fit the requirement of the question. Option C: Fluent fits the requirement of the question. Option D: Scattered does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 8,
+        "sourceQuestionNo": 8,
+        "question": "Find the synonym of *Hamstrung'.",
+        "options": [
+          "Cripple",
+          "Talkative",
+          "Jolly",
+          "Restless"
+        ],
+        "answer": "Cripple",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Cripple fits the requirement of the question. Option B: Talkative does not best fit the requirement of the question. Option C: Jolly does not best fit the requirement of the question. Option D: Restless does not best fit the requirement of the question. **Option A** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 7,
+        "sourceQuestionNo": 7,
+        "question": "identify the synonym of '**Feeble**'.",
+        "options": [
+          "Strong",
+          "Loud",
+          "Weak",
+          "Heavy"
+        ],
+        "answer": "Weak",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Strong does not best fit the requirement of the question. Option B: Loud does not best fit the requirement of the question. Option C: Weak fits the requirement of the question. Option D: Heavy does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 6,
+        "sourceQuestionNo": 6,
+        "question": "Select the correct synonym of '**Fortify**'.",
+        "options": [
+          "Weaken",
+          "Broke",
+          "Strengthen",
+          "Remove"
+        ],
+        "answer": "Strengthen",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Weaken does not best fit the requirement of the question. Option B: Broke does not best fit the requirement of the question. Option C: Strengthen fits the requirement of the question. Option D: Remove does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 5,
+        "sourceQuestionNo": 5,
+        "question": "Choose the synonym of '**Deride**'.",
+        "options": [
+          "Taunt",
+          "Inspire",
+          "Encourage",
+          "Praise"
+        ],
+        "answer": "Taunt",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Taunt fits the requirement of the question. Option B: Inspire does not best fit the requirement of the question. Option C: Encourage does not best fit the requirement of the question. Option D: Praise does not best fit the requirement of the question. **Option A** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 4,
+        "sourceQuestionNo": 4,
+        "question": "Select the most appropriate synonym of the given word. **ABROGATE**",
+        "options": [
+          "Ratify",
+          "Repeal",
+          "Reject",
+          "Withdraw"
+        ],
+        "answer": "Repeal",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Ratify does not best fit the requirement of the question. Option B: Repeal fits the requirement of the question. Option C: Reject does not best fit the requirement of the question. Option D: Withdraw does not best fit the requirement of the question. **Option B** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 3,
+        "sourceQuestionNo": 3,
+        "question": "Select the most appropriate synonym of the given word. **CAPRICIOUS**",
+        "options": [
+          "Whimsical",
+          "Spontaneous",
+          "Erratic",
+          "Persistent"
+        ],
+        "answer": "Whimsical",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Whimsical fits the requirement of the question. Option B: Spontaneous does not best fit the requirement of the question. Option C: Erratic does not best fit the requirement of the question. Option D: Persistent does not best fit the requirement of the question. **Option A** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 2,
+        "sourceQuestionNo": 2,
+        "question": "Select the most appropriate synonym of the given word. **INCESSANT**",
+        "options": [
+          "Frequent",
+          "Recurring",
+          "Continuous",
+          "Repetitive"
+        ],
+        "answer": "Continuous",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Frequent does not best fit the requirement of the question. Option B: Recurring does not best fit the requirement of the question. Option C: Continuous fits the requirement of the question. Option D: Repetitive does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      },
+      {
+        "id": 1,
+        "sourceQuestionNo": 1,
+        "question": "Select the most appropriate synonym of the given word. **INCESSANT**",
+        "options": [
+          "Frequent",
+          "Recurring",
+          "Continuous",
+          "Repetitive"
+        ],
+        "answer": "Continuous",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Frequent does not best fit the requirement of the question. Option B: Recurring does not best fit the requirement of the question. Option C: Continuous fits the requirement of the question. Option D: Repetitive does not best fit the requirement of the question. **Option C** correctly applies: it is the closest in meaning to the target word.",
+        "type": "Synonyms"
+      }
+    ]
+  }
+}

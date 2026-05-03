@@ -1,0 +1,597 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Spelling Correction",
+    "category": "Vocabulary",
+    "totalQuestions": 42,
+    "questions": [
+      {
+        "id": 42,
+        "question": "Which sentence contains a word that is spelled incorrectly?",
+        "options": [
+          "His performance in the play was just mediocre.",
+          "She paid the tuition fee before the semester began.",
+          "They enjoyed a peaceful evening by the lake.",
+          "The view from the mountaintop was tramendous."
+        ],
+        "answer": "The view from the mountaintop was tramendous.",
+        "explanation": "Option A: This option states: His performance in the play was just mediocre. Option B: This option states: She paid the tuition fee before the semester began. Option C: This option states: They enjoyed a peaceful evening by the lake. Option D: The view from the mountaintop was tramendous. is the accepted standard spelling in this context. **Option D** correctly applies: 'The view from the mountaintop was tramendous.' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 41,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Embillish",
+          "Imbellish",
+          "Embellish",
+          "Embelish"
+        ],
+        "answer": "Embellish",
+        "explanation": "Option A: Embillish is not the accepted standard spelling in this context. Option B: Imbellish is not the accepted standard spelling in this context. Option C: Embellish is the accepted standard spelling in this context. Option D: Embelish is not the accepted standard spelling in this context. **Option C** correctly applies: 'Embellish' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 40,
+        "question": "Which word is spelled wrongly?",
+        "options": [
+          "Harass",
+          "Government",
+          "Calender",
+          "Permanent"
+        ],
+        "answer": "Calender",
+        "explanation": "Option A: Harass is not the accepted standard spelling in this context. Option B: Government is not the accepted standard spelling in this context. Option C: Calender is the accepted standard spelling in this context. Option D: Permanent is not the accepted standard spelling in this context. **Option C** correctly applies: 'Calender' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 39,
+        "question": "Which sentence contains a word that is spelled incorrectly?",
+        "options": [
+          "The children were fascinated by the glowing fireflies in the dark.",
+          "She was absolutely intrigued by the magician's clever tricks.",
+          "The audience sat still, completely hypnotized by the performance.",
+          "He explained the experiment in a way that was both clear and engaging."
+        ],
+        "answer": "The children were fascinated by the glowing fireflies in the dark.",
+        "explanation": "Option A: This option states: The children were fascinated by the glowing fireflies in the dark. Option B: This option states: She was absolutely intrigued by the magician's clever tricks. Option C: This option states: The audience sat still, completely hypnotized by the performance. Option D: This option states: He explained the experiment in a way that was both clear and engaging. **Option A** correctly applies: 'The children were fascinated by the glowing fireflies in the dark.' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 38,
+        "question": "Choose the option that completes the sentence using the correct spelling. It is my ________ that municipal employees handle their jobs with great professionalism.",
+        "options": [
+          "bilief",
+          "beleif",
+          "belief",
+          "beleaf"
+        ],
+        "answer": "belief",
+        "explanation": "Option A: bilief is not the accepted standard spelling in this context. Option B: beleif is not the accepted standard spelling in this context. Option C: belief is the accepted standard spelling in this context. Option D: beleaf is not the accepted standard spelling in this context. **Option C** correctly applies: 'belief' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 37,
+        "question": "Find the misspelt word.",
+        "options": [
+          "Ubiquitous",
+          "interference",
+          "interrupt",
+          "Ubiquitus"
+        ],
+        "answer": "Ubiquitus",
+        "explanation": "Option A: Ubiquitous is not the accepted standard spelling in this context. Option B: interference is not the accepted standard spelling in this context. Option C: interrupt is not the accepted standard spelling in this context. Option D: Ubiquitus is the accepted standard spelling in this context. **Option D** correctly applies: 'Ubiquitus' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 36,
+        "question": "Identify the incorrect spelling.",
+        "options": [
+          "Malfeasance",
+          "Magnanimous",
+          "Insatiable",
+          "Perserverance"
+        ],
+        "answer": "Perserverance",
+        "explanation": "Option A: Malfeasance is not the accepted standard spelling in this context. Option B: Magnanimous is not the accepted standard spelling in this context. Option C: Insatiable is not the accepted standard spelling in this context. Option D: Perserverance is the accepted standard spelling in this context. **Option D** correctly applies: 'Perserverance' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 35,
+        "question": "Choose the correct spelling for a word meaning **not important**.",
+        "options": [
+          "Triveal",
+          "Trivial",
+          "Triveel",
+          "Triviel"
+        ],
+        "answer": "Trivial",
+        "explanation": "Option A: Triveal is not the accepted standard spelling in this context. Option B: Trivial means of little importance. Option C: Triveel is not the accepted standard spelling in this context. Option D: Triviel is not the accepted standard spelling in this context. **Option B** correctly applies: 'Trivial' matches the spelling requirement asked in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 34,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Magnanemous",
+          "Magnanimus",
+          "Magnanamous",
+          "Magnanimous"
+        ],
+        "answer": "Magnanimous",
+        "explanation": "Option A: Magnanemous is not the accepted standard spelling in this context. Option B: Magnanimus is not the accepted standard spelling in this context. Option C: Magnanamous is not the accepted standard spelling in this context. Option D: Magnanimous is the accepted standard spelling in this context. **Option D** correctly applies: 'Magnanimous' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 33,
+        "question": "Find the misspelt word.",
+        "options": [
+          "Garrulous",
+          "grateful",
+          "guarantee",
+          "Garulous"
+        ],
+        "answer": "Garulous",
+        "explanation": "Option A: Garrulous means excessively talkative. Option B: grateful is not the accepted standard spelling in this context. Option C: guarantee is not the accepted standard spelling in this context. Option D: Garulous is the accepted standard spelling in this context. **Option D** correctly applies: 'Garulous' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 32,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Supercede",
+          "Supirsede",
+          "Supersede",
+          "Suppercede"
+        ],
+        "answer": "Supersede",
+        "explanation": "Option A: Supercede is not the accepted standard spelling in this context. Option B: Supirsede is not the accepted standard spelling in this context. Option C: Supersede is the accepted standard spelling in this context. Option D: Suppercede is not the accepted standard spelling in this context. **Option C** correctly applies: 'Supersede' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 31,
+        "question": "Find the misspelt word.",
+        "options": [
+          "Idiosyncracy",
+          "incredible",
+          "Idiosyncrasy",
+          "guidance"
+        ],
+        "answer": "Idiosyncracy",
+        "explanation": "Option A: Idiosyncracy is the accepted standard spelling in this context. Option B: incredible is not the accepted standard spelling in this context. Option C: Idiosyncrasy means a person’s peculiar habit or mannerism. Option D: guidance is not the accepted standard spelling in this context. **Option A** correctly applies: 'Idiosyncracy' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 30,
+        "question": "Which of these words is spelled wrongly?",
+        "options": [
+          "Resplendent",
+          "Idiosyncracy",
+          "Dichotomy",
+          "Vernacular"
+        ],
+        "answer": "Idiosyncracy",
+        "explanation": "Option A: Resplendent is not the accepted standard spelling in this context. Option B: Idiosyncracy is the accepted standard spelling in this context. Option C: Dichotomy is not the accepted standard spelling in this context. Option D: Vernacular is not the accepted standard spelling in this context. **Option B** correctly applies: 'Idiosyncracy' matches the spelling requirement asked in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 29,
+        "question": "Select the correct spelling of a word related to bees.",
+        "options": [
+          "Apiary",
+          "Apiery",
+          "Apairy",
+          "Apeary"
+        ],
+        "answer": "Apiary",
+        "explanation": "Option A: Apiary is the accepted standard spelling in this context. Option B: Apiery is not the accepted standard spelling in this context. Option C: Apairy is not the accepted standard spelling in this context. Option D: Apeary is not the accepted standard spelling in this context. **Option A** correctly applies: 'Apiary' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 28,
+        "question": "Find the misspelt word.",
+        "options": [
+          "Beligerant",
+          "excellent",
+          "existence",
+          "Belligerent"
+        ],
+        "answer": "Beligerant",
+        "explanation": "Option A: Beligerant is the accepted standard spelling in this context. Option B: excellent is not the accepted standard spelling in this context. Option C: existence is not the accepted standard spelling in this context. Option D: Belligerent is not the accepted standard spelling in this context. **Option A** correctly applies: 'Beligerant' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 27,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Entreprenure",
+          "Entroprenure",
+          "Entrepreneur",
+          "Enterprenuer"
+        ],
+        "answer": "Entrepreneur",
+        "explanation": "Option A: Entreprenure is not the accepted standard spelling in this context. Option B: Entroprenure is not the accepted standard spelling in this context. Option C: Entrepreneur is the accepted standard spelling in this context. Option D: Enterprenuer is not the accepted standard spelling in this context. **Option C** correctly applies: 'Entrepreneur' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 26,
+        "question": "Spot the misspelt word.",
+        "options": [
+          "Acheived",
+          "Accessible",
+          "Committee",
+          "Accommodate"
+        ],
+        "answer": "Acheived",
+        "explanation": "Option A: Acheived is the accepted standard spelling in this context. Option B: Accessible is not the accepted standard spelling in this context. Option C: Committee is not the accepted standard spelling in this context. Option D: Accommodate is not the accepted standard spelling in this context. **Option A** correctly applies: 'Acheived' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 25,
+        "question": "Choose the option that completes the sentence using the correct spelling. The newly fallen snow ______ transformed the landscape.",
+        "options": [
+          "magicaly",
+          "magically",
+          "magickelly",
+          "majicelly"
+        ],
+        "answer": "magically",
+        "explanation": "Option A: magicaly is not the accepted standard spelling in this context. Option B: magically is the accepted standard spelling in this context. Option C: magickelly is not the accepted standard spelling in this context. Option D: majicelly is not the accepted standard spelling in this context. **Option B** correctly applies: 'magically' matches the spelling requirement asked in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 24,
+        "question": "Which sentence contains a word that is spelled incorrectly?",
+        "options": [
+          "The weather forecast mentioned a change in meterological patterns.",
+          "He is passionate about anthropology and human cultures.",
+          "The scientist wrote a paper on marine biology and its ecosystems.",
+          "She is studying zoology at the university to become a biologist."
+        ],
+        "answer": "The weather forecast mentioned a change in meterological patterns.",
+        "explanation": "Option A: This option states: The weather forecast mentioned a change in meterological patterns. Option B: This option states: He is passionate about anthropology and human cultures. Option C: This option states: The scientist wrote a paper on marine biology and its ecosystems. Option D: This option states: She is studying zoology at the university to become a biologist. **Option A** correctly applies: 'The weather forecast mentioned a change in meterological patterns.' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 23,
+        "question": "Which sentence contains a word that is spelled incorrectly?",
+        "options": [
+          "The actors had a final rehearsel before the big show.",
+          "The soldier jumped out of the plane using a parachute.",
+          "The students gathered together in the assembly hall.",
+          "She carefully placed the vase on the shelf."
+        ],
+        "answer": "The actors had a final rehearsel before the big show.",
+        "explanation": "Option A: This option states: The actors had a final rehearsel before the big show. Option B: This option states: The soldier jumped out of the plane using a parachute. Option C: This option states: The students gathered together in the assembly hall. Option D: This option states: She carefully placed the vase on the shelf. **Option A** correctly applies: 'The actors had a final rehearsel before the big show.' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 22,
+        "question": "Find the misspelt word.",
+        "options": [
+          "Preposterous",
+          "Prepostrous",
+          "legitimate",
+          "kneel"
+        ],
+        "answer": "Prepostrous",
+        "explanation": "Option A: Preposterous is not the accepted standard spelling in this context. Option B: Prepostrous is the accepted standard spelling in this context. Option C: legitimate is not the accepted standard spelling in this context. Option D: kneel is not the accepted standard spelling in this context. **Option B** correctly applies: 'Prepostrous' matches the spelling requirement asked in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 21,
+        "question": "Find the word with a spelling mistake.",
+        "options": [
+          "Ephemeral",
+          "Preposterous",
+          "Alterior",
+          "Paraphernalia"
+        ],
+        "answer": "Alterior",
+        "explanation": "Option A: Ephemeral is not the accepted standard spelling in this context. Option B: Preposterous is not the accepted standard spelling in this context. Option C: Alterior is the accepted standard spelling in this context. Option D: Paraphernalia is not the accepted standard spelling in this context. **Option C** correctly applies: 'Alterior' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 20,
+        "question": "Pick the spelling that is correct for an educational qualification.",
+        "options": [
+          "Diploma",
+          "Diplumma",
+          "Dipluma",
+          "Dipploma"
+        ],
+        "answer": "Diploma",
+        "explanation": "Option A: Diploma is the accepted standard spelling in this context. Option B: Diplumma is not the accepted standard spelling in this context. Option C: Dipluma is not the accepted standard spelling in this context. Option D: Dipploma is not the accepted standard spelling in this context. **Option A** correctly applies: 'Diploma' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 19,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Questionnair",
+          "Questionnare",
+          "Questionaire",
+          "Questionnaire"
+        ],
+        "answer": "Questionnaire",
+        "explanation": "Option A: Questionnair is not the accepted standard spelling in this context. Option B: Questionnare is not the accepted standard spelling in this context. Option C: Questionaire is not the accepted standard spelling in this context. Option D: Questionnaire is the accepted standard spelling in this context. **Option D** correctly applies: 'Questionnaire' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 18,
+        "question": "Choose the misspelt word in this list.",
+        "options": [
+          "Aesthetics",
+          "Coercion",
+          "Iridescant",
+          "Bureaucracy"
+        ],
+        "answer": "Iridescant",
+        "explanation": "Option A: Aesthetics is not the accepted standard spelling in this context. Option B: Coercion is not the accepted standard spelling in this context. Option C: Iridescant is the accepted standard spelling in this context. Option D: Bureaucracy is not the accepted standard spelling in this context. **Option C** correctly applies: 'Iridescant' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 17,
+        "question": "Find the misspelt word.",
+        "options": [
+          "Perspicacious",
+          "Perspicasious",
+          "loneliness",
+          "lightning"
+        ],
+        "answer": "Perspicasious",
+        "explanation": "Option A: Perspicacious is not the accepted standard spelling in this context. Option B: Perspicasious is the accepted standard spelling in this context. Option C: loneliness is not the accepted standard spelling in this context. Option D: lightning is not the accepted standard spelling in this context. **Option B** correctly applies: 'Perspicasious' matches the spelling requirement asked in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 16,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Reconcile",
+          "Reconsile",
+          "Reconeile",
+          "Reconcil"
+        ],
+        "answer": "Reconcile",
+        "explanation": "Option A: Reconcile is the accepted standard spelling in this context. Option B: Reconsile is not the accepted standard spelling in this context. Option C: Reconeile is not the accepted standard spelling in this context. Option D: Reconcil is not the accepted standard spelling in this context. **Option A** correctly applies: 'Reconcile' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 15,
+        "question": "Which spelling is correct for a leadership role?",
+        "options": [
+          "Lieutenant",
+          "Luitenant",
+          "Lieutanant",
+          "Leuitenant"
+        ],
+        "answer": "Lieutenant",
+        "explanation": "Option A: Lieutenant is the accepted standard spelling in this context. Option B: Luitenant is not the accepted standard spelling in this context. Option C: Lieutanant is not the accepted standard spelling in this context. Option D: Leuitenant is not the accepted standard spelling in this context. **Option A** correctly applies: 'Lieutenant' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 14,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Occasional",
+          "Occational",
+          "Occassional",
+          "Occasionale"
+        ],
+        "answer": "Occasional",
+        "explanation": "Option A: Occasional is the accepted standard spelling in this context. Option B: Occational is not the accepted standard spelling in this context. Option C: Occassional is not the accepted standard spelling in this context. Option D: Occasionale is not the accepted standard spelling in this context. **Option A** correctly applies: 'Occasional' is the correct spelling required by the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 13,
+        "question": "Identify the misspelt word:",
+        "options": [
+          "Acknowledge",
+          "Connoissuer",
+          "Acquire",
+          "Absence"
+        ],
+        "answer": "Connoissuer",
+        "explanation": "Option A: Acknowledge means to admit or recognize. Option B: Connoissuer is the accepted standard spelling in this context. Option C: Acquire is not the accepted standard spelling in this context. Option D: Absence means state of being away or missing. **Option B** correctly applies: 'Connoissuer' matches the spelling requirement asked in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 12,
+        "question": "Select the misspelt word from the list.",
+        "options": [
+          "Liason",
+          "Manoeuvre",
+          "Reservoir",
+          "Camouflage"
+        ],
+        "answer": "Liason",
+        "explanation": "Option A: Liason is the accepted standard spelling in this context. Option B: Manoeuvre is not the accepted standard spelling in this context. Option C: Reservoir is not the accepted standard spelling in this context. Option D: Camouflage is not the accepted standard spelling in this context. **Option A** correctly applies: 'Liason' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 11,
+        "question": "Choose the word that is not spelled correctly.",
+        "options": [
+          "Exagerate",
+          "Leisure",
+          "Colleague",
+          "Maintenance"
+        ],
+        "answer": "Exagerate",
+        "explanation": "Option A: Exagerate is the accepted standard spelling in this context. Option B: Leisure is not the accepted standard spelling in this context. Option C: Colleague is not the accepted standard spelling in this context. Option D: Maintenance is not the accepted standard spelling in this context. **Option A** correctly applies: 'Exagerate' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 10,
+        "question": "Choose the option that completes the sentence using the correct spelling. After 35 years of service, Mr. Das finally retired and began receiving his ________ benefits every month.",
+        "options": [
+          "superanution",
+          "superannution",
+          "superannuation",
+          "superanualtion"
+        ],
+        "answer": "superannuation",
+        "explanation": "Option A: superanution is not the accepted standard spelling in this context. Option B: superannution is not the accepted standard spelling in this context. Option C: superannuation is the accepted standard spelling in this context. Option D: superanualtion is not the accepted standard spelling in this context. **Option C** correctly applies: 'superannuation' is the correct spelling required by the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 9,
+        "question": "Find the misspelt word.",
+        "options": [
+          "Influential",
+          "Magnanimous",
+          "Magnanimos",
+          "Intelligent"
+        ],
+        "answer": "Magnanimos",
+        "explanation": "Option A: Influential is not the accepted standard spelling in this context. Option B: Magnanimous is not the accepted standard spelling in this context. Option C: Magnanimos is the accepted standard spelling in this context. Option D: Intelligent is not the accepted standard spelling in this context. **Option C** correctly applies: 'Magnanimos' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 8,
+        "question": "Select the correct spelling of a word meaning **a long adventurous journey**.",
+        "options": [
+          "Odessay",
+          "Odyssey",
+          "Odessy",
+          "Oddysey"
+        ],
+        "answer": "Odyssey",
+        "explanation": "Option A: Odessay is not the accepted standard spelling in this context. Option B: Odyssey means a long adventurous journey. Option C: Odessy is not the accepted standard spelling in this context. Option D: Oddysey is not the accepted standard spelling in this context. **Option B** correctly applies: 'Odyssey' matches the spelling requirement asked in the question.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 7,
+        "question": "Identify the word that is not correctly spelled.",
+        "options": [
+          "Aberration",
+          "Discrepancy",
+          "Surveliance",
+          "Insurmountable"
+        ],
+        "answer": "Surveliance",
+        "explanation": "Option A: Aberration is not the accepted standard spelling in this context. Option B: Discrepancy is not the accepted standard spelling in this context. Option C: Surveliance is the accepted standard spelling in this context. Option D: Insurmountable is not the accepted standard spelling in this context. **Option C** correctly applies: 'Surveliance' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 6,
+        "question": "Which sentence contains a word that is spelled incorrectly?",
+        "options": [
+          "The scientist explained the hypothesis behind the experiment clearly.",
+          "The new hybrid model of the car is both fuel-efficient and stylish.",
+          "The therapist used hypnosis to help the patient recall past memories.",
+          "It's important to maintain hygenic practices to prevent illness."
+        ],
+        "answer": "It's important to maintain hygenic practices to prevent illness.",
+        "explanation": "Option A: This option states: The scientist explained the hypothesis behind the experiment clearly. Option B: This option states: The new hybrid model of the car is both fuel-efficient and stylish. Option C: This option states: The therapist used hypnosis to help the patient recall past memories. Option D: This option states: It's important to maintain hygenic practices to prevent illness. **Option D** correctly applies: 'It's important to maintain hygenic practices to prevent illness.' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 5,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Mischievous",
+          "Mischievious",
+          "Mischeivous",
+          "Mischevious"
+        ],
+        "answer": "Mischievous",
+        "explanation": "Option A: Mischievous is the accepted standard spelling in this context. Option B: Mischievious is not the accepted standard spelling in this context. Option C: Mischeivous is not the accepted standard spelling in this context. Option D: Mischevious is not the accepted standard spelling in this context. **Option A** correctly applies: 'Mischievous' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 4,
+        "question": "Spot the spelling error.",
+        "options": [
+          "Archaetype",
+          "Misanthrope",
+          "Quintessential",
+          "Resurgence"
+        ],
+        "answer": "Archaetype",
+        "explanation": "Option A: Archaetype is the accepted standard spelling in this context. Option B: Misanthrope means a person who dislikes or distrusts mankind. Option C: Quintessential is not the accepted standard spelling in this context. Option D: Resurgence is not the accepted standard spelling in this context. **Option A** correctly applies: 'Archaetype' matches the spelling requirement asked in the question.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 3,
+        "question": "Which complex term is misspelt below?",
+        "options": [
+          "Pseudonym",
+          "Epitaph",
+          "Inoccuous",
+          "Circumlocution"
+        ],
+        "answer": "Inoccuous",
+        "explanation": "Option A: Pseudonym means a false or pen name. Option B: Epitaph means an inscription on a tomb in memory of the dead. Option C: Inoccuous is the accepted standard spelling in this context. Option D: Circumlocution is not the accepted standard spelling in this context. **Option C** correctly applies: 'Inoccuous' matches the spelling requirement asked in the question.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 2,
+        "question": "Choose the correctly spelt word:",
+        "options": [
+          "Servillance",
+          "Survailance",
+          "Survilance",
+          "Surveillance"
+        ],
+        "answer": "Surveillance",
+        "explanation": "Option A: Servillance is not the accepted standard spelling in this context. Option B: Survailance is not the accepted standard spelling in this context. Option C: Survilance is not the accepted standard spelling in this context. Option D: Surveillance is the accepted standard spelling in this context. **Option D** correctly applies: 'Surveillance' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 1,
+        "question": "Select the correct spelling of a word meaning **fond of company; sociable**.",
+        "options": [
+          "Gregareous",
+          "Gregerious",
+          "Grigarious",
+          "Gregarious"
+        ],
+        "answer": "Gregarious",
+        "explanation": "Option A: Gregareous is not the accepted standard spelling in this context. Option B: Gregerious is not the accepted standard spelling in this context. Option C: Grigarious is not the accepted standard spelling in this context. Option D: Gregarious is the accepted standard spelling in this context. **Option D** correctly applies: 'Gregarious' matches the spelling requirement asked in the question.",
+        "answerKey": "D",
+        "answerIndex": 3
+      }
+    ]
+  }
+}

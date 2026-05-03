@@ -1,0 +1,1237 @@
+{
+  "quiz": {
+    "title": "Fill in the Blank - SSC Selection Post XIII 2025",
+    "category": "Grammar",
+    "totalQuestions": 74,
+    "questions": [
+      {
+        "id": 74,
+        "sourceQuestionNo": 535,
+        "question": "Fill in the blank with an appropriate article. We have the opportunity to see Great Lakes.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "much"
+        ],
+        "answer": "the",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: a does not best fit the requirement of the question. Option B: an does not best fit the requirement of the question. Option C: the fits the requirement of the question. Option D: much does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 73,
+        "sourceQuestionNo": 534,
+        "question": "Choose the option which best completes the sentence. When her daughter didn't come home on the last bus with the other girls, Mrs Mehta was _, she was terrified that something dreadful had happened to her.",
+        "options": [
+          "at her wits' end",
+          "at the last straw",
+          "at sixes and sevens",
+          "at the drop of a hat"
+        ],
+        "answer": "at her wits' end",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: at her wits' end fits the requirement of the question. Option B: at the last straw does not best fit the requirement of the question. Option C: at sixes and sevens does not best fit the requirement of the question. Option D: at the drop of a hat does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 72,
+        "sourceQuestionNo": 533,
+        "question": "The teacher asked us to draw a straight ___ across the page.",
+        "options": [
+          "lying",
+          "line",
+          "lyn",
+          "jane"
+        ],
+        "answer": "line",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: lying does not best fit the requirement of the question. Option B: line fits the requirement of the question. Option C: lyn does not best fit the requirement of the question. Option D: jane does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 71,
+        "sourceQuestionNo": 532,
+        "question": "Complete the collocation by choosing a suitable word to fill in the blank. The workers a break every 45 minutes, which is of great concern to the management.",
+        "options": [
+          "have",
+          "bring",
+          "put",
+          "take"
+        ],
+        "answer": "take",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: have does not best fit the requirement of the question. Option B: bring does not best fit the requirement of the question. Option C: put does not best fit the requirement of the question. Option D: take fits the requirement of the question. **Option D** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 70,
+        "sourceQuestionNo": 531,
+        "question": "He tossed the coin into the __.",
+        "options": [
+          "well",
+          "whale",
+          "wail",
+          "wheel"
+        ],
+        "answer": "well",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: well fits the requirement of the question. Option B: whale does not best fit the requirement of the question. Option C: wail does not best fit the requirement of the question. Option D: wheel does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 69,
+        "sourceQuestionNo": 530,
+        "question": "Fill in the blank with an appropriate adverb. Mohan is shy. He cannot communicate with people freely.",
+        "options": [
+          "truly",
+          "moderately",
+          "rather",
+          "naturally"
+        ],
+        "answer": "rather",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: truly does not best fit the requirement of the question. Option B: moderately does not best fit the requirement of the question. Option C: rather fits the requirement of the question. Option D: naturally does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 68,
+        "sourceQuestionNo": 529,
+        "question": "Choose the most suitable option to fill the blank part of the sentence. If the sentence is already correct, select 'No substitution required'. Hardly had the scientist presented his theory when critics called it___ absurd theory of the decade.",
+        "options": [
+          "the more",
+          "the most",
+          "most",
+          "the guests have arrived"
+        ],
+        "answer": "the most",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: the more does not best fit the requirement of the question. Option B: the most fits the requirement of the question. Option C: most does not best fit the requirement of the question. Option D: the guests have arrived does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 67,
+        "sourceQuestionNo": 528,
+        "question": "The children played on the river __.",
+        "options": [
+          "bank",
+          "bunk",
+          "bench",
+          "brink"
+        ],
+        "answer": "bank",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: bank fits the requirement of the question. Option B: bunk does not best fit the requirement of the question. Option C: bench does not best fit the requirement of the question. Option D: brink does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 66,
+        "sourceQuestionNo": 527,
+        "question": "Fill in the blank with the most appropriate option: I prefer tea ___ coffee.",
+        "options": [
+          "over",
+          "than",
+          "to",
+          "for"
+        ],
+        "answer": "to",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: over does not best fit the requirement of the question. Option B: than does not best fit the requirement of the question. Option C: to fits the requirement of the question. Option D: for does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 65,
+        "sourceQuestionNo": 526,
+        "question": "Fill in the blank with the most appropriate option: If I ___ him, I would not have believed it.",
+        "options": [
+          "wouldn't see",
+          "didn't see",
+          "haven't seen",
+          "hadn't seen"
+        ],
+        "answer": "hadn't seen",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: wouldn't see does not best fit the requirement of the question. Option B: \"didn't see does not best fit the requirement of the question. Option C: haven't seen does not best fit the requirement of the question. Option D: hadn't seen fits the requirement of the question. **Option D** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 64,
+        "sourceQuestionNo": 525,
+        "question": "Fill in the blank with the most appropriate option: He speaks English as ___ as a native speaker.",
+        "options": [
+          "fluent",
+          "fluently",
+          "more fluent",
+          "most fluently"
+        ],
+        "answer": "fluently",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: fluent does not best fit the requirement of the question. Option B: fluently fits the requirement of the question. Option C: more fluent does not best fit the requirement of the question. Option D: most fluently does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 63,
+        "sourceQuestionNo": 524,
+        "question": "Fill in the blank with the most appropriate adverb. She spoke so that everyone in the auditorium could hear her clearly.",
+        "options": [
+          "softly",
+          "loudly",
+          "quickly",
+          "silently"
+        ],
+        "answer": "loudly",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: softly does not best fit the requirement of the question. Option B: loudly fits the requirement of the question. Option C: quickly does not best fit the requirement of the question. Option D: silently does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 62,
+        "sourceQuestionNo": 523,
+        "question": "Fill in the blank with suitable preposition: He is standing ___ the corner of the street.",
+        "options": [
+          "OM",
+          "in",
+          "at",
+          "over"
+        ],
+        "answer": "at",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: OM does not best fit the requirement of the question. Option B: in does not best fit the requirement of the question. Option C: at fits the requirement of the question. Option D: over does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 61,
+        "sourceQuestionNo": 522,
+        "question": "Fill in the blank with the most appropriate option: He is aman __ word is his bond.",
+        "options": [
+          "who",
+          "whom",
+          "whose",
+          "which"
+        ],
+        "answer": "whose",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: who does not best fit the requirement of the question. Option B: whom does not best fit the requirement of the question. Option C: whose fits the requirement of the question. Option D: which does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 60,
+        "sourceQuestionNo": 521,
+        "question": "Fill in the blank with the most appropriate option: She insisted ___ paying the bill herself.",
+        "options": [
+          "at",
+          "in",
+          "on",
+          "about"
+        ],
+        "answer": "on",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: at does not best fit the requirement of the question. Option B: in does not best fit the requirement of the question. Option C: on fits the requirement of the question. Option D: about does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 59,
+        "sourceQuestionNo": 520,
+        "question": "The phrase \"The stars danced in the sky\" is an example of __.",
+        "options": [
+          "metaphor",
+          "personification",
+          "simile",
+          "idiom"
+        ],
+        "answer": "personification",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: metaphor does not best fit the requirement of the question. Option B: personification fits the requirement of the question. Option C: simile does not best fit the requirement of the question. Option D: idiom does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 58,
+        "sourceQuestionNo": 519,
+        "question": "Fill in the blank with the most appropriate option: That was the ___ performance of the night.",
+        "options": [
+          "amazing",
+          "more amazing",
+          "most amazing",
+          "much amazing"
+        ],
+        "answer": "most amazing",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: amazing does not best fit the requirement of the question. Option B: more amazing does not best fit the requirement of the question. Option C: most amazing fits the requirement of the question. Option D: much amazing does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 57,
+        "sourceQuestionNo": 518,
+        "question": "Fill in the blank with most appropriate tense: When I was a child, I___ to the park every evening.",
+        "options": [
+          "use to go",
+          "used to go",
+          "use to went",
+          "was going"
+        ],
+        "answer": "used to go",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: use to go does not best fit the requirement of the question. Option B: used to go fits the requirement of the question. Option C: use to went does not best fit the requirement of the question. Option D: was going does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 56,
+        "sourceQuestionNo": 517,
+        "question": "Fill in the blank with the most appropriate option: She was ___ embarrassed to speak in front of the class.",
+        "options": [
+          "fairly",
+          "too",
+          "quite",
+          "somewhat"
+        ],
+        "answer": "too",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: fairly does not best fit the requirement of the question. Option B: too fits the requirement of the question. Option C: quite does not best fit the requirement of the question. Option D: somewhat does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 55,
+        "sourceQuestionNo": 516,
+        "question": "Fill in the blank with the most appropriate option: .He answered the question ___ confidently, which impressed the panel.",
+        "options": [
+          "most",
+          "too",
+          "so",
+          "quite"
+        ],
+        "answer": "quite",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: most does not best fit the requirement of the question. Option B: too does not best fit the requirement of the question. Option C: so does not best fit the requirement of the question. Option D: quite fits the requirement of the question. **Option D** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 54,
+        "sourceQuestionNo": 515,
+        "question": "Fill in the blank with the most appropriate option: No sooner had we reached the station ___ the train left.",
+        "options": [
+          "than",
+          "when",
+          "then",
+          "that"
+        ],
+        "answer": "than",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: than fits the requirement of the question. Option B: when does not best fit the requirement of the question. Option C: then does not best fit the requirement of the question. Option D: that does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 53,
+        "sourceQuestionNo": 514,
+        "question": "Fill in the blank with the most appropriate option: This mountain is __ than the one we climbed last year.",
+        "options": [
+          "high",
+          "higher",
+          "highest",
+          "more high"
+        ],
+        "answer": "higher",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: high does not best fit the requirement of the question. Option B: higher fits the requirement of the question. Option C: highest does not best fit the requirement of the question. Option D: more high does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 52,
+        "sourceQuestionNo": 513,
+        "question": "Fill in the blank with most appropriate phrasal verb: The fire was so intense that the firefighters struggled to__it__.",
+        "options": [
+          "put - off",
+          "set - in",
+          "put - out",
+          "take - over"
+        ],
+        "answer": "put - out",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: put - off does not best fit the requirement of the question. Option B: set - in does not best fit the requirement of the question. Option C: put - out fits the requirement of the question. Option D: take - over does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 51,
+        "sourceQuestionNo": 512,
+        "question": "Fill in the blank with the appropriate adverb. That's the restaurant we met for the first time.",
+        "options": [
+          "in which",
+          "at which",
+          "where",
+          "at where"
+        ],
+        "answer": "where",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: in which does not best fit the requirement of the question. Option B: at which does not best fit the requirement of the question. Option C: where fits the requirement of the question. Option D: at where does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 50,
+        "sourceQuestionNo": 511,
+        "question": "Fill in the blank with most appropriate collocation: She ___ the table before dinner.",
+        "options": [
+          "prepared",
+          "made",
+          "set",
+          "arranged"
+        ],
+        "answer": "set",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: prepared does not best fit the requirement of the question. Option B: made does not best fit the requirement of the question. Option C: set fits the requirement of the question. Option D: arranged does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 49,
+        "sourceQuestionNo": 510,
+        "question": "Fill in the blank with most appropriate tense: By next month, she ___ in this company for five years.",
+        "options": [
+          "work",
+          "worked",
+          "will have work",
+          "will have been worked"
+        ],
+        "answer": "will have been worked",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: work does not best fit the requirement of the question. Option B: worked does not best fit the requirement of the question. Option C: will have work does not best fit the requirement of the question. Option D: will have been worked fits the requirement of the question. **Option D** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 48,
+        "sourceQuestionNo": 509,
+        "question": "Fill in the correct collocation in the following sentence. I wish to my own cafe one day.",
+        "options": [
+          "made",
+          "make",
+          "have",
+          "do"
+        ],
+        "answer": "have",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: made does not best fit the requirement of the question. Option B: make does not best fit the requirement of the question. Option C: have fits the requirement of the question. Option D: do does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 47,
+        "sourceQuestionNo": 508,
+        "question": "Fill in the blank with the appropriate adverb. We find him intelligent.",
+        "options": [
+          "too",
+          "very",
+          "much",
+          "almost"
+        ],
+        "answer": "very",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: too does not best fit the requirement of the question. Option B: very fits the requirement of the question. Option C: much does not best fit the requirement of the question. Option D: almost does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 46,
+        "sourceQuestionNo": 507,
+        "question": "Fill in the blank with the most appropriate option: Hardly had she entered the room __ the phone rang.",
+        "options": [
+          "when",
+          "than",
+          "'then",
+          "while"
+        ],
+        "answer": "when",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: when fits the requirement of the question. Option B: than does not best fit the requirement of the question. Option C: 'then does not best fit the requirement of the question. Option D: while does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 45,
+        "sourceQuestionNo": 506,
+        "question": "Fill in the blank with most appropriate collocation: He always tries to__ a good impression during interviews.",
+        "options": [
+          "take",
+          "do",
+          "make",
+          "build"
+        ],
+        "answer": "make",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: take does not best fit the requirement of the question. Option B: do does not best fit the requirement of the question. Option C: make fits the requirement of the question. Option D: build does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 44,
+        "sourceQuestionNo": 505,
+        "question": "Fill in the blank with most appropriate tense: The train ___ before we reached the station.",
+        "options": [
+          "left",
+          "leaves",
+          "had left",
+          "will leave"
+        ],
+        "answer": "had left",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: left does not best fit the requirement of the question. Option B: leaves does not best fit the requirement of the question. Option C: had left fits the requirement of the question. Option D: will leave does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 43,
+        "sourceQuestionNo": 504,
+        "question": "Fill in the blank with the most appropriate option: The constant hum of the machinery was ___ distracting.",
+        "options": [
+          "Much",
+          "Mostly",
+          "Rather",
+          "almost"
+        ],
+        "answer": "Rather",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Much does not best fit the requirement of the question. Option B: Mostly does not best fit the requirement of the question. Option C: Rather fits the requirement of the question. Option D: almost does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 42,
+        "sourceQuestionNo": 503,
+        "question": "The word \"bark\" can refer to a dog's sound or the outer layer of a tree. This is an example of __.",
+        "options": [
+          "Synonym",
+          "antonym",
+          "homonym",
+          "hypernym"
+        ],
+        "answer": "homonym",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Synonym does not best fit the requirement of the question. Option B: antonym does not best fit the requirement of the question. Option C: homonym fits the requirement of the question. Option D: hypernym does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 41,
+        "sourceQuestionNo": 502,
+        "question": "Fill in the blank with the most appropriate option: He showed great ___ in solving the puzzle.",
+        "options": [
+          "intelligent",
+          "intelligently",
+          "intelligence",
+          "intelligibly"
+        ],
+        "answer": "intelligence",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: intelligent does not best fit the requirement of the question. Option B: intelligently does not best fit the requirement of the question. Option C: intelligence fits the requirement of the question. Option D: intelligibly does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 40,
+        "sourceQuestionNo": 501,
+        "question": "Fill in the blank with most appropriate tense: If you study hard, you ___ the exam.",
+        "options": [
+          "Pass",
+          "passed",
+          "will pass",
+          "passing"
+        ],
+        "answer": "will pass",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Pass does not best fit the requirement of the question. Option B: passed does not best fit the requirement of the question. Option C: will pass fits the requirement of the question. Option D: passing does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 39,
+        "sourceQuestionNo": 500,
+        "question": "Fill in the blank with suitable preposition: We are going ___ a vacation next week.",
+        "options": [
+          "at",
+          "on",
+          "in",
+          "for"
+        ],
+        "answer": "on",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: at does not best fit the requirement of the question. Option B: on fits the requirement of the question. Option C: in does not best fit the requirement of the question. Option D: for does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 38,
+        "sourceQuestionNo": 499,
+        "question": "Fill in the blank with the most appropriate option: The professor spoke so ___ that many students lost interest.",
+        "options": [
+          "monotony",
+          "monotonous",
+          "monotonously",
+          "monotonic"
+        ],
+        "answer": "monotonously",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: monotony does not best fit the requirement of the question. Option B: monotonous does not best fit the requirement of the question. Option C: monotonously fits the requirement of the question. Option D: monotonic does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 37,
+        "sourceQuestionNo": 498,
+        "question": "Fill in the blank with the most appropriate option: You should not look ___ upon people who have less than you.",
+        "options": [
+          "down",
+          "'in",
+          "over",
+          "forward"
+        ],
+        "answer": "down",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: down fits the requirement of the question. Option B: 'in does not best fit the requirement of the question. Option C: over does not best fit the requirement of the question. Option D: forward does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 36,
+        "sourceQuestionNo": 497,
+        "question": "Fill in the blank with the most appropriate option: The manager wants the report ___ by tomorrow morning.",
+        "options": [
+          "submit",
+          "submitting",
+          "submitted",
+          "submits"
+        ],
+        "answer": "submitted",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: submit does not best fit the requirement of the question. Option B: submitting does not best fit the requirement of the question. Option C: submitted fits the requirement of the question. Option D: submits does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 35,
+        "sourceQuestionNo": 496,
+        "question": "Fill in the blank with the most appropriate option: This book is___ than the one I read last week.",
+        "options": [
+          "interesting",
+          "interest",
+          "more interesting",
+          "most interesting"
+        ],
+        "answer": "more interesting",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: interesting does not best fit the requirement of the question. Option B: interest does not best fit the requirement of the question. Option C: more interesting fits the requirement of the question. Option D: most interesting does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 34,
+        "sourceQuestionNo": 495,
+        "question": "Fill in the blank with the most appropriate adverb. He completed the task than anyone expected.",
+        "options": [
+          "fast",
+          "faster",
+          "fastest",
+          "most fast"
+        ],
+        "answer": "faster",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: fast does not best fit the requirement of the question. Option B: faster fits the requirement of the question. Option C: fastest does not best fit the requirement of the question. Option D: most fast does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 33,
+        "sourceQuestionNo": 494,
+        "question": "Identify the correct type of adjective in the following sentence. She ate sufficient bread. Here, Sufficient is a adjective.",
+        "options": [
+          "proper",
+          "numeral",
+          "qualitative",
+          "quantitative"
+        ],
+        "answer": "quantitative",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: proper does not best fit the requirement of the question. Option B: numeral does not best fit the requirement of the question. Option C: qualitative does not best fit the requirement of the question. Option D: quantitative fits the requirement of the question. **Option D** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 32,
+        "sourceQuestionNo": 493,
+        "question": "Choose the correct collocations from the options below. I don't sympathy with failures.",
+        "options": [
+          "keep",
+          "Put",
+          "do",
+          "have"
+        ],
+        "answer": "have",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: keep does not best fit the requirement of the question. Option B: Put does not best fit the requirement of the question. Option C: do does not best fit the requirement of the question. Option D: have fits the requirement of the question. **Option D** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 31,
+        "sourceQuestionNo": 492,
+        "question": "Fill in the blanks with the correct article. Ravi is most intelligent boy in class,",
+        "options": [
+          "a, the",
+          "an, a",
+          "the, the",
+          "an, the"
+        ],
+        "answer": "the, the",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: a, the does not best fit the requirement of the question. Option B: an, a does not best fit the requirement of the question. Option C: the, the fits the requirement of the question. Option D: an, the does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 30,
+        "sourceQuestionNo": 491,
+        "question": "Fill in the blank with most appropriate phrasal verb: The teacher asked the students to ___ their assignments.",
+        "options": [
+          "hand in",
+          "hand out",
+          "hand over",
+          "hand off"
+        ],
+        "answer": "hand in",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: hand in fits the requirement of the question. Option B: hand out does not best fit the requirement of the question. Option C: hand over does not best fit the requirement of the question. Option D: hand off does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 29,
+        "sourceQuestionNo": 490,
+        "question": "Fill in the blank with the most appropriate adverb. The teacher explained the concept ___ for the students.",
+        "options": [
+          "clear",
+          "clearly",
+          "clearer",
+          "clarity"
+        ],
+        "answer": "clearly",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: clear does not best fit the requirement of the question. Option B: clearly fits the requirement of the question. Option C: clearer does not best fit the requirement of the question. Option D: clarity does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 28,
+        "sourceQuestionNo": 489,
+        "question": "The type of reference in which different expressions are used to refer to the same object is reference.",
+        "options": [
+          "constant",
+          "same",
+          "variable",
+          "no"
+        ],
+        "answer": "variable",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: constant does not best fit the requirement of the question. Option B: same does not best fit the requirement of the question. Option C: variable fits the requirement of the question. Option D: no does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 27,
+        "sourceQuestionNo": 488,
+        "question": "Fill in the blank with the correct phrasal verb. He could not his habitual irregularity at work and was ultimately suspended.",
+        "options": [
+          "get on with",
+          "get away with",
+          "get on",
+          "get off"
+        ],
+        "answer": "get away with",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: get on with does not best fit the requirement of the question. Option B: get away with fits the requirement of the question. Option C: get on does not best fit the requirement of the question. Option D: get off does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 26,
+        "sourceQuestionNo": 487,
+        "question": "Identify the correct type of pronoun in the following sentence. I enjoyed myself during the holidays. Here, Myself is a pronoun.",
+        "options": [
+          "reflexive",
+          "possessive",
+          "distributive",
+          "demonstrative"
+        ],
+        "answer": "reflexive",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: reflexive fits the requirement of the question. Option B: possessive does not best fit the requirement of the question. Option C: distributive does not best fit the requirement of the question. Option D: demonstrative does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 25,
+        "sourceQuestionNo": 486,
+        "question": "Fill in the blank with the most appropriate option: Of the two proposals, the second one was far ___ to implement with the available resources.",
+        "options": [
+          "better",
+          "best",
+          "good",
+          "more better"
+        ],
+        "answer": "better",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: better fits the requirement of the question. Option B: best does not best fit the requirement of the question. Option C: good does not best fit the requirement of the question. Option D: more better does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 24,
+        "sourceQuestionNo": 485,
+        "question": "Fill in the blank with the most appropriate option: She is not only more talented but also__ experienced than her competitors.",
+        "options": [
+          "much",
+          "most",
+          "more",
+          "very"
+        ],
+        "answer": "more",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: much does not best fit the requirement of the question. Option B: most does not best fit the requirement of the question. Option C: more fits the requirement of the question. Option D: very does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 23,
+        "sourceQuestionNo": 484,
+        "question": "Fill in the blank with the most appropriate option: This is by far the ___ performance we've seen from the team all season.",
+        "options": [
+          "better",
+          "best",
+          "good",
+          "most better"
+        ],
+        "answer": "best",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: better does not best fit the requirement of the question. Option B: best fits the requirement of the question. Option C: good does not best fit the requirement of the question. Option D: most better does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 22,
+        "sourceQuestionNo": 483,
+        "question": "The artist created a stunning __ of the countryside.",
+        "options": [
+          "seen",
+          "scene",
+          "seam",
+          "sheen"
+        ],
+        "answer": "scene",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: seen does not best fit the requirement of the question. Option B: scene fits the requirement of the question. Option C: seam does not best fit the requirement of the question. Option D: sheen does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 21,
+        "sourceQuestionNo": 482,
+        "question": "Fill in the blank with an appropriate degree of comparison. Madhu was the one who had eaten the number of mangoes, only one!",
+        "options": [
+          "less",
+          "lesser",
+          "least",
+          "leastest"
+        ],
+        "answer": "least",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: less does not best fit the requirement of the question. Option B: lesser does not best fit the requirement of the question. Option C: least fits the requirement of the question. Option D: leastest does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 20,
+        "sourceQuestionNo": 481,
+        "question": "Fill in the blank with an appropriate phrasal verb. The elder child takes his father. They look like siblings.",
+        "options": [
+          "UP",
+          "in",
+          "after",
+          "before"
+        ],
+        "answer": "after",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: UP does not best fit the requirement of the question. Option B: in does not best fit the requirement of the question. Option C: after fits the requirement of the question. Option D: before does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 19,
+        "sourceQuestionNo": 480,
+        "question": "The owl perched on the tree at__.",
+        "options": [
+          "knight",
+          "night",
+          "nite",
+          "knit"
+        ],
+        "answer": "night",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: knight does not best fit the requirement of the question. Option B: night fits the requirement of the question. Option C: nite does not best fit the requirement of the question. Option D: knit does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 18,
+        "sourceQuestionNo": 479,
+        "question": "Fill in the blank with the most appropriate option: Neither the director nor the senior analysts inclined to support the merger in its proposed form.",
+        "options": [
+          "being",
+          "was",
+          "were",
+          "has been"
+        ],
+        "answer": "were",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: being does not best fit the requirement of the question. Option B: was does not best fit the requirement of the question. Option C: were fits the requirement of the question. Option D: has been does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 17,
+        "sourceQuestionNo": 478,
+        "question": "Fill in the blank with the most appropriate option: The mechanism operates parameters that are seldom adjusted once set.",
+        "options": [
+          "by",
+          "onto",
+          "within",
+          "beneath"
+        ],
+        "answer": "within",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: by does not best fit the requirement of the question. Option B: onto does not best fit the requirement of the question. Option C: within fits the requirement of the question. Option D: beneath does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 16,
+        "sourceQuestionNo": 477,
+        "question": "Fill in the blank with the most appropriate option: Only after the minister's resignation public trust begin to be restored.",
+        "options": [
+          "did",
+          "has",
+          "was",
+          "had"
+        ],
+        "answer": "did",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: did fits the requirement of the question. Option B: has does not best fit the requirement of the question. Option C: was does not best fit the requirement of the question. Option D: had does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 15,
+        "sourceQuestionNo": 476,
+        "question": "The captain stood at the ship's __.",
+        "options": [
+          "stair",
+          "steer",
+          "stern",
+          "stow"
+        ],
+        "answer": "stern",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: stair does not best fit the requirement of the question. Option B: steer does not best fit the requirement of the question. Option C: stern fits the requirement of the question. Option D: stow does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 14,
+        "sourceQuestionNo": 475,
+        "question": "Complete the collocation by choosing a suitable word to fill in the blank. The student could not a decision about his career as there were many alternatives to choose.",
+        "options": [
+          "build",
+          "give",
+          "make",
+          "think"
+        ],
+        "answer": "make",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: build does not best fit the requirement of the question. Option B: give does not best fit the requirement of the question. Option C: make fits the requirement of the question. Option D: think does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 13,
+        "sourceQuestionNo": 474,
+        "question": "Which among the following sentences is wrong?",
+        "options": [
+          "The sailor put the candle out.",
+          "The sailor set out on a voyage.",
+          "The sailor brought on the new ensign.",
+          "The sailor brought forth the badges to be distributed."
+        ],
+        "answer": "The sailor brought on the new ensign.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The sailor put the candle out. does not best fit the requirement of the question. Option B: The sailor set out on a voyage. does not best fit the requirement of the question. Option C: The sailor brought on the new ensign. fits the requirement of the question. Option D: The sailor brought forth the badges to be distributed. does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 12,
+        "sourceQuestionNo": 473,
+        "question": "I will not __ this kind of behavior in my class.",
+        "options": [
+          "bare",
+          "bear",
+          "beer",
+          "boar"
+        ],
+        "answer": "bear",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: bare does not best fit the requirement of the question. Option B: bear fits the requirement of the question. Option C: beer does not best fit the requirement of the question. Option D: boar does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 11,
+        "sourceQuestionNo": 472,
+        "question": "Fill in the blank with the most appropriate option: She insisted that he __ present during the signing of the agreement.",
+        "options": [
+          "be",
+          "was",
+          "would be",
+          "is"
+        ],
+        "answer": "be",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: be fits the requirement of the question. Option B: was does not best fit the requirement of the question. Option C: would be does not best fit the requirement of the question. Option D: is does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 10,
+        "sourceQuestionNo": 471,
+        "question": "Fill in the blank with the most appropriate option: The marketing campaign was so vague that its message failed to__ with the target audience.",
+        "options": [
+          "sink on",
+          "sink out",
+          "sink in",
+          "sink through"
+        ],
+        "answer": "sink in",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: sink on does not best fit the requirement of the question. Option B: sink out does not best fit the requirement of the question. Option C: sink in fits the requirement of the question. Option D: sink through does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 9,
+        "sourceQuestionNo": 470,
+        "question": "Improve the sentence by selecting the correct form of tense from the options. She said that she the report before the deadline.",
+        "options": [
+          "will complete",
+          "has completed",
+          "had completed",
+          "completes"
+        ],
+        "answer": "had completed",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: will complete does not best fit the requirement of the question. Option B: has completed does not best fit the requirement of the question. Option C: had completed fits the requirement of the question. Option D: completes does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 8,
+        "sourceQuestionNo": 469,
+        "question": "Fill in the blank with the appropriate article: The committee deliberated extensively over whether increase in tuition fees was justifiable given the prevailing economic climate.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "answer": "an",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: a does not best fit the requirement of the question. Option B: an fits the requirement of the question. Option C: the does not best fit the requirement of the question. Option D: no article does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 7,
+        "sourceQuestionNo": 468,
+        "question": "Fill in the blank with the appropriate adverb. The policy was implemented , without prior public consultation.",
+        "options": [
+          "arbitrarily",
+          "intuitively",
+          "pragmatically",
+          "sequentially"
+        ],
+        "answer": "arbitrarily",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: arbitrarily fits the requirement of the question. Option B: intuitively does not best fit the requirement of the question. Option C: pragmatically does not best fit the requirement of the question. Option D: sequentially does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 6,
+        "sourceQuestionNo": 467,
+        "question": "Fill in the blank with the correctly spelt word. The king's reign led to widespread unrest among the people.",
+        "options": [
+          "despotick",
+          "desppotic",
+          "despotic",
+          "disspotic"
+        ],
+        "answer": "despotic",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: despotick does not best fit the requirement of the question. Option B: desppotic does not best fit the requirement of the question. Option C: despotic fits the requirement of the question. Option D: disspotic does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 5,
+        "sourceQuestionNo": 466,
+        "question": "Fill in the blank with the most appropriate option: The revised algorithm is ___ than the previous version, reducing load time by half.",
+        "options": [
+          "efficient",
+          "most efficient",
+          "more efficient",
+          "efficiency"
+        ],
+        "answer": "more efficient",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: efficient does not best fit the requirement of the question. Option B: most efficient does not best fit the requirement of the question. Option C: more efficient fits the requirement of the question. Option D: efficiency does not best fit the requirement of the question. **Option C** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 4,
+        "sourceQuestionNo": 465,
+        "question": "Fill in the blank with the most appropriate option: Of all the analysts on the panel, Priya was considered the __ in macroeconomic interpretation.",
+        "options": [
+          "best",
+          "better",
+          "most better",
+          "more best"
+        ],
+        "answer": "best",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: best fits the requirement of the question. Option B: better does not best fit the requirement of the question. Option C: most better does not best fit the requirement of the question. Option D: more best does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 3,
+        "sourceQuestionNo": 464,
+        "question": "Fill in the blank with the most appropriate option: Of all the analysts on the panel, Priya was considered the __ in macroeconomic interpretation.",
+        "options": [
+          "best",
+          "better",
+          "most better",
+          "more best"
+        ],
+        "answer": "best",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: best fits the requirement of the question. Option B: better does not best fit the requirement of the question. Option C: most better does not best fit the requirement of the question. Option D: more best does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      },
+      {
+        "id": 2,
+        "sourceQuestionNo": 463,
+        "question": "Fill in the blank with the most appropriate option: Among the shortlisted candidates, she presented the ______ argument with impeccable logic and evidence.",
+        "options": [
+          "most compelling",
+          "more compelling",
+          "much compelling",
+          "most compelled"
+        ],
+        "answer": "most compelling",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: most compelling fits the requirement of the question. Option B: more compelling does not best fit the requirement of the question. Option C: much compelling does not best fit the requirement of the question. Option D: most compelled does not best fit the requirement of the question. **Option A** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank",
+        "needsReview": true,
+        "issue": "OCR anomaly was manually normalized from rendered PDF image; spot-check recommended."
+      },
+      {
+        "id": 1,
+        "sourceQuestionNo": 462,
+        "question": "Fill in the blank with the most appropriate option: By the time the rescue team arrived, the villagers ___ to higher ground.",
+        "options": [
+          "have fled",
+          "had fled",
+          "fled",
+          "would flee"
+        ],
+        "answer": "had fled",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: have fled does not best fit the requirement of the question. Option B: had fled fits the requirement of the question. Option C: fled does not best fit the requirement of the question. Option D: would flee does not best fit the requirement of the question. **Option B** correctly applies: it is the most suitable word/phrase for the blank according to grammar and context.",
+        "type": "Fill in the Blank"
+      }
+    ]
+  }
+}

@@ -6,7 +6,7 @@
     <!-- Center the logo without scaling it to the full screen -->
     <item>
         <bitmap
-            android:src="@mipmap/ic_launcher_round"
+            android:src="@drawable/splash_logo"
             android:gravity="center" />
     </item>
 </layer-list>

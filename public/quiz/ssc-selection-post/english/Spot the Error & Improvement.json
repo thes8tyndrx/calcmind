@@ -1,0 +1,1667 @@
+{
+  "quiz": {
+    "title": "Error Spotting / Sentence Improvement - SSC Selection Post XIII 2025",
+    "category": "Grammar",
+    "totalQuestions": 101,
+    "questions": [
+      {
+        "id": 101,
+        "sourceQuestionNo": 461,
+        "question": "Identify the word in this sentence that contains an error. He jumped in the pool with his clothes on.",
+        "options": [
+          "clothes",
+          "pool",
+          "jumped",
+          "in"
+        ],
+        "answer": "in",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: clothes does not best fit the requirement of the question. Option B: pool does not best fit the requirement of the question. Option C: jumped does not best fit the requirement of the question. Option D: in fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 100,
+        "sourceQuestionNo": 460,
+        "question": "Find the part of the sentence that contains an error: The application forms which were downloaded from the portal (1)/ and submitted after verification (2)/ is being processed in batches (3)/ under administrative supervision. (4)",
+        "options": [
+          "The application forms which were downloaded from the portal (1)",
+          "and submitted after verification (2)",
+          "is being processed in batches (3)",
+          "under administrative supervision (4)"
+        ],
+        "answer": "is being processed in batches (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The application forms which were downloaded from the portal (1) does not best fit the requirement of the question. Option B: and submitted after verification (2) does not best fit the requirement of the question. Option C: is being processed in batches (3) fits the requirement of the question. Option D: under administrative supervision (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 99,
+        "sourceQuestionNo": 459,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select 'No substitution required'. One of the most valuable paintings **<u>were stolen</u>** from the gallery last night.",
+        "options": [
+          "was stolen",
+          "have stolen",
+          "had stolen",
+          "No substitution required"
+        ],
+        "answer": "was stolen",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: was stolen fits the requirement of the question. Option B: have stolen does not best fit the requirement of the question. Option C: had stolen does not best fit the requirement of the question. Option D: No substitution required does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 98,
+        "sourceQuestionNo": 458,
+        "question": "Find the part of the sentence that contains an error: The principal who had retired last year (1)/ and was honoured by all faculty members (2)/ were awarded a lifetime achievement certificate by the board (3)/ on the occasion of annual convocation. (4)",
+        "options": [
+          "The principal who had retired last year (1)",
+          "and was honoured by all faculty members (2)",
+          "were awarded a lifetime achievement certificate by the board (3)",
+          "on the occasion of annual convocation (4)"
+        ],
+        "answer": "were awarded a lifetime achievement certificate by the board (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The principal who had retired last year (1) does not best fit the requirement of the question. Option B: and was honoured by all faculty members (2) does not best fit the requirement of the question. Option C: were awarded a lifetime achievement certificate by the board (3) fits the requirement of the question. Option D: on the occasion of annual convocation (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 97,
+        "sourceQuestionNo": 457,
+        "question": "Find the part of the sentence that contains an error: Every members of the alumni group (1)/ who attended the annual meet (2)/ shared their experiences with great enthusiasm (3)/ over a formal dinner. (4)",
+        "options": [
+          "Every members of the alumni group (1)",
+          "who attended the annual meet (2)",
+          "shared their experiences with great enthusiasm (3)",
+          "over a formal dinner (4)"
+        ],
+        "answer": "Every members of the alumni group (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Every members of the alumni group (1) fits the requirement of the question. Option B: who attended the annual meet (2) does not best fit the requirement of the question. Option C: shared their experiences with great enthusiasm (3) does not best fit the requirement of the question. Option D: over a formal dinner (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 96,
+        "sourceQuestionNo": 456,
+        "question": "Find the part of the sentence that contains an error: The novel which had remained unpublished for decades (1)/ was discovered by chance in a locked drawer (2)/ and were later translated into multiple languages (3)/ by a well-known critic. (4)",
+        "options": [
+          "The novel which had remained unpublished for decades (1)",
+          "was discovered by chance in a locked drawer (2)",
+          "and were later translated into multiple languages (3)",
+          "by a well-known critic (4)"
+        ],
+        "answer": "and were later translated into multiple languages (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The novel which had remained unpublished for decades (1) does not best fit the requirement of the question. Option B: was discovered by chance in a locked drawer (2) does not best fit the requirement of the question. Option C: and were later translated into multiple languages (3) fits the requirement of the question. Option D: by a well-known critic (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 95,
+        "sourceQuestionNo": 455,
+        "question": "Spot the part of the sentence that contains an error. If there is no error, choose D. A. She must have left B. the office early yesterday C. because she looks very tired today. D. No error",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) fits the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 94,
+        "sourceQuestionNo": 454,
+        "question": "Find the part of the sentence that contains an error: We discussed (1) / the project (2) / in very details (3) / during the meeting (4).",
+        "options": [
+          "We discussed (1)",
+          "the project (2)",
+          "in very details (3)",
+          "during the meeting. (4)"
+        ],
+        "answer": "in very details (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: We discussed (1) does not best fit the requirement of the question. Option B: the project (2) does not best fit the requirement of the question. Option C: in very details (3) fits the requirement of the question. Option D: during the meeting. (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 93,
+        "sourceQuestionNo": 453,
+        "question": "Find the part of the sentence that contains an error: He is a (1) / quick runner and (2) / a smart think (3) / as well(4) .",
+        "options": [
+          "He is a (1)",
+          "quick runner and (2)",
+          "a smart think (3)",
+          "as well. (4)"
+        ],
+        "answer": "a smart think (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: He is a (1) does not best fit the requirement of the question. Option B: quick runner and (2) does not best fit the requirement of the question. Option C: a smart think (3) fits the requirement of the question. Option D: as well. (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 92,
+        "sourceQuestionNo": 452,
+        "question": "Find the part of the sentence that contains an error: She sings (1) / beautifully and dance (2) / on the stage (3) / every Sunday(4).",
+        "options": [
+          "She sings (1)",
+          "beautifully and dance (2)",
+          "on the stage (3)",
+          "every Sunday. (4)"
+        ],
+        "answer": "beautifully and dance (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: She sings (1) does not best fit the requirement of the question. Option B: beautifully and dance (2) fits the requirement of the question. Option C: on the stage (3) does not best fit the requirement of the question. Option D: every Sunday. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 91,
+        "sourceQuestionNo": 451,
+        "question": "Find the part of the sentence that contains an error: She broke down (1) / the complicated topic down (2) / in simple terms (3) / for the students(4).",
+        "options": [
+          "She broke down (1)",
+          "the complicated topic down (2)",
+          "in simple terms (3)",
+          "for the students. (4)"
+        ],
+        "answer": "the complicated topic down (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: She broke down (1) does not best fit the requirement of the question. Option B: the complicated topic down (2) fits the requirement of the question. Option C: in simple terms (3) does not best fit the requirement of the question. Option D: for the students. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 90,
+        "sourceQuestionNo": 450,
+        "question": "Find the part of the sentence that contains an error: He came across (1) / with an interesting article (2) / while browsing (3) / the newspaper(4).",
+        "options": [
+          "He came across (1)",
+          "with an interesting article (2)",
+          "while browsing (3)",
+          "the newspaper. (4)"
+        ],
+        "answer": "with an interesting article (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: He came across (1) does not best fit the requirement of the question. Option B: with an interesting article (2) fits the requirement of the question. Option C: while browsing (3) does not best fit the requirement of the question. Option D: the newspaper. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 89,
+        "sourceQuestionNo": 449,
+        "question": "Find the part of the sentence that contains an error: She returned back (1) / the borrowed books (2) / to the library (3) / on time (4).",
+        "options": [
+          "She returned back (1)",
+          "the borrowed books (2)",
+          "to the library (3)",
+          "on time. (4)"
+        ],
+        "answer": "She returned back (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She returned back (1) fits the requirement of the question. Option B: the borrowed books (2) does not best fit the requirement of the question. Option C: to the library (3) does not best fit the requirement of the question. Option D: on time. (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 88,
+        "sourceQuestionNo": 448,
+        "question": "Find the part of the sentence that contains an error: He made a (1) / quickly decision (2) / without considering (3) / all the facts (4).",
+        "options": [
+          "He made a (1)",
+          "quickly decision (2)",
+          "without considering (3)",
+          "all the facts. (4)"
+        ],
+        "answer": "quickly decision (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: He made a (1) does not best fit the requirement of the question. Option B: quickly decision (2) fits the requirement of the question. Option C: without considering (3) does not best fit the requirement of the question. Option D: all the facts. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 87,
+        "sourceQuestionNo": 447,
+        "question": "Find the part of the sentence that contains an error: I bought an apple (1) / a banana (2) / and a orange (3) / from the market(4).",
+        "options": [
+          "I bought an apple (1)",
+          "a banana (2)",
+          "and a orange (3)",
+          "from the market. (4)"
+        ],
+        "answer": "and a orange (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: I bought an apple (1) does not best fit the requirement of the question. Option B: a banana (2) does not best fit the requirement of the question. Option C: and a orange (3) fits the requirement of the question. Option D: from the market. (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 86,
+        "sourceQuestionNo": 446,
+        "question": "Find the part of the sentence that contains an error: He drives very careful (1) / especially at night (2) / to avoid any accidents (3) / on the road(4).",
+        "options": [
+          "He drives very careful (1)",
+          "especially at night (2)",
+          "to avoid any accidents (3)",
+          "on the road. (4)"
+        ],
+        "answer": "He drives very careful (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: He drives very careful (1) fits the requirement of the question. Option B: especially at night (2) does not best fit the requirement of the question. Option C: to avoid any accidents (3) does not best fit the requirement of the question. Option D: on the road. (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 85,
+        "sourceQuestionNo": 445,
+        "question": "Find the part of the sentence that contains an error: She sang (1) / so beautifully (2) / that everyone (3) / were amazed(4).",
+        "options": [
+          "She sang (1)",
+          "so beautifully (2)",
+          "that everyone (3)",
+          "were amazed. (4)"
+        ],
+        "answer": "were amazed. (4)",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: She sang (1) does not best fit the requirement of the question. Option B: so beautifully (2) does not best fit the requirement of the question. Option C: that everyone (3) does not best fit the requirement of the question. Option D: were amazed. (4) fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 84,
+        "sourceQuestionNo": 444,
+        "question": "Find the part of the sentence that contains an error: The news are (1) / quite surprising (2) / and hard to believe (3) / for the public(4).",
+        "options": [
+          "The news are (1)",
+          "quite surprising (2)",
+          "and hard to believe (3)",
+          "for the public. (4)"
+        ],
+        "answer": "The news are (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The news are (1) fits the requirement of the question. Option B: quite surprising (2) does not best fit the requirement of the question. Option C: and hard to believe (3) does not best fit the requirement of the question. Option D: for the public. (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 83,
+        "sourceQuestionNo": 443,
+        "question": "Find the part of the sentence that contains an error: The teacher gave (1) / a advice (2) / which was really (3) / helpful(4).",
+        "options": [
+          "The teacher gave (1)",
+          "an advice (2)",
+          "which was really (3)",
+          "helpful. (4)"
+        ],
+        "answer": "an advice (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The teacher gave (1) does not best fit the requirement of the question. Option B: an advice (2) fits the requirement of the question. Option C: which was really (3) does not best fit the requirement of the question. Option D: helpful. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 82,
+        "sourceQuestionNo": 442,
+        "question": "Find the part of the sentence that contains an error: He spoke to (1) / a MLA (2) / regarding the issue (3) / on infrastructure (4).",
+        "options": [
+          "He spoke to (1)",
+          "a MLA (2)",
+          "regarding the issue (3)",
+          "on infrastructure. (4)"
+        ],
+        "answer": "a MLA (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: He spoke to (1) does not best fit the requirement of the question. Option B: a MLA (2) fits the requirement of the question. Option C: regarding the issue (3) does not best fit the requirement of the question. Option D: on infrastructure. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 81,
+        "sourceQuestionNo": 441,
+        "question": "Find the part of the sentence that contains an error: We walked (1) / beside the road (2) / and found shelter (3) / under a tree(4).",
+        "options": [
+          "We walked (1)",
+          "beside the road (2)",
+          "and found shelter (3)",
+          "under a tree. (4)"
+        ],
+        "answer": "beside the road (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: We walked (1) does not best fit the requirement of the question. Option B: beside the road (2) fits the requirement of the question. Option C: and found shelter (3) does not best fit the requirement of the question. Option D: under a tree. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 80,
+        "sourceQuestionNo": 440,
+        "question": "Find the part of the sentence that contains an error: She was accused (1) / with stealing the money (2) / by the cashier (3) / at the bank(4).",
+        "options": [
+          "She was accused (1)",
+          "with stealing the money (2)",
+          "by the cashier (3)",
+          "in the bank. (4)"
+        ],
+        "answer": "with stealing the money (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: She was accused (1) does not best fit the requirement of the question. Option B: with stealing the money (2) fits the requirement of the question. Option C: by the cashier (3) does not best fit the requirement of the question. Option D: in the bank. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 79,
+        "sourceQuestionNo": 439,
+        "question": "Choose the sentence that correctly uses the comparative degree.",
+        "options": [
+          "This is the most easiest task.",
+          "This task is more easier than the previous one.",
+          "This task is easier than the previous one.",
+          "This task is the more easier than the previous one."
+        ],
+        "answer": "This task is easier than the previous one.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: This is the most easiest task. does not best fit the requirement of the question. Option B: This task is more easier than the previous one. does not best fit the requirement of the question. Option C: This task is easier than the previous one. fits the requirement of the question. Option D: This task is the more easier than the previous one. does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 78,
+        "sourceQuestionNo": 438,
+        "question": "Identify the sentence that uses the positive degree of comparison.",
+        "options": [
+          "She is the most intelligent student in the class.",
+          "She is more intelligent than her classmates.",
+          "She is as intelligent as her classmates.",
+          "She is the more intelligent student in the class."
+        ],
+        "answer": "She is as intelligent as her classmates.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: She is the most intelligent student in the class. does not best fit the requirement of the question. Option B: She is more intelligent than her classmates. does not best fit the requirement of the question. Option C: She is as intelligent as her classmates. fits the requirement of the question. Option D: She is the more intelligent student in the class. does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 77,
+        "sourceQuestionNo": 437,
+        "question": "Choose the option that will replace the error highlighted in bold. He tried to **<u>make up</u>** the real meaning behind her silence, but failed.",
+        "options": [
+          "Make for",
+          "Make on",
+          "Make about",
+          "Make out"
+        ],
+        "answer": "Make out",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Make for does not best fit the requirement of the question. Option B: Make on does not best fit the requirement of the question. Option C: Make about does not best fit the requirement of the question. Option D: Make out fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 76,
+        "sourceQuestionNo": 436,
+        "question": "Choose the option that will replace the error highlighted in bold. She didn't have the required qualifications, **<u>and</u>** she was not selected for the role.",
+        "options": [
+          "Therefore",
+          "Although",
+          "However",
+          "Thus"
+        ],
+        "answer": "Therefore",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Therefore fits the requirement of the question. Option B: Although does not best fit the requirement of the question. Option C: However does not best fit the requirement of the question. Option D: Thus does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 75,
+        "sourceQuestionNo": 435,
+        "question": "Choose the option that will replace the error highlighted in bold. The researchers conducted a study to **<u>do</u>** light on the effects of climate change on coral reefs.",
+        "options": [
+          "Throw",
+          "Make",
+          "Bring",
+          "shed"
+        ],
+        "answer": "shed",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Throw does not best fit the requirement of the question. Option B: Make does not best fit the requirement of the question. Option C: Bring does not best fit the requirement of the question. Option D: shed fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 74,
+        "sourceQuestionNo": 434,
+        "question": "Find the part of the sentence that contains an error: Please look (1) / after the matter (2) / and let me (3) / know what you find (4).",
+        "options": [
+          "Please look (1)",
+          "after the matter (2)",
+          "and let me (3)",
+          "know what you find. (4)"
+        ],
+        "answer": "after the matter (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Please look (1) does not best fit the requirement of the question. Option B: after the matter (2) fits the requirement of the question. Option C: and let me (3) does not best fit the requirement of the question. Option D: know what you find. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 73,
+        "sourceQuestionNo": 433,
+        "question": "Find the part of the sentence that contains an error: By the time we reached (1) / the stadium, the match (2) / already starts. (3) / We were disappointed(4).",
+        "options": [
+          "By the time we reached (1)",
+          "the stadium, the match (2)",
+          "already starts. (3)",
+          "We were disappointed. (4)"
+        ],
+        "answer": "already starts. (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: By the time we reached (1) does not best fit the requirement of the question. Option B: the stadium, the match (2) does not best fit the requirement of the question. Option C: already starts. (3) fits the requirement of the question. Option D: We were disappointed. (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 72,
+        "sourceQuestionNo": 432,
+        "question": "Choose the option that will replace the error highlighted in bold. **<u>Since</u>** Hamlet loved Ophelia, he should have trusted her more openly.",
+        "options": [
+          "Because",
+          "When",
+          "Hence",
+          "Although"
+        ],
+        "answer": "Because",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Because fits the requirement of the question. Option B: When does not best fit the requirement of the question. Option C: Hence does not best fit the requirement of the question. Option D: Although does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 71,
+        "sourceQuestionNo": 431,
+        "question": "Find the part of the sentence that contains an error: He has been working (1) / as a poet (2) / since five years (3) / in the village (4).",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) fits the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 70,
+        "sourceQuestionNo": 430,
+        "question": "Find the part of the sentence that contains an error: A elephant (1) / was seen wandering (2) / on the road (3) / late at night (4).",
+        "options": [
+          "Aelephant (1)",
+          "was seen wandering (2)",
+          "on the road (3)",
+          "late at night. (4)"
+        ],
+        "answer": "Aelephant (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Aelephant (1) fits the requirement of the question. Option B: was seen wandering (2) does not best fit the requirement of the question. Option C: on the road (3) does not best fit the requirement of the question. Option D: late at night. (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 69,
+        "sourceQuestionNo": 429,
+        "question": "Find the part of the sentence that contains an error: We ran into (1) / some old friends (2) / at the mall (3) / and catch up(4).",
+        "options": [
+          "We ran into (1)",
+          "some old friends (2)",
+          "at the mall (3)",
+          "and catch up. (4)"
+        ],
+        "answer": "and catch up. (4)",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: We ran into (1) does not best fit the requirement of the question. Option B: some old friends (2) does not best fit the requirement of the question. Option C: at the mall (3) does not best fit the requirement of the question. Option D: and catch up. (4) fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 68,
+        "sourceQuestionNo": 428,
+        "question": "Find the part of the sentence that contains an error: He has been living (1) / on this street (2) / since five years. (3) / with his family(4).",
+        "options": [
+          "He has been living (1)",
+          "on this street (2)",
+          "since five years. (3)",
+          "with his family. (4)"
+        ],
+        "answer": "since five years. (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: He has been living (1) does not best fit the requirement of the question. Option B: on this street (2) does not best fit the requirement of the question. Option C: since five years. (3) fits the requirement of the question. Option D: with his family. (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 67,
+        "sourceQuestionNo": 427,
+        "question": "Find the part of the sentence that contains an error: Among all the students (1) / he is the better (2) / in mathematics (3) / and physics(4).",
+        "options": [
+          "Among all the students (1)",
+          "he is the better (2)",
+          "in mathematics (3)",
+          "and physics. (4)"
+        ],
+        "answer": "he is the better (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Among all the students (1) does not best fit the requirement of the question. Option B: he is the better (2) fits the requirement of the question. Option C: in mathematics (3) does not best fit the requirement of the question. Option D: and physics. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 66,
+        "sourceQuestionNo": 426,
+        "question": "Find the part of the sentence that contains an error: This is the (1) / most easiest question (2) / in the entire (3) / test paper(4).",
+        "options": [
+          "This is the (1)",
+          "most easiest question (2)",
+          "in the entire (3)",
+          "test paper. (4)"
+        ],
+        "answer": "most easiest question (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: This is the (1) does not best fit the requirement of the question. Option B: most easiest question (2) fits the requirement of the question. Option C: in the entire (3) does not best fit the requirement of the question. Option D: test paper. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 65,
+        "sourceQuestionNo": 425,
+        "question": "Find the part of the sentence that contains an error: Of the two brothers (1) / Ramesh is more tall (2) / than Suresh (3) / by two inches(4).",
+        "options": [
+          "Of the two brothers (1)",
+          "Ramesh is more tall (2)",
+          "than Suresh (3)",
+          "by two inches. (4)"
+        ],
+        "answer": "Ramesh is more tall (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Of the two brothers (1) does not best fit the requirement of the question. Option B: Ramesh is more tall (2) fits the requirement of the question. Option C: than Suresh (3) does not best fit the requirement of the question. Option D: by two inches. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 64,
+        "sourceQuestionNo": 424,
+        "question": "Find the part of the sentence that contains an error: He will be arrived (1) / at the airport (2) / before we reach there. (3) / Don't worry(4).",
+        "options": [
+          "He will be arrived (1)",
+          "at the airport (2)",
+          "before we reach there. (3)",
+          "Don't worry. (4)"
+        ],
+        "answer": "He will be arrived (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: He will be arrived (1) fits the requirement of the question. Option B: at the airport (2) does not best fit the requirement of the question. Option C: before we reach there. (3) does not best fit the requirement of the question. Option D: Don't worry. (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 63,
+        "sourceQuestionNo": 423,
+        "question": "Find the part of the sentence that contains an error: She insisted (1) / to pay for her meal (2) / despite our objections (3) / to the contrary(4).",
+        "options": [
+          "She insisted (1)",
+          "to pay for her meal (2)",
+          "despite our objections (3)",
+          "to the contrary. (4)"
+        ],
+        "answer": "to pay for her meal (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: She insisted (1) does not best fit the requirement of the question. Option B: to pay for her meal (2) fits the requirement of the question. Option C: despite our objections (3) does not best fit the requirement of the question. Option D: to the contrary. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 62,
+        "sourceQuestionNo": 422,
+        "question": "Amit: Where were you, Akash? Akash: I didn't mean to leave you in the lurch. I thought we had canceled our meeting. What does Akash mean by saying, \"I didn't mean to leave you in the lurch\"?",
+        "options": [
+          "Akash didn't want to leave Amit in a difficult situation.",
+          "Akash was busy with some urgent work.",
+          "Akash forgot about the meeting completely.",
+          "Akash was intentionally avoiding Amit."
+        ],
+        "answer": "Akash didn't want to leave Amit in a difficult situation.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Akash didn't want to leave Amit in a difficult situation. fits the requirement of the question. Option B: Akash was busy with some urgent work. does not best fit the requirement of the question. Option C: Akash forgot about the meeting completely. does not best fit the requirement of the question. Option D: Akash was intentionally avoiding Amit. does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 61,
+        "sourceQuestionNo": 421,
+        "question": "Choose the option that will replace the error highlighted in bold. The baby slept **<u>quiet</u>** through the night.",
+        "options": [
+          "Calm",
+          "Soft",
+          "Peaceful",
+          "Quietly"
+        ],
+        "answer": "Quietly",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Calm does not best fit the requirement of the question. Option B: Soft does not best fit the requirement of the question. Option C: Peaceful does not best fit the requirement of the question. Option D: Quietly fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 60,
+        "sourceQuestionNo": 420,
+        "question": "Find the part of the sentence that contains an error: They enjoyed (1) / the sceneries (2) / during their trip (3) / to the mountains(4).",
+        "options": [
+          "They enjoyed (1)",
+          "the sceneries (2)",
+          "during their trip (3)",
+          "to the mountains. (4)"
+        ],
+        "answer": "the sceneries (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: They enjoyed (1) does not best fit the requirement of the question. Option B: the sceneries (2) fits the requirement of the question. Option C: during their trip (3) does not best fit the requirement of the question. Option D: to the mountains. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 59,
+        "sourceQuestionNo": 419,
+        "question": "Find the part of the sentence that contains an error: This book is (1) / gooder than (2) / the one we read (3) / last month(4).",
+        "options": [
+          "This book is (1)",
+          "gooder than (2)",
+          "the one we read (3)",
+          "last month. (4)"
+        ],
+        "answer": "gooder than (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: This book is (1) does not best fit the requirement of the question. Option B: gooder than (2) fits the requirement of the question. Option C: the one we read (3) does not best fit the requirement of the question. Option D: last month. (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 58,
+        "sourceQuestionNo": 418,
+        "question": "Find the part of the sentence that contains an error: She adopted a orphan (1) / and raised him (2) / as her own child (3) / with love(4).",
+        "options": [
+          "She adopted a orphan (1)",
+          "and raised him (2)",
+          "as her own child (3)",
+          "with love. (4)"
+        ],
+        "answer": "She adopted a orphan (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She adopted a orphan (1) fits the requirement of the question. Option B: and raised him (2) does not best fit the requirement of the question. Option C: as her own child (3) does not best fit the requirement of the question. Option D: with love. (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 57,
+        "sourceQuestionNo": 417,
+        "question": "Find the part of the sentence that contains an error: The teacher asked the students (1) / to write neatly (2) / and answer (3) / each questions carefully(4).",
+        "options": [
+          "The teacher asked the students (1)",
+          "to write neatly (2)",
+          "and answer (3)",
+          "each questions carefully. (4)"
+        ],
+        "answer": "each questions carefully. (4)",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: The teacher asked the students (1) does not best fit the requirement of the question. Option B: to write neatly (2) does not best fit the requirement of the question. Option C: and answer (3) does not best fit the requirement of the question. Option D: each questions carefully. (4) fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 56,
+        "sourceQuestionNo": 416,
+        "question": "Find the part of the sentence that contains an error: The baby sleep (1) / quietly through (2) / the loud thunderstorm (3) / which amazed us(4).",
+        "options": [
+          "The baby sleep (1)",
+          "quietly through (2)",
+          "the loud thunderstorm (3)",
+          "which amazed us. (4)"
+        ],
+        "answer": "The baby sleep (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The baby sleep (1) fits the requirement of the question. Option B: quietly through (2) does not best fit the requirement of the question. Option C: the loud thunderstorm (3) does not best fit the requirement of the question. Option D: which amazed us. (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 55,
+        "sourceQuestionNo": 415,
+        "question": "Choose the option that will replace the error highlighted in bold. Charandas **<u>truth</u>** confessed to every crime he committed, knowing it would cost him his life.",
+        "options": [
+          "Truly",
+          "Truthful",
+          "Truthfully",
+          "True"
+        ],
+        "answer": "Truthfully",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Truly does not best fit the requirement of the question. Option B: Truthful does not best fit the requirement of the question. Option C: Truthfully fits the requirement of the question. Option D: True does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 54,
+        "sourceQuestionNo": 414,
+        "question": "Choose the option that will replace the error highlighted in bold. Please **<u>advise</u>** on how I can give my **<u>advise</u>**.",
+        "options": [
+          "advise, advice",
+          "advice, advise",
+          "advise, advise",
+          "advice, advice"
+        ],
+        "answer": "advise, advice",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: advise, advice fits the requirement of the question. Option B: advice, advise does not best fit the requirement of the question. Option C: advise, advise does not best fit the requirement of the question. Option D: advice, advice does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 53,
+        "sourceQuestionNo": 413,
+        "question": "Choose the option that will replace the error highlighted in bold. Bathsheba realized too late that Gabriel Oak had been **<u>better</u>** man for her all along.",
+        "options": [
+          "More good",
+          "Best",
+          "Even better",
+          "Good"
+        ],
+        "answer": "Best",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: More good does not best fit the requirement of the question. Option B: Best fits the requirement of the question. Option C: Even better does not best fit the requirement of the question. Option D: Good does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 52,
+        "sourceQuestionNo": 412,
+        "question": "Find the part of the sentence that contains an error: The manager call (1) / off the meeting (2) / due to an emergency (3) / at home(4).",
+        "options": [
+          "The manager called (1)",
+          "off the meeting (2)",
+          "due to an emergency (3)",
+          "at home. (4)"
+        ],
+        "answer": "The manager called (1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The manager called (1) fits the requirement of the question. Option B: off the meeting (2) does not best fit the requirement of the question. Option C: due to an emergency (3) does not best fit the requirement of the question. Option D: at home. (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 51,
+        "sourceQuestionNo": 411,
+        "question": "Find the part of the sentence that contains an error: They were discussing (1) / the issue seriously (2) / when I am called (3) / for the meeting(4).",
+        "options": [
+          "They were discussing (1)",
+          "the issue seriously (2)",
+          "when I am called (3)",
+          "for the meeting. (4)"
+        ],
+        "answer": "when I am called (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: They were discussing (1) does not best fit the requirement of the question. Option B: the issue seriously (2) does not best fit the requirement of the question. Option C: when I am called (3) fits the requirement of the question. Option D: for the meeting. (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 50,
+        "sourceQuestionNo": 410,
+        "question": "Choose the option that will replace the error highlighted in bold. The poet **<u>describe</u>** the beauty of nature in vivid detail.",
+        "options": [
+          "Describes",
+          "Described",
+          "Is describing",
+          "will describe"
+        ],
+        "answer": "Describes",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Describes fits the requirement of the question. Option B: Described does not best fit the requirement of the question. Option C: Is describing does not best fit the requirement of the question. Option D: will describe does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 49,
+        "sourceQuestionNo": 409,
+        "question": "Choose the option that will replace the error highlighted in bold. Despite his apology, she refused to **<u>accept</u>** his gift and did not **<u>except</u>** his explanation.",
+        "options": [
+          "accept, accept",
+          "Except, accept",
+          "accept, except",
+          "except, except"
+        ],
+        "answer": "accept, accept",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: accept, accept fits the requirement of the question. Option B: Except, accept does not best fit the requirement of the question. Option C: accept, except does not best fit the requirement of the question. Option D: except, except does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 48,
+        "sourceQuestionNo": 408,
+        "question": "Choose the option that will replace the error highlighted in bold. Swami tried to **<u>get away from</u>** his homework by making excuses.",
+        "options": [
+          "Get along",
+          "Get over",
+          "Get out of",
+          "Get through"
+        ],
+        "answer": "Get out of",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Get along does not best fit the requirement of the question. Option B: Get over does not best fit the requirement of the question. Option C: Get out of fits the requirement of the question. Option D: Get through does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 47,
+        "sourceQuestionNo": 407,
+        "question": "Choose the option that will replace the error highlighted in bold. Bim believed that silence was the **<u>worse</u>** betrayal of all, even more than spoken cruelty.",
+        "options": [
+          "More worse",
+          "Worse",
+          "Worst",
+          "Bad"
+        ],
+        "answer": "Worst",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: More worse does not best fit the requirement of the question. Option B: Worse does not best fit the requirement of the question. Option C: Worst fits the requirement of the question. Option D: Bad does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 46,
+        "sourceQuestionNo": 406,
+        "question": "Choose the option that will replace the error highlighted in bold. Conservationists are working to **<u>do</u>** awareness about the plight of endangered species.",
+        "options": [
+          "Raise",
+          "Create",
+          "Build",
+          "Make"
+        ],
+        "answer": "Raise",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Raise fits the requirement of the question. Option B: Create does not best fit the requirement of the question. Option C: Build does not best fit the requirement of the question. Option D: Make does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 45,
+        "sourceQuestionNo": 405,
+        "question": "Choose the option that will replace the error highlighted in bold. The spokesperson said the company **<u>launches</u>** its new product two months ago.",
+        "options": [
+          "Has launched",
+          "Had launched",
+          "Launched",
+          "Is launching"
+        ],
+        "answer": "Launched",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Has launched does not best fit the requirement of the question. Option B: Had launched does not best fit the requirement of the question. Option C: Launched fits the requirement of the question. Option D: Is launching does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 44,
+        "sourceQuestionNo": 404,
+        "question": "Choose the option that will replace the error highlighted in bold. She resolved to **<u>carry on</u>** the plan, despite the risks involved.",
+        "options": [
+          "Carry off",
+          "Carry through",
+          "Carry forward",
+          "Carry out"
+        ],
+        "answer": "Carry out",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Carry off does not best fit the requirement of the question. Option B: Carry through does not best fit the requirement of the question. Option C: Carry forward does not best fit the requirement of the question. Option D: Carry out fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 43,
+        "sourceQuestionNo": 403,
+        "question": "Choose the option that will replace the error highlighted in bold. She could not **<u>support</u>** the temptation to open the letter and read it.",
+        "options": [
+          "Bear",
+          "Endure",
+          "Sustain",
+          "Resist"
+        ],
+        "answer": "Resist",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Bear does not best fit the requirement of the question. Option B: Endure does not best fit the requirement of the question. Option C: Sustain does not best fit the requirement of the question. Option D: Resist fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 42,
+        "sourceQuestionNo": 402,
+        "question": "Choose the option that will replace the error highlighted in bold. Cassius spoke to Brutus under **<u>so</u>** influence of jealousy and pride.",
+        "options": [
+          "A",
+          "An",
+          "The",
+          "That"
+        ],
+        "answer": "The",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: A does not best fit the requirement of the question. Option B: An does not best fit the requirement of the question. Option C: The fits the requirement of the question. Option D: That does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 41,
+        "sourceQuestionNo": 401,
+        "question": "Identify the error in the sentence. He always is arriving late to meetings.",
+        "options": [
+          "always is",
+          "is arriving",
+          "late to",
+          "to meetings"
+        ],
+        "answer": "always is",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: always is fits the requirement of the question. Option B: is arriving does not best fit the requirement of the question. Option C: late to does not best fit the requirement of the question. Option D: to meetings does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 40,
+        "sourceQuestionNo": 400,
+        "question": "Find the part of the sentence that contains an error: The official documents submitted by the vendor (1)/ lacks some critical information (2)/ required for final processing of the tender (3)/ as per department policy. (4)",
+        "options": [
+          "The official documents submitted by the vendor (1)",
+          "lacks some critical information (2)",
+          "required for final processing of the tender (3)",
+          "as per department policy (4)"
+        ],
+        "answer": "lacks some critical information (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The official documents submitted by the vendor (1) does not best fit the requirement of the question. Option B: lacks some critical information (2) fits the requirement of the question. Option C: required for final processing of the tender (3) does not best fit the requirement of the question. Option D: as per department policy (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 39,
+        "sourceQuestionNo": 399,
+        "question": "Identify the error in the sentence. She ran into the list to make sure she hadn't missed anything.",
+        "options": [
+          "ran",
+          "missed",
+          "into",
+          "list"
+        ],
+        "answer": "into",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: ran does not best fit the requirement of the question. Option B: missed does not best fit the requirement of the question. Option C: into fits the requirement of the question. Option D: list does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 38,
+        "sourceQuestionNo": 398,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select 'No substitution required'. Neither the manager nor the employees **<u>has noticed</u>** the technical fault.",
+        "options": [
+          "have noticed",
+          "was noticing",
+          "had noticed",
+          "No substitution required"
+        ],
+        "answer": "have noticed",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: have noticed fits the requirement of the question. Option B: was noticing does not best fit the requirement of the question. Option C: had noticed does not best fit the requirement of the question. Option D: No substitution required does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 37,
+        "sourceQuestionNo": 397,
+        "question": "Find the part of the sentence that contains an error: The new guidelines regarding safety protocols (1)/ issued last month by the department (2)/ has not yet been implemented at the local units (3)/ despite repeated notices. (4)",
+        "options": [
+          "The new guidelines regarding safety protocols (1)",
+          "issued last month by the department (2)",
+          "has not yet been implemented at the local units (3)",
+          "despite repeated notices (4)"
+        ],
+        "answer": "has not yet been implemented at the local units (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The new guidelines regarding safety protocols (1) does not best fit the requirement of the question. Option B: issued last month by the department (2) does not best fit the requirement of the question. Option C: has not yet been implemented at the local units (3) fits the requirement of the question. Option D: despite repeated notices (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 36,
+        "sourceQuestionNo": 396,
+        "question": "identify the error in the sentence. We was discussing the project when the lights went out.",
+        "options": [
+          "project",
+          "lights",
+          "discussing",
+          "was"
+        ],
+        "answer": "was",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: project does not best fit the requirement of the question. Option B: lights does not best fit the requirement of the question. Option C: discussing does not best fit the requirement of the question. Option D: was fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 35,
+        "sourceQuestionNo": 395,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select 'No substitution required'. The minister, along with his aides, **<u>are visiting</u>** the flood-affected areas.",
+        "options": [
+          "is visiting",
+          "are visited",
+          "were visiting",
+          "No substitution required"
+        ],
+        "answer": "is visiting",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: is visiting fits the requirement of the question. Option B: are visited does not best fit the requirement of the question. Option C: were visiting does not best fit the requirement of the question. Option D: No substitution required does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 34,
+        "sourceQuestionNo": 394,
+        "question": "Find the part of the sentence that contains an error: The manager who was on leave last week (1)/ forgot bringing the files (2)/ that were required for the monthly review (3)/ despite being reminded thrice. (4)",
+        "options": [
+          "The manager who was on leave last week (1)",
+          "forgot bringing the files (2)",
+          "that were required for the monthly review (3)",
+          "despite being reminded thrice (4)"
+        ],
+        "answer": "forgot bringing the files (2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The manager who was on leave last week (1) does not best fit the requirement of the question. Option B: forgot bringing the files (2) fits the requirement of the question. Option C: that were required for the monthly review (3) does not best fit the requirement of the question. Option D: despite being reminded thrice (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 33,
+        "sourceQuestionNo": 393,
+        "question": "Choose the most suitable option to replace the highlighted part of the sentence: **<u>Despite of his persistent efforts</u>**, the proposal was rejected.",
+        "options": [
+          "Despite his persistence",
+          "Though of his persistence",
+          "Although his persistent",
+          "In spite his persistence"
+        ],
+        "answer": "Despite his persistence",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Despite his persistence fits the requirement of the question. Option B: Though of his persistence does not best fit the requirement of the question. Option C: Although his persistent does not best fit the requirement of the question. Option D: In spite his persistence does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 32,
+        "sourceQuestionNo": 392,
+        "question": "Identify the part of the sentence that contains a grammatical error. Either the ethics protocol (1)/ or the procedural memo (2)/ were responsible for (3)/ the reporting delay. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) fits the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 31,
+        "sourceQuestionNo": 391,
+        "question": "Identify the part of the sentence that contains a grammatical error. Her critique, couched in ironic precision (1)/ and elliptical disclosures (2)/, invite a reconstitution (3)/ of the very foundations of authorship. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) fits the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 30,
+        "sourceQuestionNo": 390,
+        "question": "Which sentence contains a word that is spelled incorrectly?",
+        "options": [
+          "The teacher explained how to use a conjunction to join two independent clauses.",
+          "The preposition in the sentence showed the relationship between the noun and the rest of the sentence.",
+          "Proper capitolization of names and places is important in formal writing.",
+          "An interjection is used to show strong emotion or sudden feeling."
+        ],
+        "answer": "Proper capitolization of names and places is important in formal writing.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The teacher explained how to use a conjunction to join two independent clauses. does not best fit the requirement of the question. Option B: The preposition in the sentence showed the relationship between the noun and the rest of the sentence. does not best fit the requirement of the question. Option C: Proper capitolization of names and places is important in formal writing. fits the requirement of the question. Option D: An interjection is used to show strong emotion or sudden feeling. does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 29,
+        "sourceQuestionNo": 389,
+        "question": "Identify the error in the sentence. She ran into the list to make sure she hadn't missed anything.",
+        "options": [
+          "ran",
+          "missed",
+          "into",
+          "list"
+        ],
+        "answer": "into",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: ran does not best fit the requirement of the question. Option B: missed does not best fit the requirement of the question. Option C: into fits the requirement of the question. Option D: list does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 28,
+        "sourceQuestionNo": 388,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select 'No substitution required'. The impact of the new regulations on small businesses is likely to be **<u>even more severely than initially anticipated</u>**.",
+        "options": [
+          "even more severe as initially anticipated",
+          "even severer than initially anticipated",
+          "even more severe than initially anticipated",
+          "No substitution required"
+        ],
+        "answer": "even more severe than initially anticipated",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: even more severe as initially anticipated does not best fit the requirement of the question. Option B: even severer than initially anticipated does not best fit the requirement of the question. Option C: even more severe than initially anticipated fits the requirement of the question. Option D: No substitution required does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 27,
+        "sourceQuestionNo": 387,
+        "question": "Find the part of the sentence that contains an error: The student responded to the question so logically (1)/ that the audience (2)/ praise his analytical approach repeatedly (3)/ despite the time constraints. (4)",
+        "options": [
+          "The student responded to the question so logically (1)",
+          "that the audience (2)",
+          "praise his analytical approach repeatedly (3)",
+          "despite the time constraints (4)"
+        ],
+        "answer": "praise his analytical approach repeatedly (3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The student responded to the question so logically (1) does not best fit the requirement of the question. Option B: that the audience (2) does not best fit the requirement of the question. Option C: praise his analytical approach repeatedly (3) fits the requirement of the question. Option D: despite the time constraints (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 26,
+        "sourceQuestionNo": 386,
+        "question": "identify the word in this sentence that contains an error. The report was submitted by the manager to friday evening.",
+        "options": [
+          "report",
+          "submitted",
+          "to",
+          "friday"
+        ],
+        "answer": "to",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: report does not best fit the requirement of the question. Option B: submitted does not best fit the requirement of the question. Option C: to fits the requirement of the question. Option D: friday does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 25,
+        "sourceQuestionNo": 385,
+        "question": "Identify the error in the sentence. They went to an university known for innovation.",
+        "options": [
+          "known",
+          "for",
+          "university",
+          "an"
+        ],
+        "answer": "an",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: known does not best fit the requirement of the question. Option B: for does not best fit the requirement of the question. Option C: university does not best fit the requirement of the question. Option D: an fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 24,
+        "sourceQuestionNo": 384,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select 'No substitution required'. Had the research data been verified earlier, the project **<u>could complete</u>** within the deadline.",
+        "options": [
+          "could have been completed",
+          "had completed",
+          "could completed",
+          "could had been complete"
+        ],
+        "answer": "could have been completed",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: could have been completed fits the requirement of the question. Option B: had completed does not best fit the requirement of the question. Option C: could completed does not best fit the requirement of the question. Option D: could had been complete does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 23,
+        "sourceQuestionNo": 383,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence. If the sentence is already correct, select 'No substitution required'. The principal of the college, along with the vice principals, **<u>have approved</u>** the new curriculum.",
+        "options": [
+          "has approved",
+          "were approving",
+          "was approved",
+          "No substitution required"
+        ],
+        "answer": "has approved",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: has approved fits the requirement of the question. Option B: were approving does not best fit the requirement of the question. Option C: was approved does not best fit the requirement of the question. Option D: No substitution required does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 22,
+        "sourceQuestionNo": 382,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence : Of the three paths, this is the **<u>most shortest</u>**.",
+        "options": [
+          "more short",
+          "shorter",
+          "most short",
+          "shortest"
+        ],
+        "answer": "shortest",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: more short does not best fit the requirement of the question. Option B: shorter does not best fit the requirement of the question. Option C: most short does not best fit the requirement of the question. Option D: shortest fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 21,
+        "sourceQuestionNo": 381,
+        "question": "Find the part of the sentence that contains an error: Had he been knowing (1)/ about the regulatory changes (2)/ he would not have proceeded (3)/ with the merger deal. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: (1) fits the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 20,
+        "sourceQuestionNo": 380,
+        "question": "Find the part of the sentence that contains an error: He is one of the few (1)/ manager who (2)/ consistently leads (3)/ by example. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) fits the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 19,
+        "sourceQuestionNo": 379,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence : I would rather you **<u>go</u>** now than wait for the rain.",
+        "options": [
+          "went",
+          "had gone",
+          "gone",
+          "have gone"
+        ],
+        "answer": "went",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: went fits the requirement of the question. Option B: had gone does not best fit the requirement of the question. Option C: gone does not best fit the requirement of the question. Option D: have gone does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 18,
+        "sourceQuestionNo": 378,
+        "question": "Find the part of the sentence that contains an error: The ostensibly transparent mechanism (1)/ for employee feedback (2)/ paradoxically obfuscating (3)/ all channels of genuine expression. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) fits the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 17,
+        "sourceQuestionNo": 377,
+        "question": "Find the part of the sentence that contains an error: His influence (1)/ lasted from a decade (2)/ impacting key policies (3)/ across sectors. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) fits the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 16,
+        "sourceQuestionNo": 376,
+        "question": "Identify the error in the sentence. Of the three runners, he was the faster.",
+        "options": [
+          "faster",
+          "was",
+          "runners",
+          "three"
+        ],
+        "answer": "faster",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: faster fits the requirement of the question. Option B: was does not best fit the requirement of the question. Option C: runners does not best fit the requirement of the question. Option D: three does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 15,
+        "sourceQuestionNo": 375,
+        "question": "Improve the sentence by selecting the appropriate tense of the underlined word. He **<u>work</u>** for an hour when I found him sleeping on the couch.",
+        "options": [
+          "had worked",
+          "has worked",
+          "will have worked",
+          "was working"
+        ],
+        "answer": "was working",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: had worked does not best fit the requirement of the question. Option B: has worked does not best fit the requirement of the question. Option C: will have worked does not best fit the requirement of the question. Option D: was working fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 14,
+        "sourceQuestionNo": 374,
+        "question": "Find the part of the sentence that contains an error: The professor's explanation (1)/ was filled in clarity (2)/ yet managed to obfuscate (3)/ more than elucidate. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) fits the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 13,
+        "sourceQuestionNo": 373,
+        "question": "Find the part of the sentence that contains an error: He had never seen (1)/ such a masterpiece (2)/ until he (3)/ visits the gallery last spring. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(4)",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 12,
+        "sourceQuestionNo": 372,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence : She sings **<u>as better as</u>** a trained vocalist.",
+        "options": [
+          "as well as",
+          "as good as",
+          "so better than",
+          "as better than"
+        ],
+        "answer": "as well as",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: as well as fits the requirement of the question. Option B: as good as does not best fit the requirement of the question. Option C: so better than does not best fit the requirement of the question. Option D: as better than does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 11,
+        "sourceQuestionNo": 371,
+        "question": "Find the part of the sentence that contains an error: The team leader called up (1)/ each employee separately (2)/ but failed to bring on (3)/ their actual grievances. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) fits the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 10,
+        "sourceQuestionNo": 370,
+        "question": "Find the part of the sentence that contains an error: The CEO (1)/ called off (2)/ the meeting (3)/ without giving any reason out. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(4)",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 9,
+        "sourceQuestionNo": 369,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence : She sings **<u>as better as</u>** a trained vocalist.",
+        "options": [
+          "as well as",
+          "as good as",
+          "so better than",
+          "as better than"
+        ],
+        "answer": "as well as",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: as well as fits the requirement of the question. Option B: as good as does not best fit the requirement of the question. Option C: so better than does not best fit the requirement of the question. Option D: as better than does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 8,
+        "sourceQuestionNo": 368,
+        "question": "Find the part of the sentence that contains an error: The team leader called up (1)/ each employee separately (2)/ but failed to bring on (3)/ their actual grievances. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(3)",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) fits the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 7,
+        "sourceQuestionNo": 367,
+        "question": "Find the part of the sentence that contains an error: The CEO (1)/ called off (2)/ the meeting (3)/ without giving any reason out. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(4)",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 6,
+        "sourceQuestionNo": 366,
+        "question": "Find the part of the sentence that contains an error: The manager insisted that (1)/ every member completes (2)/ the survey before (3)/ the deadline expired. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(2)",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) fits the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option B** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 5,
+        "sourceQuestionNo": 365,
+        "question": "Find the part of the sentence that contains an error: By the time the audit team (1)/ \"reaches the headquarters (2)/ the financial report (3)/ would already be submitted. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(4)",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 4,
+        "sourceQuestionNo": 364,
+        "question": "Improve the sentence by selecting the appropriate tense of the underlined word. They **<u>lives</u>** in this city for ten years before they moved to the countryside.",
+        "options": [
+          "live",
+          "lived",
+          "had lived",
+          "have lived"
+        ],
+        "answer": "had lived",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: live does not best fit the requirement of the question. Option B: lived does not best fit the requirement of the question. Option C: had lived fits the requirement of the question. Option D: have lived does not best fit the requirement of the question. **Option C** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement",
+        "needsReview": true,
+        "issue": "Answer key was not clearly captured by OCR/source text; answer was inferred from grammar/context and should be manually spot-checked against the PDF image."
+      },
+      {
+        "id": 3,
+        "sourceQuestionNo": 363,
+        "question": "Choose the most suitable option to replace the underlined part of the sentence: Rarely **<u>you come across</u>** someone so dedicated.",
+        "options": [
+          "do you come across",
+          "have you come across",
+          "YoU Come across",
+          "did you came across"
+        ],
+        "answer": "do you come across",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: do you come across fits the requirement of the question. Option B: have you come across does not best fit the requirement of the question. Option C: YoU Come across does not best fit the requirement of the question. Option D: did you came across does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 2,
+        "sourceQuestionNo": 362,
+        "question": "Find the part of the sentence that contains an error: They had put over (1)/ the entire campaign (2)/ due to unforeseen legal (3)/ complications in branding. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(1)",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: (1) fits the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) does not best fit the requirement of the question. **Option A** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      },
+      {
+        "id": 1,
+        "sourceQuestionNo": 361,
+        "question": "Find the part of the sentence that contains an error: Despite the team's (1)/ well-thought strategy (2)/ their efforts lacked (3)/ coordination and consistent. (4)",
+        "options": [
+          "(1)",
+          "(2)",
+          "(3)",
+          "(4)"
+        ],
+        "answer": "(4)",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: (1) does not best fit the requirement of the question. Option B: (2) does not best fit the requirement of the question. Option C: (3) does not best fit the requirement of the question. Option D: (4) fits the requirement of the question. **Option D** correctly applies: it is the grammatically correct choice for the sentence.",
+        "type": "Error Spotting / Sentence Improvement"
+      }
+    ]
+  }
+}

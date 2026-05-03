@@ -519,15 +519,49 @@ function formatVocabQuestion(q, topic) {
   };
 
   let rawDisplay = q.display || q.question || q.q || "";
+  
+  // Aggressive stripping of common exam directions
+  const stripDirections = (text) => {
+    let t = text;
+    t = t.replace(/If there is no need to substitute it[^.]*\.\s*/ig, "");
+    t = t.replace(/If you don'?t find any error[^.]*\.\s*/ig, "");
+    t = t.replace(/Parts of the (?:following |given )?sentence have been given as options\.\s*/ig, "");
+    t = t.replace(/One of them may contain an error\.\s*/ig, "");
+    t = t.replace(/Select the part that contains the error from the given options\.\s*/ig, "");
+    
+    // Generic sentence removers (twice to catch multiple leading sentences)
+    const genericRegex = /^(?:Select|Choose|Identify|Find|What is the|Which|In the following)[^:]+:\s*/i;
+    const genericRegexDot = /^(?:Select|Choose|Identify|Find|What is the|Which|In the following)[^.?!]+[.?!]\s*/i;
+    
+    t = t.replace(genericRegex, "").replace(genericRegexDot, "");
+    t = t.replace(genericRegex, "").replace(genericRegexDot, "");
+    
+    t = t.trim();
+    // If the entire text was stripped (because the question IS the direction),
+    // return the original text so we don't end up with a blank display.
+    return t.length === 0 ? text : t;
+  };
+
+  rawDisplay = stripDirections(rawDisplay);
   let display = "";
 
   const topicToCheck = q._originalTopic || q.topic || topic;
-  const isFastVocab = ['Synonyms', 'Antonyms', 'Idioms', 'Homonyms'].some(t => topicToCheck.includes(t));
+  const isFastVocab = ['Synonyms', 'Antonyms', 'Idioms'].some(t => topicToCheck.includes(t));
+  const isSynAnt = ['Synonyms', 'Antonyms'].some(t => topicToCheck.includes(t));
   
   if (isFastVocab) {
     const boldMatch = rawDisplay.match(/\*\*([^*]+)\*\*/);
     if (boldMatch) {
       display = cleanText(boldMatch[1]);
+    } else if (isSynAnt) {
+      let d = rawDisplay.replace(/^.*:\s*/, "");
+      const vocabWordRegex = /(?:of|word\.?|to|for|is)\s+['"]?([a-zA-Z0-9_ -]+)['"]?\??\.?$/i;
+      const vocabMatch = d.match(vocabWordRegex);
+      if (vocabMatch) {
+        display = cleanText(vocabMatch[1]);
+      } else {
+        display = cleanText(d);
+      }
     } else {
       display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
     }
@@ -667,8 +701,41 @@ const GRAMMAR_TOPICS = [
   { id: 'Spot the Error',        label: 'Spot the Error',         icon: '🔍', sub: 'CGL — Find grammatical errors',   color: RED },
 ];
 
+const SSC_STENO_VOCAB_TOPICS = [
+  { id: 'Synonyms Steno',             label: 'Synonyms',              icon: '🔄', sub: 'SSC Steno — Find similar meanings',     color: GREEN, dynamic: true },
+  { id: 'Antonyms Steno',             label: 'Antonyms',              icon: '↔️', sub: 'SSC Steno — Find opposite meanings',    color: RED, dynamic: true },
+  { id: 'Idioms Steno',               label: 'Idioms & Phrases',      icon: '🗣️', sub: 'SSC Steno — Common idioms in MCQs',     color: BLUE, dynamic: true },
+  { id: 'OneWord Steno',              label: 'One Word Substitution', icon: '📝', sub: 'SSC Steno — Single-word meanings',      color: GOLD, dynamic: true },
+  { id: 'Spelling check Steno',       label: 'Spelling Check',        icon: '✏️', sub: 'SSC Steno — Identify correct spellings', color: PINK, dynamic: true },
+  { id: 'Homonyms Steno',             label: 'Homonyms',              icon: '👯', sub: 'SSC Steno — Words that sound same',      color: "#C45AFF", dynamic: true },
+  { id: 'Fillinthe blanks Steno',     label: 'Fill in the Blanks',    icon: '🛠️', sub: 'SSC Steno — Grammar & Context',          color: GOLD, dynamic: true },
+];
+
+const SSC_STENO_GRAMMAR_TOPICS = [
+  { id: 'Active Passive Steno',        label: 'Active & Passive Voice', icon: '🔁', sub: 'SSC Steno — Voice transformation',     color: BLUE, dynamic: true },
+  { id: 'Narration Steno',             label: 'Narration',              icon: '💬', sub: 'SSC Steno — Direct & Indirect speech',  color: GREEN, dynamic: true },
+  { id: 'Sentence Improvement Steno',  label: 'Sentence Improvement',   icon: '✍️', sub: 'SSC Steno — Spot & fix errors',         color: GOLD, dynamic: true },
+  { id: 'Spot the Error Steno',        label: 'Spot the Error',         icon: '🔍', sub: 'SSC Steno — Find grammatical errors',   color: RED, dynamic: true },
+  { id: 'Sentence Correction Steno',   label: 'Sentence Correction',    icon: '✅', sub: 'SSC Steno — Correct the sentence',      color: PINK, dynamic: true },
+];
+
+const SSC_SELECTION_POST_VOCAB_TOPICS = [
+  { id: 'Synonyms Selection Post',             label: 'Synonyms',              icon: '🔄', sub: 'Selection Post — Find similar meanings',     color: GREEN, dynamic: true },
+  { id: 'Antonyms Selection Post',             label: 'Antonyms',              icon: '↔️', sub: 'Selection Post — Find opposite meanings',    color: RED, dynamic: true },
+  { id: 'Idioms Selection Post',               label: 'Idioms & Phrases',      icon: '🗣️', sub: 'Selection Post — Common idioms in MCQs',     color: BLUE, dynamic: true },
+  { id: 'OneWord Selection Post',              label: 'One Word Substitution', icon: '📝', sub: 'Selection Post — Single-word meanings',      color: GOLD, dynamic: true },
+  { id: 'Spelling check Selection Post',       label: 'Spelling Check',        icon: '✏️', sub: 'Selection Post — Identify correct spellings', color: PINK, dynamic: true },
+  { id: 'Fillinthe blanks Selection Post',     label: 'Fill in the Blanks',    icon: '🛠️', sub: 'Selection Post — Grammar & Context',          color: GOLD, dynamic: true },
+];
+
+const SSC_SELECTION_POST_GRAMMAR_TOPICS = [
+  { id: 'Active Passive Selection Post',        label: 'Active & Passive Voice', icon: '🔁', sub: 'Selection Post — Voice transformation',     color: BLUE, dynamic: true },
+  { id: 'Narration Selection Post',             label: 'Narration',              icon: '💬', sub: 'Selection Post — Direct & Indirect speech',  color: GREEN, dynamic: true },
+  { id: 'Spot the Error & Improvement Selection Post', label: 'Spot the Error & Improvement', icon: '🔍', sub: 'Selection Post — Spot & fix errors', color: RED, dynamic: true },
+];
+
 // Combined for backwards-compat usage
-const QUIZ_TOPICS = [...CGL_VOCAB_TOPICS, ...CHSL_VOCAB_TOPICS, ...GRAMMAR_TOPICS];
+const QUIZ_TOPICS = [...CGL_VOCAB_TOPICS, ...CHSL_VOCAB_TOPICS, ...GRAMMAR_TOPICS, ...SSC_STENO_VOCAB_TOPICS, ...SSC_STENO_GRAMMAR_TOPICS, ...SSC_SELECTION_POST_VOCAB_TOPICS, ...SSC_SELECTION_POST_GRAMMAR_TOPICS];
 
 // ─── ANIMAL AVATARS ───────────────────────────────────────────────────────────
 const AVATARS=[
@@ -1839,6 +1906,8 @@ function QuizScreen({T, onSelectTopic, startDynamicQuiz}){
   const getTopics = (examName) => {
     if (examName === "SSC CGL") return { vocab: CGL_VOCAB_TOPICS, grammar: GRAMMAR_TOPICS };
     if (examName === "SSC CHSL") return { vocab: CHSL_VOCAB_TOPICS, grammar: [] }; 
+    if (examName === "SSC Steno") return { vocab: SSC_STENO_VOCAB_TOPICS, grammar: SSC_STENO_GRAMMAR_TOPICS };
+    if (examName === "Selection Post") return { vocab: SSC_SELECTION_POST_VOCAB_TOPICS, grammar: SSC_SELECTION_POST_GRAMMAR_TOPICS };
     return { vocab: [], grammar: [] };
   };
 
@@ -2435,12 +2504,33 @@ export default function App(){
     setLvl(0);setTab("game");initGame(fullCfg, "arith", 0);
   }
 
-  function startVocabQuiz(topicId){
-    // Ensure static data is also normalized if not already
-    if (VOCAB_DATA[topicId] && !VOCAB_DATA[topicId].normalized) {
-      VOCAB_DATA[topicId] = normalizeQuizData(VOCAB_DATA[topicId], 'vocab', topicId);
-      VOCAB_DATA[topicId].normalized = true;
+  async function startVocabQuiz(topicId){
+    const dynamicTopics = [...SSC_STENO_VOCAB_TOPICS, ...SSC_STENO_GRAMMAR_TOPICS, ...SSC_SELECTION_POST_VOCAB_TOPICS, ...SSC_SELECTION_POST_GRAMMAR_TOPICS];
+    const isDynamic = dynamicTopics.find(t => t.id === topicId)?.dynamic;
+
+    if (isDynamic) {
+      try {
+        const fetchId = topicId.replace(' Steno', '').replace(' Selection Post', '');
+        const examFolder = topicId.includes('Steno') ? 'ssc-steno' : 'ssc-selection-post';
+        const res = await fetch(`${BASE_URL}/quiz/${examFolder}/english/${fetchId}.json`);
+        if (!res.ok) { alert('Coming soon! This topic is being prepared.'); return; }
+        const data = await res.json();
+        const rawQs = data.quiz ? data.quiz.questions : data.questions;
+        if (!rawQs || rawQs.length === 0) { alert('No questions found.'); return; }
+        VOCAB_DATA[topicId] = normalizeQuizData(rawQs, 'vocab', topicId);
+        VOCAB_DATA[topicId].normalized = true;
+      } catch(e) {
+        console.error(e);
+        alert('Failed to load questions from server.');
+        return;
+      }
+    } else {
+      if (VOCAB_DATA[topicId] && !VOCAB_DATA[topicId].normalized) {
+        VOCAB_DATA[topicId] = normalizeQuizData(VOCAB_DATA[topicId], 'vocab', topicId);
+        VOCAB_DATA[topicId].normalized = true;
+      }
     }
+
     const totalQs = VOCAB_DATA[topicId]?.length || 20;
     const cfg = {topic: topicId, type:"vocab", count: totalQs};
     setModeId("vocab");setCustomConfig(cfg);

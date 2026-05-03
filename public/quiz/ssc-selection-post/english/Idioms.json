@@ -1,0 +1,809 @@
+{
+  "quiz": {
+    "title": "Idioms & Phrases - SSC Selection Post XIII 2025",
+    "category": "Vocabulary",
+    "totalQuestions": 50,
+    "questions": [
+      {
+        "id": 50,
+        "sourceQuestionNo": 186,
+        "question": "What does the idiom \"**Barking up the wrong tree**\" mean?",
+        "options": [
+          "Blaming the wrong person",
+          "Finding the right solution",
+          "Avoiding confrontation",
+          "Taking unnecessary risks"
+        ],
+        "answer": "Blaming the wrong person",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Blaming the wrong person fits the requirement of the question. Option B: Finding the right solution does not best fit the requirement of the question. Option C: Avoiding confrontation does not best fit the requirement of the question. Option D: Taking unnecessary risks does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 49,
+        "sourceQuestionNo": 185,
+        "question": "; : To flog a dead horse",
+        "options": [
+          "Beat an animal to carry goods",
+          "Waste time on lost cause",
+          "Complain loudly and cry",
+          "Work hard and win a prize"
+        ],
+        "answer": "Waste time on lost cause",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Beat an animal to carry goods does not best fit the requirement of the question. Option B: Waste time on lost cause fits the requirement of the question. Option C: Complain loudly and cry does not best fit the requirement of the question. Option D: Work hard and win a prize does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 48,
+        "sourceQuestionNo": 184,
+        "question": "the correct mecHiind of the idiom: A thorn in the flesh",
+        "options": [
+          "A close friend who offers advice",
+          "A constant source of irritation or trouble",
+          "A long-forgotten mistake",
+          "A painful injury"
+        ],
+        "answer": "A constant source of irritation or trouble",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: A close friend who offers advice does not best fit the requirement of the question. Option B: A constant source of irritation or trouble fits the requirement of the question. Option C: A long-forgotten mistake does not best fit the requirement of the question. Option D: A painful injury does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 47,
+        "sourceQuestionNo": 183,
+        "question": "Choose the correct meaning of Idiom \"**Hoist with one**'s own petard\".",
+        "options": [
+          "Succeed through betrayal",
+          "Fall victim to one's own plan",
+          "Win by surprise",
+          "Escape punishment cleverly"
+        ],
+        "answer": "Fall victim to one's own plan",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Succeed through betrayal does not best fit the requirement of the question. Option B: Fall victim to one's own plan fits the requirement of the question. Option C: Win by surprise does not best fit the requirement of the question. Option D: Escape punishment cleverly does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 46,
+        "sourceQuestionNo": 182,
+        "question": "Choose the correct meaning of Idiom \"**Throw down the gauntlet**\"",
+        "options": [
+          "Show fear in public",
+          "Make peace",
+          "Challenge someone boldly",
+          "Avoid confrontation"
+        ],
+        "answer": "Challenge someone boldly",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Show fear in public does not best fit the requirement of the question. Option B: Make peace does not best fit the requirement of the question. Option C: Challenge someone boldly fits the requirement of the question. Option D: Avoid confrontation does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 45,
+        "sourceQuestionNo": 181,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Go against the grain**\"",
+        "options": [
+          "To move in the wrong direction",
+          "To oppose the norm",
+          "To feel uncomfortable",
+          "To cut something"
+        ],
+        "answer": "To oppose the norm",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: To move in the wrong direction does not best fit the requirement of the question. Option B: To oppose the norm fits the requirement of the question. Option C: To feel uncomfortable does not best fit the requirement of the question. Option D: To cut something does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 44,
+        "sourceQuestionNo": 180,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**the lion**'s share\"",
+        "options": [
+          "A fair portion",
+          "A small contribution",
+          "The largest part",
+          "An equal distribution"
+        ],
+        "answer": "The largest part",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: A fair portion does not best fit the requirement of the question. Option B: A small contribution does not best fit the requirement of the question. Option C: The largest part fits the requirement of the question. Option D: An equal distribution does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 43,
+        "sourceQuestionNo": 179,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**A dime a dozen**\"",
+        "options": [
+          "Very rare",
+          "Extremely expensive",
+          "Hard to find",
+          "Very common"
+        ],
+        "answer": "Very common",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Very rare does not best fit the requirement of the question. Option B: Extremely expensive does not best fit the requirement of the question. Option C: Hard to find does not best fit the requirement of the question. Option D: Very common fits the requirement of the question. **Option D** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 42,
+        "sourceQuestionNo": 178,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Cast the first stone**\"",
+        "options": [
+          "To accuse someone first",
+          "To start a fight",
+          "To throw a rock",
+          "To give up"
+        ],
+        "answer": "To accuse someone first",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: To accuse someone first fits the requirement of the question. Option B: To start a fight does not best fit the requirement of the question. Option C: To throw a rock does not best fit the requirement of the question. Option D: To give up does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 41,
+        "sourceQuestionNo": 177,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Get your walking papers**\"",
+        "options": [
+          "Go on vacation",
+          "Receive a promotion",
+          "Be given permission to retire",
+          "Be fired or dismissed from a job"
+        ],
+        "answer": "Be fired or dismissed from a job",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Go on vacation does not best fit the requirement of the question. Option B: Receive a promotion does not best fit the requirement of the question. Option C: Be given permission to retire does not best fit the requirement of the question. Option D: Be fired or dismissed from a job fits the requirement of the question. **Option D** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 40,
+        "sourceQuestionNo": 176,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**to be off base**\"",
+        "options": [
+          "To be on the right track",
+          "To be confused",
+          "To be wrong or mistaken",
+          "To change your mind"
+        ],
+        "answer": "To be wrong or mistaken",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: To be on the right track does not best fit the requirement of the question. Option B: To be confused does not best fit the requirement of the question. Option C: To be wrong or mistaken fits the requirement of the question. Option D: To change your mind does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 39,
+        "sourceQuestionNo": 175,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**In the same boat**\"",
+        "options": [
+          "Facing the same situation",
+          "Being very wealthy",
+          "Traveling together",
+          "Owning a boat"
+        ],
+        "answer": "Facing the same situation",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Facing the same situation fits the requirement of the question. Option B: Being very wealthy does not best fit the requirement of the question. Option C: Traveling together does not best fit the requirement of the question. Option D: Owning a boat does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 38,
+        "sourceQuestionNo": 174,
+        "question": "Choose the correct meaning of the idiom: \"**To make bricks without straw.**\"",
+        "options": [
+          "To waste time doing easy work",
+          "To build something using traditional methods",
+          "To attempt something without the necessary resources",
+          "To work in a construction-related job"
+        ],
+        "answer": "To attempt something without the necessary resources",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: To waste time doing easy work does not best fit the requirement of the question. Option B: To build something using traditional methods does not best fit the requirement of the question. Option C: To attempt something without the necessary resources fits the requirement of the question. Option D: To work in a construction-related job does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 37,
+        "sourceQuestionNo": 173,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Wear your heart on your sleeve**\"",
+        "options": [
+          "Keep your feelings private",
+          "Pretend to have emotions",
+          "Express emotions openly",
+          "Be dishonest about your intentions"
+        ],
+        "answer": "Express emotions openly",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Keep your feelings private does not best fit the requirement of the question. Option B: Pretend to have emotions does not best fit the requirement of the question. Option C: Express emotions openly fits the requirement of the question. Option D: Be dishonest about your intentions does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 36,
+        "sourceQuestionNo": 172,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Eat humble pie**\":",
+        "options": [
+          "To be very happy",
+          "To eat something bitter",
+          "To celebrate a victory",
+          "To admit a mistake"
+        ],
+        "answer": "To admit a mistake",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: To be very happy does not best fit the requirement of the question. Option B: To eat something bitter does not best fit the requirement of the question. Option C: To celebrate a victory does not best fit the requirement of the question. Option D: To admit a mistake fits the requirement of the question. **Option D** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 35,
+        "sourceQuestionNo": 171,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**A slap on the wrist**\"",
+        "options": [
+          "A painful injury",
+          "A mild warning or light punishment",
+          "A friendly gesture",
+          "A public compliment"
+        ],
+        "answer": "A mild warning or light punishment",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: A painful injury does not best fit the requirement of the question. Option B: A mild warning or light punishment fits the requirement of the question. Option C: A friendly gesture does not best fit the requirement of the question. Option D: A public compliment does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 34,
+        "sourceQuestionNo": 170,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Toe the line**\"",
+        "options": [
+          "To win a race",
+          "To cross boundaries",
+          "To take a shortcut",
+          "To follow rules"
+        ],
+        "answer": "To follow rules",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: To win a race does not best fit the requirement of the question. Option B: To cross boundaries does not best fit the requirement of the question. Option C: To take a shortcut does not best fit the requirement of the question. Option D: To follow rules fits the requirement of the question. **Option D** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 33,
+        "sourceQuestionNo": 169,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Jump through hoops**\"",
+        "options": [
+          "To go through many difficulties",
+          "To be very happy",
+          "To perform tricks",
+          "To escape quickly"
+        ],
+        "answer": "To go through many difficulties",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: To go through many difficulties fits the requirement of the question. Option B: To be very happy does not best fit the requirement of the question. Option C: To perform tricks does not best fit the requirement of the question. Option D: To escape quickly does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 32,
+        "sourceQuestionNo": 168,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Break the bank**\"",
+        "options": [
+          "To save money",
+          "To rob a bank",
+          "To spend too much money",
+          "To invest wisely"
+        ],
+        "answer": "To spend too much money",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: To save money does not best fit the requirement of the question. Option B: To rob a bank does not best fit the requirement of the question. Option C: To spend too much money fits the requirement of the question. Option D: To invest wisely does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 31,
+        "sourceQuestionNo": 167,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**A bitter pill to swallow**\"",
+        "options": [
+          "A spicy food",
+          "A difficult truth to accept",
+          "A cure for disease",
+          "A happy surprise"
+        ],
+        "answer": "A difficult truth to accept",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: A spicy food does not best fit the requirement of the question. Option B: A difficult truth to accept fits the requirement of the question. Option C: A cure for disease does not best fit the requirement of the question. Option D: A happy surprise does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 30,
+        "sourceQuestionNo": 166,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Pull the wool over someone**'s eyes\"",
+        "options": [
+          "To keep someone warm",
+          "To deceive someone",
+          "To make a mistake",
+          "To give advice"
+        ],
+        "answer": "To deceive someone",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: To keep someone warm does not best fit the requirement of the question. Option B: To deceive someone fits the requirement of the question. Option C: To make a mistake does not best fit the requirement of the question. Option D: To give advice does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 29,
+        "sourceQuestionNo": 165,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Throw cold water on something**\"",
+        "options": [
+          "To discourage",
+          "To cool down",
+          "To wash something",
+          "To celebrate"
+        ],
+        "answer": "To discourage",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: To discourage fits the requirement of the question. Option B: To cool down does not best fit the requirement of the question. Option C: To wash something does not best fit the requirement of the question. Option D: To celebrate does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 28,
+        "sourceQuestionNo": 164,
+        "question": "Choose the correct meaning of the idiom: \"**Cut your coat according to your cloth.**\"",
+        "options": [
+          "Dress according to the occasion",
+          "Spend money freely without worry",
+          "Live within your income or means",
+          "Wear what suits your personality"
+        ],
+        "answer": "Live within your income or means",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Dress according to the occasion does not best fit the requirement of the question. Option B: Spend money freely without worry does not best fit the requirement of the question. Option C: Live within your income or means fits the requirement of the question. Option D: Wear what suits your personality does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 27,
+        "sourceQuestionNo": 163,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Smell a rat**\":",
+        "options": [
+          "To be very clean",
+          "To suspect something",
+          "To follow orders",
+          "To be afraid"
+        ],
+        "answer": "To suspect something",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: To be very clean does not best fit the requirement of the question. Option B: To suspect something fits the requirement of the question. Option C: To follow orders does not best fit the requirement of the question. Option D: To be afraid does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 26,
+        "sourceQuestionNo": 162,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Give someone the cold shoulder**\"",
+        "options": [
+          "To treat someone warmly",
+          "To ignore someone",
+          "To scold someone",
+          "To make someone comfortable"
+        ],
+        "answer": "To ignore someone",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: To treat someone warmly does not best fit the requirement of the question. Option B: To ignore someone fits the requirement of the question. Option C: To scold someone does not best fit the requirement of the question. Option D: To make someone comfortable does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 25,
+        "sourceQuestionNo": 161,
+        "question": "Choose the correct meaning of the idiom: \"**On tenterhooks.**\"",
+        "options": [
+          "Extremely bored",
+          "In a state of suspense or anxiety",
+          "Completely relaxed",
+          "Unaware of what's happening"
+        ],
+        "answer": "In a state of suspense or anxiety",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Extremely bored does not best fit the requirement of the question. Option B: In a state of suspense or anxiety fits the requirement of the question. Option C: Completely relaxed does not best fit the requirement of the question. Option D: Unaware of what's happening does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 24,
+        "sourceQuestionNo": 160,
+        "question": "Choose the correct meaning of the idiom: \"**Leave someone in the lurch.**\"",
+        "options": [
+          "To support someone in a crisis",
+          "To abandon someone in trouble or difficulty",
+          "To give someone a surprise gift",
+          "To mislead someone intentionally"
+        ],
+        "answer": "To abandon someone in trouble or difficulty",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: To support someone in a crisis does not best fit the requirement of the question. Option B: To abandon someone in trouble or difficulty fits the requirement of the question. Option C: To give someone a surprise gift does not best fit the requirement of the question. Option D: To mislead someone intentionally does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 23,
+        "sourceQuestionNo": 159,
+        "question": "Choose the correct meaning of the given idiom/phrase from the options: \"**Let sleeping dogs lie**\":",
+        "options": [
+          "Avoid bringing up past conflicts",
+          "Wake someone up",
+          "Be very careful",
+          "Hide from danger"
+        ],
+        "answer": "Avoid bringing up past conflicts",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Avoid bringing up past conflicts fits the requirement of the question. Option B: Wake someone up does not best fit the requirement of the question. Option C: Be very careful does not best fit the requirement of the question. Option D: Hide from danger does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 22,
+        "sourceQuestionNo": 158,
+        "question": "Choose the correct phrase for the word highlighted in bold. The restaurant was so noisy, I could hardly hear myself think.",
+        "options": [
+          "The restaurant was very loud.",
+          "The food in the restaurant was not tasty.",
+          "The restaurant had bright lighting.",
+          "The restaurant had poor service."
+        ],
+        "answer": "The restaurant was very loud.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The restaurant was very loud. fits the requirement of the question. Option B: The food in the restaurant was not tasty. does not best fit the requirement of the question. Option C: The restaurant had bright lighting. does not best fit the requirement of the question. Option D: The restaurant had poor service. does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 21,
+        "sourceQuestionNo": 157,
+        "question": "Choose the correct idiom for the word highlighted in bold. Upon observing the growing popularity of electric vehicles, most conventional car companies chose to jump on the bandwagon and launch their own models.",
+        "options": [
+          "To make a dangerous leap without thinking.",
+          "To follow others in being part of a popular trend.",
+          "To let an opportunity pass because of being hesitant.",
+          "To plan a big parade."
+        ],
+        "answer": "To follow others in being part of a popular trend.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: To make a dangerous leap without thinking. does not best fit the requirement of the question. Option B: To follow others in being part of a popular trend. fits the requirement of the question. Option C: To let an opportunity pass because of being hesitant. does not best fit the requirement of the question. Option D: To plan a big parade. does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 20,
+        "sourceQuestionNo": 156,
+        "question": "g '**Rest on one**'s laurels'",
+        "options": [
+          "To relax after failure and ignore work",
+          "To stop putting in effort after past success",
+          "To dream about future victories",
+          "To be jealous of others' achievements"
+        ],
+        "answer": "To stop putting in effort after past success",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: To relax after failure and ignore work does not best fit the requirement of the question. Option B: To stop putting in effort after past success fits the requirement of the question. Option C: To dream about future victories does not best fit the requirement of the question. Option D: To be jealous of others' achievements does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 19,
+        "sourceQuestionNo": 155,
+        "question": "The correct meaning of the phrase '**Run riot**' implies:",
+        "options": [
+          "Be free",
+          "Act wildly",
+          "Cry aloud",
+          "Dance around"
+        ],
+        "answer": "Act wildly",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Be free does not best fit the requirement of the question. Option B: Act wildly fits the requirement of the question. Option C: Cry aloud does not best fit the requirement of the question. Option D: Dance around does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 18,
+        "sourceQuestionNo": 154,
+        "question": "9 \"**Leave one in the lurch**\"",
+        "options": [
+          "To support someone in need",
+          "To abandon someone at a difficult time",
+          "To give someone a surprise gift",
+          "To take credit for someone's work"
+        ],
+        "answer": "To abandon someone at a difficult time",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: To support someone in need does not best fit the requirement of the question. Option B: To abandon someone at a difficult time fits the requirement of the question. Option C: To give someone a surprise gift does not best fit the requirement of the question. Option D: To take credit for someone's work does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 17,
+        "sourceQuestionNo": 153,
+        "question": "9 \"**By fits and starts**'",
+        "options": [
+          "With breaks",
+          "Quickly",
+          "Smoothly",
+          "Forever"
+        ],
+        "answer": "With breaks",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: With breaks fits the requirement of the question. Option B: Quickly does not best fit the requirement of the question. Option C: Smoothly does not best fit the requirement of the question. Option D: Forever does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 16,
+        "sourceQuestionNo": 152,
+        "question": "Choose the correct meaning of the idiom: Beard the lion in his den",
+        "options": [
+          "Tease a dangerous person",
+          "Attack from behind",
+          "Confront someone boldly in their own territory",
+          "Pet a lion"
+        ],
+        "answer": "Confront someone boldly in their own territory",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Tease a dangerous person does not best fit the requirement of the question. Option B: Attack from behind does not best fit the requirement of the question. Option C: Confront someone boldly in their own territory fits the requirement of the question. Option D: Pet a lion does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 15,
+        "sourceQuestionNo": 151,
+        "question": "Choose the correct idiom for the word highlighted in bold. Ravi found himself in deep water after he ran over a pedestrian while driving under the influence of alcohol near his apartment.",
+        "options": [
+          "Ravi was enjoying a swim in a river.",
+          "Ravi was in serious trouble.",
+          "Ravi was learning how to drive.",
+          "Ravi was helping the pedestrian."
+        ],
+        "answer": "Ravi was in serious trouble.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Ravi was enjoying a swim in a river. does not best fit the requirement of the question. Option B: Ravi was in serious trouble. fits the requirement of the question. Option C: Ravi was learning how to drive. does not best fit the requirement of the question. Option D: Ravi was helping the pedestrian. does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 14,
+        "sourceQuestionNo": 150,
+        "question": "ins the correct meaning of the idiom: Fell foul of\"",
+        "options": [
+          "To make an unexpected profit",
+          "To avoid a conflict successfully",
+          "To get into a conflict or trouble with someone",
+          "To behave in a funny way"
+        ],
+        "answer": "To get into a conflict or trouble with someone",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: To make an unexpected profit does not best fit the requirement of the question. Option B: To avoid a conflict successfully does not best fit the requirement of the question. Option C: To get into a conflict or trouble with someone fits the requirement of the question. Option D: To behave in a funny way does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 13,
+        "sourceQuestionNo": 149,
+        "question": "Choose the correct meaning of the idiom: 'To go through fire and water*",
+        "options": [
+          "Travel a lot",
+          "Take a bath",
+          "Face any difficulty",
+          "Rescue others"
+        ],
+        "answer": "Face any difficulty",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Travel a lot does not best fit the requirement of the question. Option B: Take a bath does not best fit the requirement of the question. Option C: Face any difficulty fits the requirement of the question. Option D: Rescue others does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 12,
+        "sourceQuestionNo": 148,
+        "question": "Choose the correct idiom for the word highlighted in bold. After working in the company for several years, Anita really knows the ropes and can train new employees with ease.",
+        "options": [
+          "To be skilled and experienced in a particular activity.",
+          "To be unaware of how something works.",
+          "To be physically strong.",
+          "To take unnecessary risks."
+        ],
+        "answer": "To be skilled and experienced in a particular activity.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: To be skilled and experienced in a particular activity. fits the requirement of the question. Option B: To be unaware of how something works. does not best fit the requirement of the question. Option C: To be physically strong. does not best fit the requirement of the question. Option D: To take unnecessary risks. does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 11,
+        "sourceQuestionNo": 147,
+        "question": "dase the carrer'** meaning of the idiom: **'A brown study",
+        "options": [
+          "A room with brown furniture",
+          "Lost in thought or daydreaming",
+          "A plan for redecorating",
+          "A study related to earth sciences"
+        ],
+        "answer": "Lost in thought or daydreaming",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: A room with brown furniture does not best fit the requirement of the question. Option B: Lost in thought or daydreaming fits the requirement of the question. Option C: A plan for redecorating does not best fit the requirement of the question. Option D: A study related to earth sciences does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 10,
+        "sourceQuestionNo": 146,
+        "question": "Choose the correct meaning of idiom given below: \"**Throw your hat in the ring**\"",
+        "options": [
+          "Challenge authority",
+          "Announce one's candidacy",
+          "Leave the competition",
+          "Support a rival"
+        ],
+        "answer": "Announce one's candidacy",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Challenge authority does not best fit the requirement of the question. Option B: Announce one's candidacy fits the requirement of the question. Option C: Leave the competition does not best fit the requirement of the question. Option D: Support a rival does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 9,
+        "sourceQuestionNo": 145,
+        "question": "Choose the correct meaning of idiom given below: \"**Pound of flesh**\"",
+        "options": [
+          "A fair and generous demand",
+          "A symbolic compromise",
+          "A harsh demand for rightful payment",
+          "A gift given in return"
+        ],
+        "answer": "A harsh demand for rightful payment",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: A fair and generous demand does not best fit the requirement of the question. Option B: A symbolic compromise does not best fit the requirement of the question. Option C: A harsh demand for rightful payment fits the requirement of the question. Option D: A gift given in return does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 8,
+        "sourceQuestionNo": 144,
+        "question": "Read the sentence below and choose the meaning of the idiom that best fits the context: \"Mr. Smith: There's a little time before lunch. I think I'm going to lie down for a while and catch forty winks.\" What does the idiom \"**catch forty winks**\" mean in this context?",
+        "options": [
+          "Eat a quick snack.",
+          "Take a short nap.",
+          "Go for a walk.",
+          "Daydream while lying down."
+        ],
+        "answer": "Take a short nap.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Eat a quick snack. does not best fit the requirement of the question. Option B: Take a short nap. fits the requirement of the question. Option C: Go for a walk. does not best fit the requirement of the question. Option D: Daydream while lying down. does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 7,
+        "sourceQuestionNo": 143,
+        "question": "What does the idiom \"**to keep the wolf away from the door**\" mean?",
+        "options": [
+          "To avoid financial hardship",
+          "To escape from a dangerous situation",
+          "To protect oneself from enemies",
+          "To stay away from risky opportunities"
+        ],
+        "answer": "To avoid financial hardship",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: To avoid financial hardship fits the requirement of the question. Option B: To escape from a dangerous situation does not best fit the requirement of the question. Option C: To protect oneself from enemies does not best fit the requirement of the question. Option D: To stay away from risky opportunities does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 6,
+        "sourceQuestionNo": 142,
+        "question": "Choose the correct meaning of the idiom given below: \"**Hoist with one**'s own petard\"",
+        "options": [
+          "Be hurt by one's own scheme",
+          "Celebrate an early victory",
+          "Escape by clever trick",
+          "Boost another's success"
+        ],
+        "answer": "Be hurt by one's own scheme",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Be hurt by one's own scheme fits the requirement of the question. Option B: Celebrate an early victory does not best fit the requirement of the question. Option C: Escape by clever trick does not best fit the requirement of the question. Option D: Boost another's success does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 5,
+        "sourceQuestionNo": 141,
+        "question": "Choose the correct meaning of idiom given below: \"**Steal a march on someone**\"",
+        "options": [
+          "imitate someone's tactics",
+          "Win by cheating",
+          "Gain an advantage secretly",
+          "Announce plans publicly"
+        ],
+        "answer": "Gain an advantage secretly",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: imitate someone's tactics does not best fit the requirement of the question. Option B: Win by cheating does not best fit the requirement of the question. Option C: Gain an advantage secretly fits the requirement of the question. Option D: Announce plans publicly does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 4,
+        "sourceQuestionNo": 140,
+        "question": "Choose the correct meaning of idiom given below: \"**Steal a march on someone**\"",
+        "options": [
+          "Imitate someone's tactics",
+          "Win by cheating",
+          "Gain an advantage secretly",
+          "Announce plans publicly"
+        ],
+        "answer": "Gain an advantage secretly",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Imitate someone's tactics does not best fit the requirement of the question. Option B: Win by cheating does not best fit the requirement of the question. Option C: Gain an advantage secretly fits the requirement of the question. Option D: Announce plans publicly does not best fit the requirement of the question. **Option C** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 3,
+        "sourceQuestionNo": 139,
+        "question": "Choose the correct meaning of idiom: Throw down the gauntlet",
+        "options": [
+          "Admit defeat",
+          "Issue a challenge",
+          "Surrender peacefully",
+          "Apologize publicly"
+        ],
+        "answer": "Issue a challenge",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Admit defeat does not best fit the requirement of the question. Option B: Issue a challenge fits the requirement of the question. Option C: Surrender peacefully does not best fit the requirement of the question. Option D: Apologize publicly does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 2,
+        "sourceQuestionNo": 138,
+        "question": "Choose the correct meaning of idiom given below: \"**Know which way the wind blows**\"",
+        "options": [
+          "Be uncertain about choices",
+          "Be aware of public opinion or trend",
+          "Seek external validation",
+          "Escape danger"
+        ],
+        "answer": "Be aware of public opinion or trend",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Be uncertain about choices does not best fit the requirement of the question. Option B: Be aware of public opinion or trend fits the requirement of the question. Option C: Seek external validation does not best fit the requirement of the question. Option D: Escape danger does not best fit the requirement of the question. **Option B** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      },
+      {
+        "id": 1,
+        "sourceQuestionNo": 137,
+        "question": "Which term refers to \"The psychological phenomenon in which people are more likely to commit unethical acts when they feel their actions are not being observed\"?",
+        "options": [
+          "Deindividuation",
+          "Cognitive Dissonance",
+          "Self-Justification",
+          "Moral Disengagement"
+        ],
+        "answer": "Deindividuation",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Deindividuation fits the requirement of the question. Option B: Cognitive Dissonance does not best fit the requirement of the question. Option C: Self-Justification does not best fit the requirement of the question. Option D: Moral Disengagement does not best fit the requirement of the question. **Option A** correctly applies: it is the best meaning or usage of the idiom/phrase.",
+        "type": "Idioms & Phrases"
+      }
+    ]
+  }
+}

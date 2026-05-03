@@ -1,0 +1,923 @@
+{
+  "quiz": {
+    "title": "Voice - SSC Selection Post XIII 2025",
+    "category": "Grammar",
+    "totalQuestions": 57,
+    "questions": [
+      {
+        "id": 57,
+        "sourceQuestionNo": 307,
+        "question": "What is the active voice of the following sentence? When was America discovered by Columbus and later it was renamed after Amerigo Vespucci?",
+        "options": [
+          "When was Columbus discovered America and later they had renamed it after Amerigo Vespucci?",
+          "When Columbus discovers America and later who renamed it after Amerigo Vespucci?",
+          "When did Columbus discover America and later they renamed it after Amerigo Vespucci?",
+          "When Columbus discovered America and later he were renamed after Amerigo Vespucci?"
+        ],
+        "answer": "When did Columbus discover America and later they renamed it after Amerigo Vespucci?",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: When was Columbus discovered America and later they had renamed it after Amerigo Vespucci? does not best fit the requirement of the question. Option B: When Columbus discovers America and later who renamed it after Amerigo Vespucci? does not best fit the requirement of the question. Option C: When did Columbus discover America and later they renamed it after Amerigo Vespucci? fits the requirement of the question. Option D: When Columbus discovered America and later he were renamed after Amerigo Vespucci? does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 56,
+        "sourceQuestionNo": 306,
+        "question": "Transform the following sentence into active voice. The dishes have been prepared with great care and perfection by the cook.",
+        "options": [
+          "The cook have prepared the dishes with great care and perfection.",
+          "The cook has prepared the dishes with great care and perfection.",
+          "The cook has prepared the dishes by great care and perfection.",
+          "The cook has prepared the dish with great care and perfection."
+        ],
+        "answer": "The cook has prepared the dishes with great care and perfection.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The cook have prepared the dishes with great care and perfection. does not best fit the requirement of the question. Option B: The cook has prepared the dishes with great care and perfection. fits the requirement of the question. Option C: The cook has prepared the dishes by great care and perfection. does not best fit the requirement of the question. Option D: The cook has prepared the dish with great care and perfection. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 55,
+        "sourceQuestionNo": 305,
+        "question": "Change the following from active to passive: The jury had announced the final verdict after a thorough discussion.",
+        "options": [
+          "The final verdict was being announced after a thorough discussion.",
+          "The final verdict had been announced by the jury after a thorough discussion.",
+          "The final verdict is announced after a thorough discussion.",
+          "The final verdict was announced after a thorough discussion."
+        ],
+        "answer": "The final verdict had been announced by the jury after a thorough discussion.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The final verdict was being announced after a thorough discussion. does not best fit the requirement of the question. Option B: The final verdict had been announced by the jury after a thorough discussion. fits the requirement of the question. Option C: The final verdict is announced after a thorough discussion. does not best fit the requirement of the question. Option D: The final verdict was announced after a thorough discussion. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 54,
+        "sourceQuestionNo": 304,
+        "question": "Change the following from active to passive: He posted the letter in the red mailbox near the main gate.",
+        "options": [
+          "The letter had been posted in the red mailbox by him near the main gate.",
+          "The letter was posted in the red mailbox by him near the main gate.",
+          "The red mailbox was posted with the letter by him near the main gate.",
+          "The letter is being posted in the red mailbox near the main gate by him."
+        ],
+        "answer": "The letter was posted in the red mailbox by him near the main gate.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The letter had been posted in the red mailbox by him near the main gate. does not best fit the requirement of the question. Option B: The letter was posted in the red mailbox by him near the main gate. fits the requirement of the question. Option C: The red mailbox was posted with the letter by him near the main gate. does not best fit the requirement of the question. Option D: The letter is being posted in the red mailbox near the main gate by him. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 53,
+        "sourceQuestionNo": 303,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: A message was being typed by the assistant while the manager was speaking.",
+        "options": [
+          "The assistant was typing a message while the manager was speaking.",
+          "The assistant typed a message while the manager spoke.",
+          "A message was typed while the manager was speaking.",
+          "The assistant types a message while the manager speaks."
+        ],
+        "answer": "The assistant was typing a message while the manager was speaking.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The assistant was typing a message while the manager was speaking. fits the requirement of the question. Option B: The assistant typed a message while the manager spoke. does not best fit the requirement of the question. Option C: A message was typed while the manager was speaking. does not best fit the requirement of the question. Option D: The assistant types a message while the manager speaks. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 52,
+        "sourceQuestionNo": 302,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The roads are being repaired by the municipal workers after complaints from residents.",
+        "options": [
+          "The municipal workers are repairing the roads after complaints from residents.",
+          "The roads were repaired after complaints from residents.",
+          "The municipal workers had repaired the roads.",
+          "The roads are to be repaired by municipal workers."
+        ],
+        "answer": "The municipal workers are repairing the roads after complaints from residents.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The municipal workers are repairing the roads after complaints from residents. fits the requirement of the question. Option B: The roads were repaired after complaints from residents. does not best fit the requirement of the question. Option C: The municipal workers had repaired the roads. does not best fit the requirement of the question. Option D: The roads are to be repaired by municipal workers. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 51,
+        "sourceQuestionNo": 301,
+        "question": "Change the following from active to passive: The editor will revise the entire draft before it is printed.",
+        "options": [
+          "The entire draft is revised by the editor.",
+          "The entire draft will be revised by the editor before it is printed.",
+          "The entire draft shall be revised before printing.",
+          "The editor has revised the entire draft."
+        ],
+        "answer": "The entire draft will be revised by the editor before it is printed.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The entire draft is revised by the editor. does not best fit the requirement of the question. Option B: The entire draft will be revised by the editor before it is printed. fits the requirement of the question. Option C: The entire draft shall be revised before printing. does not best fit the requirement of the question. Option D: The editor has revised the entire draft. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 50,
+        "sourceQuestionNo": 300,
+        "question": "Change the following from active to passive: She was driving the car when the accident occurred.",
+        "options": [
+          "The car is being driven by her when the accident occurred.",
+          "The car had been driven by her when the accident occurred.",
+          "The car was being driven by her when the accident occurred.",
+          "She had driven the car when the accident occurred."
+        ],
+        "answer": "The car was being driven by her when the accident occurred.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The car is being driven by her when the accident occurred. does not best fit the requirement of the question. Option B: The car had been driven by her when the accident occurred. does not best fit the requirement of the question. Option C: The car was being driven by her when the accident occurred. fits the requirement of the question. Option D: She had driven the car when the accident occurred. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 49,
+        "sourceQuestionNo": 299,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The new policy will be implemented by the administration next month.",
+        "options": [
+          "The administration will implement the new policy next month.",
+          "The administration is implementing the new policy.",
+          "The new policy was implemented by the administration.",
+          "The new policy has been implemented."
+        ],
+        "answer": "The administration will implement the new policy next month.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The administration will implement the new policy next month. fits the requirement of the question. Option B: The administration is implementing the new policy. does not best fit the requirement of the question. Option C: The new policy was implemented by the administration. does not best fit the requirement of the question. Option D: The new policy has been implemented. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 48,
+        "sourceQuestionNo": 298,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The house had been painted by the workers before the rain started.",
+        "options": [
+          "The workers had painted the house before the rain started.",
+          "The workers painted the house before the rain started.",
+          "The house was painted before the rain started.",
+          "The workers have painted the house before the rain started."
+        ],
+        "answer": "The workers had painted the house before the rain started.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The workers had painted the house before the rain started. fits the requirement of the question. Option B: The workers painted the house before the rain started. does not best fit the requirement of the question. Option C: The house was painted before the rain started. does not best fit the requirement of the question. Option D: The workers have painted the house before the rain started. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 47,
+        "sourceQuestionNo": 297,
+        "question": "Change the following from active to passive: They have adopted multiple strategies to enhance learning outcomes in rural schools.",
+        "options": [
+          "Multiple strategies have been adopted to enhance learning outcomes in rural schools .",
+          "Multiple strategies are being adopted by them for better learning outcomes.",
+          "Multiple strategies were adopted by them.",
+          "Multiple strategies are adopted by them to improve learning."
+        ],
+        "answer": "Multiple strategies have been adopted to enhance learning outcomes in rural schools .",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Multiple strategies have been adopted to enhance learning outcomes in rural schools . fits the requirement of the question. Option B: Multiple strategies are being adopted by them for better learning outcomes. does not best fit the requirement of the question. Option C: Multiple strategies were adopted by them. does not best fit the requirement of the question. Option D: Multiple strategies are adopted by them to improve learning. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 46,
+        "sourceQuestionNo": 296,
+        "question": "Change the following from active to passive: We are preparing a detailed report on environmental hazards.",
+        "options": [
+          "A detailed report on environmental hazards is being prepared by us.",
+          "We have prepared a detailed report on environmental hazards.",
+          "The report was prepared on environmental hazards by us.",
+          "A detailed report on environmental hazards has been prepared by us."
+        ],
+        "answer": "A detailed report on environmental hazards is being prepared by us.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: A detailed report on environmental hazards is being prepared by us. fits the requirement of the question. Option B: We have prepared a detailed report on environmental hazards. does not best fit the requirement of the question. Option C: The report was prepared on environmental hazards by us. does not best fit the requirement of the question. Option D: A detailed report on environmental hazards has been prepared by us. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 45,
+        "sourceQuestionNo": 295,
+        "question": "Transform the following sentence into active voice. The windowpane was broken by George.",
+        "options": [
+          ". George breaks the windowpane.",
+          "George had broken the windowpane.",
+          "George broke the windowpane.",
+          "George is breaking the windowpane."
+        ],
+        "answer": "George broke the windowpane.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: . George breaks the windowpane. does not best fit the requirement of the question. Option B: George had broken the windowpane. does not best fit the requirement of the question. Option C: George broke the windowpane. fits the requirement of the question. Option D: George is breaking the windowpane. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 44,
+        "sourceQuestionNo": 294,
+        "question": "Change the voice of the following sentence. The fort has been guarded by moats and well-trained soldiers.",
+        "options": [
+          "Moats and well-trained soldiers has guarded the fort.",
+          "Moats and well-trained soldiers have guarded the fort.",
+          "Moats and well-trained soldiers have guarded by the fort.",
+          "Moats and well-trained soldiers have been guarding the fort."
+        ],
+        "answer": "Moats and well-trained soldiers have guarded the fort.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Moats and well-trained soldiers has guarded the fort. does not best fit the requirement of the question. Option B: Moats and well-trained soldiers have guarded the fort. fits the requirement of the question. Option C: Moats and well-trained soldiers have guarded by the fort. does not best fit the requirement of the question. Option D: Moats and well-trained soldiers have been guarding the fort. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 43,
+        "sourceQuestionNo": 293,
+        "question": "Change the following from active to passive: The engineer is testing the system to ensure its reliability under stress.",
+        "options": [
+          "The system is tested by the engineer to ensure reliability.",
+          "The system is being tested by the engineer to ensure its reliability under stress.",
+          "The system has been tested by the engineer.",
+          "The engineer had tested the system already."
+        ],
+        "answer": "The system is being tested by the engineer to ensure its reliability under stress.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The system is tested by the engineer to ensure reliability. does not best fit the requirement of the question. Option B: The system is being tested by the engineer to ensure its reliability under stress. fits the requirement of the question. Option C: The system has been tested by the engineer. does not best fit the requirement of the question. Option D: The engineer had tested the system already. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 42,
+        "sourceQuestionNo": 292,
+        "question": "Change the following from active to passive: They have announced the results on the official website.",
+        "options": [
+          "The results were announced on the official website.",
+          "The results have been announced on the official website by them",
+          "The official website was announced with the results.",
+          "The results had been announced already."
+        ],
+        "answer": "The results have been announced on the official website by them",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The results were announced on the official website. does not best fit the requirement of the question. Option B: The results have been announced on the official website by them fits the requirement of the question. Option C: The official website was announced with the results. does not best fit the requirement of the question. Option D: The results had been announced already. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 41,
+        "sourceQuestionNo": 291,
+        "question": "Change the voice of the following sentence. Please let all the rubbish be cleared immediately from this place and the furniture be brought from the next room.",
+        "options": [
+          "Please clear all the rubbish from this place immediately from the next room and bring the furniture.",
+          "Please clear all the rubbish from this place immediately and the furniture be brought from the next room.",
+          "Please clear all the rubbish from this place immediately and bring the furniture into the next room.",
+          "Please clear all the rubbish from this place immediately and bring the furniture from the next room."
+        ],
+        "answer": "Please clear all the rubbish from this place immediately and bring the furniture from the next room.",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Please clear all the rubbish from this place immediately from the next room and bring the furniture. does not best fit the requirement of the question. Option B: Please clear all the rubbish from this place immediately and the furniture be brought from the next room. does not best fit the requirement of the question. Option C: Please clear all the rubbish from this place immediately and bring the furniture into the next room. does not best fit the requirement of the question. Option D: Please clear all the rubbish from this place immediately and bring the furniture from the next room. fits the requirement of the question. **Option D** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 40,
+        "sourceQuestionNo": 290,
+        "question": "Change the following from active to passive: Scientists are developing a new vaccine to combat the rapidly mutating virus.",
+        "options": [
+          "Anew vaccine is being developed by scientists to combat the rapidly mutating virus.",
+          "A new vaccine has been developed by scientists.",
+          "The rapidly mutating virus is being combated by a new vaccine.",
+          "Scientists had developed a new vaccine to combat the virus."
+        ],
+        "answer": "Anew vaccine is being developed by scientists to combat the rapidly mutating virus.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Anew vaccine is being developed by scientists to combat the rapidly mutating virus. fits the requirement of the question. Option B: A new vaccine has been developed by scientists. does not best fit the requirement of the question. Option C: The rapidly mutating virus is being combated by a new vaccine. does not best fit the requirement of the question. Option D: Scientists had developed a new vaccine to combat the virus. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 39,
+        "sourceQuestionNo": 289,
+        "question": "Change the following from active to passive: The team has finished the project two days before the deadline.",
+        "options": [
+          "The project is finished two days before the deadline by the team.",
+          "The project has been finished two days before the deadline by the team.",
+          "The team was finished the project two days before the deadline.",
+          "The project were finished two days before the deadline by the team."
+        ],
+        "answer": "The project has been finished two days before the deadline by the team.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The project is finished two days before the deadline by the team. does not best fit the requirement of the question. Option B: The project has been finished two days before the deadline by the team. fits the requirement of the question. Option C: The team was finished the project two days before the deadline. does not best fit the requirement of the question. Option D: The project were finished two days before the deadline by the team. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 38,
+        "sourceQuestionNo": 288,
+        "question": "Transform the following sentence into active voice. The roads and bridges that connect many important cities in India have been renovated or rebuilt with great alacrity.",
+        "options": [
+          "They have renovated or rebuilt the roads and bridges with great alacrity that connect many",
+          "They have renovated or rebuilt the roads and bridges that connect many important cities with great alacrity in India.",
+          "They have renovated or rebuilt the roads and bridges that connect many important cities in India with great alacrity.",
+          "They have renovated or rebuilt the roads and bridges that with great alacrity connect many important cities in India."
+        ],
+        "answer": "They have renovated or rebuilt the roads and bridges that connect many important cities in India with great alacrity.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: They have renovated or rebuilt the roads and bridges with great alacrity that connect many does not best fit the requirement of the question. Option B: They have renovated or rebuilt the roads and bridges that connect many important cities with great alacrity in India. does not best fit the requirement of the question. Option C: They have renovated or rebuilt the roads and bridges that connect many important cities in India with great alacrity. fits the requirement of the question. Option D: They have renovated or rebuilt the roads and bridges that with great alacrity connect many important cities in India. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 37,
+        "sourceQuestionNo": 287,
+        "question": "Transform the following sentence into active voice. The letter is expected to be delivered by the bearer within the stipulated time.",
+        "options": [
+          "They expect the bearer to deliver the letter within the stipulated time.",
+          "They expect the letter to deliver the bearer within the stipulated time.",
+          "They expect the bearer to deliver the stipulated time within the the letter.",
+          "They expect the bearer to delivered the letter within the stipulated time."
+        ],
+        "answer": "They expect the bearer to deliver the letter within the stipulated time.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: They expect the bearer to deliver the letter within the stipulated time. fits the requirement of the question. Option B: They expect the letter to deliver the bearer within the stipulated time. does not best fit the requirement of the question. Option C: They expect the bearer to deliver the stipulated time within the the letter. does not best fit the requirement of the question. Option D: They expect the bearer to delivered the letter within the stipulated time. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 36,
+        "sourceQuestionNo": 286,
+        "question": "Change the following from active to passive: They will have finalized the agenda by tomorrow morning.",
+        "options": [
+          "The agenda had been finalized by them.",
+          "The agenda was finalized by them.",
+          "The agenda will have been finalized by tomorrow morning.",
+          "The agenda will be finalized tomorrow."
+        ],
+        "answer": "The agenda will have been finalized by tomorrow morning.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The agenda had been finalized by them. does not best fit the requirement of the question. Option B: The agenda was finalized by them. does not best fit the requirement of the question. Option C: The agenda will have been finalized by tomorrow morning. fits the requirement of the question. Option D: The agenda will be finalized tomorrow. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 35,
+        "sourceQuestionNo": 285,
+        "question": "Change the following from active to passive: He has written a novel inspired by his time spent in rural India.",
+        "options": [
+          "A novel inspired by his time spent in rural India had been written by him.",
+          "A novel inspired by his time spent in rural India is written by him.",
+          "Anovel inspired by his time spent in rural India has been written by him.",
+          "A novel inspired by his time spent in rural India was written by him."
+        ],
+        "answer": "Anovel inspired by his time spent in rural India has been written by him.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: A novel inspired by his time spent in rural India had been written by him. does not best fit the requirement of the question. Option B: A novel inspired by his time spent in rural India is written by him. does not best fit the requirement of the question. Option C: Anovel inspired by his time spent in rural India has been written by him. fits the requirement of the question. Option D: A novel inspired by his time spent in rural India was written by him. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 34,
+        "sourceQuestionNo": 284,
+        "question": "Change the following sentence from active to passive: \"The principal investigator might have been continuously analyzing the erratic fluctuations in the molecular structure caused by high-frequency radiation during the controlled simulations.\"",
+        "options": [
+          "The fluctuations in molecular structure might have been continuously analyzed by the principal investigator during the simulations.",
+          "The erratic fluctuations caused by high-frequency radiation might have been continuously under analysis by the principal investigator during the controlled simulations.",
+          "During the controlled simulations, the erratic fluctuations in the molecular structure were continuously analyzed by the principal investigator.",
+          "Continuous analysis of the fluctuations in molecular structure by the principal investigator might have been performed during the controlled simulations."
+        ],
+        "answer": "The erratic fluctuations caused by high-frequency radiation might have been continuously under analysis by the principal investigator during the controlled simulations.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The fluctuations in molecular structure might have been continuously analyzed by the principal investigator during the simulations. does not best fit the requirement of the question. Option B: The erratic fluctuations caused by high-frequency radiation might have been continuously under analysis by the principal investigator during the controlled simulations. fits the requirement of the question. Option C: During the controlled simulations, the erratic fluctuations in the molecular structure were continuously analyzed by the principal investigator. does not best fit the requirement of the question. Option D: Continuous analysis of the fluctuations in molecular structure by the principal investigator might have been performed during the controlled simulations. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice",
+        "needsReview": true,
+        "issue": "OCR anomaly was manually normalized from rendered PDF image; spot-check recommended."
+      },
+      {
+        "id": 33,
+        "sourceQuestionNo": 283,
+        "question": "Change the following sentence from passive to active: By whom were the candidates shortlisted for the interview?",
+        "options": [
+          "Who had shortlisted the candidates for the interview?",
+          "Who shortlisted the candidates for the interview?",
+          "Had anyone shortlisted the candidates for the interview?",
+          "Who has shortlisted the candidates for the interview?"
+        ],
+        "answer": "Who shortlisted the candidates for the interview?",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Who had shortlisted the candidates for the interview? does not best fit the requirement of the question. Option B: Who shortlisted the candidates for the interview? fits the requirement of the question. Option C: Had anyone shortlisted the candidates for the interview? does not best fit the requirement of the question. Option D: Who has shortlisted the candidates for the interview? does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 32,
+        "sourceQuestionNo": 282,
+        "question": "Change the following sentence from active to passive: The staff might have been installing the new server last night.",
+        "options": [
+          "The staff installed the new server last night.",
+          "The server has been installed last night by the staff.",
+          "The new server might be installed last night by the staff.",
+          "The new server might have been installed last night by the staff."
+        ],
+        "answer": "The new server might have been installed last night by the staff.",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: The staff installed the new server last night. does not best fit the requirement of the question. Option B: The server has been installed last night by the staff. does not best fit the requirement of the question. Option C: The new server might be installed last night by the staff. does not best fit the requirement of the question. Option D: The new server might have been installed last night by the staff. fits the requirement of the question. **Option D** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 31,
+        "sourceQuestionNo": 281,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The files have been submitted by the interns before the deadline.",
+        "options": [
+          "The interns have submitted the files before the deadline.",
+          "The interns submitted the files before the deadline.",
+          "The files were submitted before the deadline.",
+          "The interns are submitting the files before the deadline."
+        ],
+        "answer": "The interns have submitted the files before the deadline.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The interns have submitted the files before the deadline. fits the requirement of the question. Option B: The interns submitted the files before the deadline. does not best fit the requirement of the question. Option C: The files were submitted before the deadline. does not best fit the requirement of the question. Option D: The interns are submitting the files before the deadline. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 30,
+        "sourceQuestionNo": 280,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The instructions were being read by the students when the bell rang.",
+        "options": [
+          "The students were reading the instructions when the bell rang.",
+          "The students had read the instructions when the bell rang.",
+          "The instructions had been read by the students.",
+          "The students have read the instructions when the bell rang."
+        ],
+        "answer": "The students were reading the instructions when the bell rang.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The students were reading the instructions when the bell rang. fits the requirement of the question. Option B: The students had read the instructions when the bell rang. does not best fit the requirement of the question. Option C: The instructions had been read by the students. does not best fit the requirement of the question. Option D: The students have read the instructions when the bell rang. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 29,
+        "sourceQuestionNo": 279,
+        "question": "Change the following from active to passive: a The artist was painting a mural that depicted the evolution of civilization.",
+        "options": [
+          "A mural that depicted the evolution of civilization is painted by the artist.",
+          "A mural was painted by the artist that depicted the evolution of civilization.",
+          "A mural that depicted the evolution of civilization was being painted by the artist.",
+          "The artist had painted a mural that depicted evolution."
+        ],
+        "answer": "A mural that depicted the evolution of civilization was being painted by the artist.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: A mural that depicted the evolution of civilization is painted by the artist. does not best fit the requirement of the question. Option B: A mural was painted by the artist that depicted the evolution of civilization. does not best fit the requirement of the question. Option C: A mural that depicted the evolution of civilization was being painted by the artist. fits the requirement of the question. Option D: The artist had painted a mural that depicted evolution. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 28,
+        "sourceQuestionNo": 278,
+        "question": "Change the following from active to passive: They will organize a farewell party for the retiring teacher.",
+        "options": [
+          "A farewell party will be organized for the retiring teacher by them.",
+          "The retiring teacher was organized a farewell party by them.",
+          "They were organizing a farewell party for the retiring teacher.",
+          "A farewell party is being organized by them for the retiring teacher."
+        ],
+        "answer": "A farewell party will be organized for the retiring teacher by them.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: A farewell party will be organized for the retiring teacher by them. fits the requirement of the question. Option B: The retiring teacher was organized a farewell party by them. does not best fit the requirement of the question. Option C: They were organizing a farewell party for the retiring teacher. does not best fit the requirement of the question. Option D: A farewell party is being organized by them for the retiring teacher. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 27,
+        "sourceQuestionNo": 277,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: A letter was written by Riya to her grandmother last week.",
+        "options": [
+          "Riya wrote a letter to her grandmother last week.",
+          "Riya had written a letter to her grandmother last week.",
+          "Riya writes a letter to her grandmother last week.",
+          "Riya was writing a letter to her grandmother last week."
+        ],
+        "answer": "Riya wrote a letter to her grandmother last week.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Riya wrote a letter to her grandmother last week. fits the requirement of the question. Option B: Riya had written a letter to her grandmother last week. does not best fit the requirement of the question. Option C: Riya writes a letter to her grandmother last week. does not best fit the requirement of the question. Option D: Riya was writing a letter to her grandmother last week. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 26,
+        "sourceQuestionNo": 276,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The homework is checked by the teacher every Friday.",
+        "options": [
+          "The teacher checks the homework every Friday.",
+          "The teacher has checked the homework every Friday.",
+          "The homework was being checked by the teacher every Friday.",
+          "The teacher was checking the homework every Friday."
+        ],
+        "answer": "The teacher checks the homework every Friday.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The teacher checks the homework every Friday. fits the requirement of the question. Option B: The teacher has checked the homework every Friday. does not best fit the requirement of the question. Option C: The homework was being checked by the teacher every Friday. does not best fit the requirement of the question. Option D: The teacher was checking the homework every Friday. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 25,
+        "sourceQuestionNo": 275,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The state secrets had been smuggled out by a double agent before intelligence could act.",
+        "options": [
+          "A double agent has smuggled out the state secrets before intelligence could act.",
+          "A double agent smuggled out the state secrets before intelligence could act.",
+          "Adouble agent was smuggling out the state secrets before intelligence could act.",
+          "A double agent had smuggled out the state secrets before intelligence could act."
+        ],
+        "answer": "A double agent had smuggled out the state secrets before intelligence could act.",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: A double agent has smuggled out the state secrets before intelligence could act. does not best fit the requirement of the question. Option B: A double agent smuggled out the state secrets before intelligence could act. does not best fit the requirement of the question. Option C: Adouble agent was smuggling out the state secrets before intelligence could act. does not best fit the requirement of the question. Option D: A double agent had smuggled out the state secrets before intelligence could act. fits the requirement of the question. **Option D** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 24,
+        "sourceQuestionNo": 274,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The results have been being reviewed by the committee.",
+        "options": [
+          "The committee is reviewing the results.",
+          "The committee had reviewed the results.",
+          "The committee has been reviewing the results.",
+          "The committee reviews the results."
+        ],
+        "answer": "The committee has been reviewing the results.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The committee is reviewing the results. does not best fit the requirement of the question. Option B: The committee had reviewed the results. does not best fit the requirement of the question. Option C: The committee has been reviewing the results. fits the requirement of the question. Option D: The committee reviews the results. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 23,
+        "sourceQuestionNo": 273,
+        "question": "Change the following from active to passive: The think tank will have been reviewing policy outcomes across sectors by the end of the fiscal cycle.",
+        "options": [
+          "Policy outcomes across sectors will have been being reviewed by the think tank by the end of the fiscal cycle.",
+          "Policy outcomes across sectors were reviewed by the think tank by the end of the fiscal cycle.",
+          "Policy outcomes across sectors will have been reviewed by the think tank by the end of the fiscal cycle.",
+          "Policy outcomes across sectors will be reviewed by the think tank by the end of the fiscal cycle."
+        ],
+        "answer": "Policy outcomes across sectors will have been being reviewed by the think tank by the end of the fiscal cycle.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Policy outcomes across sectors will have been being reviewed by the think tank by the end of the fiscal cycle. fits the requirement of the question. Option B: Policy outcomes across sectors were reviewed by the think tank by the end of the fiscal cycle. does not best fit the requirement of the question. Option C: Policy outcomes across sectors will have been reviewed by the think tank by the end of the fiscal cycle. does not best fit the requirement of the question. Option D: Policy outcomes across sectors will be reviewed by the think tank by the end of the fiscal cycle. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 22,
+        "sourceQuestionNo": 272,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The committee's findings are being analyzed for discrepancies by an external reviewer.",
+        "options": [
+          "An external reviewer analyzed the committee's findings for discrepancies.",
+          "An external reviewer is analyzing the committee's findings for discrepancies.",
+          "An external reviewer was analyzing the committee's findings for discrepancies.",
+          "An external reviewer will analyze the committee's findings for discrepancies."
+        ],
+        "answer": "An external reviewer is analyzing the committee's findings for discrepancies.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: An external reviewer analyzed the committee's findings for discrepancies. does not best fit the requirement of the question. Option B: An external reviewer is analyzing the committee's findings for discrepancies. fits the requirement of the question. Option C: An external reviewer was analyzing the committee's findings for discrepancies. does not best fit the requirement of the question. Option D: An external reviewer will analyze the committee's findings for discrepancies. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 21,
+        "sourceQuestionNo": 271,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The data had been being compiled for weeks before the report.",
+        "options": [
+          "They were compiling the data for weeks before the report.",
+          "They had been compiling the data for weeks before the report.",
+          "They had compiled the data for weeks before the report.",
+          "They had been compiled the data for weeks."
+        ],
+        "answer": "They had been compiling the data for weeks before the report.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: They were compiling the data for weeks before the report. does not best fit the requirement of the question. Option B: They had been compiling the data for weeks before the report. fits the requirement of the question. Option C: They had compiled the data for weeks before the report. does not best fit the requirement of the question. Option D: They had been compiled the data for weeks. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 20,
+        "sourceQuestionNo": 270,
+        "question": "Change the following from active to passive: The advisory panel might have been overlooking critical discrepancies in the data prior to the audit.",
+        "options": [
+          "Critical discrepancies in the data might have been being overlooked by the advisory panel prior to the audit.",
+          "Critical discrepancies were being overlooked by the panel prior to the audit.",
+          "Critical discrepancies might have overlooked the panel during the audit.",
+          "Critical discrepancies had been overlooked by the panel during the audit."
+        ],
+        "answer": "Critical discrepancies in the data might have been being overlooked by the advisory panel prior to the audit.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Critical discrepancies in the data might have been being overlooked by the advisory panel prior to the audit. fits the requirement of the question. Option B: Critical discrepancies were being overlooked by the panel prior to the audit. does not best fit the requirement of the question. Option C: Critical discrepancies might have overlooked the panel during the audit. does not best fit the requirement of the question. Option D: Critical discrepancies had been overlooked by the panel during the audit. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 19,
+        "sourceQuestionNo": 269,
+        "question": "Change the following from active to passive: The director was supposed to have finalized the script revisions before principal photography commenced.",
+        "options": [
+          "The script revisions were supposed to have finalized by the director before principal photography commenced.",
+          "The script revisions were supposed to have been finalized by the director before principal photography commenced.",
+          "The script revisions were being supposed to have been finalized by the director before principal photography commenced.",
+          "The script revisions were supposed to being finalized by the director before principal photography commenced."
+        ],
+        "answer": "The script revisions were supposed to have been finalized by the director before principal photography commenced.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The script revisions were supposed to have finalized by the director before principal photography commenced. does not best fit the requirement of the question. Option B: The script revisions were supposed to have been finalized by the director before principal photography commenced. fits the requirement of the question. Option C: The script revisions were being supposed to have been finalized by the director before principal photography commenced. does not best fit the requirement of the question. Option D: The script revisions were supposed to being finalized by the director before principal photography commenced. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 18,
+        "sourceQuestionNo": 268,
+        "question": "Choose the correct active voice form from the given options. The laptop may not be bought by her.",
+        "options": [
+          "She may not buy the laptop.",
+          "She might not buy the laptop.",
+          "She should not have bought the laptop.",
+          "She may not have bought the laptop."
+        ],
+        "answer": "She may not buy the laptop.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: She may not buy the laptop. fits the requirement of the question. Option B: She might not buy the laptop. does not best fit the requirement of the question. Option C: She should not have bought the laptop. does not best fit the requirement of the question. Option D: She may not have bought the laptop. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 17,
+        "sourceQuestionNo": 267,
+        "question": "Choose the correct active form of the given sentence. Admission was refused to Sheetal by the school.",
+        "options": [
+          "Sheetal was refused admission by the school.",
+          "The school refused admission to Sheetal.",
+          "Sheetal will be refused admission by the school.",
+          "The school has been refusing admission to Sheetal."
+        ],
+        "answer": "The school refused admission to Sheetal.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Sheetal was refused admission by the school. does not best fit the requirement of the question. Option B: The school refused admission to Sheetal. fits the requirement of the question. Option C: Sheetal will be refused admission by the school. does not best fit the requirement of the question. Option D: The school has been refusing admission to Sheetal. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 16,
+        "sourceQuestionNo": 266,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The annual report has been submitted by the audit department after multiple revisions.",
+        "options": [
+          "The audit department submitted the annual report after multiple revisions.",
+          "The audit department is submitting the annual report after multiple revisions.",
+          "The audit department has submitted the annual report after multiple revisions.",
+          "The audit department had submitted the annual report after multiple revisions."
+        ],
+        "answer": "The audit department has submitted the annual report after multiple revisions.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The audit department submitted the annual report after multiple revisions. does not best fit the requirement of the question. Option B: The audit department is submitting the annual report after multiple revisions. does not best fit the requirement of the question. Option C: The audit department has submitted the annual report after multiple revisions. fits the requirement of the question. Option D: The audit department had submitted the annual report after multiple revisions. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 15,
+        "sourceQuestionNo": 265,
+        "question": "Change the following from active to passive: Legal analysts had consistently scrutinized the wording of the statute since its inception.",
+        "options": [
+          "The wording of the statute had been consistently scrutinized by legal analysts since its inception.",
+          "The statute wording was being scrutinized since its inception by analysts.",
+          "Legal wording had been scrutinized by legal analysts since its inception.",
+          "The wording had been under scrutiny by legal analysts since its inception."
+        ],
+        "answer": "The wording of the statute had been consistently scrutinized by legal analysts since its inception.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The wording of the statute had been consistently scrutinized by legal analysts since its inception. fits the requirement of the question. Option B: The statute wording was being scrutinized since its inception by analysts. does not best fit the requirement of the question. Option C: Legal wording had been scrutinized by legal analysts since its inception. does not best fit the requirement of the question. Option D: The wording had been under scrutiny by legal analysts since its inception. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 14,
+        "sourceQuestionNo": 264,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The documents have been signed by the director.",
+        "options": [
+          "The director has been signing the documents.",
+          "The director has signed the documents.",
+          "The director is signing the documents.",
+          "The director signed the documents,"
+        ],
+        "answer": "The director has signed the documents.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The director has been signing the documents. does not best fit the requirement of the question. Option B: The director has signed the documents. fits the requirement of the question. Option C: The director is signing the documents. does not best fit the requirement of the question. Option D: The director signed the documents, does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 13,
+        "sourceQuestionNo": 263,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The rare manuscripts had been preserved meticulously by the archivists before the fire broke out.",
+        "options": [
+          "The archivists have preserved the rare manuscripts meticulously before the fire broke out.",
+          "The archivists preserved the rare manuscripts meticulously before the fire broke out.",
+          "The archivists had preserved the rare manuscripts meticulously before the fire broke out.",
+          "The archivists has preserved the rare manuscripts meticulously before the fire broke out."
+        ],
+        "answer": "The archivists had preserved the rare manuscripts meticulously before the fire broke out.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The archivists have preserved the rare manuscripts meticulously before the fire broke out. does not best fit the requirement of the question. Option B: The archivists preserved the rare manuscripts meticulously before the fire broke out. does not best fit the requirement of the question. Option C: The archivists had preserved the rare manuscripts meticulously before the fire broke out. fits the requirement of the question. Option D: The archivists has preserved the rare manuscripts meticulously before the fire broke out. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 12,
+        "sourceQuestionNo": 262,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The invitation will have been sent by the secretary before noon.",
+        "options": [
+          "The secretary sends the invitation before noon.",
+          "The secretary has sent the invitation before noon.",
+          "The secretary will have sent the invitation before noon.",
+          "The secretary will be sending the invitation before noon."
+        ],
+        "answer": "The secretary will have sent the invitation before noon.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The secretary sends the invitation before noon. does not best fit the requirement of the question. Option B: The secretary has sent the invitation before noon. does not best fit the requirement of the question. Option C: The secretary will have sent the invitation before noon. fits the requirement of the question. Option D: The secretary will be sending the invitation before noon. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 11,
+        "sourceQuestionNo": 261,
+        "question": "Change the following from active to passive: Industry leaders have been challenging the proposed legislation for its lack of clarity and enforcement mechanisms.",
+        "options": [
+          "The proposed legislation has been being challenged for its lack of clarity and enforcement mechanisms by industry leaders.",
+          "The proposed legislation was challenged by industry leaders for clarity and mechanism.",
+          "The legislation has been challenged by leaders for its lack of clarity.",
+          "The legislation is being challenged by industry leaders for for its lack of clarity."
+        ],
+        "answer": "The proposed legislation has been being challenged for its lack of clarity and enforcement mechanisms by industry leaders.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The proposed legislation has been being challenged for its lack of clarity and enforcement mechanisms by industry leaders. fits the requirement of the question. Option B: The proposed legislation was challenged by industry leaders for clarity and mechanism. does not best fit the requirement of the question. Option C: The legislation has been challenged by leaders for its lack of clarity. does not best fit the requirement of the question. Option D: The legislation is being challenged by industry leaders for for its lack of clarity. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 10,
+        "sourceQuestionNo": 260,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The rare manuscripts had been preserved meticulously by the archivists before the fire broke out.",
+        "options": [
+          "The archivists have preserved the rare manuscripts meticulously before the fire broke out.",
+          "The archivists preserved the rare manuscripts meticulously before the fire broke out.",
+          "The archivists had preserved the rare manuscripts meticulously before the fire broke out.",
+          "The archivists has preserved the rare manuscripts meticulously before the fire broke out."
+        ],
+        "answer": "The archivists had preserved the rare manuscripts meticulously before the fire broke out.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The archivists have preserved the rare manuscripts meticulously before the fire broke out. does not best fit the requirement of the question. Option B: The archivists preserved the rare manuscripts meticulously before the fire broke out. does not best fit the requirement of the question. Option C: The archivists had preserved the rare manuscripts meticulously before the fire broke out. fits the requirement of the question. Option D: The archivists has preserved the rare manuscripts meticulously before the fire broke out. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 9,
+        "sourceQuestionNo": 259,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The invitation will have been sent by the secretary before noon.",
+        "options": [
+          "The secretary sends the invitation before noon.",
+          "The secretary has sent the invitation before noon.",
+          "The secretary will have sent the invitation before noon.",
+          "The secretary will be sending the invitation before noon."
+        ],
+        "answer": "The secretary will have sent the invitation before noon.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The secretary sends the invitation before noon. does not best fit the requirement of the question. Option B: The secretary has sent the invitation before noon. does not best fit the requirement of the question. Option C: The secretary will have sent the invitation before noon. fits the requirement of the question. Option D: The secretary will be sending the invitation before noon. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 8,
+        "sourceQuestionNo": 258,
+        "question": "Change the following from active to passive: Industry leaders have been challenging the proposed legislation for its lack of clarity and enforcement mechanisms.",
+        "options": [
+          "The proposed legislation has been being challenged for its lack of clarity and enforcement mechanisms by industry leaders.",
+          "The proposed legislation was challenged by industry leaders for clarity and mechanism.",
+          "The legislation has been challenged by leaders for its lack of clarity.",
+          "The legislation is being challenged by industry leaders for for its lack of clarity."
+        ],
+        "answer": "The proposed legislation has been being challenged for its lack of clarity and enforcement mechanisms by industry leaders.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The proposed legislation has been being challenged for its lack of clarity and enforcement mechanisms by industry leaders. fits the requirement of the question. Option B: The proposed legislation was challenged by industry leaders for clarity and mechanism. does not best fit the requirement of the question. Option C: The legislation has been challenged by leaders for its lack of clarity. does not best fit the requirement of the question. Option D: The legislation is being challenged by industry leaders for for its lack of clarity. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 7,
+        "sourceQuestionNo": 257,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The security protocols had been overlooked by the administration prior to the incident.",
+        "options": [
+          "The administration has overlooked the security protocols prior to the incident.",
+          "The administration overlooks the security protocols prior to the incident.",
+          "The administration was overlooking the security protocols prior to the incident.",
+          "The administration had overlooked the security protocols prior to the incident."
+        ],
+        "answer": "The administration had overlooked the security protocols prior to the incident.",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: The administration has overlooked the security protocols prior to the incident. does not best fit the requirement of the question. Option B: The administration overlooks the security protocols prior to the incident. does not best fit the requirement of the question. Option C: The administration was overlooking the security protocols prior to the incident. does not best fit the requirement of the question. Option D: The administration had overlooked the security protocols prior to the incident. fits the requirement of the question. **Option D** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 6,
+        "sourceQuestionNo": 256,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The project is being evaluated by the panel.",
+        "options": [
+          "The panel was evaluating the project.",
+          "The panel has evaluated the project.",
+          "The panel is evaluating the project.",
+          "The panel evaluates the project."
+        ],
+        "answer": "The panel is evaluating the project.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: The panel was evaluating the project. does not best fit the requirement of the question. Option B: The panel has evaluated the project. does not best fit the requirement of the question. Option C: The panel is evaluating the project. fits the requirement of the question. Option D: The panel evaluates the project. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 5,
+        "sourceQuestionNo": 255,
+        "question": "Change the following from active to passive: The ethics committee will be evaluating the implications of the findings over the next quarter.",
+        "options": [
+          "The implications of the findings will be being evaluated by the ethics committee over the next quarter.",
+          "The findings' implications were evaluated by the committee over the next quarter.",
+          "The implications will have been evaluated by the committee over the next quarter.",
+          "The committee would be evaluating the implications over the next quarter."
+        ],
+        "answer": "The implications of the findings will be being evaluated by the ethics committee over the next quarter.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The implications of the findings will be being evaluated by the ethics committee over the next quarter. fits the requirement of the question. Option B: The findings' implications were evaluated by the committee over the next quarter. does not best fit the requirement of the question. Option C: The implications will have been evaluated by the committee over the next quarter. does not best fit the requirement of the question. Option D: The committee would be evaluating the implications over the next quarter. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 4,
+        "sourceQuestionNo": 254,
+        "question": "Read the passage and answer the questions: Habits, scientists say, emerge because the brain is constantly looking for ways to save effort. Left to its own devices, the brain will try to make almost any routine into a habit, because habits allow our minds to ramp down more often. This effort-saving instinct is a huge advantage. An efficient brain requires less room, which makes for a smaller head, which makes childbirth easier, and therefore makes survival more likely. But conserving mental effort is only part of the story. Habits also have a powerful impact on our behaviors because once they are formed, they operate automatically. Even more importantly, habits can be changed, replaced, or ignored-but only if we understand how they work. At the core of every habit is a neurological loop that consists of three parts: a cue, a routine, and a reward. This loop is the foundation of all habitual behaviors. The cue is the trigger that tells your brain to go into automatic mode, the routine is the behavior itself, and the reward is what helps your brain remember the loop in the future. Understanding this loop is the first step in taking control of habits, whether you want to break a bad habit or create a new one. identify the correct passive voice form of the following sentence: \"Habits also have a powerful impact on our behaviors.\"",
+        "options": [
+          "Our behaviors are powerfully impacted by habits.",
+          "A powerful impact is also had on our behaviors by habits.",
+          "Our behaviors have been impacted powerfully by habits.",
+          "Habits impact our behaviors powerfully."
+        ],
+        "answer": "Our behaviors are powerfully impacted by habits.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Our behaviors are powerfully impacted by habits. fits the requirement of the question. Option B: A powerful impact is also had on our behaviors by habits. does not best fit the requirement of the question. Option C: Our behaviors have been impacted powerfully by habits. does not best fit the requirement of the question. Option D: Habits impact our behaviors powerfully. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 3,
+        "sourceQuestionNo": 253,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: The minister's speech was being translated into multiple languages by official interpreters.",
+        "options": [
+          "Official interpreters had translated the minister's speech into multiple languages.",
+          "Official interpreters are translating the minister's speech into multiple languages.",
+          "Official interpreters were translating the minister's speech into multiple languages.",
+          "Official interpreters translated the minister's speech into multiple languages."
+        ],
+        "answer": "Official interpreters were translating the minister's speech into multiple languages.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Official interpreters had translated the minister's speech into multiple languages. does not best fit the requirement of the question. Option B: Official interpreters are translating the minister's speech into multiple languages. does not best fit the requirement of the question. Option C: Official interpreters were translating the minister's speech into multiple languages. fits the requirement of the question. Option D: Official interpreters translated the minister's speech into multiple languages. does not best fit the requirement of the question. **Option C** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 2,
+        "sourceQuestionNo": 252,
+        "question": "Convert the sentence provided below from its passive voice structure to an active voice structure: This article is going to be published by the journal.",
+        "options": [
+          "The journal will be publishing this article.",
+          "The journal is going to publish this article.",
+          "The journal publishes this article.",
+          "The journal had published this article."
+        ],
+        "answer": "The journal is going to publish this article.",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: The journal will be publishing this article. does not best fit the requirement of the question. Option B: The journal is going to publish this article. fits the requirement of the question. Option C: The journal publishes this article. does not best fit the requirement of the question. Option D: The journal had published this article. does not best fit the requirement of the question. **Option B** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      },
+      {
+        "id": 1,
+        "sourceQuestionNo": 251,
+        "question": "Change the following from active to passive: The panelists would have reconsidered the proposal had new evidence been submitted.",
+        "options": [
+          "The proposal would have been reconsidered by the panelists had new evidence been submitted.",
+          "The proposal would reconsider by the panelists had new evidence been submitted.",
+          "The proposal could be reconsidered by the panelists had new evidence been submitted.",
+          "The proposal was under reconsideration by the panelists had new evidence been submitted."
+        ],
+        "answer": "The proposal would have been reconsidered by the panelists had new evidence been submitted.",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: The proposal would have been reconsidered by the panelists had new evidence been submitted. fits the requirement of the question. Option B: The proposal would reconsider by the panelists had new evidence been submitted. does not best fit the requirement of the question. Option C: The proposal could be reconsidered by the panelists had new evidence been submitted. does not best fit the requirement of the question. Option D: The proposal was under reconsideration by the panelists had new evidence been submitted. does not best fit the requirement of the question. **Option A** correctly applies: it is the correct active/passive transformation while preserving the original tense and meaning.",
+        "type": "Voice"
+      }
+    ]
+  }
+}

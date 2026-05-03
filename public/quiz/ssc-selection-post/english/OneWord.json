@@ -1,0 +1,1001 @@
+{
+  "quiz": {
+    "title": "One Word Substitution - SSC Selection Post XIII 2025",
+    "category": "Vocabulary",
+    "totalQuestions": 62,
+    "questions": [
+      {
+        "id": 62,
+        "sourceQuestionNo": 136,
+        "question": "= the best one-word substitute for: \"**group of ships.**\"",
+        "options": [
+          "Fleet",
+          "Band",
+          "Mob",
+          "Bunch"
+        ],
+        "answer": "Fleet",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Fleet fits the requirement of the question. Option B: Band does not best fit the requirement of the question. Option C: Mob does not best fit the requirement of the question. Option D: Bunch does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 61,
+        "sourceQuestionNo": 135,
+        "question": "Choose the correct one word substitution for: \"**The fear of open or public spaces.**\"",
+        "options": [
+          "Agoraphobia",
+          "Claustrophobia",
+          "Xenophobia",
+          "Ergophobia"
+        ],
+        "answer": "Agoraphobia",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Agoraphobia fits the requirement of the question. Option B: Claustrophobia does not best fit the requirement of the question. Option C: Xenophobia does not best fit the requirement of the question. Option D: Ergophobia does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 60,
+        "sourceQuestionNo": 134,
+        "question": "Choose the correct one word substitution for: \"**A belief that the universe and all existence are divine**\".",
+        "options": [
+          "Pantheism",
+          "Polytheism",
+          "Mysticism",
+          "Agnosticism"
+        ],
+        "answer": "Pantheism",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Pantheism fits the requirement of the question. Option B: Polytheism does not best fit the requirement of the question. Option C: Mysticism does not best fit the requirement of the question. Option D: Agnosticism does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 59,
+        "sourceQuestionNo": 133,
+        "question": "ails the correct one-word substitution for: Too much official formality.\"",
+        "options": [
+          "Bureaucracy",
+          "Etiquette",
+          "Red tape",
+          "Discipline"
+        ],
+        "answer": "Red tape",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Bureaucracy does not best fit the requirement of the question. Option B: Etiquette does not best fit the requirement of the question. Option C: Red tape fits the requirement of the question. Option D: Discipline does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 58,
+        "sourceQuestionNo": 132,
+        "question": "Choose the correct one-word substitution for: \"**A book written about a person's life by someone else__.**\"",
+        "options": [
+          "Autobiography",
+          "Biography",
+          "Memoir",
+          "Diary"
+        ],
+        "answer": "Biography",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Autobiography does not best fit the requirement of the question. Option B: Biography fits the requirement of the question. Option C: Memoir does not best fit the requirement of the question. Option D: Diary does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 57,
+        "sourceQuestionNo": 131,
+        "question": "eae the correct one-word substitution for: The art of making maps and charts.\"",
+        "options": [
+          "Calligraphy",
+          "Geography",
+          "Cartography",
+          "Topography"
+        ],
+        "answer": "Cartography",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Calligraphy does not best fit the requirement of the question. Option B: Geography does not best fit the requirement of the question. Option C: Cartography fits the requirement of the question. Option D: Topography does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 56,
+        "sourceQuestionNo": 130,
+        "question": "Choose the correct one-word substitution for: \"**A four-footed animal.**\"",
+        "options": [
+          "Biped",
+          "Quadruped",
+          "Carnivore",
+          "Herbivore"
+        ],
+        "answer": "Quadruped",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Biped does not best fit the requirement of the question. Option B: Quadruped fits the requirement of the question. Option C: Carnivore does not best fit the requirement of the question. Option D: Herbivore does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 55,
+        "sourceQuestionNo": 129,
+        "question": "Choose the correct one-word substitution for: \"**A speech or text that praises someone highly __.**\"",
+        "options": [
+          "Epitaph",
+          "Eulogy",
+          "Sonnet",
+          "Lament"
+        ],
+        "answer": "Eulogy",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Epitaph does not best fit the requirement of the question. Option B: Eulogy fits the requirement of the question. Option C: Sonnet does not best fit the requirement of the question. Option D: Lament does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 54,
+        "sourceQuestionNo": 128,
+        "question": "Choose the correct one-word substitution for: \"**A doctor who treats children.**\"",
+        "options": [
+          "Cardiologist",
+          "Pediatrician",
+          "Neurologist",
+          "Gynecologist"
+        ],
+        "answer": "Pediatrician",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Cardiologist does not best fit the requirement of the question. Option B: Pediatrician fits the requirement of the question. Option C: Neurologist does not best fit the requirement of the question. Option D: Gynecologist does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 53,
+        "sourceQuestionNo": 127,
+        "question": "Choose the correct one-word substitution for: \"**A person who cannot make a mistake.**\"",
+        "options": [
+          "infallible",
+          "Invincible",
+          "Irresistible",
+          "Incredible"
+        ],
+        "answer": "infallible",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: infallible fits the requirement of the question. Option B: Invincible does not best fit the requirement of the question. Option C: Irresistible does not best fit the requirement of the question. Option D: Incredible does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 52,
+        "sourceQuestionNo": 126,
+        "question": "Choose the correct one-word substitution for: \"**Dissection of a dead body to find the cause of death.**\"",
+        "options": [
+          "Autopsy",
+          "Biopsy",
+          "Surgery",
+          "Anatomy"
+        ],
+        "answer": "Autopsy",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Autopsy fits the requirement of the question. Option B: Biopsy does not best fit the requirement of the question. Option C: Surgery does not best fit the requirement of the question. Option D: Anatomy does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 51,
+        "sourceQuestionNo": 125,
+        "question": "els the correct one-word substitution for: ; A person who pretends to have moral beliefs they don't actually possess__\".",
+        "options": [
+          "Hypocrite",
+          "Cynic",
+          "Pessimist",
+          "Idealist"
+        ],
+        "answer": "Hypocrite",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Hypocrite fits the requirement of the question. Option B: Cynic does not best fit the requirement of the question. Option C: Pessimist does not best fit the requirement of the question. Option D: Idealist does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 50,
+        "sourceQuestionNo": 124,
+        "question": "Choose the correct one-word substitution for: \"A person who dislikes human beings =",
+        "options": [
+          "Philanthropist",
+          "Misanthrope",
+          "Extrovert",
+          "Optimist"
+        ],
+        "answer": "Misanthrope",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Philanthropist does not best fit the requirement of the question. Option B: Misanthrope fits the requirement of the question. Option C: Extrovert does not best fit the requirement of the question. Option D: Optimist does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 49,
+        "sourceQuestionNo": 123,
+        "question": "Choose the correct one-word substitution for: \"**The killing of a whole group of people.**\"",
+        "options": [
+          "Fratricide",
+          "honorary",
+          "Genocide",
+          "Suicide"
+        ],
+        "answer": "Genocide",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Fratricide does not best fit the requirement of the question. Option B: honorary does not best fit the requirement of the question. Option C: Genocide fits the requirement of the question. Option D: Suicide does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 48,
+        "sourceQuestionNo": 122,
+        "question": "Choose the correct one-word substitution for: \"**Fear of being enclosed in small or confined spaces.**\"",
+        "options": [
+          "Agoraphobia",
+          "Acrophobia",
+          "Claustrophobia",
+          "Xenophobia"
+        ],
+        "answer": "Claustrophobia",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Agoraphobia does not best fit the requirement of the question. Option B: Acrophobia does not best fit the requirement of the question. Option C: Claustrophobia fits the requirement of the question. Option D: Xenophobia does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 47,
+        "sourceQuestionNo": 121,
+        "question": "Choose the correct one-word substitution for: \"A person who walks in sleep hia",
+        "options": [
+          "Insomniac",
+          "Somnambulist",
+          "Narcoleptic",
+          "Daydreamer"
+        ],
+        "answer": "Somnambulist",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Insomniac does not best fit the requirement of the question. Option B: Somnambulist fits the requirement of the question. Option C: Narcoleptic does not best fit the requirement of the question. Option D: Daydreamer does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 46,
+        "sourceQuestionNo": 120,
+        "question": "Choose the correct one-word substitution for: \"A person who eats too much Cm",
+        "options": [
+          "Glutton",
+          "Gourmet",
+          "Epicure",
+          "Connoisseur"
+        ],
+        "answer": "Glutton",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Glutton fits the requirement of the question. Option B: Gourmet does not best fit the requirement of the question. Option C: Epicure does not best fit the requirement of the question. Option D: Connoisseur does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 45,
+        "sourceQuestionNo": 119,
+        "question": "Choose the correct one-word substitution for: \"**One who is indifferent to pain and pleasure.**\"",
+        "options": [
+          "Cynic",
+          "Mystic",
+          "Stoic",
+          "Egoist"
+        ],
+        "answer": "Stoic",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Cynic does not best fit the requirement of the question. Option B: Mystic does not best fit the requirement of the question. Option C: Stoic fits the requirement of the question. Option D: Egoist does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 44,
+        "sourceQuestionNo": 118,
+        "question": "Choose the correct one-word substitution for: \"**Something that is no longer in use.**\"",
+        "options": [
+          "Obsolete",
+          "Antique",
+          "Contemporary",
+          "inevitable"
+        ],
+        "answer": "Obsolete",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Obsolete fits the requirement of the question. Option B: Antique does not best fit the requirement of the question. Option C: Contemporary does not best fit the requirement of the question. Option D: inevitable does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 43,
+        "sourceQuestionNo": 117,
+        "question": "Choose the correct one-word substitution for: \"**A person with long experience in any occupation.**\"",
+        "options": [
+          "Amateur",
+          "Novice",
+          "Veteran",
+          "Recruit"
+        ],
+        "answer": "Veteran",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Amateur does not best fit the requirement of the question. Option B: Novice does not best fit the requirement of the question. Option C: Veteran fits the requirement of the question. Option D: Recruit does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 42,
+        "sourceQuestionNo": 116,
+        "question": "Choose the best one-word substitute for \"**A person who writes dictionaries.**\"",
+        "options": [
+          "Lexicographer",
+          "Novelist",
+          "Editor",
+          "Proofreader"
+        ],
+        "answer": "Lexicographer",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Lexicographer fits the requirement of the question. Option B: Novelist does not best fit the requirement of the question. Option C: Editor does not best fit the requirement of the question. Option D: Proofreader does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 41,
+        "sourceQuestionNo": 115,
+        "question": "Choose the correct one-word substitution for: \"**The sound of the funeral bell.**\"",
+        "options": [
+          "Toll",
+          "Ring",
+          "Knell",
+          "Echo"
+        ],
+        "answer": "Knell",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Toll does not best fit the requirement of the question. Option B: Ring does not best fit the requirement of the question. Option C: Knell fits the requirement of the question. Option D: Echo does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 40,
+        "sourceQuestionNo": 114,
+        "question": "Choose the correct one-word substitution for: \"**A child born after the death of their father___.**\"",
+        "options": [
+          "Orphan",
+          "Bastard",
+          "Posthumous",
+          "Ward"
+        ],
+        "answer": "Posthumous",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Orphan does not best fit the requirement of the question. Option B: Bastard does not best fit the requirement of the question. Option C: Posthumous fits the requirement of the question. Option D: Ward does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 39,
+        "sourceQuestionNo": 113,
+        "question": "Choose the correct one-word substitute for: \"**A disgusting and unpleasant smell**\"",
+        "options": [
+          "Fragrant",
+          "Rancid",
+          "Aromatic",
+          "Pleasant"
+        ],
+        "answer": "Rancid",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Fragrant does not best fit the requirement of the question. Option B: Rancid fits the requirement of the question. Option C: Aromatic does not best fit the requirement of the question. Option D: Pleasant does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 38,
+        "sourceQuestionNo": 112,
+        "question": "Choose the correct one-word substitute for the following phrase: \"**A spot or a stain caused by a discoloring substance.**\"",
+        "options": [
+          "Patch",
+          "Blot",
+          "Mark",
+          "Speck"
+        ],
+        "answer": "Blot",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Patch does not best fit the requirement of the question. Option B: Blot fits the requirement of the question. Option C: Mark does not best fit the requirement of the question. Option D: Speck does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 37,
+        "sourceQuestionNo": 111,
+        "question": "Choose the correct one-word substitution for: \"**A speech given by one person in a play or performance __.**\"",
+        "options": [
+          "Dialogue",
+          "Soliloquy",
+          "Monologue",
+          "Prologue"
+        ],
+        "answer": "Monologue",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Dialogue does not best fit the requirement of the question. Option B: Soliloquy does not best fit the requirement of the question. Option C: Monologue fits the requirement of the question. Option D: Prologue does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 36,
+        "sourceQuestionNo": 110,
+        "question": "Choose the correct one-word substitution for: \"**A statement that is seemingly self-contradictory but may be true__.**\"",
+        "options": [
+          "Paradox",
+          "Allegory",
+          "Irony",
+          "Satire"
+        ],
+        "answer": "Paradox",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Paradox fits the requirement of the question. Option B: Allegory does not best fit the requirement of the question. Option C: Irony does not best fit the requirement of the question. Option D: Satire does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 35,
+        "sourceQuestionNo": 109,
+        "question": "Pits fi The scientific study of insects.\"",
+        "options": [
+          "Ornithology",
+          "Entomology",
+          "Anthropology",
+          "Zoology"
+        ],
+        "answer": "Entomology",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Ornithology does not best fit the requirement of the question. Option B: Entomology fits the requirement of the question. Option C: Anthropology does not best fit the requirement of the question. Option D: Zoology does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 34,
+        "sourceQuestionNo": 108,
+        "question": "Choose the correct one-word substitution for: \"**The study of the origin and history of words.**\"",
+        "options": [
+          "Etymology",
+          "Philology",
+          "Lexicography",
+          "Semantics"
+        ],
+        "answer": "Etymology",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Etymology fits the requirement of the question. Option B: Philology does not best fit the requirement of the question. Option C: Lexicography does not best fit the requirement of the question. Option D: Semantics does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 33,
+        "sourceQuestionNo": 107,
+        "question": "4 A person who enjoys the company of other__.\"",
+        "options": [
+          "Introvert",
+          "gregarious",
+          "Egoist",
+          "Pessimist"
+        ],
+        "answer": "gregarious",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Introvert does not best fit the requirement of the question. Option B: gregarious fits the requirement of the question. Option C: Egoist does not best fit the requirement of the question. Option D: Pessimist does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 32,
+        "sourceQuestionNo": 106,
+        "question": "Choose the correct one-word substitution for: \"**Impossible to describe in words.**\"",
+        "options": [
+          "indelible",
+          "Ineffable",
+          "Infallible",
+          "Inaudible"
+        ],
+        "answer": "Ineffable",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: indelible does not best fit the requirement of the question. Option B: Ineffable fits the requirement of the question. Option C: Infallible does not best fit the requirement of the question. Option D: Inaudible does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 31,
+        "sourceQuestionNo": 105,
+        "question": "Choose the correct one-word substitution for: \"**One who is beyond reforms.**\"",
+        "options": [
+          "Incurable",
+          "Incorrigible",
+          "Invincible",
+          "Irresistible"
+        ],
+        "answer": "Incorrigible",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Incurable does not best fit the requirement of the question. Option B: Incorrigible fits the requirement of the question. Option C: Invincible does not best fit the requirement of the question. Option D: Irresistible does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 30,
+        "sourceQuestionNo": 104,
+        "question": "Choose the correct one-word substitution for: \"**A speech made without preparation _.**\"",
+        "options": [
+          "Manuscript",
+          "Extempore",
+          "Debate",
+          "Oration"
+        ],
+        "answer": "Extempore",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Manuscript does not best fit the requirement of the question. Option B: Extempore fits the requirement of the question. Option C: Debate does not best fit the requirement of the question. Option D: Oration does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 29,
+        "sourceQuestionNo": 103,
+        "question": "x= the i al substitute for: a lover of work",
+        "options": [
+          "Sluggard",
+          "Philologist",
+          "Ergophile",
+          "Egomaniac"
+        ],
+        "answer": "Ergophile",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Sluggard does not best fit the requirement of the question. Option B: Philologist does not best fit the requirement of the question. Option C: Ergophile fits the requirement of the question. Option D: Egomaniac does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 28,
+        "sourceQuestionNo": 102,
+        "question": ". \"**The study of growing fruits, vegetables, and ornamental plants.**\"",
+        "options": [
+          "Floriculture",
+          "Horticulture",
+          "Agronomy",
+          "Botany"
+        ],
+        "answer": "Horticulture",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Floriculture does not best fit the requirement of the question. Option B: Horticulture fits the requirement of the question. Option C: Agronomy does not best fit the requirement of the question. Option D: Botany does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 27,
+        "sourceQuestionNo": 101,
+        "question": "What is the term for an intense aversion or fear triggered by viewing clusters of small holes or bumps?",
+        "options": [
+          "Arachnophobia",
+          "Trypophobia",
+          "Agoraphobia",
+          "Hydrophobia"
+        ],
+        "answer": "Trypophobia",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Arachnophobia does not best fit the requirement of the question. Option B: Trypophobia fits the requirement of the question. Option C: Agoraphobia does not best fit the requirement of the question. Option D: Hydrophobia does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 26,
+        "sourceQuestionNo": 100,
+        "question": "Choose the correct one word substitution for: someone who believes their own culture is superior to others.",
+        "options": [
+          "Ethnocentric",
+          "Polymathic",
+          "Cosmopolitan",
+          "Esoteric"
+        ],
+        "answer": "Ethnocentric",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Ethnocentric fits the requirement of the question. Option B: Polymathic does not best fit the requirement of the question. Option C: Cosmopolitan does not best fit the requirement of the question. Option D: Esoteric does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 25,
+        "sourceQuestionNo": 99,
+        "question": "What is the fear of spiders known as?",
+        "options": [
+          "Arachnophobia",
+          "Hemophobia",
+          "Claustrophobia",
+          "Acrophobia"
+        ],
+        "answer": "Arachnophobia",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Arachnophobia fits the requirement of the question. Option B: Hemophobia does not best fit the requirement of the question. Option C: Claustrophobia does not best fit the requirement of the question. Option D: Acrophobia does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 24,
+        "sourceQuestionNo": 98,
+        "question": "Choose the correct idiom for the word highlighted in bold. Since Jatin purchased his new gaming console, he has turned into a true couch potato, watching TV for hours.",
+        "options": [
+          "A person who eats only potatoes.",
+          "A person who exercises regularly.",
+          "A person who spends a lot of time sitting and watching TV.",
+          "A person who loves cooking."
+        ],
+        "answer": "A person who spends a lot of time sitting and watching TV.",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: A person who eats only potatoes. does not best fit the requirement of the question. Option B: A person who exercises regularly. does not best fit the requirement of the question. Option C: A person who spends a lot of time sitting and watching TV. fits the requirement of the question. Option D: A person who loves cooking. does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 23,
+        "sourceQuestionNo": 97,
+        "question": "Choose the correct one word substitution for: \"**Secret or disguised language, often used by a particular group.**\"",
+        "options": [
+          "Jargon",
+          "Argot",
+          "Dialect",
+          "Idiom"
+        ],
+        "answer": "Argot",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Jargon does not best fit the requirement of the question. Option B: Argot fits the requirement of the question. Option C: Dialect does not best fit the requirement of the question. Option D: Idiom does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 22,
+        "sourceQuestionNo": 96,
+        "question": "Choose the correct one word substitution for: \"**A person who renounces the world and lives in solitude**\".",
+        "options": [
+          "Pagan",
+          "Recluse",
+          "Atheist",
+          "Mystic"
+        ],
+        "answer": "Recluse",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Pagan does not best fit the requirement of the question. Option B: Recluse fits the requirement of the question. Option C: Atheist does not best fit the requirement of the question. Option D: Mystic does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 21,
+        "sourceQuestionNo": 95,
+        "question": "Choose the correct one word substitution for: \"**A person who believes that pleasure is the most important pursuit**\".",
+        "options": [
+          "Nihilist",
+          "Epicurean",
+          "Cynic",
+          "Stoic"
+        ],
+        "answer": "Epicurean",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Nihilist does not best fit the requirement of the question. Option B: Epicurean fits the requirement of the question. Option C: Cynic does not best fit the requirement of the question. Option D: Stoic does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 20,
+        "sourceQuestionNo": 94,
+        "question": "What is the one-word substitute for: \"**A person who has a strong desire to travel and explore the world.**\"",
+        "options": [
+          "Philoprogenitive",
+          "Philopraxic",
+          "Dromomaniac",
+          "Chrematistic"
+        ],
+        "answer": "Dromomaniac",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Philoprogenitive does not best fit the requirement of the question. Option B: Philopraxic does not best fit the requirement of the question. Option C: Dromomaniac fits the requirement of the question. Option D: Chrematistic does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 19,
+        "sourceQuestionNo": 93,
+        "question": "Select the one-word substitute for \"**a person who finds pleasure in their own pain or humiliation.**\"",
+        "options": [
+          "Masochist",
+          "Narcissist",
+          "Pessimist",
+          "Hedonist"
+        ],
+        "answer": "Masochist",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Masochist fits the requirement of the question. Option B: Narcissist does not best fit the requirement of the question. Option C: Pessimist does not best fit the requirement of the question. Option D: Hedonist does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 18,
+        "sourceQuestionNo": 92,
+        "question": "Select the correctly spelled word meaning 'showing great attention to detail'.",
+        "options": [
+          "Meticuluous",
+          "Meticulous",
+          "Metticulous",
+          "Metticulus"
+        ],
+        "answer": "Meticulous",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Meticuluous does not best fit the requirement of the question. Option B: Meticulous fits the requirement of the question. Option C: Metticulous does not best fit the requirement of the question. Option D: Metticulus does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 17,
+        "sourceQuestionNo": 91,
+        "question": "Choose the correct spelling of the word meaning \"difficult to interpret or understand; mysterious'.",
+        "options": [
+          "Enigmatic",
+          "Inigmatic",
+          "Anigmatic",
+          "Enigmattic"
+        ],
+        "answer": "Enigmatic",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Enigmatic fits the requirement of the question. Option B: Inigmatic does not best fit the requirement of the question. Option C: Anigmatic does not best fit the requirement of the question. Option D: Enigmattic does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 16,
+        "sourceQuestionNo": 90,
+        "question": "What is the one-word term for: \"A narrative or dramatic technique in literature in which the line between reality and fiction is intentionally blurred, often involving self-referentiality or characters aware of their fictional nature.\"",
+        "options": [
+          "Metafiction",
+          "Allegory",
+          "Surrealism",
+          "Parable"
+        ],
+        "answer": "Metafiction",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Metafiction fits the requirement of the question. Option B: Allegory does not best fit the requirement of the question. Option C: Surrealism does not best fit the requirement of the question. Option D: Parable does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 15,
+        "sourceQuestionNo": 89,
+        "question": "Which of the following refers to \"**A hypothetical region of space from which nothing, not even light, can escape**\"?",
+        "options": [
+          "Wormhole",
+          "Singularity",
+          "Event Horizon",
+          "Black Hole"
+        ],
+        "answer": "Event Horizon",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Wormhole does not best fit the requirement of the question. Option B: Singularity does not best fit the requirement of the question. Option C: Event Horizon fits the requirement of the question. Option D: Black Hole does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 14,
+        "sourceQuestionNo": 88,
+        "question": "Select the correctly spelt word meaning 'a person who avoids society'.",
+        "options": [
+          "Recluese",
+          "Reclose",
+          "Recluse",
+          "Recluesee"
+        ],
+        "answer": "Recluse",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Recluese does not best fit the requirement of the question. Option B: Reclose does not best fit the requirement of the question. Option C: Recluse fits the requirement of the question. Option D: Recluesee does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 13,
+        "sourceQuestionNo": 87,
+        "question": "Pick the correctly spelt word meaning 'a skilled craftsman or builder'.",
+        "options": [
+          "Artizan",
+          "Artisan",
+          "Artesan",
+          "Artisen"
+        ],
+        "answer": "Artisan",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Artizan does not best fit the requirement of the question. Option B: Artisan fits the requirement of the question. Option C: Artesan does not best fit the requirement of the question. Option D: Artisen does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 12,
+        "sourceQuestionNo": 86,
+        "question": "Choose the correct one-word substitution for the sentence below. \"**In his extreme old age when he behaves like a fool, people often lose patience with him.**\"",
+        "options": [
+          "Superannuation",
+          "Dotage",
+          "Senescence",
+          "Imbecility"
+        ],
+        "answer": "Dotage",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Superannuation does not best fit the requirement of the question. Option B: Dotage fits the requirement of the question. Option C: Senescence does not best fit the requirement of the question. Option D: Imbecility does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 11,
+        "sourceQuestionNo": 85,
+        "question": "What is the one-word substitute for: \"**A short tale or narrative that illustrates a moral or spiritual lesson, often through allegorical characters and events.**\"",
+        "options": [
+          "Allegory",
+          "Parable",
+          "Fable",
+          "Satire"
+        ],
+        "answer": "Allegory",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Allegory fits the requirement of the question. Option B: Parable does not best fit the requirement of the question. Option C: Fable does not best fit the requirement of the question. Option D: Satire does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 10,
+        "sourceQuestionNo": 84,
+        "question": "What is the one-word substitute for: \"**A condition in which an organism has only one copy of a particular chromosome, instead of the usual two**\"?",
+        "options": [
+          "Monosomy",
+          "Trisomy",
+          "Polyploidy",
+          "Aneuploidy"
+        ],
+        "answer": "Monosomy",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Monosomy fits the requirement of the question. Option B: Trisomy does not best fit the requirement of the question. Option C: Polyploidy does not best fit the requirement of the question. Option D: Aneuploidy does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 9,
+        "sourceQuestionNo": 83,
+        "question": "Identify the correct spelling for 'an official who supervises an exam.'",
+        "options": [
+          "Invigilator",
+          "Envigilator",
+          "Invegilator",
+          "Invagelator"
+        ],
+        "answer": "Invigilator",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Invigilator fits the requirement of the question. Option B: Envigilator does not best fit the requirement of the question. Option C: Invegilator does not best fit the requirement of the question. Option D: Invagelator does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 8,
+        "sourceQuestionNo": 82,
+        "question": "What is the term for : \"**A literary or rhetorical device in which the opposite of what is expected occurs**\"?",
+        "options": [
+          "Antithesis",
+          "Verbal Irony",
+          "Paradox",
+          "Situational Irony"
+        ],
+        "answer": "Situational Irony",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Antithesis does not best fit the requirement of the question. Option B: Verbal Irony does not best fit the requirement of the question. Option C: Paradox does not best fit the requirement of the question. Option D: Situational Irony fits the requirement of the question. **Option D** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 7,
+        "sourceQuestionNo": 81,
+        "question": "What term describes: \"**The view that all human knowledge and experience are shaped by the limitations of the human mind, and thus we cannot know things as they truly are.**\"",
+        "options": [
+          "Empiricism",
+          "Phenomenalism",
+          "Idealism",
+          "Kantianism"
+        ],
+        "answer": "Kantianism",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Empiricism does not best fit the requirement of the question. Option B: Phenomenalism does not best fit the requirement of the question. Option C: Idealism does not best fit the requirement of the question. Option D: Kantianism fits the requirement of the question. **Option D** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 6,
+        "sourceQuestionNo": 80,
+        "question": "What is the term for : \"**A literary or rhetorical device in which the opposite of what is expected occurs**\"?",
+        "options": [
+          "Antithesis",
+          "Verbal Irony",
+          "Paradox",
+          "Situational Irony"
+        ],
+        "answer": "Situational Irony",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Antithesis does not best fit the requirement of the question. Option B: Verbal Irony does not best fit the requirement of the question. Option C: Paradox does not best fit the requirement of the question. Option D: Situational Irony fits the requirement of the question. **Option D** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 5,
+        "sourceQuestionNo": 79,
+        "question": "What term describes: \"**The view that all human knowledge and experience are shaped by the limitations of the human mind, and thus we cannot know things as they truly are.**\"",
+        "options": [
+          "Empiricism",
+          "Phenomenalism",
+          "Idealism",
+          "Kantianism"
+        ],
+        "answer": "Kantianism",
+        "answerKey": "D",
+        "answerIndex": 3,
+        "explanation": "Option A: Empiricism does not best fit the requirement of the question. Option B: Phenomenalism does not best fit the requirement of the question. Option C: Idealism does not best fit the requirement of the question. Option D: Kantianism fits the requirement of the question. **Option D** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 4,
+        "sourceQuestionNo": 78,
+        "question": "Select the correctly spelt word meaning 'a person who lives a self-denying life for spiritual discipline'.",
+        "options": [
+          "Ascettic",
+          "Asetic",
+          "Ascetic",
+          "Aescetic"
+        ],
+        "answer": "Ascetic",
+        "answerKey": "C",
+        "answerIndex": 2,
+        "explanation": "Option A: Ascettic does not best fit the requirement of the question. Option B: Asetic does not best fit the requirement of the question. Option C: Ascetic fits the requirement of the question. Option D: Aescetic does not best fit the requirement of the question. **Option C** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 3,
+        "sourceQuestionNo": 77,
+        "question": "Which of the following terms describes: \"**The inability to feel pleasure in normally pleasurable activities**\"?",
+        "options": [
+          "Euphoria",
+          "Anhedonia",
+          "Dysphoria",
+          "Alexithymia"
+        ],
+        "answer": "Anhedonia",
+        "answerKey": "B",
+        "answerIndex": 1,
+        "explanation": "Option A: Euphoria does not best fit the requirement of the question. Option B: Anhedonia fits the requirement of the question. Option C: Dysphoria does not best fit the requirement of the question. Option D: Alexithymia does not best fit the requirement of the question. **Option B** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 2,
+        "sourceQuestionNo": 76,
+        "question": "Which term refers to: \"**A narrative technique that involves a backward shift in the chronology of the story, where the plot jumps to an earlier time in the character's life.**\"",
+        "options": [
+          "Analepsis",
+          "Prolepsis",
+          "Flashback",
+          "Foreshadowing"
+        ],
+        "answer": "Analepsis",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Analepsis fits the requirement of the question. Option B: Prolepsis does not best fit the requirement of the question. Option C: Flashback does not best fit the requirement of the question. Option D: Foreshadowing does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      },
+      {
+        "id": 1,
+        "sourceQuestionNo": 75,
+        "question": "What is the one-word substitute for: \"**The use of light and shadow to create the illusion of depth or three-dimensionality in a two- dimensional work of art.**\"",
+        "options": [
+          "Chiaroscuro",
+          "Fresco",
+          "Mosaic",
+          "Impressionism"
+        ],
+        "answer": "Chiaroscuro",
+        "answerKey": "A",
+        "answerIndex": 0,
+        "explanation": "Option A: Chiaroscuro fits the requirement of the question. Option B: Fresco does not best fit the requirement of the question. Option C: Mosaic does not best fit the requirement of the question. Option D: Impressionism does not best fit the requirement of the question. **Option A** correctly applies: it is the best one-word substitute for the given description.",
+        "type": "One Word Substitution"
+      }
+    ]
+  }
+}

@@ -1,0 +1,835 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Sentence Improvement",
+    "category": "Grammar",
+    "totalQuestions": 59,
+    "questions": [
+      {
+        "id": 59,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He is **<u>enough rich</u>** to buy a car.",
+        "options": [
+          "rich too much",
+          "sufficiently rich",
+          "too rich",
+          "rich enough"
+        ],
+        "answer": "rich enough",
+        "explanation": "Option A: This option suggests the replacement/correction: rich too much. Option B: This option suggests the replacement/correction: sufficiently rich. Option C: This option suggests the replacement/correction: too rich. Option D: This option suggests the replacement/correction: rich enough. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 58,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He doesn't **<u>go to shopping</u>** as often as he used to.",
+        "options": [
+          "seldom goes at shop",
+          "go shopping",
+          "rarely goes to purchase",
+          "is rarely going to shop"
+        ],
+        "answer": "go shopping",
+        "explanation": "Option A: This option suggests the replacement/correction: seldom goes at shop. Option B: This option suggests the replacement/correction: go shopping. Option C: This option suggests the replacement/correction: rarely goes to purchase. Option D: This option suggests the replacement/correction: is rarely going to shop. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 57,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. According to the teacher, **<u>the Earth is revolving</u>**.",
+        "options": [
+          "spoke that the Earth is round",
+          "said that the Earth is round",
+          "the earth is round.",
+          "told that Earth was round"
+        ],
+        "answer": "the earth is round.",
+        "explanation": "Option A: This option suggests the replacement/correction: spoke that the Earth is round. Option B: This option suggests the replacement/correction: said that the Earth is round. Option C: This option suggests the replacement/correction: the earth is round. Option D: This option suggests the replacement/correction: told that Earth was round. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 56,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She gave me **<u>many informations</u>**.",
+        "options": [
+          "many pieces of information",
+          "lots of knowledge",
+          "several data",
+          "much information"
+        ],
+        "answer": "many pieces of information",
+        "explanation": "Option A: This option suggests the replacement/correction: many pieces of information. Option B: This option suggests the replacement/correction: lots of knowledge. Option C: This option suggests the replacement/correction: several data. Option D: This option suggests the replacement/correction: much information. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 55,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. **<u>None of the option</u>** seems appropriate.",
+        "options": [
+          "Any of the optionals",
+          "No optionals",
+          "No one of the",
+          "None of the options"
+        ],
+        "answer": "None of the options",
+        "explanation": "Option A: This option suggests the replacement/correction: Any of the optionals. Option B: This option suggests the replacement/correction: No optionals. Option C: This option suggests the replacement/correction: No one of the. Option D: This option suggests the replacement/correction: None of the options. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 54,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The fiction and non fictional book, **<u>that I borrowed</u>**, was interesting.",
+        "options": [
+          "whom I borrowed",
+          "what I borrowed",
+          "whose I borrowed",
+          "which I borrowed"
+        ],
+        "answer": "which I borrowed",
+        "explanation": "Option A: This option suggests the replacement/correction: whom I borrowed. Option B: This option suggests the replacement/correction: what I borrowed. Option C: This option suggests the replacement/correction: whose I borrowed. Option D: This option suggests the replacement/correction: which I borrowed. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 53,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. I **<u>have visited</u>** Delhi last year.",
+        "options": [
+          "had visited",
+          "visited",
+          "was visiting",
+          "did visit"
+        ],
+        "answer": "visited",
+        "explanation": "Option A: This option suggests the replacement/correction: had visited. Option B: This option suggests the replacement/correction: visited. Option C: This option suggests the replacement/correction: was visiting. Option D: This option suggests the replacement/correction: did visit. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 52,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The criminal was **<u>accused for theft</u>**.",
+        "options": [
+          "of theft",
+          "on theft",
+          "about theft",
+          "with theft"
+        ],
+        "answer": "of theft",
+        "explanation": "Option A: This option suggests the replacement/correction: of theft. Option B: This option suggests the replacement/correction: on theft. Option C: This option suggests the replacement/correction: about theft. Option D: This option suggests the replacement/correction: with theft. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 51,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. You must **<u>refrain to smoke</u>**.",
+        "options": [
+          "quit from smoke",
+          "stop to smoke",
+          "stop of smoking",
+          "refrain from smoking"
+        ],
+        "answer": "refrain from smoking",
+        "explanation": "Option A: This option suggests the replacement/correction: quit from smoke. Option B: This option suggests the replacement/correction: stop to smoke. Option C: This option suggests the replacement/correction: stop of smoking. Option D: This option suggests the replacement/correction: refrain from smoking. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 50,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. We **<u>enjoyed during the party</u>** last night.",
+        "options": [
+          "have enjoyed in party",
+          "enjoyed ourselves at the party",
+          "had enjoyment during party",
+          "enjoyed in the party"
+        ],
+        "answer": "enjoyed ourselves at the party",
+        "explanation": "Option A: This option suggests the replacement/correction: have enjoyed in party. Option B: This option suggests the replacement/correction: enjoyed ourselves at the party. Option C: This option suggests the replacement/correction: had enjoyment during party. Option D: This option suggests the replacement/correction: enjoyed in the party. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 49,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She succeeded **<u>by virtue of</u>** her talent.",
+        "options": [
+          "owing of",
+          "because",
+          "cause of",
+          "due to"
+        ],
+        "answer": "due to",
+        "explanation": "Option A: This option suggests the replacement/correction: owing of. Option B: This option suggests the replacement/correction: because. Option C: This option suggests the replacement/correction: cause of. Option D: This option suggests the replacement/correction: due to. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 48,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She was **<u>not enough tall</u>** to play basketball.",
+        "options": [
+          "too short",
+          "not tall",
+          "very short",
+          "not tall enough"
+        ],
+        "answer": "not tall enough",
+        "explanation": "Option A: This option suggests the replacement/correction: too short. Option B: This option suggests the replacement/correction: not tall. Option C: This option suggests the replacement/correction: very short. Option D: This option suggests the replacement/correction: not tall enough. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 47,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She did her work **<u>very good</u>**.",
+        "options": [
+          "very well",
+          "too well",
+          "quite good",
+          "really great"
+        ],
+        "answer": "very well",
+        "explanation": "Option A: This option suggests the replacement/correction: very well. Option B: This option suggests the replacement/correction: too well. Option C: This option suggests the replacement/correction: quite good. Option D: This option suggests the replacement/correction: really great. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 46,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He behaves as if he **<u>knows everything</u>**.",
+        "options": [
+          "known everything",
+          "knew everything",
+          "has known everything",
+          "have known all"
+        ],
+        "answer": "knew everything",
+        "explanation": "Option A: This option suggests the replacement/correction: known everything. Option B: This option suggests the replacement/correction: knew everything. Option C: This option suggests the replacement/correction: has known everything. Option D: This option suggests the replacement/correction: have known all. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 45,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. **<u>He is living here since 2020</u>**.",
+        "options": [
+          "He is staying here since 2020.",
+          "He has been living here since 2020.",
+          "He lives here since 2020.",
+          "He is here since 2020."
+        ],
+        "answer": "He has been living here since 2020.",
+        "explanation": "Option A: This option suggests the replacement/correction: He is staying here since 2020. Option B: This option suggests the replacement/correction: He has been living here since 2020. Option C: This option suggests the replacement/correction: He lives here since 2020. Option D: This option suggests the replacement/correction: He is here since 2020. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 44,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She **<u>said me</u>** the truth.",
+        "options": [
+          "told me",
+          "said to me",
+          "says me",
+          "spoke to me"
+        ],
+        "answer": "told me",
+        "explanation": "Option A: This option suggests the replacement/correction: told me. Option B: This option suggests the replacement/correction: said to me. Option C: This option suggests the replacement/correction: says me. Option D: This option suggests the replacement/correction: spoke to me. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 43,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. Had I known about the delay, **<u>I will wait</u>**.",
+        "options": [
+          "would have waited",
+          "will have waited",
+          "would waited",
+          "waited"
+        ],
+        "answer": "would have waited",
+        "explanation": "Option A: This option suggests the replacement/correction: would have waited. Option B: This option suggests the replacement/correction: will have waited. Option C: This option suggests the replacement/correction: would waited. Option D: This option suggests the replacement/correction: waited. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 42,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The wall is **<u>decorated by posters</u>**.",
+        "options": [
+          "full of posters",
+          "painted in posters",
+          "decorated with posters",
+          "covered in posters"
+        ],
+        "answer": "decorated with posters",
+        "explanation": "Option A: This option suggests the replacement/correction: full of posters. Option B: This option suggests the replacement/correction: painted in posters. Option C: This option suggests the replacement/correction: decorated with posters. Option D: This option suggests the replacement/correction: covered in posters. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 41,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. We waited for him **<u>since two hours</u>**.",
+        "options": [
+          "until two hours",
+          "from two hours",
+          "by two hours",
+          "for two hours"
+        ],
+        "answer": "for two hours",
+        "explanation": "Option A: This option suggests the replacement/correction: until two hours. Option B: This option suggests the replacement/correction: from two hours. Option C: This option suggests the replacement/correction: by two hours. Option D: This option suggests the replacement/correction: for two hours. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 40,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. I wish I **<u>am taller</u>**.",
+        "options": [
+          "were taller",
+          "was taller",
+          "would be taller",
+          "could be taller"
+        ],
+        "answer": "were taller",
+        "explanation": "Option A: This option suggests the replacement/correction: were taller. Option B: This option suggests the replacement/correction: was taller. Option C: This option suggests the replacement/correction: would be taller. Option D: This option suggests the replacement/correction: could be taller. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 39,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The price of petrol **<u>has increased yesterday</u>**.",
+        "options": [
+          "rose yesterday",
+          "increased yesterday",
+          "has been increased yesterday",
+          "risen yesterday"
+        ],
+        "answer": "increased yesterday",
+        "explanation": "Option A: This option suggests the replacement/correction: rose yesterday. Option B: This option suggests the replacement/correction: increased yesterday. Option C: This option suggests the replacement/correction: has been increased yesterday. Option D: This option suggests the replacement/correction: risen yesterday. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 38,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The teacher asked **<u>that who</u>** was absent.",
+        "options": [
+          "that whom",
+          "which student",
+          "who",
+          "whose"
+        ],
+        "answer": "who",
+        "explanation": "Option A: This option suggests the replacement/correction: that whom. Option B: This option suggests the replacement/correction: which student. Option C: This option suggests the replacement/correction: who. Option D: This option suggests the replacement/correction: whose. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 37,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. This session is an improvement **<u>rather</u>** the previous one.",
+        "options": [
+          "best",
+          "more good",
+          "very better",
+          "over"
+        ],
+        "answer": "over",
+        "explanation": "Option A: This option suggests the replacement/correction: best. Option B: This option suggests the replacement/correction: more good. Option C: This option suggests the replacement/correction: very better. Option D: This option suggests the replacement/correction: over. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 36,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. It is high time you **<u>leave the room</u>**.",
+        "options": [
+          "have left the room",
+          "had left the room",
+          "left the room",
+          "leaves the room"
+        ],
+        "answer": "left the room",
+        "explanation": "Option A: This option suggests the replacement/correction: have left the room. Option B: This option suggests the replacement/correction: had left the room. Option C: This option suggests the replacement/correction: left the room. Option D: This option suggests the replacement/correction: leaves the room. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 35,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. **<u>Hardly I had entered</u>** the room when the phone rang.",
+        "options": [
+          "Hardly had I entered",
+          "Hardly was I entering",
+          "I had hardly entered",
+          "I hardly had entered"
+        ],
+        "answer": "Hardly had I entered",
+        "explanation": "Option A: This option suggests the replacement/correction: Hardly had I entered. Option B: This option suggests the replacement/correction: Hardly was I entering. Option C: This option suggests the replacement/correction: I had hardly entered. Option D: This option suggests the replacement/correction: I hardly had entered. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 34,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. I am used **<u>to eat</u>** late at night.",
+        "options": [
+          "for eating",
+          "eating",
+          "to eating",
+          "in eating"
+        ],
+        "answer": "to eating",
+        "explanation": "Option A: This option suggests the replacement/correction: for eating. Option B: This option suggests the replacement/correction: eating. Option C: This option suggests the replacement/correction: to eating. Option D: This option suggests the replacement/correction: in eating. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 33,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He insisted **<u>to go</u>** home.",
+        "options": [
+          "going on",
+          "upon going",
+          "that he goes",
+          "on going"
+        ],
+        "answer": "on going",
+        "explanation": "Option A: This option suggests the replacement/correction: going on. Option B: This option suggests the replacement/correction: upon going. Option C: This option suggests the replacement/correction: that he goes. Option D: This option suggests the replacement/correction: on going. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 32,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He is one of those players who **<u>has scored</u>** the most goals.",
+        "options": [
+          "have scored",
+          "had been scoring",
+          "scores",
+          "had scored"
+        ],
+        "answer": "have scored",
+        "explanation": "Option A: This option suggests the replacement/correction: have scored. Option B: This option suggests the replacement/correction: had been scoring. Option C: This option suggests the replacement/correction: scores. Option D: This option suggests the replacement/correction: had scored. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 31,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. I prefer tea **<u>than coffee</u>**.",
+        "options": [
+          "instead coffee",
+          "to coffee",
+          "rather coffee",
+          "over coffee"
+        ],
+        "answer": "to coffee",
+        "explanation": "Option A: This option suggests the replacement/correction: instead coffee. Option B: This option suggests the replacement/correction: to coffee. Option C: This option suggests the replacement/correction: rather coffee. Option D: This option suggests the replacement/correction: over coffee. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 30,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He worked very **<u>hardly</u>** to pass the exam.",
+        "options": [
+          "sincerely",
+          "regularly",
+          "hard",
+          "harder"
+        ],
+        "answer": "hard",
+        "explanation": "Option A: This option suggests the replacement/correction: sincerely. Option B: This option suggests the replacement/correction: regularly. Option C: This option suggests the replacement/correction: hard. Option D: This option suggests the replacement/correction: harder. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 29,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. **<u>Hardly he had reached</u>** the station when the train left.",
+        "options": [
+          "He had hardly reached",
+          "Hardly had he reached",
+          "No sooner he reached",
+          "He hardly had reached"
+        ],
+        "answer": "Hardly had he reached",
+        "explanation": "Option A: This option suggests the replacement/correction: He had hardly reached. Option B: This option suggests the replacement/correction: Hardly had he reached. Option C: This option suggests the replacement/correction: No sooner he reached. Option D: This option suggests the replacement/correction: He hardly had reached. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 28,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She prefers **<u>to stay at home than go out</u>**.",
+        "options": [
+          "to staying home than going out",
+          "staying home rather going out",
+          "staying at home to going out",
+          "to stay at home to going out"
+        ],
+        "answer": "staying at home to going out",
+        "explanation": "Option A: This option suggests the replacement/correction: to staying home than going out. Option B: This option suggests the replacement/correction: staying home rather going out. Option C: This option suggests the replacement/correction: staying at home to going out. Option D: This option suggests the replacement/correction: to stay at home to going out. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 27,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She is **<u>confident to win the match</u>**.",
+        "options": [
+          "in winning",
+          "of winning the match",
+          "in win the match",
+          "to winning the match"
+        ],
+        "answer": "of winning the match",
+        "explanation": "Option A: This option suggests the replacement/correction: in winning. Option B: This option suggests the replacement/correction: of winning the match. Option C: This option suggests the replacement/correction: in win the match. Option D: This option suggests the replacement/correction: to winning the match. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 26,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The meeting will begin **<u>by</u>** 3 PM.",
+        "options": [
+          "on",
+          "from",
+          "at",
+          "around"
+        ],
+        "answer": "at",
+        "explanation": "Option A: This option suggests the replacement/correction: on. Option B: This option suggests the replacement/correction: from. Option C: This option suggests the replacement/correction: at. Option D: This option suggests the replacement/correction: around. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 25,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. **<u>No sooner I reached</u>** the platform than the train left.",
+        "options": [
+          "I had no sooner reached",
+          "No sooner did I reach",
+          "I no sooner reached",
+          "No sooner had I reached"
+        ],
+        "answer": "No sooner had I reached",
+        "explanation": "Option A: This option suggests the replacement/correction: I had no sooner reached. Option B: This option suggests the replacement/correction: No sooner did I reach. Option C: This option suggests the replacement/correction: I no sooner reached. Option D: This option suggests the replacement/correction: No sooner had I reached. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 24,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. They **<u>returned back</u>** to their home.",
+        "options": [
+          "returned to house",
+          "came back to home",
+          "returned home",
+          "went back home"
+        ],
+        "answer": "returned home",
+        "explanation": "Option A: This option suggests the replacement/correction: returned to house. Option B: This option suggests the replacement/correction: came back to home. Option C: This option suggests the replacement/correction: returned home. Option D: This option suggests the replacement/correction: went back home. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 23,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The doctor advised that he **<u>takes rest</u>**.",
+        "options": [
+          "must takes rest",
+          "take rest",
+          "take the rest",
+          "should takes rest"
+        ],
+        "answer": "take rest",
+        "explanation": "Option A: This option suggests the replacement/correction: must takes rest. Option B: This option suggests the replacement/correction: take rest. Option C: This option suggests the replacement/correction: take the rest. Option D: This option suggests the replacement/correction: should takes rest. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 22,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. Seldom **<u>we have seen</u>** such a performance.",
+        "options": [
+          "had we seen",
+          "did we saw",
+          "have we seen",
+          "we had seen"
+        ],
+        "answer": "have we seen",
+        "explanation": "Option A: This option suggests the replacement/correction: had we seen. Option B: This option suggests the replacement/correction: did we saw. Option C: This option suggests the replacement/correction: have we seen. Option D: This option suggests the replacement/correction: we had seen. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 21,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. I came **<u>to know this from</u>** a friend.",
+        "options": [
+          "to know this through",
+          "to know that from",
+          "to know of it from",
+          "to know it by"
+        ],
+        "answer": "to know this through",
+        "explanation": "Option A: This option suggests the replacement/correction: to know this through. Option B: This option suggests the replacement/correction: to know that from. Option C: This option suggests the replacement/correction: to know of it from. Option D: This option suggests the replacement/correction: to know it by. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 20,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She is married **<u>with a doctor</u>**.",
+        "options": [
+          "in a doctor",
+          "to a doctor",
+          "by a doctor",
+          "from a doctor"
+        ],
+        "answer": "to a doctor",
+        "explanation": "Option A: This option suggests the replacement/correction: in a doctor. Option B: This option suggests the replacement/correction: to a doctor. Option C: This option suggests the replacement/correction: by a doctor. Option D: This option suggests the replacement/correction: from a doctor. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 19,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She is my **<u>cousin sister</u>**.",
+        "options": [
+          "cousin sibling",
+          "own cousin",
+          "cousin girl",
+          "cousin"
+        ],
+        "answer": "cousin",
+        "explanation": "Option A: This option suggests the replacement/correction: cousin sibling. Option B: This option suggests the replacement/correction: own cousin. Option C: This option suggests the replacement/correction: cousin girl. Option D: This option suggests the replacement/correction: cousin. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 18,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. This is the boy **<u>who he stole</u>** the purse.",
+        "options": [
+          "who had stole",
+          "which stole",
+          "whom stole",
+          "who stole"
+        ],
+        "answer": "who stole",
+        "explanation": "Option A: This option suggests the replacement/correction: who had stole. Option B: This option suggests the replacement/correction: which stole. Option C: This option suggests the replacement/correction: whom stole. Option D: This option suggests the replacement/correction: who stole. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 17,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. Scarcely had I left when it **<u>was starting</u>** to rain.",
+        "options": [
+          "had started",
+          "was begun",
+          "did start",
+          "started"
+        ],
+        "answer": "started",
+        "explanation": "Option A: This option suggests the replacement/correction: had started. Option B: This option suggests the replacement/correction: was begun. Option C: This option suggests the replacement/correction: did start. Option D: This option suggests the replacement/correction: started. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 16,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She prevented me **<u>to go there</u>**.",
+        "options": [
+          "for going",
+          "against going",
+          "going to",
+          "from going"
+        ],
+        "answer": "from going",
+        "explanation": "Option A: This option suggests the replacement/correction: for going. Option B: This option suggests the replacement/correction: against going. Option C: This option suggests the replacement/correction: going to. Option D: This option suggests the replacement/correction: from going. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 15,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The higher you go, the **<u>cooler it get</u>**.",
+        "options": [
+          "cooler it gets",
+          "cooler it getting",
+          "more cooler it gets",
+          "coolest it becomes"
+        ],
+        "answer": "cooler it gets",
+        "explanation": "Option A: This option suggests the replacement/correction: cooler it gets. Option B: This option suggests the replacement/correction: cooler it getting. Option C: This option suggests the replacement/correction: more cooler it gets. Option D: This option suggests the replacement/correction: coolest it becomes. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 14,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. Each of the students **<u>have</u>** a book.",
+        "options": [
+          "has",
+          "had",
+          "gets",
+          "is having"
+        ],
+        "answer": "has",
+        "explanation": "Option A: This option suggests the replacement/correction: has. Option B: This option suggests the replacement/correction: had. Option C: This option suggests the replacement/correction: gets. Option D: This option suggests the replacement/correction: is having. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 13,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The manager **<u>discussed on the issue</u>** in detail.",
+        "options": [
+          "discussed the issue",
+          "discussed about the issue",
+          "explained the issue",
+          "talked over the issue"
+        ],
+        "answer": "discussed the issue",
+        "explanation": "Option A: This option suggests the replacement/correction: discussed the issue. Option B: This option suggests the replacement/correction: discussed about the issue. Option C: This option suggests the replacement/correction: explained the issue. Option D: This option suggests the replacement/correction: talked over the issue. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 12,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He came here **<u>with a view to meet</u>** his old friend.",
+        "options": [
+          "to meet with",
+          "for meeting",
+          "in view to meet",
+          "with a view to meeting"
+        ],
+        "answer": "with a view to meeting",
+        "explanation": "Option A: This option suggests the replacement/correction: to meet with. Option B: This option suggests the replacement/correction: for meeting. Option C: This option suggests the replacement/correction: in view to meet. Option D: This option suggests the replacement/correction: with a view to meeting. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 11,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He is **<u>a honest</u>** man.",
+        "options": [
+          "the honest",
+          "an honest",
+          "one honest",
+          "honest"
+        ],
+        "answer": "an honest",
+        "explanation": "Option A: This option suggests the replacement/correction: the honest. Option B: This option suggests the replacement/correction: an honest. Option C: This option suggests the replacement/correction: one honest. Option D: This option suggests the replacement/correction: honest. **Option B** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 10,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The man is blind **<u>of one eye</u>**.",
+        "options": [
+          "With one eye",
+          "By one eye",
+          "In one eye",
+          "From one eye"
+        ],
+        "answer": "In one eye",
+        "explanation": "Option A: This option suggests the replacement/correction: With one eye. Option B: This option suggests the replacement/correction: By one eye. Option C: This option suggests the replacement/correction: In one eye. Option D: This option suggests the replacement/correction: From one eye. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 9,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He denied **<u>to help me</u>**.",
+        "options": [
+          "Help to me",
+          "For helping me",
+          "Helping me",
+          "To helping me"
+        ],
+        "answer": "Helping me",
+        "explanation": "Option A: This option suggests the replacement/correction: Help to me. Option B: This option suggests the replacement/correction: For helping me. Option C: This option suggests the replacement/correction: Helping me. Option D: This option suggests the replacement/correction: To helping me. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 8,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He has **<u>much works</u>** to finish.",
+        "options": [
+          "A lot of work",
+          "Plenty works",
+          "Many works",
+          "Lot of tasks"
+        ],
+        "answer": "A lot of work",
+        "explanation": "Option A: This option suggests the replacement/correction: A lot of work. Option B: This option suggests the replacement/correction: Plenty works. Option C: This option suggests the replacement/correction: Many works. Option D: This option suggests the replacement/correction: Lot of tasks. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 7,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. She said that she **<u>will go</u>** to market later.",
+        "options": [
+          "Shall go",
+          "Could go",
+          "Can go",
+          "Would go"
+        ],
+        "answer": "Would go",
+        "explanation": "Option A: This option suggests the replacement/correction: Shall go. Option B: This option suggests the replacement/correction: Could go. Option C: This option suggests the replacement/correction: Can go. Option D: This option suggests the replacement/correction: Would go. **Option D** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 6,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. He **<u>said me a lie</u>**.",
+        "options": [
+          "Told me a lie",
+          "Said to me lie",
+          "Told me lie",
+          "Said lie"
+        ],
+        "answer": "Told me a lie",
+        "explanation": "Option A: This option suggests the replacement/correction: Told me a lie. Option B: This option suggests the replacement/correction: Said to me lie. Option C: This option suggests the replacement/correction: Told me lie. Option D: This option suggests the replacement/correction: Said lie. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 5,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The teacher **<u>explained him the topic</u>**.",
+        "options": [
+          "Taught him the topic",
+          "Told him the topic",
+          "Explained the topic to him",
+          "Explained to him the topic"
+        ],
+        "answer": "Explained the topic to him",
+        "explanation": "Option A: This option suggests the replacement/correction: Taught him the topic. Option B: This option suggests the replacement/correction: Told him the topic. Option C: This option suggests the replacement/correction: Explained the topic to him. Option D: This option suggests the replacement/correction: Explained to him the topic. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 4,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. I am not used **<u>with this kind of work</u>**.",
+        "options": [
+          "To this kind of work",
+          "About this kind of work",
+          "At this kind of work",
+          "For this kind of work"
+        ],
+        "answer": "To this kind of work",
+        "explanation": "Option A: This option suggests the replacement/correction: To this kind of work. Option B: This option suggests the replacement/correction: About this kind of work. Option C: This option suggests the replacement/correction: At this kind of work. Option D: This option suggests the replacement/correction: For this kind of work. **Option A** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 3,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. If I **<u>was you</u>**, I would accept the offer.",
+        "options": [
+          "am you",
+          "have been you",
+          "were you",
+          "would be you"
+        ],
+        "answer": "were you",
+        "explanation": "Option A: This option suggests the replacement/correction: am you. Option B: This option suggests the replacement/correction: have been you. Option C: This option suggests the replacement/correction: were you. Option D: This option suggests the replacement/correction: would be you. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 2,
+        "question": "Select the most appropriate option to improve the bold part of the sentence. The plane landed **<u>in the airport</u>**.",
+        "options": [
+          "to the airport",
+          "into the airport",
+          "at the airport",
+          "towards airport"
+        ],
+        "answer": "at the airport",
+        "explanation": "Option A: This option suggests the replacement/correction: to the airport. Option B: This option suggests the replacement/correction: into the airport. Option C: This option suggests the replacement/correction: at the airport. Option D: This option suggests the replacement/correction: towards airport. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 1,
+        "question": "Select the option that correctly replaces the underlined phrase in the following sentence: The doctor gave the patient some medications after he **<u>felt</u>** some pain on his left knee.",
+        "options": [
+          "did feel",
+          "has felt",
+          "had felt",
+          "was felt"
+        ],
+        "answer": "had felt",
+        "explanation": "Option A: This option suggests the replacement/correction: did feel. Option B: This option suggests the replacement/correction: has felt. Option C: This option suggests the replacement/correction: had felt. Option D: This option suggests the replacement/correction: was felt. **Option C** correctly applies: it improves the sentence by removing the grammatical or usage error.",
+        "answerKey": "C",
+        "answerIndex": 2
+      }
+    ]
+  }
+}

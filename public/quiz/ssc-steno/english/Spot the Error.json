@@ -1,0 +1,1017 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Error Spotting",
+    "category": "Grammar",
+    "totalQuestions": 72,
+    "questions": [
+      {
+        "id": 72,
+        "question": "Choose the part of the sentence that contains an error: The committee have given its decision.",
+        "options": [
+          "have given",
+          "No error",
+          "its decision",
+          "The committee"
+        ],
+        "answer": "have given",
+        "explanation": "Option A: This option marks 'have given' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'its decision' as the error part. Option D: This option marks 'The committee' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 71,
+        "question": "Find the incorrect part of the sentence: The thief was hung for his crimes.",
+        "options": [
+          "hung",
+          "No error",
+          "The thief was",
+          "for his crimes"
+        ],
+        "answer": "hung",
+        "explanation": "Option A: This option marks 'hung' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'The thief was' as the error part. Option D: This option marks 'for his crimes' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 70,
+        "question": "Choose the part of the sentence that contains an error: The team were playing well.",
+        "options": [
+          "No error",
+          "were playing",
+          "The team",
+          "well"
+        ],
+        "answer": "were playing",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'were playing' as the error part. Option C: This option marks 'The team' as the error part. Option D: This option marks 'well' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 69,
+        "question": "Find the incorrect part of the sentence: She prevented me to enter the hall.",
+        "options": [
+          "me to enter",
+          "the hall",
+          "She prevented",
+          "No error"
+        ],
+        "answer": "me to enter",
+        "explanation": "Option A: This option marks 'me to enter' as the error part. Option B: This option marks 'the hall' as the error part. Option C: This option marks 'She prevented' as the error part. Option D: This option marks 'No error' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 68,
+        "question": "Identify the part containing a grammatical or structural error: The number of applicants have increased this year.",
+        "options": [
+          "The number of applicants",
+          "No error",
+          "this year",
+          "have increased"
+        ],
+        "answer": "have increased",
+        "explanation": "Option A: This option marks 'The number of applicants' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'this year' as the error part. Option D: This option marks 'have increased' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 67,
+        "question": "Find the incorrect part of the sentence: He as well as his brothers were present.",
+        "options": [
+          "He as well as",
+          "his brothers",
+          "were present",
+          "No error"
+        ],
+        "answer": "were present",
+        "explanation": "Option A: This option marks 'He as well as' as the error part. Option B: This option marks 'his brothers' as the error part. Option C: This option marks 'were present' as the error part. Option D: This option marks 'No error' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 66,
+        "question": "Find the incorrect part of the sentence: She married with a doctor.",
+        "options": [
+          "with a doctor",
+          "with",
+          "She married",
+          "No error"
+        ],
+        "answer": "with a doctor",
+        "explanation": "Option A: This option marks 'with a doctor' as the error part. Option B: This option marks 'with' as the error part. Option C: This option marks 'She married' as the error part. Option D: This option marks 'No error' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 65,
+        "question": "Identify the part containing a grammatical or structural error: He asked me that where I was going.",
+        "options": [
+          "I was going",
+          "He asked me",
+          "No error",
+          "that where"
+        ],
+        "answer": "that where",
+        "explanation": "Option A: This option marks 'I was going' as the error part. Option B: This option marks 'He asked me' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'that where' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 64,
+        "question": "Choose the part of the sentence that contains an error: She resembles with her mother.",
+        "options": [
+          "mother",
+          "with her mother",
+          "She resembles",
+          "No error"
+        ],
+        "answer": "with her mother",
+        "explanation": "Option A: This option marks 'mother' as the error part. Option B: This option marks 'with her mother' as the error part. Option C: This option marks 'She resembles' as the error part. Option D: This option marks 'No error' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 63,
+        "question": "Find the incorrect part of the sentence: The sceneries of Ooty were wonderful.",
+        "options": [
+          "of Ooty",
+          "The sceneries",
+          "No error",
+          "were wonderful"
+        ],
+        "answer": "The sceneries",
+        "explanation": "Option A: This option marks 'of Ooty' as the error part. Option B: This option marks 'The sceneries' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'were wonderful' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 62,
+        "question": "Identify the part containing a grammatical or structural error: The news are too good to be true.",
+        "options": [
+          "No error",
+          "are too good",
+          "The news",
+          "to be true"
+        ],
+        "answer": "are too good",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'are too good' as the error part. Option C: This option marks 'The news' as the error part. Option D: This option marks 'to be true' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 61,
+        "question": "Choose the part of the sentence that contains an error: I prefer tea than coffee.",
+        "options": [
+          "coffee",
+          "No error",
+          "I prefer",
+          "tea than"
+        ],
+        "answer": "tea than",
+        "explanation": "Option A: This option marks 'coffee' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'I prefer' as the error part. Option D: This option marks 'tea than' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 60,
+        "question": "Find the incorrect part of the sentence: She is better in mathematics than English.",
+        "options": [
+          "than English",
+          "No error",
+          "She is",
+          "better in mathematics"
+        ],
+        "answer": "better in mathematics",
+        "explanation": "Option A: This option marks 'than English' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'She is' as the error part. Option D: This option marks 'better in mathematics' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 59,
+        "question": "Choose the part of the sentence that contains an error: She does not know to swim.",
+        "options": [
+          "She does not",
+          "know to swim",
+          "swim",
+          "No error"
+        ],
+        "answer": "know to swim",
+        "explanation": "Option A: This option marks 'She does not' as the error part. Option B: This option marks 'know to swim' as the error part. Option C: This option marks 'swim' as the error part. Option D: This option marks 'No error' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 58,
+        "question": "Find the incorrect part of the sentence: I have visited Agra last month.",
+        "options": [
+          "I have visited",
+          "No error",
+          "last month",
+          "Agra"
+        ],
+        "answer": "I have visited",
+        "explanation": "Option A: This option marks 'I have visited' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'last month' as the error part. Option D: This option marks 'Agra' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 57,
+        "question": "Find the incorrect part of the sentence: The old man fell down from the stairs.",
+        "options": [
+          "fell down",
+          "No error",
+          "from the stairs",
+          "The old man"
+        ],
+        "answer": "from the stairs",
+        "explanation": "Option A: This option marks 'fell down' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'from the stairs' as the error part. Option D: This option marks 'The old man' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 56,
+        "question": "Find the incorrect part of the sentence: No less than fifty students were absent.",
+        "options": [
+          "No error",
+          "were absent",
+          "fifty students",
+          "No less than"
+        ],
+        "answer": "No less than",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'were absent' as the error part. Option C: This option marks 'fifty students' as the error part. Option D: This option marks 'No less than' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 55,
+        "question": "Identify the part containing a grammatical or structural error: Hardly had he left the room when the guests have arrived.",
+        "options": [
+          "Hardly had he",
+          "No error",
+          "left the room",
+          "when the guests have arrived"
+        ],
+        "answer": "when the guests have arrived",
+        "explanation": "Option A: This option marks 'Hardly had he' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'left the room' as the error part. Option D: This option marks 'when the guests have arrived' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 54,
+        "question": "Choose the part of the sentence that contains an error: He is living in Chennai since five years.",
+        "options": [
+          "No error",
+          "He is living",
+          "since five years",
+          "in Chennai"
+        ],
+        "answer": "since five years",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'He is living' as the error part. Option C: This option marks 'since five years' as the error part. Option D: This option marks 'in Chennai' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 53,
+        "question": "Find the incorrect part of the sentence: He has come yesterday.",
+        "options": [
+          "yesterday",
+          "No error",
+          "come",
+          "He has come"
+        ],
+        "answer": "He has come",
+        "explanation": "Option A: This option marks 'yesterday' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'come' as the error part. Option D: This option marks 'He has come' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 52,
+        "question": "Identify the part containing a grammatical or structural error: The jury was divided in their opinions.",
+        "options": [
+          "The jury",
+          "was divided",
+          "in their opinions",
+          "No error"
+        ],
+        "answer": "No error",
+        "explanation": "Option A: This option marks 'The jury' as the error part. Option B: This option marks 'was divided' as the error part. Option C: This option marks 'in their opinions' as the error part. Option D: This option marks 'No error' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 51,
+        "question": "Choose the part of the sentence that contains an error: She insisted to accompany me.",
+        "options": [
+          "to accompany",
+          "me",
+          "No error",
+          "She insisted"
+        ],
+        "answer": "to accompany",
+        "explanation": "Option A: This option marks 'to accompany' as the error part. Option B: This option marks 'me' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'She insisted' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 50,
+        "question": "Find the incorrect part of the sentence: The ship drowned in the sea.",
+        "options": [
+          "in the sea",
+          "drowned",
+          "No error",
+          "The ship"
+        ],
+        "answer": "drowned",
+        "explanation": "Option A: This option marks 'in the sea' as the error part. Option B: This option marks 'drowned' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'The ship' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 49,
+        "question": "Choose the part of the sentence that contains an error: My elder sister is married with a doctor.",
+        "options": [
+          "a doctor",
+          "No error",
+          "is married with",
+          "My elder sister"
+        ],
+        "answer": "is married with",
+        "explanation": "Option A: This option marks 'a doctor' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'is married with' as the error part. Option D: This option marks 'My elder sister' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 48,
+        "question": "Find the incorrect part of the sentence: The judge ordered the prisoner to hung till death.",
+        "options": [
+          "to hung till death",
+          "No error",
+          "The judge ordered",
+          "the prisoner"
+        ],
+        "answer": "to hung till death",
+        "explanation": "Option A: This option marks 'to hung till death' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'The judge ordered' as the error part. Option D: This option marks 'the prisoner' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 47,
+        "question": "Identify the part containing a grammatical or structural error: The father with his sons are arriving soon.",
+        "options": [
+          "with his sons",
+          "No error",
+          "The father",
+          "are arriving soon"
+        ],
+        "answer": "are arriving soon",
+        "explanation": "Option A: This option marks 'with his sons' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'The father' as the error part. Option D: This option marks 'are arriving soon' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 46,
+        "question": "Choose the part of the sentence that contains an error: You should avail of every opportunity.",
+        "options": [
+          "every opportunity",
+          "No error",
+          "avail of",
+          "You should"
+        ],
+        "answer": "No error",
+        "explanation": "Option A: This option marks 'every opportunity' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'avail of' as the error part. Option D: This option marks 'You should' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 45,
+        "question": "Choose the part of the sentence that contains an error: The child is afraid from the dark.",
+        "options": [
+          "The child is",
+          "the dark",
+          "No error",
+          "afraid from"
+        ],
+        "answer": "afraid from",
+        "explanation": "Option A: This option marks 'The child is' as the error part. Option B: This option marks 'the dark' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'afraid from' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 44,
+        "question": "Find the incorrect part of the sentence: Neither of the two brothers are trustworthy.",
+        "options": [
+          "Neither of the two brothers",
+          "are",
+          "trustworthy",
+          "No error"
+        ],
+        "answer": "are",
+        "explanation": "Option A: This option marks 'Neither of the two brothers' as the error part. Option B: This option marks 'are' as the error part. Option C: This option marks 'trustworthy' as the error part. Option D: This option marks 'No error' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 43,
+        "question": "Find the incorrect part of the sentence: He divided the sweets between his five friends.",
+        "options": [
+          "He divided",
+          "between his five friends",
+          "No error",
+          "the sweets"
+        ],
+        "answer": "between his five friends",
+        "explanation": "Option A: This option marks 'He divided' as the error part. Option B: This option marks 'between his five friends' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'the sweets' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 42,
+        "question": "Find the incorrect part of the sentence: This book comprises of five chapters.",
+        "options": [
+          "No error",
+          "comprises of",
+          "This book",
+          "five chapters"
+        ],
+        "answer": "comprises of",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'comprises of' as the error part. Option C: This option marks 'This book' as the error part. Option D: This option marks 'five chapters' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 41,
+        "question": "Identify the error in the sentence. She adopted a honest approach to resolving the issue.",
+        "options": [
+          "honest",
+          "issue",
+          "resolving",
+          "a"
+        ],
+        "answer": "a",
+        "explanation": "Option A: This option marks 'honest' as the error part. Option B: This option marks 'issue' as the error part. Option C: This option marks 'resolving' as the error part. Option D: This option marks 'a' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 40,
+        "question": "Identify the part containing a grammatical or structural error: One of the questions were very difficult.",
+        "options": [
+          "very difficult",
+          "were",
+          "One of the questions",
+          "No error"
+        ],
+        "answer": "were",
+        "explanation": "Option A: This option marks 'very difficult' as the error part. Option B: This option marks 'were' as the error part. Option C: This option marks 'One of the questions' as the error part. Option D: This option marks 'No error' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 39,
+        "question": "Identify the part containing a grammatical or structural error: The manager together with his staff have gone for lunch.",
+        "options": [
+          "together with his staff",
+          "No error",
+          "The manager",
+          "have gone for lunch"
+        ],
+        "answer": "have gone for lunch",
+        "explanation": "Option A: This option marks 'together with his staff' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'The manager' as the error part. Option D: This option marks 'have gone for lunch' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 38,
+        "question": "Find the incorrect part of the sentence: You should not laugh on others.",
+        "options": [
+          "No error",
+          "You should not",
+          "laugh on",
+          "others"
+        ],
+        "answer": "No error",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'You should not' as the error part. Option C: This option marks 'laugh on' as the error part. Option D: This option marks 'others' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 37,
+        "question": "Identify the error in the sentence. He is a fastly growing leader in the organization.",
+        "options": [
+          "leader",
+          "growing",
+          "fastly",
+          "organization"
+        ],
+        "answer": "fastly",
+        "explanation": "Option A: This option marks 'leader' as the error part. Option B: This option marks 'growing' as the error part. Option C: This option marks 'fastly' as the error part. Option D: This option marks 'organization' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 36,
+        "question": "Choose the part of the sentence that contains an error: He succeeded to win the prize.",
+        "options": [
+          "the prize",
+          "to win",
+          "No error",
+          "He succeeded"
+        ],
+        "answer": "to win",
+        "explanation": "Option A: This option marks 'the prize' as the error part. Option B: This option marks 'to win' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'He succeeded' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 35,
+        "question": "Find the incorrect part of the sentence: She delivered a speech in the prize distribution function.",
+        "options": [
+          "She delivered",
+          "in the prize distribution function",
+          "No error",
+          "a speech"
+        ],
+        "answer": "in the prize distribution function",
+        "explanation": "Option A: This option marks 'She delivered' as the error part. Option B: This option marks 'in the prize distribution function' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'a speech' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 34,
+        "question": "Find the incorrect part of the sentence: She is one of the best singer in the city.",
+        "options": [
+          "singer in the city",
+          "She is one",
+          "of the best",
+          "No error"
+        ],
+        "answer": "singer in the city",
+        "explanation": "Option A: This option marks 'singer in the city' as the error part. Option B: This option marks 'She is one' as the error part. Option C: This option marks 'of the best' as the error part. Option D: This option marks 'No error' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 33,
+        "question": "Identify the error in the sentence. She danced graceful on stage during the annual show.",
+        "options": [
+          "graceful",
+          "stage",
+          "show",
+          "during"
+        ],
+        "answer": "graceful",
+        "explanation": "Option A: This option marks 'graceful' as the error part. Option B: This option marks 'stage' as the error part. Option C: This option marks 'show' as the error part. Option D: This option marks 'during' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 32,
+        "question": "Identify the part containing a grammatical or structural error: The teacher advised to listen attentively.",
+        "options": [
+          "to listen attentively",
+          "No error",
+          "The teacher",
+          "advised"
+        ],
+        "answer": "to listen attentively",
+        "explanation": "Option A: This option marks 'to listen attentively' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'The teacher' as the error part. Option D: This option marks 'advised' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 31,
+        "question": "Identify the error in the sentence. Mount Everest is more highest peak in the world.",
+        "options": [
+          "world",
+          "more",
+          "highest",
+          "everest"
+        ],
+        "answer": "more",
+        "explanation": "Option A: This option marks 'world' as the error part. Option B: This option marks 'more' as the error part. Option C: This option marks 'highest' as the error part. Option D: This option marks 'everest' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 30,
+        "question": "Identify the error in the sentence. He made a quick shower before heading to the office.",
+        "options": [
+          "quick",
+          "shower",
+          "before",
+          "made"
+        ],
+        "answer": "made",
+        "explanation": "Option A: This option marks 'quick' as the error part. Option B: This option marks 'shower' as the error part. Option C: This option marks 'before' as the error part. Option D: This option marks 'made' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 29,
+        "question": "Find the incorrect part of the sentence: The officer has issued an order to arrest him immediately.",
+        "options": [
+          "The officer",
+          "No error",
+          "has issued",
+          "an order to arrest him immediately"
+        ],
+        "answer": "No error",
+        "explanation": "Option A: This option marks 'The officer' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'has issued' as the error part. Option D: This option marks 'an order to arrest him immediately' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 28,
+        "question": "Identify the part containing a grammatical or structural error; No sooner he had arrived than the meeting started.",
+        "options": [
+          "he had arrived",
+          "No error",
+          "No sooner",
+          "than the meeting started"
+        ],
+        "answer": "he had arrived",
+        "explanation": "Option A: This option marks 'he had arrived' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'No sooner' as the error part. Option D: This option marks 'than the meeting started' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 27,
+        "question": "Find the incorrect part of the sentence: She congratulated him for his success.",
+        "options": [
+          "him for",
+          "his success!",
+          "She congratulated",
+          "No error"
+        ],
+        "answer": "his success!",
+        "explanation": "Option A: This option marks 'him for' as the error part. Option B: This option marks 'his success!' as the error part. Option C: This option marks 'She congratulated' as the error part. Option D: This option marks 'No error' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 26,
+        "question": "Find the incorrect part of the sentence: I returned back from Mumbai last week.",
+        "options": [
+          "last week",
+          "from Mumbai",
+          "No error",
+          "I returned back"
+        ],
+        "answer": "I returned back",
+        "explanation": "Option A: This option marks 'last week' as the error part. Option B: This option marks 'from Mumbai' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'I returned back' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 25,
+        "question": "Find the incorrect part of the sentence: She is angry upon me.",
+        "options": [
+          "me",
+          "No error",
+          "angry upon",
+          "She is"
+        ],
+        "answer": "angry upon",
+        "explanation": "Option A: This option marks 'me' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'angry upon' as the error part. Option D: This option marks 'She is' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 24,
+        "question": "Choose the part of the sentence that contains an error: Neither the teacher nor the students was present.",
+        "options": [
+          "No error",
+          "was present",
+          "Neither the teacher",
+          "nor the students"
+        ],
+        "answer": "was present",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'was present' as the error part. Option C: This option marks 'Neither the teacher' as the error part. Option D: This option marks 'nor the students' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 23,
+        "question": "Choose the part of the sentence that contains an error: She gave me a good advice.",
+        "options": [
+          "good",
+          "She gave me",
+          "a good advice",
+          "No error"
+        ],
+        "answer": "a good advice",
+        "explanation": "Option A: This option marks 'good' as the error part. Option B: This option marks 'She gave me' as the error part. Option C: This option marks 'a good advice' as the error part. Option D: This option marks 'No error' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 22,
+        "question": "Find the incorrect part of the sentence: The police has arrested the culprit.",
+        "options": [
+          "has arrested",
+          "The police",
+          "the culprit",
+          "No error"
+        ],
+        "answer": "has arrested",
+        "explanation": "Option A: This option marks 'has arrested' as the error part. Option B: This option marks 'The police' as the error part. Option C: This option marks 'the culprit' as the error part. Option D: This option marks 'No error' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 21,
+        "question": "Identify the error in the sentence. This route is most safer than the highway.",
+        "options": [
+          "safer",
+          "highway",
+          "most",
+          "route"
+        ],
+        "answer": "most",
+        "explanation": "Option A: This option marks 'safer' as the error part. Option B: This option marks 'highway' as the error part. Option C: This option marks 'most' as the error part. Option D: This option marks 'route' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 20,
+        "question": "Find the incorrect part of the sentence: He could not cope up with the pressure.",
+        "options": [
+          "cope up with",
+          "the pressure",
+          "No error",
+          "He could not"
+        ],
+        "answer": "cope up with",
+        "explanation": "Option A: This option marks 'cope up with' as the error part. Option B: This option marks 'the pressure' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'He could not' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 19,
+        "question": "Identify the part containing a grammatical or structural error: Neither Ramesh nor his friends is willing to join.",
+        "options": [
+          "is willing to join",
+          "No error",
+          "nor his friends",
+          "Neither Ramesh"
+        ],
+        "answer": "is willing to join",
+        "explanation": "Option A: This option marks 'is willing to join' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'nor his friends' as the error part. Option D: This option marks 'Neither Ramesh' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 18,
+        "question": "Identify the part containing a grammatical or structural error: It is high time you start studying seriously.",
+        "options": [
+          "Studying seriously",
+          "It is high time",
+          "No error",
+          "You start"
+        ],
+        "answer": "You start",
+        "explanation": "Option A: This option marks 'Studying seriously' as the error part. Option B: This option marks 'It is high time' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'You start' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 17,
+        "question": "Identify the word in this sentence that contains an error. She arrived to the office early this morning.",
+        "options": [
+          "To",
+          "Morning",
+          "Arrived",
+          "Office"
+        ],
+        "answer": "To",
+        "explanation": "Option A: This option marks 'To' as the error part. Option B: This option marks 'Morning' as the error part. Option C: This option marks 'Arrived' as the error part. Option D: This option marks 'Office' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 16,
+        "question": "Find the incorrect part of the sentence: She is more smarter than her sister.",
+        "options": [
+          "No error",
+          "More smarter",
+          "She is",
+          "Than her sister"
+        ],
+        "answer": "More smarter",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'More smarter' as the error part. Option C: This option marks 'She is' as the error part. Option D: This option marks 'Than her sister' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 15,
+        "question": "Find the incorrect part of the sentence: She is junior than me.",
+        "options": [
+          "She is",
+          "Junior than",
+          "No error",
+          "Me"
+        ],
+        "answer": "Junior than",
+        "explanation": "Option A: This option marks 'She is' as the error part. Option B: This option marks 'Junior than' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'Me' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 14,
+        "question": "Identify the error in the sentence. He has saw the movie three times already.",
+        "options": [
+          "Movie",
+          "Three",
+          "Already",
+          "Saw"
+        ],
+        "answer": "Saw",
+        "explanation": "Option A: This option marks 'Movie' as the error part. Option B: This option marks 'Three' as the error part. Option C: This option marks 'Already' as the error part. Option D: This option marks 'Saw' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 13,
+        "question": "Find the incorrect part of the sentence: Neither Ram nor his brothers is reliable.",
+        "options": [
+          "Neither Ram",
+          "Is reliable",
+          "No error",
+          "Nor his brothers"
+        ],
+        "answer": "Is reliable",
+        "explanation": "Option A: This option marks 'Neither Ram' as the error part. Option B: This option marks 'Is reliable' as the error part. Option C: This option marks 'No error' as the error part. Option D: This option marks 'Nor his brothers' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 12,
+        "question": "Identify the part containing a grammatical or structural error: The behaviour of these students leave much to be desired.",
+        "options": [
+          "Leave much",
+          "The behaviour",
+          "Of these students",
+          "To be desired"
+        ],
+        "answer": "Leave much",
+        "explanation": "Option A: This option marks 'Leave much' as the error part. Option B: This option marks 'The behaviour' as the error part. Option C: This option marks 'Of these students' as the error part. Option D: This option marks 'To be desired' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 11,
+        "question": "Find the incorrect part of the sentence: One must keep his promises.",
+        "options": [
+          "No error",
+          "Must keep",
+          "One must",
+          "His promises"
+        ],
+        "answer": "His promises",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'Must keep' as the error part. Option C: This option marks 'One must' as the error part. Option D: This option marks 'His promises' as the error part. **Option D** correctly applies: this part contains the grammatical/usage error in the sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 10,
+        "question": "Identify the word in this sentence that contains an error. The keys are inside the table drawer.",
+        "options": [
+          "Keys",
+          "Drawer",
+          "Table",
+          "Inside"
+        ],
+        "answer": "Inside",
+        "explanation": "Option A: This option marks 'Keys' as the error part. Option B: This option marks 'Drawer' as the error part. Option C: This option marks 'Table' as the error part. Option D: This option marks 'Inside' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 9,
+        "question": "Identify the error in the sentence. Can you pick up me from the airport tomorrow?",
+        "options": [
+          "airport tomorrow",
+          "pick up me",
+          "from the airport",
+          "me from"
+        ],
+        "answer": "pick up me",
+        "explanation": "Option A: This option marks 'airport tomorrow' as the error part. Option B: This option marks 'pick up me' as the error part. Option C: This option marks 'from the airport' as the error part. Option D: This option marks 'me from' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 8,
+        "question": "Identify the part containing a grammatical or structural error: Neither the Principal nor the teachers was present.",
+        "options": [
+          "No error",
+          "nor the teachers",
+          "was present",
+          "Neither the Principal"
+        ],
+        "answer": "was present",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'nor the teachers' as the error part. Option C: This option marks 'was present' as the error part. Option D: This option marks 'Neither the Principal' as the error part. **Option C** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 7,
+        "question": "Find the part of the sentence that contains an error: One of the guest speakers who addressed the seminar (1)/ and interacted with students (2)/ were praised widely for their clarity and enthusiasm (3)/ during the closing ceremony, (4)",
+        "options": [
+          "and interacted with students (2)",
+          "were praised widely for their clarity and enthusiasm (3)",
+          "during the closing ceremony (4)",
+          "One of the guest speakers who addressed the seminar (1)"
+        ],
+        "answer": "were praised widely for their clarity and enthusiasm (3)",
+        "explanation": "Option A: This option marks 'and interacted with students (2)' as the error part. Option B: This option marks 'were praised widely for their clarity and enthusiasm (3)' as the error part. Option C: This option marks 'during the closing ceremony (4)' as the error part. Option D: This option marks 'One of the guest speakers who addressed the seminar (1)' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 6,
+        "question": "Find the part of the sentence that contains an error: Each participant who registered online for the event (1)/ were given a welcome kit (2)/ along with the program schedule and map (3)/ at the helpdesk near the entrance. (4)/",
+        "options": [
+          "at the helpdesk near the entrance. (4)",
+          "were given a welcome kit (2)",
+          "along with the program schedule and map (3)",
+          "Each participant who registered online for the event (1)"
+        ],
+        "answer": "were given a welcome kit (2)",
+        "explanation": "Option A: This option marks 'at the helpdesk near the entrance. (4)' as the error part. Option B: This option marks 'were given a welcome kit (2)' as the error part. Option C: This option marks 'along with the program schedule and map (3)' as the error part. Option D: This option marks 'Each participant who registered online for the event (1)' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 5,
+        "question": "Find the part of the sentence that contains an error: The teacher who had conducted the workshop earlier, (1)/ along with his assistants, (2)/ have submitted the final report to the board (3)/ before the deadline last week. (4)",
+        "options": [
+          "before the deadline last week (4)",
+          "have submitted the final report to the board (3)",
+          "The teacher who had conducted the workshop earlier (1)",
+          "along with his assistants (2)"
+        ],
+        "answer": "have submitted the final report to the board (3)",
+        "explanation": "Option A: This option marks 'before the deadline last week (4)' as the error part. Option B: This option marks 'have submitted the final report to the board (3)' as the error part. Option C: This option marks 'The teacher who had conducted the workshop earlier (1)' as the error part. Option D: This option marks 'along with his assistants (2)' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 4,
+        "question": "Find the incorrect part of the sentence: She has been teaching in this school since five years.",
+        "options": [
+          "No error",
+          "She has been teaching",
+          "in this school",
+          "since five years"
+        ],
+        "answer": "since five years",
+        "explanation": "Option A: This option marks 'No error' as the error part. Option B: This option marks 'She has been teaching' as the error part. Option C: This option marks 'in this school' as the error part. Option D: This option marks 'since five years' as the error part. **Option D** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 3,
+        "question": "Find the incorrect part of the sentence: He was senior than me in college.",
+        "options": [
+          "senior than",
+          "No error",
+          "me in college",
+          "He was"
+        ],
+        "answer": "senior than",
+        "explanation": "Option A: This option marks 'senior than' as the error part. Option B: This option marks 'No error' as the error part. Option C: This option marks 'me in college' as the error part. Option D: This option marks 'He was' as the error part. **Option A** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 2,
+        "question": "Identify the error in the sentence. By the time they arrive, the concert had ended.",
+        "options": [
+          "time",
+          "arrive",
+          "concert",
+          "had ended"
+        ],
+        "answer": "arrive",
+        "explanation": "Option A: This option marks 'time' as the error part. Option B: This option marks 'arrive' as the error part. Option C: This option marks 'concert' as the error part. Option D: This option marks 'had ended' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 1,
+        "question": "Identify the word that doesn't fit the part of speech needed. She made a quickly decision without thinking.",
+        "options": [
+          "decision",
+          "quickly",
+          "made",
+          "thinking"
+        ],
+        "answer": "quickly",
+        "explanation": "Option A: This option marks 'decision' as the error part. Option B: This option marks 'quickly' as the error part. Option C: This option marks 'made' as the error part. Option D: This option marks 'thinking' as the error part. **Option B** correctly applies: this part contains the error identified by the source answer key.",
+        "answerKey": "B",
+        "answerIndex": 1
+      }
+    ]
+  }
+}

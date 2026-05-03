@@ -1,0 +1,1395 @@
+{
+  "quiz": {
+    "title": "SSC Steno 2025 English - Sentence Rearrangement",
+    "category": "Grammar",
+    "totalQuestions": 99,
+    "questions": [
+      {
+        "id": 99,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Rainforests are essential for biodiversity. P: Trees store carbon and release oxygen. Q: They are home to countless species. R: Yet, deforestation threatens these ecosystems. S: Some plants even hold potential medical cures. 6. So, preserving rainforests is a global concern.",
+        "options": [
+          "QRSP",
+          "SRPQ",
+          "PQSR",
+          "QSPR"
+        ],
+        "answer": "SRPQ",
+        "explanation": "Option A: This gives the sequence QRSP. Option B: This gives the sequence SRPQ. Option C: This gives the sequence PQSR. Option D: This gives the sequence QSPR. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 98,
+        "question": "Choose the correct sequence to form a meaningful sentence: (",
+        "options": [
+          "the cat (",
+          "sleeping (",
+          "is (",
+          "under the table A) ABDC B) ADBC C) ACBD D) ADCB"
+        ],
+        "answer": "is (",
+        "explanation": "Option A: This gives the sequence the cat (. Option B: This gives the sequence sleeping (. Option C: This gives the sequence is (. Option D: This gives the sequence under the table A) ABDC B) ADBC C) ACBD D) ADCB. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 97,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Oceans cover more than 70% of Earth's surface. P: Marine species are crucial for food chains. Q: But plastic waste threatens marine life. R: Oceans regulate global temperature and climate. S: They provide food and employment to millions. 6. Ocean conservation must be prioritized.",
+        "options": [
+          "SRPQ",
+          "RQPS",
+          "PRSQ",
+          "QSPR"
+        ],
+        "answer": "SRPQ",
+        "explanation": "Option A: This gives the sequence SRPQ. Option B: This gives the sequence RQPS. Option C: This gives the sequence PRSQ. Option D: This gives the sequence QSPR. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 96,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "took care of (",
+          "her younger brother (",
+          "while their parents (",
+          "were away A) ACBD B) BACD C) CBAD D) ABCD"
+        ],
+        "answer": "were away A) ACBD B) BACD C) CBAD D) ABCD",
+        "explanation": "Option A: This gives the sequence took care of (. Option B: This gives the sequence her younger brother (. Option C: This gives the sequence while their parents (. Option D: This gives the sequence were away A) ACBD B) BACD C) CBAD D) ABCD. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 95,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. The Earth is facing a serious environmental crisis. P: Forests are being cut down. Q: Oceans are filling with plastic. R: The air is becoming toxic. S: Climate change is accelerating. 6. We must act before it's too late.",
+        "options": [
+          "PQRS",
+          "RQPS",
+          "PRQS",
+          "QPRS"
+        ],
+        "answer": "PQRS",
+        "explanation": "Option A: This gives the sequence PQRS. Option B: This gives the sequence RQPS. Option C: This gives the sequence PRQS. Option D: This gives the sequence QPRS. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 94,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "the country (",
+          "was devastated (",
+          "by a powerful cyclone (",
+          "last month A) ABCD B) BACD C) ABDC D) ACBD"
+        ],
+        "answer": "was devastated (",
+        "explanation": "Option A: This gives the sequence the country (. Option B: This gives the sequence was devastated (. Option C: This gives the sequence by a powerful cyclone (. Option D: This gives the sequence last month A) ABCD B) BACD C) ABDC D) ACBD. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 93,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. The classroom was silent. P: The teacher entered with a test sheet. Q: Everyone looked anxious. R: She distributed the papers. S: The exam was about to begin. 6. The students began writing.",
+        "options": [
+          "PQRS",
+          "QSPR",
+          "QPSR",
+          "PSQR"
+        ],
+        "answer": "PSQR",
+        "explanation": "Option A: This gives the sequence PQRS. Option B: This gives the sequence QSPR. Option C: This gives the sequence QPSR. Option D: This gives the sequence PSQR. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 92,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Books have always been a source of knowledge. P: They allow us to travel across time and space. Q: We learn about different cultures and civilizations. R: Stories in books fuel our imagination. S: From science to art, books cover every field. 6. Therefore, reading must be encouraged in youth.",
+        "options": [
+          "SQPR",
+          "SRPQ",
+          "PRQS",
+          "PSQR"
+        ],
+        "answer": "PRQS",
+        "explanation": "Option A: This gives the sequence SQPR. Option B: This gives the sequence SRPQ. Option C: This gives the sequence PRQS. Option D: This gives the sequence PSQR. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 91,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "I have never (",
+          "seen such (",
+          "a huge gathering (",
+          "before today A) ACBD B) ABDC C) BACD D) ABCD"
+        ],
+        "answer": "before today A) ACBD B) ABDC C) BACD D) ABCD",
+        "explanation": "Option A: This gives the sequence I have never (. Option B: This gives the sequence seen such (. Option C: This gives the sequence a huge gathering (. Option D: This gives the sequence before today A) ACBD B) ABDC C) BACD D) ABCD. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 90,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "to improve road safety (",
+          "stricter traffic rules (",
+          "should be implemented (",
+          "immediately A) BCAD B) CBAD C) BACD D) ABCD"
+        ],
+        "answer": "immediately A) BCAD B) CBAD C) BACD D) ABCD",
+        "explanation": "Option A: This gives the sequence to improve road safety (. Option B: This gives the sequence stricter traffic rules (. Option C: This gives the sequence should be implemented (. Option D: This gives the sequence immediately A) BCAD B) CBAD C) BACD D) ABCD. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 89,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. A stray dog entered the school gate. P: The children ran away in fear. Q: It started barking loudly. R: A peon chased it away. S: Some teachers came out of the staff room. 6. Order was soon restored.",
+        "options": [
+          "PSRQ",
+          "QPSR",
+          "QSPR",
+          "PQSR"
+        ],
+        "answer": "PQSR",
+        "explanation": "Option A: This gives the sequence PSRQ. Option B: This gives the sequence QPSR. Option C: This gives the sequence QSPR. Option D: This gives the sequence PQSR. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 88,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "by adopting modern methods (",
+          "farmers can increase (",
+          "agricultural production (",
+          "effectively A) ABCD B) BCAD C) BADC D) BACD"
+        ],
+        "answer": "by adopting modern methods (",
+        "explanation": "Option A: This gives the sequence by adopting modern methods (. Option B: This gives the sequence farmers can increase (. Option C: This gives the sequence agricultural production (. Option D: This gives the sequence effectively A) ABCD B) BCAD C) BADC D) BACD. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 87,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "a scholarship (",
+          "for higher studies (",
+          "was awarded to (",
+          "the topper A) DCAB B) DABC C) DACB D) DBCA"
+        ],
+        "answer": "for higher studies (",
+        "explanation": "Option A: This gives the sequence a scholarship (. Option B: This gives the sequence for higher studies (. Option C: This gives the sequence was awarded to (. Option D: This gives the sequence the topper A) DCAB B) DABC C) DACB D) DBCA. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 86,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "water the plants (",
+          "every morning (",
+          "before breakfast (",
+          "we A) DCAB B) DACB C) DBCA D) DABC"
+        ],
+        "answer": "we A) DCAB B) DACB C) DBCA D) DABC",
+        "explanation": "Option A: This gives the sequence water the plants (. Option B: This gives the sequence every morning (. Option C: This gives the sequence before breakfast (. Option D: This gives the sequence we A) DCAB B) DACB C) DBCA D) DABC. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 85,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. An astronaut must train before going to space. P. They use a simulator to practice. Q. Their body must get used to zero gravity. R. They learn emergency procedures. S. They also learn how to wear the space suit. 6. All this helps them prepare well.",
+        "options": [
+          "RPSQ",
+          "QSPR",
+          "PRSQ",
+          "SQRP"
+        ],
+        "answer": "QSPR",
+        "explanation": "Option A: This gives the sequence RPSQ. Option B: This gives the sequence QSPR. Option C: This gives the sequence PRSQ. Option D: This gives the sequence SQRP. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 84,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "several measures (",
+          "have been introduced (",
+          "by the government (",
+          "to control inflation A) CBAD B) ACBD C) BCAD D) BACD"
+        ],
+        "answer": "to control inflation A) CBAD B) ACBD C) BCAD D) BACD",
+        "explanation": "Option A: This gives the sequence several measures (. Option B: This gives the sequence have been introduced (. Option C: This gives the sequence by the government (. Option D: This gives the sequence to control inflation A) CBAD B) ACBD C) BCAD D) BACD. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 83,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Climate change remains one of the biggest challenges of our time. P: Shifting rainfall patterns are already affecting agriculture. Q: Melting glaciers are disrupting water supplies in many regions. R: Its impacts are visible across the globe. S: Rising sea levels threaten low-lying coastal areas. 6. Urgent global collaboration is essential to tackle it.",
+        "options": [
+          "PRSQ",
+          "RPQS",
+          "RQPS",
+          "QSPR"
+        ],
+        "answer": "RPQS",
+        "explanation": "Option A: This gives the sequence PRSQ. Option B: This gives the sequence RPQS. Option C: This gives the sequence RQPS. Option D: This gives the sequence QSPR. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 82,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Artificial Intelligence is transforming global industries. P: However, ethical concerns about its use persist. Q: It improves efficiency in sectors like healthcare and finance. R: There is fear of job loss due to automation. S: Policymakers are debating how to regulate its growth. 6. A balanced approach is needed to harness AI's potential.",
+        "options": [
+          "QPRS",
+          "QSRP",
+          "QRSP",
+          "RPQS"
+        ],
+        "answer": "QRSP",
+        "explanation": "Option A: This gives the sequence QPRS. Option B: This gives the sequence QSRP. Option C: This gives the sequence QRSP. Option D: This gives the sequence RPQS. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 81,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "in his bag (",
+          "kept (",
+          "the documents (",
+          "he A) DCBA B) DBCA C) DABC D) BACD"
+        ],
+        "answer": "the documents (",
+        "explanation": "Option A: This gives the sequence in his bag (. Option B: This gives the sequence kept (. Option C: This gives the sequence the documents (. Option D: This gives the sequence he A) DCBA B) DBCA C) DABC D) BACD. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 80,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. It started raining in the evening. P: People ran to shelters. Q: Water collected on roads. R: Traffic moved slowly. S: Many opened their umbrellas. 6. It was a heavy shower.",
+        "options": [
+          "SRPQ",
+          "QPRS",
+          "PQRS",
+          "PSRQ"
+        ],
+        "answer": "PQRS",
+        "explanation": "Option A: This gives the sequence SRPQ. Option B: This gives the sequence QPRS. Option C: This gives the sequence PQRS. Option D: This gives the sequence PSRQ. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 79,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Mathematics is essential in daily life. P: Calculating discounts helps in shopping. Q: Managing time also involves math skills. R: From money to measurements, it is everywhere. S: Even cooking depends on ratios and quantities. 6. So, learning math has practical value.",
+        "options": [
+          "QRSP",
+          "PRSQ",
+          "RPSQ",
+          "RPQS"
+        ],
+        "answer": "RPQS",
+        "explanation": "Option A: This gives the sequence QRSP. Option B: This gives the sequence PRSQ. Option C: This gives the sequence RPSQ. Option D: This gives the sequence RPQS. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 78,
+        "question": "Choose the correct sequence to form a meaningful sentence: (",
+        "options": [
+          "playing (",
+          "children (",
+          "were (",
+          "in the park A) CBAD B) BDCA C) BCAD D) BACD"
+        ],
+        "answer": "were (",
+        "explanation": "Option A: This gives the sequence playing (. Option B: This gives the sequence children (. Option C: This gives the sequence were (. Option D: This gives the sequence in the park A) CBAD B) BDCA C) BCAD D) BACD. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 77,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Time management helps improve productivity. P: Procrastination leads to wasted hours. Q: Creating a schedule prevents delays. R: It gives direction and reduces stress. S: Staying disciplined is the key. 6. Success often depends on how we manage time.",
+        "options": [
+          "PQSR",
+          "SRPQ",
+          "RQPS",
+          "QPRS"
+        ],
+        "answer": "QPRS",
+        "explanation": "Option A: This gives the sequence PQSR. Option B: This gives the sequence SRPQ. Option C: This gives the sequence RQPS. Option D: This gives the sequence QPRS. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 76,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "the painter (",
+          "has completed (",
+          "the mural (",
+          "beautifully A) ABCD B) ABDC C) ACBD D) BACD"
+        ],
+        "answer": "the painter (",
+        "explanation": "Option A: This gives the sequence the painter (. Option B: This gives the sequence has completed (. Option C: This gives the sequence the mural (. Option D: This gives the sequence beautifully A) ABCD B) ABDC C) ACBD D) BACD. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 75,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "to the office (",
+          "reached (",
+          "Mr. Sharma (",
+          "at 9 am A) CABD B) CDBA C) CBAD D) DCAB"
+        ],
+        "answer": "Mr. Sharma (",
+        "explanation": "Option A: This gives the sequence to the office (. Option B: This gives the sequence reached (. Option C: This gives the sequence Mr. Sharma (. Option D: This gives the sequence at 9 am A) CABD B) CDBA C) CBAD D) DCAB. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 74,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. A compass is an important tool in navigation. P: It always points towards the magnetic north. Q: Even in cloudy weather, it shows direction. R: It does not depend on GPS or electricity. S: Hikers and sailors rely on it during travel. 6. Thus, it remains a reliable tool even today.",
+        "options": [
+          "PQRS",
+          "SRPQ",
+          "PRSQ",
+          "RQPS"
+        ],
+        "answer": "PQRS",
+        "explanation": "Option A: This gives the sequence PQRS. Option B: This gives the sequence SRPQ. Option C: This gives the sequence PRSQ. Option D: This gives the sequence RQPS. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 73,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. The evolution of language is deeply linked to human history. P: Early humans used symbols to convey meaning. Q: Writing systems emerged thousands of years later. R: Spoken language likely developed alongside tool use. S: Over time, languages diversified across regions. 6. Today, language continues to evolve with technology.",
+        "options": [
+          "QRSP",
+          "RPQS",
+          "RPSQ",
+          "PRSQ"
+        ],
+        "answer": "RPSQ",
+        "explanation": "Option A: This gives the sequence QRSP. Option B: This gives the sequence RPQS. Option C: This gives the sequence RPSQ. Option D: This gives the sequence PRSQ. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 72,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Plants need sunlight to grow. P: Photosynthesis needs light. Q: No food is made without it. R: Leaves turn yellow without it. S: The plant dies slowly. 6. Sunlight is very important.",
+        "options": [
+          "SPQR",
+          "PSQR",
+          "PQRS",
+          "SQPR"
+        ],
+        "answer": "PSQR",
+        "explanation": "Option A: This gives the sequence SPQR. Option B: This gives the sequence PSQR. Option C: This gives the sequence PQRS. Option D: This gives the sequence SQPR. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 71,
+        "question": "Choose the correct sequence to form a meaningful sentence: (",
+        "options": [
+          "opened (",
+          "slowly (",
+          "the door (",
+          "he A) DABC B) DACB C) BACD D) DCAB"
+        ],
+        "answer": "he A) DABC B) DACB C) BACD D) DCAB",
+        "explanation": "Option A: This gives the sequence opened (. Option B: This gives the sequence slowly (. Option C: This gives the sequence the door (. Option D: This gives the sequence he A) DABC B) DACB C) BACD D) DCAB. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 70,
+        "question": "Rearrange the parts of the sentence in the correct order. Postcolonial literature P. interrogates historical narratives, Q. while reclaiming suppressed voices R. and offers alternative perspectives S. rooted in indigenous experience,",
+        "options": [
+          "PSRQ",
+          "RSPQ",
+          "QRSP",
+          "SRPQ"
+        ],
+        "answer": "PSRQ",
+        "explanation": "Option A: This gives the sequence PSRQ. Option B: This gives the sequence RSPQ. Option C: This gives the sequence QRSP. Option D: This gives the sequence SRPQ. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 69,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "my mother (",
+          "bought (",
+          "a beautiful saree (",
+          "yesterday A) ABCD B) CBAD C) ACBD D) BACD"
+        ],
+        "answer": "my mother (",
+        "explanation": "Option A: This gives the sequence my mother (. Option B: This gives the sequence bought (. Option C: This gives the sequence a beautiful saree (. Option D: This gives the sequence yesterday A) ABCD B) CBAD C) ACBD D) BACD. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 68,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Social media influences public opinion. P: Posts can go viral within minutes. Q: It helps in sharing views widely. R: However, misinformation also spreads fast. S: This can lead to confusion or panic. 6. So, digital literacy is essential today.",
+        "options": [
+          "QPRS",
+          "PRQS",
+          "QPSR",
+          "QSRP"
+        ],
+        "answer": "QPRS",
+        "explanation": "Option A: This gives the sequence QPRS. Option B: This gives the sequence PRQS. Option C: This gives the sequence QPSR. Option D: This gives the sequence QSRP. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 67,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Human memory is a complex neurological process. P: Short-term memory stores data temporarily for immediate use. Q: Information can be transferred to long-term memory with repetition. R: The brain filters and encodes information efficiently. S: Long-term memory holds information for an extended period. 6. Understanding memory helps improve learning strategies.",
+        "options": [
+          "RPSQ",
+          "PRSQ",
+          "QPRS",
+          "SQPR"
+        ],
+        "answer": "QPRS",
+        "explanation": "Option A: This gives the sequence RPSQ. Option B: This gives the sequence PRSQ. Option C: This gives the sequence QPRS. Option D: This gives the sequence SQPR. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 66,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "read (",
+          "the instructions (",
+          "before filling (",
+          "carefully A) DACB B) BACD C) BCAD D) BDCA"
+        ],
+        "answer": "the instructions (",
+        "explanation": "Option A: This gives the sequence read (. Option B: This gives the sequence the instructions (. Option C: This gives the sequence before filling (. Option D: This gives the sequence carefully A) DACB B) BACD C) BCAD D) BDCA. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 65,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Computers help us in many ways. P: Writing reports is easier. Q: Data is stored safely. R: Meetings happen online. S: Calculations are done fast. 6. Offices depend on them daily.",
+        "options": [
+          "PRSQ",
+          "QRPS",
+          "PQRS",
+          "PQSR"
+        ],
+        "answer": "PQRS",
+        "explanation": "Option A: This gives the sequence PRSQ. Option B: This gives the sequence QRPS. Option C: This gives the sequence PQRS. Option D: This gives the sequence PQSR. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 64,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Email has changed modern communication. P: It is faster than traditional letters. Q: Instant messaging is also gaining popularity. R: Emails allow file sharing and formal contact. S: However, they may lack personal touch. 6. Choosing the right medium depends on context.",
+        "options": [
+          "PRSQ",
+          "PQSR",
+          "RPSQ",
+          "QPRS"
+        ],
+        "answer": "PRSQ",
+        "explanation": "Option A: This gives the sequence PRSQ. Option B: This gives the sequence PQSR. Option C: This gives the sequence RPSQ. Option D: This gives the sequence QPRS. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 63,
+        "question": "Choose the correct sequence to form a meaningful sentence: (",
+        "options": [
+          "has a long (",
+          "India (",
+          "and rich (",
+          "cultural history A) BDCA B) BCAD C) BACD D) BADC"
+        ],
+        "answer": "and rich (",
+        "explanation": "Option A: This gives the sequence has a long (. Option B: This gives the sequence India (. Option C: This gives the sequence and rich (. Option D: This gives the sequence cultural history A) BDCA B) BCAD C) BACD D) BADC. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 62,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Ravi opened his new geometry box. P: It had a ruler, compass, and protractor. Q: He used it in his maths class. R: He showed it to his friends. S: It was made of metal and looked shiny. 6. He liked his new box very much.",
+        "options": [
+          "SRPQ",
+          "PSRQ",
+          "PRQS",
+          "PRSQ"
+        ],
+        "answer": "PRQS",
+        "explanation": "Option A: This gives the sequence SRPQ. Option B: This gives the sequence PSRQ. Option C: This gives the sequence PRQS. Option D: This gives the sequence PRSQ. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 61,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "for higher education (",
+          "many students (",
+          "prefer to go abroad (",
+          "these days A) ABCD B) BDAC C) BADC D) BACD"
+        ],
+        "answer": "these days A) ABCD B) BDAC C) BADC D) BACD",
+        "explanation": "Option A: This gives the sequence for higher education (. Option B: This gives the sequence many students (. Option C: This gives the sequence prefer to go abroad (. Option D: This gives the sequence these days A) ABCD B) BDAC C) BADC D) BACD. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 60,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "the headmaster (",
+          "for his punctuality (",
+          "praised (",
+          "the student A) ABCD B) ADCB C) BDCA D) ACBD"
+        ],
+        "answer": "the student A) ABCD B) ADCB C) BDCA D) ACBD",
+        "explanation": "Option A: This gives the sequence the headmaster (. Option B: This gives the sequence for his punctuality (. Option C: This gives the sequence praised (. Option D: This gives the sequence the student A) ABCD B) ADCB C) BDCA D) ACBD. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 59,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "before the heavy rains (",
+          "the villagers (",
+          "repaired the damaged bridge (",
+          "with the help of officials A) DACB B) BACD C) BCAD D) ABCD"
+        ],
+        "answer": "repaired the damaged bridge (",
+        "explanation": "Option A: This gives the sequence before the heavy rains (. Option B: This gives the sequence the villagers (. Option C: This gives the sequence repaired the damaged bridge (. Option D: This gives the sequence with the help of officials A) DACB B) BACD C) BCAD D) ABCD. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 58,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Science fiction fuels technological imagination. P: It inspires young minds to innovate. Q: Many past inventions were once fictional ideas. R: It encourages thinking beyond limits. S: Stories often explore future societies. 6. Thus, sci-fi has real-world influence.",
+        "options": [
+          "PQRS",
+          "SRQP",
+          "QPRS",
+          "RQPS"
+        ],
+        "answer": "QPRS",
+        "explanation": "Option A: This gives the sequence PQRS. Option B: This gives the sequence SRQP. Option C: This gives the sequence QPRS. Option D: This gives the sequence RQPS. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 57,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Solar energy is gaining popularity worldwide. P: It is available in abundance. Q: This makes it a sustainable option. R: Unlike fossil fuels, it doesn't emit harmful gases. S: Also, it reduces dependency on non-renewable sources. 6. Hence, governments are investing in solar technology.",
+        "options": [
+          "PRSQ",
+          "QPSR",
+          "RSPQ",
+          "PQRS"
+        ],
+        "answer": "PQRS",
+        "explanation": "Option A: This gives the sequence PRSQ. Option B: This gives the sequence QPSR. Option C: This gives the sequence RSPQ. Option D: This gives the sequence PQRS. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 56,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "every week (",
+          "we (",
+          "play (",
+          "cricket A) BACD B) BADC C) DACB D) CADB"
+        ],
+        "answer": "every week (",
+        "explanation": "Option A: This gives the sequence every week (. Option B: This gives the sequence we (. Option C: This gives the sequence play (. Option D: This gives the sequence cricket A) BACD B) BADC C) DACB D) CADB. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 55,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "rising inflation (",
+          "causes difficulties (",
+          "for middle-class families (",
+          "everywhere A) BACD B) ABCD C) BACD D) ACBD"
+        ],
+        "answer": "for middle-class families (",
+        "explanation": "Option A: This gives the sequence rising inflation (. Option B: This gives the sequence causes difficulties (. Option C: This gives the sequence for middle-class families (. Option D: This gives the sequence everywhere A) BACD B) ABCD C) BACD D) ACBD. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 54,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. A triangle has three sides. P: The angles can be equal or different. Q: It is one of the basic shapes. R: Every triangle has three angles. S: The sum of angles is always 180 degrees. 6. Triangles are important in geometry.",
+        "options": [
+          "QPRS",
+          "PRSQ",
+          "RPQS",
+          "QRPS"
+        ],
+        "answer": "QRPS",
+        "explanation": "Option A: This gives the sequence QPRS. Option B: This gives the sequence PRSQ. Option C: This gives the sequence RPQS. Option D: This gives the sequence QRPS. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 53,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. I visited a zoo last weekend. P: The lions were resting under trees. Q: I saw many wild animals there. R: Monkeys were swinging on branches. S: The elephants were eating sugarcane. 6. It was a fun and learning experience.",
+        "options": [
+          "QSPR",
+          "PQSR",
+          "PRSQ",
+          "QPSR"
+        ],
+        "answer": "QPSR",
+        "explanation": "Option A: This gives the sequence QSPR. Option B: This gives the sequence PQSR. Option C: This gives the sequence PRSQ. Option D: This gives the sequence QPSR. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 52,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "met (",
+          "his friend (",
+          "at the station (",
+          "Rohit A) DCBA B) DBAC C) DACB D) DABC"
+        ],
+        "answer": "Rohit A) DCBA B) DBAC C) DACB D) DABC",
+        "explanation": "Option A: This gives the sequence met (. Option B: This gives the sequence his friend (. Option C: This gives the sequence at the station (. Option D: This gives the sequence Rohit A) DCBA B) DBAC C) DACB D) DABC. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 51,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "announced (",
+          "the winner (",
+          "was (",
+          "yesterday evening A) BCAD B) CBAD C) ACBD D) BACD"
+        ],
+        "answer": "the winner (",
+        "explanation": "Option A: This gives the sequence announced (. Option B: This gives the sequence the winner (. Option C: This gives the sequence was (. Option D: This gives the sequence yesterday evening A) BCAD B) CBAD C) ACBD D) BACD. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 50,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "on time (",
+          "the bus (",
+          "arrived (",
+          "at the stop A) BCAD B) BACD C) CBAD D) ABCD"
+        ],
+        "answer": "the bus (",
+        "explanation": "Option A: This gives the sequence on time (. Option B: This gives the sequence the bus (. Option C: This gives the sequence arrived (. Option D: This gives the sequence at the stop A) BCAD B) BACD C) CBAD D) ABCD. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 49,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Festivals play a big role in cultural unity. P: They bring together people of different beliefs. Q: Each region celebrates with its unique customs. R: Shared celebrations promote tolerance and joy. S: They also preserve traditional art forms. 6. Hence, festivals strengthen the social fabric.",
+        "options": [
+          "PQRS",
+          "PRQS",
+          "RPSQ",
+          "QSPR"
+        ],
+        "answer": "PQRS",
+        "explanation": "Option A: This gives the sequence PQRS. Option B: This gives the sequence PRQS. Option C: This gives the sequence RPSQ. Option D: This gives the sequence QSPR. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 48,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Agriculture is the backbone of our economy. P: Farmers work hard despite unpredictable weather. Q: They grow crops that feed the nation. R: Yet, they face several challenges. S: Modern technology can support better yield. 6. Ensuring farmer welfare is national duty.",
+        "options": [
+          "PQRS",
+          "PRQS",
+          "QPRS",
+          "QRSP"
+        ],
+        "answer": "QPRS",
+        "explanation": "Option A: This gives the sequence PQRS. Option B: This gives the sequence PRQS. Option C: This gives the sequence QPRS. Option D: This gives the sequence QRSP. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 47,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. The United Nations was formed after the Second World War. P: It was established to prevent future global conflicts. Q: Over the decades, it has expanded its roles. R: Now it addresses issues like climate change and human rights. S: Its peacekeeping missions have played a vital role in conflict zones. 6. Despite criticisms, the UN remains a key international body.",
+        "options": [
+          "QPRS",
+          "PRSQ",
+          "RPSQ",
+          "PQSR"
+        ],
+        "answer": "PQSR",
+        "explanation": "Option A: This gives the sequence QPRS. Option B: This gives the sequence PRSQ. Option C: This gives the sequence RPSQ. Option D: This gives the sequence PQSR. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 46,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. The spacecraft initiated descent towards the red planet. P: The data gathered during this process will aid future missions. Q: The heat shield protected it from atmospheric entry. R: Soon after, the parachutes deployed successfully. S: Engineers monitored every second of the landing sequence. 6. This landing marked a historic step in interplanetary exploration.",
+        "options": [
+          "RQSP",
+          "QSRP",
+          "SQRP",
+          "QRSP"
+        ],
+        "answer": "QSRP",
+        "explanation": "Option A: This gives the sequence RQSP. Option B: This gives the sequence QSRP. Option C: This gives the sequence SQRP. Option D: This gives the sequence QRSP. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 45,
+        "question": "Choose the correct sequence to form a meaningful sentence: (",
+        "options": [
+          "served (",
+          "dinner (",
+          "they (",
+          "late A) ACBD B) BADC C) BACD D) CBAD"
+        ],
+        "answer": "late A) ACBD B) BADC C) BACD D) CBAD",
+        "explanation": "Option A: This gives the sequence served (. Option B: This gives the sequence dinner (. Option C: This gives the sequence they (. Option D: This gives the sequence late A) ACBD B) BADC C) BACD D) CBAD. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 44,
+        "question": "Rearrange the parts of the sentence in the correct order. Advances in satellite imaging P. across diverse geographic regions Q. enabling accurate climate modelling R. and disaster prediction systems S. have transformed environmental monitoring,",
+        "options": [
+          "SQRP",
+          "PRQS",
+          "QPSR",
+          "RPSQ"
+        ],
+        "answer": "SQRP",
+        "explanation": "Option A: This gives the sequence SQRP. Option B: This gives the sequence PRQS. Option C: This gives the sequence QPSR. Option D: This gives the sequence RPSQ. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 43,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. They are formed by tiny animals called coral polyps. 2. Coral reefs are home to many marine species. 3. This is caused by rising ocean temperatures and pollution. 4. Corals are losing their wonderful colours due to coral bleaching.",
+        "options": [
+          "1-3-2-4",
+          "2-1-4-3",
+          "4-3-2-1",
+          "2-3-1-4"
+        ],
+        "answer": "2-1-4-3",
+        "explanation": "Option A: This gives the sequence 1-3-2-4. Option B: This gives the sequence 2-1-4-3. Option C: This gives the sequence 4-3-2-1. Option D: This gives the sequence 2-3-1-4. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 42,
+        "question": "Rearrange the following steps of the national census process in the correct order: P. Enumerators visit households to collect data Q. Data is compiled and analyzed at central offices R. The government announces census dates and guidelines S. A final census report is published and shared with the public",
+        "options": [
+          "P -> Q -> S -> R",
+          "S -> Q -> P -> R",
+          "R -> P -> Q -> S",
+          "R -> Q -> P -> S"
+        ],
+        "answer": "R -> P -> Q -> S",
+        "explanation": "Option A: This gives the sequence P -> Q -> S -> R. Option B: This gives the sequence S -> Q -> P -> R. Option C: This gives the sequence R -> P -> Q -> S. Option D: This gives the sequence R -> Q -> P -> S. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete order.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 41,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "by the end of the year (",
+          "complete (",
+          "the construction company (",
+          "promised to A) CADB B) DACB C) ACBD D) CDAB"
+        ],
+        "answer": "complete (",
+        "explanation": "Option A: This gives the sequence by the end of the year (. Option B: This gives the sequence complete (. Option C: This gives the sequence the construction company (. Option D: This gives the sequence promised to A) CADB B) DACB C) ACBD D) CDAB. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 40,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Art is a reflection of society. P: It communicates emotions beyond words. Q: From cave paintings to modern murals, art evolves. R: Artists express views on culture, politics, and identity. S: It also raises awareness on social issues. 6. Hence, art holds immense power in society.",
+        "options": [
+          "QPRS",
+          "QRPS",
+          "PRQS",
+          "RSPQ"
+        ],
+        "answer": "QRPS",
+        "explanation": "Option A: This gives the sequence QPRS. Option B: This gives the sequence QRPS. Option C: This gives the sequence PRQS. Option D: This gives the sequence RSPQ. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 39,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Honeybees are vital for pollination. P: They transfer pollen between flowers. Q: This helps in the growth of fruits and seeds. R: Without bees, many crops would fail. S: But bee populations are declining globally. 6. Protecting bees is essential for food security.",
+        "options": [
+          "PSQR",
+          "PRQS",
+          "PQRS",
+          "RPQS"
+        ],
+        "answer": "PQRS",
+        "explanation": "Option A: This gives the sequence PSQR. Option B: This gives the sequence PRQS. Option C: This gives the sequence PQRS. Option D: This gives the sequence RPQS. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 38,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "his advice (",
+          "the students (",
+          "accepted (",
+          "happily A) BACD B) BADC C) BCAD D) ABCD"
+        ],
+        "answer": "his advice (",
+        "explanation": "Option A: This gives the sequence his advice (. Option B: This gives the sequence the students (. Option C: This gives the sequence accepted (. Option D: This gives the sequence happily A) BACD B) BADC C) BCAD D) ABCD. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 37,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The digital divide continues to deepen social inequalities. P. Unequal access to the internet limits educational opportunities. Q. Those in rural or underserved areas lag behind. R. It prevents skill development and employment access. S. Technology's benefits are unequally distributed. 6. Bridging this gap is critical for inclusive growth.",
+        "options": [
+          "SQPR",
+          "SPRQ",
+          "PQRS",
+          "QPRS"
+        ],
+        "answer": "SQPR",
+        "explanation": "Option A: This gives the sequence SQPR. Option B: This gives the sequence SPRQ. Option C: This gives the sequence PQRS. Option D: This gives the sequence QPRS. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 36,
+        "question": "Which of the given options is the most logical sequence of the following sentences to form a meaningful paragraph? 1. Cybersecurity is a growing concern in the digital age. 2. Strong passwords, encryption, and awareness can help prevent cybercrimes. 3. Hackers use advanced techniques to steal personal and financial data. 4. It means protecting computer systems from attacks by hackers.",
+        "options": [
+          "2-3-1-4",
+          "1-4-3-2",
+          "4-1-3-2",
+          "3-2-4-1"
+        ],
+        "answer": "1-4-3-2",
+        "explanation": "Option A: This gives the sequence 2-3-1-4. Option B: This gives the sequence 1-4-3-2. Option C: This gives the sequence 4-1-3-2. Option D: This gives the sequence 3-2-4-1. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 35,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Economic inflation affects both consumers and businesses. P: Businesses struggle to maintain profit margins. Q: Rising prices reduce the purchasing power of individuals. R: Governments may intervene through monetary policy. S: It creates uncertainty in long-term investment planning. 6. Managing inflation is crucial for economic stability.",
+        "options": [
+          "QPRS",
+          "PQRS",
+          "QRSP",
+          "SQPR"
+        ],
+        "answer": "QPRS",
+        "explanation": "Option A: This gives the sequence QPRS. Option B: This gives the sequence PQRS. Option C: This gives the sequence QRSP. Option D: This gives the sequence SQPR. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 34,
+        "question": "Choose the correct sequence to form a meaningful sentence: (",
+        "options": [
+          "the winner (",
+          "declared (",
+          "was (",
+          "yesterday A) CABD B) ACBD C) BCAD D) CBAD"
+        ],
+        "answer": "the winner (",
+        "explanation": "Option A: This gives the sequence the winner (. Option B: This gives the sequence declared (. Option C: This gives the sequence was (. Option D: This gives the sequence yesterday A) CABD B) ACBD C) BCAD D) CBAD. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 33,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "to protect endangered species (",
+          "wildlife sanctuaries (",
+          "have been established (",
+          "across the country A) BADC B) BACD C) BCAD D) CBAD"
+        ],
+        "answer": "wildlife sanctuaries (",
+        "explanation": "Option A: This gives the sequence to protect endangered species (. Option B: This gives the sequence wildlife sanctuaries (. Option C: This gives the sequence have been established (. Option D: This gives the sequence across the country A) BADC B) BACD C) BCAD D) CBAD. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 32,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "were injured (",
+          "many passengers (",
+          "in the accident (",
+          "yesterday A) BCAD B) BCDA C) BACD D) BADC"
+        ],
+        "answer": "in the accident (",
+        "explanation": "Option A: This gives the sequence were injured (. Option B: This gives the sequence many passengers (. Option C: This gives the sequence in the accident (. Option D: This gives the sequence yesterday A) BCAD B) BCDA C) BACD D) BADC. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 31,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "after the meeting (",
+          "the team members (",
+          "went (",
+          "to a restaurant A) ABCD B) BADC C) BCAD D) BACD"
+        ],
+        "answer": "to a restaurant A) ABCD B) BADC C) BCAD D) BACD",
+        "explanation": "Option A: This gives the sequence after the meeting (. Option B: This gives the sequence the team members (. Option C: This gives the sequence went (. Option D: This gives the sequence to a restaurant A) ABCD B) BADC C) BCAD D) BACD. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 30,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Recycling helps in environmental protection. P: It reduces the amount of waste in landfills. Q: Recycling paper saves trees and water. R: It also cuts down pollution caused by burning waste. S: But awareness among people is still low. 6. Public campaigns can improve participation.",
+        "options": [
+          "QPRS",
+          "PQRS",
+          "QRSP",
+          "PRSQ"
+        ],
+        "answer": "PRSQ",
+        "explanation": "Option A: This gives the sequence QPRS. Option B: This gives the sequence PQRS. Option C: This gives the sequence QRSP. Option D: This gives the sequence PRSQ. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 29,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "invited (",
+          "to the event (",
+          "many guests (",
+          "were A) DABC B) DCAB C) CDAB D) DACB"
+        ],
+        "answer": "were A) DABC B) DCAB C) CDAB D) DACB",
+        "explanation": "Option A: This gives the sequence invited (. Option B: This gives the sequence to the event (. Option C: This gives the sequence many guests (. Option D: This gives the sequence were A) DABC B) DCAB C) CDAB D) DACB. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 28,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. The invention of the wheel changed the world. P: Transport became easier. Q: Machines could now be built. R: Travel became faster. S: Roads improved quickly. 6. It was a great invention.",
+        "options": [
+          "PRQS",
+          "PRSQ",
+          "PQRS",
+          "PSRQ"
+        ],
+        "answer": "PRSQ",
+        "explanation": "Option A: This gives the sequence PRQS. Option B: This gives the sequence PRSQ. Option C: This gives the sequence PQRS. Option D: This gives the sequence PSRQ. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 27,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. The invention of the telescope changed astronomy. P: Scientists could observe distant galaxies. Q: They discovered stars not visible to the naked eye. R: Earlier, knowledge was limited to nearby celestial bodies. S: The new tool opened a whole new universe. 6. Astronomy became a precise science.",
+        "options": [
+          "SRPQ",
+          "PQRS",
+          "RPSQ",
+          "RSPQ"
+        ],
+        "answer": "RPSQ",
+        "explanation": "Option A: This gives the sequence SRPQ. Option B: This gives the sequence PQRS. Option C: This gives the sequence RPSQ. Option D: This gives the sequence RSPQ. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 26,
+        "question": "Choose the correct sequence to form a meaningful sentence: (",
+        "options": [
+          "the guests (",
+          "arrived (",
+          "at the party (",
+          "early A) BACD B) ABDC C) BADC D) CBAD"
+        ],
+        "answer": "the guests (",
+        "explanation": "Option A: This gives the sequence the guests (. Option B: This gives the sequence arrived (. Option C: This gives the sequence at the party (. Option D: This gives the sequence early A) BACD B) ABDC C) BADC D) CBAD. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 25,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "despite poor rainfall (",
+          "the farmers (",
+          "managed to harvest (",
+          "a good crop A) BDAC B) BADC C) BACD D) CBAD"
+        ],
+        "answer": "managed to harvest (",
+        "explanation": "Option A: This gives the sequence despite poor rainfall (. Option B: This gives the sequence the farmers (. Option C: This gives the sequence managed to harvest (. Option D: This gives the sequence a good crop A) BDAC B) BADC C) BACD D) CBAD. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 24,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Artificial Intelligence is reshaping industries. P: It also improves customer service through automation. Q: In healthcare, it helps in quick diagnosis. R: AI systems reduce human error in complex calculations. S: From manufacturing to medicine, its impact is visible. 6. Its future role will only expand.",
+        "options": [
+          "SQRP",
+          "RSQP",
+          "QPRS",
+          "QRPS"
+        ],
+        "answer": "SQRP",
+        "explanation": "Option A: This gives the sequence SQRP. Option B: This gives the sequence RSQP. Option C: This gives the sequence QPRS. Option D: This gives the sequence QRPS. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 23,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "opened (",
+          "suddenly (",
+          "the door (",
+          "he A) DABC B) CBAD C) DCAB D) DACB"
+        ],
+        "answer": "the door (",
+        "explanation": "Option A: This gives the sequence opened (. Option B: This gives the sequence suddenly (. Option C: This gives the sequence the door (. Option D: This gives the sequence he A) DABC B) CBAD C) DCAB D) DACB. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 22,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Riya enjoys learning different languages. P: She attends French classes. Q: Her Spanish is improving. R: She knows some German. S: She uses an app to practice daily. 6. She wants to be a polyglot.",
+        "options": [
+          "RQSP",
+          "QRSP",
+          "QPRS",
+          "RPQS"
+        ],
+        "answer": "RQSP",
+        "explanation": "Option A: This gives the sequence RQSP. Option B: This gives the sequence QRSP. Option C: This gives the sequence QPRS. Option D: This gives the sequence RPQS. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 21,
+        "question": "Rearrange the parts of this sentence: (",
+        "options": [
+          "their demands (",
+          "the workers (",
+          "went on strike (",
+          "after the management rejected A) DBAC B) DACB C) BDAC D) Not Answered"
+        ],
+        "answer": "went on strike (",
+        "explanation": "Option A: This gives the sequence their demands (. Option B: This gives the sequence the workers (. Option C: This gives the sequence went on strike (. Option D: This gives the sequence after the management rejected A) DBAC B) DACB C) BDAC D) Not Answered. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 20,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. Exercise keeps the body fit and active. P: It also boosts mental health. Q: Regular workouts reduce stress levels. R: Walking, cycling, and yoga are easy options. S: Physical activity strengthens the heart and muscles. 6. So, exercise should be part of our routine.",
+        "options": [
+          "SPRQ",
+          "QRSP",
+          "SQPR",
+          "PRQS"
+        ],
+        "answer": "SPRQ",
+        "explanation": "Option A: This gives the sequence SPRQ. Option B: This gives the sequence QRSP. Option C: This gives the sequence SQPR. Option D: This gives the sequence PRQS. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 19,
+        "question": "In the following question, the first and the last parts of the sentence/passage are numbered 1 and 6. The rest of the sentence/passage is split into four parts - P, Q, R, and S. These four parts are not given in their proper order. Read the sentence/passage and find the most logical order of the parts between 1 and 6. The Earth's climate has changed over centuries. P: But current warming is caused by human actions. Q: Historically, it changed due to natural causes. R: Burning fossil fuels increases greenhouse gases. S: Deforestation worsens the problem. 6. This calls for urgent action.",
+        "options": [
+          "QPRS",
+          "QPSR",
+          "SQRP",
+          "PRSQ"
+        ],
+        "answer": "QPSR",
+        "explanation": "Option A: This gives the sequence QPRS. Option B: This gives the sequence QPSR. Option C: This gives the sequence SQRP. Option D: This gives the sequence PRSQ. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 18,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. He has inspired millions through his speeches and writings. 2. He came to be known as the \"**Missile Man of India**\" for his contributions. 3. In the year 2002, he became the President of India. 4. Dr. A.P.J. Abdul Kalam worked as a scientist at ISRO for forty years.",
+        "options": [
+          "2-4-3-1",
+          "4-2-3-1",
+          "1-3-2-4",
+          "2-3-4-1"
+        ],
+        "answer": "4-2-3-1",
+        "explanation": "Option A: This gives the sequence 2-4-3-1. Option B: This gives the sequence 4-2-3-1. Option C: This gives the sequence 1-3-2-4. Option D: This gives the sequence 2-3-4-1. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 17,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "to submit (",
+          "asked him (",
+          "the report (",
+          "the manager A) DABC B) BACD C) DBCA D) DCAB"
+        ],
+        "answer": "to submit (",
+        "explanation": "Option A: This gives the sequence to submit (. Option B: This gives the sequence asked him (. Option C: This gives the sequence the report (. Option D: This gives the sequence the manager A) DABC B) BACD C) DBCA D) DCAB. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 16,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. The advancements in science led by figures like Copernicus, Galileo and Descartes also questioned its established views of the universe. 2. It encouraged the growth of secularism and individualism, drawing inspiration from the classical works of ancient Greece and Rome. 3. The invention of the printing press further accelerated this shift, making books more accessible and promoting literacy and individual thinking. 4. The Renaissance ushered in a new era that questioned the monopoly of the Roman Catholic Church on knowledge and spiritual guidance.",
+        "options": [
+          "4-2-1-3",
+          "2-1-4-3",
+          "1-3-4-2",
+          "3-2-1-4"
+        ],
+        "answer": "4-2-1-3",
+        "explanation": "Option A: This gives the sequence 4-2-1-3. Option B: This gives the sequence 2-1-4-3. Option C: This gives the sequence 1-3-4-2. Option D: This gives the sequence 3-2-1-4. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 15,
+        "question": "Arrange the sentence parts: (",
+        "options": [
+          "should follow (",
+          "traffic rules (",
+          "strictly (",
+          "everyone A) DABC B) DCAB C) DBCA D) DACB"
+        ],
+        "answer": "should follow (",
+        "explanation": "Option A: This gives the sequence should follow (. Option B: This gives the sequence traffic rules (. Option C: This gives the sequence strictly (. Option D: This gives the sequence everyone A) DABC B) DCAB C) DBCA D) DACB. **Option A** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "A",
+        "answerIndex": 0
+      },
+      {
+        "id": 14,
+        "question": "Rearrange the following steps of the Union Budget preparation in the correct order: P. The finance minister presents the budget in Parliament Q. The Ministry of Finance collects estimates from various ministries R. The budget is passed by both houses of Parliament S. The Cabinet approves the final draft of the budget",
+        "options": [
+          "P → Q → S → R",
+          "Q → S → P → R",
+          "Q → P → R → S",
+          "S → Q → P → R"
+        ],
+        "answer": "Q → S → P → R",
+        "explanation": "Option A: This gives the sequence P → Q → S → R. Option B: This gives the sequence Q → S → P → R. Option C: This gives the sequence Q → P → R → S. Option D: This gives the sequence S → Q → P → R. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 13,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. It cut off oxygen and prevented the usual decay caused by air, moisture, and bacteria. 2. The excavation of Pompeii provided a remarkably well-preserved glimpse into life in ancient Rome. 3. When the eruption occurred, a thick layer of hot ash and pumice rapidly buried the town. 4. Unlike other ruins, Pompeii remained frozen in time due to Mount Vesuvius' sudden eruption.",
+        "options": [
+          "1-2-4-3",
+          "3-1-4-2",
+          "4-2-3-1",
+          "2-4-3-1"
+        ],
+        "answer": "2-4-3-1",
+        "explanation": "Option A: This gives the sequence 1-2-4-3. Option B: This gives the sequence 3-1-4-2. Option C: This gives the sequence 4-2-3-1. Option D: This gives the sequence 2-4-3-1. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 12,
+        "question": "Choose the correct sequence to form a meaningful sentence: (",
+        "options": [
+          "very interesting (",
+          "is reading (",
+          "books (",
+          "fiction A) BDCA B) BADC C) BCAD D) BACD"
+        ],
+        "answer": "books (",
+        "explanation": "Option A: This gives the sequence very interesting (. Option B: This gives the sequence is reading (. Option C: This gives the sequence books (. Option D: This gives the sequence fiction A) BDCA B) BADC C) BCAD D) BACD. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 11,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. Franklin hypothesized that lightning was a form of electrical discharge. 2. Franklin flew a kite made of a silk string and attached a metal key to it during a storm. 3. He wanted to prove this by conducting an experiment to capture the electrical charge from a thunderstorm. 4. As the storm approached, the kite was struck by lightning, and the metal key conducted the electrical charge.",
+        "options": [
+          "1-2-3-4",
+          "1-3-2-4",
+          "1-2-4-3",
+          "1-4-3-2"
+        ],
+        "answer": "1-3-2-4",
+        "explanation": "Option A: This gives the sequence 1-2-3-4. Option B: This gives the sequence 1-3-2-4. Option C: This gives the sequence 1-2-4-3. Option D: This gives the sequence 1-4-3-2. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 10,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. Feminism began as a fight for women's suffrage and then expanded to include social discrimination, workplace inequalities and reproductive rights. 2. Nevertheless, the movement received significant support from progressive thinkers who believed in gender equality and the dismantling of patriarchal structures. 3. Conservatives viewed the feminist movement as threatening to family values, with fears that women would abandon traditional roles as wives and mothers. 4. The evolution of feminism has been a transformative journey, reflecting changing societal attitudes and the struggles for gender equality.",
+        "options": [
+          "3-4-2-1",
+          "1-3-4-2",
+          "2-3-1-4",
+          "4-1-3-2"
+        ],
+        "answer": "4-1-3-2",
+        "explanation": "Option A: This gives the sequence 3-4-2-1. Option B: This gives the sequence 1-3-4-2. Option C: This gives the sequence 2-3-1-4. Option D: This gives the sequence 4-1-3-2. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 9,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. His observations eventually contributed to his groundbreaking book, On the Origin of Species. 2. The Galápagos Islands are famous for their diverse wildlife and their role in Charles Darwin's theory of evolution. 3. This led him to propose the idea of natural selection, where species evolve over time to adapt to their environment. 4. Darwin observed that finches on different islands had distinct beak shapes suited to their specific diets.",
+        "options": [
+          "2-4-1-3",
+          "4-2-3-1",
+          "2-4-3-1",
+          "1-3-2-4"
+        ],
+        "answer": "2-4-3-1",
+        "explanation": "Option A: This gives the sequence 2-4-1-3. Option B: This gives the sequence 4-2-3-1. Option C: This gives the sequence 2-4-3-1. Option D: This gives the sequence 1-3-2-4. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 8,
+        "question": "Arrange the parts to form a correct sentence: (1) The athlete trained relentlessly. (2) He overcame several injuries. (3) He qualified for the finals. (4) He inspired young players.",
+        "options": [
+          "2-1-3-4",
+          "1-2-3-4",
+          "1-2-4-3",
+          "1-3-2-4"
+        ],
+        "answer": "1-2-3-4",
+        "explanation": "Option A: This gives the sequence 2-1-3-4. Option B: This gives the sequence 1-2-3-4. Option C: This gives the sequence 1-2-4-3. Option D: This gives the sequence 1-3-2-4. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 7,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. He co-founded Apple Inc. along with Wozniak. 2. Steve Jobs was a visionary entrepreneur and innovator. 3. His ideas continue to influence modern technology and design. 4. Apple Inc. introduced products like iPhone and iPad.",
+        "options": [
+          "3-1-2-4",
+          "2-1-4-3",
+          "1-2-4-3",
+          "4-3-1-2"
+        ],
+        "answer": "2-1-4-3",
+        "explanation": "Option A: This gives the sequence 3-1-2-4. Option B: This gives the sequence 2-1-4-3. Option C: This gives the sequence 1-2-4-3. Option D: This gives the sequence 4-3-1-2. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 6,
+        "question": "Which of the given options is the most logical sequencing of the following sentences to form a meaningful paragraph? 1. The primary factor in its formation was the Colorado River, which gradually carved through layers of rock, deepening and widening the canyon. 2. The Grand Canyon was formed over millions of years through the combined forces of geological activity and erosion. 3. Weathering from wind, rain, and temperature changes further shaped the canyon's intricate rock formations. 4. Tectonic uplift of the Colorado Plateau increased the river's flow and erosive power, allowing it to cut deeper into the landscape.",
+        "options": [
+          "1-3-4-2",
+          "3-2-1-4",
+          "2-1-4-3",
+          "4-3-2-1"
+        ],
+        "answer": "2-1-4-3",
+        "explanation": "Option A: This gives the sequence 1-3-4-2. Option B: This gives the sequence 3-2-1-4. Option C: This gives the sequence 2-1-4-3. Option D: This gives the sequence 4-3-2-1. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 5,
+        "question": "Rearrange the parts of the sentence in the correct order. The economic slowdown P. reducing consumer spending Q. in multiple industries R. straining household incomes and S. has led to job losses",
+        "options": [
+          "QSPR",
+          "SQRP",
+          "PRSQ",
+          "RSPQ"
+        ],
+        "answer": "SQRP",
+        "explanation": "Option A: This gives the sequence QSPR. Option B: This gives the sequence SQRP. Option C: This gives the sequence PRSQ. Option D: This gives the sequence RSPQ. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 4,
+        "question": "Rearrange the parts of the sentence in the correct order. The update P. ensuring security Q. enhanced encryption R. and data autonomy S. across user devices",
+        "options": [
+          "QRPS",
+          "PSRQ",
+          "SPQR",
+          "QSPR"
+        ],
+        "answer": "PSRQ",
+        "explanation": "Option A: This gives the sequence QRPS. Option B: This gives the sequence PSRQ. Option C: This gives the sequence SPQR. Option D: This gives the sequence QSPR. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      },
+      {
+        "id": 3,
+        "question": "Rearrange the following parts (P, Q, R, S) to form the most meaningful and grammatically correct sentence: P. though he lacked international experience Q. was selected for the Olympic squad R. the young shooter S. due to his exceptional performance at the national trials",
+        "options": [
+          "P S R Q",
+          "R Q P S",
+          "R Q S P",
+          "P R Q S"
+        ],
+        "answer": "R Q S P",
+        "explanation": "Option A: This gives the sequence P S R Q. Option B: This gives the sequence R Q P S. Option C: This gives the sequence R Q S P. Option D: This gives the sequence P R Q S. **Option C** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "C",
+        "answerIndex": 2
+      },
+      {
+        "id": 2,
+        "question": "Rearrange the parts of the sentence in the correct order. Inflation P. making it difficult for households Q. to manage daily expenses R. affects purchasing power S. and leads to increased cost of living,",
+        "options": [
+          "QSPR",
+          "SRQP",
+          "PQRS",
+          "RSPQ"
+        ],
+        "answer": "RSPQ",
+        "explanation": "Option A: This gives the sequence QSPR. Option B: This gives the sequence SRQP. Option C: This gives the sequence PQRS. Option D: This gives the sequence RSPQ. **Option D** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "D",
+        "answerIndex": 3
+      },
+      {
+        "id": 1,
+        "question": "Arrange the parts to form a correct sentence: (1) The exhibition opened to the public. (2) Visitors admired the artworks. (3) Interactive sessions were conducted. (4) Feedback was overwhelmingly positive.",
+        "options": [
+          "1-2-4-3",
+          "1-2-3-4",
+          "2-3-1-4",
+          "2-3-4-1"
+        ],
+        "answer": "1-2-3-4",
+        "explanation": "Option A: This gives the sequence 1-2-4-3. Option B: This gives the sequence 1-2-3-4. Option C: This gives the sequence 2-3-1-4. Option D: This gives the sequence 2-3-4-1. **Option B** correctly applies: this sequence forms the most logical, coherent, and grammatically complete sentence.",
+        "answerKey": "B",
+        "answerIndex": 1
+      }
+    ]
+  }
+}

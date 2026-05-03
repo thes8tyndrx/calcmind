@@ -589,10 +589,6 @@ function formatVocabQuestion(q, topic) {
         display = cleanText(rawDisplay.replace(/^.*:\s*/, ""));
       }
     }
-    // Inject the subtopic clearly so they know what type of question it is during a mistakes quiz!
-    if ((q.topic || topic).startsWith('mistakes_') && q._originalTopic) {
-      display = `<span style="font-size:0.7em;opacity:0.8;color:#00b4d8;display:block;margin-bottom:6px;letter-spacing:1px;text-transform:uppercase;">${q._originalTopic.replace(/_/g, ' ')}</span>` + display;
-    }
   } else {
     display = cleanText(rawDisplay)
       .replace(/\*\*([^*]+)\*\*/g, (match, p1) => {
@@ -1282,8 +1278,48 @@ function useDailyAvailability(type) {
   return { available, loading };
 }
 
-function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, onStartMistakes, user }) {
+function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, onStartMistakes, user, onStartWeekly }) {
   const [subTab, setSubTab] = useState('daily');
+  const [expandedCAMonth, setExpandedCAMonth] = useState(null);
+  const [expandedVocabMonth, setExpandedVocabMonth] = useState(null);
+  
+  const getMonthsSinceMay2026 = () => {
+    const months = [];
+    const startYear = 2026;
+    const startMonth = 4; // May is index 4
+    
+    const today = new Date();
+    const currYear = today.getFullYear();
+    const currMonth = today.getMonth();
+    
+    for (let y = startYear; y <= currYear; y++) {
+      const mStart = (y === startYear) ? startMonth : 0;
+      const mEnd = (y === currYear) ? currMonth : 11;
+      for (let m = mStart; m <= mEnd; m++) {
+        months.push({ year: y, month: m });
+      }
+    }
+    return months.reverse();
+  };
+
+  const generateMonthDates = (year, month) => {
+    const today = new Date();
+    const isCurrentMonth = today.getFullYear() === year && today.getMonth() === month;
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const limit = isCurrentMonth ? today.getDate() : daysInMonth;
+    
+    const dates = [];
+    const yy = year.toString();
+    const mm = (month + 1).toString().padStart(2, '0');
+    for (let i = limit; i >= 1; i--) {
+      const dd = i.toString().padStart(2, '0');
+      dates.push(`${yy}-${mm}-${dd}`);
+    }
+    return dates;
+  };
+
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
   const { available: caAvail, loading: caLoading } = useDailyAvailability('ca');
   const { available: vocAvail, loading: vocLoading } = useDailyAvailability('vocab');
   const [manifest, setManifest] = useState(null);
@@ -1341,39 +1377,97 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
 
       {subTab === 'daily' && (
         <>
-          {/* Current Affairs */}
+          {/* Current Affairs Monthly Folders */}
           <div>
             <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
               <span style={{ color: "#a385e0" }}>📅</span> Current Affairs
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {caLoading ? <div style={{width: 24, height: 24, border: `3px solid ${T.border}`, borderTop: `3px solid ${GOLD}`, borderRadius: '50%', animation: 'spin 1s linear infinite', margin: '16px auto'}}></div> :
-                caEntries.length === 0
-                ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
-                : caEntries.slice(0, 3).map(([dateKey]) => (
-                  <DayRow key={dateKey} dateKey={dateKey} label="Daily CA" icon="📰" cat="ca"
-                    accentColor="#9370db" accentBg="linear-gradient(135deg,rgba(147,112,219,0.08),rgba(147,112,219,0.02))"
-                    btnColor="#a385e0" />
-                ))
-              }
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {getMonthsSinceMay2026().map(({ year, month }) => {
+                const monthKey = `${year}-${month}`;
+                const isExpanded = expandedCAMonth === monthKey;
+                const monthLabel = `${monthNames[month]} ${year}`;
+                return (
+                  <div key={monthKey} style={{background:T.card, border:`1px solid ${T.border}`, borderRadius:16, overflow:"hidden"}}>
+                    <button 
+                      onClick={() => setExpandedCAMonth(isExpanded ? null : monthKey)}
+                      style={{width:"100%", padding:"16px", display:"flex", alignItems:"center", gap:14, cursor:"pointer", background:isExpanded?T.card2:"transparent"}}>
+                      <div style={{background:`#9370db22`, width:44, height:44, borderRadius:12, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22}}>
+                        📆
+                      </div>
+                      <div style={{flex:1, textAlign:"left"}}>
+                        <div style={{color:T.text, fontWeight:700, fontSize:16, fontFamily:"'Outfit',sans-serif"}}>{monthLabel}</div>
+                        <div style={{color:"#a385e0", fontWeight:600, fontSize:12, marginTop:2}}>Daily CA Quizzes</div>
+                      </div>
+                      <div style={{color:T.muted, fontSize:18, transform:isExpanded?"rotate(180deg)":"none", transition:"transform 0.2s"}}>▼</div>
+                    </button>
+                    
+                    {isExpanded && (
+                      <div style={{padding:"0 16px 16px 16px", display:"flex", flexDirection:"column", gap:8, borderTop:`1px solid ${T.border}`, paddingTop:16}}>
+                        {generateMonthDates(year, month).map(dateKey => (
+                          <DayRow 
+                            key={dateKey} 
+                            dateKey={dateKey} 
+                            label="Daily CA" 
+                            icon="📰" 
+                            cat="ca"
+                            accentColor="#9370db" 
+                            accentBg={`linear-gradient(135deg,rgba(147,112,219,0.08),rgba(147,112,219,0.02))`}
+                            btnColor="#a385e0" 
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
-          {/* Hindu Vocab */}
+          {/* Hindu Vocab Monthly Folders */}
           <div>
             <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
               <span style={{ color: "#00b4d8" }}>📖</span> The Hindu Vocab
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {vocLoading ? <div style={{width: 24, height: 24, border: `3px solid ${T.border}`, borderTop: `3px solid #00b4d8`, borderRadius: '50%', animation: 'spin 1s linear infinite', margin: '16px auto'}}></div> :
-                vocEntries.length === 0
-                ? <div style={{ color: T.muted, fontSize: 13, fontFamily: "'Outfit',sans-serif", padding: "12px 0" }}>No quizzes uploaded yet. Check back soon!</div>
-                : vocEntries.slice(0, 3).map(([dateKey]) => (
-                  <DayRow key={dateKey} dateKey={dateKey} label="The Hindu Vocab" icon="🖋️" cat="vocab"
-                    accentColor="#00b4d8" accentBg="linear-gradient(135deg,rgba(0,180,216,0.08),rgba(0,180,216,0.02))"
-                    btnColor="#00b4d8" />
-                ))
-              }
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {getMonthsSinceMay2026().map(({ year, month }) => {
+                const monthKey = `${year}-${month}`;
+                const isExpanded = expandedVocabMonth === monthKey;
+                const monthLabel = `${monthNames[month]} ${year}`;
+                return (
+                  <div key={monthKey} style={{background:T.card, border:`1px solid ${T.border}`, borderRadius:16, overflow:"hidden"}}>
+                    <button 
+                      onClick={() => setExpandedVocabMonth(isExpanded ? null : monthKey)}
+                      style={{width:"100%", padding:"16px", display:"flex", alignItems:"center", gap:14, cursor:"pointer", background:isExpanded?T.card2:"transparent"}}>
+                      <div style={{background:`#00b4d822`, width:44, height:44, borderRadius:12, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22}}>
+                        📆
+                      </div>
+                      <div style={{flex:1, textAlign:"left"}}>
+                        <div style={{color:T.text, fontWeight:700, fontSize:16, fontFamily:"'Outfit',sans-serif"}}>{monthLabel}</div>
+                        <div style={{color:"#00b4d8", fontWeight:600, fontSize:12, marginTop:2}}>The Hindu Vocab</div>
+                      </div>
+                      <div style={{color:T.muted, fontSize:18, transform:isExpanded?"rotate(180deg)":"none", transition:"transform 0.2s"}}>▼</div>
+                    </button>
+                    
+                    {isExpanded && (
+                      <div style={{padding:"0 16px 16px 16px", display:"flex", flexDirection:"column", gap:8, borderTop:`1px solid ${T.border}`, paddingTop:16}}>
+                        {generateMonthDates(year, month).map(dateKey => (
+                          <DayRow 
+                            key={dateKey} 
+                            dateKey={dateKey} 
+                            label="The Hindu Vocab" 
+                            icon="🖋️" 
+                            cat="vocab"
+                            accentColor="#00b4d8" 
+                            accentBg={`linear-gradient(135deg,rgba(0,180,216,0.08),rgba(0,180,216,0.02))`}
+                            btnColor="#00b4d8" 
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -1383,10 +1477,20 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
               <span style={{ color: GOLD }}>🏆</span> Mega Quizzes
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-              <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
+              <button onClick={() => onStartWeekly('ca')} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
                 <div style={{ fontSize: 24 }}>📆</div>
-                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text }}>Weekly Quiz</div>
-                <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif" }}>Top 50 Ques</div>
+                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text, textAlign: "center" }}>Weekly CA</div>
+                <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif", textAlign: "center" }}>
+                  {(() => {
+                    const today = new Date();
+                    const day = today.getDay();
+                    const daysSinceMonday = (day + 6) % 7;
+                    const mon = new Date(today); mon.setDate(today.getDate() - daysSinceMonday);
+                    const sat = new Date(mon); sat.setDate(mon.getDate() + 5);
+                    const opts = { day: 'numeric', month: 'short' };
+                    return `${mon.toLocaleDateString('en-IN', opts)} - ${sat.toLocaleDateString('en-IN', opts)}`;
+                  })()}
+                </div>
               </button>
               <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
                 <div style={{ fontSize: 24 }}>🔥</div>
@@ -2273,6 +2377,7 @@ export default function App(){
   const [prevTab,setPrevTab]=useState("home");
   const [modeId,setModeId]=useState(null);
   const [customConfig,setCustomConfig]=useState(null);
+  const [quizCountdown,setQuizCountdown]=useState(null);
 
 
   const [showProfile,setShowProfile]=useState(false);
@@ -2475,6 +2580,15 @@ export default function App(){
       }
       if(cc.type==="arith")return cc.gen();
       if(cc.type==="vocab"){
+        if (cc.isMistakesPool) {
+          const pool = cc.mistakesPool || [];
+          const nextQ = pool.find(q => (cc.mistakesCorrectStreak[q.id] || 0) < 2);
+          if (nextQ) {
+            return formatVocabQuestion(nextQ, cc.topic);
+          } else {
+            return { __done: true, type: 'vocab' };
+          }
+        }
         // Sequential ordering for JSON quizzes (topic starts with 'dyn_' or 'topic_')
         const isJsonQuiz = cc.topic && (cc.topic.startsWith('dyn_') || cc.topic.startsWith('topic_') || cc.topic.startsWith('mistakes_'));
         if (isJsonQuiz) {
@@ -2568,7 +2682,7 @@ export default function App(){
     const cfg = {topic: topicId, type:"vocab", count: totalQs};
     setModeId("vocab");setCustomConfig(cfg);
     setPrevTab('quiz'); // remember where we came from so Back returns here
-    setTab("game");initGame(cfg,"vocab",0);
+    setTab("game"); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title: topicId });
   }
 
   function normalizeQuizData(dataArray, defaultType, defaultTopicPrefix) {
@@ -2609,6 +2723,59 @@ export default function App(){
     });
   }
 
+  const getWeekDates = () => {
+    const today = new Date();
+    const day = today.getDay(); // 0=Sun, 1=Mon...
+    const daysSinceMonday = (day + 6) % 7;
+    const mon = new Date(today);
+    mon.setDate(today.getDate() - daysSinceMonday);
+    return Array.from({length: 6}, (_, i) => {
+      const d = new Date(mon);
+      d.setDate(mon.getDate() + i);
+      return d.toISOString().slice(0, 10);
+    });
+  };
+
+  async function startWeeklyQuiz(cat) {
+    try {
+      const dates = getWeekDates();
+      let allQuestions = [];
+      for (const dateKey of dates) {
+        try {
+          const res = await fetch(`${BASE_URL}/daily/${cat}/${dateKey}.json`);
+          if (res.ok) {
+            const data = await res.json();
+            const rawQs = data.questions || data;
+            if (rawQs && rawQs.length > 0) {
+              const qs = normalizeQuizData(rawQs, cat === 'ca' ? 'ca' : 'vocab', `daily_${cat}_${dateKey}`);
+              allQuestions = allQuestions.concat(qs);
+            }
+          }
+        } catch (e) {
+          // ignore fetching errors for single days
+        }
+      }
+      if (allQuestions.length === 0) {
+        showToast('⚠️ No quizzes found for this week yet.', 'warn');
+        return;
+      }
+      // Shuffle combined questions
+      for (let i = allQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+      }
+      const weeklyKey = `weekly_${cat}`;
+      VOCAB_DATA[weeklyKey] = allQuestions;
+      const cfg = { topic: weeklyKey, type: 'vocab', quizCat: cat, count: allQuestions.length, dailyTitle: 'Weekly Mega Quiz' };
+      setModeId('vocab'); setCustomConfig(cfg);
+      setPrevTab('daily');
+      setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title: 'Weekly Mega Quiz' });
+    } catch (e) {
+      console.error('Weekly quiz error:', e);
+      alert('Failed to load weekly quiz. Please try again.');
+    }
+  }
+
   async function startDailyQuiz(cat, dateKey) {
     try {
       const res = await fetch(`${BASE_URL}/daily/${cat}/${dateKey}.json`);
@@ -2625,7 +2792,7 @@ export default function App(){
       const cfg = { topic: dailyKey, type: 'vocab', quizCat: cat, date: dateKey, count: questions.length, dailyTitle: data.title };
       setModeId('vocab'); setCustomConfig(cfg);
       setPrevTab('daily'); // back button returns to daily screen
-      setTab('game'); initGame(cfg, 'vocab', 0);
+      setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title: data.title });
     } catch(e) {
       console.error('Daily quiz fetch error:', e);
       alert('Failed to load quiz. Please try again.');
@@ -2659,7 +2826,7 @@ export default function App(){
       
       setModeId('vocab'); setCustomConfig(cfg);
       setPrevTab('quiz'); // back button returns to quiz screen
-      setTab('game'); initGame(cfg, 'vocab', 0);
+      setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title: title });
     } catch(e) {
       console.error('Dynamic quiz fetch error:', e);
       alert('Failed to load quiz. Please try again later.');
@@ -2681,7 +2848,7 @@ export default function App(){
       VOCAB_DATA[topicKey] = questions;
       const cfg = { topic: topicKey, type: 'vocab', count: questions.length, dailyTitle: `${topicLabel} — ${data.title || fileId}` };
       setModeId('vocab'); setCustomConfig(cfg);
-      setTab('game'); initGame(cfg, 'vocab', 0);
+      setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title: cfg.dailyTitle });
     } catch(e) {
       console.error('Topic quiz fetch error:', e);
       alert('Failed to load quiz. Please try again.');
@@ -2707,24 +2874,45 @@ export default function App(){
       showToast('⚠️ Play a quiz in this category first, then come back!', 'warn');
       return;
     }
-    // Shuffle mistakes
-    for (let i = allQuestions.length - 1; i > 0; i--) {
+    // Prepare the smart repeat pool: put each question in the pool twice
+    const pool = [...allQuestions, ...allQuestions];
+    for (let i = pool.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+      [pool[i], pool[j]] = [pool[j], pool[i]];
     }
     const topicKey = `mistakes_${cat}`;
-    VOCAB_DATA[topicKey] = allQuestions;
-    // Build fresh state object and pass it directly to initGame to avoid stale-state race
+    VOCAB_DATA[topicKey] = allQuestions; // keep all questions accessible for formatting
     const freshState = { seen: [], wrong: {}, lastIndex: 0, wrongIds: {} };
     setVocabState(prev => ({ ...prev, [topicKey]: freshState }));
-    const cfg = { topic: topicKey, type: 'vocab', count: allQuestions.length, dailyTitle: `My Mistakes — ${cat.toUpperCase()}`, quizCat: cat, isReattempt: true };
+    const cfg = { 
+      topic: topicKey, type: 'vocab', count: pool.length, 
+      dailyTitle: `My Mistakes — ${cat.toUpperCase()}`, quizCat: cat, 
+      isReattempt: true, isMistakesPool: true, mistakesPool: pool, mistakesCorrectStreak: {} 
+    };
     setModeId('vocab'); setCustomConfig(cfg);
-    setTab('game'); initGame(cfg, 'vocab', 0, { ...vocabState, [topicKey]: freshState });
+    setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title: cfg.dailyTitle, freshVocabState: { ...vocabState, [topicKey]: freshState } });
   }
 
   // Flush wrong questions to Firestore on result screen
   useEffect(() => { if (tab === 'result') flushToFirestore(); }, [tab]);
 
+  useEffect(() => {
+    let int;
+    if (quizCountdown && quizCountdown.val > 0) {
+      int = setInterval(() => {
+        setQuizCountdown(prev => {
+          if (!prev) return null;
+          if (prev.val <= 1) {
+            clearInterval(int);
+            initGame(prev.cfg, prev.mid, 0, prev.freshVocabState);
+            return null;
+          }
+          return { ...prev, val: prev.val - 1 };
+        });
+      }, 1000);
+    }
+    return () => clearInterval(int);
+  }, [quizCountdown?.val]);
 
   useEffect(()=>{
     if(phase!=="playing")return;
@@ -2836,13 +3024,25 @@ export default function App(){
         const qCat = customConfig?.quizCat || (q.topic?.startsWith('dyn_') ? q.topic.split('_')[3]?.toLowerCase() : null) || q.type || 'vocab';
         const normCat = qCat === 'current affairs' ? 'ca' : qCat === 'english' ? 'vocab' : qCat;
         if (!ok) {
-          if (wrongTotal < 100) {
+          if (wrongTotal < 100 && !q.topic?.startsWith('mistakes_')) {
             addWrong(normCat, String(q.id), q._src || customConfig?.srcPath || q.topic || 'unknown');
-          } else if (wrongTotal === 100) {
+          } else if (wrongTotal === 100 && !q.topic?.startsWith('mistakes_')) {
             showToast('🚨 Mistakes list is FULL (100 max)! Clear your mistakes first to keep tracking.', 'error', 6000);
           }
-        } else if (q.topic?.startsWith('mistakes_')) {
-          recordCorrect(normCat, String(q.id));
+        }
+
+        if (customConfig?.isMistakesPool) {
+          if (ok) {
+            const streakAmt = (customConfig.mistakesCorrectStreak[q.id] || 0) + 1;
+            customConfig.mistakesCorrectStreak[q.id] = streakAmt;
+            if (streakAmt >= 2) {
+              recordCorrect(normCat, String(q.id));
+            }
+          } else {
+            customConfig.mistakesCorrectStreak[q.id] = 0;
+            // Also add another instance to the pool to make sure they practice it more
+            customConfig.mistakesPool.push(q);
+          }
         }
 
         return { ...prev, [q.topic]: { seen: newSeen, wrong: newWrong, lastIndex: newLastIndex, wrongIds: newWrongIds } };
@@ -3319,7 +3519,7 @@ export default function App(){
           </div>
         )}
 
-        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={startMistakesQuiz} user={user} />}
+        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={startMistakesQuiz} user={user} onStartWeekly={startWeeklyQuiz} />}
 
         {tab==="quiz"&&<QuizScreen T={T} onSelectTopic={(topicId)=>{
           startVocabQuiz(topicId);
@@ -3486,7 +3686,17 @@ export default function App(){
         )}
 
         {/* ── GAME ── */}
-        {tab==="game"&&q&&(isVocab
+        {tab==="game"&&quizCountdown&&(
+          <div style={{flex:1,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:12,height:"100%"}}>
+            <div style={{fontSize:11,color:T.sub,letterSpacing:2,fontWeight:700}}>GET READY</div>
+            <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:96,color:GOLD,lineHeight:1,
+              textShadow:`0 0 60px ${GOLD}55`}}>
+              {quizCountdown.val}
+            </div>
+            <div style={{fontSize:13,color:T.sub}}>{quizCountdown.title}</div>
+          </div>
+        )}
+        {tab==="game"&&!quizCountdown&&q&&(isVocab
           /* ══════════ VOCAB LAYOUT ══════════ */
           ?<div style={{display:"flex",flexDirection:"column",height:"100%",background:T.bg}}>
             {/* Top stats bar */}
@@ -3524,7 +3734,12 @@ export default function App(){
                   </span>
                   <span style={{fontSize:12,color:T.sub,fontWeight:900,fontFamily:"'Barlow Condensed',sans-serif"}}>Q. {total+1}</span>
                 </div>
-                <div dangerouslySetInnerHTML={{__html: q.display||''}} style={{fontFamily:"'Outfit',sans-serif",fontWeight:700,fontSize:(q.display||'').length>60?16:(q.display||'').length>35?19:(q.display||'').length>18?23:28,color:T.text,lineHeight:1.45,whiteSpace:"pre-line",textAlign:"center",padding:"4px 0 10px"}} />
+                <div style={{fontFamily:"'Outfit',sans-serif",fontWeight:700,fontSize:(q.display||'').length>60?16:(q.display||'').length>35?19:(q.display||'').length>18?23:28,color:T.text,lineHeight:1.45,whiteSpace:"pre-line",textAlign:"center",padding:"4px 0 10px"}}>
+                  {q._originalTopic && (
+                    <span style={{fontSize:'0.7em',opacity:0.8,color:'#00b4d8',display:'block',marginBottom:6,letterSpacing:1,textTransform:'uppercase'}}>{q._originalTopic.replace(/_/g, ' ')}</span>
+                  )}
+                  <span dangerouslySetInnerHTML={{__html: q.display||''}} />
+                </div>
                 {q.exam&&<div style={{textAlign:"center",fontSize:9,color:T.muted,fontStyle:"italic",marginTop:2,opacity:0.8}}>{q.exam}</div>}
               </div>
               {/* Options */}

@@ -3381,10 +3381,7 @@ export default function App(){
               </div>
             )}
 
-            {/* Reset */}
-            <button onClick={()=>setConfirmReset(true)} style={{marginTop:4,width:"100%",background:"none",border:`1px solid ${T.border}`,borderRadius:10,padding:"10px",fontSize:12,color:T.muted,fontWeight:600,cursor:"pointer",marginBottom:20}}>
-              Reset all progress
-            </button>
+
 
             {/* ── DAILY LEADERBOARDS SIDE BY SIDE ── */}
             <div style={{borderTop:`1px solid ${T.border}`,paddingTop:16,marginBottom:10}}>
@@ -3659,7 +3656,10 @@ export default function App(){
 
         {/* ── RESULT / SCORECARD ── */}
         {tab==="result"&&(()=>{
-          const quizTitle = customConfig?.dailyTitle || customConfig?.topic?.replace(/_/g,' ')?.replace(/\b\w/g,c=>c.toUpperCase()) || (MODES.find(m=>m.id===modeId)?.label) || 'Quiz';
+          const quizTitle = customConfig?.dailyTitle
+            || customConfig?.topic?.replace(/_/g,' ')?.replace(/\b\w/g,c=>c.toUpperCase())
+            || (modeId && MODES.find(m=>m.id===modeId)?.label)
+            || 'Quiz';
           const isReattempt = customConfig?.topic && topicXpDone[customConfig.topic] && !customConfig.topic.startsWith('daily_') && !customConfig.topic.startsWith('mistakes_');
           const xpDisplay = sessionXpEarned > 0 ? `+${sessionXpEarned.toFixed(2)}` : sessionXpEarned.toFixed(2);
           const accColor = acc>=80?GREEN:acc>=55?GOLD:RED;
@@ -3668,9 +3668,14 @@ export default function App(){
           const total = score.c + score.w;
           const isVocabType = customConfig?.type === 'vocab' || customConfig?.quizCat === 'vocab';
           const isCaType = customConfig?.quizCat === 'ca' || customConfig?.topic?.startsWith('daily_ca');
-          const isBlitzType = !customConfig && modeId;
+          const isMathsType = !customConfig && modeId; // normal maths/blitz modes
           // Badge label
-          const badgeLabel = isCaType ? '📰 Current Affairs' : isVocabType ? '📖 Vocab Quiz' : isBlitzType ? `⚡ ${MODES.find(m=>m.id===modeId)?.label||'Blitz'}` : '📝 Quiz';
+          const modeLabel = MODES.find(m=>m.id===modeId)?.label || 'Maths';
+          const badgeLabel = isCaType ? '📰 Current Affairs' : isVocabType ? '📖 Vocab Quiz' : isMathsType ? `⚡ ${modeLabel}` : '📝 Practice Quiz';
+          // Logo component — real brain icon
+          const LogoImg = ({size=36}) => (
+            <img src="/icon-512.png" alt="CalcMind" style={{width:size,height:size,borderRadius:Math.round(size*0.22),objectFit:'cover'}} />
+          );
           // Card colors
           const cardBg    = dark ? 'linear-gradient(160deg,#12122a 0%,#1a1a3e 50%,#0e1c38 100%)' : 'linear-gradient(160deg,#fefefe 0%,#f5f3ff 50%,#fdf8ee 100%)';
           const cardBorder= dark ? '#c8901822' : '#e2d9c8';
@@ -3727,7 +3732,7 @@ export default function App(){
               {/* ── HEADER: Logo + Brand ── */}
               <div style={{padding:"16px 20px 12px",display:"flex",alignItems:"center",justifyContent:"space-between",position:"relative",zIndex:1}}>
                 <div style={{display:"flex",alignItems:"center",gap:9}}>
-                  <div style={{width:38,height:38,borderRadius:10,background:dark?"rgba(200,144,28,0.15)":"rgba(200,144,28,0.1)",border:`1.5px solid ${GOLD}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:22}}>🍀</div>
+                  <LogoImg size={36}/>
                   <div>
                     <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:18,lineHeight:1,color:textMain}}>Calc<span style={{color:GOLD}}>Mind</span></div>
                     <div style={{fontSize:9,color:textSub2,letterSpacing:0.8,fontWeight:600}}>Practice. Improve. Achieve.</div>
@@ -3791,13 +3796,17 @@ export default function App(){
               {/* Divider */}
               <div style={{height:1,background:divLine,margin:"0 20px"}}/>
 
-              {/* ── Stat tiles (3 across) ── */}
+              {/* ── Stat tiles ── */}
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:10,padding:"14px 20px"}}>
-                {[
+                {(isVocabType || isCaType ? [
                   {icon:"🎯",label:"Accuracy",value:`${acc}%`,color:accColor},
                   {icon:"⚡",label:"XP Earned",value:xpDisplay,color:GOLD},
                   {icon:"🔥",label:"Best Streak",value:bestStreak,color:"#f97316"},
-                ].map(({icon,label,value,color})=>(
+                ] : [
+                  {icon:"✅",label:"Correct",value:score.c,color:GREEN},
+                  {icon:"❌",label:"Wrong",value:score.w,color:RED},
+                  {icon:"🎯",label:"Accuracy",value:`${acc}%`,color:accColor},
+                ]).map(({icon,label,value,color})=>(
                   <div key={label} style={{background:tileBg,border:`1px solid ${tileBdr}`,borderRadius:14,padding:"12px 8px",textAlign:"center",display:"flex",flexDirection:"column",alignItems:"center",gap:3}}>
                     <div style={{width:32,height:32,borderRadius:8,background:dark?`${color}18`:`${color}14`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,marginBottom:2}}>{icon}</div>
                     <div style={{fontSize:9,fontWeight:700,letterSpacing:0.7,color:textSub2,fontFamily:"'Outfit',sans-serif"}}>{label.toUpperCase()}</div>
@@ -3835,9 +3844,7 @@ export default function App(){
                     <div style={{fontSize:11,fontWeight:900,color:GOLD,fontFamily:"'Barlow Condensed',sans-serif",letterSpacing:0.3}}>calcmind.mxprime.in</div>
                   </div>
                 </div>
-                <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:2}}>
-                  <div style={{width:24,height:24,borderRadius:6,background:dark?"rgba(200,144,28,0.15)":"rgba(200,144,28,0.1)",border:`1px solid ${GOLD}33`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:14}}>🍀</div>
-                </div>
+                <LogoImg size={28}/>
               </div>
             </div>
 

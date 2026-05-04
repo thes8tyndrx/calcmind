@@ -2577,13 +2577,13 @@ export default function App(){
     // Otherwise go home.
     const goBack = () => {
       stopAll();
-      if (tab === 'game' && customConfig?.date && user) {
-        markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);
-      }
-      if (tab === 'game' && prevTab && prevTab !== 'home') {
-        setTab(prevTab);
+      if (tab === 'game') {
+        if (customConfig?.date && user) {
+          markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);
+        }
+        setTab('result');
       } else {
-        setTab('home');
+        setTab(prevTab && prevTab !== 'game' && prevTab !== 'home' ? prevTab : 'home');
       }
       setPhase('idle');
       setShowBlitz(false);
@@ -3463,7 +3463,7 @@ export default function App(){
             <AnimalAvatar id={user?.photoURL||profile.avatar||"tiger"} size={34}/>
           </button>
           <div>
-            <button onClick={()=>{if(tab==="game"){stopAll();if(customConfig?.date && user){markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);}setTab("home");setPhase("idle");}}} style={{background:"none",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,letterSpacing:-0.5,color:T.text,padding:0}}>
+            <button onClick={()=>{if(tab==="game"){stopAll();if(customConfig?.date && user){markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);}setTab("result");setPhase("idle");}else{setTab("home");}}} style={{background:"none",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,letterSpacing:-0.5,color:T.text,padding:0}}>
               <span>Calc</span><span style={{color:GOLD}}>Mind</span>
             </button>
             <div style={{fontSize:9,color:T.muted,fontWeight:600,marginTop:-1}}>{profile.name||user?.displayName||"Guest"} · {profile.goal||"IBPS PO"}</div>
@@ -3480,13 +3480,13 @@ export default function App(){
           {(tab !== "home") ? (
             <button onClick={() => {
               stopAll();
-              if (tab === 'game' && customConfig?.date && user) {
-                markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);
-              }
-              if (tab === 'game' && prevTab && prevTab !== 'home') {
-                setTab(prevTab);
+              if (tab === 'game') {
+                if (customConfig?.date && user) {
+                  markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);
+                }
+                setTab('result');
               } else {
-                setTab("home");
+                setTab(prevTab && prevTab !== 'game' && prevTab !== 'home' ? prevTab : 'home');
               }
               setPhase("idle");
             }} style={{background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 10px",fontSize:13,color:T.text,fontWeight:800,cursor:"pointer",display:"flex",alignItems:"center",gap:4}}>
@@ -3728,18 +3728,24 @@ export default function App(){
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
                 {(()=>{
-                  const todayDate = new Date().toISOString().slice(0,10);
-                  // Filter by today's date, then sort by daily XP descending
+                  const fallbackDate = new Date().toISOString().slice(0,10);
+                  const maxCaDate = dailyCaBoard.map(p => p[`current_daily_ca_date_s1`]).filter(Boolean).sort().pop() || fallbackDate;
+                  const maxVocabDate = dailyVocabBoard.map(p => p[`current_daily_vocab_date_s1`]).filter(Boolean).sort().pop() || fallbackDate;
+
                   const todayCaBoard = dailyCaBoard
-                    .filter(p => p[`current_daily_ca_date_s1`] === todayDate)
+                    .filter(p => p[`current_daily_ca_date_s1`] === maxCaDate)
                     .sort((a,b) => (b[`xp_daily_ca_s1`]||0) - (a[`xp_daily_ca_s1`]||0));
                   const todayVocabBoard = dailyVocabBoard
-                    .filter(p => p[`current_daily_vocab_date_s1`] === todayDate)
+                    .filter(p => p[`current_daily_vocab_date_s1`] === maxVocabDate)
                     .sort((a,b) => (b[`xp_daily_vocab_s1`]||0) - (a[`xp_daily_vocab_s1`]||0));
+                    
+                  const displayCaDate = maxCaDate !== fallbackDate ? ` (${maxCaDate.slice(5,10)})` : '';
+                  const displayVocabDate = maxVocabDate !== fallbackDate ? ` (${maxVocabDate.slice(5,10)})` : '';
+
                   return (<>
                     {/* Daily CA Board */}
                     <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
-                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📰 CA DAILY</div>
+                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📰 CA DAILY{displayCaDate}</div>
                       {todayCaBoard.length === 0 ? (
                         <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet today</div>
                       ) : todayCaBoard.slice(0,10).map((p,i)=>(
@@ -3756,7 +3762,7 @@ export default function App(){
 
                     {/* Daily Vocab Board */}
                     <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
-                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📖 VOCAB DAILY</div>
+                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📖 VOCAB DAILY{displayVocabDate}</div>
                       {todayVocabBoard.length === 0 ? (
                         <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet today</div>
                       ) : todayVocabBoard.slice(0,10).map((p,i)=>(

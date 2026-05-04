@@ -1,0 +1,246 @@
+{
+  "date": "2026-05-02",
+  "title": "Daily Current Affairs — 02 May 2026",
+  "questions": [
+    {
+      "id": "ca_20260502_1",
+      "q": "Which police unit became the first in India to introduce an AI-powered multilingual feature in its emergency helpline ‘Namma 112’?",
+      "options": [
+        "Mumbai Police",
+        "Bengaluru Police",
+        "Delhi Police",
+        "Hyderabad Police"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. Bengaluru Police added multilingual AI to Namma 112; exam point: first police unit in India. Memory hook: Namma 112 = Bengaluru/Karnataka."
+    },
+    {
+      "id": "ca_20260502_2",
+      "q": "The AI system used in Bengaluru Police’s Namma 112 helpline is associated with which multilingual Voice AI framework?",
+      "options": [
+        "VANKI",
+        "BHASHINI",
+        "UMANG",
+        "GARUDA"
+      ],
+      "ans": "A",
+      "exp": "Correct answer: A. The system uses VANKI, i.e., Voice AI for Nationwide Key Interventions; useful for digital governance and AI-current affairs questions."
+    },
+    {
+      "id": "ca_20260502_3",
+      "q": "Which state approved the ‘Artificial Intelligence Policy 2026’ targeting over ₹10,000 crore investment and 1.5 lakh jobs by 2031?",
+      "options": [
+        "Karnataka",
+        "Tamil Nadu",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. Maharashtra approved AI Policy 2026; exam hook: Maharashtra = ₹10,000 crore investment + 1.5 lakh jobs by 2031."
+    },
+    {
+      "id": "ca_20260502_4",
+      "q": "Under Maharashtra Artificial Intelligence Policy 2026, how many AI innovation cities and sectoral Centres of Excellence are proposed?",
+      "options": [
+        "3 innovation cities and 5 CoEs",
+        "5 innovation cities and 6 CoEs",
+        "6 innovation cities and 5 CoEs",
+        "7 innovation cities and 7 CoEs"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. The policy proposes 5 AI innovation cities and 6 sectoral CoEs; important for state policy and technology questions."
+    },
+    {
+      "id": "ca_20260502_5",
+      "q": "Tata AIA Life Insurance launched which unit-linked life insurance plan combining protection with long-term health funding?",
+      "options": [
+        "Shubh Health Criti",
+        "Sampoorna Suraksha Plus",
+        "Health Shield ULIP",
+        "Arogya Nivesh Plan"
+      ],
+      "ans": "A",
+      "exp": "Correct answer: A. Shubh Health Criti builds a market-linked health fund and covers 60+ critical illnesses; exam relevance: insurance product launches."
+    },
+    {
+      "id": "ca_20260502_6",
+      "q": "From which date will the revised RBI guidelines on relief measures for borrowers in calamity-hit areas come into force?",
+      "options": [
+        "April 1, 2026",
+        "May 1, 2026",
+        "July 1, 2026",
+        "December 31, 2026"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. The revised RBI calamity-relief framework comes into force from July 1, 2026; very important for banking awareness."
+    },
+    {
+      "id": "ca_20260502_7",
+      "q": "Under the revised RBI calamity-relief guidelines, lenders must invoke resolution plans within how many days of calamity declaration and implement them within how many days?",
+      "options": [
+        "30 days and 90 days",
+        "45 days and 135 days",
+        "60 days and 180 days",
+        "15 days and 120 days"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. Banks must invoke plans within 45 days and implement within 135 days; memory hook: 45–135 timeline."
+    },
+    {
+      "id": "ca_20260502_8",
+      "q": "Which institution developed the Silicon Photonics PDK and Universal packaged PPIC Test Engine launched by MeitY?",
+      "options": [
+        "IIT Bombay",
+        "IIT Delhi",
+        "IIT Madras",
+        "IISc Bengaluru"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. Both technologies were developed at the MeitY-supported CoE-CPPICS at IIT Madras; important for science-tech and Make-in-India questions."
+    },
+    {
+      "id": "ca_20260502_9",
+      "q": "The Silicon Photonics Process Design Kit launched by MeitY includes more than how many verified components?",
+      "options": [
+        "25",
+        "40",
+        "50",
+        "100"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. The PDK includes more than 50 verified components; memory hook: PDK = 50+ components for photonic chip design."
+    },
+    {
+      "id": "ca_20260502_10",
+      "q": "Sahajanand Medical Technologies obtained ISO 50001:2018 certification for which management system?",
+      "options": [
+        "Quality Management System",
+        "Energy Management System",
+        "Information Security Management System",
+        "Environmental Management System"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. ISO 50001:2018 relates to Energy Management System; useful static-current affairs link for certification questions."
+    },
+    {
+      "id": "ca_20260502_11",
+      "q": "ISRO completed high-resolution Land Use and Land Cover mapping of India at which scale?",
+      "options": [
+        "1:5000",
+        "1:10000",
+        "1:25000",
+        "1:50000"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. ISRO completed LULC mapping at 1:10000 scale, where 1 cm equals 100 metres on ground; important for GIS and rural planning."
+    },
+    {
+      "id": "ca_20260502_12",
+      "q": "The LULC dataset prepared by ISRO has been integrated into which GIS portal of the Ministry of Panchayati Raj?",
+      "options": [
+        "Bhuvan Panchayat",
+        "Gram Manchitra",
+        "PM GatiShakti",
+        "e-Gram Swaraj"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. The dataset is integrated into Gram Manchitra; memory hook: Gram Manchitra = GIS tool for gram panchayat planning."
+    },
+    {
+      "id": "ca_20260502_13",
+      "q": "Who assumed charge as the Controller General of Defence Accounts (CGDA) in 2026?",
+      "options": [
+        "Anugraha Narayana Das",
+        "Vishvajit Sahay",
+        "Rajiv Gauba",
+        "Aramane Giridhar"
+      ],
+      "ans": "A",
+      "exp": "Correct answer: A. Anugraha Narayana Das became CGDA, succeeding Vishvajit Sahay; appointments are high-frequency exam facts."
+    },
+    {
+      "id": "ca_20260502_14",
+      "q": "Justice (Retd.) Anupinder Singh Grewal was appointed President of which tribunal?",
+      "options": [
+        "National Green Tribunal",
+        "National Company Law Tribunal",
+        "Income Tax Appellate Tribunal",
+        "Armed Forces Tribunal"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. He was appointed President of NCLT for 5 years or till age 67; exam hook: NCLT handles company law and insolvency matters."
+    },
+    {
+      "id": "ca_20260502_15",
+      "q": "The ‘Namo Stall Distribution Scheme’ was introduced in Ranchi under which central scheme?",
+      "options": [
+        "PM Vishwakarma",
+        "PM SVANidhi",
+        "Stand-Up India",
+        "DAY-NULM"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. The scheme was introduced under PM SVANidhi for street vendors; memory hook: SVANidhi = street vendor working capital/support."
+    },
+    {
+      "id": "ca_20260502_16",
+      "q": "As per the IIM Ahmedabad impact evaluation, SVAMITVA is estimated to unlock rural land assets worth approximately how much?",
+      "options": [
+        "₹13.5 lakh crore",
+        "₹50 lakh crore",
+        "₹135 lakh crore",
+        "₹1,679 lakh crore"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. SVAMITVA is estimated to unlock ₹135 lakh crore rural land assets; exam relevance: government scheme impact and rural credit."
+    },
+    {
+      "id": "ca_20260502_17",
+      "q": "Which institution topped the Times Higher Education Asia University Rankings 2026 for the 8th consecutive year?",
+      "options": [
+        "Peking University",
+        "National University of Singapore",
+        "Tsinghua University",
+        "University of Tokyo"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. Tsinghua University retained Rank 1 for the 8th year; memory hook: THE Asia 2026 topper = Tsinghua, China."
+    },
+    {
+      "id": "ca_20260502_18",
+      "q": "Which Indian institution secured the 43rd rank and remained the only Indian institution in the top 50 of THE Asia University Rankings 2026?",
+      "options": [
+        "IIT Delhi",
+        "IISc Bengaluru",
+        "IIT Bombay",
+        "University of Delhi"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. IISc Bengaluru ranked 43rd and was India’s only institution in the top 50; important for rankings questions."
+    },
+    {
+      "id": "ca_20260502_19",
+      "q": "The 80th Round Household Consumption: Health Survey was released by which organisation?",
+      "options": [
+        "NITI Aayog",
+        "National Statistical Office",
+        "National Health Authority",
+        "Indian Council of Medical Research"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. NSO released the 80th Round Health Survey; exam hook: NSO under MoSPI is key for official survey data."
+    },
+    {
+      "id": "ca_20260502_20",
+      "q": "Paras Defence and Space Technologies signed an MoU with Complus Systems and JV Micronics to pursue opportunities in which area?",
+      "options": [
+        "Anechoic and semi-anechoic chambers",
+        "Hypersonic missile engines",
+        "Naval shipbuilding yards",
+        "Green hydrogen electrolysers"
+      ],
+      "ans": "A",
+      "exp": "Correct answer: A. The MoU focuses on anechoic and semi-anechoic chambers for India and global markets; useful for defence-industry MoU questions."
+    }
+  ]
+}

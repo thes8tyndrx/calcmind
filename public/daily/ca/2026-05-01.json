@@ -1,0 +1,246 @@
+{
+  "date": "2026-05-01",
+  "title": "Daily Current Affairs — 01 May 2026",
+  "questions": [
+    {
+      "id": "ca_20260501_1",
+      "q": "Which aviation training institute was the only one to achieve the top 'A' category in the 2nd phase rankings of Flying Training Organisations (FTOs)?",
+      "options": [
+        "Indira Gandhi Rashtriya Udan Akademi",
+        "Avyanna Aviation Pvt. Ltd.",
+        "Ahmedabad Aviation & Aeronautics Ltd.",
+        "National Flying Training Institute"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. Avyanna Aviation Pvt. Ltd. was the only FTO in the top 'A' category; remember Avyanna = A category."
+    },
+    {
+      "id": "ca_20260501_2",
+      "q": "The rankings for Flying Training Organisations (FTOs) were compiled by which authority?",
+      "options": [
+        "Airports Authority of India",
+        "Bureau of Civil Aviation Security",
+        "Directorate General of Civil Aviation",
+        "International Civil Aviation Organization"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. DGCA compiled the FTO rankings; important for aviation regulatory-body questions."
+    },
+    {
+      "id": "ca_20260501_3",
+      "q": "The Central Cottage Industries Corporation of India launched its inaugural heritage designer collection under which title?",
+      "options": [
+        "Crafts of Bharat",
+        "Soul Threads",
+        "Heritage Looms",
+        "India Weaves"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. CCIC launched 'Soul Threads' to promote textile traditions; memory hook: soul of India in threads."
+    },
+    {
+      "id": "ca_20260501_4",
+      "q": "E-PRAAPTI, proposed by EPFO, is mainly related to which purpose?",
+      "options": [
+        "Tracking inoperative EPF accounts and linking them with UAN",
+        "Issuing new pension cards to senior citizens",
+        "Monitoring GST compliance of employers",
+        "Providing instant loans against EPF balance"
+      ],
+      "ans": "A",
+      "exp": "Correct answer: A. E-PRAAPTI will help identify, track, link UAN and activate old EPF accounts; important for social-security digital initiatives."
+    },
+    {
+      "id": "ca_20260501_5",
+      "q": "How many claims did EPFO settle in 2025-26, as mentioned in the current affairs update?",
+      "options": [
+        "6.01 crore",
+        "7.25 crore",
+        "8.31 crore",
+        "9.10 crore"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. EPFO settled a record 8.31 crore claims in 2025-26; compare with 6.01 crore in 2024-25."
+    },
+    {
+      "id": "ca_20260501_6",
+      "q": "Which agency has been recognised as the Past Risk and Return Verification Agency (PaRRVA) by SEBI?",
+      "options": [
+        "CRISIL Ratings Limited",
+        "ICRA Limited",
+        "CARE Ratings Limited",
+        "India Ratings and Research"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. CARE Ratings Ltd. was recognised for PaRRVA; useful for SEBI-platform and market-regulation questions."
+    },
+    {
+      "id": "ca_20260501_7",
+      "q": "Which organisation will act as the PaRRVA Data Centre (PDC) for SEBI's PaRRVA platform?",
+      "options": [
+        "BSE Limited",
+        "National Stock Exchange of India Limited",
+        "Central Depository Services Limited",
+        "National Securities Depository Limited"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. NSE will act as the PaRRVA Data Centre; remember PaRRVA verification + NSE data centre."
+    },
+    {
+      "id": "ca_20260501_8",
+      "q": "The MuleHunter.AI tool, directed by the Ministry of Finance for banks, has been developed by which institution?",
+      "options": [
+        "NPCI",
+        "Reserve Bank Innovation Hub",
+        "Indian Cyber Crime Coordination Centre",
+        "National Informatics Centre"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. MuleHunter.AI was developed by RBIH to detect mule accounts; important for banking fraud-prevention awareness."
+    },
+    {
+      "id": "ca_20260501_9",
+      "q": "As per the update, MuleHunter.AI was live in how many banks?",
+      "options": [
+        "18 banks",
+        "21 banks",
+        "26 banks",
+        "32 banks"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. MuleHunter.AI was live in 26 banks; hook: 26 banks catching mule accounts."
+    },
+    {
+      "id": "ca_20260501_10",
+      "q": "Federal Bank is set to acquire a select India credit card portfolio from which bank?",
+      "options": [
+        "HSBC India",
+        "Citibank India",
+        "Standard Chartered Bank",
+        "DBS Bank India"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. Federal Bank will acquire about 4.5 lakh cards from Standard Chartered Bank; relevant for banking M&A/current banking affairs."
+    },
+    {
+      "id": "ca_20260501_11",
+      "q": "What is the approximate outstanding book value of the credit card portfolio Federal Bank plans to acquire from Standard Chartered Bank?",
+      "options": [
+        "Rs 500 crore",
+        "Rs 1,000 crore",
+        "Rs 1,500 crore",
+        "Rs 2,500 crore"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. The portfolio outstanding book is about Rs 1,500 crore; pair Federal Bank + SCB + Rs 1,500 crore."
+    },
+    {
+      "id": "ca_20260501_12",
+      "q": "Under RBI's 2026 amendment directions, eligible NBFCs below what asset size may be exempted from registration if they do not take public funds and have no customer interface?",
+      "options": [
+        "Rs 100 crore",
+        "Rs 500 crore",
+        "Rs 1,000 crore",
+        "Rs 2,000 crore"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. Such NBFCs with assets below Rs 1,000 crore may be exempted; very important for RBI/NBFC regulation."
+    },
+    {
+      "id": "ca_20260501_13",
+      "q": "From which date will the RBI's 2026 NBFC registration exemption amendment directions come into effect?",
+      "options": [
+        "May 1, 2026",
+        "July 1, 2026",
+        "December 31, 2026",
+        "April 1, 2027"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. The directions will come into effect from July 1, 2026; remember July = NBFC rule effective date."
+    },
+    {
+      "id": "ca_20260501_14",
+      "q": "DRDO and the Indian Navy conducted the maiden salvo launch of which missile from a naval helicopter platform?",
+      "options": [
+        "BrahMos-NG",
+        "NASM-SR",
+        "Pralay",
+        "HELINA"
+      ],
+      "ans": "B",
+      "exp": "Correct answer: B. NASM-SR was tested from a Navy helicopter platform; key defence fact for missile-current-affairs questions."
+    },
+    {
+      "id": "ca_20260501_15",
+      "q": "The Naval Anti-ship Missile-Short Range (NASM-SR) system was developed by which Hyderabad-based DRDO centre?",
+      "options": [
+        "Research Centre Imarat",
+        "Advanced Systems Laboratory",
+        "Naval Science and Technological Laboratory",
+        "Centre for Airborne Systems"
+      ],
+      "ans": "A",
+      "exp": "Correct answer: A. NASM-SR was developed by Research Centre Imarat with other DRDO labs; remember RCI Hyderabad."
+    },
+    {
+      "id": "ca_20260501_16",
+      "q": "The 4th edition of the India-Sri Lanka bilateral diving exercise 'IN-SLN DIVEX 2026' was held in which city?",
+      "options": [
+        "Kochi",
+        "Visakhapatnam",
+        "Colombo",
+        "Trincomalee"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. IN-SLN DIVEX 2026 was held in Colombo; useful for India-Sri Lanka defence exercise questions."
+    },
+    {
+      "id": "ca_20260501_17",
+      "q": "Which Indian Navy vessel was deployed for IN-SLN DIVEX 2026?",
+      "options": [
+        "INS Nireekshak",
+        "INS Sandhayak",
+        "INS Jalashwa",
+        "INS Kadmatt"
+      ],
+      "ans": "A",
+      "exp": "Correct answer: A. INS Nireekshak, a Diving Support and Submarine Rescue Vessel, was deployed; hook: Nireekshak = underwater inspection."
+    },
+    {
+      "id": "ca_20260501_18",
+      "q": "Who became the fastest player to reach 400 runs in a single IPL season in terms of balls faced during IPL 2026?",
+      "options": [
+        "Abhishek Sharma",
+        "Nicholas Pooran",
+        "Vaibhav Sooryavanshi",
+        "Andre Russell"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. Vaibhav Sooryavanshi reached 400 runs in just 167 balls; remember the 15-year-old Rajasthan Royals opener."
+    },
+    {
+      "id": "ca_20260501_19",
+      "q": "Virat Kohli became the first batter in IPL history to achieve which milestone?",
+      "options": [
+        "800 fours",
+        "400 sixes",
+        "10,000 runs",
+        "300 catches"
+      ],
+      "ans": "A",
+      "exp": "Correct answer: A. Kohli became the first IPL batter to hit 800 fours; exam hook: Kohli = first to 800 IPL fours."
+    },
+    {
+      "id": "ca_20260501_20",
+      "q": "India will host the SAFF Women's Championship 2026 at which venue?",
+      "options": [
+        "Salt Lake Stadium, Kolkata",
+        "Kalinga Stadium, Bhubaneswar",
+        "Pandit Jawaharlal Nehru Stadium, Margao",
+        "Jawaharlal Nehru Stadium, New Delhi"
+      ],
+      "ans": "C",
+      "exp": "Correct answer: C. The 2026 SAFF Women's Championship will be held at Fatorda Stadium, Margao, Goa; remember SAFF Women 2026 = Goa."
+    }
+  ]
+}

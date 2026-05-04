@@ -593,7 +593,7 @@ function formatVocabQuestion(q, topic) {
     display = cleanText(rawDisplay)
       .replace(/\*\*([^*]+)\*\*/g, (match, p1) => {
         const t = p1.trim();
-        const top = topic.toLowerCase();
+        const top = topicToCheck.toLowerCase();
         if (top.includes('blank')) return '________';
         if (top.includes('spot') || top.includes('error')) return p1;
         if (/^\(?[a-dA-D0-9]+\)?\.?$/.test(t) || t === '/' || t === '\\') return t;
@@ -601,7 +601,7 @@ function formatVocabQuestion(q, topic) {
       })
       .replace(/\*([^*]+)\*/g, (match, p1) => {
         const t = p1.trim();
-        const top = topic.toLowerCase();
+        const top = topicToCheck.toLowerCase();
         if (top.includes('blank')) return '________';
         if (top.includes('spot') || top.includes('error')) return p1;
         if (/^\(?[a-dA-D0-9]+\)?\.?$/.test(t) || t === '/' || t === '\\') return t;
@@ -1278,20 +1278,17 @@ function useDailyAvailability(type) {
   return { available, loading };
 }
 
-function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, onStartMistakes, user, onStartWeekly }) {
-  const [subTab, setSubTab] = useState('daily');
-  const [expandedCAMonth, setExpandedCAMonth] = useState(null);
-  const [expandedVocabMonth, setExpandedVocabMonth] = useState(null);
-  
+// ── MEGA QUIZZES COMPONENT ───────────────────────────────────────────────────
+function MegaQuizzesList({ type, T, onStartWeekly, onStartMonthly }) {
+  const [expandedMonth, setExpandedMonth] = useState(null);
+
   const getMonthsSinceMay2026 = () => {
     const months = [];
     const startYear = 2026;
-    const startMonth = 4; // May is index 4
-    
+    const startMonth = 4; // May
     const today = new Date();
     const currYear = today.getFullYear();
     const currMonth = today.getMonth();
-    
     for (let y = startYear; y <= currYear; y++) {
       const mStart = (y === startYear) ? startMonth : 0;
       const mEnd = (y === currYear) ? currMonth : 11;
@@ -1302,23 +1299,141 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
     return months.reverse();
   };
 
-  const generateMonthDates = (year, month) => {
-    const today = new Date();
-    const isCurrentMonth = today.getFullYear() === year && today.getMonth() === month;
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const limit = isCurrentMonth ? today.getDate() : daysInMonth;
+  const localDateStr = (d) => {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${y}-${m}-${day}`;
+  };
+
+  const getCalendarWeeksForMonth = (year, month) => {
+    const weeks = [];
+    let current = new Date(year, month, 1);
+    let day = current.getDay();
+    let daysSinceMonday = (day + 6) % 7;
+    current.setDate(current.getDate() - daysSinceMonday);
     
-    const dates = [];
-    const yy = year.toString();
-    const mm = (month + 1).toString().padStart(2, '0');
-    for (let i = limit; i >= 1; i--) {
-      const dd = i.toString().padStart(2, '0');
-      dates.push(`${yy}-${mm}-${dd}`);
+    let weekNum = 1;
+    while (true) {
+      if (current.getFullYear() > year || (current.getFullYear() === year && current.getMonth() > month)) {
+        break;
+      }
+      const mon = new Date(current);
+      const sat = new Date(current);
+      sat.setDate(sat.getDate() + 5);
+      
+      weeks.push({
+        weekNum: weekNum++,
+        monStr: localDateStr(mon),
+        satStr: localDateStr(sat),
+        monObj: mon,
+        satObj: sat
+      });
+      current.setDate(current.getDate() + 7);
     }
-    return dates;
+    return weeks;
   };
 
   const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const isWeekly = type.startsWith('weekly');
+  const isCA = type.endsWith('ca');
+  const cat = isCA ? 'ca' : 'vocab';
+  const icon = isCA ? '📰' : '🖋️';
+  const accentColor = isCA ? '#9370db' : '#00b4d8';
+
+  const months = getMonthsSinceMay2026();
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 12, padding: "16px", background: T.card2, borderRadius: 16, border: `1px solid ${T.border}` }}>
+      <div style={{fontWeight: 700, color: T.text, fontSize: 16, marginBottom: 4, display: "flex", alignItems: "center", gap: 8}}>
+         <span>{isWeekly ? `Select Week for ${isCA ? 'CA' : 'Vocab'}` : `Select Month for ${isCA ? 'CA' : 'Vocab'}`}</span>
+      </div>
+      {months.length === 0 && <div style={{color: T.muted, fontSize: 13}}>No available months yet.</div>}
+      {months.map(({ year, month }) => {
+        const monthKey = `${year}-${month}`;
+        const isExpanded = expandedMonth === monthKey;
+        const monthLabel = `${monthNames[month]} ${year}`;
+        
+        return (
+          <div key={monthKey} style={{background:T.card, border:`1px solid ${T.border}`, borderRadius:16, overflow:"hidden"}}>
+            <button 
+              onClick={() => setExpandedMonth(isExpanded ? null : monthKey)}
+              style={{width:"100%", padding:"16px", display:"flex", alignItems:"center", gap:14, cursor:"pointer", background:isExpanded?T.card2:"transparent"}}>
+              <div style={{background:`${accentColor}22`, width:44, height:44, borderRadius:12, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22}}>
+                📆
+              </div>
+              <div style={{flex:1, textAlign:"left"}}>
+                <div style={{color:T.text, fontWeight:700, fontSize:16, fontFamily:"'Outfit',sans-serif"}}>{monthLabel}</div>
+                <div style={{color:accentColor, fontWeight:600, fontSize:12, marginTop:2}}>{isWeekly ? 'Weekly Quizzes' : 'Top Monthly Quiz'}</div>
+              </div>
+              {isWeekly && <div style={{color:T.muted, fontSize:18, transform:isExpanded?"rotate(180deg)":"none", transition:"transform 0.2s"}}>▼</div>}
+              {!isWeekly && (
+                <button
+                  onClick={(e) => {
+                     e.stopPropagation();
+                     const ym = `${year}-${(month+1).toString().padStart(2,'0')}`;
+                     onStartMonthly(cat, ym, monthLabel);
+                  }}
+                  style={{ color: accentColor, fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 13, flexShrink: 0 }}>
+                  ATTEMPT →
+                </button>
+              )}
+            </button>
+            
+            {isWeekly && isExpanded && (
+              <div style={{padding:"0 16px 16px 16px", display:"flex", flexDirection:"column", gap:8, borderTop:`1px solid ${T.border}`, paddingTop:16}}>
+                {getCalendarWeeksForMonth(year, month).map(w => (
+                  <button
+                    key={w.weekNum}
+                    onClick={() => onStartWeekly(cat, w.monStr, w.satStr, `Week ${w.weekNum} (${monthLabel})`)}
+                    style={{
+                      background: `linear-gradient(135deg,${accentColor}12,${accentColor}02)`,
+                      border: `1px solid ${accentColor}33`,
+                      borderRadius: 12, padding: "14px 16px",
+                      display: "flex", justifyContent: "space-between", alignItems: "center",
+                      cursor: "pointer", textAlign: "left", width: "100%"
+                    }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                      <div style={{ background: `${accentColor}22`, width: 32, height: 32, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16 }}>{icon}</div>
+                      <div>
+                        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 600, fontSize: 15, color: T.text }}>Week {w.weekNum}</div>
+                        <div style={{ fontSize: 11, color: T.sub, marginTop: 2 }}>
+                           {w.monObj.toLocaleDateString('en-IN', {month:'short', day:'numeric'})} - {w.satObj.toLocaleDateString('en-IN', {month:'short', day:'numeric'})}
+                        </div>
+                      </div>
+                    </div>
+                    <div style={{ color: accentColor, fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 13, flexShrink: 0 }}>ATTEMPT →</div>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, onStartMistakes, user, onStartWeekly, onStartMonthly }) {
+  const [subTab, setSubTab] = useState('daily');
+  const [expandedMega, setExpandedMega] = useState(null);
+  const [expandedCADays, setExpandedCADays] = useState(false);
+  const [expandedVocabDays, setExpandedVocabDays] = useState(false);
+
+  const getCurrentWeekDates = () => {
+    const today = new Date();
+    const day = today.getDay();
+    const daysSinceMonday = (day + 6) % 7;
+    const mon = new Date(today);
+    mon.setDate(today.getDate() - daysSinceMonday);
+    const dates = [];
+    for(let i=0; i<6; i++) {
+      const d = new Date(mon);
+      d.setDate(mon.getDate() + i);
+      dates.push(d.toISOString().slice(0, 10));
+    }
+    return dates;
+  };
 
   const { available: caAvail, loading: caLoading } = useDailyAvailability('ca');
   const { available: vocAvail, loading: vocLoading } = useDailyAvailability('vocab');
@@ -1339,10 +1454,18 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
     return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'long' });
   };
 
-  const caEntries  = Object.entries(caAvail).filter(([,ok]) => ok).sort((a,b) => b[0].localeCompare(a[0]));
-  const vocEntries = Object.entries(vocAvail).filter(([,ok]) => ok).sort((a,b) => b[0].localeCompare(a[0]));
+  const currentWeekDates = getCurrentWeekDates();
 
-  const DayRow = ({ dateKey, label, icon, cat, accentColor, accentBg, btnColor }) => (
+  const caEntries = Object.entries(caAvail)
+    .filter(([,ok]) => ok)
+    .sort((a,b) => b[0].localeCompare(a[0]))
+    .slice(0, 6);
+
+  const vocEntries = Object.entries(vocAvail)
+    .filter(([date, ok]) => ok && currentWeekDates.includes(date))
+    .sort((a,b) => b[0].localeCompare(a[0]));
+
+  const DayRow = ({ dateKey, label, icon, cat, accentColor, accentBg, btnColor, isLive }) => (
     <button
       onClick={() => onStartDaily(cat, dateKey)}
       style={{
@@ -1354,7 +1477,10 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
       }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
         <div style={{ background: `${accentColor}22`, width: 32, height: 32, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16 }}>{icon}</div>
-        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 600, fontSize: 15, color: T.text }}>{label} — {formatLabel(dateKey)}</div>
+        <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 600, fontSize: 15, color: T.text }}>
+          {label} — {formatLabel(dateKey)}
+          {isLive && <span style={{marginLeft: 8, fontSize: 11, fontWeight: 800, color: '#ef4444', letterSpacing: 0.5}}>LIVE</span>}
+        </div>
       </div>
       <div style={{ color: btnColor, fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 13, flexShrink: 0 }}>ATTEMPT →</div>
     </button>
@@ -1377,97 +1503,69 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
 
       {subTab === 'daily' && (
         <>
-          {/* Current Affairs Monthly Folders */}
+          {/* Current Affairs */}
           <div>
             <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
               <span style={{ color: "#a385e0" }}>📅</span> Current Affairs
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {getMonthsSinceMay2026().map(({ year, month }) => {
-                const monthKey = `${year}-${month}`;
-                const isExpanded = expandedCAMonth === monthKey;
-                const monthLabel = `${monthNames[month]} ${year}`;
-                return (
-                  <div key={monthKey} style={{background:T.card, border:`1px solid ${T.border}`, borderRadius:16, overflow:"hidden"}}>
-                    <button 
-                      onClick={() => setExpandedCAMonth(isExpanded ? null : monthKey)}
-                      style={{width:"100%", padding:"16px", display:"flex", alignItems:"center", gap:14, cursor:"pointer", background:isExpanded?T.card2:"transparent"}}>
-                      <div style={{background:`#9370db22`, width:44, height:44, borderRadius:12, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22}}>
-                        📆
-                      </div>
-                      <div style={{flex:1, textAlign:"left"}}>
-                        <div style={{color:T.text, fontWeight:700, fontSize:16, fontFamily:"'Outfit',sans-serif"}}>{monthLabel}</div>
-                        <div style={{color:"#a385e0", fontWeight:600, fontSize:12, marginTop:2}}>Daily CA Quizzes</div>
-                      </div>
-                      <div style={{color:T.muted, fontSize:18, transform:isExpanded?"rotate(180deg)":"none", transition:"transform 0.2s"}}>▼</div>
-                    </button>
-                    
-                    {isExpanded && (
-                      <div style={{padding:"0 16px 16px 16px", display:"flex", flexDirection:"column", gap:8, borderTop:`1px solid ${T.border}`, paddingTop:16}}>
-                        {generateMonthDates(year, month).map(dateKey => (
-                          <DayRow 
-                            key={dateKey} 
-                            dateKey={dateKey} 
-                            label="Daily CA" 
-                            icon="📰" 
-                            cat="ca"
-                            accentColor="#9370db" 
-                            accentBg={`linear-gradient(135deg,rgba(147,112,219,0.08),rgba(147,112,219,0.02))`}
-                            btnColor="#a385e0" 
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {caLoading ? (
+                <div style={{color:T.muted, fontSize:13}}>Loading CA quizzes...</div>
+              ) : caEntries.length === 0 ? (
+                <div style={{color:T.muted, fontSize:13}}>No CA quizzes available yet.</div>
+              ) : (
+                <>
+                  <DayRow key={caEntries[0][0]} dateKey={caEntries[0][0]} label="Daily CA" icon="📰" cat="ca" accentColor="#9370db" accentBg={`linear-gradient(135deg,rgba(147,112,219,0.08),rgba(147,112,219,0.02))`} btnColor="#a385e0" isLive={true} />
+                  {caEntries.length > 1 && (
+                    <div style={{background:T.card, border:`1px solid ${T.border}`, borderRadius:16, overflow:"hidden"}}>
+                      <button onClick={() => setExpandedCADays(!expandedCADays)} style={{width:"100%", padding:"16px", display:"flex", alignItems:"center", justifyContent:"space-between", cursor:"pointer", background:expandedCADays?T.card2:"transparent"}}>
+                        <span style={{fontWeight:700, color:T.text, fontSize:14, fontFamily:"'Outfit',sans-serif"}}>Previous Days</span>
+                        <span style={{color:T.muted, transform:expandedCADays?"rotate(180deg)":"none", transition:"transform 0.2s"}}>▼</span>
+                      </button>
+                      {expandedCADays && (
+                        <div style={{padding:"0 16px 16px", display:"flex", flexDirection:"column", gap:8}}>
+                          {caEntries.slice(1).map(([dateKey]) => (
+                            <DayRow key={dateKey} dateKey={dateKey} label="Daily CA" icon="📰" cat="ca" accentColor="#9370db" accentBg="transparent" btnColor="#a385e0" isLive={false} />
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </>
+              )}
             </div>
           </div>
 
-          {/* Hindu Vocab Monthly Folders */}
+          {/* Hindu Vocab */}
           <div>
             <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 18, marginBottom: 12, color: T.text, display: "flex", alignItems: "center", gap: 6 }}>
               <span style={{ color: "#00b4d8" }}>📖</span> The Hindu Vocab
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {getMonthsSinceMay2026().map(({ year, month }) => {
-                const monthKey = `${year}-${month}`;
-                const isExpanded = expandedVocabMonth === monthKey;
-                const monthLabel = `${monthNames[month]} ${year}`;
-                return (
-                  <div key={monthKey} style={{background:T.card, border:`1px solid ${T.border}`, borderRadius:16, overflow:"hidden"}}>
-                    <button 
-                      onClick={() => setExpandedVocabMonth(isExpanded ? null : monthKey)}
-                      style={{width:"100%", padding:"16px", display:"flex", alignItems:"center", gap:14, cursor:"pointer", background:isExpanded?T.card2:"transparent"}}>
-                      <div style={{background:`#00b4d822`, width:44, height:44, borderRadius:12, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22}}>
-                        📆
-                      </div>
-                      <div style={{flex:1, textAlign:"left"}}>
-                        <div style={{color:T.text, fontWeight:700, fontSize:16, fontFamily:"'Outfit',sans-serif"}}>{monthLabel}</div>
-                        <div style={{color:"#00b4d8", fontWeight:600, fontSize:12, marginTop:2}}>The Hindu Vocab</div>
-                      </div>
-                      <div style={{color:T.muted, fontSize:18, transform:isExpanded?"rotate(180deg)":"none", transition:"transform 0.2s"}}>▼</div>
-                    </button>
-                    
-                    {isExpanded && (
-                      <div style={{padding:"0 16px 16px 16px", display:"flex", flexDirection:"column", gap:8, borderTop:`1px solid ${T.border}`, paddingTop:16}}>
-                        {generateMonthDates(year, month).map(dateKey => (
-                          <DayRow 
-                            key={dateKey} 
-                            dateKey={dateKey} 
-                            label="The Hindu Vocab" 
-                            icon="🖋️" 
-                            cat="vocab"
-                            accentColor="#00b4d8" 
-                            accentBg={`linear-gradient(135deg,rgba(0,180,216,0.08),rgba(0,180,216,0.02))`}
-                            btnColor="#00b4d8" 
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              {vocLoading ? (
+                <div style={{color:T.muted, fontSize:13}}>Loading Vocab quizzes...</div>
+              ) : vocEntries.length === 0 ? (
+                <div style={{color:T.muted, fontSize:13}}>No Vocab quizzes for this week yet.</div>
+              ) : (
+                <>
+                  <DayRow key={vocEntries[0][0]} dateKey={vocEntries[0][0]} label="The Hindu Vocab" icon="🖋️" cat="vocab" accentColor="#00b4d8" accentBg={`linear-gradient(135deg,rgba(0,180,216,0.08),rgba(0,180,216,0.02))`} btnColor="#00b4d8" isLive={true} />
+                  {vocEntries.length > 1 && (
+                    <div style={{background:T.card, border:`1px solid ${T.border}`, borderRadius:16, overflow:"hidden"}}>
+                      <button onClick={() => setExpandedVocabDays(!expandedVocabDays)} style={{width:"100%", padding:"16px", display:"flex", alignItems:"center", justifyContent:"space-between", cursor:"pointer", background:expandedVocabDays?T.card2:"transparent"}}>
+                        <span style={{fontWeight:700, color:T.text, fontSize:14, fontFamily:"'Outfit',sans-serif"}}>Previous Days</span>
+                        <span style={{color:T.muted, transform:expandedVocabDays?"rotate(180deg)":"none", transition:"transform 0.2s"}}>▼</span>
+                      </button>
+                      {expandedVocabDays && (
+                        <div style={{padding:"0 16px 16px", display:"flex", flexDirection:"column", gap:8}}>
+                          {vocEntries.slice(1).map(([dateKey]) => (
+                            <DayRow key={dateKey} dateKey={dateKey} label="The Hindu Vocab" icon="🖋️" cat="vocab" accentColor="#00b4d8" accentBg="transparent" btnColor="#00b4d8" isLive={false} />
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </>
+              )}
             </div>
           </div>
 
@@ -1477,27 +1575,33 @@ function DailyScreen({ T, onStartDaily, onStartTopic, wrongCounts, wrongTotal, o
               <span style={{ color: GOLD }}>🏆</span> Mega Quizzes
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-              <button onClick={() => onStartWeekly('ca')} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
+              <button onClick={() => setExpandedMega(expandedMega==='weekly-ca'?null:'weekly-ca')} style={{ background: expandedMega==='weekly-ca'?T.card2:T.card, border: `1px solid ${expandedMega==='weekly-ca'?GOLD:T.border}`, borderRadius: 14, padding: "16px 8px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer", position:"relative" }}>
                 <div style={{ fontSize: 24 }}>📆</div>
-                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text, textAlign: "center" }}>Weekly CA</div>
-                <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif", textAlign: "center" }}>
-                  {(() => {
-                    const today = new Date();
-                    const day = today.getDay();
-                    const daysSinceMonday = (day + 6) % 7;
-                    const mon = new Date(today); mon.setDate(today.getDate() - daysSinceMonday);
-                    const sat = new Date(mon); sat.setDate(mon.getDate() + 5);
-                    const opts = { day: 'numeric', month: 'short' };
-                    return `${mon.toLocaleDateString('en-IN', opts)} - ${sat.toLocaleDateString('en-IN', opts)}`;
-                  })()}
-                </div>
+                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 15, color: T.text, textAlign: "center" }}>Weekly CA</div>
+                {expandedMega === 'weekly-ca' && <div style={{position:"absolute", bottom:-1, width:30, height:4, background:GOLD, borderRadius:4}}></div>}
               </button>
-              <button onClick={() => alert("Coming soon!")} style={{ background: T.card, border: `1px solid ${T.border}`, borderRadius: 14, padding: "16px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer" }}>
+              <button onClick={() => setExpandedMega(expandedMega==='weekly-vocab'?null:'weekly-vocab')} style={{ background: expandedMega==='weekly-vocab'?T.card2:T.card, border: `1px solid ${expandedMega==='weekly-vocab'?GOLD:T.border}`, borderRadius: 14, padding: "16px 8px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer", position:"relative" }}>
+                <div style={{ fontSize: 24 }}>📖</div>
+                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 15, color: T.text, textAlign: "center" }}>Weekly Vocab</div>
+                {expandedMega === 'weekly-vocab' && <div style={{position:"absolute", bottom:-1, width:30, height:4, background:GOLD, borderRadius:4}}></div>}
+              </button>
+              <button onClick={() => setExpandedMega(expandedMega==='monthly-ca'?null:'monthly-ca')} style={{ background: expandedMega==='monthly-ca'?T.card2:T.card, border: `1px solid ${expandedMega==='monthly-ca'?GOLD:T.border}`, borderRadius: 14, padding: "16px 8px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer", position:"relative" }}>
                 <div style={{ fontSize: 24 }}>🔥</div>
-                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 16, color: T.text }}>Monthly Quiz</div>
-                <div style={{ fontSize: 11, color: T.muted, fontFamily: "'Outfit',sans-serif" }}>Top 100 Ques</div>
+                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 15, color: T.text }}>Monthly CA</div>
+                {expandedMega === 'monthly-ca' && <div style={{position:"absolute", bottom:-1, width:30, height:4, background:GOLD, borderRadius:4}}></div>}
+              </button>
+              <button onClick={() => setExpandedMega(expandedMega==='monthly-vocab'?null:'monthly-vocab')} style={{ background: expandedMega==='monthly-vocab'?T.card2:T.card, border: `1px solid ${expandedMega==='monthly-vocab'?GOLD:T.border}`, borderRadius: 14, padding: "16px 8px", display: "flex", flexDirection: "column", alignItems: "center", gap: 8, cursor: "pointer", position:"relative" }}>
+                <div style={{ fontSize: 24 }}>⚡</div>
+                <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 15, color: T.text }}>Monthly Vocab</div>
+                {expandedMega === 'monthly-vocab' && <div style={{position:"absolute", bottom:-1, width:30, height:4, background:GOLD, borderRadius:4}}></div>}
               </button>
             </div>
+            
+            {expandedMega && (
+               <div style={{marginTop: 16}}>
+                 <MegaQuizzesList type={expandedMega} T={T} onStartWeekly={onStartWeekly} onStartMonthly={onStartMonthly} />
+               </div>
+            )}
           </div>
         </>
       )}
@@ -2338,7 +2442,7 @@ export default function App(){
   };
 
   const { user, signIn, signOut, loading, signInWithEmail, signUpWithEmail, sendPhoneOtp, verifyPhoneOtp } = useAuth();
-  const { wrongMap, counts: wrongCounts, total: wrongTotal, addWrong, removeWrong, recordCorrect, flushToFirestore } = useWrongQuestions(user);
+  const { wrongMap, counts: wrongCounts, total: wrongTotal, addWrong, removeWrong, recordCorrect, flushToFirestore, flushRemoval } = useWrongQuestions(user);
   const [showAuth, setShowAuth] = useState(true);
   const [toast, setToast] = useState(null); // { msg, type: 'info'|'warn'|'error' }
   const showToast = (msg, type = 'info', duration = 4000) => {
@@ -2582,8 +2686,15 @@ export default function App(){
       if(cc.type==="vocab"){
         if (cc.isMistakesPool) {
           const pool = cc.mistakesPool || [];
-          const nextQ = pool.find(q => (cc.mistakesCorrectStreak[q.id] || 0) < 2);
-          if (nextQ) {
+          const eligible = pool.filter(q => (cc.mistakesStats[q.id]?.correct || 0) < 2);
+          if (eligible.length > 0) {
+            let candidates = eligible;
+            // Prevent back-to-back same question if possible
+            if (eligible.length > 1 && cc.lastMistakeId) {
+              candidates = eligible.filter(q => String(q.id) !== String(cc.lastMistakeId));
+            }
+            const nextQ = candidates[Math.floor(Math.random() * candidates.length)];
+            cc.lastMistakeId = String(nextQ.id);
             return formatVocabQuestion(nextQ, cc.topic);
           } else {
             return { __done: true, type: 'vocab' };
@@ -2723,22 +2834,20 @@ export default function App(){
     });
   }
 
-  const getWeekDates = () => {
-    const today = new Date();
-    const day = today.getDay(); // 0=Sun, 1=Mon...
-    const daysSinceMonday = (day + 6) % 7;
-    const mon = new Date(today);
-    mon.setDate(today.getDate() - daysSinceMonday);
-    return Array.from({length: 6}, (_, i) => {
+  const getWeekDatesForRange = (monStr) => {
+    const dates = [];
+    const mon = new Date(monStr);
+    for(let i=0; i<6; i++) {
       const d = new Date(mon);
       d.setDate(mon.getDate() + i);
-      return d.toISOString().slice(0, 10);
-    });
+      dates.push(d.toISOString().slice(0, 10));
+    }
+    return dates;
   };
 
-  async function startWeeklyQuiz(cat) {
+  async function startWeeklyQuiz(cat, monStr, satStr, weekTitle) {
     try {
-      const dates = getWeekDates();
+      const dates = getWeekDatesForRange(monStr);
       let allQuestions = [];
       for (const dateKey of dates) {
         try {
@@ -2752,27 +2861,48 @@ export default function App(){
             }
           }
         } catch (e) {
-          // ignore fetching errors for single days
+          // ignore
         }
       }
       if (allQuestions.length === 0) {
         showToast('⚠️ No quizzes found for this week yet.', 'warn');
         return;
       }
-      // Shuffle combined questions
       for (let i = allQuestions.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
       }
-      const weeklyKey = `weekly_${cat}`;
+      const weeklyKey = `weekly_${cat}_${monStr}`;
       VOCAB_DATA[weeklyKey] = allQuestions;
-      const cfg = { topic: weeklyKey, type: 'vocab', quizCat: cat, count: allQuestions.length, dailyTitle: 'Weekly Mega Quiz' };
+      const title = `${cat==='ca'?'CA':'Vocab'} - ${weekTitle}`;
+      const cfg = { topic: weeklyKey, type: 'vocab', quizCat: cat, count: allQuestions.length, dailyTitle: title };
       setModeId('vocab'); setCustomConfig(cfg);
       setPrevTab('daily');
-      setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title: 'Weekly Mega Quiz' });
+      setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title });
     } catch (e) {
       console.error('Weekly quiz error:', e);
       alert('Failed to load weekly quiz. Please try again.');
+    }
+  }
+
+  async function startMonthlyQuiz(cat, ymStr, monthLabel) {
+    try {
+      const res = await fetch(`${BASE_URL}/monthly/${cat}/${ymStr}.json`);
+      if (!res.ok) { showToast('🚧 Monthly quiz coming soon!', 'warn'); return; }
+      const data = await res.json();
+      const rawQs = data.questions || data;
+      if (!rawQs || rawQs.length === 0) { alert("No questions found."); return; }
+      const monthlyKey = `monthly_${cat}_${ymStr}`;
+      const qs = normalizeQuizData(rawQs, cat === 'ca' ? 'ca' : 'vocab', monthlyKey);
+      VOCAB_DATA[monthlyKey] = qs;
+      const title = `Top ${cat==='ca'?'CA':'Vocab'} - ${monthLabel}`;
+      const cfg = { topic: monthlyKey, type: 'vocab', quizCat: cat, count: qs.length, dailyTitle: title };
+      setModeId('vocab'); setCustomConfig(cfg);
+      setPrevTab('daily');
+      setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title });
+    } catch (e) {
+      console.error('Monthly quiz fetch error:', e);
+      alert('Failed to load monthly quiz.');
     }
   }
 
@@ -2874,20 +3004,15 @@ export default function App(){
       showToast('⚠️ Play a quiz in this category first, then come back!', 'warn');
       return;
     }
-    // Prepare the smart repeat pool: put each question in the pool twice
-    const pool = [...allQuestions, ...allQuestions];
-    for (let i = pool.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [pool[i], pool[j]] = [pool[j], pool[i]];
-    }
     const topicKey = `mistakes_${cat}`;
     VOCAB_DATA[topicKey] = allQuestions; // keep all questions accessible for formatting
     const freshState = { seen: [], wrong: {}, lastIndex: 0, wrongIds: {} };
     setVocabState(prev => ({ ...prev, [topicKey]: freshState }));
     const cfg = { 
-      topic: topicKey, type: 'vocab', count: pool.length, 
+      topic: topicKey, type: 'vocab', count: allQuestions.length * 2, // Must get each right twice
       dailyTitle: `My Mistakes — ${cat.toUpperCase()}`, quizCat: cat, 
-      isReattempt: true, isMistakesPool: true, mistakesPool: pool, mistakesCorrectStreak: {} 
+      isReattempt: true, isMistakesPool: true, mistakesPool: allQuestions, 
+      mistakesStats: {}, learnedCount: 0, lastMistakeId: null
     };
     setModeId('vocab'); setCustomConfig(cfg);
     setTab('game'); setQuizCountdown({ cfg, mid: 'vocab', val: 3, title: cfg.dailyTitle, freshVocabState: { ...vocabState, [topicKey]: freshState } });
@@ -3032,16 +3157,18 @@ export default function App(){
         }
 
         if (customConfig?.isMistakesPool) {
+          if (!customConfig.mistakesStats[q.id]) {
+            customConfig.mistakesStats[q.id] = { correct: 0 };
+          }
           if (ok) {
-            const streakAmt = (customConfig.mistakesCorrectStreak[q.id] || 0) + 1;
-            customConfig.mistakesCorrectStreak[q.id] = streakAmt;
-            if (streakAmt >= 2) {
-              recordCorrect(normCat, String(q.id));
+            customConfig.mistakesStats[q.id].correct += 1;
+            if (customConfig.mistakesStats[q.id].correct >= 2) {
+              customConfig.learnedCount = (customConfig.learnedCount || 0) + 1;
+              removeWrong(normCat, String(q.id));
+              flushRemoval(normCat, String(q.id));
             }
           } else {
-            customConfig.mistakesCorrectStreak[q.id] = 0;
-            // Also add another instance to the pool to make sure they practice it more
-            customConfig.mistakesPool.push(q);
+            customConfig.mistakesStats[q.id].correct = 0;
           }
         }
 
@@ -3519,7 +3646,7 @@ export default function App(){
           </div>
         )}
 
-        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={startMistakesQuiz} user={user} onStartWeekly={startWeeklyQuiz} />}
+        {tab==="daily"&&<DailyScreen T={T} onStartDaily={startDailyQuiz} onStartTopic={startTopicQuiz} wrongCounts={wrongCounts} wrongTotal={wrongTotal} onStartMistakes={startMistakesQuiz} user={user} onStartWeekly={startWeeklyQuiz} onStartMonthly={startMonthlyQuiz} />}
 
         {tab==="quiz"&&<QuizScreen T={T} onSelectTopic={(topicId)=>{
           startVocabQuiz(topicId);
@@ -4013,7 +4140,11 @@ export default function App(){
 
               {/* ── Stat tiles ── */}
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:10,padding:"14px 20px"}}>
-                {(isVocabType || isCaType ? [
+                {(customConfig?.isMistakesPool ? [
+                  {icon:"🎯",label:"Accuracy",value:`${acc}%`,color:accColor},
+                  {icon:"🎓",label:"Learned",value:`${customConfig.learnedCount||0}`,color:BLUE},
+                  {icon:"🔥",label:"Best Streak",value:bestStreak,color:"#f97316"},
+                ] : isVocabType || isCaType ? [
                   {icon:"🎯",label:"Accuracy",value:`${acc}%`,color:accColor},
                   {icon:"⚡",label:"XP Earned",value:xpDisplay,color:GOLD},
                   {icon:"🔥",label:"Best Streak",value:bestStreak,color:"#f97316"},

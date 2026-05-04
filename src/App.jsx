@@ -2577,6 +2577,9 @@ export default function App(){
     // Otherwise go home.
     const goBack = () => {
       stopAll();
+      if (tab === 'game' && customConfig?.date && user) {
+        markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);
+      }
       if (tab === 'game' && prevTab && prevTab !== 'home') {
         setTab(prevTab);
       } else {
@@ -2632,7 +2635,7 @@ export default function App(){
         CapApp.removeAllListeners();
       } catch (e) {}
     };
-  }, [tab, showBlitz, phase, prevTab]);
+  }, [tab, showBlitz, phase, prevTab, customConfig, user]);
 
   const timerRef=useRef(null);
   const nextRef=useRef(null);
@@ -3460,7 +3463,7 @@ export default function App(){
             <AnimalAvatar id={user?.photoURL||profile.avatar||"tiger"} size={34}/>
           </button>
           <div>
-            <button onClick={()=>{if(tab==="game"){stopAll();setTab("home");setPhase("idle");}}} style={{background:"none",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,letterSpacing:-0.5,color:T.text,padding:0}}>
+            <button onClick={()=>{if(tab==="game"){stopAll();if(customConfig?.date && user){markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);}setTab("home");setPhase("idle");}}} style={{background:"none",fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,letterSpacing:-0.5,color:T.text,padding:0}}>
               <span>Calc</span><span style={{color:GOLD}}>Mind</span>
             </button>
             <div style={{fontSize:9,color:T.muted,fontWeight:600,marginTop:-1}}>{profile.name||user?.displayName||"Guest"} · {profile.goal||"IBPS PO"}</div>
@@ -3477,6 +3480,9 @@ export default function App(){
           {(tab !== "home") ? (
             <button onClick={() => {
               stopAll();
+              if (tab === 'game' && customConfig?.date && user) {
+                markDailyCompleted(user, customConfig.quizCat || 'vocab', customConfig.date);
+              }
               if (tab === 'game' && prevTab && prevTab !== 'home') {
                 setTab(prevTab);
               } else {

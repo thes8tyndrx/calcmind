@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { collection, query, orderBy, limit, getDocs, doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 
@@ -20,9 +20,16 @@ export function useLeaderboard() {
     try {
       setLoading(true);
       const playersRef = collection(db, 'players');
-      // Fetch top 20 players by specific category XP or global XP
-      const field = category === 'global' ? `xp${S}` : `xp_${category}${S}`;
-      const q = query(playersRef, orderBy(field, 'desc'), limit(20));
+
+      // ── Daily leaderboards: fetch all players ordered by global XP (indexed),
+      //    then filter client-side by today's date on the daily date field.
+      //    This avoids needing separate composite indexes for each daily category.
+      // ── Global / category leaderboards: order by the relevant XP field directly.
+      const isDailyCategory = category.startsWith('daily_');
+      const orderField = isDailyCategory ? `xp${S}` : (category === 'global' ? `xp${S}` : `xp_${category}${S}`);
+      const fetchLimit = isDailyCategory ? 200 : 50; // Fetch more so client-side filter has enough data
+
+      const q = query(playersRef, orderBy(orderField, 'desc'), limit(fetchLimit));
       const querySnapshot = await getDocs(q);
       
       const players = querySnapshot.docs.map(d => ({
@@ -33,7 +40,7 @@ export function useLeaderboard() {
       setLeaderboard(players);
       setError(null);
     } catch (err) {
-      console.error("Error fetching leaderboard:", err);
+      console.error('Error fetching leaderboard:', err);
       setError(err.message);
     } finally {
       setLoading(false);
@@ -58,7 +65,8 @@ export function useLeaderboard() {
       let newXp = xpChange;
       let catXp = xpChange;
       let dailyXp = xpChange;
-      let name = user.displayName || 'Anonymous Player';
+      // Always prefer the live auth name/avatar over potentially stale stored values
+      let name = user.displayName || user.email?.split('@')[0] || 'Anonymous';
       let avatar = user.photoURL || '';
       
       if (userSnap.exists()) {
@@ -69,8 +77,9 @@ export function useLeaderboard() {
 
         newXp = Math.max(0, (data[globalField] || 0) + xpChange);
         catXp = Math.max(0, (data[catField] || 0) + xpChange);
-        name = data.name || name;
-        avatar = data.avatar || avatar;
+        // Use stored custom name if the user saved one via profile, otherwise keep auth name
+        if (data.name) name = data.name;
+        if (data.avatar) avatar = data.avatar;
         
         if (dailyDate) {
           if (data[dateField] !== dailyDate) {
@@ -101,7 +110,7 @@ export function useLeaderboard() {
       await setDoc(userRef, updateData, { merge: true });
       
     } catch (err) {
-      console.error("Error submitting score:", err);
+      console.error('Error submitting score:', err);
     }
   };
 
@@ -112,7 +121,7 @@ export function useLeaderboard() {
       const doneField = `completed_${category}_${dailyDate}${S}`;
       await setDoc(userRef, { [doneField]: true }, { merge: true });
     } catch (err) {
-      console.error("Error marking daily complete:", err);
+      console.error('Error marking daily complete:', err);
     }
   };
 

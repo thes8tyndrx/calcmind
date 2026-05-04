@@ -3712,16 +3712,24 @@ export default function App(){
 
             {/* ── DAILY LEADERBOARDS SIDE BY SIDE ── */}
             <div style={{borderTop:`1px solid ${T.border}`,paddingTop:16,marginBottom:10}}>
-              <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,color:T.text,marginBottom:10}}>
-                🏅 Today's <span style={{color:GOLD}}>Daily Leaders</span>
+              <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:10}}>
+                <div style={{fontFamily:"'Barlow Condensed',sans-serif",fontWeight:900,fontSize:20,color:T.text}}>
+                  🏅 Today's <span style={{color:GOLD}}>Daily Leaders</span>
+                </div>
+                <button onClick={()=>{refreshDailyCa('daily_ca');refreshDailyVocab('daily_vocab');}} style={{background:T.inputBg,border:`1px solid ${T.border}`,borderRadius:8,padding:"4px 8px",fontSize:12,color:T.sub,cursor:'pointer'}}>↻ Refresh</button>
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
-                {/* Daily CA Board — only today's players */}
                 {(()=>{
                   const todayDate = new Date().toISOString().slice(0,10);
-                  const todayCaBoard = dailyCaBoard.filter(p => p[`current_daily_ca_date_s1`] === todayDate);
-                  const todayVocabBoard = dailyVocabBoard.filter(p => p[`current_daily_vocab_date_s1`] === todayDate);
+                  // Filter by today's date, then sort by daily XP descending
+                  const todayCaBoard = dailyCaBoard
+                    .filter(p => p[`current_daily_ca_date_s1`] === todayDate)
+                    .sort((a,b) => (b[`xp_daily_ca_s1`]||0) - (a[`xp_daily_ca_s1`]||0));
+                  const todayVocabBoard = dailyVocabBoard
+                    .filter(p => p[`current_daily_vocab_date_s1`] === todayDate)
+                    .sort((a,b) => (b[`xp_daily_vocab_s1`]||0) - (a[`xp_daily_vocab_s1`]||0));
                   return (<>
+                    {/* Daily CA Board */}
                     <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
                       <div style={{fontSize:10,fontWeight:800,color:"#a385e0",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📰 CA DAILY</div>
                       {todayCaBoard.length === 0 ? (
@@ -3732,13 +3740,13 @@ export default function App(){
                             {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
                           </div>
                           <AnimalAvatar id={p.avatar||"owl"} size={20}/>
-                          <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#a385e0":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
-                          <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p[`xp_daily_ca_s1`]||0).toFixed(0)}</div>
+                          <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#a385e0":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0] || 'Player'}</div>
+                          <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p[`xp_daily_ca_s1`]||0).toFixed(0)} XP</div>
                         </div>
                       ))}
                     </div>
 
-                    {/* Daily Vocab Board — only today's players */}
+                    {/* Daily Vocab Board */}
                     <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
                       <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📖 VOCAB DAILY</div>
                       {todayVocabBoard.length === 0 ? (
@@ -3749,8 +3757,8 @@ export default function App(){
                             {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
                           </div>
                           <AnimalAvatar id={p.avatar||"owl"} size={20}/>
-                          <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#00b4d8":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
-                          <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p[`xp_daily_vocab_s1`]||0).toFixed(0)}</div>
+                          <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#00b4d8":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0] || 'Player'}</div>
+                          <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p[`xp_daily_vocab_s1`]||0).toFixed(0)} XP</div>
                         </div>
                       ))}
                     </div>

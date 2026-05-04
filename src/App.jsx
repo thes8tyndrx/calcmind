@@ -3716,39 +3716,46 @@ export default function App(){
                 🏅 Today's <span style={{color:GOLD}}>Daily Leaders</span>
               </div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
-                {/* Daily CA Board */}
-                <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
-                  <div style={{fontSize:10,fontWeight:800,color:"#a385e0",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📰 CA DAILY</div>
-                  {dailyCaBoard.length === 0 ? (
-                    <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet</div>
-                  ) : dailyCaBoard.slice(0,10).map((p,i)=>(
-                    <div key={p.id} style={{display:"flex",alignItems:"center",gap:6,marginBottom:5,background:user&&p.id===user.uid?`#a385e015`:"transparent",borderRadius:8,padding:"3px 4px"}}>
-                      <div style={{fontSize:14,width:20,textAlign:"center",flexShrink:0}}>
-                        {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
-                      </div>
-                    <AnimalAvatar id={p.avatar||"owl"} size={20}/>
-                      <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#a385e0":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
-                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p[`xp_daily_ca_s1`]||0).toFixed(0)}</div>
+                {/* Daily CA Board — only today's players */}
+                {(()=>{
+                  const todayDate = new Date().toISOString().slice(0,10);
+                  const todayCaBoard = dailyCaBoard.filter(p => p[`current_daily_ca_date_s1`] === todayDate);
+                  const todayVocabBoard = dailyVocabBoard.filter(p => p[`current_daily_vocab_date_s1`] === todayDate);
+                  return (<>
+                    <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
+                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📰 CA DAILY</div>
+                      {todayCaBoard.length === 0 ? (
+                        <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet today</div>
+                      ) : todayCaBoard.slice(0,10).map((p,i)=>(
+                        <div key={p.id} style={{display:"flex",alignItems:"center",gap:6,marginBottom:5,background:user&&p.id===user.uid?`#a385e015`:"transparent",borderRadius:8,padding:"3px 4px"}}>
+                          <div style={{fontSize:14,width:20,textAlign:"center",flexShrink:0}}>
+                            {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
+                          </div>
+                          <AnimalAvatar id={p.avatar||"owl"} size={20}/>
+                          <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#a385e0":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
+                          <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p[`xp_daily_ca_s1`]||0).toFixed(0)}</div>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
 
-                {/* Daily Vocab Board */}
-                <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
-                  <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📖 VOCAB DAILY</div>
-                  {dailyVocabBoard.length === 0 ? (
-                    <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet</div>
-                  ) : dailyVocabBoard.slice(0,10).map((p,i)=>(
-                    <div key={p.id} style={{display:"flex",alignItems:"center",gap:6,marginBottom:5,background:user&&p.id===user.uid?`#00b4d815`:"transparent",borderRadius:8,padding:"3px 4px"}}>
-                      <div style={{fontSize:14,width:20,textAlign:"center",flexShrink:0}}>
-                        {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
-                      </div>
-                    <AnimalAvatar id={p.avatar||"owl"} size={20}/>
-                      <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#00b4d8":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
-                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p[`xp_daily_vocab_s1`]||0).toFixed(0)}</div>
+                    {/* Daily Vocab Board — only today's players */}
+                    <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
+                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📖 VOCAB DAILY</div>
+                      {todayVocabBoard.length === 0 ? (
+                        <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet today</div>
+                      ) : todayVocabBoard.slice(0,10).map((p,i)=>(
+                        <div key={p.id} style={{display:"flex",alignItems:"center",gap:6,marginBottom:5,background:user&&p.id===user.uid?`#00b4d815`:"transparent",borderRadius:8,padding:"3px 4px"}}>
+                          <div style={{fontSize:14,width:20,textAlign:"center",flexShrink:0}}>
+                            {i===0?"🥇":i===1?"🥈":i===2?"🥉":<span style={{fontWeight:800,fontSize:10,color:T.muted}}>#{i+1}</span>}
+                          </div>
+                          <AnimalAvatar id={p.avatar||"owl"} size={20}/>
+                          <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#00b4d8":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0]}</div>
+                          <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p[`xp_daily_vocab_s1`]||0).toFixed(0)}</div>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </>);
+                })()}
               </div>
             </div>
 

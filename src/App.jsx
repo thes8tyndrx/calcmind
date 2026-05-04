@@ -3739,13 +3739,10 @@ export default function App(){
                     .filter(p => p[`current_daily_vocab_date_s1`] === maxVocabDate)
                     .sort((a,b) => (b[`xp_daily_vocab_s1`]||0) - (a[`xp_daily_vocab_s1`]||0));
                     
-                  const displayCaDate = maxCaDate !== fallbackDate ? ` (${maxCaDate.slice(5,10)})` : '';
-                  const displayVocabDate = maxVocabDate !== fallbackDate ? ` (${maxVocabDate.slice(5,10)})` : '';
-
                   return (<>
                     {/* Daily CA Board */}
                     <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
-                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📰 CA DAILY{displayCaDate}</div>
+                      <div style={{fontSize:10,fontWeight:800,color:"#a385e0",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📰 CA DAILY</div>
                       {todayCaBoard.length === 0 ? (
                         <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet today</div>
                       ) : todayCaBoard.slice(0,10).map((p,i)=>(
@@ -3762,7 +3759,7 @@ export default function App(){
 
                     {/* Daily Vocab Board */}
                     <div style={{background:T.card,border:`1px solid ${T.border}`,borderRadius:14,padding:"10px 8px"}}>
-                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📖 VOCAB DAILY{displayVocabDate}</div>
+                      <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",letterSpacing:1,marginBottom:8,textAlign:"center"}}>📖 VOCAB DAILY</div>
                       {todayVocabBoard.length === 0 ? (
                         <div style={{textAlign:"center",color:T.muted,fontSize:10,padding:"8px 0"}}>No scores yet today</div>
                       ) : todayVocabBoard.slice(0,10).map((p,i)=>(

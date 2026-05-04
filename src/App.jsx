@@ -2127,9 +2127,7 @@ function SectionLabel({label, T}){
   );
 }
 
-function QuizScreen({T, onSelectTopic, startDynamicQuiz}){
-  const [exam, setExam] = useState("SSC CGL");
-  const [subject, setSubject] = useState("English");
+function QuizScreen({T, onSelectTopic, startDynamicQuiz, exam, setExam, subject, setSubject}){
   const [caTopic, setCaTopic] = useState(null);
   
   const exams = ["SSC CGL", "SSC CHSL", "SSC CPO", "SSC Steno", "Selection Post"];
@@ -2528,6 +2526,8 @@ export default function App(){
   const [xpVocab,setXpVocab]=useState(()=>LS.get("cm_xp_vocab",0));
   const [xpCA,setXpCA]=useState(()=>LS.get("cm_xp_ca",0));
   const [rankCategory,setRankCategory]=useState("global");
+  const [quizExam,setQuizExam]=useState("SSC CGL");
+  const [quizSubject,setQuizSubject]=useState("English");
   const [blitzBests,setBlitzBests]=useState(()=>LS.get("cm_blitz",{}));
   const [modeStats,setModeStats]=useState(()=>{
     const saved=LS.get("cm_stats",null);
@@ -3650,7 +3650,9 @@ export default function App(){
 
         {tab==="quiz"&&<QuizScreen T={T} onSelectTopic={(topicId)=>{
           startVocabQuiz(topicId);
-        }}/>}
+        }} startDynamicQuiz={startDynamicQuiz}
+          exam={quizExam} setExam={setQuizExam}
+          subject={quizSubject} setSubject={setQuizSubject}/>}
 
         {/* ── STATS ── */}
 
@@ -3741,7 +3743,7 @@ export default function App(){
                           </div>
                           <AnimalAvatar id={p.avatar||"owl"} size={20}/>
                           <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#a385e0":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0] || 'Player'}</div>
-                          <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p[`xp_daily_ca_s1`]||0).toFixed(0)} XP</div>
+                          <div style={{fontSize:10,fontWeight:800,color:"#a385e0",flexShrink:0}}>{(p[`xp_daily_ca_s1`]||0).toFixed(0)}</div>
                         </div>
                       ))}
                     </div>
@@ -3758,7 +3760,7 @@ export default function App(){
                           </div>
                           <AnimalAvatar id={p.avatar||"owl"} size={20}/>
                           <div style={{flex:1,minWidth:0,fontSize:10,fontWeight:700,color:user&&p.id===user.uid?"#00b4d8":T.text,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.name?.split(" ")[0] || 'Player'}</div>
-                          <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p[`xp_daily_vocab_s1`]||0).toFixed(0)} XP</div>
+                          <div style={{fontSize:10,fontWeight:800,color:"#00b4d8",flexShrink:0}}>{(p[`xp_daily_vocab_s1`]||0).toFixed(0)}</div>
                         </div>
                       ))}
                     </div>
